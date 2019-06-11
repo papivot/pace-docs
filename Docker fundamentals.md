@@ -198,10 +198,12 @@ alpine              latest              055936d39205        4 weeks ago         
 
 #### Step 3 - Push the image to external repository. 
 
-**Note** This process may differ for different external registries. While the process is similar, whereby the Docker daemon needs to authenticate to the external registry first and then push the image to the external registry. The aui
+**Note** This process may differ for different external registries. While the process is similar, whereby the Docker daemon needs to authenticate to the external registry first and then push the image to the external registry. The authentication process may vary for each registry. We will be pushing the image to GCR in this example. Pushing images to Harbor will be discussed later in the workshop. 
+
+Authenticate to the registry - 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDIwODM4MDksMTczMjQyNDQyNywyMD
-c2MDc2NTAzLC0yMDY2NzI5NzgsMTIxOTk3NjQ4Nyw4NzM3Mzc4
-NDIsLTkzMzg0MTI5MCwtMTAwMTMzMzAwMyw4NTEzMTM5MDEsMT
-A2OTcwNzIzMSwzNzQyNTYxODcsLTE4Mjk2NjI0NTddfQ==
+eyJoaXN0b3J5IjpbMTE5ODY0NTkyMSwxNzMyNDI0NDI3LDIwNz
+YwNzY1MDMsLTIwNjY3Mjk3OCwxMjE5OTc2NDg3LDg3MzczNzg0
+MiwtOTMzODQxMjkwLC0xMDAxMzMzMDAzLDg1MTMxMzkwMSwxMD
+Y5NzA3MjMxLDM3NDI1NjE4NywtMTgyOTY2MjQ1N119
 -->
