@@ -18,9 +18,14 @@ Client Version: version.Info{Major:"1", Minor:"14", GitVersion:"v1.14.3", GitCom
 Server Version: version.Info{Major:"1", Minor:"13", GitVersion:"v1.13.5", GitCommit:"2166946f41b36dea2c4626f90a77706f426cdea2", GitTreeState:"clean", BuildDate:"2019-03-25T15:19:22Z", GoVersion:"go1.11.5", Compiler:"gc", Platform:"linux/amd64"}
 ```
 
+Some options on kubectl outputs - 
 
+> `kubectl get nodes`
+
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzNTkxODg3MCw5OTE5NTU0NTcsNDk2Nj
-A3Mzc5LC0xODYzMTQ3NjEzLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbODUyNjIyMDQxLDE2MzU5MTg4NzAsOTkxOT
+U1NDU3LDQ5NjYwNzM3OSwtMTg2MzE0NzYxMyw3MzA5OTgxMTZd
+fQ==
 -->
