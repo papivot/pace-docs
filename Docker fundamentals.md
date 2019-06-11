@@ -11,8 +11,8 @@
 >`sudo apt install docker.io`
 
 #### Step 3 - Enable and start Docker service
->`sudo systemctl start docker`
->`sudo systemctl enable docker`
+>`sudo systemctl start docker
+>``sudo systemctl enable docker`
 
 #### Step 4 - Verify Docker service is running
 >`ps -eaf|grep docker`
@@ -112,7 +112,7 @@ Study the Dockerfile included on the k8s-operations folder and the syntax for th
 
 While in the k8s-operations folder, run the following command to build the Docker image locally. This will save the image in the local repository with the tag of k8soper:0.0.1
 
-`sudo docker build -t k8soper:0.0.1 .`
+>`sudo docker build -t k8soper:0.0.1 .`
 
 The output would be similar to this - 
 
@@ -191,7 +191,7 @@ Successfully tagged k8soper:0.0.1
 ```
 Look at the above output and try to understand how each operation relates to instructions provided in the Dockerfile. In this example, the final output is an image with an ID of **414d93beb557** and a tag of **k8soper:0.0.1**. This can be verified by the following command - 
 
-`sudo docker images`
+>`sudo docker images`
 
 Output would be similar to 
 ```
@@ -206,7 +206,7 @@ alpine              latest              055936d39205        4 weeks ago         
 
  - [ ] Authenticate to GCR
 
-`sudo gcloud auth configure-docker`
+>`sudo gcloud auth configure-docker`
 
 ```shell
 The following settings will be added to your Docker config file
@@ -228,7 +228,7 @@ Docker configuration file updated.
 ```
 Execute the following command to configure gcloud to set the account settings and credentials - 
 
-`gcloud auth login`
+>`gcloud auth login`
 
 ```shell
 Go to the following link in your browser:
@@ -247,7 +247,7 @@ You are now logged in as [username@domain.com].
 
 Once you have authenticated to the registry, it is time to push the image. These steps should be similar for all registries. Grab the image ID that you want to push. In this case the value is - **414d93beb557**
 
-`sudo docker images`
+>`sudo docker images`
 
 ```shell
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
@@ -257,11 +257,11 @@ alpine              latest              055936d39205        4 weeks ago         
 
 Tag the image with the appropriate registry specific tags. For GCR we will use the format gcr.io / [username] - 
 
-`sudo docker tag 414d93beb557 gcr.io/[username]/k8soper:0.0.1`
+>`sudo docker tag 414d93beb557 gcr.io/[username]/k8soper:0.0.1`
 
 Make sure that the tag went into effect - 
 
-`sudo docker images`
+>`sudo docker images`
 
 ```shell
 REPOSITORY                 TAG                 IMAGE ID            CREATED             SIZE
@@ -272,7 +272,7 @@ alpine                     latest              055936d39205        4 weeks ago  
 
 Now push the image - 
 
-`sudo docker push gcr.io/[username]/k8soper:0.0.1`
+>`sudo docker push gcr.io/[username]/k8soper:0.0.1`
 
 This should give an output similar to - 
 
@@ -293,10 +293,10 @@ f1b5933fe4b5: Layer already exists
 
 Check the registry and verify that the image has been uploaded. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwOTkyNDUwOSwtODM3OTU2MzUzLC0yMD
-czMjAyMjc0LC04Mzc5NTYzNTMsLTE5MDU0MjMzMzYsNDAwNDUz
-NzMzLDE3Mjg5NjU5NTMsMTczMjQyNDQyNywyMDc2MDc2NTAzLC
-0yMDY2NzI5NzgsMTIxOTk3NjQ4Nyw4NzM3Mzc4NDIsLTkzMzg0
-MTI5MCwtMTAwMTMzMzAwMyw4NTEzMTM5MDEsMTA2OTcwNzIzMS
-wzNzQyNTYxODcsLTE4Mjk2NjI0NTddfQ==
+eyJoaXN0b3J5IjpbOTU2MTg1MjM1LC04Mzc5NTYzNTMsLTIwNz
+MyMDIyNzQsLTgzNzk1NjM1MywtMTkwNTQyMzMzNiw0MDA0NTM3
+MzMsMTcyODk2NTk1MywxNzMyNDI0NDI3LDIwNzYwNzY1MDMsLT
+IwNjY3Mjk3OCwxMjE5OTc2NDg3LDg3MzczNzg0MiwtOTMzODQx
+MjkwLC0xMDAxMzMzMDAzLDg1MTMxMzkwMSwxMDY5NzA3MjMxLD
+M3NDI1NjE4NywtMTgyOTY2MjQ1N119
 -->
