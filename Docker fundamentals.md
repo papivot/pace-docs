@@ -79,7 +79,11 @@ Deleted: sha256:af0b15c8625bb1938f1d7b17081031f649fd14e6b233688eea3c5483994a66a3
 ```
 
 ## Building your first container 
+
+#### Download the code from Github 
+
+Download the sample code from the repository provided in the example. This sample code will be used multiple times during the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUxMzEzOTAxLDEwNjk3MDcyMzEsMzc0Mj
-U2MTg3LC0xODI5NjYyNDU3XX0=
+eyJoaXN0b3J5IjpbMTYzMDU4MDg5Nyw4NTEzMTM5MDEsMTA2OT
+cwNzIzMSwzNzQyNTYxODcsLTE4Mjk2NjI0NTddfQ==
 -->
