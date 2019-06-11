@@ -22,11 +22,21 @@ should return something similar to -
 
 ## Executing your first container
 
+#### Step 1 - 
 `sudo docker run hello-world`
 
 should return something similar to this - 
-`
+```Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+1b930d010525: Pull complete
+Digest: sha256:0e11c388b664df8a27a901dce21eb89f11d8292f7fca1b3e3c4321bf7897bffe
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+...```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxODc5MTk2NywzNzQyNTYxODcsLTE4Mj
+eyJoaXN0b3J5IjpbMTU3NjY3ODgyMywzNzQyNTYxODcsLTE4Mj
 k2NjI0NTddfQ==
 -->
