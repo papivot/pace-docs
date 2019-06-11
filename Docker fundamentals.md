@@ -255,7 +255,7 @@ k8soper             0.0.1               414d93beb557        About an hour ago   
 alpine              latest              055936d39205        4 weeks ago         5.53MB
 ```
 
-Tag the image with the appropriate registry specific tags  - 
+Tag the image with the appropriate registry specific tags. For GCR we will use the format gcr.io / [username] - 
 
 `sudo docker tag 414d93beb557 gcr.io/[username]/k8soper:0.0.1`
 
@@ -293,7 +293,7 @@ f1b5933fe4b5: Layer already exists
 
 Check the registry and verify that the image has been uploaded. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2NjIzMzA0OCwtMTkwNTQyMzMzNiw0MD
+eyJoaXN0b3J5IjpbLTgzNzk1NjM1MywtMTkwNTQyMzMzNiw0MD
 A0NTM3MzMsMTcyODk2NTk1MywxNzMyNDI0NDI3LDIwNzYwNzY1
 MDMsLTIwNjY3Mjk3OCwxMjE5OTc2NDg3LDg3MzczNzg0MiwtOT
 MzODQxMjkwLC0xMDAxMzMzMDAzLDg1MTMxMzkwMSwxMDY5NzA3
