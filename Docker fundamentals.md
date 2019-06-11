@@ -7,8 +7,9 @@
 #### Step1 - Update apt
 `sudo apt-get update`
 
-#### Step 2 - 
+#### Step 2 - Install Docker packages
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDQ3NTkwNDQsLTE4Mjk2NjI0NTddfQ
-==
+eyJoaXN0b3J5IjpbMTE0OTk3NzYxMiwtMTgyOTY2MjQ1N119
 -->
