@@ -59,14 +59,16 @@ hello-world         latest              fce289e99eb9        5 months ago        
 #### Step 4 - Cleanup
 
 Use the **CONTAINER ID** captured in Step 2, to remove the container - 
-```shell 
+
+``shell 
 sudo docker rm 7bbe9e08ddef
-```
+``
 
 Use the **IMAGE ID** to remove the image from the local repository - 
-```shell 
+
+``shell 
 sudo docker rmi fce289e99eb9
-```
+``
 
 Should remove something like this -
 ```
@@ -78,6 +80,6 @@ Deleted: sha256:af0b15c8625bb1938f1d7b17081031f649fd14e6b233688eea3c5483994a66a3
 
 ## Building your first container 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTc4MTkwNTcsMTA2OTcwNzIzMSwzNz
-QyNTYxODcsLTE4Mjk2NjI0NTddfQ==
+eyJoaXN0b3J5IjpbLTg3MjM4NDU3LDEwNjk3MDcyMzEsMzc0Mj
+U2MTg3LC0xODI5NjYyNDU3XX0=
 -->
