@@ -267,11 +267,30 @@ gcr.io/pa-nverma/k8soper   0.0.1               414d93beb557        About an hour
 alpine                     latest              055936d39205        4 weeks ago         5.53MB
 ```
 
-Now push the ima
+Now push the image - 
+
+`sudo docker push gcr.io/[username]/k8soper:0.0.1`
+
+This should give an output similar to - 
+
+```shell
+The push refers to repository [gcr.io/pa-nverma/k8soper]
+c02522c797e1: Pushed
+382b23168923: Pushed
+97cfbf18e0ca: Pushed
+96b0e7a6d0d9: Pushed
+1f6e4ee237d7: Pushed
+ecf96d8d39cf: Pushed
+f8ed2a793d04: Pushed
+ac169c9860eb: Pushed
+d5f9e6c07599: Pushed
+f1b5933fe4b5: Layer already exists
+0.0.1: digest: sha256:3d76e9859e5559b62a5d8e16a600c2f418d85370118ae9e382bef57d01a4328e size: 2408
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ4OTU1OTkyLDQwMDQ1MzczMywxNzI4OT
-Y1OTUzLDE3MzI0MjQ0MjcsMjA3NjA3NjUwMywtMjA2NjcyOTc4
-LDEyMTk5NzY0ODcsODczNzM3ODQyLC05MzM4NDEyOTAsLTEwMD
-EzMzMwMDMsODUxMzEzOTAxLDEwNjk3MDcyMzEsMzc0MjU2MTg3
-LC0xODI5NjYyNDU3XX0=
+eyJoaXN0b3J5IjpbMTk5NzUwNzUzNyw0MDA0NTM3MzMsMTcyOD
+k2NTk1MywxNzMyNDI0NDI3LDIwNzYwNzY1MDMsLTIwNjY3Mjk3
+OCwxMjE5OTc2NDg3LDg3MzczNzg0MiwtOTMzODQxMjkwLC0xMD
+AxMzMzMDAzLDg1MTMxMzkwMSwxMDY5NzA3MjMxLDM3NDI1NjE4
+NywtMTgyOTY2MjQ1N119
 -->
