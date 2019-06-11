@@ -1,7 +1,5 @@
 # Docker fundamentals
 
-[TOCM]
-
 ## Docker installation
 
 **Note**: Most of the demos in this section are based on Ubuntu 18.4 running as an t2.medium EC2 instance. Please modify your environment accordingly.
@@ -295,10 +293,10 @@ f1b5933fe4b5: Layer already exists
 
 Check the registry and verify that the image has been uploaded. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzMyMDIyNzQsLTgzNzk1NjM1MywtMT
-kwNTQyMzMzNiw0MDA0NTM3MzMsMTcyODk2NTk1MywxNzMyNDI0
-NDI3LDIwNzYwNzY1MDMsLTIwNjY3Mjk3OCwxMjE5OTc2NDg3LD
-g3MzczNzg0MiwtOTMzODQxMjkwLC0xMDAxMzMzMDAzLDg1MTMx
-MzkwMSwxMDY5NzA3MjMxLDM3NDI1NjE4NywtMTgyOTY2MjQ1N1
-19
+eyJoaXN0b3J5IjpbLTgzNzk1NjM1MywtMjA3MzIwMjI3NCwtOD
+M3OTU2MzUzLC0xOTA1NDIzMzM2LDQwMDQ1MzczMywxNzI4OTY1
+OTUzLDE3MzI0MjQ0MjcsMjA3NjA3NjUwMywtMjA2NjcyOTc4LD
+EyMTk5NzY0ODcsODczNzM3ODQyLC05MzM4NDEyOTAsLTEwMDEz
+MzMwMDMsODUxMzEzOTAxLDEwNjk3MDcyMzEsMzc0MjU2MTg3LC
+0xODI5NjYyNDU3XX0=
 -->
