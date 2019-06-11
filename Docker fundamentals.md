@@ -5,17 +5,17 @@
 **Note**: Most of the demos in this section are based on Ubuntu 18.4 running as an t2.medium EC2 instance. Please modify your environment accordingly.
 
 #### Step1 - Update apt
-`sudo apt-get update`
+>`sudo apt-get update`
 
 #### Step 2 - Install Docker packages
-`sudo apt install docker.io`
+>`sudo apt install docker.io`
 
 #### Step 3 - Enable and start Docker service
-`sudo systemctl start docker`
-`sudo systemctl enable docker`
+>`sudo systemctl start docker`
+>`sudo systemctl enable docker`
 
 #### Step 4 - Verify Docker service is running
-`ps -eaf|grep docker`
+>`ps -eaf|grep docker`
 
 should return something similar to - 
 ```
@@ -25,7 +25,7 @@ root      4234     1  0 16:19 ?        00:00:00 /usr/bin/dockerd -H fd:// --cont
 ## Executing your first container
 
 #### Step 1 - Run Hello-world
-`sudo docker run hello-world`
+>`sudo docker run hello-world`
 
 should return something similar to this - 
 ```
@@ -40,7 +40,7 @@ This message shows that your installation appears to be working correctly.
 ... 
 ```
 #### Step 2 - View running containers
-`sudo docker ps -a`
+>`sudo docker ps -a`
 
 should return something similar to this - 
 ```
@@ -49,7 +49,7 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 ```
 
 #### Step 3 - View local image repository 
-`sudo docker images `
+>`sudo docker images `
 
 should return something similar to this - 
 ```
@@ -61,13 +61,13 @@ hello-world         latest              fce289e99eb9        5 months ago        
 
 Use the **CONTAINER ID** captured in Step 2, to remove the container - 
 
-` 
+>` 
 sudo docker rm 7bbe9e08ddef
 `
 
 Use the **IMAGE ID** to remove the image from the local repository - 
 
-` 
+>` 
 sudo docker rmi fce289e99eb9
 `
 
@@ -293,10 +293,10 @@ f1b5933fe4b5: Layer already exists
 
 Check the registry and verify that the image has been uploaded. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzNzk1NjM1MywtMjA3MzIwMjI3NCwtOD
-M3OTU2MzUzLC0xOTA1NDIzMzM2LDQwMDQ1MzczMywxNzI4OTY1
-OTUzLDE3MzI0MjQ0MjcsMjA3NjA3NjUwMywtMjA2NjcyOTc4LD
-EyMTk5NzY0ODcsODczNzM3ODQyLC05MzM4NDEyOTAsLTEwMDEz
-MzMwMDMsODUxMzEzOTAxLDEwNjk3MDcyMzEsMzc0MjU2MTg3LC
-0xODI5NjYyNDU3XX0=
+eyJoaXN0b3J5IjpbMTkwOTkyNDUwOSwtODM3OTU2MzUzLC0yMD
+czMjAyMjc0LC04Mzc5NTYzNTMsLTE5MDU0MjMzMzYsNDAwNDUz
+NzMzLDE3Mjg5NjU5NTMsMTczMjQyNDQyNywyMDc2MDc2NTAzLC
+0yMDY2NzI5NzgsMTIxOTk3NjQ4Nyw4NzM3Mzc4NDIsLTkzMzg0
+MTI5MCwtMTAwMTMzMzAwMyw4NTEzMTM5MDEsMTA2OTcwNzIzMS
+wzNzQyNTYxODcsLTE4Mjk2NjI0NTddfQ==
 -->
