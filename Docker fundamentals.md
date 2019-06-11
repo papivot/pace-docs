@@ -20,8 +20,13 @@
 should return something similar to - 
 `root      4234     1  0 16:19 ?        00:00:00 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock`
 
-## Running first 
+## Executing your first container
+
+`sudo docker run hello-world`
+
+should return something similar to this - 
+`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1NDE5NzgzNSwzNzQyNTYxODcsLTE4Mj
+eyJoaXN0b3J5IjpbMTMxODc5MTk2NywzNzQyNTYxODcsLTE4Mj
 k2NjI0NTddfQ==
 -->
