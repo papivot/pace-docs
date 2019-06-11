@@ -80,7 +80,7 @@ Deleted: sha256:af0b15c8625bb1938f1d7b17081031f649fd14e6b233688eea3c5483994a66a3
 
 ## Building your first container 
 
-#### Download the sample code from Github 
+#### Step 1 - Download the sample code from Github 
 
 Download the sample code from the repository provided in the example. This sample code will be used multiple times during the future demos. 
 
@@ -104,9 +104,13 @@ $> chmod +x kubectl
 
 Study the Dockerfile included on the k8s-operations folder and the syntax for the various commands. Additional details can be found in [Dockerfile Reference Page](https://docs.docker.com/engine/reference/builder/)
 
+#### Step 2 - Build the Docker image. 
+
+Run the following command to build the Docker image locally. This will save the image in the local repository with the tag of k8soper:0.0.1
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODczNzM3ODQyLC05MzM4NDEyOTAsLTEwMD
-EzMzMwMDMsODUxMzEzOTAxLDEwNjk3MDcyMzEsMzc0MjU2MTg3
-LC0xODI5NjYyNDU3XX0=
+eyJoaXN0b3J5IjpbMTIxOTk3NjQ4Nyw4NzM3Mzc4NDIsLTkzMz
+g0MTI5MCwtMTAwMTMzMzAwMyw4NTEzMTM5MDEsMTA2OTcwNzIz
+MSwzNzQyNTYxODcsLTE4Mjk2NjI0NTddfQ==
 -->
