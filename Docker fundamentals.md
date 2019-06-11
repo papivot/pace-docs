@@ -15,8 +15,13 @@
 `sudo systemctl enable docker`
 
 #### Step 4 - Verify Docker service is running
+`ps -eaf|grep docker`
 
+should return something similar to - 
+`root      4234     1  0 16:19 ?        00:00:00 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock`
+
+## Running first 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTA0Njg2NjcsMzc0MjU2MTg3LC0xOD
-I5NjYyNDU3XX0=
+eyJoaXN0b3J5IjpbLTU1NDE5NzgzNSwzNzQyNTYxODcsLTE4Mj
+k2NjI0NTddfQ==
 -->
