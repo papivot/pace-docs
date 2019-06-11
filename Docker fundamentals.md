@@ -295,9 +295,17 @@ Check the registry and verify that the image has been uploaded.
 
 #### Step 4 - Cleanup
 
-Clean up the internal docker regist
+Clean up the internal docker registry and remove the recently created local images.
+
+> `sudo docker images`
+
+```shell
+
+```
+
+> 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxOTE3NjIxNCwtMTcwNzc3Mjg4NSwtOD
+eyJoaXN0b3J5IjpbMTczMTQyNDY4MywtMTcwNzc3Mjg4NSwtOD
 M3OTU2MzUzLC0yMDczMjAyMjc0LC04Mzc5NTYzNTMsLTE5MDU0
 MjMzMzYsNDAwNDUzNzMzLDE3Mjg5NjU5NTMsMTczMjQyNDQyNy
 wyMDc2MDc2NTAzLC0yMDY2NzI5NzgsMTIxOTk3NjQ4Nyw4NzM3
