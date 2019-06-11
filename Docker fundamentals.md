@@ -28,7 +28,8 @@ root      4234     1  0 16:19 ?        00:00:00 /usr/bin/dockerd -H fd:// --cont
 `sudo docker run hello-world`
 
 should return something similar to this - 
-```Unable to find image 'hello-world:latest' locally
+```
+Unable to find image 'hello-world:latest' locally
 latest: Pulling from library/hello-world
 1b930d010525: Pull complete
 Digest: sha256:0e11c388b664df8a27a901dce21eb89f11d8292f7fca1b3e3c4321bf7897bffe
@@ -248,9 +249,9 @@ k8soper             0.0.1               414d93beb557        About an hour ago   
 alpine              latest              055936d39205        4 weeks ago         5.53MB
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyOTIyMzA1OSwxNzI4OTY1OTUzLDE3Mz
-I0MjQ0MjcsMjA3NjA3NjUwMywtMjA2NjcyOTc4LDEyMTk5NzY0
-ODcsODczNzM3ODQyLC05MzM4NDEyOTAsLTEwMDEzMzMwMDMsOD
-UxMzEzOTAxLDEwNjk3MDcyMzEsMzc0MjU2MTg3LC0xODI5NjYy
-NDU3XX0=
+eyJoaXN0b3J5IjpbNDAwNDUzNzMzLDE3Mjg5NjU5NTMsMTczMj
+QyNDQyNywyMDc2MDc2NTAzLC0yMDY2NzI5NzgsMTIxOTk3NjQ4
+Nyw4NzM3Mzc4NDIsLTkzMzg0MTI5MCwtMTAwMTMzMzAwMyw4NT
+EzMTM5MDEsMTA2OTcwNzIzMSwzNzQyNTYxODcsLTE4Mjk2NjI0
+NTddfQ==
 -->
