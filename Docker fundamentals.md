@@ -228,19 +228,21 @@ Execute the following command to configure gcloud to set the account settings an
 ```shell
 Go to the following link in your browser:
 
-    https://accounts.google.com/o/oauth2/auth?redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&prompt=select_account&response_type=code&client_id=32555940559.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fappengine.admin+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcompute+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Faccounts.reauth&access_type=offline
+    https://accounts.google.com/o/oauth2/auth?redirect_uri=.....
 
-
-Enter verification code: 4/ZgEwtiYo6mjJnpXAR_tBI5FGgFvfLxBmxcahocFoTWR0hIm3qCXa8go
+Enter verification code: 4/ZgEwtiYo.........
 WARNING: `gcloud auth login` no longer writes application default credentials.
 If you need to use ADC, see:
   gcloud auth application-default --help
 
-You are now logged in as [username@domai].
+You are now logged in as [username@domain.com].
+```
+
+Once you have authen
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM1MTcyOTY1LDE3Mjg5NjU5NTMsMTczMj
-QyNDQyNywyMDc2MDc2NTAzLC0yMDY2NzI5NzgsMTIxOTk3NjQ4
-Nyw4NzM3Mzc4NDIsLTkzMzg0MTI5MCwtMTAwMTMzMzAwMyw4NT
-EzMTM5MDEsMTA2OTcwNzIzMSwzNzQyNTYxODcsLTE4Mjk2NjI0
-NTddfQ==
+eyJoaXN0b3J5IjpbMTY0OTYwNTgyMywxNzI4OTY1OTUzLDE3Mz
+I0MjQ0MjcsMjA3NjA3NjUwMywtMjA2NjcyOTc4LDEyMTk5NzY0
+ODcsODczNzM3ODQyLC05MzM4NDEyOTAsLTEwMDEzMzMwMDMsOD
+UxMzEzOTAxLDEwNjk3MDcyMzEsMzc0MjU2MTg3LC0xODI5NjYy
+NDU3XX0=
 -->
