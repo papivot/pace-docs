@@ -96,10 +96,11 @@ remote: Compressing objects: 100% (24/24), done.
 remote: Total 29 (delta 15), reused 7 (delta 5), pack-reused 0
 Unpacking objects: 100% (29/29), done.
 $> cd k8s-operations/
+$> curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA5MjUxNDAzLC0xMDAxMzMzMDAzLDg1MT
-MxMzkwMSwxMDY5NzA3MjMxLDM3NDI1NjE4NywtMTgyOTY2MjQ1
-N119
+eyJoaXN0b3J5IjpbLTEwOTIzNzYyMTYsLTEwMDEzMzMwMDMsOD
+UxMzEzOTAxLDEwNjk3MDcyMzEsMzc0MjU2MTg3LC0xODI5NjYy
+NDU3XX0=
 -->
