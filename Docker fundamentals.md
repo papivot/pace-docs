@@ -36,8 +36,14 @@ Hello from Docker!
 This message shows that your installation appears to be working correctly.
 ... 
 ```
-#### Step 2 - 
+#### Step 2 - View running containers
+`sudo docker ps -a`
+
+should return something similar to this - 
+`
+
+`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3MTM3Nzg0OCwzNzQyNTYxODcsLTE4Mj
-k2NjI0NTddfQ==
+eyJoaXN0b3J5IjpbLTE1ODQ5NzE0NDQsMzc0MjU2MTg3LC0xOD
+I5NjYyNDU3XX0=
 -->
