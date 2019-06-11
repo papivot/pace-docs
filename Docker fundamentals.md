@@ -106,11 +106,88 @@ Study the Dockerfile included on the k8s-operations folder and the syntax for th
 
 #### Step 2 - Build the Docker image. 
 
-Run the following command to build the Docker image locally. This will save the image in the local repository with the tag of k8soper:0.0.1
+While in the k8s-operations folder, run the following command to build the Docker image locally. This will save the image in the local repository with the tag of k8soper:0.0.1
 
+`sudo docker build -t k8soper:0.0.1 .`
+
+The output would be similar to this - 
+
+```
+ ---> Running in cb4d59a8e413
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.9/community/x86_64/APKINDEX.tar.gz
+v3.9.4-24-g4e2ff29bbe [http://dl-cdn.alpinelinux.org/alpine/v3.9/main]
+v3.9.4-26-ga3169d5242 [http://dl-cdn.alpinelinux.org/alpine/v3.9/community]
+OK: 9770 distinct packages available
+(1/11) Installing libbz2 (1.0.6-r6)
+(2/11) Installing expat (2.2.6-r0)
+(3/11) Installing libffi (3.2.1-r6)
+(4/11) Installing gdbm (1.13-r1)
+(5/11) Installing xz-libs (5.2.4-r0)
+(6/11) Installing ncurses-terminfo-base (6.1_p20190105-r0)
+(7/11) Installing ncurses-terminfo (6.1_p20190105-r0)
+(8/11) Installing ncurses-libs (6.1_p20190105-r0)
+(9/11) Installing readline (7.0.003-r1)
+(10/11) Installing sqlite-libs (3.28.0-r0)
+(11/11) Installing python3 (3.6.8-r2)
+Executing busybox-1.29.3-r10.trigger
+OK: 68 MiB in 25 packages
+Collecting schedule
+  Downloading https://files.pythonhosted.org/packages/57/22/3a709462eb02412bd1145f6e53604f36bba191e3e4e397bea4a718fec38c/schedule-0.6.0-py2.py3-none-any.whl
+Installing collected packages: schedule
+Successfully installed schedule-0.6.0
+You are using pip version 18.1, however version 19.1.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Removing intermediate container cb4d59a8e413
+ ---> c95f096b985b
+Step 3/15 : RUN mkdir -p /usr/local/bin && mkdir -p /user/k8soper
+ ---> Running in 09e4033d644b
+Removing intermediate container 09e4033d644b
+ ---> c553a156cd9b
+Step 4/15 : ENV HOME=/user/k8soper
+ ---> Running in bc6412bccd70
+Removing intermediate container bc6412bccd70
+ ---> ef11160fcd57
+Step 5/15 : ADD ./kubectl /usr/local/bin/kubectl
+ ---> 0f709840e7bd
+Step 6/15 : ADD ./dumpconfig.sh /usr/local/bin/dumpconfig.sh
+ ---> 389186e81be2
+Step 7/15 : ADD ./exportjson.py /usr/local/bin/exportjson.py
+ ---> b3b56a68ebf1
+Step 8/15 : ADD ./dockerrun.sh /usr/local/bin/dockerrun.sh
+ ---> 42124b3d5ee4
+Step 9/15 : ADD ./runhttp.py /usr/local/bin/runhttp.py
+ ---> a916d709d0a7
+Step 10/15 : RUN chmod +x /usr/local/bin/kubectl 	&& chmod +x /usr/local/bin/dumpconfig.sh 	&& chmod +x /usr/local/bin/runhttp.py 	&& chmod +x /usr/local/bin/exportjson.py 	&& chmod +x /usr/local/bin/dockerrun.sh
+ ---> Running in 2fa2f43cf897
+Removing intermediate container 2fa2f43cf897
+ ---> b725ade0f54d
+Step 11/15 : RUN adduser k8soper -Du 9999 -h /user/k8soper
+ ---> Running in 15dbe8385e2a
+Removing intermediate container 15dbe8385e2a
+ ---> 9d6ec104e074
+Step 12/15 : USER k8soper
+ ---> Running in 2620fea722a7
+Removing intermediate container 2620fea722a7
+ ---> 0c82b851cc94
+Step 13/15 : WORKDIR /user/k8soper
+ ---> Running in 35b664b7c179
+Removing intermediate container 35b664b7c179
+ ---> a9de2932dcfc
+Step 14/15 : EXPOSE 8080
+ ---> Running in 6608779cb862
+Removing intermediate container 6608779cb862
+ ---> d55e90bf05ab
+Step 15/15 : CMD ["/usr/local/bin/dockerrun.sh"]
+ ---> Running in 6b058c3e884a
+Removing intermediate container 6b058c3e884a
+ ---> 414d93beb557
+Successfully built 414d93beb557
+Successfully tagged k8soper:0.0.1
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxOTk3NjQ4Nyw4NzM3Mzc4NDIsLTkzMz
-g0MTI5MCwtMTAwMTMzMzAwMyw4NTEzMTM5MDEsMTA2OTcwNzIz
-MSwzNzQyNTYxODcsLTE4Mjk2NjI0NTddfQ==
+eyJoaXN0b3J5IjpbLTg2MjE2NDkyNSwxMjE5OTc2NDg3LDg3Mz
+czNzg0MiwtOTMzODQxMjkwLC0xMDAxMzMzMDAzLDg1MTMxMzkw
+MSwxMDY5NzA3MjMxLDM3NDI1NjE4NywtMTgyOTY2MjQ1N119
 -->
