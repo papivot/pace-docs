@@ -58,10 +58,13 @@ hello-world         latest              fce289e99eb9        5 months ago        
 
 #### Step 4 - Cleanup
 
-Use the **strong text**CONTAINER ID 
+Use the **CONTAINER ID** captured in Step 2, to remove the container - 
+`sudo docker rm 7bbe9e08ddef`
+
+Use t
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4ODM4MDEwNywzNzQyNTYxODcsLTE4Mj
-k2NjI0NTddfQ==
+eyJoaXN0b3J5IjpbLTE3MzczMzY4NjAsMzc0MjU2MTg3LC0xOD
+I5NjYyNDU3XX0=
 -->
