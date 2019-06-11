@@ -300,12 +300,22 @@ Clean up the internal docker registry and remove the recently created local imag
 > `sudo docker images`
 
 ```shell
-
+REPOSITORY                 TAG                 IMAGE ID            CREATED             SIZE
+k8soper                    0.0.1               414d93beb557        4 hours ago         144MB
+gcr.io/pa-nverma/k8soper   0.0.1               414d93beb557        4 hours ago         144MB
+alpine                     latest              055936d39205        4 weeks ago         5.53MB
 ```
 
-> 
+> `sudo docker rmi gcr.io/pa-nverma/k8soper:0.0.1`
+
+```shell
+Untagged: gcr.io/pa-nverma/k8soper:0.0.1
+Untagged: gcr.io/pa-nverma/k8soper@sha256:3d76e9859e5559b62a5d8e16a600c2f418d85370118ae9e382bef57d01a4328e
+```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczMTQyNDY4MywtMTcwNzc3Mjg4NSwtOD
+eyJoaXN0b3J5IjpbMTkxNTM2OTY5MCwtMTcwNzc3Mjg4NSwtOD
 M3OTU2MzUzLC0yMDczMjAyMjc0LC04Mzc5NTYzNTMsLTE5MDU0
 MjMzMzYsNDAwNDUzNzMzLDE3Mjg5NjU5NTMsMTczMjQyNDQyNy
 wyMDc2MDc2NTAzLC0yMDY2NzI5NzgsMTIxOTk3NjQ4Nyw4NzM3
