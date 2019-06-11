@@ -82,7 +82,7 @@ Deleted: sha256:af0b15c8625bb1938f1d7b17081031f649fd14e6b233688eea3c5483994a66a3
 
 #### Step 1 - Download the sample code from Github 
 
-Download the sample code from the repository provided in the example. This sample code will be used multiple times during the future demos. 
+Download the sample code from the repository provided in the example. You may have to provie This sample code will be used multiple times during the future demos. 
 
 ```shell
 $> cd workshop
@@ -196,8 +196,8 @@ k8soper             0.0.1               414d93beb557        19 minutes ago      
 alpine              latest              055936d39205        4 weeks ago         5.53MB
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3NjA3NjUwMywtMjA2NjcyOTc4LDEyMT
-k5NzY0ODcsODczNzM3ODQyLC05MzM4NDEyOTAsLTEwMDEzMzMw
-MDMsODUxMzEzOTAxLDEwNjk3MDcyMzEsMzc0MjU2MTg3LC0xOD
-I5NjYyNDU3XX0=
+eyJoaXN0b3J5IjpbLTExMTgyMjM5OTEsMjA3NjA3NjUwMywtMj
+A2NjcyOTc4LDEyMTk5NzY0ODcsODczNzM3ODQyLC05MzM4NDEy
+OTAsLTEwMDEzMzMwMDMsODUxMzEzOTAxLDEwNjk3MDcyMzEsMz
+c0MjU2MTg3LC0xODI5NjYyNDU3XX0=
 -->
