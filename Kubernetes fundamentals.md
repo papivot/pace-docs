@@ -62,8 +62,27 @@ NAME                                   STATUS   ROLES    AGE   VERSION   INTERNA
 ```
 
 #### Common kubectl commands
+
+> `kubectl get pods`
+
+```shell
+NAME                     READY   STATUS    RESTARTS   AGE
+mysql-799956477c-8tm8x   1/1     Running   0          14d
+```
+
+> `kubectl get pods --all-namespaces`
+
+```shell
+NAMESPACE      NAME                                     READY   STATUS      RESTARTS   AGE
+default        mysql-799956477c-8tm8x                   1/1     Running     0          14d
+kube-ops       k8s-operations-5fcddbcf76-5b26c          1/1     Running     0          24d
+kube-ops       k8s-operations-5fcddbcf76-hnjsx          1/1     Running     0          24d
+kube-system    coredns-54586579f6-cpww8                 1/1     Running     0          28d
+kube-system    coredns-54586579f6-f57b9                 1/1     Running     0          28d
+...
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4Mzk1NDI3NiwxNjM1OTE4ODcwLDk5MT
-k1NTQ1Nyw0OTY2MDczNzksLTE4NjMxNDc2MTMsNzMwOTk4MTE2
-XX0=
+eyJoaXN0b3J5IjpbLTExMTgyMzA4OTEsMTE4Mzk1NDI3NiwxNj
+M1OTE4ODcwLDk5MTk1NTQ1Nyw0OTY2MDczNzksLTE4NjMxNDc2
+MTMsNzMwOTk4MTE2XX0=
 -->
