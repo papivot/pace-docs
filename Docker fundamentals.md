@@ -96,7 +96,7 @@ remote: Compressing objects: 100% (24/24), done.
 remote: Total 29 (delta 15), reused 7 (delta 5), pack-reused 0
 Unpacking objects: 100% (29/29), done.
 ```
-```
+```shell
 $> cd k8s-operations/
 $> curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
 $> chmod +x kubectl
@@ -106,7 +106,7 @@ Study the Dockerfile included on the k8s-operations folder and the syntax for th
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMzg0MTI5MCwtMTAwMTMzMzAwMyw4NT
-EzMTM5MDEsMTA2OTcwNzIzMSwzNzQyNTYxODcsLTE4Mjk2NjI0
-NTddfQ==
+eyJoaXN0b3J5IjpbODczNzM3ODQyLC05MzM4NDEyOTAsLTEwMD
+EzMzMwMDMsODUxMzEzOTAxLDEwNjk3MDcyMzEsMzc0MjU2MTg3
+LC0xODI5NjYyNDU3XX0=
 -->
