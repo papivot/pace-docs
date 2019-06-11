@@ -80,7 +80,7 @@ Deleted: sha256:af0b15c8625bb1938f1d7b17081031f649fd14e6b233688eea3c5483994a66a3
 
 ## Building your first container 
 
-#### Download the code from Github 
+#### Download the sample code from Github 
 
 Download the sample code from the repository provided in the example. This sample code will be used multiple times during the future demos. 
 
@@ -101,8 +101,10 @@ $> cd k8s-operations/
 $> curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
 $> chmod +x kubectl
 ```
+
+Study the Dockerfile included on the k8s-operations folder and the various configurations and 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3NzU5NTYzNiwtMTAwMTMzMzAwMyw4NT
+eyJoaXN0b3J5IjpbLTM3NTA0MDYxNCwtMTAwMTMzMzAwMyw4NT
 EzMTM5MDEsMTA2OTcwNzIzMSwzNzQyNTYxODcsLTE4Mjk2NjI0
 NTddfQ==
 -->
