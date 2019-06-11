@@ -81,8 +81,12 @@ kube-system    coredns-54586579f6-cpww8                 1/1     Running     0   
 kube-system    coredns-54586579f6-f57b9                 1/1     Running     0          28d
 ...
 ```
+
+> `kubectl describe pods [pod_name] -n [namespace]`
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTgyMzA4OTEsMTE4Mzk1NDI3NiwxNj
-M1OTE4ODcwLDk5MTk1NTQ1Nyw0OTY2MDczNzksLTE4NjMxNDc2
-MTMsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTAxMTM1NzI0OSwxMTgzOTU0Mjc2LDE2Mz
+U5MTg4NzAsOTkxOTU1NDU3LDQ5NjYwNzM3OSwtMTg2MzE0NzYx
+Myw3MzA5OTgxMTZdfQ==
 -->
