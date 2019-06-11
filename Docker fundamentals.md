@@ -48,8 +48,15 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 ```
 
 #### Step 3 - View local image repository 
-`sudo doc
+`sudo docker images `
+
+should return something similar to this - 
+```
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+hello-world         latest              fce289e99eb9        5 months ago        1.84kB
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwNDY3MzMwNCwzNzQyNTYxODcsLTE4Mj
+eyJoaXN0b3J5IjpbMTAwMzUxOTE0NiwzNzQyNTYxODcsLTE4Mj
 k2NjI0NTddfQ==
 -->
