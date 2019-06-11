@@ -8,8 +8,10 @@
 `sudo apt-get update`
 
 #### Step 2 - Install Docker packages
+`sudo apt install docker.io`
 
-
+#### Step 3 - Enable and sta
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0OTk3NzYxMiwtMTgyOTY2MjQ1N119
+eyJoaXN0b3J5IjpbLTE4MzQ1MDg3NTUsLTE4Mjk2NjI0NTddfQ
+==
 -->
