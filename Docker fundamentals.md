@@ -292,8 +292,12 @@ f1b5933fe4b5: Layer already exists
 ```
 
 Check the registry and verify that the image has been uploaded. 
+
+#### Step 4 - Cleanup
+
+Clean up the internal docker regist
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMzA4MTgzNSwtMTcwNzc3Mjg4NSwtOD
+eyJoaXN0b3J5IjpbMTgxOTE3NjIxNCwtMTcwNzc3Mjg4NSwtOD
 M3OTU2MzUzLC0yMDczMjAyMjc0LC04Mzc5NTYzNTMsLTE5MDU0
 MjMzMzYsNDAwNDUzNzMzLDE3Mjg5NjU5NTMsMTczMjQyNDQyNy
 wyMDc2MDc2NTAzLC0yMDY2NzI5NzgsMTIxOTk3NjQ4Nyw4NzM3
