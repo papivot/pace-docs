@@ -254,11 +254,22 @@ alpine              latest              055936d39205        4 weeks ago         
 
 Tag the image with the appropriate registry specific tags  - 
 
-`sudo docker tag 414d93beb557 gcr.io/pa-nverma/k8soper:0.0.1`
+`sudo docker tag 414d93beb557 gcr.io/[username]/k8soper:0.0.1`
 
+Make sure that the tag went into effect - 
 
+`sudo docker images`
+
+```shell
+REPOSITORY                 TAG                 IMAGE ID            CREATED             SIZE
+k8soper                    0.0.1               414d93beb557        About an hour ago   144MB
+gcr.io/pa-nverma/k8soper   0.0.1               414d93beb557        About an hour ago   144MB
+alpine                     latest              055936d39205        4 weeks ago         5.53MB
+```
+
+Now push the ima
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA4ODc0NDg0LDQwMDQ1MzczMywxNzI4OT
+eyJoaXN0b3J5IjpbODQ4OTU1OTkyLDQwMDQ1MzczMywxNzI4OT
 Y1OTUzLDE3MzI0MjQ0MjcsMjA3NjA3NjUwMywtMjA2NjcyOTc4
 LDEyMTk5NzY0ODcsODczNzM3ODQyLC05MzM4NDEyOTAsLTEwMD
 EzMzMwMDMsODUxMzEzOTAxLDEwNjk3MDcyMzEsMzc0MjU2MTg3
