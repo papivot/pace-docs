@@ -11,8 +11,8 @@
 >`sudo apt install docker.io`
 
 #### Step 3 - Enable and start Docker service
->`sudo systemctl start docker
->``sudo systemctl enable docker`
+>`sudo systemctl start docker`
+>`sudo systemctl enable docker`
 
 #### Step 4 - Verify Docker service is running
 >`ps -eaf|grep docker`
@@ -293,10 +293,10 @@ f1b5933fe4b5: Layer already exists
 
 Check the registry and verify that the image has been uploaded. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU2MTg1MjM1LC04Mzc5NTYzNTMsLTIwNz
-MyMDIyNzQsLTgzNzk1NjM1MywtMTkwNTQyMzMzNiw0MDA0NTM3
-MzMsMTcyODk2NTk1MywxNzMyNDI0NDI3LDIwNzYwNzY1MDMsLT
-IwNjY3Mjk3OCwxMjE5OTc2NDg3LDg3MzczNzg0MiwtOTMzODQx
-MjkwLC0xMDAxMzMzMDAzLDg1MTMxMzkwMSwxMDY5NzA3MjMxLD
-M3NDI1NjE4NywtMTgyOTY2MjQ1N119
+eyJoaXN0b3J5IjpbLTE3MDc3NzI4ODUsLTgzNzk1NjM1MywtMj
+A3MzIwMjI3NCwtODM3OTU2MzUzLC0xOTA1NDIzMzM2LDQwMDQ1
+MzczMywxNzI4OTY1OTUzLDE3MzI0MjQ0MjcsMjA3NjA3NjUwMy
+wtMjA2NjcyOTc4LDEyMTk5NzY0ODcsODczNzM3ODQyLC05MzM4
+NDEyOTAsLTEwMDEzMzMwMDMsODUxMzEzOTAxLDEwNjk3MDcyMz
+EsMzc0MjU2MTg3LC0xODI5NjYyNDU3XX0=
 -->
