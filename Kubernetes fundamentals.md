@@ -38,9 +38,27 @@ NAME                                   STATUS   ROLES    AGE   VERSION   INTERNA
 ...
 ```
 
+> `kubectl get nodes -o json`
+
+```shell
+{
+    "apiVersion": "v1",
+    "items": [
+        {
+            "apiVersion": "v1",
+            "kind": "Node",
+            "metadata": {
+                "annotations": {
+                    "node.alpha.kubernetes.io/ttl": "0",
+                    "volumes.kubernetes.io/controller-managed-attach-detach": "true"
+                },
+                "creationTimestamp": "2019-05-14T20:15:44Z",
+                "labels": {
+...
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNzM2NjczMSwxNjM1OTE4ODcwLDk5MT
-k1NTQ1Nyw0OTY2MDczNzksLTE4NjMxNDc2MTMsNzMwOTk4MTE2
-XX0=
+eyJoaXN0b3J5IjpbLTEzMjg0Mzc2ODUsMTYzNTkxODg3MCw5OT
+E5NTU0NTcsNDk2NjA3Mzc5LC0xODYzMTQ3NjEzLDczMDk5ODEx
+Nl19
 -->
