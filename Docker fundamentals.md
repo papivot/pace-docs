@@ -56,7 +56,10 @@ REPOSITORY          TAG                 IMAGE ID            CREATED             
 hello-world         latest              fce289e99eb9        5 months ago        1.84kB
 ```
 
+#### Step 4 - Cleanup
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwMzUxOTE0NiwzNzQyNTYxODcsLTE4Mj
+eyJoaXN0b3J5IjpbLTYyNDg0NzA2NSwzNzQyNTYxODcsLTE4Mj
 k2NjI0NTddfQ==
 -->
