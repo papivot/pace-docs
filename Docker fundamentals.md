@@ -185,9 +185,10 @@ Removing intermediate container 6b058c3e884a
 Successfully built 414d93beb557
 Successfully tagged k8soper:0.0.1
 ```
-Look at the above output and try to understand how each operation relates to 
+Look at the above output and try to understand how each operation relates to instru
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjY3Mjk3OCwxMjE5OTc2NDg3LDg3Mz
-czNzg0MiwtOTMzODQxMjkwLC0xMDAxMzMzMDAzLDg1MTMxMzkw
-MSwxMDY5NzA3MjMxLDM3NDI1NjE4NywtMTgyOTY2MjQ1N119
+eyJoaXN0b3J5IjpbNDUzMDEwNzU3LC0yMDY2NzI5NzgsMTIxOT
+k3NjQ4Nyw4NzM3Mzc4NDIsLTkzMzg0MTI5MCwtMTAwMTMzMzAw
+Myw4NTEzMTM5MDEsMTA2OTcwNzIzMSwzNzQyNTYxODcsLTE4Mj
+k2NjI0NTddfQ==
 -->
