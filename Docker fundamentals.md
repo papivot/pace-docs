@@ -203,10 +203,26 @@ alpine              latest              055936d39205        4 weeks ago         
 Authenticate to the registry - 
 `sudo gcloud auth configure-docker`
 
+The following settings will be added to your Docker config file
+located at [/home/ubuntu/.docker/config.json]:
+ {
+  "credHelpers": {
+    "gcr.io": "gcloud",
+    "us.gcr.io": "gcloud",
+    "eu.gcr.io": "gcloud",
+    "asia.gcr.io": "gcloud",
+    "staging-k8s.gcr.io": "gcloud",
+    "marketplace.gcr.io": "gcloud"
+  }
+}
 
+Do you want to continue (Y/n)?  Y
+
+Docker configuration file updated.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyODk2NTk1MywxNzMyNDI0NDI3LDIwNz
-YwNzY1MDMsLTIwNjY3Mjk3OCwxMjE5OTc2NDg3LDg3MzczNzg0
-MiwtOTMzODQxMjkwLC0xMDAxMzMzMDAzLDg1MTMxMzkwMSwxMD
-Y5NzA3MjMxLDM3NDI1NjE4NywtMTgyOTY2MjQ1N119
+eyJoaXN0b3J5IjpbLTg2Njg1MDg3MCwxNzI4OTY1OTUzLDE3Mz
+I0MjQ0MjcsMjA3NjA3NjUwMywtMjA2NjcyOTc4LDEyMTk5NzY0
+ODcsODczNzM3ODQyLC05MzM4NDEyOTAsLTEwMDEzMzMwMDMsOD
+UxMzEzOTAxLDEwNjk3MDcyMzEsMzc0MjU2MTg3LC0xODI5NjYy
+NDU3XX0=
 -->
