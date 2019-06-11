@@ -58,8 +58,10 @@ hello-world         latest              fce289e99eb9        5 months ago        
 
 #### Step 4 - Cleanup
 
+Use the **strong text**CONTAINER ID 
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyNDg0NzA2NSwzNzQyNTYxODcsLTE4Mj
+eyJoaXN0b3J5IjpbMTE4ODM4MDEwNywzNzQyNTYxODcsLTE4Mj
 k2NjI0NTddfQ==
 -->
