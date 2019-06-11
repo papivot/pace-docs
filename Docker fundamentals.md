@@ -201,8 +201,11 @@ alpine              latest              055936d39205        4 weeks ago         
 **Note** This process may differ for different external registries. While the process is similar, whereby the Docker daemon needs to authenticate to the external registry first and then push the image to the external registry. The authentication process may vary for each registry. We will be pushing the image to GCR in this example. Pushing images to Harbor will be discussed later in the workshop. 
 
 Authenticate to the registry - 
+`sudo gcloud auth configure-docker`
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5ODY0NTkyMSwxNzMyNDI0NDI3LDIwNz
+eyJoaXN0b3J5IjpbMTcyODk2NTk1MywxNzMyNDI0NDI3LDIwNz
 YwNzY1MDMsLTIwNjY3Mjk3OCwxMjE5OTc2NDg3LDg3MzczNzg0
 MiwtOTMzODQxMjkwLC0xMDAxMzMzMDAzLDg1MTMxMzkwMSwxMD
 Y5NzA3MjMxLDM3NDI1NjE4NywtMTgyOTY2MjQ1N119
