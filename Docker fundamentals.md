@@ -312,14 +312,24 @@ alpine                     latest              055936d39205        4 weeks ago  
 Untagged: gcr.io/pa-nverma/k8soper:0.0.1
 Untagged: gcr.io/pa-nverma/k8soper@sha256:3d76e9859e5559b62a5d8e16a600c2f418d85370118ae9e382bef57d01a4328e
 ```
+> `sudo docker rmi k8soper:0.0.1`
+
+```shell
+Untagged: k8soper:0.0.1
+Deleted: sha256:414d93beb557edab8e5bb2cdebb0807e060d427ec9a2a27bf5750d612b2325bf
+Deleted: sha256:d55e90bf05abf45589ee7cd27ba7456b14b7288816444c9bf358c4913a44765a
+Deleted: sha256:a9de2932dcfcde555daca1023fa0cbeddd4547bb94c60c877140bbb6e993e5d4
+...
+```
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNTM2OTY5MCwtMTcwNzc3Mjg4NSwtOD
-M3OTU2MzUzLC0yMDczMjAyMjc0LC04Mzc5NTYzNTMsLTE5MDU0
-MjMzMzYsNDAwNDUzNzMzLDE3Mjg5NjU5NTMsMTczMjQyNDQyNy
-wyMDc2MDc2NTAzLC0yMDY2NzI5NzgsMTIxOTk3NjQ4Nyw4NzM3
-Mzc4NDIsLTkzMzg0MTI5MCwtMTAwMTMzMzAwMyw4NTEzMTM5MD
-EsMTA2OTcwNzIzMSwzNzQyNTYxODcsLTE4Mjk2NjI0NTddfQ==
+eyJoaXN0b3J5IjpbLTE0MTMxMTU1NzUsLTE3MDc3NzI4ODUsLT
+gzNzk1NjM1MywtMjA3MzIwMjI3NCwtODM3OTU2MzUzLC0xOTA1
+NDIzMzM2LDQwMDQ1MzczMywxNzI4OTY1OTUzLDE3MzI0MjQ0Mj
+csMjA3NjA3NjUwMywtMjA2NjcyOTc4LDEyMTk5NzY0ODcsODcz
+NzM3ODQyLC05MzM4NDEyOTAsLTEwMDEzMzMwMDMsODUxMzEzOT
+AxLDEwNjk3MDcyMzEsMzc0MjU2MTg3LC0xODI5NjYyNDU3XX0=
 
 -->
