@@ -102,9 +102,9 @@ $> curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s 
 $> chmod +x kubectl
 ```
 
-Study the Dockerfile included on the k8s-operations folder and the various configurations and 
+Study the Dockerfile included on the k8s-operations folder and the syntax for the various commands. More reference can be found [Dockerfile refere](https://docs.docker.com/engine/reference/builder/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3NTA0MDYxNCwtMTAwMTMzMzAwMyw4NT
-EzMTM5MDEsMTA2OTcwNzIzMSwzNzQyNTYxODcsLTE4Mjk2NjI0
-NTddfQ==
+eyJoaXN0b3J5IjpbLTE1MzQ4Njc4MDksLTEwMDEzMzMwMDMsOD
+UxMzEzOTAxLDEwNjk3MDcyMzEsMzc0MjU2MTg3LC0xODI5NjYy
+NDU3XX0=
 -->
