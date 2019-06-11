@@ -2,7 +2,7 @@
 
 ## Kubectl fundamentals
 
-To check is a valid kubeconfig file exists and kubectl get connect to the cluster - 
+To check is a valid kubeconfig file exists and kubectl get connect to the cluster using the config file ($HOME/.kube/config) - 
 >`kubectl version`
 
 If there are issues connecting with the K8s cluster, the output would be similar to this - 
@@ -18,8 +18,9 @@ Client Version: version.Info{Major:"1", Minor:"14", GitVersion:"v1.14.3", GitCom
 Server Version: version.Info{Major:"1", Minor:"13", GitVersion:"v1.13.5", GitCommit:"2166946f41b36dea2c4626f90a77706f426cdea2", GitTreeState:"clean", BuildDate:"2019-03-25T15:19:22Z", GoVersion:"go1.11.5", Compiler:"gc", Platform:"linux/amd64"}
 ```
 
-> Written with [StackEdit](https://stackedit.io/).
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg3ODEzMjYwLDk5MTk1NTQ1Nyw0OTY2MD
-czNzksLTE4NjMxNDc2MTMsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTYzNTkxODg3MCw5OTE5NTU0NTcsNDk2Nj
+A3Mzc5LC0xODYzMTQ3NjEzLDczMDk5ODExNl19
 -->
