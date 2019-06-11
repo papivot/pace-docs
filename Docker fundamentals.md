@@ -82,8 +82,23 @@ Deleted: sha256:af0b15c8625bb1938f1d7b17081031f649fd14e6b233688eea3c5483994a66a3
 
 #### Download the code from Github 
 
-Download the sample code from the repository provided in the example. This sample code will be used multiple times during the 
+Download the sample code from the repository provided in the example. This sample code will be used multiple times during the future demos. 
+
+```shell
+cd workshop
+git clone https://github.com/papivot/k8s-operations.git
+Cloning into 'k8s-operations'...
+Username for 'https://github.com': nverma@pivotal.io
+Password for 'https://nverma@pivotal.io@github.com':
+remote: Enumerating objects: 29, done.
+remote: Counting objects: 100% (29/29), done.
+remote: Compressing objects: 100% (24/24), done.
+remote: Total 29 (delta 15), reused 7 (delta 5), pack-reused 0
+Unpacking objects: 100% (29/29), done.
+cd k8s-operations/
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzMDU4MDg5Nyw4NTEzMTM5MDEsMTA2OT
-cwNzIzMSwzNzQyNTYxODcsLTE4Mjk2NjI0NTddfQ==
+eyJoaXN0b3J5IjpbLTEwMDEzMzMwMDMsODUxMzEzOTAxLDEwNj
+k3MDcyMzEsMzc0MjU2MTg3LC0xODI5NjYyNDU3XX0=
 -->
