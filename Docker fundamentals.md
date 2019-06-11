@@ -221,11 +221,26 @@ Do you want to continue (Y/n)?  Y
 
 Docker configuration file updated.
 ```
-Execute the following command to configure gcloud to set the a
+Execute the following command to configure gcloud to set the account settings and credentials - 
+
+`gcloud auth login`
+
+```shell
+Go to the following link in your browser:
+
+    https://accounts.google.com/o/oauth2/auth?redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&prompt=select_account&response_type=code&client_id=32555940559.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fappengine.admin+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcompute+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Faccounts.reauth&access_type=offline
+
+
+Enter verification code: 4/ZgEwtiYo6mjJnpXAR_tBI5FGgFvfLxBmxcahocFoTWR0hIm3qCXa8go
+WARNING: `gcloud auth login` no longer writes application default credentials.
+If you need to use ADC, see:
+  gcloud auth application-default --help
+
+You are now logged in as [username@domai].
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTkzMDcyMjIsMTcyODk2NTk1MywxNz
-MyNDI0NDI3LDIwNzYwNzY1MDMsLTIwNjY3Mjk3OCwxMjE5OTc2
-NDg3LDg3MzczNzg0MiwtOTMzODQxMjkwLC0xMDAxMzMzMDAzLD
-g1MTMxMzkwMSwxMDY5NzA3MjMxLDM3NDI1NjE4NywtMTgyOTY2
-MjQ1N119
+eyJoaXN0b3J5IjpbNjM1MTcyOTY1LDE3Mjg5NjU5NTMsMTczMj
+QyNDQyNywyMDc2MDc2NTAzLC0yMDY2NzI5NzgsMTIxOTk3NjQ4
+Nyw4NzM3Mzc4NDIsLTkzMzg0MTI5MCwtMTAwMTMzMzAwMyw4NT
+EzMTM5MDEsMTA2OTcwNzIzMSwzNzQyNTYxODcsLTE4Mjk2NjI0
+NTddfQ==
 -->
