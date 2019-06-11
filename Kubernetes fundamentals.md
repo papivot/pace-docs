@@ -2,6 +2,8 @@
 
 ## Kubectl fundamentals
 
+#### Validate connectivity to cluster
+
 To check is a valid kubeconfig file exists and kubectl get connect to the cluster using the config file ($HOME/.kube/config) - 
 >`kubectl version`
 
@@ -58,7 +60,7 @@ NAME                                   STATUS   ROLES    AGE   VERSION   INTERNA
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjg0Mzc2ODUsMTYzNTkxODg3MCw5OT
-E5NTU0NTcsNDk2NjA3Mzc5LC0xODYzMTQ3NjEzLDczMDk5ODEx
-Nl19
+eyJoaXN0b3J5IjpbODc5MDAxNTk3LDE2MzU5MTg4NzAsOTkxOT
+U1NDU3LDQ5NjYwNzM3OSwtMTg2MzE0NzYxMyw3MzA5OTgxMTZd
+fQ==
 -->
