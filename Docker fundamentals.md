@@ -13,6 +13,10 @@
 #### Step 3 - Enable and start Docker service
 `sudo systemctl start docker`
 `sudo systemctl enable docker`
+
+#### Step 4 - Verify Docker service is running
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc0MjU2MTg3LC0xODI5NjYyNDU3XX0=
+eyJoaXN0b3J5IjpbLTEwOTA0Njg2NjcsMzc0MjU2MTg3LC0xOD
+I5NjYyNDU3XX0=
 -->
