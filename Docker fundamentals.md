@@ -97,6 +97,9 @@ remote: Compressing objects: 100% (24/24), done.
 remote: Total 29 (delta 15), reused 7 (delta 5), pack-reused 0
 Unpacking objects: 100% (29/29), done.
 ```
+
+Download the **kubectl** binary as its required by this specific container image. 
+
 ```shell
 $> cd k8s-operations/
 $> curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
@@ -290,9 +293,9 @@ f1b5933fe4b5: Layer already exists
 
 Check the registry and verify that the image has been uploaded. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDU0MjMzMzYsNDAwNDUzNzMzLDE3Mj
-g5NjU5NTMsMTczMjQyNDQyNywyMDc2MDc2NTAzLC0yMDY2NzI5
-NzgsMTIxOTk3NjQ4Nyw4NzM3Mzc4NDIsLTkzMzg0MTI5MCwtMT
-AwMTMzMzAwMyw4NTEzMTM5MDEsMTA2OTcwNzIzMSwzNzQyNTYx
-ODcsLTE4Mjk2NjI0NTddfQ==
+eyJoaXN0b3J5IjpbLTY2NjIzMzA0OCwtMTkwNTQyMzMzNiw0MD
+A0NTM3MzMsMTcyODk2NTk1MywxNzMyNDI0NDI3LDIwNzYwNzY1
+MDMsLTIwNjY3Mjk3OCwxMjE5OTc2NDg3LDg3MzczNzg0MiwtOT
+MzODQxMjkwLC0xMDAxMzMzMDAzLDg1MTMxMzkwMSwxMDY5NzA3
+MjMxLDM3NDI1NjE4NywtMTgyOTY2MjQ1N119
 -->
