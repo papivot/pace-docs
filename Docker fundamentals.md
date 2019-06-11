@@ -201,9 +201,8 @@ alpine              latest              055936d39205        4 weeks ago         
 
 **Note** This process may differ for different external registries. While the process is similar, whereby the Docker daemon needs to authenticate to the external registry first and then push the image to the external registry. The authentication process may vary for each registry. We will be pushing the image to GCR in this example. Pushing images to Harbor will be discussed later in the workshop. 
 
- - [ ] Authenticate to 
+ - [ ] Authenticate to GCR
 
-Authenticate to GCR  - 
 `sudo gcloud auth configure-docker`
 
 ```shell
@@ -241,7 +240,9 @@ If you need to use ADC, see:
 You are now logged in as [username@domain.com].
 ```
 
-Once you have authenticated to the registry, its now time to push the image. These process should be similar for all registries. Grab the image ID that you want to push. In this case the value is - 414d93beb557
+ - [ ] Tag and push image
+
+Once you have authenticated to the registry, it is time to push the image. These process should be similar for all registries. Grab the image ID that you want to push. In this case the value is - 414d93beb557
 
 `sudo docker images`
 
@@ -251,9 +252,9 @@ k8soper             0.0.1               414d93beb557        About an hour ago   
 alpine              latest              055936d39205        4 weeks ago         5.53MB
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4NDYzMjE3OCw0MDA0NTM3MzMsMTcyOD
-k2NTk1MywxNzMyNDI0NDI3LDIwNzYwNzY1MDMsLTIwNjY3Mjk3
-OCwxMjE5OTc2NDg3LDg3MzczNzg0MiwtOTMzODQxMjkwLC0xMD
-AxMzMzMDAzLDg1MTMxMzkwMSwxMDY5NzA3MjMxLDM3NDI1NjE4
-NywtMTgyOTY2MjQ1N119
+eyJoaXN0b3J5IjpbLTEyNzAzOTM5MzUsNDAwNDUzNzMzLDE3Mj
+g5NjU5NTMsMTczMjQyNDQyNywyMDc2MDc2NTAzLC0yMDY2NzI5
+NzgsMTIxOTk3NjQ4Nyw4NzM3Mzc4NDIsLTkzMzg0MTI5MCwtMT
+AwMTMzMzAwMyw4NTEzMTM5MDEsMTA2OTcwNzIzMSwzNzQyNTYx
+ODcsLTE4Mjk2NjI0NTddfQ==
 -->
