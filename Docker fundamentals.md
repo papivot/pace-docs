@@ -197,9 +197,11 @@ alpine              latest              055936d39205        4 weeks ago         
 ```
 
 #### Step 3 - Push the image to external repository. 
+
+**Note** This process may differ for different external registries. While the process is similar, whereby the Docker daemon needs to authenticate to the external registry first and then push the image to the external registry. The aui
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczMjQyNDQyNywyMDc2MDc2NTAzLC0yMD
-Y2NzI5NzgsMTIxOTk3NjQ4Nyw4NzM3Mzc4NDIsLTkzMzg0MTI5
-MCwtMTAwMTMzMzAwMyw4NTEzMTM5MDEsMTA2OTcwNzIzMSwzNz
-QyNTYxODcsLTE4Mjk2NjI0NTddfQ==
+eyJoaXN0b3J5IjpbLTE2NDIwODM4MDksMTczMjQyNDQyNywyMD
+c2MDc2NTAzLC0yMDY2NzI5NzgsMTIxOTk3NjQ4Nyw4NzM3Mzc4
+NDIsLTkzMzg0MTI5MCwtMTAwMTMzMzAwMyw4NTEzMTM5MDEsMT
+A2OTcwNzIzMSwzNzQyNTYxODcsLTE4Mjk2NjI0NTddfQ==
 -->
