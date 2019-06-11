@@ -34,19 +34,10 @@ Status: Downloaded newer image for hello-world:latest
 
 Hello from Docker!
 This message shows that your installation appears to be working correctly.
-... ```
-Unable to find image 'hello-world:latest' locally
-latest: Pulling from library/hello-world
-1b930d010525: Pull complete
-Digest: sha256:0e11c388b664df8a27a901dce21eb89f11d8292f7fca1b3e3c4321bf7897bffe
-Status: Downloaded newer image for hello-world:latest
-
-Hello from Docker!
-This message shows that your installation appears to be working correctly.
-...
-
-#### Step 2 - Check 
+... 
+```
+#### Step 2 - 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzU0ODYxNTQsMzc0MjU2MTg3LC0xOD
-I5NjYyNDU3XX0=
+eyJoaXN0b3J5IjpbLTQ3MTM3Nzg0OCwzNzQyNTYxODcsLTE4Mj
+k2NjI0NTddfQ==
 -->
