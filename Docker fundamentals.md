@@ -61,10 +61,19 @@ hello-world         latest              fce289e99eb9        5 months ago        
 Use the **CONTAINER ID** captured in Step 2, to remove the container - 
 `sudo docker rm 7bbe9e08ddef`
 
-Use t
+Use the **IMAGE ID** to remove the image from the local repository - 
+`sudo docker rmi fce289e99eb9`
+
+Should remove something like this -
+```
+Untagged: hello-world:latest
+Untagged: hello-world@sha256:0e11c388b664df8a27a901dce21eb89f11d8292f7fca1b3e3c4321bf7897bffe
+Deleted: sha256:fce289e99eb9bca977dae136fbe2a82b6b7d4c372474c9235adc1741675f587e
+Deleted: sha256:af0b15c8625bb1938f1d7b17081031f649fd14e6b233688eea3c5483994a66a3
+```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzczMzY4NjAsMzc0MjU2MTg3LC0xOD
-I5NjYyNDU3XX0=
+eyJoaXN0b3J5IjpbMjA5NTY2MTM2MSwzNzQyNTYxODcsLTE4Mj
+k2NjI0NTddfQ==
 -->
