@@ -18,7 +18,9 @@
 `ps -eaf|grep docker`
 
 should return something similar to - 
-`root      4234     1  0 16:19 ?        00:00:00 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock`
+```
+root      4234     1  0 16:19 ?        00:00:00 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+```
 
 ## Executing your first container
 
@@ -40,10 +42,14 @@ This message shows that your installation appears to be working correctly.
 `sudo docker ps -a`
 
 should return something similar to this - 
-`
+```
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                     PORTS               NAMES
+7bbe9e08ddef        hello-world         "/hello"            4 minutes ago       Exited (0) 4 minutes ago                       pensive_thompson
+```
 
-`
+#### Step 3 - View local image repository 
+`sudo doc
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODQ5NzE0NDQsMzc0MjU2MTg3LC0xOD
-I5NjYyNDU3XX0=
+eyJoaXN0b3J5IjpbMjEwNDY3MzMwNCwzNzQyNTYxODcsLTE4Mj
+k2NjI0NTddfQ==
 -->
