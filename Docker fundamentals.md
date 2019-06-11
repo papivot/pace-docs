@@ -39,6 +39,8 @@ Hello from Docker!
 This message shows that your installation appears to be working correctly.
 ... 
 ```
+Congratulations!!! You ran your first container. 
+
 #### Step 2 - View running containers
 >`sudo docker ps -a`
 
@@ -189,7 +191,7 @@ Removing intermediate container 6b058c3e884a
 Successfully built 414d93beb557
 Successfully tagged k8soper:0.0.1
 ```
-Look at the above output and try to understand how each operation relates to instructions provided in the Dockerfile. In this example, the final output is an image with an ID of **414d93beb557** and a tag of **k8soper:0.0.1**. This can be verified by the following command - 
+Look at the above output and try to understand how each operations (steps) relates to relevant instructions provided in the Dockerfile. In this example, the final output is an image with an ID of **414d93beb557** and a tag of **k8soper:0.0.1**. This can be verified by the following command - 
 
 >`sudo docker images`
 
@@ -221,9 +223,7 @@ located at [/home/ubuntu/.docker/config.json]:
     "marketplace.gcr.io": "gcloud"
   }
 }
-
 Do you want to continue (Y/n)?  Y
-
 Docker configuration file updated.
 ```
 Execute the following command to configure gcloud to set the account settings and credentials - 
@@ -293,10 +293,11 @@ f1b5933fe4b5: Layer already exists
 
 Check the registry and verify that the image has been uploaded. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDc3NzI4ODUsLTgzNzk1NjM1MywtMj
-A3MzIwMjI3NCwtODM3OTU2MzUzLC0xOTA1NDIzMzM2LDQwMDQ1
-MzczMywxNzI4OTY1OTUzLDE3MzI0MjQ0MjcsMjA3NjA3NjUwMy
-wtMjA2NjcyOTc4LDEyMTk5NzY0ODcsODczNzM3ODQyLC05MzM4
-NDEyOTAsLTEwMDEzMzMwMDMsODUxMzEzOTAxLDEwNjk3MDcyMz
-EsMzc0MjU2MTg3LC0xODI5NjYyNDU3XX0=
+eyJoaXN0b3J5IjpbLTcxMzA4MTgzNSwtMTcwNzc3Mjg4NSwtOD
+M3OTU2MzUzLC0yMDczMjAyMjc0LC04Mzc5NTYzNTMsLTE5MDU0
+MjMzMzYsNDAwNDUzNzMzLDE3Mjg5NjU5NTMsMTczMjQyNDQyNy
+wyMDc2MDc2NTAzLC0yMDY2NzI5NzgsMTIxOTk3NjQ4Nyw4NzM3
+Mzc4NDIsLTkzMzg0MTI5MCwtMTAwMTMzMzAwMyw4NTEzMTM5MD
+EsMTA2OTcwNzIzMSwzNzQyNTYxODcsLTE4Mjk2NjI0NTddfQ==
+
 -->
