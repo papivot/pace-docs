@@ -238,11 +238,12 @@ If you need to use ADC, see:
 You are now logged in as [username@domain.com].
 ```
 
-Once you have authen
+Once you have authenticated to the registry, its now time to push the image. These process should be similar for all registries. Grab the image ID that you want to push. In this case it is 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0OTYwNTgyMywxNzI4OTY1OTUzLDE3Mz
-I0MjQ0MjcsMjA3NjA3NjUwMywtMjA2NjcyOTc4LDEyMTk5NzY0
-ODcsODczNzM3ODQyLC05MzM4NDEyOTAsLTEwMDEzMzMwMDMsOD
-UxMzEzOTAxLDEwNjk3MDcyMzEsMzc0MjU2MTg3LC0xODI5NjYy
-NDU3XX0=
+eyJoaXN0b3J5IjpbNjI4MzQ0OTQ0LDE3Mjg5NjU5NTMsMTczMj
+QyNDQyNywyMDc2MDc2NTAzLC0yMDY2NzI5NzgsMTIxOTk3NjQ4
+Nyw4NzM3Mzc4NDIsLTkzMzg0MTI5MCwtMTAwMTMzMzAwMyw4NT
+EzMTM5MDEsMTA2OTcwNzIzMSwzNzQyNTYxODcsLTE4Mjk2NjI0
+NTddfQ==
 -->
