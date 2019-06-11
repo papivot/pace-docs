@@ -95,12 +95,14 @@ remote: Counting objects: 100% (29/29), done.
 remote: Compressing objects: 100% (24/24), done.
 remote: Total 29 (delta 15), reused 7 (delta 5), pack-reused 0
 Unpacking objects: 100% (29/29), done.
+```
+```
 $> cd k8s-operations/
 $> curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
-
+$> chmod +x kubectl
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTIzNzYyMTYsLTEwMDEzMzMwMDMsOD
-UxMzEzOTAxLDEwNjk3MDcyMzEsMzc0MjU2MTg3LC0xODI5NjYy
-NDU3XX0=
+eyJoaXN0b3J5IjpbMTE3NzU5NTYzNiwtMTAwMTMzMzAwMyw4NT
+EzMTM5MDEsMTA2OTcwNzIzMSwzNzQyNTYxODcsLTE4Mjk2NjI0
+NTddfQ==
 -->
