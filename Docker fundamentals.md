@@ -10,8 +10,9 @@
 #### Step 2 - Install Docker packages
 `sudo apt install docker.io`
 
-#### Step 3 - Enable and sta
+#### Step 3 - Enable and start Docker service
+`sudo systemctl start docker`
+sudo systemctl enable docker`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzQ1MDg3NTUsLTE4Mjk2NjI0NTddfQ
-==
+eyJoaXN0b3J5IjpbMzM1MzA1NjUsLTE4Mjk2NjI0NTddfQ==
 -->
