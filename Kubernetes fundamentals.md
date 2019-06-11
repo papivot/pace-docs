@@ -81,12 +81,31 @@ kube-system    coredns-54586579f6-cpww8                 1/1     Running     0   
 kube-system    coredns-54586579f6-f57b9                 1/1     Running     0          28d
 ...
 ```
+>`kubectl get namespaces`
+
+```shell
+NAME            STATUS   AGE
+default         Active   28d
+kube-ops        Active   24d
+kube-public     Active   28d
+kube-system     Active   28d
+...
+```
 
 > `kubectl describe pods [pod_name] -n [namespace]`
 
+```shell
+Name:               mysql-799956477c-8tm8x
+Namespace:          default
+Priority:           0
+PriorityClassName:  <none>
+Node:               d2560b7d-9522-4662-a342-dfbfe5946641/172.28.0.7
+Start Time:         Mon, 27 May 2019 22:05:01 -0400
+...
 ```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxMTM1NzI0OSwxMTgzOTU0Mjc2LDE2Mz
+eyJoaXN0b3J5IjpbMTAxOTAwOTg5MSwxMTgzOTU0Mjc2LDE2Mz
 U5MTg4NzAsOTkxOTU1NDU3LDQ5NjYwNzM3OSwtMTg2MzE0NzYx
 Myw3MzA5OTgxMTZdfQ==
 -->
