@@ -242,7 +242,7 @@ You are now logged in as [username@domain.com].
 
  - [ ] Tag and push image
 
-Once you have authenticated to the registry, it is time to push the image. These process should be similar for all registries. Grab the image ID that you want to push. In this case the value is - 414d93beb557
+Once you have authenticated to the registry, it is time to push the image. These steps should be similar for all registries. Grab the image ID that you want to push. In this case the value is - **414d93beb557**
 
 `sudo docker images`
 
@@ -251,10 +251,16 @@ REPOSITORY          TAG                 IMAGE ID            CREATED             
 k8soper             0.0.1               414d93beb557        About an hour ago   144MB
 alpine              latest              055936d39205        4 weeks ago         5.53MB
 ```
+
+Tag the image with the appropriate registry specific tags  - 
+
+`sudo docker tag 414d93beb557 gcr.io/pa-nverma/k8soper:0.0.1`
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzAzOTM5MzUsNDAwNDUzNzMzLDE3Mj
-g5NjU5NTMsMTczMjQyNDQyNywyMDc2MDc2NTAzLC0yMDY2NzI5
-NzgsMTIxOTk3NjQ4Nyw4NzM3Mzc4NDIsLTkzMzg0MTI5MCwtMT
-AwMTMzMzAwMyw4NTEzMTM5MDEsMTA2OTcwNzIzMSwzNzQyNTYx
-ODcsLTE4Mjk2NjI0NTddfQ==
+eyJoaXN0b3J5IjpbNjA4ODc0NDg0LDQwMDQ1MzczMywxNzI4OT
+Y1OTUzLDE3MzI0MjQ0MjcsMjA3NjA3NjUwMywtMjA2NjcyOTc4
+LDEyMTk5NzY0ODcsODczNzM3ODQyLC05MzM4NDEyOTAsLTEwMD
+EzMzMwMDMsODUxMzEzOTAxLDEwNjk3MDcyMzEsMzc0MjU2MTg3
+LC0xODI5NjYyNDU3XX0=
 -->
