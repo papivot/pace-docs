@@ -203,13 +203,13 @@ Using the name of the POD retrieved in step2, run the following command -
 This should return a shell prompt in the container - 
 
 ```shell
-
+~ $
 ```
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0MTE5MTUzLDExMDg5NzI3OCwtMTY4Mj
+eyJoaXN0b3J5IjpbMjk5ODM2MjIxLDExMDg5NzI3OCwtMTY4Mj
 Y0NDc3MSwtMTY1ODg1NDA5OSwtMzM1NTc4NTM4LDEwMTkwMDk4
 OTEsMTE4Mzk1NDI3NiwxNjM1OTE4ODcwLDk5MTk1NTQ1Nyw0OT
 Y2MDczNzksLTE4NjMxNDc2MTMsNzMwOTk4MTE2XX0=
