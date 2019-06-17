@@ -77,9 +77,14 @@ Please study your config file.
 
 ## AuthN for Kubernetes 
  
- Some of the authentication mechanisms for Kubernetes are - 
+ Some of the current and beta authentication mechanisms for Kubernetes are - 
  
+ 
+
+ - [ ] ### X509 Client Certs
+ 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNTc4MTYyOSwxNDQ4MzIwODY3LDEyOT
-A4MDI5MDgsLTg1MTYwNTk0N119
+eyJoaXN0b3J5IjpbODQ0NDgzMDUsMTQ0ODMyMDg2NywxMjkwOD
+AyOTA4LC04NTE2MDU5NDddfQ==
 -->
