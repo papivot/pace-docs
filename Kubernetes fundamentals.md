@@ -4,7 +4,7 @@
 
 #### Validate connectivity to cluster
 
-Note: The generation and details of the kubeconfig file is addressed in a different section. 
+**Note**: The generation and details of the kubeconfig file is addressed in a different section. 
 
 To check is a valid kubeconfig file exists and kubectl get connect to the cluster using the config file ($HOME/.kube/config) - 
 >`kubectl version`
@@ -114,9 +114,9 @@ Start Time:         Mon, 27 May 2019 22:05:01 -0400
 
 ## Deploying your first pod
 
-Note: We will leverage the Docker image that we created in the Docker fundamentals section. Since we uploaded the image in GCR - gcr.io/pa-nverma/k8soper:0.0.1 , we will reference GCR in this section for the image registry. If you are using a different registry, please modify the reference accordingly. 
+**Note**: We will leverage the Docker image that we created in the Docker fundamentals section. Since we uploaded the image in GCR - gcr.io/pa-nverma/k8soper:0.0.1 , we will reference GCR in this section for the image registry. If you are using a different registry, please modify the reference accordingly. 
 
-#### Step1 - Run the Docker image from the registry
+#### Step 1 - Run the Docker image from the registry
 
 > `kubectl run k8s-operations --image=gcr.io/pa-nverma/k8soper:0.0.1`
 
@@ -126,7 +126,7 @@ This should create a require deployment and pod artifacts in the default namespa
 deployment.apps/k8s-operations created
 ```
 
-#### Step2 - View the running configuration 
+#### Step 2 - View the running configuration 
 
 Wait for a minute or so for the pod to be successfully schedules and then execute kubectl to view the pod - 
 
@@ -165,7 +165,7 @@ metadata:
 
 Congratulations!!! You executed your first pod in the Kubernetes cluster. 
 
-#### Step3 - View the POD logs
+#### Step 3 - View the POD logs
 
 Using the name of the POD retrieved in step2, run the following commands - 
 
@@ -192,7 +192,7 @@ Traceback (most recent call last):
     raise KeyError(key) from None
 KeyError: 'CLUSTER_NAME'
 ```
-Note:  This outputs the stderr/stdout stream of the pod and displays some of the errors that the container generated during the execution. 
+**Note**:  This outputs the stderr/stdout stream of the pod and displays some of the errors that the container generated during the execution. 
 
 #### Step 4 - Running commands in your container
 
@@ -254,7 +254,7 @@ deployment.extensions "k8s-operations" deleted
 should no longer have a k8s-operations-* pod.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTkzMDE4OTIsNDM5NDc0NjM1LDExMD
+eyJoaXN0b3J5IjpbLTIwMzkwNzI2MzAsNDM5NDc0NjM1LDExMD
 g5NzI3OCwtMTY4MjY0NDc3MSwtMTY1ODg1NDA5OSwtMzM1NTc4
 NTM4LDEwMTkwMDk4OTEsMTE4Mzk1NDI3NiwxNjM1OTE4ODcwLD
 k5MTk1NTQ1Nyw0OTY2MDczNzksLTE4NjMxNDc2MTMsNzMwOTk4
