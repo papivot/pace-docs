@@ -50,6 +50,20 @@ users:
       name: oidc
 ```
 
+##### Contexts
+The contexts section contains an array of context associating the cluster a
+
+```shell
+contexts:
+- context:
+    cluster: cluster01
+    user: nverma
+  name: cluster01
+- context:
+    cluster: gcpcluster00
+    user: nverma
+  name: gcpcluster00
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM4NTk3NDk0LC04NTE2MDU5NDddfQ==
+eyJoaXN0b3J5IjpbLTIwMjcyMzY3OSwtODUxNjA1OTQ3XX0=
 -->
