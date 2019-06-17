@@ -77,7 +77,7 @@ Please study your config file.
 
 ## AuthN for Kubernetes 
  
- Some of the current and beta authentication mechanisms for Kubernetes are - 
+ Some of the current and beta authentication mechanisms for Kubernetes (and thereby PKS) are - 
 
  - [ ]  X509 Client Certs
  - [ ] Static Token File
@@ -88,9 +88,10 @@ Please study your config file.
  - [ ] ~~Webhook Token~~
  - [ ] Authenticating Proxy
  
+ 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzE3Mzc1NTgsLTM0ODUxMjg2MCw0Mj
-IxNzc0Niw4NzQ3MzkwNTUsMTQ0ODMyMDg2NywxMjkwODAyOTA4
-LC04NTE2MDU5NDddfQ==
+eyJoaXN0b3J5IjpbLTY1OTQxNzAzOSwtMTE3MTczNzU1OCwtMz
+Q4NTEyODYwLDQyMjE3NzQ2LDg3NDczOTA1NSwxNDQ4MzIwODY3
+LDEyOTA4MDI5MDgsLTg1MTYwNTk0N119
 -->
