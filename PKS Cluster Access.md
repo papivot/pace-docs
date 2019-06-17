@@ -15,7 +15,7 @@ contexts:
 current-context: 
 ```
 
-##### Cluster 
+#### Cluster 
 
 The clusters section contains an array with information specific to the K8s clusters, namely the API server FQDN and port and the cluster root CA. 
 
@@ -31,7 +31,7 @@ clusters:
   name: gcpcluster00
 ```
 
-##### Users
+#### Users
 
 The users section contains an array with information specific to the K8s user with access to cluster artifacts and associated auth information. This can vary depending on the auth provider. More details can be found [here](https://kubernetes.io/docs/reference/access-authn-authz/controlling-access/) - 
 In a PKS environment, a sample user definition could be something similar to this. 
@@ -50,7 +50,7 @@ users:
       name: oidc
 ```
 
-##### Contexts
+#### Contexts
 The contexts section contains an array of context associating the cluster and user objects from the above sections. An example can be similar to this - 
 
 ```shell
@@ -64,7 +64,7 @@ contexts:
     user: nverma
   name: gcpcluster00
 ```
-##### Current-context
+#### Current-context
 
 The current-context specifies which context is currently enforced and hence which cluster should the kubectl commands connect to and also which user to use for the connection to the cluster. 
 
@@ -187,10 +187,10 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 
 Make sure that the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwMTg1ODcwNSwxMzgyMDQ3MzUyLC05Nj
-I3Mjg5NTMsLTM1NjA0OTAwNCw4MTI2ODg2NjgsLTE0NTczMzgz
-NjcsLTE1MTIwMTk5ODIsMTgzMTc2NTEwLDc3NzkxOTIzMSwtMT
-k5MjcxMDE2MCwtNzY0NTYzMTY2LC0xMTcxNzM3NTU4LC0zNDg1
-MTI4NjAsNDIyMTc3NDYsODc0NzM5MDU1LDE0NDgzMjA4NjcsMT
-I5MDgwMjkwOCwtODUxNjA1OTQ3XX0=
+eyJoaXN0b3J5IjpbLTI3MDAyNjY1NSwtNTAxODU4NzA1LDEzOD
+IwNDczNTIsLTk2MjcyODk1MywtMzU2MDQ5MDA0LDgxMjY4ODY2
+OCwtMTQ1NzMzODM2NywtMTUxMjAxOTk4MiwxODMxNzY1MTAsNz
+c3OTE5MjMxLC0xOTkyNzEwMTYwLC03NjQ1NjMxNjYsLTExNzE3
+Mzc1NTgsLTM0ODUxMjg2MCw0MjIxNzc0Niw4NzQ3MzkwNTUsMT
+Q0ODMyMDg2NywxMjkwODAyOTA4LC04NTE2MDU5NDddfQ==
 -->
