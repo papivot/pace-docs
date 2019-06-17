@@ -81,7 +81,7 @@ Please study your config file.
 
  - [ ]  X509 Client Certs
  - [ ] Static Token File
- - [ ] Bootstrap Tokens
+ - [ ] ~~Bootstrap Tokens~~ - Currently in Beta
  - [ ] ~~Static Password File~~ - Disabled in PKS by default
  - [ ] Service Account Tokens
  - [ ] OpenID Connect Tokens
@@ -178,10 +178,10 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 ##### Accessing cluster using OIDC tokens 
 *Highly recommended method.* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MjcyODk1MywtMzU2MDQ5MDA0LDgxMj
-Y4ODY2OCwtMTQ1NzMzODM2NywtMTUxMjAxOTk4MiwxODMxNzY1
-MTAsNzc3OTE5MjMxLC0xOTkyNzEwMTYwLC03NjQ1NjMxNjYsLT
-ExNzE3Mzc1NTgsLTM0ODUxMjg2MCw0MjIxNzc0Niw4NzQ3Mzkw
-NTUsMTQ0ODMyMDg2NywxMjkwODAyOTA4LC04NTE2MDU5NDddfQ
-==
+eyJoaXN0b3J5IjpbLTcwNTAyODA3LC05NjI3Mjg5NTMsLTM1Nj
+A0OTAwNCw4MTI2ODg2NjgsLTE0NTczMzgzNjcsLTE1MTIwMTk5
+ODIsMTgzMTc2NTEwLDc3NzkxOTIzMSwtMTk5MjcxMDE2MCwtNz
+Y0NTYzMTY2LC0xMTcxNzM3NTU4LC0zNDg1MTI4NjAsNDIyMTc3
+NDYsODc0NzM5MDU1LDE0NDgzMjA4NjcsMTI5MDgwMjkwOCwtOD
+UxNjA1OTQ3XX0=
 -->
