@@ -165,10 +165,20 @@ metadata:
 
 Congratulations!!! You executed your first pod in the Kubernetes cluster. 
 
+#### Step3 - View the POD logs
 
+Using the POD name from the previous section run the following commands - 
+
+> `kubectl logs k8s-operations-6f97c49687-rbcqv -n default`
+
+You may get an output similar to this - 
+
+```shell
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNDQzMjYwNSwxMTA4OTcyNzgsLTE2OD
-I2NDQ3NzEsLTE2NTg4NTQwOTksLTMzNTU3ODUzOCwxMDE5MDA5
-ODkxLDExODM5NTQyNzYsMTYzNTkxODg3MCw5OTE5NTU0NTcsND
-k2NjA3Mzc5LC0xODYzMTQ3NjEzLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTEwMjIwODEwMDUsMTEwODk3Mjc4LC0xNj
+gyNjQ0NzcxLC0xNjU4ODU0MDk5LC0zMzU1Nzg1MzgsMTAxOTAw
+OTg5MSwxMTgzOTU0Mjc2LDE2MzU5MTg4NzAsOTkxOTU1NDU3LD
+Q5NjYwNzM3OSwtMTg2MzE0NzYxMyw3MzA5OTgxMTZdfQ==
 -->
