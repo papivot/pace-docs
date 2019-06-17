@@ -78,20 +78,18 @@ Please study your config file.
 ## AuthN for Kubernetes 
  
  Some of the current and beta authentication mechanisms for Kubernetes are - 
- 
- 
 
  - [ ]  X509 Client Certs
- - [ ] ### Static Token File
- - [ ] ### Bootstrap Tokens
- - [ ] ### Static Password File
- - [ ] ### Service Account Tokens
- - [ ] ### OpenID Connect Tokens
- - [ ] ### Webhook Token Authentication
- - [ ] ### Authenticating Proxy
+ - [ ] Static Token File
+ - [ ] Bootstrap Tokens
+ - [ ] Static Password File
+ - [ ] Service Account Tokens
+ - [ ] OpenID Connect Tokens
+ - [ ] Webhook Token Authentication
+ - [ ] Authenticating Proxy
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc0NzM5MDU1LDE0NDgzMjA4NjcsMTI5MD
-gwMjkwOCwtODUxNjA1OTQ3XX0=
+eyJoaXN0b3J5IjpbNDIyMTc3NDYsODc0NzM5MDU1LDE0NDgzMj
+A4NjcsMTI5MDgwMjkwOCwtODUxNjA1OTQ3XX0=
 -->
