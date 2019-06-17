@@ -166,11 +166,11 @@ metadata:
 ...
 ```
 
-Congratulations!!! You executed your first pod in the Kubernetes cluster. 
+Congratulations!!! You executed your first pod in a Kubernetes cluster. 
 
 #### Step 3 - View the POD logs
 
-Using the name of the POD retrieved in step2, run the following commands - 
+Using the name of the POD retrieved in step2, run the following command - 
 
 > `kubectl logs k8s-operations-6f97c49687-rbcqv -n default`
 
@@ -257,9 +257,9 @@ deployment.extensions "k8s-operations" deleted
 should no longer have a k8s-operations-* pod.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI1ODYwNjYzLDE2MTkxNjY3OTIsNDM5ND
-c0NjM1LDExMDg5NzI3OCwtMTY4MjY0NDc3MSwtMTY1ODg1NDA5
-OSwtMzM1NTc4NTM4LDEwMTkwMDk4OTEsMTE4Mzk1NDI3NiwxNj
-M1OTE4ODcwLDk5MTk1NTQ1Nyw0OTY2MDczNzksLTE4NjMxNDc2
-MTMsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTIwNTg5MzU1ODgsMTYxOTE2Njc5Miw0Mz
+k0NzQ2MzUsMTEwODk3Mjc4LC0xNjgyNjQ0NzcxLC0xNjU4ODU0
+MDk5LC0zMzU1Nzg1MzgsMTAxOTAwOTg5MSwxMTgzOTU0Mjc2LD
+E2MzU5MTg4NzAsOTkxOTU1NDU3LDQ5NjYwNzM3OSwtMTg2MzE0
+NzYxMyw3MzA5OTgxMTZdfQ==
 -->
