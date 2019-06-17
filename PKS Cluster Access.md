@@ -90,13 +90,13 @@ Please study your config file.
 
 #### Static Token File
 
-The following configuration gets added to the K8S apiserver when using using static token file for authentication. 
+The following configuration gets added to the K8S apiserver when using static token file for authentication. 
 
 ```shell
-
+--token-auth-file=/var/vcap/jobs/kube-apiserver/config/tokens.csv
 ```
 
-
+##### Accessing cluster using static token 
 *Not a recommended method.* 
 
 Example - To achieve this, we need to get the admin token from one of the K8S master server. The location of the file is `/var/vcap/jobs/kube-apiserver/config/tokens.csv`
@@ -130,7 +130,7 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 --oidc-username-prefix=- 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1MzgyNDcxNCwxODMxNzY1MTAsNzc3OT
+eyJoaXN0b3J5IjpbMTgwNTAwMTYzMiwxODMxNzY1MTAsNzc3OT
 E5MjMxLC0xOTkyNzEwMTYwLC03NjQ1NjMxNjYsLTExNzE3Mzc1
 NTgsLTM0ODUxMjg2MCw0MjIxNzc0Niw4NzQ3MzkwNTUsMTQ0OD
 MyMDg2NywxMjkwODAyOTA4LC04NTE2MDU5NDddfQ==
