@@ -245,11 +245,17 @@ To do so, execute the following command -
 
 > `kubectl delete deployment k8s-operations -n default`
 
+```shell
+deployment.extensions "k8s-operations" deleted
 ```
 
+> `kubectl get pods -n default`
+
+should no longer have a k8s-operations-* pod.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyMDI2MzM4OSwxMTA4OTcyNzgsLTE2OD
-I2NDQ3NzEsLTE2NTg4NTQwOTksLTMzNTU3ODUzOCwxMDE5MDA5
-ODkxLDExODM5NTQyNzYsMTYzNTkxODg3MCw5OTE5NTU0NTcsND
-k2NjA3Mzc5LC0xODYzMTQ3NjEzLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbNDM5NDc0NjM1LDExMDg5NzI3OCwtMTY4Mj
+Y0NDc3MSwtMTY1ODg1NDA5OSwtMzM1NTc4NTM4LDEwMTkwMDk4
+OTEsMTE4Mzk1NDI3NiwxNjM1OTE4ODcwLDk5MTk1NTQ1Nyw0OT
+Y2MDczNzksLTE4NjMxNDc2MTMsNzMwOTk4MTE2XX0=
 -->
