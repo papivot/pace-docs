@@ -17,7 +17,19 @@ current-context:
 
 ##### Cluster 
 
-The cluster section contains that information specific to the K8s cluster, namely the API server FQDN and port and the cluster root CA. E.g. 
+The clusters section contains an array with information specific to the K8s clusters, namely the API server FQDN and port and the cluster root CA. 
+
+```shell
+clusters:
+- cluster:
+    certificate-authority-data: LS0tLS1...
+    server: https://apicluster01.run.haas-254.pez.pivotal.io:8443
+  name: cluster01
+- cluster:
+    certificate-authority-data: Ci0tLS0tQkV...
+    server: https://cluster00.gcpcloud.navneetv.com:8443
+  name: gcpcluster00
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxNTY1ODI0MF19
+eyJoaXN0b3J5IjpbMTY5MjIxMDM1NV19
 -->
