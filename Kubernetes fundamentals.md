@@ -68,7 +68,10 @@ NAME                                   STATUS   ROLES    AGE   VERSION   INTERNA
 > `kubectl cluster-info`
 
 ```shell
-
+Kubernetes master is running at https://cluster00.gcpcloud.navneetv.com:8443
+Heapster is running at https://cluster00.gcpcloud.navneetv.com:8443/api/v1/namespaces/kube-system/services/heapster/proxy
+CoreDNS is running at https://cluster00.gcpcloud.navneetv.com:8443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+...
 ```
 
 > `kubectl get pods`
@@ -254,9 +257,9 @@ deployment.extensions "k8s-operations" deleted
 should no longer have a k8s-operations-* pod.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjMxMTIyMTUsNDM5NDc0NjM1LDExMD
-g5NzI3OCwtMTY4MjY0NDc3MSwtMTY1ODg1NDA5OSwtMzM1NTc4
-NTM4LDEwMTkwMDk4OTEsMTE4Mzk1NDI3NiwxNjM1OTE4ODcwLD
-k5MTk1NTQ1Nyw0OTY2MDczNzksLTE4NjMxNDc2MTMsNzMwOTk4
-MTE2XX0=
+eyJoaXN0b3J5IjpbMTYxOTE2Njc5Miw0Mzk0NzQ2MzUsMTEwOD
+k3Mjc4LC0xNjgyNjQ0NzcxLC0xNjU4ODU0MDk5LC0zMzU1Nzg1
+MzgsMTAxOTAwOTg5MSwxMTgzOTU0Mjc2LDE2MzU5MTg4NzAsOT
+kxOTU1NDU3LDQ5NjYwNzM3OSwtMTg2MzE0NzYxMyw3MzA5OTgx
+MTZdfQ==
 -->
