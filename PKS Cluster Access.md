@@ -67,7 +67,11 @@ contexts:
 
 ##### Current-context
 
-The current-context specifies which context is currently enforced fo
+The current-context specifies which context is currently enforced and hence which cluster should the kubectl commands connect to and also which user to use for the connection to the cluster. 
+
+```shell
+current-context: gcpcluster00
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkzNzgzMjA1LC04NTE2MDU5NDddfQ==
+eyJoaXN0b3J5IjpbLTg3NDU1OTQyOSwtODUxNjA1OTQ3XX0=
 -->
