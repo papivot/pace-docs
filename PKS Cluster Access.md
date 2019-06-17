@@ -185,9 +185,9 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 ##### Accessing cluster using OIDC tokens 
 *Highly recommended method.* 
 
-Make sure that the 
+Example - Make sure that the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3MDAyNjY1NSwtNTAxODU4NzA1LDEzOD
+eyJoaXN0b3J5IjpbLTg0ODU0MDY2MiwtNTAxODU4NzA1LDEzOD
 IwNDczNTIsLTk2MjcyODk1MywtMzU2MDQ5MDA0LDgxMjY4ODY2
 OCwtMTQ1NzMzODM2NywtMTUxMjAxOTk4MiwxODMxNzY1MTAsNz
 c3OTE5MjMxLC0xOTkyNzEwMTYwLC03NjQ1NjMxNjYsLTExNzE3
