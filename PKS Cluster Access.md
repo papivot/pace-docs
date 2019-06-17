@@ -33,8 +33,22 @@ clusters:
 
 ##### Users
 
-The users section contains an array with information specific to the K8s user with access to cluster artifacts and associated verbs, namely the API server FQDN and port and the cluster root CA. 
+The users section contains an array with information specific to the K8s user with access to cluster artifacts, 
+
+```shell
+users:
+- name: nverma
+  user:
+    auth-provider:
+      config:
+        client-id: pks_cluster_client
+        cluster_client_secret: ""
+        id-token: eyJhbG...
+        idp-issuer-url: https://api.pks.gcpcloud.navneetv.com:8443/oauth/token
+        refresh-token: eyJhbGciOi...
+      name: oidc
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MjU2MjUzMl19
+eyJoaXN0b3J5IjpbLTU5NjA3NDY1OV19
 -->
