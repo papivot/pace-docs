@@ -81,10 +81,15 @@ Please study your config file.
  
  
 
- - [ ] ### X509 Client Certs
+ - [ ]  X509 Client Certs
+ - [ ] ### Static Token File
+ - [ ] ### Bootstrap Tokens
+ - [ ] ### Static Password File
+ - [ ] ### Service Account Tokens
+ - [ ] ### OpenID Connect Tokens
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ0NDgzMDUsMTQ0ODMyMDg2NywxMjkwOD
-AyOTA4LC04NTE2MDU5NDddfQ==
+eyJoaXN0b3J5IjpbMTExODI2Mjk2NywxNDQ4MzIwODY3LDEyOT
+A4MDI5MDgsLTg1MTYwNTk0N119
 -->
