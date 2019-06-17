@@ -84,14 +84,13 @@ Please study your config file.
  - [ ] Bootstrap Tokens
  - [ ] ~~Static Password File~~ - Disabled in PKS
  - [ ] Service Account Tokens
-	 - [ ] --service-account-key-file=/var/vcap/jobs/kube-apiserver/config/service-account-public-key.pem 
  - [ ] OpenID Connect Tokens
  - [ ] Webhook Token Authentication
  - [ ] Authenticating Proxy
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzMTI2NTM1MSw0MjIxNzc0Niw4NzQ3Mz
+eyJoaXN0b3J5IjpbLTM0ODUxMjg2MCw0MjIxNzc0Niw4NzQ3Mz
 kwNTUsMTQ0ODMyMDg2NywxMjkwODAyOTA4LC04NTE2MDU5NDdd
 fQ==
 -->
