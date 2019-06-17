@@ -167,7 +167,7 @@ Congratulations!!! You executed your first pod in the Kubernetes cluster.
 
 #### Step3 - View the POD logs
 
-Using the POD name from the previous section run the following commands - 
+Using the name of the POD retrieved in step2, run the following commands - 
 
 > `kubectl logs k8s-operations-6f97c49687-rbcqv -n default`
 
@@ -196,13 +196,21 @@ Note:  This outputs the stderr/stdout of the pod and displaces some of the error
 
 #### Step 4 - Running commands in your container
 
-Using the name of the POD retrieved in step2, 
+Using the name of the POD retrieved in step2, run the following command - 
+
+>`kubectl exec -it k8s-operations-6f97c49687-rbcqv -- /bin/sh`
+
+This should return a shell prompt in the container - 
+
+```shell
+
+```
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NjExNTAxMSwxMTA4OTcyNzgsLTE2OD
-I2NDQ3NzEsLTE2NTg4NTQwOTksLTMzNTU3ODUzOCwxMDE5MDA5
-ODkxLDExODM5NTQyNzYsMTYzNTkxODg3MCw5OTE5NTU0NTcsND
-k2NjA3Mzc5LC0xODYzMTQ3NjEzLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMTk0MTE5MTUzLDExMDg5NzI3OCwtMTY4Mj
+Y0NDc3MSwtMTY1ODg1NDA5OSwtMzM1NTc4NTM4LDEwMTkwMDk4
+OTEsMTE4Mzk1NDI3NiwxNjM1OTE4ODcwLDk5MTk1NTQ1Nyw0OT
+Y2MDczNzksLTE4NjMxNDc2MTMsNzMwOTk4MTE2XX0=
 -->
