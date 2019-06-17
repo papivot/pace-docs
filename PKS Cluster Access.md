@@ -15,6 +15,9 @@ users:
 current-context: 
 ```
 
+##### Cluster 
+
+The cluster section contains that information specific to the K8s cluster, namely the API server FQDN and port and the cluster root CA. E.g. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTA2NTUyMF19
+eyJoaXN0b3J5IjpbLTQxNTY1ODI0MF19
 -->
