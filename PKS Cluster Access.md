@@ -149,7 +149,11 @@ metadata:
  secrets:
 - name: default-token-mcf5p
 ```
+Use the secrets name to get the token -
+
 > `kubectl get secrets default-token-mcf5p -n default  -o json |jq -r '.data.token'|base64 -D`
+
+This is the token that 
 
 
  
@@ -167,9 +171,9 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 --oidc-username-prefix=- 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5ODI3NzAzNSwtMTQ1NzMzODM2NywtMT
-UxMjAxOTk4MiwxODMxNzY1MTAsNzc3OTE5MjMxLC0xOTkyNzEw
-MTYwLC03NjQ1NjMxNjYsLTExNzE3Mzc1NTgsLTM0ODUxMjg2MC
-w0MjIxNzc0Niw4NzQ3MzkwNTUsMTQ0ODMyMDg2NywxMjkwODAy
-OTA4LC04NTE2MDU5NDddfQ==
+eyJoaXN0b3J5IjpbODEyNjg4NjY4LC0xNDU3MzM4MzY3LC0xNT
+EyMDE5OTgyLDE4MzE3NjUxMCw3Nzc5MTkyMzEsLTE5OTI3MTAx
+NjAsLTc2NDU2MzE2NiwtMTE3MTczNzU1OCwtMzQ4NTEyODYwLD
+QyMjE3NzQ2LDg3NDczOTA1NSwxNDQ4MzIwODY3LDEyOTA4MDI5
+MDgsLTg1MTYwNTk0N119
 -->
