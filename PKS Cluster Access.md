@@ -10,8 +10,8 @@ A kubeconfig file is generally made up of four sections - clusters, context, use
 ```shell
 apiVersion: v1
 clusters:
-contexts:
 users:
+contexts:
 current-context: 
 ```
 
@@ -30,6 +30,11 @@ clusters:
     server: https://cluster00.gcpcloud.navneetv.com:8443
   name: gcpcluster00
 ```
+
+##### Users
+
+The users section contains an array with information specific to the K8s user with access to cluster artifacts and associated verbs, namely the API server FQDN and port and the cluster root CA. 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5MjIxMDM1NV19
+eyJoaXN0b3J5IjpbMTA1MjU2MjUzMl19
 -->
