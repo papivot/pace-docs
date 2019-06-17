@@ -82,10 +82,10 @@ Please study your config file.
  - [ ]  X509 Client Certs
  - [ ] Static Token File
  - [ ] Bootstrap Tokens
- - [ ] ~~Static Password File~~ - Disabled in PKS 
+ - [ ] ~~Static Password File~~ - Disabled in PKS by default
  - [ ] Service Account Tokens
  - [ ] OpenID Connect Tokens
- - [ ] ~~Webhook Token~~
+ - [ ] ~~Webhook Token~~ - Disabled in PKS by default
  - [ ] Authenticating Proxy
 
 #### X509 Client Certs
@@ -125,6 +125,16 @@ The following commands are executed from the OpsMan
 > ```
 
 Once the Token has been retrieved, you can generate the kubeconfig using the project - [kubectl_plugin_login](https://github.com/papivot/kubectl_plugin_login)
+
+#### Service Account Tokens File
+
+The following configuration gets added to the K8S apiserver to allow using static token file for authentication. 
+
+```shell
+--token-auth-file=/var/vcap/jobs/kube-apiserver/config/tokens.csv
+```
+##### Accessing cluster using static token 
+*Not a recommended method.* 
  
  #### OpenID Connect Tokens
 
@@ -140,9 +150,9 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 --oidc-username-prefix=- 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY1MTU5NjU5LC0xNTEyMDE5OTgyLDE4Mz
-E3NjUxMCw3Nzc5MTkyMzEsLTE5OTI3MTAxNjAsLTc2NDU2MzE2
-NiwtMTE3MTczNzU1OCwtMzQ4NTEyODYwLDQyMjE3NzQ2LDg3ND
-czOTA1NSwxNDQ4MzIwODY3LDEyOTA4MDI5MDgsLTg1MTYwNTk0
-N119
+eyJoaXN0b3J5IjpbMTA2NDg0MjQ4MSwtMTUxMjAxOTk4MiwxOD
+MxNzY1MTAsNzc3OTE5MjMxLC0xOTkyNzEwMTYwLC03NjQ1NjMx
+NjYsLTExNzE3Mzc1NTgsLTM0ODUxMjg2MCw0MjIxNzc0Niw4Nz
+Q3MzkwNTUsMTQ0ODMyMDg2NywxMjkwODAyOTA4LC04NTE2MDU5
+NDddfQ==
 -->
