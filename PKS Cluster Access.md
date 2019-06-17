@@ -156,10 +156,10 @@ Use the secrets name to get the token -
 
 > `kubectl get secrets default-token-mcf5p -n default  -o json |jq -r '.data.token'|base64 -D`
 
+Once the Token has been retrieved, you can generate the kubeconfig using the project - [kubectl_plugin_login](https://github.com/papivot/kubectl_plugin_login)
+ 
  - User is admin
- - Token is the 1st value in the token.csv file's output. 
-
-
+ - Token is the 1st value in the base64 decoded value in the last step. 
  
  #### OpenID Connect Tokens
 
@@ -175,7 +175,7 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 --oidc-username-prefix=- 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1OTkwODU0OSwtMzU2MDQ5MDA0LDgxMj
+eyJoaXN0b3J5IjpbLTI2MDI4OTc0NCwtMzU2MDQ5MDA0LDgxMj
 Y4ODY2OCwtMTQ1NzMzODM2NywtMTUxMjAxOTk4MiwxODMxNzY1
 MTAsNzc3OTE5MjMxLC0xOTkyNzEwMTYwLC03NjQ1NjMxNjYsLT
 ExNzE3Mzc1NTgsLTM0ODUxMjg2MCw0MjIxNzc0Niw4NzQ3Mzkw
