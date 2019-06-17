@@ -6,7 +6,7 @@
 
 **Note**: The generation and details of the kubeconfig file is addressed in a different section. 
 
-To check is a valid kubeconfig file exists and kubectl get connect to the cluster using the config file ($HOME/.kube/config) - 
+To check if a valid kubeconfig file exists and kubectl get connect to the cluster using the config file ($HOME/.kube/config) - 
 >`kubectl version`
 
 If there are issues connecting with the K8s cluster, the output would be similar to this - 
@@ -24,7 +24,7 @@ Server Version: version.Info{Major:"1", Minor:"13", GitVersion:"v1.13.5", GitCom
 
 #### Common kubectl output  formats
 
-Some options on kubectl outputs - 
+Some kubectl output formats - 
 
 > `kubectl get nodes`
 
@@ -254,7 +254,7 @@ deployment.extensions "k8s-operations" deleted
 should no longer have a k8s-operations-* pod.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzkwNzI2MzAsNDM5NDc0NjM1LDExMD
+eyJoaXN0b3J5IjpbLTEzNjMxMTIyMTUsNDM5NDc0NjM1LDExMD
 g5NzI3OCwtMTY4MjY0NDc3MSwtMTY1ODg1NDA5OSwtMzM1NTc4
 NTM4LDEwMTkwMDk4OTEsMTE4Mzk1NDI3NiwxNjM1OTE4ODcwLD
 k5MTk1NTQ1Nyw0OTY2MDczNzksLTE4NjMxNDc2MTMsNzMwOTk4
