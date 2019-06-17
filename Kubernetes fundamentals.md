@@ -192,7 +192,7 @@ Traceback (most recent call last):
     raise KeyError(key) from None
 KeyError: 'CLUSTER_NAME'
 ```
-Note:  This outputs the stderr/stdout of the pod and displaces some of the errors that the container generated during the execution. 
+Note:  This outputs the stderr/stdout stream of the pod and displays some of the errors that the container generated during the execution. 
 
 #### Step 4 - Running commands in your container
 
@@ -254,8 +254,9 @@ deployment.extensions "k8s-operations" deleted
 should no longer have a k8s-operations-* pod.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM5NDc0NjM1LDExMDg5NzI3OCwtMTY4Mj
-Y0NDc3MSwtMTY1ODg1NDA5OSwtMzM1NTc4NTM4LDEwMTkwMDk4
-OTEsMTE4Mzk1NDI3NiwxNjM1OTE4ODcwLDk5MTk1NTQ1Nyw0OT
-Y2MDczNzksLTE4NjMxNDc2MTMsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE4MTkzMDE4OTIsNDM5NDc0NjM1LDExMD
+g5NzI3OCwtMTY4MjY0NDc3MSwtMTY1ODg1NDA5OSwtMzM1NTc4
+NTM4LDEwMTkwMDk4OTEsMTE4Mzk1NDI3NiwxNjM1OTE4ODcwLD
+k5MTk1NTQ1Nyw0OTY2MDczNzksLTE4NjMxNDc2MTMsNzMwOTk4
+MTE2XX0=
 -->
