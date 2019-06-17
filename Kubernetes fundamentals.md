@@ -114,9 +114,10 @@ Start Time:         Mon, 27 May 2019 22:05:01 -0400
 
 ## Deploying your first pod
 
+Note: We will leverage the Docker image that we created in the Docker fundamentals section. Since we uploaded the image in GCR, we will reference 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODI2NDQ3NzEsLTE2NTg4NTQwOTksLT
-MzNTU3ODUzOCwxMDE5MDA5ODkxLDExODM5NTQyNzYsMTYzNTkx
-ODg3MCw5OTE5NTU0NTcsNDk2NjA3Mzc5LC0xODYzMTQ3NjEzLD
-czMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTIxMjM3NzAwMCwtMTY4MjY0NDc3MSwtMT
+Y1ODg1NDA5OSwtMzM1NTc4NTM4LDEwMTkwMDk4OTEsMTE4Mzk1
+NDI3NiwxNjM1OTE4ODcwLDk5MTk1NTQ1Nyw0OTY2MDczNzksLT
+E4NjMxNDc2MTMsNzMwOTk4MTE2XX0=
 -->
