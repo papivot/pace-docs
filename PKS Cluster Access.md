@@ -33,7 +33,7 @@ clusters:
 
 ##### Users
 
-The users section contains an array with information specific to the K8s user with access to cluster artifacts and associated auth information. This can vary depending on the auth provider. More details can be In a PKS environment, a sample user could be something similar to this. 
+The users section contains an array with information specific to the K8s user with access to cluster artifacts and associated auth information. This can vary depending on the auth provider. More details can be found here - In a PKS environment, a sample user could be something similar to this. 
 
 ```shell
 users:
@@ -50,5 +50,5 @@ users:
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1MzU0Mjg4Nl19
+eyJoaXN0b3J5IjpbLTg1MTYwNTk0N119
 -->
