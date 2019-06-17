@@ -241,10 +241,14 @@ pod "k8s-operations-6f97c49687-ghmwf" deleted
 
 `Kubectl get pods` will show that another instance of the pod has been created. This is due to the fact that there is a higher level K8s parent object called deployment that is the controlling the child POD. To perform a complete cleanup, the top level object has to be destroyed to prevent the POD to be spawned once again. 
 
+To do so, execute the following command - 
 
+> `kubectl delete deployment k8s-operations -n default`
+
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyMTAyOTUyOSwxMTA4OTcyNzgsLTE2OD
+eyJoaXN0b3J5IjpbMTgyMDI2MzM4OSwxMTA4OTcyNzgsLTE2OD
 I2NDQ3NzEsLTE2NTg4NTQwOTksLTMzNTU3ODUzOCwxMDE5MDA5
 ODkxLDExODM5NTQyNzYsMTYzNTkxODg3MCw5OTE5NTU0NTcsND
 k2NjA3Mzc5LC0xODYzMTQ3NjEzLDczMDk5ODExNl19
