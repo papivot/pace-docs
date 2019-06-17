@@ -102,8 +102,10 @@ The following gets added to the K8S apiserver when using UAA as OIDC provider.
 --oidc-username-prefix=- 
 ```
 
+
+kubectl --token="$admin_token" get nodes
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2NDU2MzE2NiwtMTE3MTczNzU1OCwtMz
-Q4NTEyODYwLDQyMjE3NzQ2LDg3NDczOTA1NSwxNDQ4MzIwODY3
-LDEyOTA4MDI5MDgsLTg1MTYwNTk0N119
+eyJoaXN0b3J5IjpbLTE5OTI3MTAxNjAsLTc2NDU2MzE2NiwtMT
+E3MTczNzU1OCwtMzQ4NTEyODYwLDQyMjE3NzQ2LDg3NDczOTA1
+NSwxNDQ4MzIwODY3LDEyOTA4MDI5MDgsLTg1MTYwNTk0N119
 -->
