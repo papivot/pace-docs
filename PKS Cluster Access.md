@@ -161,7 +161,9 @@ Once the Token has been retrieved, you can generate the kubeconfig using the pro
  - User is default
  - Token is the 1st value in the base64 decoded value in the last step. 
 
-For reg
+For regular use on non OIDC enabled PKS clusters, once you are logged into PKS api, simply execute - 
+
+> `pks get-credentials gcpcluster00
  
 #### OpenID Connect Tokens
 
@@ -180,10 +182,10 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 ##### Accessing cluster using OIDC tokens 
 *Highly recommended method.* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjI3ODQ5ODQsLTk2MjcyODk1MywtMz
-U2MDQ5MDA0LDgxMjY4ODY2OCwtMTQ1NzMzODM2NywtMTUxMjAx
-OTk4MiwxODMxNzY1MTAsNzc3OTE5MjMxLC0xOTkyNzEwMTYwLC
-03NjQ1NjMxNjYsLTExNzE3Mzc1NTgsLTM0ODUxMjg2MCw0MjIx
-Nzc0Niw4NzQ3MzkwNTUsMTQ0ODMyMDg2NywxMjkwODAyOTA4LC
-04NTE2MDU5NDddfQ==
+eyJoaXN0b3J5IjpbMTIxMjQwODExLC05NjI3Mjg5NTMsLTM1Nj
+A0OTAwNCw4MTI2ODg2NjgsLTE0NTczMzgzNjcsLTE1MTIwMTk5
+ODIsMTgzMTc2NTEwLDc3NzkxOTIzMSwtMTk5MjcxMDE2MCwtNz
+Y0NTYzMTY2LC0xMTcxNzM3NTU4LC0zNDg1MTI4NjAsNDIyMTc3
+NDYsODc0NzM5MDU1LDE0NDgzMjA4NjcsMTI5MDgwMjkwOCwtOD
+UxNjA1OTQ3XX0=
 -->
