@@ -133,8 +133,12 @@ The following configuration gets added to the K8S apiserver to allow using Servi
 ```shell
 --service-account-key-file=/var/vcap/jobs/kube-apiserver/config/service-account-public-key.pem
 ```
+ This is the method to access clusters when **OIDC is not enabled** on PKS clusters.
+
 ##### Accessing cluster using Service Account Tokens 
-*Not a recommended method.* 
+*Not a highly recommended method.* 
+> ```shell
+> 
 
 
  
@@ -152,9 +156,9 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 --oidc-username-prefix=- 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjgyMTcyNjEsLTE0NTczMzgzNjcsLT
-E1MTIwMTk5ODIsMTgzMTc2NTEwLDc3NzkxOTIzMSwtMTk5Mjcx
-MDE2MCwtNzY0NTYzMTY2LC0xMTcxNzM3NTU4LC0zNDg1MTI4Nj
-AsNDIyMTc3NDYsODc0NzM5MDU1LDE0NDgzMjA4NjcsMTI5MDgw
-MjkwOCwtODUxNjA1OTQ3XX0=
+eyJoaXN0b3J5IjpbMTg1NTc5ODQ5OSwtMTQ1NzMzODM2NywtMT
+UxMjAxOTk4MiwxODMxNzY1MTAsNzc3OTE5MjMxLC0xOTkyNzEw
+MTYwLC03NjQ1NjMxNjYsLTExNzE3Mzc1NTgsLTM0ODUxMjg2MC
+w0MjIxNzc0Niw4NzQ3MzkwNTUsMTQ0ODMyMDg2NywxMjkwODAy
+OTA4LC04NTE2MDU5NDddfQ==
 -->
