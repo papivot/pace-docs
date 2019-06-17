@@ -64,7 +64,6 @@ contexts:
     user: nverma
   name: gcpcluster00
 ```
-
 ##### Current-context
 
 The current-context specifies which context is currently enforced and hence which cluster should the kubectl commands connect to and also which user to use for the connection to the cluster. 
@@ -161,11 +160,11 @@ Once the Token has been retrieved, you can generate the kubeconfig using the pro
  - User is default
  - Token is the 1st value in the base64 decoded value in the last step. 
 
-For regular use on non OIDC enabled PKS clusters, once you are logged into PKS api, simply execute - 
+**Note**: For regular use on non-OIDC enabled PKS clusters, once you are logged into PKS api, simply execute - 
 
 > `pks get-credentials [pks_clustername]`
 
-This creates the necessary service accounts, clusterroles (if needed), clusterrolebindings, secrets and the required kuvb
+This creates the necessary service accounts, clusterroles (if needed), clusterrolebindings, secrets and the required kubeconfig file. 
  
 #### OpenID Connect Tokens
 
@@ -184,10 +183,10 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 ##### Accessing cluster using OIDC tokens 
 *Highly recommended method.* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjI0NDYxNTEsLTk2MjcyODk1MywtMz
-U2MDQ5MDA0LDgxMjY4ODY2OCwtMTQ1NzMzODM2NywtMTUxMjAx
-OTk4MiwxODMxNzY1MTAsNzc3OTE5MjMxLC0xOTkyNzEwMTYwLC
-03NjQ1NjMxNjYsLTExNzE3Mzc1NTgsLTM0ODUxMjg2MCw0MjIx
-Nzc0Niw4NzQ3MzkwNTUsMTQ0ODMyMDg2NywxMjkwODAyOTA4LC
-04NTE2MDU5NDddfQ==
+eyJoaXN0b3J5IjpbMTAyMDk4NTQ4OSwtOTYyNzI4OTUzLC0zNT
+YwNDkwMDQsODEyNjg4NjY4LC0xNDU3MzM4MzY3LC0xNTEyMDE5
+OTgyLDE4MzE3NjUxMCw3Nzc5MTkyMzEsLTE5OTI3MTAxNjAsLT
+c2NDU2MzE2NiwtMTE3MTczNzU1OCwtMzQ4NTEyODYwLDQyMjE3
+NzQ2LDg3NDczOTA1NSwxNDQ4MzIwODY3LDEyOTA4MDI5MDgsLT
+g1MTYwNTk0N119
 -->
