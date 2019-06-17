@@ -90,9 +90,9 @@ Please study your config file.
 
 #### Static Token File
 
-**Not a recommended method.** 
+*Not a recommended method.* 
 
-To achieve this, 
+Example - To achieve this, we need to get the admin token from the mast
  
  #### OpenID Connect Tokens
 
@@ -111,8 +111,8 @@ The following gets added to the K8S apiserver when using UAA as OIDC provider.
 
 kubectl --token="$admin_token" get nodes
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0MjAwODY0MywtMTk5MjcxMDE2MCwtNz
-Y0NTYzMTY2LC0xMTcxNzM3NTU4LC0zNDg1MTI4NjAsNDIyMTc3
-NDYsODc0NzM5MDU1LDE0NDgzMjA4NjcsMTI5MDgwMjkwOCwtOD
-UxNjA1OTQ3XX0=
+eyJoaXN0b3J5IjpbLTEyODI2NDIzMTgsLTE5OTI3MTAxNjAsLT
+c2NDU2MzE2NiwtMTE3MTczNzU1OCwtMzQ4NTEyODYwLDQyMjE3
+NzQ2LDg3NDczOTA1NSwxNDQ4MzIwODY3LDEyOTA4MDI5MDgsLT
+g1MTYwNTk0N119
 -->
