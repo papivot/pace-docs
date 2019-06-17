@@ -34,7 +34,7 @@ clusters:
 ##### Users
 
 The users section contains an array with information specific to the K8s user with access to cluster artifacts and associated auth information. This can vary depending on the auth provider. More details can be found [here](https://kubernetes.io/docs/reference/access-authn-authz/controlling-access/) - 
-In a PKS environment, a sample user could be something similar to this. 
+In a PKS environment, a sample user definition could be something similar to this. 
 
 ```shell
 users:
@@ -72,6 +72,10 @@ The current-context specifies which context is currently enforced and hence whic
 ```shell
 current-context: gcpcluster00
 ```
+
+Please study your config file.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3NDU1OTQyOSwtODUxNjA1OTQ3XX0=
+eyJoaXN0b3J5IjpbMTI5MDgwMjkwOCwtODUxNjA1OTQ3XX0=
 -->
