@@ -205,12 +205,30 @@ This should return a shell prompt in the container -
 ```shell
 ~ $
 ```
-execueting `ls -la /` retun
+executing ls -la / lists the root file system within the container - 
+
+> `ls -al /`
+
+```shell
+~ $ ls -la /
+total 72
+drwxr-xr-x    1 root     root          4096 Jun 17 14:57 .
+drwxr-xr-x    1 root     root          4096 Jun 17 14:57 ..
+-rwxr-xr-x    1 root     root             0 Jun 17 14:57 .dockerenv
+drwxr-xr-x    2 root     root          4096 May  9 20:49 bin
+drwxr-xr-x    5 root     root           360 Jun 17 14:57 dev
+drwxr-xr-x    1 root     root          4096 Jun 17 14:57 etc
+drwxr-xr-x    2 root     root          4096 May  9 20:49 home
+drwxr-xr-x    1 root     root          4096 May  9 20:49 lib
+drwxr-xr-x    5 root     root          4096 May  9 20:49 media
+drwxr-xr-x    2 root     root          4096 May  9 20:49 mnt
+drwxr-xr-x    2 root     root          4096 May  9 20:49 opt
+```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM4OTkzMzA4LDExMDg5NzI3OCwtMTY4Mj
-Y0NDc3MSwtMTY1ODg1NDA5OSwtMzM1NTc4NTM4LDEwMTkwMDk4
-OTEsMTE4Mzk1NDI3NiwxNjM1OTE4ODcwLDk5MTk1NTQ1Nyw0OT
-Y2MDczNzksLTE4NjMxNDc2MTMsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTExNDE3MTk2MDcsMTEwODk3Mjc4LC0xNj
+gyNjQ0NzcxLC0xNjU4ODU0MDk5LC0zMzU1Nzg1MzgsMTAxOTAw
+OTg5MSwxMTgzOTU0Mjc2LDE2MzU5MTg4NzAsOTkxOTU1NDU3LD
+Q5NjYwNzM3OSwtMTg2MzE0NzYxMyw3MzA5OTgxMTZdfQ==
 -->
