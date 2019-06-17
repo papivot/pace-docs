@@ -165,7 +165,7 @@ For regular use on non OIDC enabled PKS clusters, once you are logged into PKS a
 
 > `pks get-credentials [pks_clustername]`
 
-This creates the necessary service accounts, 
+This creates the necessary service accounts, clusterroles (if needed), clusterrolebindings, secrets and the required kuvb
  
 #### OpenID Connect Tokens
 
@@ -184,7 +184,7 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 ##### Accessing cluster using OIDC tokens 
 *Highly recommended method.* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTU0NTMwNjMsLTk2MjcyODk1MywtMz
+eyJoaXN0b3J5IjpbLTEwMjI0NDYxNTEsLTk2MjcyODk1MywtMz
 U2MDQ5MDA0LDgxMjY4ODY2OCwtMTQ1NzMzODM2NywtMTUxMjAx
 OTk4MiwxODMxNzY1MTAsNzc3OTE5MjMxLC0xOTkyNzEwMTYwLC
 03NjQ1NjMxNjYsLTExNzE3Mzc1NTgsLTM0ODUxMjg2MCw0MjIx
