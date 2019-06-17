@@ -4,6 +4,8 @@
 
 #### Validate connectivity to cluster
 
+Note: The generation and details of the kubeconfig file is addressed in a different sect
+
 To check is a valid kubeconfig file exists and kubectl get connect to the cluster using the config file ($HOME/.kube/config) - 
 >`kubectl version`
 
@@ -113,7 +115,8 @@ Start Time:         Mon, 27 May 2019 22:05:01 -0400
 ## Deploying your first pod
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTg4NTQwOTksLTMzNTU3ODUzOCwxMD
-E5MDA5ODkxLDExODM5NTQyNzYsMTYzNTkxODg3MCw5OTE5NTU0
-NTcsNDk2NjA3Mzc5LC0xODYzMTQ3NjEzLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTEwMzU0NTkyMjcsLTE2NTg4NTQwOTksLT
+MzNTU3ODUzOCwxMDE5MDA5ODkxLDExODM5NTQyNzYsMTYzNTkx
+ODg3MCw5OTE5NTU0NTcsNDk2NjA3Mzc5LC0xODYzMTQ3NjEzLD
+czMDk5ODExNl19
 -->
