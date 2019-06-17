@@ -239,10 +239,10 @@ This should delete the running pod with an output similar to this -
 pod "k8s-operations-6f97c49687-ghmwf" deleted
 ```
 
-
+`Kubectl get pods` will show that another instance of the pod has been created. This is due to the fact that there is a higher level K8s parent object called deployment that is the 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3NjM1MjUxNywxMTA4OTcyNzgsLTE2OD
+eyJoaXN0b3J5IjpbMTA0NTEzODU5MiwxMTA4OTcyNzgsLTE2OD
 I2NDQ3NzEsLTE2NTg4NTQwOTksLTMzNTU3ODUzOCwxMDE5MDA5
 ODkxLDExODM5NTQyNzYsMTYzNTkxODg3MCw5OTE5NTU0NTcsND
 k2NjA3Mzc5LC0xODYzMTQ3NjEzLDczMDk5ODExNl19
