@@ -90,7 +90,7 @@ Please study your config file.
  
  #### OpenID Connect Tokens
 
-The following gets added to the apiserver when using UAA as OIDC provider. 
+The following gets added to the K8S apiserver when using UAA as OIDC provider. 
 
 ```shell
 --oidc-ca-file=/var/vcap/jobs/kube-apiserver/config/oidc-ca.pem 
@@ -103,7 +103,7 @@ The following gets added to the apiserver when using UAA as OIDC provider.
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMzY1MTA0OCwtMTE3MTczNzU1OCwtMz
+eyJoaXN0b3J5IjpbLTc2NDU2MzE2NiwtMTE3MTczNzU1OCwtMz
 Q4NTEyODYwLDQyMjE3NzQ2LDg3NDczOTA1NSwxNDQ4MzIwODY3
 LDEyOTA4MDI5MDgsLTg1MTYwNTk0N119
 -->
