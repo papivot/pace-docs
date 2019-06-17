@@ -94,7 +94,13 @@ Please study your config file.
 
 Example - To achieve this, we need to get the admin token from one of the K8S master server. The location of the file is `/var/vcap/jobs/kube-apiserver/config/tokens.csv`
 
-This can be done by SSHing 
+This can be done by SSHing into the master using the BOSH CLI -
+
+> ```shell
+> bosh alias-env gcp -e 10.0.0.5 --ca-cert /var/tempest/workspaces/default/root_ca_certificate
+> bosh -e gcp log-in
+> bosh -e gcp deployments
+> ```
  
  #### OpenID Connect Tokens
 
@@ -113,7 +119,7 @@ The following gets added to the K8S apiserver when using UAA as OIDC provider.
 
 kubectl --token="$admin_token" get nodes
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxNjc1MTgyNywtMTk5MjcxMDE2MCwtNz
+eyJoaXN0b3J5IjpbLTkxNDk1OTA1MywtMTk5MjcxMDE2MCwtNz
 Y0NTYzMTY2LC0xMTcxNzM3NTU4LC0zNDg1MTI4NjAsNDIyMTc3
 NDYsODc0NzM5MDU1LDE0NDgzMjA4NjcsMTI5MDgwMjkwOCwtOD
 UxNjA1OTQ3XX0=
