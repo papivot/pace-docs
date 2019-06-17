@@ -194,13 +194,15 @@ KeyError: 'CLUSTER_NAME'
 ```
 Note:  This outputs the stderr/stdout of the pod and displaces some of the errors that the container generated during the execution. 
 
-#### Step 4 - 
+#### Step 4 - Running commands in your container
+
+Using the name of the POD retrieved in step2, 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzgzNzYwNTcsMTEwODk3Mjc4LC0xNjgyNj
-Q0NzcxLC0xNjU4ODU0MDk5LC0zMzU1Nzg1MzgsMTAxOTAwOTg5
-MSwxMTgzOTU0Mjc2LDE2MzU5MTg4NzAsOTkxOTU1NDU3LDQ5Nj
-YwNzM3OSwtMTg2MzE0NzYxMyw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTI4NjExNTAxMSwxMTA4OTcyNzgsLTE2OD
+I2NDQ3NzEsLTE2NTg4NTQwOTksLTMzNTU3ODUzOCwxMDE5MDA5
+ODkxLDExODM5NTQyNzYsMTYzNTkxODg3MCw5OTE5NTU0NTcsND
+k2NjA3Mzc5LC0xODYzMTQ3NjEzLDczMDk5ODExNl19
 -->
