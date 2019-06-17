@@ -88,9 +88,17 @@ Please study your config file.
  - [ ] ~~Webhook Token~~
  - [ ] Authenticating Proxy
 
+#### X509 Client Certs
+The following configuration gets added to the K8S apiserver to allow using static token file for authentication. 
+
+```shell
+--token-auth-file=/var/vcap/jobs/kube-apiserver/config/tokens.csv
+```
+
+
 #### Static Token File
 
-The following configuration gets added to the K8S apiserver when using static token file for authentication. 
+The following configuration gets added to the K8S apiserver to allow using static token file for authentication. 
 
 ```shell
 --token-auth-file=/var/vcap/jobs/kube-apiserver/config/tokens.csv
@@ -129,8 +137,9 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 --oidc-username-prefix=- 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTIwMTk5ODIsMTgzMTc2NTEwLDc3Nz
-kxOTIzMSwtMTk5MjcxMDE2MCwtNzY0NTYzMTY2LC0xMTcxNzM3
-NTU4LC0zNDg1MTI4NjAsNDIyMTc3NDYsODc0NzM5MDU1LDE0ND
-gzMjA4NjcsMTI5MDgwMjkwOCwtODUxNjA1OTQ3XX0=
+eyJoaXN0b3J5IjpbNjMxNjE2NjM4LC0xNTEyMDE5OTgyLDE4Mz
+E3NjUxMCw3Nzc5MTkyMzEsLTE5OTI3MTAxNjAsLTc2NDU2MzE2
+NiwtMTE3MTczNzU1OCwtMzQ4NTEyODYwLDQyMjE3NzQ2LDg3ND
+czOTA1NSwxNDQ4MzIwODY3LDEyOTA4MDI5MDgsLTg1MTYwNTk0
+N119
 -->
