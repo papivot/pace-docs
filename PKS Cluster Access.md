@@ -126,14 +126,14 @@ The following commands are executed from the OpsMan
 
 Once the Token has been retrieved, you can generate the kubeconfig using the project - [kubectl_plugin_login](https://github.com/papivot/kubectl_plugin_login)
 
-#### Service Account Tokens File
+#### Service Account Tokens
 
-The following configuration gets added to the K8S apiserver to allow using static token file for authentication. 
+The following configuration gets added to the K8S apiserver to allow using Service Account Tokens for authentication. 
 
 ```shell
---token-auth-file=/var/vcap/jobs/kube-apiserver/config/tokens.csv
+--service-account-key-file=/var/vcap/jobs/kube-apiserver/config/service-account-public-key.pem
 ```
-##### Accessing cluster using static token 
+##### Accessing cluster using Service Account Tokens 
 *Not a recommended method.* 
  
  #### OpenID Connect Tokens
@@ -150,9 +150,9 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 --oidc-username-prefix=- 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2NDg0MjQ4MSwtMTUxMjAxOTk4MiwxOD
-MxNzY1MTAsNzc3OTE5MjMxLC0xOTkyNzEwMTYwLC03NjQ1NjMx
-NjYsLTExNzE3Mzc1NTgsLTM0ODUxMjg2MCw0MjIxNzc0Niw4Nz
-Q3MzkwNTUsMTQ0ODMyMDg2NywxMjkwODAyOTA4LC04NTE2MDU5
-NDddfQ==
+eyJoaXN0b3J5IjpbLTE0NTczMzgzNjcsLTE1MTIwMTk5ODIsMT
+gzMTc2NTEwLDc3NzkxOTIzMSwtMTk5MjcxMDE2MCwtNzY0NTYz
+MTY2LC0xMTcxNzM3NTU4LC0zNDg1MTI4NjAsNDIyMTc3NDYsOD
+c0NzM5MDU1LDE0NDgzMjA4NjcsMTI5MDgwMjkwOCwtODUxNjA1
+OTQ3XX0=
 -->
