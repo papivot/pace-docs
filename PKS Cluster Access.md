@@ -102,7 +102,8 @@ The following commands are executed from the OpsMan
 > bosh alias-env gcp -e 10.0.0.5 --ca-cert /var/tempest/workspaces/default/root_ca_certificate
 > bosh -e gcp log-in
 > bosh -e gcp deployments
-> bosh -e gcp -d service-instance_47267983-9989-41ce-bc33-905e249b1fbc vms
+> bosh -e gcp -d service-instance_[instanceid_of_the_cluster] vms
+> bosh -e gcp -d service-instance_[instanceid_of_the_cluster] ssh master/master_vm_id
 > ```
  
  #### OpenID Connect Tokens
@@ -122,8 +123,8 @@ The following gets added to the K8S apiserver when using UAA as OIDC provider.
 
 kubectl --token="$admin_token" get nodes
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDc0NDY4MTcsLTE5OTI3MTAxNjAsLT
-c2NDU2MzE2NiwtMTE3MTczNzU1OCwtMzQ4NTEyODYwLDQyMjE3
-NzQ2LDg3NDczOTA1NSwxNDQ4MzIwODY3LDEyOTA4MDI5MDgsLT
-g1MTYwNTk0N119
+eyJoaXN0b3J5IjpbODgyOTg3NDQ4LC0xOTkyNzEwMTYwLC03Nj
+Q1NjMxNjYsLTExNzE3Mzc1NTgsLTM0ODUxMjg2MCw0MjIxNzc0
+Niw4NzQ3MzkwNTUsMTQ0ODMyMDg2NywxMjkwODAyOTA4LC04NT
+E2MDU5NDddfQ==
 -->
