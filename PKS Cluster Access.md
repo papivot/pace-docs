@@ -166,7 +166,7 @@ Once the Token has been retrieved, you can generate the kubeconfig using the pro
 
 > `pks get-credentials [pks_clustername]`
 
-This creates the necessary service accounts, clusterroles (if needed), clusterrolebindings, secrets and the required kubeconfig file. 
+This creates the necessary service accounts, clusterroles (if needed), clusterrolebindings, secrets with tokens and the required kubeconfig file leveraging the token. 
  
 #### OpenID Connect Tokens
 
@@ -187,10 +187,10 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 
 Make sure that the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY1MzU3ODE1LDEzODIwNDczNTIsLTk2Mj
-cyODk1MywtMzU2MDQ5MDA0LDgxMjY4ODY2OCwtMTQ1NzMzODM2
-NywtMTUxMjAxOTk4MiwxODMxNzY1MTAsNzc3OTE5MjMxLC0xOT
-kyNzEwMTYwLC03NjQ1NjMxNjYsLTExNzE3Mzc1NTgsLTM0ODUx
-Mjg2MCw0MjIxNzc0Niw4NzQ3MzkwNTUsMTQ0ODMyMDg2NywxMj
-kwODAyOTA4LC04NTE2MDU5NDddfQ==
+eyJoaXN0b3J5IjpbLTUwMTg1ODcwNSwxMzgyMDQ3MzUyLC05Nj
+I3Mjg5NTMsLTM1NjA0OTAwNCw4MTI2ODg2NjgsLTE0NTczMzgz
+NjcsLTE1MTIwMTk5ODIsMTgzMTc2NTEwLDc3NzkxOTIzMSwtMT
+k5MjcxMDE2MCwtNzY0NTYzMTY2LC0xMTcxNzM3NTU4LC0zNDg1
+MTI4NjAsNDIyMTc3NDYsODc0NzM5MDU1LDE0NDgzMjA4NjcsMT
+I5MDgwMjkwOCwtODUxNjA1OTQ3XX0=
 -->
