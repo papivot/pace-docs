@@ -128,7 +128,7 @@ Once the Token has been retrieved, you can generate the kubeconfig using the pro
 
 #### Service Account Tokens
 
-The following configuration gets added to the K8S apiserver to allow using Service Account Tokens for authentication. 
+The following configuration gets added to the K8S apiserver to allow using Service Account Tokens for authentication. This is the method to access whe
 
 ```shell
 --service-account-key-file=/var/vcap/jobs/kube-apiserver/config/service-account-public-key.pem
@@ -150,9 +150,9 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 --oidc-username-prefix=- 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTczMzgzNjcsLTE1MTIwMTk5ODIsMT
-gzMTc2NTEwLDc3NzkxOTIzMSwtMTk5MjcxMDE2MCwtNzY0NTYz
-MTY2LC0xMTcxNzM3NTU4LC0zNDg1MTI4NjAsNDIyMTc3NDYsOD
-c0NzM5MDU1LDE0NDgzMjA4NjcsMTI5MDgwMjkwOCwtODUxNjA1
-OTQ3XX0=
+eyJoaXN0b3J5IjpbNzAwOTIwODY2LC0xNDU3MzM4MzY3LC0xNT
+EyMDE5OTgyLDE4MzE3NjUxMCw3Nzc5MTkyMzEsLTE5OTI3MTAx
+NjAsLTc2NDU2MzE2NiwtMTE3MTczNzU1OCwtMzQ4NTEyODYwLD
+QyMjE3NzQ2LDg3NDczOTA1NSwxNDQ4MzIwODY3LDEyOTA4MDI5
+MDgsLTg1MTYwNTk0N119
 -->
