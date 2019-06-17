@@ -90,18 +90,20 @@ Please study your config file.
  
  #### OpenID Connect Tokens
 
+The following gets added to the apiserver when using UAA as OIDC provider. 
+
 ```shell
 --oidc-ca-file=/var/vcap/jobs/kube-apiserver/config/oidc-ca.pem 
 --oidc-client-id=pks_cluster_client 
 --oidc-groups-claim=roles 
 --oidc-groups-prefix= 
---oidc-issuer-url=https://api.pks.gcpcloud.navneetv.com:8443/oauth/token 
+--oidc-issuer-url=https://api.pks.domain.com:8443/oauth/token 
 --oidc-username-claim=user_name 
 --oidc-username-prefix=- 
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDczMzM0Nzk1LC0xMTcxNzM3NTU4LC0zND
-g1MTI4NjAsNDIyMTc3NDYsODc0NzM5MDU1LDE0NDgzMjA4Njcs
-MTI5MDgwMjkwOCwtODUxNjA1OTQ3XX0=
+eyJoaXN0b3J5IjpbMTMzMzY1MTA0OCwtMTE3MTczNzU1OCwtMz
+Q4NTEyODYwLDQyMjE3NzQ2LDg3NDczOTA1NSwxNDQ4MzIwODY3
+LDEyOTA4MDI5MDgsLTg1MTYwNTk0N119
 -->
