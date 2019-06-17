@@ -116,6 +116,8 @@ Start Time:         Mon, 27 May 2019 22:05:01 -0400
 
 Note: We will leverage the Docker image that we created in the Docker fundamentals section. Since we uploaded the image in GCR - gcr.io/pa-nverma/k8soper:0.0.1 , we will reference GCR in this section for the image registry. If you are using a different registry, please modify the reference accordingly. 
 
+#### Step1 - Run the Docker image from the registry
+
 > `kubectl run k8s-operations --image=gcr.io/pa-nverma/k8soper:0.0.1`
 
 This should create a require deployment and pod artifacts in the default namespace with an output similar to this -
@@ -132,11 +134,12 @@ Execute kubectl to view the pod -
 NAME                              READY   STATUS    RESTARTS   AGE     IP             NODE                                      NOMINATED NODE   READINESS GATES
 k8s-operations-6f97c49687-rbcqv   1/1     Running   2          8m18s   10.200.56.15   vm-ea04c1fe-045a-466e-7c2f-3b7ce8d5f4c2   <none>           <none>
 ```
+Congratulations!!! You executed your first pod in the Kubernetes cluster. 
 
-Congratulations!!! You executed your first pod in the Kubernetes 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjE4NTE2OTMsLTE2ODI2NDQ3NzEsLT
-E2NTg4NTQwOTksLTMzNTU3ODUzOCwxMDE5MDA5ODkxLDExODM5
-NTQyNzYsMTYzNTkxODg3MCw5OTE5NTU0NTcsNDk2NjA3Mzc5LC
-0xODYzMTQ3NjEzLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTcwNjQyNzQ0MiwtMTY4MjY0NDc3MSwtMT
+Y1ODg1NDA5OSwtMzM1NTc4NTM4LDEwMTkwMDk4OTEsMTE4Mzk1
+NDI3NiwxNjM1OTE4ODcwLDk5MTk1NTQ1Nyw0OTY2MDczNzksLT
+E4NjMxNDc2MTMsNzMwOTk4MTE2XX0=
 -->
