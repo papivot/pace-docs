@@ -96,10 +96,13 @@ Example - To achieve this, we need to get the admin token from one of the K8S ma
 
 This can be done by SSHing into the master using the BOSH CLI -
 
+The following commands are executed from the OpsMan
+
 > ```shell
 > bosh alias-env gcp -e 10.0.0.5 --ca-cert /var/tempest/workspaces/default/root_ca_certificate
 > bosh -e gcp log-in
 > bosh -e gcp deployments
+> bosh -e gcp -d service-instance_47267983-9989-41ce-bc33-905e249b1fbc vms
 > ```
  
  #### OpenID Connect Tokens
@@ -119,8 +122,8 @@ The following gets added to the K8S apiserver when using UAA as OIDC provider.
 
 kubectl --token="$admin_token" get nodes
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxNDk1OTA1MywtMTk5MjcxMDE2MCwtNz
-Y0NTYzMTY2LC0xMTcxNzM3NTU4LC0zNDg1MTI4NjAsNDIyMTc3
-NDYsODc0NzM5MDU1LDE0NDgzMjA4NjcsMTI5MDgwMjkwOCwtOD
-UxNjA1OTQ3XX0=
+eyJoaXN0b3J5IjpbLTIxMDc0NDY4MTcsLTE5OTI3MTAxNjAsLT
+c2NDU2MzE2NiwtMTE3MTczNzU1OCwtMzQ4NTEyODYwLDQyMjE3
+NzQ2LDg3NDczOTA1NSwxNDQ4MzIwODY3LDEyOTA4MDI5MDgsLT
+g1MTYwNTk0N119
 -->
