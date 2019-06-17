@@ -126,10 +126,12 @@ deployment.apps/k8s-operations created
 
 Execute kubectl to view the pod - 
 
-> `kubectl get pods -n default                                                                                   
+> `kubectl get pods -n default`
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3NTc4NjY5MiwtMTY4MjY0NDc3MSwtMT
-Y1ODg1NDA5OSwtMzM1NTc4NTM4LDEwMTkwMDk4OTEsMTE4Mzk1
-NDI3NiwxNjM1OTE4ODcwLDk5MTk1NTQ1Nyw0OTY2MDczNzksLT
-E4NjMxNDc2MTMsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE0Mzk0MDU4NTYsLTE2ODI2NDQ3NzEsLT
+E2NTg4NTQwOTksLTMzNTU3ODUzOCwxMDE5MDA5ODkxLDExODM5
+NTQyNzYsMTYzNTkxODg3MCw5OTE5NTU0NTcsNDk2NjA3Mzc5LC
+0xODYzMTQ3NjEzLDczMDk5ODExNl19
 -->
