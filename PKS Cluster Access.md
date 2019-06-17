@@ -127,7 +127,7 @@ The following commands are executed from the OpsMan
 Once the Token has been retrieved, you can generate the kubeconfig using the project - [kubectl_plugin_login](https://github.com/papivot/kubectl_plugin_login)
 
  - User is admin
- - Token is the
+ - Token is the 1st value in the token.csv file's output. 
 
 #### Service Account Tokens
 
@@ -156,7 +156,8 @@ Use the secrets name to get the token -
 
 > `kubectl get secrets default-token-mcf5p -n default  -o json |jq -r '.data.token'|base64 -D`
 
-This is the token that 
+ - User is admin
+ - Token is the 1st value in the token.csv file's output. 
 
 
  
@@ -174,9 +175,10 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 --oidc-username-prefix=- 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NjA0OTAwNCw4MTI2ODg2NjgsLTE0NT
-czMzgzNjcsLTE1MTIwMTk5ODIsMTgzMTc2NTEwLDc3NzkxOTIz
-MSwtMTk5MjcxMDE2MCwtNzY0NTYzMTY2LC0xMTcxNzM3NTU4LC
-0zNDg1MTI4NjAsNDIyMTc3NDYsODc0NzM5MDU1LDE0NDgzMjA4
-NjcsMTI5MDgwMjkwOCwtODUxNjA1OTQ3XX0=
+eyJoaXN0b3J5IjpbMTk1OTkwODU0OSwtMzU2MDQ5MDA0LDgxMj
+Y4ODY2OCwtMTQ1NzMzODM2NywtMTUxMjAxOTk4MiwxODMxNzY1
+MTAsNzc3OTE5MjMxLC0xOTkyNzEwMTYwLC03NjQ1NjMxNjYsLT
+ExNzE3Mzc1NTgsLTM0ODUxMjg2MCw0MjIxNzc0Niw4NzQ3Mzkw
+NTUsMTQ0ODMyMDg2NywxMjkwODAyOTA4LC04NTE2MDU5NDddfQ
+==
 -->
