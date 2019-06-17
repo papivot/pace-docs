@@ -131,7 +131,7 @@ deployment.apps/k8s-operations created
 
 #### Step 2 - View the running configuration 
 
-Wait for a minute or so for the pod to be successfully schedules and then execute kubectl to view the pod - 
+Wait for a minute or so for the pod to be successfully scheduled and then execute kubectl to view the pod - 
 
 > `kubectl get pods -n default -o wide`
 
@@ -143,7 +143,7 @@ Use the node name value to execute the next command -
 
 > `kubectl get pods k8s-operations-6f97c49687-rbcqv -n default -o yaml`
 
-This should should the yaml configuration of your deployment - 
+This should output a yaml configuration of your deployment - 
 
 ```shell
 apiVersion: v1
@@ -257,9 +257,9 @@ deployment.extensions "k8s-operations" deleted
 should no longer have a k8s-operations-* pod.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxOTE2Njc5Miw0Mzk0NzQ2MzUsMTEwOD
-k3Mjc4LC0xNjgyNjQ0NzcxLC0xNjU4ODU0MDk5LC0zMzU1Nzg1
-MzgsMTAxOTAwOTg5MSwxMTgzOTU0Mjc2LDE2MzU5MTg4NzAsOT
-kxOTU1NDU3LDQ5NjYwNzM3OSwtMTg2MzE0NzYxMyw3MzA5OTgx
-MTZdfQ==
+eyJoaXN0b3J5IjpbNDI1ODYwNjYzLDE2MTkxNjY3OTIsNDM5ND
+c0NjM1LDExMDg5NzI3OCwtMTY4MjY0NDc3MSwtMTY1ODg1NDA5
+OSwtMzM1NTc4NTM4LDEwMTkwMDk4OTEsMTE4Mzk1NDI3NiwxNj
+M1OTE4ODcwLDk5MTk1NTQ1Nyw0OTY2MDczNzksLTE4NjMxNDc2
+MTMsNzMwOTk4MTE2XX0=
 -->
