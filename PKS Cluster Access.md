@@ -138,11 +138,10 @@ The following configuration gets added to the K8S apiserver to allow using Servi
 ##### Accessing cluster using Service Account Tokens 
 *Not a highly recommended method.* 
 > ```shell
-> pks get-credentials gcpcluster00
+> kubectl get sa default -n default
 > kubectl get nodes 
 >```
 
-Not that you now have access to the server. 
 
 
  
@@ -160,7 +159,7 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 --oidc-username-prefix=- 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5ODIyNjcwNSwtMTQ1NzMzODM2NywtMT
+eyJoaXN0b3J5IjpbLTQ0MTUwNDA4MSwtMTQ1NzMzODM2NywtMT
 UxMjAxOTk4MiwxODMxNzY1MTAsNzc3OTE5MjMxLC0xOTkyNzEw
 MTYwLC03NjQ1NjMxNjYsLTExNzE3Mzc1NTgsLTM0ODUxMjg2MC
 w0MjIxNzc0Niw4NzQ3MzkwNTUsMTQ0ODMyMDg2NywxMjkwODAy
