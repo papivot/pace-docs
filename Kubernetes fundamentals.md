@@ -63,6 +63,12 @@ NAME                                   STATUS   ROLES    AGE   VERSION   INTERNA
 
 #### Common kubectl commands
 
+> `kubectl cluster-info`
+
+```shell
+
+```
+
 > `kubectl get pods`
 
 ```shell
@@ -105,8 +111,9 @@ Start Time:         Mon, 27 May 2019 22:05:01 -0400
 ```
 
 ## Deploying your first pod
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNTU3ODUzOCwxMDE5MDA5ODkxLDExOD
-M5NTQyNzYsMTYzNTkxODg3MCw5OTE5NTU0NTcsNDk2NjA3Mzc5
-LC0xODYzMTQ3NjEzLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTE2NTg4NTQwOTksLTMzNTU3ODUzOCwxMD
+E5MDA5ODkxLDExODM5NTQyNzYsMTYzNTkxODg3MCw5OTE5NTU0
+NTcsNDk2NjA3Mzc5LC0xODYzMTQ3NjEzLDczMDk5ODExNl19
 -->
