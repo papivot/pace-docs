@@ -88,10 +88,20 @@ Please study your config file.
  - [ ] ~~Webhook Token~~
  - [ ] Authenticating Proxy
  
- 
+ #### OpenID Connect Tokens
+
+```shell
+--oidc-ca-file=/var/vcap/jobs/kube-apiserver/config/oidc-ca.pem 
+--oidc-client-id=pks_cluster_client 
+--oidc-groups-claim=roles 
+--oidc-groups-prefix= 
+--oidc-issuer-url=https://api.pks.gcpcloud.navneetv.com:8443/oauth/token 
+--oidc-username-claim=user_name 
+--oidc-username-prefix=- 
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1OTQxNzAzOSwtMTE3MTczNzU1OCwtMz
-Q4NTEyODYwLDQyMjE3NzQ2LDg3NDczOTA1NSwxNDQ4MzIwODY3
-LDEyOTA4MDI5MDgsLTg1MTYwNTk0N119
+eyJoaXN0b3J5IjpbNDczMzM0Nzk1LC0xMTcxNzM3NTU4LC0zND
+g1MTI4NjAsNDIyMTc3NDYsODc0NzM5MDU1LDE0NDgzMjA4Njcs
+MTI5MDgwMjkwOCwtODUxNjA1OTQ3XX0=
 -->
