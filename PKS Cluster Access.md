@@ -104,7 +104,10 @@ The following commands are executed from the OpsMan
 > bosh -e gcp deployments
 > bosh -e gcp -d service-instance_[instanceid_of_the_cluster] vms
 > bosh -e gcp -d service-instance_[instanceid_of_the_cluster] ssh master/master_vm_id
+> cat /var/vcap/jobs/kube-apiserver/config/tokens.csv|grep admin
 > ```
+
+Once the Token has been retrieved, you can 
  
  #### OpenID Connect Tokens
 
@@ -123,7 +126,7 @@ The following gets added to the K8S apiserver when using UAA as OIDC provider.
 
 kubectl --token="$admin_token" get nodes
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODgyOTg3NDQ4LC0xOTkyNzEwMTYwLC03Nj
+eyJoaXN0b3J5IjpbNzc3OTE5MjMxLC0xOTkyNzEwMTYwLC03Nj
 Q1NjMxNjYsLTExNzE3Mzc1NTgsLTM0ODUxMjg2MCw0MjIxNzc0
 Niw4NzQ3MzkwNTUsMTQ0ODMyMDg2NywxMjkwODAyOTA4LC04NT
 E2MDU5NDddfQ==
