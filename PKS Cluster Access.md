@@ -107,7 +107,7 @@ The following commands are executed from the OpsMan
 > cat /var/vcap/jobs/kube-apiserver/config/tokens.csv|grep admin
 > ```
 
-Once the Token has been retrieved, you can generate the kubeconfig using the 
+Once the Token has been retrieved, you can generate the kubeconfig using the project - [kubectl_plugin_login](https://github.com/papivot/kubectl_plugin_login)
  
  #### OpenID Connect Tokens
 
@@ -126,8 +126,8 @@ The following gets added to the K8S apiserver when using UAA as OIDC provider.
 
 kubectl --token="$admin_token" get nodes
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzkwNDMxNjcsNzc3OTE5MjMxLC0xOT
-kyNzEwMTYwLC03NjQ1NjMxNjYsLTExNzE3Mzc1NTgsLTM0ODUx
-Mjg2MCw0MjIxNzc0Niw4NzQ3MzkwNTUsMTQ0ODMyMDg2NywxMj
-kwODAyOTA4LC04NTE2MDU5NDddfQ==
+eyJoaXN0b3J5IjpbMTgzMTc2NTEwLDc3NzkxOTIzMSwtMTk5Mj
+cxMDE2MCwtNzY0NTYzMTY2LC0xMTcxNzM3NTU4LC0zNDg1MTI4
+NjAsNDIyMTc3NDYsODc0NzM5MDU1LDE0NDgzMjA4NjcsMTI5MD
+gwMjkwOCwtODUxNjA1OTQ3XX0=
 -->
