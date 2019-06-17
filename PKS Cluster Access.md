@@ -95,7 +95,6 @@ The following configuration gets added to the K8S apiserver when using static to
 ```shell
 --token-auth-file=/var/vcap/jobs/kube-apiserver/config/tokens.csv
 ```
-
 ##### Accessing cluster using static token 
 *Not a recommended method.* 
 
@@ -130,8 +129,8 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 --oidc-username-prefix=- 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNTAwMTYzMiwxODMxNzY1MTAsNzc3OT
-E5MjMxLC0xOTkyNzEwMTYwLC03NjQ1NjMxNjYsLTExNzE3Mzc1
-NTgsLTM0ODUxMjg2MCw0MjIxNzc0Niw4NzQ3MzkwNTUsMTQ0OD
-MyMDg2NywxMjkwODAyOTA4LC04NTE2MDU5NDddfQ==
+eyJoaXN0b3J5IjpbLTE1MTIwMTk5ODIsMTgzMTc2NTEwLDc3Nz
+kxOTIzMSwtMTk5MjcxMDE2MCwtNzY0NTYzMTY2LC0xMTcxNzM3
+NTU4LC0zNDg1MTI4NjAsNDIyMTc3NDYsODc0NzM5MDU1LDE0ND
+gzMjA4NjcsMTI5MDgwMjkwOCwtODUxNjA1OTQ3XX0=
 -->
