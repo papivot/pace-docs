@@ -119,7 +119,7 @@ The following commands are executed from the OpsMan
 > bosh -e gcp log-in
 > bosh -e gcp deployments
 > bosh -e gcp -d service-instance_[instanceid_of_the_cluster] vms
-> bosh -e gcp -d service-instance_[instanceid_of_the_cluster] ssh master/master_vm_id
+> bosh -e gcp -d service-instance_[instanceid_of_the_cluster] ssh master/[master_vm_id]
 > cat /var/vcap/jobs/kube-apiserver/config/tokens.csv|grep admin
 > ```
 
@@ -185,10 +185,10 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 
 Make sure that the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4MjA0NzM1MiwtOTYyNzI4OTUzLC0zNT
-YwNDkwMDQsODEyNjg4NjY4LC0xNDU3MzM4MzY3LC0xNTEyMDE5
-OTgyLDE4MzE3NjUxMCw3Nzc5MTkyMzEsLTE5OTI3MTAxNjAsLT
-c2NDU2MzE2NiwtMTE3MTczNzU1OCwtMzQ4NTEyODYwLDQyMjE3
-NzQ2LDg3NDczOTA1NSwxNDQ4MzIwODY3LDEyOTA4MDI5MDgsLT
-g1MTYwNTk0N119
+eyJoaXN0b3J5IjpbLTkyNTE2MTk3MCwxMzgyMDQ3MzUyLC05Nj
+I3Mjg5NTMsLTM1NjA0OTAwNCw4MTI2ODg2NjgsLTE0NTczMzgz
+NjcsLTE1MTIwMTk5ODIsMTgzMTc2NTEwLDc3NzkxOTIzMSwtMT
+k5MjcxMDE2MCwtNzY0NTYzMTY2LC0xMTcxNzM3NTU4LC0zNDg1
+MTI4NjAsNDIyMTc3NDYsODc0NzM5MDU1LDE0NDgzMjA4NjcsMT
+I5MDgwMjkwOCwtODUxNjA1OTQ3XX0=
 -->
