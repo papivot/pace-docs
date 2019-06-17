@@ -82,7 +82,7 @@ Please study your config file.
  - [ ]  X509 Client Certs
  - [ ] Static Token File
  - [ ] Bootstrap Tokens
- - [ ] Static Password File
+ - [ ] ~~Static Password File~~ - Disabled in PKS
  - [ ] Service Account Tokens
  - [ ] OpenID Connect Tokens
  - [ ] Webhook Token Authentication
@@ -90,6 +90,7 @@ Please study your config file.
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIyMTc3NDYsODc0NzM5MDU1LDE0NDgzMj
-A4NjcsMTI5MDgwMjkwOCwtODUxNjA1OTQ3XX0=
+eyJoaXN0b3J5IjpbLTM0ODUxMjg2MCw0MjIxNzc0Niw4NzQ3Mz
+kwNTUsMTQ0ODMyMDg2NywxMjkwODAyOTA4LC04NTE2MDU5NDdd
+fQ==
 -->
