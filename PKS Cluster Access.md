@@ -87,9 +87,11 @@ Please study your config file.
  - [ ] ### Static Password File
  - [ ] ### Service Account Tokens
  - [ ] ### OpenID Connect Tokens
+ - [ ] ### Webhook Token Authentication
+ - [ ] ### Authenticating Proxy
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExODI2Mjk2NywxNDQ4MzIwODY3LDEyOT
-A4MDI5MDgsLTg1MTYwNTk0N119
+eyJoaXN0b3J5IjpbODc0NzM5MDU1LDE0NDgzMjA4NjcsMTI5MD
+gwMjkwOCwtODUxNjA1OTQ3XX0=
 -->
