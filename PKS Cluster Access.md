@@ -82,18 +82,21 @@ Please study your config file.
  - [ ]  X509 Client Certs
  - [ ] Static Token File
  - [ ] Bootstrap Tokens
- - [ ] ~~Static Password File~~ - Disabled in PKS
+ - [ ] ~~Static Password File~~ - Disabled in PKS 
  - [ ] Service Account Tokens
  - [ ] OpenID Connect Tokens
  - [ ] ~~Webhook Token~~
  - [ ] Authenticating Proxy
 
 #### X509 Client Certs
-The following configuration gets added to the K8S apiserver to allow using static token file for authentication. 
+The following configuration gets added to the K8S apiserver to allow using X509 Client cert files for authentication. 
 
 ```shell
---token-auth-file=/var/vcap/jobs/kube-apiserver/config/tokens.csv
+--client-ca-file=/var/vcap/jobs/kube-apiserver/config/kubernetes-ca.pem 
 ```
+##### Accessing cluster using X509 Client Certs
+*Not a recommended method.* 
+
 
 
 #### Static Token File
@@ -137,7 +140,7 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 --oidc-username-prefix=- 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjMxNjE2NjM4LC0xNTEyMDE5OTgyLDE4Mz
+eyJoaXN0b3J5IjpbODY1MTU5NjU5LC0xNTEyMDE5OTgyLDE4Mz
 E3NjUxMCw3Nzc5MTkyMzEsLTE5OTI3MTAxNjAsLTc2NDU2MzE2
 NiwtMTE3MTczNzU1OCwtMzQ4NTEyODYwLDQyMjE3NzQ2LDg3ND
 czOTA1NSwxNDQ4MzIwODY3LDEyOTA4MDI5MDgsLTg1MTYwNTk0
