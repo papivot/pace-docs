@@ -85,12 +85,12 @@ Please study your config file.
  - [ ] ~~Static Password File~~ - Disabled in PKS
  - [ ] Service Account Tokens
  - [ ] OpenID Connect Tokens
- - [ ] Webhook Token Authentication
+ - [ ] ~~Webhook Token~~
  - [ ] Authenticating Proxy
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0ODUxMjg2MCw0MjIxNzc0Niw4NzQ3Mz
-kwNTUsMTQ0ODMyMDg2NywxMjkwODAyOTA4LC04NTE2MDU5NDdd
-fQ==
+eyJoaXN0b3J5IjpbLTExNzE3Mzc1NTgsLTM0ODUxMjg2MCw0Mj
+IxNzc0Niw4NzQ3MzkwNTUsMTQ0ODMyMDg2NywxMjkwODAyOTA4
+LC04NTE2MDU5NDddfQ==
 -->
