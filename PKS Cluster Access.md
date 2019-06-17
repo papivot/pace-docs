@@ -51,7 +51,7 @@ users:
 ```
 
 ##### Contexts
-The contexts section contains an array of context associating the cluster a
+The contexts section contains an array of context associating the cluster and user objects from the above sections. An example can be similar to this - 
 
 ```shell
 contexts:
@@ -64,6 +64,10 @@ contexts:
     user: nverma
   name: gcpcluster00
 ```
+
+##### Current-context
+
+The current-context specifies which context is currently enforced fo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjcyMzY3OSwtODUxNjA1OTQ3XX0=
+eyJoaXN0b3J5IjpbOTkzNzgzMjA1LC04NTE2MDU5NDddfQ==
 -->
