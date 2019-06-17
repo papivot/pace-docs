@@ -114,14 +114,15 @@ Start Time:         Mon, 27 May 2019 22:05:01 -0400
 
 ## Deploying your first pod
 
-Note: We will leverage the Docker image that we created in the Docker fundamentals section. Since we uploaded the image in GCR, we will reference GCR in this section for the image registry. If you are using a different registry, please modify the reference accordingly. 
+Note: We will leverage the Docker image that we created in the Docker fundamentals section. Since we uploaded the image in GCR - gcr.io/pa-nverma/k8soper:0.0.1 , we will reference GCR in this section for the image registry. If you are using a different registry, please modify the reference accordingly. 
 
 > `kubectl run k8s-operations --image=gcr.io/pa-nverma/k8soper:0.0.1`
 
-This s
+This should create a require deployment and pod artifacts in the default namespace 1ith an output similar to this -
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1ODIwMTAzMSwtMTY4MjY0NDc3MSwtMT
-Y1ODg1NDA5OSwtMzM1NTc4NTM4LDEwMTkwMDk4OTEsMTE4Mzk1
-NDI3NiwxNjM1OTE4ODcwLDk5MTk1NTQ1Nyw0OTY2MDczNzksLT
-E4NjMxNDc2MTMsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMjMyNjA3MDA5LC0xNjgyNjQ0NzcxLC0xNj
+U4ODU0MDk5LC0zMzU1Nzg1MzgsMTAxOTAwOTg5MSwxMTgzOTU0
+Mjc2LDE2MzU5MTg4NzAsOTkxOTU1NDU3LDQ5NjYwNzM3OSwtMT
+g2MzE0NzYxMyw3MzA5OTgxMTZdfQ==
 -->
