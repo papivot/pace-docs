@@ -90,8 +90,14 @@ Please study your config file.
 
 #### Static Token File
 
+The following configuration gets added to the K8S apiserver when using using static token file for authentication. 
+
+```shell
+
+```
+
+
 *Not a recommended method.* 
-The following configuration gets added to the K8S apiserver when using UAA as OIDC provider. 
 
 Example - To achieve this, we need to get the admin token from one of the K8S master server. The location of the file is `/var/vcap/jobs/kube-apiserver/config/tokens.csv`
 
@@ -123,12 +129,9 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 --oidc-username-claim=user_name 
 --oidc-username-prefix=- 
 ```
-
-
-kubectl --token="$admin_token" get nodes
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjY3NDE3NDMsMTgzMTc2NTEwLDc3Nz
-kxOTIzMSwtMTk5MjcxMDE2MCwtNzY0NTYzMTY2LC0xMTcxNzM3
-NTU4LC0zNDg1MTI4NjAsNDIyMTc3NDYsODc0NzM5MDU1LDE0ND
-gzMjA4NjcsMTI5MDgwMjkwOCwtODUxNjA1OTQ3XX0=
+eyJoaXN0b3J5IjpbLTI1MzgyNDcxNCwxODMxNzY1MTAsNzc3OT
+E5MjMxLC0xOTkyNzEwMTYwLC03NjQ1NjMxNjYsLTExNzE3Mzc1
+NTgsLTM0ODUxMjg2MCw0MjIxNzc0Niw4NzQ3MzkwNTUsMTQ0OD
+MyMDg2NywxMjkwODAyOTA4LC04NTE2MDU5NDddfQ==
 -->
