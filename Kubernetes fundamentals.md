@@ -174,11 +174,33 @@ Using the POD name from the previous section run the following commands -
 You may get an output similar to this - 
 
 ```shell
-
+job started at:  2019-06-17 14:49:56.693852
+Traceback (most recent call last):
+  File "/usr/local/bin/exportjson.py", line 115, in <module>
+    schedule.run_pending()
+  File "/usr/lib/python3.6/site-packages/schedule/__init__.py", line 563, in run_pending
+    default_scheduler.run_pending()
+  File "/usr/lib/python3.6/site-packages/schedule/__init__.py", line 94, in run_pending
+    self._run_job(job)
+  File "/usr/lib/python3.6/site-packages/schedule/__init__.py", line 147, in _run_job
+    ret = job.run()
+  File "/usr/lib/python3.6/site-packages/schedule/__init__.py", line 466, in run
+    ret = self.job_func()
+  File "/usr/local/bin/exportjson.py", line 15, in job
+    clustername = os.environ['CLUSTER_NAME']
+  File "/usr/lib/python3.6/os.py", line 669, in __getitem__
+    raise KeyError(key) from None
+KeyError: 'CLUSTER_NAME'
 ```
+Note:  This outputs the stderr/stdout of the pod and displaces some of the errors that the container generated during the execution. 
+
+#### Step 4 - 
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjIwODEwMDUsMTEwODk3Mjc4LC0xNj
-gyNjQ0NzcxLC0xNjU4ODU0MDk5LC0zMzU1Nzg1MzgsMTAxOTAw
-OTg5MSwxMTgzOTU0Mjc2LDE2MzU5MTg4NzAsOTkxOTU1NDU3LD
-Q5NjYwNzM3OSwtMTg2MzE0NzYxMyw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbNzgzNzYwNTcsMTEwODk3Mjc4LC0xNjgyNj
+Q0NzcxLC0xNjU4ODU0MDk5LC0zMzU1Nzg1MzgsMTAxOTAwOTg5
+MSwxMTgzOTU0Mjc2LDE2MzU5MTg4NzAsOTkxOTU1NDU3LDQ5Nj
+YwNzM3OSwtMTg2MzE0NzYxMyw3MzA5OTgxMTZdfQ==
 -->
