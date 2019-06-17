@@ -87,6 +87,12 @@ Please study your config file.
  - [ ] OpenID Connect Tokens
  - [ ] ~~Webhook Token~~
  - [ ] Authenticating Proxy
+
+#### Static Token File
+
+**Not a recommended method.** 
+
+To achieve this, 
  
  #### OpenID Connect Tokens
 
@@ -105,7 +111,8 @@ The following gets added to the K8S apiserver when using UAA as OIDC provider.
 
 kubectl --token="$admin_token" get nodes
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTI3MTAxNjAsLTc2NDU2MzE2NiwtMT
-E3MTczNzU1OCwtMzQ4NTEyODYwLDQyMjE3NzQ2LDg3NDczOTA1
-NSwxNDQ4MzIwODY3LDEyOTA4MDI5MDgsLTg1MTYwNTk0N119
+eyJoaXN0b3J5IjpbMTk0MjAwODY0MywtMTk5MjcxMDE2MCwtNz
+Y0NTYzMTY2LC0xMTcxNzM3NTU4LC0zNDg1MTI4NjAsNDIyMTc3
+NDYsODc0NzM5MDU1LDE0NDgzMjA4NjcsMTI5MDgwMjkwOCwtOD
+UxNjA1OTQ3XX0=
 -->
