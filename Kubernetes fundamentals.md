@@ -224,11 +224,20 @@ drwxr-xr-x    5 root     root          4096 May  9 20:49 media
 drwxr-xr-x    2 root     root          4096 May  9 20:49 mnt
 drwxr-xr-x    2 root     root          4096 May  9 20:49 opt
 ```
+> `exit`
+
+to exit the shell prompt. 
+
+#### Step 5 - Cleanup
+
+Using the name of the POD retrieved in step2, run the following command -
+
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDE3MTk2MDcsMTEwODk3Mjc4LC0xNj
-gyNjQ0NzcxLC0xNjU4ODU0MDk5LC0zMzU1Nzg1MzgsMTAxOTAw
-OTg5MSwxMTgzOTU0Mjc2LDE2MzU5MTg4NzAsOTkxOTU1NDU3LD
-Q5NjYwNzM3OSwtMTg2MzE0NzYxMyw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTMwMjAzMzIyLDExMDg5NzI3OCwtMTY4Mj
+Y0NDc3MSwtMTY1ODg1NDA5OSwtMzM1NTc4NTM4LDEwMTkwMDk4
+OTEsMTE4Mzk1NDI3NiwxNjM1OTE4ODcwLDk5MTk1NTQ1Nyw0OT
+Y2MDczNzksLTE4NjMxNDc2MTMsNzMwOTk4MTE2XX0=
 -->
