@@ -126,7 +126,9 @@ This should create a require deployment and pod artifacts in the default namespa
 deployment.apps/k8s-operations created
 ```
 
-Execute kubectl to view the pod - 
+#### Step2 - View the running configuration 
+
+Wait for a minute or so for the pod to be successfully schedules and then execute kubectl to view the pod - 
 
 > `kubectl get pods -n default -o wide`
 
@@ -134,12 +136,14 @@ Execute kubectl to view the pod -
 NAME                              READY   STATUS    RESTARTS   AGE     IP             NODE                                      NOMINATED NODE   READINESS GATES
 k8s-operations-6f97c49687-rbcqv   1/1     Running   2          8m18s   10.200.56.15   vm-ea04c1fe-045a-466e-7c2f-3b7ce8d5f4c2   <none>           <none>
 ```
+
+
 Congratulations!!! You executed your first pod in the Kubernetes cluster. 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNjQyNzQ0MiwtMTY4MjY0NDc3MSwtMT
-Y1ODg1NDA5OSwtMzM1NTc4NTM4LDEwMTkwMDk4OTEsMTE4Mzk1
-NDI3NiwxNjM1OTE4ODcwLDk5MTk1NTQ1Nyw0OTY2MDczNzksLT
-E4NjMxNDc2MTMsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTEwODk3Mjc4LC0xNjgyNjQ0NzcxLC0xNj
+U4ODU0MDk5LC0zMzU1Nzg1MzgsMTAxOTAwOTg5MSwxMTgzOTU0
+Mjc2LDE2MzU5MTg4NzAsOTkxOTU1NDU3LDQ5NjYwNzM3OSwtMT
+g2MzE0NzYxMyw3MzA5OTgxMTZdfQ==
 -->
