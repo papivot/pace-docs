@@ -75,8 +75,11 @@ current-context: gcpcluster00
 
 Please study your config file.
 
-## UAA as OIDC provider
+## AuthN for Kubernetes 
+ 
+ Some of the authentication mechanisms for Kubernetes are - 
+ 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0ODMyMDg2NywxMjkwODAyOTA4LC04NT
-E2MDU5NDddfQ==
+eyJoaXN0b3J5IjpbMTAzNTc4MTYyOSwxNDQ4MzIwODY3LDEyOT
+A4MDI5MDgsLTg1MTYwNTk0N119
 -->
