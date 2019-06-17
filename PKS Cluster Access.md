@@ -75,7 +75,8 @@ current-context: gcpcluster00
 
 Please study your config file.
 
-
+## UAA as OIDC provider
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5MDgwMjkwOCwtODUxNjA1OTQ3XX0=
+eyJoaXN0b3J5IjpbMTQ0ODMyMDg2NywxMjkwODAyOTA4LC04NT
+E2MDU5NDddfQ==
 -->
