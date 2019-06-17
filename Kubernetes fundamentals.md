@@ -126,11 +126,16 @@ deployment.apps/k8s-operations created
 
 Execute kubectl to view the pod - 
 
-> `kubectl get pods -n default`
+> `kubectl get pods -n default -o wide`
 
+```shell
+NAME                              READY   STATUS    RESTARTS   AGE     IP             NODE                                      NOMINATED NODE   READINESS GATES
+k8s-operations-6f97c49687-rbcqv   1/1     Running   2          8m18s   10.200.56.15   vm-ea04c1fe-045a-466e-7c2f-3b7ce8d5f4c2   <none>           <none>
+```
 
+Congratulations!!! You executed your first pod in the Kubernetes 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Mzk0MDU4NTYsLTE2ODI2NDQ3NzEsLT
+eyJoaXN0b3J5IjpbLTE3MjE4NTE2OTMsLTE2ODI2NDQ3NzEsLT
 E2NTg4NTQwOTksLTMzNTU3ODUzOCwxMDE5MDA5ODkxLDExODM5
 NTQyNzYsMTYzNTkxODg3MCw5OTE5NTU0NTcsNDk2NjA3Mzc5LC
 0xODYzMTQ3NjEzLDczMDk5ODExNl19
