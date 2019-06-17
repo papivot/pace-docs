@@ -232,12 +232,18 @@ to exit the shell prompt.
 
 Using the name of the POD retrieved in step2, run the following command -
 
+> `kubectl delete pods k8s-operations-6f97c49687-ghmwf -n default`
+
+This should delete the running pod with an output similar to this - 
+```shell
+pod "k8s-operations-6f97c49687-ghmwf" deleted
+```
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMjAzMzIyLDExMDg5NzI3OCwtMTY4Mj
-Y0NDc3MSwtMTY1ODg1NDA5OSwtMzM1NTc4NTM4LDEwMTkwMDk4
-OTEsMTE4Mzk1NDI3NiwxNjM1OTE4ODcwLDk5MTk1NTQ1Nyw0OT
-Y2MDczNzksLTE4NjMxNDc2MTMsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTI3NjM1MjUxNywxMTA4OTcyNzgsLTE2OD
+I2NDQ3NzEsLTE2NTg4NTQwOTksLTMzNTU3ODUzOCwxMDE5MDA5
+ODkxLDExODM5NTQyNzYsMTYzNTkxODg3MCw5OTE5NTU0NTcsND
+k2NjA3Mzc5LC0xODYzMTQ3NjEzLDczMDk5ODExNl19
 -->
