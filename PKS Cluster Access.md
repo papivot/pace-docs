@@ -329,10 +329,25 @@ Once this is successful, an LDAP user entry [ldapuser] is created in the respect
 > `uaac groups`
 
 ```shell
-
+...
+  pks.clusters.manage
+    id: 96d579fc-63ab-49ca-ba0e-87784b2602f4
+    meta
+      version: 9
+      created: 2019-06-04T22:51:30.000Z
+      lastmodified: 2019-06-18T19:31:56.000Z
+    description: Allows a user to manage PKS clusters
+    members:
+    -
+      origin: ldap
+      type: USER
+      value: d8f65d06-824c-41ae-a751-12a47d21d762
+    schemas: urn:scim:schemas:core:1.0
+    zoneid: uaa
+ ...
 ``` 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3MzU1NTE3MSwxOTQ3NjQ4NTE1LDgyNj
+eyJoaXN0b3J5IjpbMTA1NDQ5OTI5NSwxOTQ3NjQ4NTE1LDgyNj
 AxMDA1LDg3NDQyMzQ2NCwxMDQ0NTExOTMxLDExNTAxMjczMzIs
 LTEzODM5OTYxMzIsLTg0ODU0MDY2MiwtNTAxODU4NzA1LDEzOD
 IwNDczNTIsLTk2MjcyODk1MywtMzU2MDQ5MDA0LDgxMjY4ODY2
