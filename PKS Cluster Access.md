@@ -96,7 +96,7 @@ The following configuration gets added to the K8S apiserver to allow using X509 
 ##### Accessing cluster using X509 Client Certs
 *Not a recommended method.* 
 
-Example - 
+*Example [ This is for demonstration purpose only. This is specific to PKS and may vary for other K8s distributions] -* 
 
 To achieve this, we need to generate client certificates using the root ca that stored on the K8S master server. The location of the CA file is `/var/vcap/jobs/kube-apiserver/config/kubernetes-ca.pem`
 
@@ -129,7 +129,7 @@ The following configuration gets added to the K8S apiserver to allow using stati
 ##### Accessing cluster using static token 
 *Not a recommended method.* 
 
-Example - 
+Example [ This is for demonstration purpose only. This is specific to PKS and may vary for other K8s distributions] -- 
 
 To achieve this, we need to get the admin token from one of the K8S master server. The location of the file is `/var/vcap/jobs/kube-apiserver/config/tokens.csv`
 
@@ -212,7 +212,7 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 
 Example - Make sure that the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyNDc3MTU5NCwxMDQ0NTExOTMxLDExNT
+eyJoaXN0b3J5IjpbMTkxNjA0NDI2OSwxMDQ0NTExOTMxLDExNT
 AxMjczMzIsLTEzODM5OTYxMzIsLTg0ODU0MDY2MiwtNTAxODU4
 NzA1LDEzODIwNDczNTIsLTk2MjcyODk1MywtMzU2MDQ5MDA0LD
 gxMjY4ODY2OCwtMTQ1NzMzODM2NywtMTUxMjAxOTk4MiwxODMx
