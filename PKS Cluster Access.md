@@ -108,7 +108,9 @@ The following configuration gets added to the K8S apiserver to allow using stati
 ##### Accessing cluster using static token 
 *Not a recommended method.* 
 
-Example - To achieve this, we need to get the admin token from one of the K8S master server. The location of the file is `/var/vcap/jobs/kube-apiserver/config/tokens.csv`
+Example - 
+
+To achieve this, we need to get the admin token from one of the K8S master server. The location of the file is `/var/vcap/jobs/kube-apiserver/config/tokens.csv`
 
 This can be done by SSHing into the master using the BOSH CLI -
 
@@ -140,7 +142,9 @@ The following configuration gets added to the K8S apiserver to allow using Servi
 ##### Accessing cluster using Service Account Tokens 
 *Not a highly recommended method.* 
 
-Example - To achieve this, we need to get the token from one of the default service accounts and use this token to generate the Kubeconfig file.
+Example - 
+
+To achieve this, we need to get the token from one of the default service accounts and use this token to generate the Kubeconfig file.
 
 > `kubectl get sa default -n default -o yaml`
 
@@ -187,11 +191,11 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 
 Example - Make sure that the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODM5OTYxMzIsLTg0ODU0MDY2MiwtNT
-AxODU4NzA1LDEzODIwNDczNTIsLTk2MjcyODk1MywtMzU2MDQ5
-MDA0LDgxMjY4ODY2OCwtMTQ1NzMzODM2NywtMTUxMjAxOTk4Mi
-wxODMxNzY1MTAsNzc3OTE5MjMxLC0xOTkyNzEwMTYwLC03NjQ1
-NjMxNjYsLTExNzE3Mzc1NTgsLTM0ODUxMjg2MCw0MjIxNzc0Ni
-w4NzQ3MzkwNTUsMTQ0ODMyMDg2NywxMjkwODAyOTA4LC04NTE2
-MDU5NDddfQ==
+eyJoaXN0b3J5IjpbMTE1MDEyNzMzMiwtMTM4Mzk5NjEzMiwtOD
+Q4NTQwNjYyLC01MDE4NTg3MDUsMTM4MjA0NzM1MiwtOTYyNzI4
+OTUzLC0zNTYwNDkwMDQsODEyNjg4NjY4LC0xNDU3MzM4MzY3LC
+0xNTEyMDE5OTgyLDE4MzE3NjUxMCw3Nzc5MTkyMzEsLTE5OTI3
+MTAxNjAsLTc2NDU2MzE2NiwtMTE3MTczNzU1OCwtMzQ4NTEyOD
+YwLDQyMjE3NzQ2LDg3NDczOTA1NSwxNDQ4MzIwODY3LDEyOTA4
+MDI5MDhdfQ==
 -->
