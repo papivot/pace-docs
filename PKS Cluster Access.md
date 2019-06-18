@@ -126,6 +126,7 @@ admin.crt
 admin.csr
 admin.key
 ```
+Copy the admin.crt and admin.key to the jumphost/bastion/desktop. 
 
 
 ### Static Token File
@@ -221,11 +222,11 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 
 Example - Make sure that the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4NDkxOTA4OCwxMDQ0NTExOTMxLDExNT
-AxMjczMzIsLTEzODM5OTYxMzIsLTg0ODU0MDY2MiwtNTAxODU4
-NzA1LDEzODIwNDczNTIsLTk2MjcyODk1MywtMzU2MDQ5MDA0LD
-gxMjY4ODY2OCwtMTQ1NzMzODM2NywtMTUxMjAxOTk4MiwxODMx
-NzY1MTAsNzc3OTE5MjMxLC0xOTkyNzEwMTYwLC03NjQ1NjMxNj
-YsLTExNzE3Mzc1NTgsLTM0ODUxMjg2MCw0MjIxNzc0Niw4NzQ3
-MzkwNTVdfQ==
+eyJoaXN0b3J5IjpbLTEwMzIzODI3MTMsMTA0NDUxMTkzMSwxMT
+UwMTI3MzMyLC0xMzgzOTk2MTMyLC04NDg1NDA2NjIsLTUwMTg1
+ODcwNSwxMzgyMDQ3MzUyLC05NjI3Mjg5NTMsLTM1NjA0OTAwNC
+w4MTI2ODg2NjgsLTE0NTczMzgzNjcsLTE1MTIwMTk5ODIsMTgz
+MTc2NTEwLDc3NzkxOTIzMSwtMTk5MjcxMDE2MCwtNzY0NTYzMT
+Y2LC0xMTcxNzM3NTU4LC0zNDg1MTI4NjAsNDIyMTc3NDYsODc0
+NzM5MDU1XX0=
 -->
