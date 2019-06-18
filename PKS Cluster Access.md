@@ -251,7 +251,7 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 ##### Accessing cluster using OIDC tokens 
 *Highly recommended method.* 
 
-To provide OIDC
+To provide OIDC token based authentication, the flag `Enable UAA as OIDC provider` has to be checked in the PKS tile in the UAA section. Doing so This will configure created clusters to use UAA as the OIDC provider. 
 
 ## PKS LDAP configuration
 
@@ -355,11 +355,11 @@ Once this is successful, an LDAP user entry [ldapuser] is created in the respect
  - Unless OIDC is enabled, all cluster authentication is thru service tokens. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzU0MzY5NTYsLTE2ODk3NTY1MDIsLT
-IwMTY1MzA2MTcsMTA1NDQ5OTI5NSwxOTQ3NjQ4NTE1LDgyNjAx
-MDA1LDg3NDQyMzQ2NCwxMDQ0NTExOTMxLDExNTAxMjczMzIsLT
-EzODM5OTYxMzIsLTg0ODU0MDY2MiwtNTAxODU4NzA1LDEzODIw
-NDczNTIsLTk2MjcyODk1MywtMzU2MDQ5MDA0LDgxMjY4ODY2OC
-wtMTQ1NzMzODM2NywtMTUxMjAxOTk4MiwxODMxNzY1MTAsNzc3
-OTE5MjMxXX0=
+eyJoaXN0b3J5IjpbLTUzMjc2OTQ4NCwtMTY4OTc1NjUwMiwtMj
+AxNjUzMDYxNywxMDU0NDk5Mjk1LDE5NDc2NDg1MTUsODI2MDEw
+MDUsODc0NDIzNDY0LDEwNDQ1MTE5MzEsMTE1MDEyNzMzMiwtMT
+M4Mzk5NjEzMiwtODQ4NTQwNjYyLC01MDE4NTg3MDUsMTM4MjA0
+NzM1MiwtOTYyNzI4OTUzLC0zNTYwNDkwMDQsODEyNjg4NjY4LC
+0xNDU3MzM4MzY3LC0xNTEyMDE5OTgyLDE4MzE3NjUxMCw3Nzc5
+MTkyMzFdfQ==
 -->
