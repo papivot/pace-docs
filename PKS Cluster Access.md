@@ -126,7 +126,10 @@ admin.crt
 admin.csr
 admin.key
 ```
-Copy the admin.crt and admin.key to the jumphost/bastion/desktop. 
+Copy the admin.crt and admin.key to the jumphost/bastion/desktop. Create a yaml file - admin.yaml
+```shell
+
+```
 
 
 ### Static Token File
@@ -222,7 +225,7 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 
 Example - Make sure that the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzIzODI3MTMsMTA0NDUxMTkzMSwxMT
+eyJoaXN0b3J5IjpbLTE2Nzg1Mjk5OTAsMTA0NDUxMTkzMSwxMT
 UwMTI3MzMyLC0xMzgzOTk2MTMyLC04NDg1NDA2NjIsLTUwMTg1
 ODcwNSwxMzgyMDQ3MzUyLC05NjI3Mjg5NTMsLTM1NjA0OTAwNC
 w4MTI2ODg2NjgsLTE0NTczMzgzNjcsLTE1MTIwMTk5ODIsMTgz
