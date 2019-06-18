@@ -347,15 +347,17 @@ Once this is successful, an LDAP user entry [ldapuser] is created in the respect
  ...
 ``` 
 
-**NOTE:** Users and groups that are member of `pks.clusters.admin` and `pks.clusters.manage` can only access/authenticate to the PKS API endpoint. 
-**NOTE:** `pks get-kubeconfig` is only available when OIDC is enabled. 
+**NOTES:** 
+Users and groups that are member of `pks.clusters.admin` and `pks.clusters.manage` can only access/authenticate to the PKS API endpoint. 
+`pks get-kubeconfig` is only available when OIDC is enabled. 
 **NOTE:** Unless OIDC is enabled, all cluster authentication is thru service tokens. 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTY1MzA2MTcsMTA1NDQ5OTI5NSwxOT
-Q3NjQ4NTE1LDgyNjAxMDA1LDg3NDQyMzQ2NCwxMDQ0NTExOTMx
-LDExNTAxMjczMzIsLTEzODM5OTYxMzIsLTg0ODU0MDY2MiwtNT
-AxODU4NzA1LDEzODIwNDczNTIsLTk2MjcyODk1MywtMzU2MDQ5
-MDA0LDgxMjY4ODY2OCwtMTQ1NzMzODM2NywtMTUxMjAxOTk4Mi
-wxODMxNzY1MTAsNzc3OTE5MjMxLC0xOTkyNzEwMTYwLC03NjQ1
-NjMxNjZdfQ==
+eyJoaXN0b3J5IjpbLTc0NjIwOTcxMCwtMjAxNjUzMDYxNywxMD
+U0NDk5Mjk1LDE5NDc2NDg1MTUsODI2MDEwMDUsODc0NDIzNDY0
+LDEwNDQ1MTE5MzEsMTE1MDEyNzMzMiwtMTM4Mzk5NjEzMiwtOD
+Q4NTQwNjYyLC01MDE4NTg3MDUsMTM4MjA0NzM1MiwtOTYyNzI4
+OTUzLC0zNTYwNDkwMDQsODEyNjg4NjY4LC0xNDU3MzM4MzY3LC
+0xNTEyMDE5OTgyLDE4MzE3NjUxMCw3Nzc5MTkyMzEsLTE5OTI3
+MTAxNjBdfQ==
 -->
