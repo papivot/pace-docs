@@ -256,12 +256,38 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 ## PKS LDAP configuration
 
 PKS LDAP integration is detailed [here.](https://community.pivotal.io/s/article/Configuring-LDAP-Integration-with-Pivotal-Cloud-Foundry) 
+
+Sample configuration for LDAP integration for the PKS tile is provided here - 
+Server URL: ldaps://ldap.jumpcloud.com:636
+
+LDAP Credentials: uid=pksbind,ou=Users,o=5c73648e8c9a344401d08d84,dc=jumpcloud,dc=com
+
+LDAP Password: Pivotal123!
+
+User Search Base: ou=Users,o=5c73648e8c9a344401d08d84,dc=jumpcloud,dc=com
+
+User Search Filter: uid={0}
+
+Group Search Base: ou=Users,o=5c73648e8c9a344401d08d84,dc=jumpcloud,dc=com
+
+Group Search Filter: member={0}
+
+First Name Attribute: givenName
+
+Last Name Attribute: sn
+
+Email Attribute: mail
+
+Email Domain(s):
+
+LDAP Referrals: “Automatically follow any referrals”  
+External Groups Whitelist: developers,admins,auditors
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0NzY0ODUxNSw4MjYwMTAwNSw4NzQ0Mj
-M0NjQsMTA0NDUxMTkzMSwxMTUwMTI3MzMyLC0xMzgzOTk2MTMy
-LC04NDg1NDA2NjIsLTUwMTg1ODcwNSwxMzgyMDQ3MzUyLC05Nj
-I3Mjg5NTMsLTM1NjA0OTAwNCw4MTI2ODg2NjgsLTE0NTczMzgz
-NjcsLTE1MTIwMTk5ODIsMTgzMTc2NTEwLDc3NzkxOTIzMSwtMT
-k5MjcxMDE2MCwtNzY0NTYzMTY2LC0xMTcxNzM3NTU4LC0zNDg1
-MTI4NjBdfQ==
+eyJoaXN0b3J5IjpbMTI3MzUwMjE4MSwxOTQ3NjQ4NTE1LDgyNj
+AxMDA1LDg3NDQyMzQ2NCwxMDQ0NTExOTMxLDExNTAxMjczMzIs
+LTEzODM5OTYxMzIsLTg0ODU0MDY2MiwtNTAxODU4NzA1LDEzOD
+IwNDczNTIsLTk2MjcyODk1MywtMzU2MDQ5MDA0LDgxMjY4ODY2
+OCwtMTQ1NzMzODM2NywtMTUxMjAxOTk4MiwxODMxNzY1MTAsNz
+c3OTE5MjMxLC0xOTkyNzEwMTYwLC03NjQ1NjMxNjYsLTExNzE3
+Mzc1NThdfQ==
 -->
