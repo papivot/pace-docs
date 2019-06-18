@@ -259,12 +259,10 @@ PKS LDAP integration is detailed [here.](https://community.pivotal.io/s/article/
 
 Sample configuration for LDAP integration for the PKS tile is provided here - 
 
- - [ ] **Server URL:** `ldaps://ldap.jumpcloud.com:636`
- - [ ]  **LDAP Credentials:** `uid=pksbind,ou=Users,o=5c73648e8c9a344401d08d84,dc=jumpcloud,dc=com``
-
-LDAP Password: Pivotal123!
-
-User Search Base: ou=Users,o=5c73648e8c9a344401d08d84,dc=jumpcloud,dc=com
+ - [ ] **Server URL** `ldap[s]://ldap.domain.com:[389/636]`
+ - [ ]  **LDAP Credentials** `uid=pksbind,ou=Users,o=5c73648e8c9a344401d08d84,dc=domain,dc=com`
+ - [ ] **LDAP Password** `Pivotal123!`
+ - [ ] User Search Base ou=Users,o=5c73648e8c9a344401d08d84,dc=jumpcloud,dc=com
 
 User Search Filter: uid={0}
 
@@ -283,11 +281,11 @@ Email Domain(s):
 LDAP Referrals: “Automatically follow any referrals”  
 External Groups Whitelist: developers,admins,auditors
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODE3NjU0OTMsMTk0NzY0ODUxNSw4Mj
-YwMTAwNSw4NzQ0MjM0NjQsMTA0NDUxMTkzMSwxMTUwMTI3MzMy
-LC0xMzgzOTk2MTMyLC04NDg1NDA2NjIsLTUwMTg1ODcwNSwxMz
-gyMDQ3MzUyLC05NjI3Mjg5NTMsLTM1NjA0OTAwNCw4MTI2ODg2
-NjgsLTE0NTczMzgzNjcsLTE1MTIwMTk5ODIsMTgzMTc2NTEwLD
-c3NzkxOTIzMSwtMTk5MjcxMDE2MCwtNzY0NTYzMTY2LC0xMTcx
-NzM3NTU4XX0=
+eyJoaXN0b3J5IjpbLTIxNDY3MTgxNiwxOTQ3NjQ4NTE1LDgyNj
+AxMDA1LDg3NDQyMzQ2NCwxMDQ0NTExOTMxLDExNTAxMjczMzIs
+LTEzODM5OTYxMzIsLTg0ODU0MDY2MiwtNTAxODU4NzA1LDEzOD
+IwNDczNTIsLTk2MjcyODk1MywtMzU2MDQ5MDA0LDgxMjY4ODY2
+OCwtMTQ1NzMzODM2NywtMTUxMjAxOTk4MiwxODMxNzY1MTAsNz
+c3OTE5MjMxLC0xOTkyNzEwMTYwLC03NjQ1NjMxNjYsLTExNzE3
+Mzc1NThdfQ==
 -->
