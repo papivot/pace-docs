@@ -110,6 +110,7 @@ The following commands are executed from the OpsMan
 > bosh -e gcp deployments
 > bosh -e gcp -d service-instance_[instanceid_of_the_cluster] vms
 > bosh -e gcp -d service-instance_[instanceid_of_the_cluster] ssh master/[master_vm_id]
+> ----------
 
 
 ### Static Token File
@@ -205,11 +206,11 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 
 Example - Make sure that the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0NDUxMTkzMSwxMTUwMTI3MzMyLC0xMz
-gzOTk2MTMyLC04NDg1NDA2NjIsLTUwMTg1ODcwNSwxMzgyMDQ3
-MzUyLC05NjI3Mjg5NTMsLTM1NjA0OTAwNCw4MTI2ODg2NjgsLT
-E0NTczMzgzNjcsLTE1MTIwMTk5ODIsMTgzMTc2NTEwLDc3Nzkx
-OTIzMSwtMTk5MjcxMDE2MCwtNzY0NTYzMTY2LC0xMTcxNzM3NT
-U4LC0zNDg1MTI4NjAsNDIyMTc3NDYsODc0NzM5MDU1LDE0NDgz
-MjA4NjddfQ==
+eyJoaXN0b3J5IjpbLTQ4Mjk2ODQ5NywxMDQ0NTExOTMxLDExNT
+AxMjczMzIsLTEzODM5OTYxMzIsLTg0ODU0MDY2MiwtNTAxODU4
+NzA1LDEzODIwNDczNTIsLTk2MjcyODk1MywtMzU2MDQ5MDA0LD
+gxMjY4ODY2OCwtMTQ1NzMzODM2NywtMTUxMjAxOTk4MiwxODMx
+NzY1MTAsNzc3OTE5MjMxLC0xOTkyNzEwMTYwLC03NjQ1NjMxNj
+YsLTExNzE3Mzc1NTgsLTM0ODUxMjg2MCw0MjIxNzc0Niw4NzQ3
+MzkwNTVdfQ==
 -->
