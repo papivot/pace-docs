@@ -164,7 +164,7 @@ Use the secrets name to get the token -
 Once the Token has been retrieved, you can generate the kubeconfig using the project - [kubectl_plugin_login](https://github.com/papivot/kubectl_plugin_login)
  
  - User is default
- - Token is the 1st value in the base64 decoded value in the last step. 
+ - Token is the base64 decoded value in the last step. 
 
 **Note**: For regular use on non-OIDC enabled PKS clusters, once you are logged into PKS api, simply execute - 
 
@@ -191,11 +191,11 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 
 Example - Make sure that the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1MDEyNzMzMiwtMTM4Mzk5NjEzMiwtOD
-Q4NTQwNjYyLC01MDE4NTg3MDUsMTM4MjA0NzM1MiwtOTYyNzI4
-OTUzLC0zNTYwNDkwMDQsODEyNjg4NjY4LC0xNDU3MzM4MzY3LC
-0xNTEyMDE5OTgyLDE4MzE3NjUxMCw3Nzc5MTkyMzEsLTE5OTI3
-MTAxNjAsLTc2NDU2MzE2NiwtMTE3MTczNzU1OCwtMzQ4NTEyOD
-YwLDQyMjE3NzQ2LDg3NDczOTA1NSwxNDQ4MzIwODY3LDEyOTA4
-MDI5MDhdfQ==
+eyJoaXN0b3J5IjpbLTE5ODM3NTE5MywxMTUwMTI3MzMyLC0xMz
+gzOTk2MTMyLC04NDg1NDA2NjIsLTUwMTg1ODcwNSwxMzgyMDQ3
+MzUyLC05NjI3Mjg5NTMsLTM1NjA0OTAwNCw4MTI2ODg2NjgsLT
+E0NTczMzgzNjcsLTE1MTIwMTk5ODIsMTgzMTc2NTEwLDc3Nzkx
+OTIzMSwtMTk5MjcxMDE2MCwtNzY0NTYzMTY2LC0xMTcxNzM3NT
+U4LC0zNDg1MTI4NjAsNDIyMTc3NDYsODc0NzM5MDU1LDE0NDgz
+MjA4NjddfQ==
 -->
