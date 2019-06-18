@@ -286,12 +286,22 @@ Successfully mapped pks.clusters.admin to cn=cluster_admin,ou=Users,o=5d09126b7c
 
 > ```shell
 > uaac group map --name pks.clusters.manage cn=cluster_manager,ou=Users,o=5d09126b7cb23249d327bffe,dc=jumpcloud,dc=com
+> ```
+
+should return 
+
+```shell
+Successfully mapped pks.clusters.manage to cn=cluster_manager,ou=Users,o=5d09126b7cb23249d327bffe,dc=jumpcloud,dc=com for origin ldap
+```
+To validate the mapping has been successfully completed check the group mapping 
+
+> `uaac group map 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAzMDI4NDc1LDE5NDc2NDg1MTUsODI2MD
-EwMDUsODc0NDIzNDY0LDEwNDQ1MTE5MzEsMTE1MDEyNzMzMiwt
-MTM4Mzk5NjEzMiwtODQ4NTQwNjYyLC01MDE4NTg3MDUsMTM4Mj
-A0NzM1MiwtOTYyNzI4OTUzLC0zNTYwNDkwMDQsODEyNjg4NjY4
-LC0xNDU3MzM4MzY3LC0xNTEyMDE5OTgyLDE4MzE3NjUxMCw3Nz
-c5MTkyMzEsLTE5OTI3MTAxNjAsLTc2NDU2MzE2NiwtMTE3MTcz
-NzU1OF19
+eyJoaXN0b3J5IjpbLTExMjYwMTM0MjksMTk0NzY0ODUxNSw4Mj
+YwMTAwNSw4NzQ0MjM0NjQsMTA0NDUxMTkzMSwxMTUwMTI3MzMy
+LC0xMzgzOTk2MTMyLC04NDg1NDA2NjIsLTUwMTg1ODcwNSwxMz
+gyMDQ3MzUyLC05NjI3Mjg5NTMsLTM1NjA0OTAwNCw4MTI2ODg2
+NjgsLTE0NTczMzgzNjcsLTE1MTIwMTk5ODIsMTgzMTc2NTEwLD
+c3NzkxOTIzMSwtMTk5MjcxMDE2MCwtNzY0NTYzMTY2LC0xMTcx
+NzM3NTU4XX0=
 -->
