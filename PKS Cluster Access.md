@@ -273,7 +273,7 @@ Sample configuration for LDAP integration for the PKS tile is provided here -
  - [ ] **LDAP Referrals** `“Automatically follow any referrals”`  
  - [ ] **External Groups Whitelist** `cluster_admin,cluster_dev,cluster_manager`
 
-Once the LDAP has been configured and configurations applied, the relevant LDAP groups needs to be added to the PKS UAA groups pks.clusters.admin and pks.clusters.manage. This can be done by the following commands (after successfully login into the PKS UAA) - 
+Once the LDAP has been configured and configurations applied, the relevant LDAP groups needs to be added to the PKS UAA groups **pks.clusters.admin** and **pks.clusters.manage**. This can be done by the following commands (after successfully login into the PKS UAA) - 
 
 > ```shell
 > uaac group map --name pks.clusters.admin cn=cluster_admin,ou=Users,o=5d09126b7cb23249d327bffe,dc=domain,dc=com```
@@ -316,14 +316,19 @@ should return similar to this -
 
 To validate if the user login is working use pks login to authenticate an LDAP user - 
 
-> `pks login -k -a api.pks.domain.com -u appmgr -p [password`
-s
+> `pks login -k -a api.pks.domain.com -u [ldapuser] -p [password]`
+
+should return 
+```shell
+API Endpoint: api.pks.domain.com
+User: [ldapuser]
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjczMDkyODksMTk0NzY0ODUxNSw4Mj
-YwMTAwNSw4NzQ0MjM0NjQsMTA0NDUxMTkzMSwxMTUwMTI3MzMy
-LC0xMzgzOTk2MTMyLC04NDg1NDA2NjIsLTUwMTg1ODcwNSwxMz
-gyMDQ3MzUyLC05NjI3Mjg5NTMsLTM1NjA0OTAwNCw4MTI2ODg2
-NjgsLTE0NTczMzgzNjcsLTE1MTIwMTk5ODIsMTgzMTc2NTEwLD
-c3NzkxOTIzMSwtMTk5MjcxMDE2MCwtNzY0NTYzMTY2LC0xMTcx
-NzM3NTU4XX0=
+eyJoaXN0b3J5IjpbLTk3NTM0MTcyMCwxOTQ3NjQ4NTE1LDgyNj
+AxMDA1LDg3NDQyMzQ2NCwxMDQ0NTExOTMxLDExNTAxMjczMzIs
+LTEzODM5OTYxMzIsLTg0ODU0MDY2MiwtNTAxODU4NzA1LDEzOD
+IwNDczNTIsLTk2MjcyODk1MywtMzU2MDQ5MDA0LDgxMjY4ODY2
+OCwtMTQ1NzMzODM2NywtMTUxMjAxOTk4MiwxODMxNzY1MTAsNz
+c3OTE5MjMxLC0xOTkyNzEwMTYwLC03NjQ1NjMxNjYsLTExNzE3
+Mzc1NThdfQ==
 -->
