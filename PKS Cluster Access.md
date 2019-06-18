@@ -314,7 +314,7 @@ should return similar to this -
   totalresults: 3
 ```
 
-To validate if ldap user login is working use pks login to authenticate an LDAP user - 
+To validate if user login is working use pks login to authenticate an LDAP user - 
 
 > `pks login -k -a api.pks.domain.com -u [ldapuser] -p [password]`
 
@@ -351,11 +351,11 @@ Once this is successful, an LDAP user entry [ldapuser] is created in the respect
 **NOTE:** `pks get-kubeconfig` is only available when OIDC is enabled. 
 **NOTE:** Unless OIDC is enabled, all cluster authentication is thru service tokens. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjcyNTU4ODMwLDEwNTQ0OTkyOTUsMTk0Nz
-Y0ODUxNSw4MjYwMTAwNSw4NzQ0MjM0NjQsMTA0NDUxMTkzMSwx
-MTUwMTI3MzMyLC0xMzgzOTk2MTMyLC04NDg1NDA2NjIsLTUwMT
-g1ODcwNSwxMzgyMDQ3MzUyLC05NjI3Mjg5NTMsLTM1NjA0OTAw
-NCw4MTI2ODg2NjgsLTE0NTczMzgzNjcsLTE1MTIwMTk5ODIsMT
-gzMTc2NTEwLDc3NzkxOTIzMSwtMTk5MjcxMDE2MCwtNzY0NTYz
-MTY2XX0=
+eyJoaXN0b3J5IjpbLTIwMTY1MzA2MTcsMTA1NDQ5OTI5NSwxOT
+Q3NjQ4NTE1LDgyNjAxMDA1LDg3NDQyMzQ2NCwxMDQ0NTExOTMx
+LDExNTAxMjczMzIsLTEzODM5OTYxMzIsLTg0ODU0MDY2MiwtNT
+AxODU4NzA1LDEzODIwNDczNTIsLTk2MjcyODk1MywtMzU2MDQ5
+MDA0LDgxMjY4ODY2OCwtMTQ1NzMzODM2NywtMTUxMjAxOTk4Mi
+wxODMxNzY1MTAsNzc3OTE5MjMxLC0xOTkyNzEwMTYwLC03NjQ1
+NjMxNjZdfQ==
 -->
