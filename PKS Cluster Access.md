@@ -262,15 +262,11 @@ Sample configuration for LDAP integration for the PKS tile is provided here -
  - [ ] **Server URL** `ldap[s]://ldap.domain.com:[389/636]`
  - [ ]  **LDAP Credentials** `uid=pksbind,ou=Users,o=5c73648e8c9a344401d08d84,dc=domain,dc=com`
  - [ ] **LDAP Password** `Pivotal123!`
- - [ ] User Search Base ou=Users,o=5c73648e8c9a344401d08d84,dc=jumpcloud,dc=com
-
-User Search Filter: uid={0}
-
-Group Search Base: ou=Users,o=5c73648e8c9a344401d08d84,dc=jumpcloud,dc=com
-
-Group Search Filter: member={0}
-
-First Name Attribute: givenName
+ - [ ] **User Search Base** `ou=Users,o=5c73648e8c9a344401d08d84,dc=domain,dc=com`
+ - [ ] **User Search Filter** `uid={0}`
+ - [ ] **Group Search Base** `ou=Users,o=5c73648e8c9a344401d08d84,dc=jumpcloud,dc=com`
+ - [ ] **Group Search Filter** `member={0}`
+ - [ ] First Name Attribute: givenName
 
 Last Name Attribute: sn
 
@@ -281,7 +277,7 @@ Email Domain(s):
 LDAP Referrals: “Automatically follow any referrals”  
 External Groups Whitelist: developers,admins,auditors
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDY3MTgxNiwxOTQ3NjQ4NTE1LDgyNj
+eyJoaXN0b3J5IjpbLTE5MTk4OTM1MSwxOTQ3NjQ4NTE1LDgyNj
 AxMDA1LDg3NDQyMzQ2NCwxMDQ0NTExOTMxLDExNTAxMjczMzIs
 LTEzODM5OTYxMzIsLTg0ODU0MDY2MiwtNTAxODU4NzA1LDEzOD
 IwNDczNTIsLTk2MjcyODk1MywtMzU2MDQ5MDA0LDgxMjY4ODY2
