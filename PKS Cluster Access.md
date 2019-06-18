@@ -118,6 +118,8 @@ Once logged in to the master vm execute the following -
 > openssl req -new -key admin.key -out admin.csr -subj "/CN=admin"
 > openssl x509 -req -days 365 -sha256 -in admin.csr -CA /var/vcap/jobs/kube-controller-manager/config/cluster-signing-ca.pem -set_serial 2 -out admin.crt -CAkey /var/vcap/jobs/kube-controller-manager/config/cluster-signing-key.pem
 
+This should create 3 files in the /tmp folder. admi
+
 
 ### Static Token File
 
@@ -129,7 +131,7 @@ The following configuration gets added to the K8S apiserver to allow using stati
 ##### Accessing cluster using static token 
 *Not a recommended method.* 
 
-Example [ This is for demonstration purpose only. This is specific to PKS and may vary for other K8s distributions] -- 
+*Example [ This is for demonstration purpose only. This is specific to PKS and may vary for other K8s distributions] -* 
 
 To achieve this, we need to get the admin token from one of the K8S master server. The location of the file is `/var/vcap/jobs/kube-apiserver/config/tokens.csv`
 
@@ -163,7 +165,7 @@ The following configuration gets added to the K8S apiserver to allow using Servi
 ##### Accessing cluster using Service Account Tokens 
 *Not a highly recommended method.* 
 
-Example - 
+*Example  [ This is for demonstration purpose only.] -* 
 
 To achieve this, we need to get the token from one of the default service accounts and use this token to generate the Kubeconfig file.
 
@@ -212,7 +214,7 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 
 Example - Make sure that the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNjA0NDI2OSwxMDQ0NTExOTMxLDExNT
+eyJoaXN0b3J5IjpbMTU2NTg1NzY0OCwxMDQ0NTExOTMxLDExNT
 AxMjczMzIsLTEzODM5OTYxMzIsLTg0ODU0MDY2MiwtNTAxODU4
 NzA1LDEzODIwNDczNTIsLTk2MjcyODk1MywtMzU2MDQ5MDA0LD
 gxMjY4ODY2OCwtMTQ1NzMzODM2NywtMTUxMjAxOTk4MiwxODMx
