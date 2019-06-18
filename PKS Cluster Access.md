@@ -118,7 +118,14 @@ Once logged in to the master vm execute the following -
 > openssl req -new -key admin.key -out admin.csr -subj "/CN=admin"
 > openssl x509 -req -days 365 -sha256 -in admin.csr -CA /var/vcap/jobs/kube-controller-manager/config/cluster-signing-ca.pem -set_serial 2 -out admin.crt -CAkey /var/vcap/jobs/kube-controller-manager/config/cluster-signing-key.pem
 
-This should create 3 files in the /tmp folder. admi
+This should create 3 files in the /tmp folder.
+
+```shell
+master/38ed427f-2998-4de0-8906-50e0accb8ae1:/tmp$ ls -1 admin*
+admin.crt
+admin.csr
+admin.key
+```
 
 
 ### Static Token File
@@ -214,7 +221,7 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 
 Example - Make sure that the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2NTg1NzY0OCwxMDQ0NTExOTMxLDExNT
+eyJoaXN0b3J5IjpbMTY4NDkxOTA4OCwxMDQ0NTExOTMxLDExNT
 AxMjczMzIsLTEzODM5OTYxMzIsLTg0ODU0MDY2MiwtNTAxODU4
 NzA1LDEzODIwNDczNTIsLTk2MjcyODk1MywtMzU2MDQ5MDA0LD
 gxMjY4ODY2OCwtMTQ1NzMzODM2NywtMTUxMjAxOTk4MiwxODMx
