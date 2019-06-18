@@ -98,7 +98,7 @@ The following configuration gets added to the K8S apiserver to allow using X509 
 
 *Example [ This is for demonstration purpose only. This is specific to PKS and may vary for other K8s distributions] -* 
 
-To achieve this, we need to generate client certificates using the root ca that stored on the K8S master server. The location of the CA file is `/var/vcap/jobs/kube-apiserver/config/kubernetes-ca.pem`
+To achieve this, we need to generate client certificates using the root ca that stored on the K8S master server. 
 
 This can be done by SSHing into the master using the BOSH CLI -
 
@@ -253,11 +253,11 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 
 Example - Make sure that the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDA3NDYwMTksMTA0NDUxMTkzMSwxMT
-UwMTI3MzMyLC0xMzgzOTk2MTMyLC04NDg1NDA2NjIsLTUwMTg1
-ODcwNSwxMzgyMDQ3MzUyLC05NjI3Mjg5NTMsLTM1NjA0OTAwNC
-w4MTI2ODg2NjgsLTE0NTczMzgzNjcsLTE1MTIwMTk5ODIsMTgz
-MTc2NTEwLDc3NzkxOTIzMSwtMTk5MjcxMDE2MCwtNzY0NTYzMT
-Y2LC0xMTcxNzM3NTU4LC0zNDg1MTI4NjAsNDIyMTc3NDYsODc0
-NzM5MDU1XX0=
+eyJoaXN0b3J5IjpbODc0NDIzNDY0LDEwNDQ1MTE5MzEsMTE1MD
+EyNzMzMiwtMTM4Mzk5NjEzMiwtODQ4NTQwNjYyLC01MDE4NTg3
+MDUsMTM4MjA0NzM1MiwtOTYyNzI4OTUzLC0zNTYwNDkwMDQsOD
+EyNjg4NjY4LC0xNDU3MzM4MzY3LC0xNTEyMDE5OTgyLDE4MzE3
+NjUxMCw3Nzc5MTkyMzEsLTE5OTI3MTAxNjAsLTc2NDU2MzE2Ni
+wtMTE3MTczNzU1OCwtMzQ4NTEyODYwLDQyMjE3NzQ2LDg3NDcz
+OTA1NV19
 -->
