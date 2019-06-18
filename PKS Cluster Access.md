@@ -271,9 +271,11 @@ Sample configuration for LDAP integration for the PKS tile is provided here -
  - [ ] **Email Attribute** `mail`
  - [ ] **Email Domain(s)**
  - [ ] **LDAP Referrals** `“Automatically follow any referrals”`  
- - [ ] External Groups Whitelist: developers,admins,auditors
+ - [ ] **External Groups Whitelist** `cluster_admin,cluster_dev,cluster_manager`
+
+Once the LDAP has been configured 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2Mzk4NzgwOCwxOTQ3NjQ4NTE1LDgyNj
+eyJoaXN0b3J5IjpbLTc2MTE3NTczNywxOTQ3NjQ4NTE1LDgyNj
 AxMDA1LDg3NDQyMzQ2NCwxMDQ0NTExOTMxLDExNTAxMjczMzIs
 LTEzODM5OTYxMzIsLTg0ODU0MDY2MiwtNTAxODU4NzA1LDEzOD
 IwNDczNTIsLTk2MjcyODk1MywtMzU2MDQ5MDA0LDgxMjY4ODY2
