@@ -251,7 +251,7 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 ##### Accessing cluster using OIDC tokens 
 *Highly recommended method.* 
 
-[TO be expanded]
+To provide OIDC
 
 ## PKS LDAP configuration
 
@@ -355,11 +355,11 @@ Once this is successful, an LDAP user entry [ldapuser] is created in the respect
  - Unless OIDC is enabled, all cluster authentication is thru service tokens. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODk3NTY1MDIsLTIwMTY1MzA2MTcsMT
-A1NDQ5OTI5NSwxOTQ3NjQ4NTE1LDgyNjAxMDA1LDg3NDQyMzQ2
-NCwxMDQ0NTExOTMxLDExNTAxMjczMzIsLTEzODM5OTYxMzIsLT
-g0ODU0MDY2MiwtNTAxODU4NzA1LDEzODIwNDczNTIsLTk2Mjcy
-ODk1MywtMzU2MDQ5MDA0LDgxMjY4ODY2OCwtMTQ1NzMzODM2Ny
-wtMTUxMjAxOTk4MiwxODMxNzY1MTAsNzc3OTE5MjMxLC0xOTky
-NzEwMTYwXX0=
+eyJoaXN0b3J5IjpbLTE2MzU0MzY5NTYsLTE2ODk3NTY1MDIsLT
+IwMTY1MzA2MTcsMTA1NDQ5OTI5NSwxOTQ3NjQ4NTE1LDgyNjAx
+MDA1LDg3NDQyMzQ2NCwxMDQ0NTExOTMxLDExNTAxMjczMzIsLT
+EzODM5OTYxMzIsLTg0ODU0MDY2MiwtNTAxODU4NzA1LDEzODIw
+NDczNTIsLTk2MjcyODk1MywtMzU2MDQ5MDA0LDgxMjY4ODY2OC
+wtMTQ1NzMzODM2NywtMTUxMjAxOTk4MiwxODMxNzY1MTAsNzc3
+OTE5MjMxXX0=
 -->
