@@ -152,7 +152,8 @@ This create a ClusterRoleBinding with cluster-admin role for the user named admi
 You can now generate the kubeconfig using the project - [kubectl_plugin_login](https://github.com/papivot/kubectl_plugin_login)
 
 - User is admin
-- - Token is the base64 decoded value in the last step. 
+- Keyfile is admin.key
+- Certfile is admin.crt
 
 
 
@@ -249,11 +250,11 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 
 Example - Make sure that the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzUwMzgyMzU1LDEwNDQ1MTE5MzEsMTE1MD
-EyNzMzMiwtMTM4Mzk5NjEzMiwtODQ4NTQwNjYyLC01MDE4NTg3
-MDUsMTM4MjA0NzM1MiwtOTYyNzI4OTUzLC0zNTYwNDkwMDQsOD
-EyNjg4NjY4LC0xNDU3MzM4MzY3LC0xNTEyMDE5OTgyLDE4MzE3
-NjUxMCw3Nzc5MTkyMzEsLTE5OTI3MTAxNjAsLTc2NDU2MzE2Ni
-wtMTE3MTczNzU1OCwtMzQ4NTEyODYwLDQyMjE3NzQ2LDg3NDcz
-OTA1NV19
+eyJoaXN0b3J5IjpbLTU0ODQ1OTA4NCwxMDQ0NTExOTMxLDExNT
+AxMjczMzIsLTEzODM5OTYxMzIsLTg0ODU0MDY2MiwtNTAxODU4
+NzA1LDEzODIwNDczNTIsLTk2MjcyODk1MywtMzU2MDQ5MDA0LD
+gxMjY4ODY2OCwtMTQ1NzMzODM2NywtMTUxMjAxOTk4MiwxODMx
+NzY1MTAsNzc3OTE5MjMxLC0xOTkyNzEwMTYwLC03NjQ1NjMxNj
+YsLTExNzE3Mzc1NTgsLTM0ODUxMjg2MCw0MjIxNzc0Niw4NzQ3
+MzkwNTVdfQ==
 -->
