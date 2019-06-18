@@ -255,13 +255,13 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 
 ## PKS LDAP configuration
 
-PKS LDAP integration de
+PKS LDAP integration is detailed [here.](https://community.pivotal.io/s/article/Configuring-LDAP-Integration-with-Pivotal-Cloud-Foundry) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2ODEyNDI1LDgyNjAxMDA1LDg3NDQyMz
-Q2NCwxMDQ0NTExOTMxLDExNTAxMjczMzIsLTEzODM5OTYxMzIs
-LTg0ODU0MDY2MiwtNTAxODU4NzA1LDEzODIwNDczNTIsLTk2Mj
-cyODk1MywtMzU2MDQ5MDA0LDgxMjY4ODY2OCwtMTQ1NzMzODM2
-NywtMTUxMjAxOTk4MiwxODMxNzY1MTAsNzc3OTE5MjMxLC0xOT
-kyNzEwMTYwLC03NjQ1NjMxNjYsLTExNzE3Mzc1NTgsLTM0ODUx
-Mjg2MF19
+eyJoaXN0b3J5IjpbMTk0NzY0ODUxNSw4MjYwMTAwNSw4NzQ0Mj
+M0NjQsMTA0NDUxMTkzMSwxMTUwMTI3MzMyLC0xMzgzOTk2MTMy
+LC04NDg1NDA2NjIsLTUwMTg1ODcwNSwxMzgyMDQ3MzUyLC05Nj
+I3Mjg5NTMsLTM1NjA0OTAwNCw4MTI2ODg2NjgsLTE0NTczMzgz
+NjcsLTE1MTIwMTk5ODIsMTgzMTc2NTEwLDc3NzkxOTIzMSwtMT
+k5MjcxMDE2MCwtNzY0NTYzMTY2LC0xMTcxNzM3NTU4LC0zNDg1
+MTI4NjBdfQ==
 -->
