@@ -347,9 +347,9 @@ Once this is successful, an LDAP user entry [ldapuser] is created in the respect
  ...
 ``` 
 
-NOTE: Users and groups that are member of pks.clustyers
+NOTE: Users and groups that are member of pks.clusters.admin and pks.clusters.manage can only access/authenticate to the PKS API endpoint. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4NjQ2NTk2MiwxMDU0NDk5Mjk1LDE5ND
+eyJoaXN0b3J5IjpbMTM4MTA2Mjk5NiwxMDU0NDk5Mjk1LDE5ND
 c2NDg1MTUsODI2MDEwMDUsODc0NDIzNDY0LDEwNDQ1MTE5MzEs
 MTE1MDEyNzMzMiwtMTM4Mzk5NjEzMiwtODQ4NTQwNjYyLC01MD
 E4NTg3MDUsMTM4MjA0NzM1MiwtOTYyNzI4OTUzLC0zNTYwNDkw
