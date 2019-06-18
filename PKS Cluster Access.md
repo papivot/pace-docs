@@ -76,7 +76,7 @@ Please study your config file.
 
 ## AuthN for Kubernetes 
  
- Some of the current and beta authentication mechanisms for Kubernetes (and thereby PKS) are - 
+ Details on K8S authentication can be found [here.](https://kubernetes.io/docs/reference/access-authn-authz/authentication/) Some of the current and beta authentication mechanisms for Kubernetes (and thereby PKS) are - 
 
  - [ ]  X509 Client Certs
  - [ ] Static Token File
@@ -253,11 +253,11 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 
 Example - Make sure that the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc0NDIzNDY0LDEwNDQ1MTE5MzEsMTE1MD
-EyNzMzMiwtMTM4Mzk5NjEzMiwtODQ4NTQwNjYyLC01MDE4NTg3
-MDUsMTM4MjA0NzM1MiwtOTYyNzI4OTUzLC0zNTYwNDkwMDQsOD
-EyNjg4NjY4LC0xNDU3MzM4MzY3LC0xNTEyMDE5OTgyLDE4MzE3
-NjUxMCw3Nzc5MTkyMzEsLTE5OTI3MTAxNjAsLTc2NDU2MzE2Ni
-wtMTE3MTczNzU1OCwtMzQ4NTEyODYwLDQyMjE3NzQ2LDg3NDcz
-OTA1NV19
+eyJoaXN0b3J5IjpbODI2MDEwMDUsODc0NDIzNDY0LDEwNDQ1MT
+E5MzEsMTE1MDEyNzMzMiwtMTM4Mzk5NjEzMiwtODQ4NTQwNjYy
+LC01MDE4NTg3MDUsMTM4MjA0NzM1MiwtOTYyNzI4OTUzLC0zNT
+YwNDkwMDQsODEyNjg4NjY4LC0xNDU3MzM4MzY3LC0xNTEyMDE5
+OTgyLDE4MzE3NjUxMCw3Nzc5MTkyMzEsLTE5OTI3MTAxNjAsLT
+c2NDU2MzE2NiwtMTE3MTczNzU1OCwtMzQ4NTEyODYwLDQyMjE3
+NzQ2XX0=
 -->
