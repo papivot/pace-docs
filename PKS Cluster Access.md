@@ -313,12 +313,17 @@ should return similar to this -
   itemsperpage: 3
   totalresults: 3
 ```
+
+To validate if the user login is working use pks login to authenticate an LDAP user - 
+
+> `pks login -k -a api.pks.domain.com -u appmgr -p [password`
+s
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUyNzEwNjg4LDE5NDc2NDg1MTUsODI2MD
-EwMDUsODc0NDIzNDY0LDEwNDQ1MTE5MzEsMTE1MDEyNzMzMiwt
-MTM4Mzk5NjEzMiwtODQ4NTQwNjYyLC01MDE4NTg3MDUsMTM4Mj
-A0NzM1MiwtOTYyNzI4OTUzLC0zNTYwNDkwMDQsODEyNjg4NjY4
-LC0xNDU3MzM4MzY3LC0xNTEyMDE5OTgyLDE4MzE3NjUxMCw3Nz
-c5MTkyMzEsLTE5OTI3MTAxNjAsLTc2NDU2MzE2NiwtMTE3MTcz
-NzU1OF19
+eyJoaXN0b3J5IjpbLTE0MjczMDkyODksMTk0NzY0ODUxNSw4Mj
+YwMTAwNSw4NzQ0MjM0NjQsMTA0NDUxMTkzMSwxMTUwMTI3MzMy
+LC0xMzgzOTk2MTMyLC04NDg1NDA2NjIsLTUwMTg1ODcwNSwxMz
+gyMDQ3MzUyLC05NjI3Mjg5NTMsLTM1NjA0OTAwNCw4MTI2ODg2
+NjgsLTE0NTczMzgzNjcsLTE1MTIwMTk5ODIsMTgzMTc2NTEwLD
+c3NzkxOTIzMSwtMTk5MjcxMDE2MCwtNzY0NTYzMTY2LC0xMTcx
+NzM3NTU4XX0=
 -->
