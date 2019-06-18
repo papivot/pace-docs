@@ -15,7 +15,7 @@ contexts:
 current-context: 
 ```
 
-#### Cluster 
+### Cluster 
 
 The clusters section contains an array with information specific to the K8s clusters, namely the API server FQDN and port and the cluster root CA. 
 
@@ -31,7 +31,7 @@ clusters:
   name: gcpcluster00
 ```
 
-#### Users
+### Users
 
 The users section contains an array with information specific to the K8s user with access to cluster artifacts and associated auth information. This can vary depending on the auth provider. More details can be found [here](https://kubernetes.io/docs/reference/access-authn-authz/controlling-access/) - 
 In a PKS environment, a sample user definition could be something similar to this. 
@@ -50,7 +50,7 @@ users:
       name: oidc
 ```
 
-#### Contexts
+### Contexts
 The contexts section contains an array of context associating the cluster and user objects from the above sections. An example can be similar to this - 
 
 ```shell
@@ -64,7 +64,7 @@ contexts:
     user: nverma
   name: gcpcluster00
 ```
-#### Current-context
+### Current-context
 
 The current-context specifies which context is currently enforced and hence which cluster should the kubectl commands connect to and also which user to use for the connection to the cluster. 
 
@@ -87,7 +87,7 @@ Please study your config file.
  - [ ] ~~Webhook Token~~ - Disabled in PKS by default
  - [ ] Authenticating Proxy
 
-#### X509 Client Certs
+### X509 Client Certs
 The following configuration gets added to the K8S apiserver to allow using X509 Client cert files for authentication. 
 
 ```shell
@@ -98,7 +98,7 @@ The following configuration gets added to the K8S apiserver to allow using X509 
 
 
 
-#### Static Token File
+### Static Token File
 
 The following configuration gets added to the K8S apiserver to allow using static token file for authentication. 
 
@@ -128,7 +128,7 @@ Once the Token has been retrieved, you can generate the kubeconfig using the pro
  - User is admin
  - Token is the 1st value in the token.csv file's output. 
 
-#### Service Account Tokens
+### Service Account Tokens
 
 The following configuration gets added to the K8S apiserver to allow using Service Account Tokens for authentication.
 
@@ -168,7 +168,7 @@ Once the Token has been retrieved, you can generate the kubeconfig using the pro
 
 This creates the necessary service accounts, clusterroles (if needed), clusterrolebindings, secrets with tokens and the required kubeconfig file leveraging the token. 
  
-#### OpenID Connect Tokens
+### OpenID Connect Tokens
 
 The following configuration gets added to the K8S apiserver when using UAA as OIDC provider. 
 
@@ -187,10 +187,11 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 
 Example - Make sure that the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0ODU0MDY2MiwtNTAxODU4NzA1LDEzOD
-IwNDczNTIsLTk2MjcyODk1MywtMzU2MDQ5MDA0LDgxMjY4ODY2
-OCwtMTQ1NzMzODM2NywtMTUxMjAxOTk4MiwxODMxNzY1MTAsNz
-c3OTE5MjMxLC0xOTkyNzEwMTYwLC03NjQ1NjMxNjYsLTExNzE3
-Mzc1NTgsLTM0ODUxMjg2MCw0MjIxNzc0Niw4NzQ3MzkwNTUsMT
-Q0ODMyMDg2NywxMjkwODAyOTA4LC04NTE2MDU5NDddfQ==
+eyJoaXN0b3J5IjpbLTEzODM5OTYxMzIsLTg0ODU0MDY2MiwtNT
+AxODU4NzA1LDEzODIwNDczNTIsLTk2MjcyODk1MywtMzU2MDQ5
+MDA0LDgxMjY4ODY2OCwtMTQ1NzMzODM2NywtMTUxMjAxOTk4Mi
+wxODMxNzY1MTAsNzc3OTE5MjMxLC0xOTkyNzEwMTYwLC03NjQ1
+NjMxNjYsLTExNzE3Mzc1NTgsLTM0ODUxMjg2MCw0MjIxNzc0Ni
+w4NzQ3MzkwNTUsMTQ0ODMyMDg2NywxMjkwODAyOTA4LC04NTE2
+MDU5NDddfQ==
 -->
