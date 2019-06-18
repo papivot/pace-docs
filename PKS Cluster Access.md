@@ -98,7 +98,7 @@ The following configuration gets added to the K8S apiserver to allow using X509 
 
 Example - 
 
-To achieve this, we need to generate client certificates using the root ca that stored on the K8S master server. The location of the CA file is `/var/vcap/jobs/kube-apiserver/config/tokens.csv`
+To achieve this, we need to generate client certificates using the root ca that stored on the K8S master server. The location of the CA file is `/var/vcap/jobs/kube-apiserver/config/kubernetes-ca.pem`
 
 This can be done by SSHing into the master using the BOSH CLI -
 
@@ -205,7 +205,7 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 
 Example - Make sure that the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3NzE5MTAyMCwxMTUwMTI3MzMyLC0xMz
+eyJoaXN0b3J5IjpbMTA0NDUxMTkzMSwxMTUwMTI3MzMyLC0xMz
 gzOTk2MTMyLC04NDg1NDA2NjIsLTUwMTg1ODcwNSwxMzgyMDQ3
 MzUyLC05NjI3Mjg5NTMsLTM1NjA0OTAwNCw4MTI2ODg2NjgsLT
 E0NTczMzgzNjcsLTE1MTIwMTk5ODIsMTgzMTc2NTEwLDc3Nzkx
