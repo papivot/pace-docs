@@ -155,7 +155,9 @@ You can now generate the kubeconfig using the project - [kubectl_plugin_login](h
 - Keyfile is admin.key
 - Certfile is admin.crt
 
+##### Cleanup 
 
+> Kubectl
 
 ### Static Token File
 
@@ -250,7 +252,7 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 
 Example - Make sure that the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0ODQ1OTA4NCwxMDQ0NTExOTMxLDExNT
+eyJoaXN0b3J5IjpbLTc4MDg1MDU1OSwxMDQ0NTExOTMxLDExNT
 AxMjczMzIsLTEzODM5OTYxMzIsLTg0ODU0MDY2MiwtNTAxODU4
 NzA1LDEzODIwNDczNTIsLTk2MjcyODk1MywtMzU2MDQ5MDA0LD
 gxMjY4ODY2OCwtMTQ1NzMzODM2NywtMTUxMjAxOTk4MiwxODMx
