@@ -251,13 +251,16 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 ##### Accessing cluster using OIDC tokens 
 *Highly recommended method.* 
 
-Example - Make sure that the 
+[TO be expanded]
+
+## PKS LDAP configuration
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI2MDEwMDUsODc0NDIzNDY0LDEwNDQ1MT
-E5MzEsMTE1MDEyNzMzMiwtMTM4Mzk5NjEzMiwtODQ4NTQwNjYy
-LC01MDE4NTg3MDUsMTM4MjA0NzM1MiwtOTYyNzI4OTUzLC0zNT
-YwNDkwMDQsODEyNjg4NjY4LC0xNDU3MzM4MzY3LC0xNTEyMDE5
-OTgyLDE4MzE3NjUxMCw3Nzc5MTkyMzEsLTE5OTI3MTAxNjAsLT
-c2NDU2MzE2NiwtMTE3MTczNzU1OCwtMzQ4NTEyODYwLDQyMjE3
-NzQ2XX0=
+eyJoaXN0b3J5IjpbMTYyNzI0MDkxMyw4MjYwMTAwNSw4NzQ0Mj
+M0NjQsMTA0NDUxMTkzMSwxMTUwMTI3MzMyLC0xMzgzOTk2MTMy
+LC04NDg1NDA2NjIsLTUwMTg1ODcwNSwxMzgyMDQ3MzUyLC05Nj
+I3Mjg5NTMsLTM1NjA0OTAwNCw4MTI2ODg2NjgsLTE0NTczMzgz
+NjcsLTE1MTIwMTk5ODIsMTgzMTc2NTEwLDc3NzkxOTIzMSwtMT
+k5MjcxMDE2MCwtNzY0NTYzMTY2LC0xMTcxNzM3NTU4LC0zNDg1
+MTI4NjBdfQ==
 -->
