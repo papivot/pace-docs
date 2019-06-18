@@ -324,13 +324,19 @@ API Endpoint: api.pks.domain.com
 User: [ldapuser]
 ```
 
-Once this is successful, an LDAP u 
+Once this is successful, an LDAP user entry [ldapuser] is created in the respective pks.clusters.[manage/admin] group within UAA.
+
+> `uaac groups`
+
+```shell
+
+``` 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ0NDI1NDA2LDE5NDc2NDg1MTUsODI2MD
-EwMDUsODc0NDIzNDY0LDEwNDQ1MTE5MzEsMTE1MDEyNzMzMiwt
-MTM4Mzk5NjEzMiwtODQ4NTQwNjYyLC01MDE4NTg3MDUsMTM4Mj
-A0NzM1MiwtOTYyNzI4OTUzLC0zNTYwNDkwMDQsODEyNjg4NjY4
-LC0xNDU3MzM4MzY3LC0xNTEyMDE5OTgyLDE4MzE3NjUxMCw3Nz
-c5MTkyMzEsLTE5OTI3MTAxNjAsLTc2NDU2MzE2NiwtMTE3MTcz
-NzU1OF19
+eyJoaXN0b3J5IjpbMTM3MzU1NTE3MSwxOTQ3NjQ4NTE1LDgyNj
+AxMDA1LDg3NDQyMzQ2NCwxMDQ0NTExOTMxLDExNTAxMjczMzIs
+LTEzODM5OTYxMzIsLTg0ODU0MDY2MiwtNTAxODU4NzA1LDEzOD
+IwNDczNTIsLTk2MjcyODk1MywtMzU2MDQ5MDA0LDgxMjY4ODY2
+OCwtMTQ1NzMzODM2NywtMTUxMjAxOTk4MiwxODMxNzY1MTAsNz
+c3OTE5MjMxLC0xOTkyNzEwMTYwLC03NjQ1NjMxNjYsLTExNzE3
+Mzc1NThdfQ==
 -->
