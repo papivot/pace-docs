@@ -273,20 +273,25 @@ Sample configuration for LDAP integration for the PKS tile is provided here -
  - [ ] **LDAP Referrals** `“Automatically follow any referrals”`  
  - [ ] **External Groups Whitelist** `cluster_admin,cluster_dev,cluster_manager`
 
-Once the LDAP has been configured and configurations applied, the relevant LDAP groups needs to be added to the PKS UAA groups pks.clusters.admin and pks.clusters.manage. This can be done by the following commands - 
+Once the LDAP has been configured and configurations applied, the relevant LDAP groups needs to be added to the PKS UAA groups pks.clusters.admin and pks.clusters.manage. This can be done by the following commands (after successfully login into the PKS UAA) - 
 
 > ```shell
 > uaac group map --name pks.clusters.admin cn=cluster_admin,ou=Users,o=5d09126b7cb23249d327bffe,dc=domain,dc=com```
 
 should return 
 
-Successfully mapped pks.clusters.admin to cn=cluster_admin,ou=Users,o=5d09126b7cb23249d327bffe,dc=jumpcloud,dc=com for origin ldap
+``` shell
+Successfully mapped pks.clusters.admin to cn=cluster_admin,ou=Users,o=5d09126b7cb23249d327bffe,dc=domain,dc=com for origin ldap
+```
+
+> ```shell
+> uaac group map --name pks.clusters.manage cn=cluster_manager,ou=Users,o=5d09126b7cb23249d327bffe,dc=jumpcloud,dc=com
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxMjc5MTgsMTk0NzY0ODUxNSw4MjYwMT
-AwNSw4NzQ0MjM0NjQsMTA0NDUxMTkzMSwxMTUwMTI3MzMyLC0x
-MzgzOTk2MTMyLC04NDg1NDA2NjIsLTUwMTg1ODcwNSwxMzgyMD
-Q3MzUyLC05NjI3Mjg5NTMsLTM1NjA0OTAwNCw4MTI2ODg2Njgs
-LTE0NTczMzgzNjcsLTE1MTIwMTk5ODIsMTgzMTc2NTEwLDc3Nz
-kxOTIzMSwtMTk5MjcxMDE2MCwtNzY0NTYzMTY2LC0xMTcxNzM3
-NTU4XX0=
+eyJoaXN0b3J5IjpbODAzMDI4NDc1LDE5NDc2NDg1MTUsODI2MD
+EwMDUsODc0NDIzNDY0LDEwNDQ1MTE5MzEsMTE1MDEyNzMzMiwt
+MTM4Mzk5NjEzMiwtODQ4NTQwNjYyLC01MDE4NTg3MDUsMTM4Mj
+A0NzM1MiwtOTYyNzI4OTUzLC0zNTYwNDkwMDQsODEyNjg4NjY4
+LC0xNDU3MzM4MzY3LC0xNTEyMDE5OTgyLDE4MzE3NjUxMCw3Nz
+c5MTkyMzEsLTE5OTI3MTAxNjAsLTc2NDU2MzE2NiwtMTE3MTcz
+NzU1OF19
 -->
