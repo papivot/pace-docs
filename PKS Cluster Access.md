@@ -144,7 +144,7 @@ subjects:
   namespace: default
 ```
 
-With a kubeconfig that already has admin access, execute the following command to create a new clusterolebinding for user admin
+With a kubeconfig that already has admin access, execute the following command to create a new ClusterRoleBinding for user admin
 
 >`kubectl apply -f admin.yaml`
 
@@ -237,7 +237,7 @@ This creates the necessary service accounts, ClusterRole (if needed), ClusterRol
  
 ### OpenID Connect Tokens
 
-The following configuration gets added to the K8S apiserver when using UAA as OIDC provider. 
+The following configuration gets added to the K8S apiserver when using **UAA** as OIDC provider. 
 
 ```shell
 --oidc-ca-file=/var/vcap/jobs/kube-apiserver/config/oidc-ca.pem 
@@ -262,6 +262,7 @@ Once OIDC is enabled, a PKS admin can execute
 to get access to the cluster. During this process, besides generating the kubeconfig file, the CLI also creates a ClusterRoleBinding for the admin called `[username]-cluster-admin`
 
 Create a yaml file - admin.yaml - with the following content
+
 ```shell
 # admin.yaml
 apiVersion: rbac.authorization.k8s.io/v1
@@ -366,7 +367,7 @@ should return similar to this -
   totalresults: 3
 ```
 
-To validate if user login is working use pks login to authenticate an LDAP user - 
+To validate if user login is working use pks cli login to authenticate an LDAP user - 
 
 > `pks login -k -a api.pks.domain.com -u [ldapuser] -p [password]`
 
@@ -407,11 +408,11 @@ Once this is successful, an LDAP user entry [ldapuser] is created in the respect
  - Unless OIDC is enabled, all cluster authentication is thru service tokens. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODU4MDE3MDksNzUzMjMxNjQ2LC01Nj
-czNjAyMywtMzUxMjAyNjQwLC0yMTQxNzExMjQxLC0xNTM4ODM3
-Njc3LC0xNjg5NzU2NTAyLC0yMDE2NTMwNjE3LDEwNTQ0OTkyOT
-UsMTk0NzY0ODUxNSw4MjYwMTAwNSw4NzQ0MjM0NjQsMTA0NDUx
-MTkzMSwxMTUwMTI3MzMyLC0xMzgzOTk2MTMyLC04NDg1NDA2Nj
-IsLTUwMTg1ODcwNSwxMzgyMDQ3MzUyLC05NjI3Mjg5NTMsLTM1
-NjA0OTAwNF19
+eyJoaXN0b3J5IjpbMjA4NTE0NzE1OSw3NTMyMzE2NDYsLTU2Nz
+M2MDIzLC0zNTEyMDI2NDAsLTIxNDE3MTEyNDEsLTE1Mzg4Mzc2
+NzcsLTE2ODk3NTY1MDIsLTIwMTY1MzA2MTcsMTA1NDQ5OTI5NS
+wxOTQ3NjQ4NTE1LDgyNjAxMDA1LDg3NDQyMzQ2NCwxMDQ0NTEx
+OTMxLDExNTAxMjczMzIsLTEzODM5OTYxMzIsLTg0ODU0MDY2Mi
+wtNTAxODU4NzA1LDEzODIwNDczNTIsLTk2MjcyODk1MywtMzU2
+MDQ5MDA0XX0=
 -->
