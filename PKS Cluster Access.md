@@ -284,7 +284,7 @@ Once the necessary ClusterRoleBinding/RoleBinding has been created, you can gene
 
  - User is [appdev] (this user can be an authenticated UAA local user or a LDAP user that may or may not be present in the `pks.cluster.*` UAA groups)
  - PKS_API is the PKS API endpoint [e.g. api.pks.domain.com]
- - {Token is the 1t value in the token.csv file's output. 
+ - MASTER_API is the value of `Kubernetes Master Host:Kubernetes Master port` Token is the 1t value in the token.csv file's output. 
 kubectl login -c gcpcluster00 -a api.pks.gcpcloud.navneetv.com -u appdev -m cluster00.gcpcloud.navneetv.com:8443
 
 
@@ -390,7 +390,7 @@ Once this is successful, an LDAP user entry [ldapuser] is created in the respect
  - Unless OIDC is enabled, all cluster authentication is thru service tokens. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3MDE2NjY4OSwtMzUxMjAyNjQwLC0yMT
+eyJoaXN0b3J5IjpbLTUyNzQxNjg0NywtMzUxMjAyNjQwLC0yMT
 QxNzExMjQxLC0xNTM4ODM3Njc3LC0xNjg5NzU2NTAyLC0yMDE2
 NTMwNjE3LDEwNTQ0OTkyOTUsMTk0NzY0ODUxNSw4MjYwMTAwNS
 w4NzQ0MjM0NjQsMTA0NDUxMTkzMSwxMTUwMTI3MzMyLC0xMzgz
