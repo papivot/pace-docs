@@ -276,11 +276,14 @@ subjects:
   name: appdev
   namespace: default
 ```
-Execute the following command to create a new ClusteRoleBinding for user appdev
+Execute the following command to create a new ClusterRoleBinding for user appdev
 
 >`kubectl apply -f admin.yaml`
 
+Once the necessary ClusterRoleBinding/RoleBinding has been created, you can generate the kubeconfig using the project - [kubectl_plugin_login](https://github.com/papivot/kubectl_plugin_login)
 
+ - User is appdev
+ - Token is the 1t value in the token.csv file's output. 
 
 
 ## PKS LDAP configuration
@@ -385,11 +388,11 @@ Once this is successful, an LDAP user entry [ldapuser] is created in the respect
  - Unless OIDC is enabled, all cluster authentication is thru service tokens. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1MTIwMjY0MCwtMjE0MTcxMTI0MSwtMT
-UzODgzNzY3NywtMTY4OTc1NjUwMiwtMjAxNjUzMDYxNywxMDU0
-NDk5Mjk1LDE5NDc2NDg1MTUsODI2MDEwMDUsODc0NDIzNDY0LD
-EwNDQ1MTE5MzEsMTE1MDEyNzMzMiwtMTM4Mzk5NjEzMiwtODQ4
-NTQwNjYyLC01MDE4NTg3MDUsMTM4MjA0NzM1MiwtOTYyNzI4OT
-UzLC0zNTYwNDkwMDQsODEyNjg4NjY4LC0xNDU3MzM4MzY3LC0x
-NTEyMDE5OTgyXX0=
+eyJoaXN0b3J5IjpbMjA3ODA1NTM4NywtMzUxMjAyNjQwLC0yMT
+QxNzExMjQxLC0xNTM4ODM3Njc3LC0xNjg5NzU2NTAyLC0yMDE2
+NTMwNjE3LDEwNTQ0OTkyOTUsMTk0NzY0ODUxNSw4MjYwMTAwNS
+w4NzQ0MjM0NjQsMTA0NDUxMTkzMSwxMTUwMTI3MzMyLC0xMzgz
+OTk2MTMyLC04NDg1NDA2NjIsLTUwMTg1ODcwNSwxMzgyMDQ3Mz
+UyLC05NjI3Mjg5NTMsLTM1NjA0OTAwNCw4MTI2ODg2NjgsLTE0
+NTczMzgzNjddfQ==
 -->
