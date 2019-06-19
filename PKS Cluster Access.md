@@ -282,16 +282,18 @@ Execute the following command to create a new ClusterRoleBinding for user appdev
 
 Once the necessary ClusterRoleBinding/RoleBinding has been created, you can generate the kubeconfig using the project - [kubectl_plugin_login](https://github.com/papivot/kubectl_plugin_login)
 
- - User is [appdev] (this user can be an authenticated UAA local user or a LDAP user that may or may not be present in the `pks.cluster.*` UAA groups)
+ - User is [appdev] (this user can be an *authenticated UAA local user* or a *LDAP user* that may or may not be present in the `pks.cluster.*` UAA groups)
  - PKS_API is the PKS API endpoint [e.g. api.pks.domain.com]
  - MASTER_API is the value of `Kubernetes Master Host:Kubernetes Master port` from the `pks cluster [clustername]` output. 
 
-Upon a successful login 
+For a first time LDAP user, upon a successful login, relevent entries are made
 ##### Cleanup 
 
 **Note**: For regular use on OIDC enabled PKS clusters, a user can simply execute the following command to generate the kubeconfig file. 
 
 > `pks get-kubeconfig [cluster_name] -u [username] -p [password] -a [PKS_API_endpoint]`
+
+
 
 ## PKS LDAP configuration
 
@@ -395,11 +397,11 @@ Once this is successful, an LDAP user entry [ldapuser] is created in the respect
  - Unless OIDC is enabled, all cluster authentication is thru service tokens. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzUzMjMxNjQ2LC01NjczNjAyMywtMzUxMj
-AyNjQwLC0yMTQxNzExMjQxLC0xNTM4ODM3Njc3LC0xNjg5NzU2
-NTAyLC0yMDE2NTMwNjE3LDEwNTQ0OTkyOTUsMTk0NzY0ODUxNS
-w4MjYwMTAwNSw4NzQ0MjM0NjQsMTA0NDUxMTkzMSwxMTUwMTI3
-MzMyLC0xMzgzOTk2MTMyLC04NDg1NDA2NjIsLTUwMTg1ODcwNS
-wxMzgyMDQ3MzUyLC05NjI3Mjg5NTMsLTM1NjA0OTAwNCw4MTI2
-ODg2NjhdfQ==
+eyJoaXN0b3J5IjpbMTEzOTgxOTI2OSw3NTMyMzE2NDYsLTU2Nz
+M2MDIzLC0zNTEyMDI2NDAsLTIxNDE3MTEyNDEsLTE1Mzg4Mzc2
+NzcsLTE2ODk3NTY1MDIsLTIwMTY1MzA2MTcsMTA1NDQ5OTI5NS
+wxOTQ3NjQ4NTE1LDgyNjAxMDA1LDg3NDQyMzQ2NCwxMDQ0NTEx
+OTMxLDExNTAxMjczMzIsLTEzODM5OTYxMzIsLTg0ODU0MDY2Mi
+wtNTAxODU4NzA1LDEzODIwNDczNTIsLTk2MjcyODk1MywtMzU2
+MDQ5MDA0XX0=
 -->
