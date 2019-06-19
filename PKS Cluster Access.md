@@ -291,8 +291,10 @@ For a first time LDAP user, upon a successful login, relevent entries are made i
 ##### Cleanup 
 Revert back to the PKS admin user - 
 
-> pks pks login -k -a api.pks.gcpcloud.navneetv.com -u nverma
-> `pks get-credentials gcpcluster00`
+> `pks pks login -k -a api.pks.domain.com -u [username]`
+> `pks get-credentials [clustername]`
+
+Delete the ClusterRoleBinding that was previously created for this excersise. 
 
 **Note**: For regular use on OIDC enabled PKS clusters, a user can simply execute the following command to generate the kubeconfig file. 
 
@@ -402,7 +404,7 @@ Once this is successful, an LDAP user entry [ldapuser] is created in the respect
  - Unless OIDC is enabled, all cluster authentication is thru service tokens. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1MDMyNDI4NSw3NTMyMzE2NDYsLTU2Nz
+eyJoaXN0b3J5IjpbLTg3NzkyNTI2Miw3NTMyMzE2NDYsLTU2Nz
 M2MDIzLC0zNTEyMDI2NDAsLTIxNDE3MTEyNDEsLTE1Mzg4Mzc2
 NzcsLTE2ODk3NTY1MDIsLTIwMTY1MzA2MTcsMTA1NDQ5OTI5NS
 wxOTQ3NjQ4NTE1LDgyNjAxMDA1LDg3NDQyMzQ2NCwxMDQ0NTEx
