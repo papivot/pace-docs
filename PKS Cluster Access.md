@@ -282,8 +282,10 @@ Execute the following command to create a new ClusterRoleBinding for user appdev
 
 Once the necessary ClusterRoleBinding/RoleBinding has been created, you can generate the kubeconfig using the project - [kubectl_plugin_login](https://github.com/papivot/kubectl_plugin_login)
 
- - User is appdev (this user can be an authenticated UAA local user or a LDAP user that may or may not be present in the `pks.cluster.*` UAA groups)
+ - User is [appdev] (this user can be an authenticated UAA local user or a LDAP user that may or may not be present in the `pks.cluster.*` UAA groups)
+ - API_EP 
  - Token is the 1t value in the token.csv file's output. 
+kubectl login -c gcpcluster00 -a api.pks.gcpcloud.navneetv.com -u appdev -m cluster00.gcpcloud.navneetv.com:8443
 
 
 ## PKS LDAP configuration
@@ -388,11 +390,11 @@ Once this is successful, an LDAP user entry [ldapuser] is created in the respect
  - Unless OIDC is enabled, all cluster authentication is thru service tokens. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MDU2MDY1NywtMzUxMjAyNjQwLC0yMT
-QxNzExMjQxLC0xNTM4ODM3Njc3LC0xNjg5NzU2NTAyLC0yMDE2
-NTMwNjE3LDEwNTQ0OTkyOTUsMTk0NzY0ODUxNSw4MjYwMTAwNS
-w4NzQ0MjM0NjQsMTA0NDUxMTkzMSwxMTUwMTI3MzMyLC0xMzgz
-OTk2MTMyLC04NDg1NDA2NjIsLTUwMTg1ODcwNSwxMzgyMDQ3Mz
-UyLC05NjI3Mjg5NTMsLTM1NjA0OTAwNCw4MTI2ODg2NjgsLTE0
-NTczMzgzNjddfQ==
+eyJoaXN0b3J5IjpbLTE3NTAyNDI5NDAsLTM1MTIwMjY0MCwtMj
+E0MTcxMTI0MSwtMTUzODgzNzY3NywtMTY4OTc1NjUwMiwtMjAx
+NjUzMDYxNywxMDU0NDk5Mjk1LDE5NDc2NDg1MTUsODI2MDEwMD
+UsODc0NDIzNDY0LDEwNDQ1MTE5MzEsMTE1MDEyNzMzMiwtMTM4
+Mzk5NjEzMiwtODQ4NTQwNjYyLC01MDE4NTg3MDUsMTM4MjA0Nz
+M1MiwtOTYyNzI4OTUzLC0zNTYwNDkwMDQsODEyNjg4NjY4LC0x
+NDU3MzM4MzY3XX0=
 -->
