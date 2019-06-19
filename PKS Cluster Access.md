@@ -255,6 +255,8 @@ The following configuration gets added to the K8S apiserver when using UAA as OI
 
 To provide OIDC token based authentication, the flag `Enable UAA as OIDC provider` has to be checked in the PKS tile in the UAA section. Doing so will configure created clusters as well as new clusters to use UAA as the OIDC provider. Once the setting has been enabled, the configuration has to be saved and changes applied. 
 
+
+
 ## PKS LDAP configuration
 
 PKS LDAP integration is detailed [here.](https://community.pivotal.io/s/article/Configuring-LDAP-Integration-with-Pivotal-Cloud-Foundry) 
@@ -357,11 +359,11 @@ Once this is successful, an LDAP user entry [ldapuser] is created in the respect
  - Unless OIDC is enabled, all cluster authentication is thru service tokens. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Mzg4Mzc2NzcsLTE2ODk3NTY1MDIsLT
-IwMTY1MzA2MTcsMTA1NDQ5OTI5NSwxOTQ3NjQ4NTE1LDgyNjAx
-MDA1LDg3NDQyMzQ2NCwxMDQ0NTExOTMxLDExNTAxMjczMzIsLT
-EzODM5OTYxMzIsLTg0ODU0MDY2MiwtNTAxODU4NzA1LDEzODIw
-NDczNTIsLTk2MjcyODk1MywtMzU2MDQ5MDA0LDgxMjY4ODY2OC
-wtMTQ1NzMzODM2NywtMTUxMjAxOTk4MiwxODMxNzY1MTAsNzc3
-OTE5MjMxXX0=
+eyJoaXN0b3J5IjpbLTIxNDE3MTEyNDEsLTE1Mzg4Mzc2NzcsLT
+E2ODk3NTY1MDIsLTIwMTY1MzA2MTcsMTA1NDQ5OTI5NSwxOTQ3
+NjQ4NTE1LDgyNjAxMDA1LDg3NDQyMzQ2NCwxMDQ0NTExOTMxLD
+ExNTAxMjczMzIsLTEzODM5OTYxMzIsLTg0ODU0MDY2MiwtNTAx
+ODU4NzA1LDEzODIwNDczNTIsLTk2MjcyODk1MywtMzU2MDQ5MD
+A0LDgxMjY4ODY2OCwtMTQ1NzMzODM2NywtMTUxMjAxOTk4Miwx
+ODMxNzY1MTBdfQ==
 -->
