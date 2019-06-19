@@ -232,7 +232,7 @@ Once the Token has been retrieved, you can generate the kubeconfig using the pro
 
 > `pks get-credentials [pks_clustername]`
 
-This creates the necessary service accounts, clusterroles (if needed), clusterrolebindings, secrets with tokens and the required kubeconfig file leveraging the token. 
+This creates the necessary service accounts, ClusterRole (if needed), ClusterRoleBinding, secrets with tokens and the required kubeconfig file leveraging the token. 
  
 ### OpenID Connect Tokens
 
@@ -395,7 +395,7 @@ Once this is successful, an LDAP user entry [ldapuser] is created in the respect
  - Unless OIDC is enabled, all cluster authentication is thru service tokens. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxODA1MDkwLC01NjczNjAyMywtMzUxMj
+eyJoaXN0b3J5IjpbNzUzMjMxNjQ2LC01NjczNjAyMywtMzUxMj
 AyNjQwLC0yMTQxNzExMjQxLC0xNTM4ODM3Njc3LC0xNjg5NzU2
 NTAyLC0yMDE2NTMwNjE3LDEwNTQ0OTkyOTUsMTk0NzY0ODUxNS
 w4MjYwMTAwNSw4NzQ0MjM0NjQsMTA0NDUxMTkzMSwxMTUwMTI3
