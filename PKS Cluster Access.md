@@ -258,7 +258,9 @@ To provide OIDC token based authentication, the flag `Enable UAA as OIDC provide
 Once OIDC is enabled, a PKS admin can execute 
 >`pks get-credentials [clustername]`
 
-to get access to the cluster. During this process, besi
+to get access to the cluster. During this process, besides generating the kubeconfig file, the CLI also creates a ClusterRoleBinding for the admin called `[username]-cluster-admin`
+
+
 
 ## PKS LDAP configuration
 
@@ -362,11 +364,11 @@ Once this is successful, an LDAP user entry [ldapuser] is created in the respect
  - Unless OIDC is enabled, all cluster authentication is thru service tokens. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ1NzU4OTksLTIxNDE3MTEyNDEsLTE1Mz
-g4Mzc2NzcsLTE2ODk3NTY1MDIsLTIwMTY1MzA2MTcsMTA1NDQ5
-OTI5NSwxOTQ3NjQ4NTE1LDgyNjAxMDA1LDg3NDQyMzQ2NCwxMD
-Q0NTExOTMxLDExNTAxMjczMzIsLTEzODM5OTYxMzIsLTg0ODU0
-MDY2MiwtNTAxODU4NzA1LDEzODIwNDczNTIsLTk2MjcyODk1My
-wtMzU2MDQ5MDA0LDgxMjY4ODY2OCwtMTQ1NzMzODM2NywtMTUx
-MjAxOTk4Ml19
+eyJoaXN0b3J5IjpbLTEwOTgxMzM1NTMsLTIxNDE3MTEyNDEsLT
+E1Mzg4Mzc2NzcsLTE2ODk3NTY1MDIsLTIwMTY1MzA2MTcsMTA1
+NDQ5OTI5NSwxOTQ3NjQ4NTE1LDgyNjAxMDA1LDg3NDQyMzQ2NC
+wxMDQ0NTExOTMxLDExNTAxMjczMzIsLTEzODM5OTYxMzIsLTg0
+ODU0MDY2MiwtNTAxODU4NzA1LDEzODIwNDczNTIsLTk2MjcyOD
+k1MywtMzU2MDQ5MDA0LDgxMjY4ODY2OCwtMTQ1NzMzODM2Nywt
+MTUxMjAxOTk4Ml19
 -->
