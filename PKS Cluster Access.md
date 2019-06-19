@@ -288,11 +288,10 @@ Once the necessary ClusterRoleBinding/RoleBinding has been created, you can gene
 
 ##### Cleanup 
 
-**Note**: For regular use on OIDC enabled PKS clusters, a user can simp
+**Note**: For regular use on OIDC enabled PKS clusters, a user can simply execute the following command to generate the kubeconfig file. 
 
-> `pks get-credentials [pks_clustername]`
+> `pks get-kubeconfig [cluster_name] -u [username] -p [password] -a [PKS_API_endpoint]`
 
-This creates the necessary service accounts, clusterroles (if needed), clusterrolebindings, secrets with tokens and the required kubeconfig file leveraging the token. 
 
 ## PKS LDAP configuration
 
@@ -396,11 +395,11 @@ Once this is successful, an LDAP user entry [ldapuser] is created in the respect
  - Unless OIDC is enabled, all cluster authentication is thru service tokens. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzkyMzUxMjU2LC0zNTEyMDI2NDAsLTIxND
-E3MTEyNDEsLTE1Mzg4Mzc2NzcsLTE2ODk3NTY1MDIsLTIwMTY1
-MzA2MTcsMTA1NDQ5OTI5NSwxOTQ3NjQ4NTE1LDgyNjAxMDA1LD
-g3NDQyMzQ2NCwxMDQ0NTExOTMxLDExNTAxMjczMzIsLTEzODM5
-OTYxMzIsLTg0ODU0MDY2MiwtNTAxODU4NzA1LDEzODIwNDczNT
-IsLTk2MjcyODk1MywtMzU2MDQ5MDA0LDgxMjY4ODY2OCwtMTQ1
-NzMzODM2N119
+eyJoaXN0b3J5IjpbLTEwODI1ODQ3NTgsLTM1MTIwMjY0MCwtMj
+E0MTcxMTI0MSwtMTUzODgzNzY3NywtMTY4OTc1NjUwMiwtMjAx
+NjUzMDYxNywxMDU0NDk5Mjk1LDE5NDc2NDg1MTUsODI2MDEwMD
+UsODc0NDIzNDY0LDEwNDQ1MTE5MzEsMTE1MDEyNzMzMiwtMTM4
+Mzk5NjEzMiwtODQ4NTQwNjYyLC01MDE4NTg3MDUsMTM4MjA0Nz
+M1MiwtOTYyNzI4OTUzLC0zNTYwNDkwMDQsODEyNjg4NjY4LC0x
+NDU3MzM4MzY3XX0=
 -->
