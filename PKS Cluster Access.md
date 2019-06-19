@@ -129,7 +129,7 @@ admin.key
 Copy the admin.crt and admin.key to the jumphost/bastion/desktop. Create a yaml file - admin.yaml - with the following content
 ```shell
 # admin.yaml
-piVersion: rbac.authorization.k8s.io/v1
+ApiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
   name: temp-cluster-admin
@@ -364,7 +364,7 @@ Once this is successful, an LDAP user entry [ldapuser] is created in the respect
  - Unless OIDC is enabled, all cluster authentication is thru service tokens. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTgxMzM1NTMsLTIxNDE3MTEyNDEsLT
+eyJoaXN0b3J5IjpbLTEwMzA0NjY5MTQsLTIxNDE3MTEyNDEsLT
 E1Mzg4Mzc2NzcsLTE2ODk3NTY1MDIsLTIwMTY1MzA2MTcsMTA1
 NDQ5OTI5NSwxOTQ3NjQ4NTE1LDgyNjAxMDA1LDg3NDQyMzQ2NC
 wxMDQ0NTExOTMxLDExNTAxMjczMzIsLTEzODM5OTYxMzIsLTg0
