@@ -10,8 +10,9 @@ PKS provides high availability at 4 different layers -
 
 ## HA of K8s containers
 
-This is a 
+This is a function natively by Kubernetes. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjU4ODAxOTYsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE1NTgyNzEwOTcsLTE2MjU4ODAxOTYsNz
+MwOTk4MTE2XX0=
 -->
