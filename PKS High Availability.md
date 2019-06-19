@@ -10,9 +10,9 @@ PKS provides high availability at 4 different layers -
 
 ## HA of K8s PODs
 
-This is a function natively provided by Kubernetes. More details on POD lifecycle can be found [here](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/). 
+This is a function natively provided by Kubernetes. More details on pods lifecycle can be found [here](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/). If an involuntary disruption of the pods h
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1MDg3ODIxNiwtMTU1ODI3MTA5NywtMT
-YyNTg4MDE5Niw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbOTcyNjkxOTIzLC0xNTU4MjcxMDk3LC0xNj
+I1ODgwMTk2LDczMDk5ODExNl19
 -->
