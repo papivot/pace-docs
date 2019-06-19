@@ -127,6 +127,7 @@ admin.csr
 admin.key
 ```
 Copy the admin.crt and admin.key to the jumphost/bastion/desktop. Create a yaml file - admin.yaml - with the following content
+
 ```shell
 # admin.yaml
 apiVersion: rbac.authorization.k8s.io/v1
@@ -294,7 +295,9 @@ Revert back to the PKS admin user -
 > `pks pks login -k -a api.pks.domain.com -u [username]`
 > `pks get-credentials [clustername]`
 
-Delete the ClusterRoleBinding that was previously created for this excersise. 
+Delete the ClusterRoleBinding that was previously created for this exercise. 
+
+>`kubectl delete -f admin.yaml`
 
 **Note**: For regular use on OIDC enabled PKS clusters, a user can simply execute the following command to generate the kubeconfig file. 
 
@@ -404,11 +407,11 @@ Once this is successful, an LDAP user entry [ldapuser] is created in the respect
  - Unless OIDC is enabled, all cluster authentication is thru service tokens. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3NzkyNTI2Miw3NTMyMzE2NDYsLTU2Nz
-M2MDIzLC0zNTEyMDI2NDAsLTIxNDE3MTEyNDEsLTE1Mzg4Mzc2
-NzcsLTE2ODk3NTY1MDIsLTIwMTY1MzA2MTcsMTA1NDQ5OTI5NS
-wxOTQ3NjQ4NTE1LDgyNjAxMDA1LDg3NDQyMzQ2NCwxMDQ0NTEx
-OTMxLDExNTAxMjczMzIsLTEzODM5OTYxMzIsLTg0ODU0MDY2Mi
-wtNTAxODU4NzA1LDEzODIwNDczNTIsLTk2MjcyODk1MywtMzU2
-MDQ5MDA0XX0=
+eyJoaXN0b3J5IjpbLTEzODU4MDE3MDksNzUzMjMxNjQ2LC01Nj
+czNjAyMywtMzUxMjAyNjQwLC0yMTQxNzExMjQxLC0xNTM4ODM3
+Njc3LC0xNjg5NzU2NTAyLC0yMDE2NTMwNjE3LDEwNTQ0OTkyOT
+UsMTk0NzY0ODUxNSw4MjYwMTAwNSw4NzQ0MjM0NjQsMTA0NDUx
+MTkzMSwxMTUwMTI3MzMyLC0xMzgzOTk2MTMyLC04NDg1NDA2Nj
+IsLTUwMTg1ODcwNSwxMzgyMDQ3MzUyLC05NjI3Mjg5NTMsLTM1
+NjA0OTAwNF19
 -->
