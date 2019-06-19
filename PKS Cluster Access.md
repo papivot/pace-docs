@@ -286,7 +286,7 @@ Once the necessary ClusterRoleBinding/RoleBinding has been created, you can gene
  - PKS_API is the PKS API endpoint [e.g. api.pks.domain.com]
  - MASTER_API is the value of `Kubernetes Master Host:Kubernetes Master port` from the `pks cluster [clustername]` output. 
 
-Upon a sucessfull login 
+Upon a successful login 
 ##### Cleanup 
 
 **Note**: For regular use on OIDC enabled PKS clusters, a user can simply execute the following command to generate the kubeconfig file. 
@@ -395,11 +395,11 @@ Once this is successful, an LDAP user entry [ldapuser] is created in the respect
  - Unless OIDC is enabled, all cluster authentication is thru service tokens. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2NzM2MDIzLC0zNTEyMDI2NDAsLTIxND
-E3MTEyNDEsLTE1Mzg4Mzc2NzcsLTE2ODk3NTY1MDIsLTIwMTY1
-MzA2MTcsMTA1NDQ5OTI5NSwxOTQ3NjQ4NTE1LDgyNjAxMDA1LD
-g3NDQyMzQ2NCwxMDQ0NTExOTMxLDExNTAxMjczMzIsLTEzODM5
-OTYxMzIsLTg0ODU0MDY2MiwtNTAxODU4NzA1LDEzODIwNDczNT
-IsLTk2MjcyODk1MywtMzU2MDQ5MDA0LDgxMjY4ODY2OCwtMTQ1
-NzMzODM2N119
+eyJoaXN0b3J5IjpbMTMxODA1MDkwLC01NjczNjAyMywtMzUxMj
+AyNjQwLC0yMTQxNzExMjQxLC0xNTM4ODM3Njc3LC0xNjg5NzU2
+NTAyLC0yMDE2NTMwNjE3LDEwNTQ0OTkyOTUsMTk0NzY0ODUxNS
+w4MjYwMTAwNSw4NzQ0MjM0NjQsMTA0NDUxMTkzMSwxMTUwMTI3
+MzMyLC0xMzgzOTk2MTMyLC04NDg1NDA2NjIsLTUwMTg1ODcwNS
+wxMzgyMDQ3MzUyLC05NjI3Mjg5NTMsLTM1NjA0OTAwNCw4MTI2
+ODg2NjhdfQ==
 -->
