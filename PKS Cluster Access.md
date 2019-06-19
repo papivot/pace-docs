@@ -276,7 +276,7 @@ subjects:
   name: appdev
   namespace: default
 ```
-execute the following command to create a new clusterolebinding for user admin
+Execute the following command to create a new ClusteRoleBinding for user appdev
 
 >`kubectl apply -f admin.yaml`
 
@@ -385,11 +385,11 @@ Once this is successful, an LDAP user entry [ldapuser] is created in the respect
  - Unless OIDC is enabled, all cluster authentication is thru service tokens. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzUzNTA1MDMsLTIxNDE3MTEyNDEsLT
-E1Mzg4Mzc2NzcsLTE2ODk3NTY1MDIsLTIwMTY1MzA2MTcsMTA1
-NDQ5OTI5NSwxOTQ3NjQ4NTE1LDgyNjAxMDA1LDg3NDQyMzQ2NC
-wxMDQ0NTExOTMxLDExNTAxMjczMzIsLTEzODM5OTYxMzIsLTg0
-ODU0MDY2MiwtNTAxODU4NzA1LDEzODIwNDczNTIsLTk2MjcyOD
-k1MywtMzU2MDQ5MDA0LDgxMjY4ODY2OCwtMTQ1NzMzODM2Nywt
-MTUxMjAxOTk4Ml19
+eyJoaXN0b3J5IjpbLTM1MTIwMjY0MCwtMjE0MTcxMTI0MSwtMT
+UzODgzNzY3NywtMTY4OTc1NjUwMiwtMjAxNjUzMDYxNywxMDU0
+NDk5Mjk1LDE5NDc2NDg1MTUsODI2MDEwMDUsODc0NDIzNDY0LD
+EwNDQ1MTE5MzEsMTE1MDEyNzMzMiwtMTM4Mzk5NjEzMiwtODQ4
+NTQwNjYyLC01MDE4NTg3MDUsMTM4MjA0NzM1MiwtOTYyNzI4OT
+UzLC0zNTYwNDkwMDQsODEyNjg4NjY4LC0xNDU3MzM4MzY3LC0x
+NTEyMDE5OTgyXX0=
 -->
