@@ -30,16 +30,17 @@ In this example, you can use the `gcloud` command and authentication to SSH to y
 >`bosh -e pcf login`
 
 - An output similar to this indicates a successful login 
->```shell
->Using environment '10.0.0.5'
-
+```shell
+Using environment '10.0.0.5'
+ 
 Email (): director
 Password ():
 
 Successfully authenticated with UAA
 
 Succeeded
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDM0NTIwMjddfQ==
+eyJoaXN0b3J5IjpbLTc1MzY1MDI5NSwtMTg0MzQ1MjAyN119
 -->
