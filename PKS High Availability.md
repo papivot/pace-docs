@@ -13,7 +13,20 @@ PKS provides high availability at 4 different layers -
 This is a function natively provided by Kubernetes. More details on pods lifecycle can be found [here](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/). If an involuntary disruption of the pods happen, K8s and its components try to restore the state of the application (thereby the pods) based on certain rules. The controller is responsible for the restore/recovery of the pods. 
 
 - Set up a session to watch the nodes and their status 
-> ` watch -d kubectl get p -o wide`
+> ` watch -d kubectl get pods -o wide`
+
+```shell
+Every 2.0s: kubectl get pods -o wide -n pks-system                                                                                 Navneets-MBP.navlab.io: Fri Jun 21 16:15:27 2019
+
+NAME                                    READY   STATUS      RESTARTS   AGE     IP             NODE                                      NOMINATED NODE   READINESS GATES
+cert-generator-v0.19-gnqvk              0/1     Completed   0          4d      10.200.95.5    vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   <none>           <none>
+event-controller-5c764cbc6-fw74x        2/2     Running     489        4d      10.200.67.4    vm-4376c6a8-fcfb-41a2-6ee9-4093de299e97   <none>           <none>
+fluent-bit-2r4d8                        3/3     Running     0          2d22h   10.200.95.8    vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   <none>           <none>
+fluent-bit-nxz94                        3/3     Running     0          2d22h   10.200.67.10   vm-4376c6a8-fcfb-41a2-6ee9-4093de299e97   <none>           <none>
+fluent-bit-qcgj8                        3/3     Running     0          54m     10.200.3.2     vm-1391f084-4af3-47c6-613d-03e5f3b8abb3   <none>           <none>
+...
+```
+
 
 
 ## HA of K8s nodes
@@ -133,8 +146,8 @@ While this HA is difficult to demonstrate (by performing an AZ level failure), i
 - If the cluster has multiple masters, verify that they are placed across different AZs.
 - If the cluster has multiple worker nodes, verify that they are placed across different AZs. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzUzMTIwMzYsLTE0NjA4NjQ4NjcsND
-gwMzkwNzkzLDc1MjkyMjY5OSw5NTY2NzY5NzgsLTEzNDY2MTMw
-NTYsLTk5ODEzOTU3MCwtNTAxMzc2MTcsLTE1NTgyNzEwOTcsLT
-E2MjU4ODAxOTYsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMjI1NzI0MzUwLC0xNDYwODY0ODY3LDQ4MD
+M5MDc5Myw3NTI5MjI2OTksOTU2Njc2OTc4LC0xMzQ2NjEzMDU2
+LC05OTgxMzk1NzAsLTUwMTM3NjE3LC0xNTU4MjcxMDk3LC0xNj
+I1ODgwMTk2LDczMDk5ODExNl19
 -->
