@@ -5,7 +5,7 @@ Besides the normal troubleshooting that can be performed using the Opsman UI and
 
 ### Login to BOSH Director
 
-The best and the easiest way to login to the BOSH director is to login via the Opsman. You can SSH into the Opsman machine using your favorite IaaS supported method. In this example, you can use the `gcloud` command and authentication to SSH to your Opsman VM. To complete the process -
+The best and the easiest way to login to the BOSH director is to login via the Opsman.  To complete the process -
 
  -  Navigate to the Pivotal Ops Manager FQDN in your browser.
  - Login.
@@ -15,14 +15,17 @@ The best and the easiest way to login to the BOSH director is to login via the O
  - Click the tab labeled  `credentials`. Here is the Pivotal Director credentials that the platform auto generates when deploying tiles.
  - Click  `Link to Credential`  under Director Credentials.
  - Note the  `identity`, and  `password`  down. This is the username and password we will use to connect to the Director.
- - Using SSH and the password set when deploying Pivotal Ops Manager, SSH to the Ops Manager VM.
+ - Using SSH and the password set when deploying Pivotal Ops Manager, SSH to the Ops Manager VM. You can SSH into the Opsman machine using your favorite IaaS supported method. 
+ 
+ > `ssh ubuntu@<PIVOTAL-OPS-MANAGER-FQDN`
+
+In this example, you can use the `gcloud` command and authentication to SSH to your Opsman VM.
 
 > `gcloud compute --project "[projectname]" ssh --zone "us-east1-c" "[opsman_vm_instance_name]"`
 
 Once logged in, execute the following commands to login to the BOSH director -
-
->
+> `
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjY2MjYzMDBdfQ==
+eyJoaXN0b3J5IjpbMTg4MTc5ODA5MV19
 -->
