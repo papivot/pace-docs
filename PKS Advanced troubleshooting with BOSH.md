@@ -219,9 +219,9 @@ Downloading resource '9af4ae05-c056-44c5-b582-2d5613fb6e54' to '/home/nverma/ser
 Succeeded
 ```
 
-Note that a tgz file gets downloaded to the user home directory in Ops Manager VM. This file can u
+Note that a tgz file gets downloaded to the user home directory in Ops Manager VM. This extracted files can be used to to further troubelshooting and analysis. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTM5NjAzMzYxLC02NzY1MDg1MDIsMTA1Nj
-I1OTYwNSwxNzMwODEwMSwtMTU4MTk4Nzk0NCwtMTg0MzQ1MjAy
-N119
+eyJoaXN0b3J5IjpbLTcwMzIxMzIyNCwtNjc2NTA4NTAyLDEwNT
+YyNTk2MDUsMTczMDgxMDEsLTE1ODE5ODc5NDQsLTE4NDM0NTIw
+MjddfQ==
 -->
