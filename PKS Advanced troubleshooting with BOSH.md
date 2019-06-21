@@ -225,10 +225,16 @@ Note that a tgz file gets downloaded to the user home directory in Ops Manager V
 
 While all cluster deployments have to be created and managed using the PKS CLI, it may happen at times that there is a failure during the creation of K8S clusters using the PKS CLI. This can happen for multiple reasons (outside the scope of this excecise) but may leave the deployment in a a funky state. PKS CLI may not be able to delete the cluster using `pks delete-cluster [cluster_name]` command. 
 
-To delete such a deployment, you can leverage the BOSH CLI to clean up - 
+To delete such a deployment, you can leverage the BOSH CLI to clean up, similar to this example -
+
+> `bosh -e pcf -d service-instance_47267983-9989-41ce-bc33-905e249b1fbc delete-deployment`
+
+Once done, clean up the reference in PKS database by execute 
+
+> `pks delete-cluster [cluster_name]` 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzYxMDgxOTcsLTIxNDkxMTA5LC03MD
-MyMTMyMjQsLTY3NjUwODUwMiwxMDU2MjU5NjA1LDE3MzA4MTAx
-LC0xNTgxOTg3OTQ0LC0xODQzNDUyMDI3XX0=
+eyJoaXN0b3J5IjpbNTg3OTYyNzg0LC0yMTQ5MTEwOSwtNzAzMj
+EzMjI0LC02NzY1MDg1MDIsMTA1NjI1OTYwNSwxNzMwODEwMSwt
+MTU4MTk4Nzk0NCwtMTg0MzQ1MjAyN119
 -->
