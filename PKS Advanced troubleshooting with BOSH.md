@@ -140,8 +140,10 @@ See "man sudo_root" for details.
 master/38ed427f-2998-4de0-8906-50e0accb8ae1:~$
 ```
 
-Congratulations !!! You have loggi
+Congratulations !!! You have logged into a BOSH deployed K8s node.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTE4MTg3NjAsLTE1ODE5ODc5NDQsLT
-E4NDM0NTIwMjddfQ==
+eyJoaXN0b3J5IjpbMTczMDgxMDEsLTE1ODE5ODc5NDQsLTE4ND
+M0NTIwMjddfQ==
 -->
