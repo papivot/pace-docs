@@ -23,9 +23,11 @@ In this example, you can use the `gcloud` command and authentication to SSH to y
 
 > `gcloud compute --project "[projectname]" ssh --zone "us-east1-c" "[opsman_vm_instance_name]"`
 
-Once logged in, execute the following commands to login to the BOSH director -
-> `
+- Use the `bosh` cli to connect to the Director using the IP found earlier.
+> `bosh alias-env pcf -e <DIRECTOR-IP> --ca-cert /var/tempest/workspaces/default/root_ca_certificate`
+
+- Login to the `bosh` cli using the username, and password found earlier.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4MTc5ODA5MV19
+eyJoaXN0b3J5IjpbLTE2OTEyODUwOTBdfQ==
 -->
