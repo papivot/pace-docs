@@ -13,7 +13,7 @@ PKS provides high availability at 4 different layers -
 This is a function natively provided by Kubernetes. More details on pods lifecycle can be found [here](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/). If an involuntary disruption of the pods happen, K8s and its components try to restore the state of the application (thereby the pods) based on certain rules. The controller is responsible for the restore/recovery of the pods. 
 
 - Set up a session to watch the nodes and their status 
-> ` watch -d kubectl get nodes -o wide`
+> ` watch -d kubectl get p -o wide`
 
 
 ## HA of K8s nodes
@@ -133,8 +133,8 @@ While this HA is difficult to demonstrate (by performing an AZ level failure), i
 - If the cluster has multiple masters, verify that they are placed across different AZs.
 - If the cluster has multiple worker nodes, verify that they are placed across different AZs. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjA4NjQ4NjcsNDgwMzkwNzkzLDc1Mj
-kyMjY5OSw5NTY2NzY5NzgsLTEzNDY2MTMwNTYsLTk5ODEzOTU3
-MCwtNTAxMzc2MTcsLTE1NTgyNzEwOTcsLTE2MjU4ODAxOTYsNz
-MwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTIxMzUzMTIwMzYsLTE0NjA4NjQ4NjcsND
+gwMzkwNzkzLDc1MjkyMjY5OSw5NTY2NzY5NzgsLTEzNDY2MTMw
+NTYsLTk5ODEzOTU3MCwtNTAxMzc2MTcsLTE1NTgyNzEwOTcsLT
+E2MjU4ODAxOTYsNzMwOTk4MTE2XX0=
 -->
