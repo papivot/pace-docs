@@ -63,10 +63,9 @@ kube-system   coredns-54586579f6-gdhtd                1/1     Running     4     
 kube-system   coredns-54586579f6-rz72s                1/1     Running     4          3d23h   10.200.95.2    vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   <none>           <none>
 kube-system   coredns-54586579f6-t9dwp                1/1     Running     0          2m8s    10.200.67.15   vm-4376c6a8-fcfb-41a2-6ee9-4093de299e97   <none>           <none>
 ...
-
 ```
 
-Within a few minutes the kubectl get nodes window will show a new node has joined the cluster and is taking wor -
+Within a few minutes the kubectl get nodes window will show a new node has joined the cluster and is taking workloads -
 
 ```shell
 Every 2.0s: kubectl get nodes -o wide                                                                                              Navneets-MBP.navlab.io: Fri Jun 21 15:24:11 2019
@@ -79,11 +78,13 @@ vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   Ready    <none>   4d      v1.13.5   10
 
 ## HA of K8s services
 
+
+
 ## HA across AZs
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4Mjg5OTM1NCwtMTM0NjYxMzA1NiwtOT
-k4MTM5NTcwLC01MDEzNzYxNywtMTU1ODI3MTA5NywtMTYyNTg4
-MDE5Niw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbOTU2Njc2OTc4LC0xMzQ2NjEzMDU2LC05OT
+gxMzk1NzAsLTUwMTM3NjE3LC0xNTU4MjcxMDk3LC0xNjI1ODgw
+MTk2LDczMDk5ODExNl19
 -->
