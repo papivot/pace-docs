@@ -148,7 +148,18 @@ At times you may need to transfer some files to the K8s nodes that are managed b
 
 > `bosh -e pcf -d service-instance_47267983-9989-41ce-bc33-905e249b1fbc scp .bash_history master/38ed427f-2998-4de0-8906-50e0accb8ae1:/tmp`
 
-Once successfully completed, login and validate that the 
+```shell
+Using environment '10.0.0.5' as user 'director'
+
+Using deployment 'service-instance_47267983-9989-41ce-bc33-905e249b1fbc'
+
+Task 338. Done
+master/38ed427f-2998-4de0-8906-50e0accb8ae1: stderr | Unauthorized use is strictly prohibited. All access and activity
+master/38ed427f-2998-4de0-8906-50e0accb8ae1: stderr | is subject to logging and monitoring.
+
+Succeeded
+```
+Once successfully completed, login and validate that the .bash_history file exist in /tmp of the master VM. 
 
 ### View tasks and logs
 
@@ -242,7 +253,7 @@ Once done, clean up the reference in PKS database by execute
 > `pks delete-cluster [cluster_name]` 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTEzNjM4NSwtMTE5MTk0OTE5LDU4Nz
+eyJoaXN0b3J5IjpbMTI4NjgxMDkwMCwtMTE5MTk0OTE5LDU4Nz
 k2Mjc4NCwtMjE0OTExMDksLTcwMzIxMzIyNCwtNjc2NTA4NTAy
 LDEwNTYyNTk2MDUsMTczMDgxMDEsLTE1ODE5ODc5NDQsLTE4ND
 M0NTIwMjddfQ==
