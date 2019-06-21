@@ -50,10 +50,10 @@ vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   Ready    <none>   3d23h   v1.13.5   10
 
 ```
 
-Run this command to watch the pods placement. 
+- Run this command to watch the pods placement. 
 > ` watch -d kubectl get pods -o wide --all-namespaces`
 
-You will notice that all PODs have been restarted on other nodes (except for PODs that are part of daemonsets). 
+- You will notice that all PODs have been restarted on other nodes (except for PODs that are part of daemonsets). 
 
 ```shell
 Every 2.0s: kubectl get pods -o wide --all-namespaces                                                                              Navneets-MBP.navlab.io: Fri Jun 21 14:23:59 2019
@@ -66,7 +66,7 @@ kube-system   coredns-54586579f6-t9dwp                1/1     Running     0     
 ...
 ```
 
-Within a few minutes the kubectl get nodes window will show a new node has joined the cluster and is taking workloads -
+- Within a few minutes the kubectl get nodes window will show a new node has joined the cluster and is taking workloads -
 
 ```shell
 Every 2.0s: kubectl get nodes -o wide                                                                                              Navneets-MBP.navlab.io: Fri Jun 21 15:24:11 2019
@@ -88,7 +88,11 @@ vm-1391f084-4af3-47c6-613d-03e5f3b8abb3   Ready    <none>   18m   v1.13.5   10.0
 vm-4376c6a8-fcfb-41a2-6ee9-4093de299e97   Ready    <none>   4d    v1.13.5   10.0.11.6                   Ubuntu 16.04.6 LTS   4.15.0-50-generic   docker://18.6.3
 vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   Ready    <none>   4d    v1.13.5   10.0.11.7                   Ubuntu 16.04.6 LTS   4.15.0-50-generic   docker://18.6.3
 ```
-- Login to th 
+- Login to one of the worker VMs. 
+- We will kill the kubelet  process on the worker VM. 
+`ps -eaf|grep kubelet
+root     12766     1  0 Jun17 ?        00:00:00 /bin/bash -ex /var/vcap/jobs/kubelet/bin/kubelet_ctl start
+root     12813 12766  3 Jun17 ?        02:56:31 kubelet --cni-bin-dir=/var/vcap/jobs/kubelet/packages/cni/bin --container-runtime=docker --docker=unix:///var/vcap/sys/run/docker/docker.sock --docker-endpoint=unix:///var/vcap/sys/run/docker/docker.sock --kubeconfig=/var/vcap/jobs/kubelet/config/kubeconfig --network-plugin=cni --root-dir=/var/vcap/data/kubelet --cloud-config=/var/vcap/jobs/kubelet/config/cloud-provider.ini --cloud-provider=gce --hostname-override=vm-4376c6a8-fcfb-41a2-6ee9-4093de299e97 --node-labels=pks-system/cluster.name=gcpcluster00,pks-system/cluster.uuid=service-instance_47267983-9989-41ce-bc33-905e249b1fbc,spec.ip=10.0.11.6,bosh.id=29e4a450-fbfc-404e-aa92-772f678e1693,bosh.zone=us-east1-b --config=/var/vcap/jobs/kubelet/config/kubeletconfig.yml
 
 ```shell
 very 2.0s: kubectl get nodes -o wide                                                                                              Navneets-MBP.navlab.io: Fri Jun 21 15:39:52 2019
@@ -104,7 +108,7 @@ vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   Ready      <none>   4d    v1.13.5   10
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI3MzI1MDgxLDk1NjY3Njk3OCwtMTM0Nj
-YxMzA1NiwtOTk4MTM5NTcwLC01MDEzNzYxNywtMTU1ODI3MTA5
-NywtMTYyNTg4MDE5Niw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTc0MDI3MzUwNCw5NTY2NzY5NzgsLTEzND
+Y2MTMwNTYsLTk5ODEzOTU3MCwtNTAxMzc2MTcsLTE1NTgyNzEw
+OTcsLTE2MjU4ODAxOTYsNzMwOTk4MTE2XX0=
 -->
