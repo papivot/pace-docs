@@ -220,8 +220,12 @@ Succeeded
 ```
 
 Note that a tgz file gets downloaded to the user home directory in Ops Manager VM. This extracted files can be very valuable for further troubleshooting and analysis. This can be also used by Pivotal Support.
+
+### Deleting a cluster deployment 
+
+While all cluster deployments have to be managed using the PKS CLI, it may 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MjQyMDk4NCwtMjE0OTExMDksLTcwMz
+eyJoaXN0b3J5IjpbMTY1ODk0NTE4OSwtMjE0OTExMDksLTcwMz
 IxMzIyNCwtNjc2NTA4NTAyLDEwNTYyNTk2MDUsMTczMDgxMDEs
 LTE1ODE5ODc5NDQsLTE4NDM0NTIwMjddfQ==
 -->
