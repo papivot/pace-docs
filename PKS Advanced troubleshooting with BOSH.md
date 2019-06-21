@@ -42,7 +42,13 @@ Succeeded
 ```
 
 ### Viewing BOSH deployments 
+
+BOSH deploys our PKS clusters. Let us list those deployments.
+
+>`bosh -e pcf deployments`
+
+This should reu
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODE5ODc5NDQsLTE4NDM0NTIwMjddfQ
-==
+eyJoaXN0b3J5IjpbLTE3NjgxNzczNzUsLTE1ODE5ODc5NDQsLT
+E4NDM0NTIwMjddfQ==
 -->
