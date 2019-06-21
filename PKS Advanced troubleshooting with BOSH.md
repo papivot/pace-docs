@@ -15,6 +15,7 @@ The best and the easiest way to login to the BOSH director is to login via the O
  - Click the tab labeled  `credentials`. Here is the Pivotal Director credentials that the platform auto generates when deploying tiles.
  - Click  `Link to Credential`  under Director Credentials.
  - Note the  `identity`, and  `password`  down. This is the username and password we will use to connect to the Director.
+ - Using SSH and the password set when deploying Pivotal Ops Manager, SSH to the Ops Manager VM.
 
 > `gcloud compute --project "[projectname]" ssh --zone "us-east1-c" "[opsman_vm_instance_name]"`
 
@@ -23,5 +24,5 @@ Once logged in, execute the following commands to login to the BOSH director -
 >
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzcxOTE2NzM1XX0=
+eyJoaXN0b3J5IjpbLTEyNjY2MjYzMDBdfQ==
 -->
