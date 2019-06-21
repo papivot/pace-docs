@@ -131,8 +131,9 @@ vm-1391f084-4af3-47c6-613d-03e5f3b8abb3   Ready    <none>   18m   v1.13.5   10.0
 vm-4376c6a8-fcfb-41a2-6ee9-4093de299e97   Ready    <none>   4d    v1.13.5   10.0.11.6                   Ubuntu 16.04.6 LTS   4.15.0-50-generic   docker://18.6.3
 vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   Ready    <none>   4d    v1.13.5   10.0.11.7                   Ubuntu 16.04.6 LTS   4.15.0-50-generic   docker://18.6.3
 ```
-- Login to one of the worker VMs.  Use the section **PKS Advanced troubleshooting with BOSH** -> 
+- Login to one of the worker VMs.  Use the section **PKS Advanced troubleshooting with BOSH** -> **SSH into K8s node VMs** for directions. 
 - We will kill the kubelet  process on the worker VM. 
+
 > `ps -eaf|grep kubelet`
 
 ```shell
@@ -170,8 +171,8 @@ While this HA is difficult to demonstrate (by performing an AZ level failure), i
 - If the cluster has multiple masters, verify that they are placed across different AZs.
 - If the cluster has multiple worker nodes, verify that they are placed across different AZs. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDI4NzQ5MDksLTE0NjA4NjQ4NjcsND
-gwMzkwNzkzLDc1MjkyMjY5OSw5NTY2NzY5NzgsLTEzNDY2MTMw
-NTYsLTk5ODEzOTU3MCwtNTAxMzc2MTcsLTE1NTgyNzEwOTcsLT
-E2MjU4ODAxOTYsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTcwNDIyMTU4MCwtMTQ2MDg2NDg2Nyw0OD
+AzOTA3OTMsNzUyOTIyNjk5LDk1NjY3Njk3OCwtMTM0NjYxMzA1
+NiwtOTk4MTM5NTcwLC01MDEzNzYxNywtMTU1ODI3MTA5NywtMT
+YyNTg4MDE5Niw3MzA5OTgxMTZdfQ==
 -->
