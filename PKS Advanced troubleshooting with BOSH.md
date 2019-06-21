@@ -151,9 +151,24 @@ To view the last 10 tasks that were executed for the deployment, execute the fol
 This should return something similar to this - 
 
 ```shell
+332  done   Fri Jun 21 07:00:01 UTC 2019  Fri Jun 21 07:00:01 UTC 2019  scheduler                                       service-instance_47267983-9989-41ce-bc33-905e249b1fbc  snapshot deployment                                                                                      snapshots of deployment 'service-instance_47267983-9989-41ce-bc33-905e249b1fbc' created
+328  done   Thu Jun 20 07:00:02 UTC 2019  Thu Jun 20 07:00:02 UTC 2019  scheduler                                       service-instance_47267983-9989-41ce-bc33-905e249b1fbc  snapshot deployment                                                                                      snapshots of deployment 'service-instance_47267983-9989-41ce-bc33-905e249b1fbc' created
+322  done   Wed Jun 19 07:00:01 UTC 2019  Wed Jun 19 07:00:01 UTC 2019  scheduler                                       service-instance_47267983-9989-41ce-bc33-905e249b1fbc  snapshot deployment                                                                                      snapshots of deployment 'service-instance_47267983-9989-41ce-bc33-905e249b1fbc' created
+316  done   Tue Jun 18 22:00:31 UTC 2019  Tue Jun 18 22:03:03 UTC 2019  pivotal-container-service-6a9d18c28f11275cff0b  service-instance_47267983-9989-41ce-bc33-905e249b1fbc  run errand telemetry-agent from deployment service-instance_47267983-9989-41ce-bc33-905e249b1fbc         1 succeeded, 0 errored, 0 canceled
+314  done   Tue Jun 18 21:59:31 UTC 2019  Tue Jun 18 21:59:36 UTC 2019  pivotal-container-service-6a9d18c28f11275cff0b  service-instance_47267983-9989-41ce-bc33-905e249b1fbc  run errand vrops-errand from deployment service-instance_47267983-9989-41ce-bc33-905e249b1fbc            3 succeeded, 0 errored, 0 canceled
+313  done   Tue Jun 18 21:55:30 UTC 2019  Tue Jun 18 21:58:41 UTC 2019  pivotal-container-service-6a9d18c28f11275cff0b  service-instance_47267983-9989-41ce-bc33-905e249b1fbc  run errand wavefront-proxy-errand from deployment service-instance_47267983-9989-41ce-bc33-905e249b1fbc  1 succeeded, 0 errored, 0 canceled
+312  done   Tue Jun 18 21:52:30 UTC 2019  Tue Jun 18 21:55:20 UTC 2019  pivotal-container-service-6a9d18c28f11275cff0b  service-instance_47267983-9989-41ce-bc33-905e249b1fbc  run errand apply-addons from deployment service-instance_47267983-9989-41ce-bc33-905e249b1fbc            1 succeeded, 0 errored, 0 canceled
+311  done   Tue Jun 18 21:50:29 UTC 2019  Tue Jun 18 21:52:25 UTC 2019  pivotal-container-service-6a9d18c28f11275cff0b  service-instance_47267983-9989-41ce-bc33-905e249b1fbc  create deployment                                                                                        /deployments/service-instance_47267983-9989-41ce-bc33-905e249b1fbc
+287  done   Tue Jun 18 19:41:10 UTC 2019  Tue Jun 18 19:44:15 UTC 2019  pivotal-container-service-6a9d18c28f11275cff0b  service-instance_47267983-9989-41ce-bc33-905e249b1fbc  run errand telemetry-agent from deployment service-instance_47267983-9989-41ce-bc33-905e249b1fbc         1 succeeded, 0 errored, 0 canceled
+286  done   Tue Jun 18 19:40:10 UTC 2019  Tue Jun 18 19:40:14 UTC 2019  pivotal-container-service-6a9d18c28f11275cff0b  service-instance_47267983-9989-41ce-bc33-905e249b1fbc  run errand vrops-errand from deployment service-instance_47267983-9989-41ce-bc33-905e249b1fbc            3 succeeded, 0 errored, 0 canceled
 
+10 tasks
+
+Succeeded
 ```
+
+The output lists successes/errors and cancellations. This is very helpful for troubleshooting. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2OTcwMzg0MywxNzMwODEwMSwtMTU4MT
+eyJoaXN0b3J5IjpbLTc4Mjc5MTY4MywxNzMwODEwMSwtMTU4MT
 k4Nzk0NCwtMTg0MzQ1MjAyN119
 -->
