@@ -117,7 +117,8 @@ vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   Ready      <none>   4d    v1.13.5   10
 > `ps -eaf|grep kubelet`
 
 ```shell
-
+root     24933     1  0 19:39 ?        00:00:00 /bin/bash -ex /var/vcap/jobs/kubelet/bin/kubelet_ctl start
+root     24981 24933  3 19:39 ?        00:00:23 kubelet --cni-bin-dir=/var/vcap/jobs/kubelet/packages/cni/bin --container-runtime=docker --docker=unix:///var/vcap/sys/run/docker/docker.sock --docker-endpoint=unix:///var/vcap/sys/run/docker/docker.sock --kubeconfig=/var/vcap/jobs/kubelet/config/kubeconfig --network-plugin=cni --root-dir=/var/vcap/data/kubelet --cloud-config=/var/vcap/jobs/kubelet/config/cloud-provider.ini --cloud-provider=gce --hostname-override=vm-4376c6a8-fcfb-41a2-6ee9-4093de299e97 --node-labels=pks-system/cluster.name=gcpcluster00,pks-system/cluster.uuid=service-instance_47267983-9989-41ce-bc33-905e249b1fbc,spec.ip=10.0.11.6,bosh.id=29e4a450-fbfc-404e-aa92-772f678e1693,bosh.zone=us-east1-b --config=/var/vcap/jobs/kubelet/config/kubeletconfig.yml
 ```
 
 
@@ -125,7 +126,7 @@ vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   Ready      <none>   4d    v1.13.5   10
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5NDMwNjE5MCw5NTY2NzY5NzgsLTEzND
+eyJoaXN0b3J5IjpbMjA5NDAxNzkzMSw5NTY2NzY5NzgsLTEzND
 Y2MTMwNTYsLTk5ODEzOTU3MCwtNTAxMzc2MTcsLTE1NTgyNzEw
 OTcsLTE2MjU4ODAxOTYsNzMwOTk4MTE2XX0=
 -->
