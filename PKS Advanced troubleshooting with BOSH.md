@@ -107,11 +107,41 @@ Succeeded
 Note the Instance ID and the VM CID. Use the Instance ID to ssh into the required VM. 
 
 >```shell
->bosh -e pcf -d service-instance_47267983-9989-41ce-bc33-905e249b1fbc vms ssh master/38ed427f-2998-4de0-8906-50e0accb8ae1
+>bosh -e pcf -d service-instance_47267983-9989-41ce-bc33-905e249b1fbc ssh master/38ed427f-2998-4de0-8906-50e0accb8ae1
 >```
 
+This should return something to this - 
 
+```shell
+sing environment '10.0.0.5' as user 'director'
+
+Using deployment 'service-instance_47267983-9989-41ce-bc33-905e249b1fbc'
+
+Task 334. Done
+Unauthorized use is strictly prohibited. All access and activity
+is subject to logging and monitoring.
+Welcome to Ubuntu 16.04.6 LTS (GNU/Linux 4.15.0-50-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+Last login: Fri Jun 21 14:59:13 2019 from 10.0.0.4
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+master/38ed427f-2998-4de0-8906-50e0accb8ae1:~$
+```
+
+Congratulations !!! You have loggi
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3ODQ0NzcxNCwtMTU4MTk4Nzk0NCwtMT
-g0MzQ1MjAyN119
+eyJoaXN0b3J5IjpbLTE2OTE4MTg3NjAsLTE1ODE5ODc5NDQsLT
+E4NDM0NTIwMjddfQ==
 -->
