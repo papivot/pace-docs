@@ -142,8 +142,10 @@ master/38ed427f-2998-4de0-8906-50e0accb8ae1:~$
 
 Congratulations !!! You have logged into a BOSH deployed K8s node.
 
+### View tasks and logs
 
+To view the last 10 tasj 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczMDgxMDEsLTE1ODE5ODc5NDQsLTE4ND
-M0NTIwMjddfQ==
+eyJoaXN0b3J5IjpbLTQxNjc0MTI5NSwxNzMwODEwMSwtMTU4MT
+k4Nzk0NCwtMTg0MzQ1MjAyN119
 -->
