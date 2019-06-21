@@ -212,6 +212,7 @@ Task 311 done
 
 Succeeded
 ```
+#### Events
 
 - To fetch all events that were generated for the deployment, execute the following
 
@@ -251,6 +252,7 @@ Context      user: ^bosh_196c48197974477
 
 Succeeded
 ```
+#### Logs
 
 - To fetch logs from **all** the VMs associated with the deployment, execute the following - 
 > `bosh -e pcf -d service-instance_47267983-9989-41ce-bc33-905e249b1fbc logs`
@@ -294,8 +296,8 @@ Once done, clean up the reference in PKS database by execute
 > `pks delete-cluster [cluster_name]` 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyNTIwODksMjA5NjQyNDE0NiwxMjg2OD
-EwOTAwLC0xMTkxOTQ5MTksNTg3OTYyNzg0LC0yMTQ5MTEwOSwt
-NzAzMjEzMjI0LC02NzY1MDg1MDIsMTA1NjI1OTYwNSwxNzMwOD
-EwMSwtMTU4MTk4Nzk0NCwtMTg0MzQ1MjAyN119
+eyJoaXN0b3J5IjpbNTczNjY0NTM3LDIwOTY0MjQxNDYsMTI4Nj
+gxMDkwMCwtMTE5MTk0OTE5LDU4Nzk2Mjc4NCwtMjE0OTExMDks
+LTcwMzIxMzIyNCwtNjc2NTA4NTAyLDEwNTYyNTk2MDUsMTczMD
+gxMDEsLTE1ODE5ODc5NDQsLTE4NDM0NTIwMjddfQ==
 -->
