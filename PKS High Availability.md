@@ -123,9 +123,12 @@ root     24981 24933  3 19:39 ?        00:00:23 kubelet --cni-bin-dir=/var/vcap/
 
 ## HA across AZs
 
+While this HA is difficult to demonstrate (by performing an AZ level failure), it can be demonstrated by the following - 
+ 
 - Verify that within the PKS tile, `## Assign AZs and Networks` -> `Balance other jobs in` has multiple AZs selected. This will make sure that all non-singleton VM types get deployed in multiple AZs. 
+- If the cluster has mul
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk4NjIzODM5LDc1MjkyMjY5OSw5NTY2Nz
-Y5NzgsLTEzNDY2MTMwNTYsLTk5ODEzOTU3MCwtNTAxMzc2MTcs
-LTE1NTgyNzEwOTcsLTE2MjU4ODAxOTYsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbNDAyMTk5NzgsNzUyOTIyNjk5LDk1NjY3Nj
+k3OCwtMTM0NjYxMzA1NiwtOTk4MTM5NTcwLC01MDEzNzYxNywt
+MTU1ODI3MTA5NywtMTYyNTg4MDE5Niw3MzA5OTgxMTZdfQ==
 -->
