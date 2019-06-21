@@ -83,7 +83,29 @@ Most of the commands, while troubleshooting, would need to reference the `servic
 
 Using the service-instance value in the previous command, you can execute the following command to list all the VMs associated with that particular deployment. 
 >`bosh -e pcf -d service-instance_47267983-9989-41ce-bc33-905e249b1fbc vms`
+
+This should return an output similar to this - 
+
+```shell
+sing environment '10.0.0.5' as user 'director'
+
+Task 333. Done
+
+Deployment 'service-instance_47267983-9989-41ce-bc33-905e249b1fbc'
+
+Instance                                     Process State  AZ          IPs        VM CID                                   VM Type      Active
+master/38ed427f-2998-4de0-8906-50e0accb8ae1  running        us-east1-b  10.0.11.5  vm-f07c89ad-57ed-494b-6267-8ecab37f56ec  medium.disk  true
+worker/29e4a450-fbfc-404e-aa92-772f678e1693  running        us-east1-b  10.0.11.6  vm-4376c6a8-fcfb-41a2-6ee9-4093de299e97  medium.disk  true
+worker/c6ac73c5-7911-4eb9-bfe0-0b66a148f643  running        us-east1-d  10.0.11.8  vm-0d33fa8f-9acc-444c-50b8-afec139f933f  medium.disk  true
+worker/d2ff055d-803d-44bc-af54-66b84dc1ebf5  running        us-east1-c  10.0.11.7  vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784  medium.disk  true
+
+4 vms
+
+Succeeded
+```
+
+Note the Instance ID and the VM CID. Use the Instance ID to ssh into the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3ODc5MDAzNiwtMTU4MTk4Nzk0NCwtMT
-g0MzQ1MjAyN119
+eyJoaXN0b3J5IjpbLTE5MjMwNDI4ODcsLTE1ODE5ODc5NDQsLT
+E4NDM0NTIwMjddfQ==
 -->
