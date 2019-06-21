@@ -113,12 +113,19 @@ vm-4376c6a8-fcfb-41a2-6ee9-4093de299e97   NotReady   <none>   4d    v1.13.5   10
 vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   Ready      <none>   4d    v1.13.5   10.0.11.7                   Ubuntu 16.04.6 LTS   4.15.0-50-generic   docker://18.6.3
 ```
 
+- Check the process table on the Worker VM. The kubelet process is back up. 
+> `ps -eaf|grep kubelet`
+
+```shell
+
+```
+
 
 ## HA across AZs
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzU0MDAyMDYsOTU2Njc2OTc4LC0xMz
-Q2NjEzMDU2LC05OTgxMzk1NzAsLTUwMTM3NjE3LC0xNTU4Mjcx
-MDk3LC0xNjI1ODgwMTk2LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTQ5NDMwNjE5MCw5NTY2NzY5NzgsLTEzND
+Y2MTMwNTYsLTk5ODEzOTU3MCwtNTAxMzc2MTcsLTE1NTgyNzEw
+OTcsLTE2MjU4ODAxOTYsNzMwOTk4MTE2XX0=
 -->
