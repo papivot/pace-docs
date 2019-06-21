@@ -61,38 +61,22 @@ pivotal-container-service-6a9d18c28f11275cff0b         backup-and-restore-sdk/1.
                                                        kubo/0.31.0
                                                        kubo-service-adapter/1.4.0-build.194
                                                        ...
-                                                       nsx-cf-cni/2.4.0.12511604
-                                                       on-demand-service-broker/0.26.0
-                                                       pks-api/1.4.0-build.194
-                                                       pks-nsx-t/1.25.1
-                                                       pks-telemetry/2.0.0-build.175
-                                                       pks-vrli/0.9.0
-                                                       pks-vrops/0.13.0
-                                                       pxc/0.14.0
-                                                       sink-resources-release/0.1.27
-                                                       syslog/11.4.0
-                                                       uaa/71.0
-                                                       wavefront-proxy/0.14.0
+                                                       
 service-instance_47267983-9989-41ce-bc33-905e249b1fbc  bosh-dns/1.10.0                       bosh-google-kvm-ubuntu-xenial-go_agent/250.56  pivotal-container-service-6a9d18c28f11275cff0b
                                                        bpm/1.0.4
                                                        cfcr-etcd/1.10.0
                                                        docker/35.1.0
                                                        kubo/0.31.0
                                                        nsx-cf-cni/2.4.0.12511604
-                                                       pks-api/1.4.0-build.194
-                                                       pks-nsx-t/1.25.1
-                                                       pks-telemetry/2.0.0-build.175
-                                                       pks-vrli/0.9.0
-                                                       pks-vrops/0.13.0
-                                                       sink-resources-release/0.1.27
-                                                       syslog/11.4.0
-                                                       wavefront-proxy/0.14.0
+                                                       ...
 
 2 deployments
 
 Succeeded
 ```
+
+-   Notice the  `Pivotal-container-service`  deployment which was deployed from the PKS tile. Also notice the  `service-instance_*`  which is our deployed PKS cluster, note it down.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc0NDQ0Njg4LC0xNTgxOTg3OTQ0LC0xOD
-QzNDUyMDI3XX0=
+eyJoaXN0b3J5IjpbLTE4MDIyMTY4NjksLTE1ODE5ODc5NDQsLT
+E4NDM0NTIwMjddfQ==
 -->
