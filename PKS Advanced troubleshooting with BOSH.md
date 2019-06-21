@@ -192,9 +192,36 @@ Task 311 done
 Succeeded
 ```
 
-- To fetch logs from all the VMs associated with the deployment, execute the fol
+- To fetch logs from **all** the VMs associated with the deployment, execute the following - 
+> `bosh -e pcf -d service-instance_47267983-9989-41ce-bc33-905e249b1fbc logs`
+
+This should return something similar to this output  - 
+```shell
+Using environment '10.0.0.5' as user 'director'
+
+Using deployment 'service-instance_47267983-9989-41ce-bc33-905e249b1fbc'
+
+Task 336
+
+Task 336 | 15:16:32 | Fetching logs for worker/c6ac73c5-7911-4eb9-bfe0-0b66a148f643 (2): Finding and packing log files
+Task 336 | 15:16:32 | Fetching logs for worker/d2ff055d-803d-44bc-af54-66b84dc1ebf5 (1): Finding and packing log files
+Task 336 | 15:16:32 | Fetching logs for master/38ed427f-2998-4de0-8906-50e0accb8ae1 (0): Finding and packing log files
+Task 336 | 15:16:32 | Fetching logs for worker/29e4a450-fbfc-404e-aa92-772f678e1693 (0): Finding and packing log files (00:00:01)
+Task 336 | 15:16:33 | Fetching logs for worker/c6ac73c5-7911-4eb9-bfe0-0b66a148f643 (2): Finding and packing log files (00:00:01)
+Task 336 | 15:16:33 | Fetching logs for worker/d2ff055d-803d-44bc-af54-66b84dc1ebf5 (1): Finding and packing log files (00:00:01)
+Task 336 | 15:16:43 | Fetching logs for master/38ed427f-2998-4de0-8906-50e0accb8ae1 (0): Finding and packing log files (00:00:11)
+Task 336 | 15:16:44 | Fetching group of logs: Packing log files together
+
+...
+Downloading resource '9af4ae05-c056-44c5-b582-2d5613fb6e54' to '/home/nverma/service-instance_47267983-9989-41ce-bc33-905e249b1fbc-20190621-151646-585885543.tgz'...
+
+################################                              52.53% 81.50 MiB/s
+Succeeded
+```
+
+Note that 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzMTM5ODEzNywtNjc2NTA4NTAyLDEwNT
+eyJoaXN0b3J5IjpbMTM1MTQwOTI2NCwtNjc2NTA4NTAyLDEwNT
 YyNTk2MDUsMTczMDgxMDEsLTE1ODE5ODc5NDQsLTE4NDM0NTIw
 MjddfQ==
 -->
