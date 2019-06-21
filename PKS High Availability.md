@@ -79,12 +79,29 @@ vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   Ready    <none>   4d      v1.13.5   10
 ## HA of K8s services
 
 
+```shell
+Every 2.0s: kubectl get nodes -o wide                                                                                              Navneets-MBP.navlab.io: Fri Jun 21 15:39:02 2019
+
+NAME                                      STATUS   ROLES    AGE   VERSION   INTERNAL-IP   EXTERNAL-IP   OS-IMAGE             KERNEL-VERSION      CONTAINER-RUNTIME
+vm-1391f084-4af3-47c6-613d-03e5f3b8abb3   Ready    <none>   18m   v1.13.5   10.0.11.8                   Ubuntu 16.04.6 LTS   4.15.0-50-generic   docker://18.6.3
+vm-4376c6a8-fcfb-41a2-6ee9-4093de299e97   Ready    <none>   4d    v1.13.5   10.0.11.6                   Ubuntu 16.04.6 LTS   4.15.0-50-generic   docker://18.6.3
+vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   Ready    <none>   4d    v1.13.5   10.0.11.7                   Ubuntu 16.04.6 LTS   4.15.0-50-generic   docker://18.6.3
+```
+```shell
+very 2.0s: kubectl get nodes -o wide                                                                                              Navneets-MBP.navlab.io: Fri Jun 21 15:39:52 2019
+
+NAME                                      STATUS     ROLES    AGE   VERSION   INTERNAL-IP   EXTERNAL-IP   OS-IMAGE             KERNEL-VERSION      CONTAINER-RUNTIME
+vm-1391f084-4af3-47c6-613d-03e5f3b8abb3   Ready      <none>   19m   v1.13.5   10.0.11.8                   Ubuntu 16.04.6 LTS   4.15.0-50-generic   docker://18.6.3
+vm-4376c6a8-fcfb-41a2-6ee9-4093de299e97   NotReady   <none>   4d    v1.13.5   10.0.11.6                   Ubuntu 16.04.6 LTS   4.15.0-50-generic   docker://18.6.3
+vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   Ready      <none>   4d    v1.13.5   10.0.11.7                   Ubuntu 16.04.6 LTS   4.15.0-50-generic   docker://18.6.3
+```
+
 
 ## HA across AZs
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU2Njc2OTc4LC0xMzQ2NjEzMDU2LC05OT
-gxMzk1NzAsLTUwMTM3NjE3LC0xNTU4MjcxMDk3LC0xNjI1ODgw
-MTk2LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTI1MTQyOTgwLDk1NjY3Njk3OCwtMTM0Nj
+YxMzA1NiwtOTk4MTM5NTcwLC01MDEzNzYxNywtMTU1ODI3MTA5
+NywtMTYyNTg4MDE5Niw3MzA5OTgxMTZdfQ==
 -->
