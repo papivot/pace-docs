@@ -41,7 +41,8 @@ Successfully authenticated with UAA
 Succeeded
 ```
 
-### Viewing BOS
+### Viewing BOSH deployments 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY2Nzk2OTk0LC0xODQzNDUyMDI3XX0=
+eyJoaXN0b3J5IjpbLTE1ODE5ODc5NDQsLTE4NDM0NTIwMjddfQ
+==
 -->
