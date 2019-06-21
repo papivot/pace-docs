@@ -81,8 +81,9 @@ Most of the commands, while troubleshooting, would need to reference the `servic
 
 ### SSH into K8s node VMs
 
-
+Using the service-instance value in the previous command, you can execute the following command to list all the VMs associated with that particular deployment. 
+>`bosh -e pcf -d service-instance_47267983-9989-41ce-bc33-905e249b1fbc vms`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzM1MDIzMjcsLTE1ODE5ODc5NDQsLT
-E4NDM0NTIwMjddfQ==
+eyJoaXN0b3J5IjpbMTc3ODc5MDAzNiwtMTU4MTk4Nzk0NCwtMT
+g0MzQ1MjAyN119
 -->
