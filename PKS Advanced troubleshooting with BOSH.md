@@ -163,6 +163,8 @@ Once successfully completed, login and validate that the .bash_history file exis
 
 ### View tasks, events and logs
 
+#### Tasks
+
  - To view the last 10 (example) tasks that were executed for the deployment, execute the following - 
 
 >`bosh -e pcf -d service-instance_47267983-9989-41ce-bc33-905e249b1fbc tasks --recent=10`
@@ -227,7 +229,28 @@ ID            Time                          User                                
 ...
 ```
 
-To view details of an event, execuete the event command with the event_id as 
+To view details of an event, execute the event command with the event_id as a parameter. 
+
+> `bosh -e pcf -d service-instance_47267983-9989-41ce-bc33-905e249b1fbc event 4180`
+
+should retune something similar to this - 
+
+```shell
+Using environment '10.0.0.5' as user 'director'
+
+ID           4180
+Time         Fri Jun 21 17:14:50 UTC 2019
+User         director
+Action       cleanup ssh
+Object Type  instance
+Object Name  master/38ed427f-2998-4de0-8906-50e0accb8ae1
+Task ID      341
+Deployment   service-instance_47267983-9989-41ce-bc33-905e249b1fbc
+Instance     master/38ed427f-2998-4de0-8906-50e0accb8ae1
+Context      user: ^bosh_196c48197974477
+
+Succeeded
+```
 
 - To fetch logs from **all** the VMs associated with the deployment, execute the following - 
 > `bosh -e pcf -d service-instance_47267983-9989-41ce-bc33-905e249b1fbc logs`
@@ -271,8 +294,8 @@ Once done, clean up the reference in PKS database by execute
 > `pks delete-cluster [cluster_name]` 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODIyMjY5MTksMjA5NjQyNDE0NiwxMj
-g2ODEwOTAwLC0xMTkxOTQ5MTksNTg3OTYyNzg0LC0yMTQ5MTEw
-OSwtNzAzMjEzMjI0LC02NzY1MDg1MDIsMTA1NjI1OTYwNSwxNz
-MwODEwMSwtMTU4MTk4Nzk0NCwtMTg0MzQ1MjAyN119
+eyJoaXN0b3J5IjpbMTMyNTIwODksMjA5NjQyNDE0NiwxMjg2OD
+EwOTAwLC0xMTkxOTQ5MTksNTg3OTYyNzg0LC0yMTQ5MTEwOSwt
+NzAzMjEzMjI0LC02NzY1MDg1MDIsMTA1NjI1OTYwNSwxNzMwOD
+EwMSwtMTU4MTk4Nzk0NCwtMTg0MzQ1MjAyN119
 -->
