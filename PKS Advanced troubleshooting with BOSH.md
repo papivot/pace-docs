@@ -5,11 +5,10 @@ Besides the normal troubleshooting that can be performed using the Opsman UI and
 
 ### Login to BOSH Director
 
-The best and the easiest way to login to the BOSH director is to login via the Opsman. You can SSH into the Opsman machine using your favorite IaaS supported method. In this example, you can use the `gcloud` command and authentication to SSH to your Opsman VM.
+The best and the easiest way to login to the BOSH director is to login via the Opsman. You can SSH into the Opsman machine using your favorite IaaS supported method. In this example, you can use the `gcloud` command and authentication to SSH to your Opsman VM. To complete the process -
 
-1.  Navigate to the Pivotal Ops Manager FQDN.
+1.  Navigate to the Pivotal Ops Manager FQDN .
 2.  Login.
-    
 3.  Click on the Pivotal Director Tile (vSphere).
     
 4.  Click the tab labeled  `status`. Here is the list of VMs deployed by the platform and the current status.
@@ -29,5 +28,5 @@ Once logged in, execute the following commands to login to the BOSH director -
 >
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1MzY0MzI2Nl19
+eyJoaXN0b3J5IjpbLTk0ODMxOTMwOV19
 -->
