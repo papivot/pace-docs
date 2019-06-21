@@ -13,6 +13,9 @@ PKS provides high availability at 4 different layers -
 This is a function natively provided by Kubernetes. More details on pods lifecycle can be found [here](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/). If an involuntary disruption of the pods happen, K8s and its components try to restore the state of the application (thereby the pods) based on certain rules. The controller is responsible for the restore/recovery of the pods. 
 
 ## HA of K8s nodes
+
+Make sure that the `Enable VM Resurrector Plugin` setting is checked in the BOSH director tile. If not, enable it and apply changes. 
+Set up a
 > ` watch -d kubectl get nodes -o wide`
 
 ```shell
@@ -72,13 +75,24 @@ pks-system    wavefront-proxy-f79894746-mc8v9         1/1     Running     0     
 
 ```
 
+Within a few minutes -
+
+```shell
+Every 2.0s: kubectl get nodes -o wide                                                                                              Navneets-MBP.navlab.io: Fri Jun 21 15:24:11 2019
+
+NAME                                      STATUS   ROLES    AGE     VERSION   INTERNAL-IP   EXTERNAL-IP   OS-IMAGE             KERNEL-VERSION      CONTAINER-RUNTIME
+vm-1391f084-4af3-47c6-613d-03e5f3b8abb3   Ready    <none>   3m49s   v1.13.5   10.0.11.8                   Ubuntu 16.04.6 LTS   4.15.0-50-generic   docker://18.6.3
+vm-4376c6a8-fcfb-41a2-6ee9-4093de299e97   Ready    <none>   4d      v1.13.5   10.0.11.6                   Ubuntu 16.04.6 LTS   4.15.0-50-generic   docker://18.6.3
+vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   Ready    <none>   4d      v1.13.5   10.0.11.7                   Ubuntu 16.04.6 LTS   4.15.0-50-generic   docker://18.6.3
+```
+
 ## HA of K8s services
 
 ## HA across AZs
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDY2MTMwNTYsLTk5ODEzOTU3MCwtNT
-AxMzc2MTcsLTE1NTgyNzEwOTcsLTE2MjU4ODAxOTYsNzMwOTk4
-MTE2XX0=
+eyJoaXN0b3J5IjpbOTQ0MjMwMTY0LC0xMzQ2NjEzMDU2LC05OT
+gxMzk1NzAsLTUwMTM3NjE3LC0xNTU4MjcxMDk3LC0xNjI1ODgw
+MTk2LDczMDk5ODExNl19
 -->
