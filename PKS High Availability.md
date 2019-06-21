@@ -13,6 +13,8 @@ PKS provides high availability at 4 different layers -
 This is a function natively provided by Kubernetes. More details on pods lifecycle can be found [here](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/). If an involuntary disruption of the pods happen, K8s and its components try to restore the state of the application (thereby the pods) based on certain rules. The controller is responsible for the restore/recovery of the pods. 
 
 ## HA of K8s nodes
+> ` watch -d kubectl get nodes -o wide`
+
 ```
 Every 2.0s: kubectl get nodes -o wide                                                                                              Navneets-MBP.navlab.io: Fri Jun 21 14:21:05 2019
 
@@ -47,7 +49,7 @@ vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   Ready    <none>   3d23h   v1.13.5   10
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYxMzkwODAyLC05OTgxMzk1NzAsLTUwMT
-M3NjE3LC0xNTU4MjcxMDk3LC0xNjI1ODgwMTk2LDczMDk5ODEx
-Nl19
+eyJoaXN0b3J5IjpbMTQwMDE0NDkwMiwtOTk4MTM5NTcwLC01MD
+EzNzYxNywtMTU1ODI3MTA5NywtMTYyNTg4MDE5Niw3MzA5OTgx
+MTZdfQ==
 -->
