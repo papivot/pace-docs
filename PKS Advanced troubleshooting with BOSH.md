@@ -167,9 +167,9 @@ This should return something similar to this -
 Succeeded
 ```
 
-The output lists successes/errors and cancellations. This is very helpful for troubleshooting. 
+The output also lists successes, errors and cancellations. This is very helpful for troubleshooting. 
 
-To view what actions were preformed for a specific task, execute the following (in this example 311 is the task_ID that we need more information on)
+ - To view what actions were preformed for a specific task, execute the following (in this example 311 is the task_ID that we need more information on)
 
 >`bosh -e pcf -d service-instance_47267983-9989-41ce-bc33-905e249b1fbc task -a 311`
 
@@ -192,8 +192,8 @@ Task 311 done
 Succeeded
 ```
 
-To fetch logs
+- To fetch logs from all the VMs associated with the deployment, execute the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNDM4MTMyLDEwNTYyNTk2MDUsMTczMD
-gxMDEsLTE1ODE5ODc5NDQsLTE4NDM0NTIwMjddfQ==
+eyJoaXN0b3J5IjpbLTY3NjUwODUwMiwxMDU2MjU5NjA1LDE3Mz
+A4MTAxLC0xNTgxOTg3OTQ0LC0xODQzNDUyMDI3XX0=
 -->
