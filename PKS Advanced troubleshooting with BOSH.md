@@ -27,7 +27,10 @@ In this example, you can use the `gcloud` command and authentication to SSH to y
 > `bosh alias-env pcf -e <DIRECTOR-IP> --ca-cert /var/tempest/workspaces/default/root_ca_certificate`
 
 - Login to the `bosh` cli using the username, and password found earlier.
+>`bosh -e pcf login`
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTEyODUwOTBdfQ==
+eyJoaXN0b3J5IjpbLTQ1NjgxMjg3Ml19
 -->
