@@ -104,8 +104,14 @@ worker/d2ff055d-803d-44bc-af54-66b84dc1ebf5  running        us-east1-c  10.0.11.
 Succeeded
 ```
 
-Note the Instance ID and the VM CID. Use the Instance ID to ssh into the 
+Note the Instance ID and the VM CID. Use the Instance ID to ssh into the required VM. 
+
+>```shell
+>bosh -e pcf -d service-instance_47267983-9989-41ce-bc33-905e249b1fbc vms ssh master/38ed427f-2998-4de0-8906-50e0accb8ae1
+>```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjMwNDI4ODcsLTE1ODE5ODc5NDQsLT
-E4NDM0NTIwMjddfQ==
+eyJoaXN0b3J5IjpbMTk3ODQ0NzcxNCwtMTU4MTk4Nzk0NCwtMT
+g0MzQ1MjAyN119
 -->
