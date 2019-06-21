@@ -144,7 +144,7 @@ Congratulations !!! You have logged into a BOSH deployed K8s node.
 
 ### View tasks and logs
 
-To view the last 10 tasks that were executed for the deployment, execute the following - 
+ - To view the last 10 (example) tasks that were executed for the deployment, execute the following - 
 
 >`bosh -e pcf -d service-instance_47267983-9989-41ce-bc33-905e249b1fbc tasks --recent=10`
 
@@ -191,7 +191,9 @@ Task 311 done
 
 Succeeded
 ```
+
+To fetch logs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MTc5NDE5NiwxMDU2MjU5NjA1LDE3Mz
-A4MTAxLC0xNTgxOTg3OTQ0LC0xODQzNDUyMDI3XX0=
+eyJoaXN0b3J5IjpbLTYwNDM4MTMyLDEwNTYyNTk2MDUsMTczMD
+gxMDEsLTE1ODE5ODc5NDQsLTE4NDM0NTIwMjddfQ==
 -->
