@@ -123,9 +123,9 @@ root     24981 24933  3 19:39 ?        00:00:23 kubelet --cni-bin-dir=/var/vcap/
 
 ## HA across AZs
 
-Verify that 
+- Verify that within the PKS tile, `## Assign AZs and Networks` -> `Balance other jobs in` has multiple AZs selected. This will make sure that all non-singleton VM types get deployed in multiple AZs. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzUyOTIyNjk5LDk1NjY3Njk3OCwtMTM0Nj
-YxMzA1NiwtOTk4MTM5NTcwLC01MDEzNzYxNywtMTU1ODI3MTA5
-NywtMTYyNTg4MDE5Niw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbOTk4NjIzODM5LDc1MjkyMjY5OSw5NTY2Nz
+Y5NzgsLTEzNDY2MTMwNTYsLTk5ODEzOTU3MCwtNTAxMzc2MTcs
+LTE1NTgyNzEwOTcsLTE2MjU4ODAxOTYsNzMwOTk4MTE2XX0=
 -->
