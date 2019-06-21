@@ -213,6 +213,10 @@ Succeeded
 
 - To fetch all events that were generated for the deployment, execute the following
 
+> `bosh -e pcf -d service-instance_47267983-9989-41ce-bc33-905e249b1fbc events`
+
+This should return something 
+
 - To fetch logs from **all** the VMs associated with the deployment, execute the following - 
 > `bosh -e pcf -d service-instance_47267983-9989-41ce-bc33-905e249b1fbc logs`
 
@@ -255,8 +259,8 @@ Once done, clean up the reference in PKS database by execute
 > `pks delete-cluster [cluster_name]` 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5NjQyNDE0NiwxMjg2ODEwOTAwLC0xMT
-kxOTQ5MTksNTg3OTYyNzg0LC0yMTQ5MTEwOSwtNzAzMjEzMjI0
-LC02NzY1MDg1MDIsMTA1NjI1OTYwNSwxNzMwODEwMSwtMTU4MT
-k4Nzk0NCwtMTg0MzQ1MjAyN119
+eyJoaXN0b3J5IjpbLTE0MzI5OTgwMDEsMjA5NjQyNDE0NiwxMj
+g2ODEwOTAwLC0xMTkxOTQ5MTksNTg3OTYyNzg0LC0yMTQ5MTEw
+OSwtNzAzMjEzMjI0LC02NzY1MDg1MDIsMTA1NjI1OTYwNSwxNz
+MwODEwMSwtMTU4MTk4Nzk0NCwtMTg0MzQ1MjAyN119
 -->
