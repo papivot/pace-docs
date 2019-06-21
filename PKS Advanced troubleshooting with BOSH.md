@@ -168,7 +168,9 @@ Succeeded
 ```
 
 The output lists successes/errors and cancellations. This is very helpful for troubleshooting. 
+
+To view what 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4Mjc5MTY4MywxNzMwODEwMSwtMTU4MT
+eyJoaXN0b3J5IjpbMTA1NjI1OTYwNSwxNzMwODEwMSwtMTU4MT
 k4Nzk0NCwtMTg0MzQ1MjAyN119
 -->
