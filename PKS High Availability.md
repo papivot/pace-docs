@@ -79,6 +79,8 @@ vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   Ready    <none>   4d      v1.13.5   10
 
 ## HA of K8s services
 
+- Set up a session to watch the nodes and their status 
+> ` watch -d kubectl get nodes -o wide`
 
 ```shell
 Every 2.0s: kubectl get nodes -o wide                                                                                              Navneets-MBP.navlab.io: Fri Jun 21 15:39:02 2019
@@ -100,7 +102,8 @@ root     12813 12766  3 Jun17 ?        02:56:31 kubelet --cni-bin-dir=/var/vcap/
 - Kill the kubelet process.
 >`sudo kill -9 12813`
 
-- You will notice that the 
+- You will notice that the Node momentarily becomes `NotReady` and then changes back to ready. 
+
 ```shell
 very 2.0s: kubectl get nodes -o wide                                                                                              Navneets-MBP.navlab.io: Fri Jun 21 15:39:52 2019
 
@@ -115,7 +118,7 @@ vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   Ready      <none>   4d    v1.13.5   10
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjE0MzI0MjksOTU2Njc2OTc4LC0xMz
+eyJoaXN0b3J5IjpbLTE4MzU0MDAyMDYsOTU2Njc2OTc4LC0xMz
 Q2NjEzMDU2LC05OTgxMzk1NzAsLTUwMTM3NjE3LC0xNTU4Mjcx
 MDk3LC0xNjI1ODgwMTk2LDczMDk5ODExNl19
 -->
