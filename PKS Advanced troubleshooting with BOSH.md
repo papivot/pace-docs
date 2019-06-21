@@ -192,8 +192,9 @@ Task 311 done
 Succeeded
 ```
 
-- To fetch logs from all the VMs associated with the deployment, execute the 
+- To fetch logs from all the VMs associated with the deployment, execute the fol
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3NjUwODUwMiwxMDU2MjU5NjA1LDE3Mz
-A4MTAxLC0xNTgxOTg3OTQ0LC0xODQzNDUyMDI3XX0=
+eyJoaXN0b3J5IjpbLTUzMTM5ODEzNywtNjc2NTA4NTAyLDEwNT
+YyNTk2MDUsMTczMDgxMDEsLTE1ODE5ODc5NDQsLTE4NDM0NTIw
+MjddfQ==
 -->
