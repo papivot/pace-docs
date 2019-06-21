@@ -14,12 +14,13 @@ This is a function natively provided by Kubernetes. More details on pods lifecyc
 
 ## HA of K8s nodes
 
-Make sure that the `Enable VM Resurrector Plugin` setting is checked in the BOSH director tile. If not, enable it and apply changes. 
+- Make sure that the `Enable VM Resurrector Plugin` setting is checked in the BOSH director tile. If not, enable it and apply changes. 
 
-Set up a session to watch the nodes and their status 
+- Set up a session to watch the nodes and their status 
 > ` watch -d kubectl get nodes -o wide`
 
-GO to your IaaS provider console and delete/destroy one of the worker nodes.  Within a few minutes, the impacted node goes from Ready to NonReady to missing from the kubectl output. 
+- GO to your IaaS provider console and delete/destroy one of the worker nodes.  
+- Within a few minutes, the impacted node goes from Ready to NonReady to missing from the kubectl output. 
 
 ```shell
 Every 2.0s: kubectl get nodes -o wide                                                                                              Navneets-MBP.navlab.io: Fri Jun 21 14:21:05 2019
@@ -87,6 +88,8 @@ vm-1391f084-4af3-47c6-613d-03e5f3b8abb3   Ready    <none>   18m   v1.13.5   10.0
 vm-4376c6a8-fcfb-41a2-6ee9-4093de299e97   Ready    <none>   4d    v1.13.5   10.0.11.6                   Ubuntu 16.04.6 LTS   4.15.0-50-generic   docker://18.6.3
 vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   Ready    <none>   4d    v1.13.5   10.0.11.7                   Ubuntu 16.04.6 LTS   4.15.0-50-generic   docker://18.6.3
 ```
+- Login to th 
+
 ```shell
 very 2.0s: kubectl get nodes -o wide                                                                                              Navneets-MBP.navlab.io: Fri Jun 21 15:39:52 2019
 
@@ -101,7 +104,7 @@ vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   Ready      <none>   4d    v1.13.5   10
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1MTQyOTgwLDk1NjY3Njk3OCwtMTM0Nj
+eyJoaXN0b3J5IjpbNDI3MzI1MDgxLDk1NjY3Njk3OCwtMTM0Nj
 YxMzA1NiwtOTk4MTM5NTcwLC01MDEzNzYxNywtMTU1ODI3MTA5
 NywtMTYyNTg4MDE5Niw3MzA5OTgxMTZdfQ==
 -->
