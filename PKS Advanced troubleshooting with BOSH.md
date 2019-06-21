@@ -173,8 +173,25 @@ To view what actions were preformed for a specific task, execute the following (
 
 >`bosh -e pcf -d service-instance_47267983-9989-41ce-bc33-905e249b1fbc task -a 311`
 
-This should return something 
+This should return details on that task id - 
+```shell
+Using environment '10.0.0.5' as user 'director'
+
+Task 311
+
+Task 311 | 21:50:29 | Preparing deployment: Preparing deployment
+Task 311 | 21:50:31 | Warning: DNS address not available for the link provider instance: pivotal-container-service/495a5f24-03fc-4f4b-b816-aab0ad40b5d3
+Task 311 | 21:50:31 | Warning: DNS address not available for the link provider instance: pivotal-container-service/495a5f24-03fc-4f4b-b816-aab0ad40b5d3
+Task 311 | 21:50:31 | Warning: DNS address not available for the link provider instance: pivotal-container-service/495a5f24-03fc-4f4b-b816-aab0ad40b5d3
+...
+Task 311 Started  Tue Jun 18 21:50:29 UTC 2019
+Task 311 Finished Tue Jun 18 21:52:25 UTC 2019
+Task 311 Duration 00:01:56
+Task 311 done
+
+Succeeded
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3MDcxMDUwOSwxMDU2MjU5NjA1LDE3Mz
+eyJoaXN0b3J5IjpbMTk2MTc5NDE5NiwxMDU2MjU5NjA1LDE3Mz
 A4MTAxLC0xNTgxOTg3OTQ0LC0xODQzNDUyMDI3XX0=
 -->
