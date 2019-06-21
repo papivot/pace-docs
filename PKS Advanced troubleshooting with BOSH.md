@@ -12,10 +12,9 @@ The best and the easiest way to login to the BOSH director is to login via the O
  - Click on the Pivotal Director Tile (vSphere). 
  - Click the tab labeled  `status`. Here is the list of VMs deployed by the platform and the current status.
  - Note the IP of the  `Ops Manager Director`  job down, this is the Director. The director has the knowledge of all kubernetes clusters deployed.
-   Click the tab labeled  `credentials`. Here is the Pivotal Director credentials that the platform auto generates when deploying
-   tiles.
-   Click  `Link to Credential`  under Director Credentials.
-   8.  Note the  `identity`, and  `password`  down. This is the username and password we will use to connect to the Director.
+ - Click the tab labeled  `credentials`. Here is the Pivotal Director credentials that the platform auto generates when deploying tiles.
+ - Click  `Link to Credential`  under Director Credentials.
+ - Note the  `identity`, and  `password`  down. This is the username and password we will use to connect to the Director.
 
 > `gcloud compute --project "[projectname]" ssh --zone "us-east1-c" "[opsman_vm_instance_name]"`
 
@@ -24,5 +23,5 @@ Once logged in, execute the following commands to login to the BOSH director -
 >
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ3ODQyMjMwXX0=
+eyJoaXN0b3J5IjpbMzcxOTE2NzM1XX0=
 -->
