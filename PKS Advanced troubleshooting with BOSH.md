@@ -219,9 +219,9 @@ Downloading resource '9af4ae05-c056-44c5-b582-2d5613fb6e54' to '/home/nverma/ser
 Succeeded
 ```
 
-Note that a tgz file gets downloaded to the user home directory in Ops Manager VM. This extracted files can be used for further troubleshooting and analysis. This can be also used by Pivotal Support.
+Note that a tgz file gets downloaded to the user home directory in Ops Manager VM. This extracted files can be very valuable for further troubleshooting and analysis. This can be also used by Pivotal Support.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDkxMTA5LC03MDMyMTMyMjQsLTY3Nj
-UwODUwMiwxMDU2MjU5NjA1LDE3MzA4MTAxLC0xNTgxOTg3OTQ0
-LC0xODQzNDUyMDI3XX0=
+eyJoaXN0b3J5IjpbMTM2MjQyMDk4NCwtMjE0OTExMDksLTcwMz
+IxMzIyNCwtNjc2NTA4NTAyLDEwNTYyNTk2MDUsMTczMDgxMDEs
+LTE1ODE5ODc5NDQsLTE4NDM0NTIwMjddfQ==
 -->
