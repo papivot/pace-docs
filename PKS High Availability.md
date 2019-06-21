@@ -97,8 +97,10 @@ root     12766     1  0 Jun17 ?        00:00:00 /bin/bash -ex /var/vcap/jobs/kub
 root     12813 12766  3 Jun17 ?        02:56:31 kubelet --cni-bin-dir=/var/vcap/jobs/kubelet/packages/cni/bin --container-runtime=docker --docker=unix:///var/vcap/sys/run/docker/docker.sock --docker-endpoint=unix:///var/vcap/sys/run/docker/docker.sock --kubeconfig=/var/vcap/jobs/kubelet/config/kubeconfig --network-plugin=cni --root-dir=/var/vcap/data/kubelet --cloud-config=/var/vcap/jobs/kubelet/config/cloud-provider.ini --cloud-provider=gce --hostname-override=vm-4376c6a8-fcfb-41a2-6ee9-4093de299e97 --node-labels=pks-system/cluster.name=gcpcluster00,pks-system/cluster.uuid=service-instance_47267983-9989-41ce-bc33-905e249b1fbc,spec.ip=10.0.11.6,bosh.id=29e4a450-fbfc-404e-aa92-772f678e1693,bosh.zone=us-east1-b --config=/var/vcap/jobs/kubelet/config/kubeletconfig.yml
 ```
 - Grab the PID for the kubelet process. 12813 in this example.
-- Kill 
+- Kill the kubelet process.
+>`sudo kill -9 12813`
 
+- You will notice that the 
 ```shell
 very 2.0s: kubectl get nodes -o wide                                                                                              Navneets-MBP.navlab.io: Fri Jun 21 15:39:52 2019
 
@@ -113,7 +115,7 @@ vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   Ready      <none>   4d    v1.13.5   10
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjA4MjY3MTMsOTU2Njc2OTc4LC0xMz
+eyJoaXN0b3J5IjpbLTEwNjE0MzI0MjksOTU2Njc2OTc4LC0xMz
 Q2NjEzMDU2LC05OTgxMzk1NzAsLTUwMTM3NjE3LC0xNTU4Mjcx
 MDk3LC0xNjI1ODgwMTk2LDczMDk5ODExNl19
 -->
