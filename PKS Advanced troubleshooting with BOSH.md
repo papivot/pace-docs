@@ -29,8 +29,17 @@ In this example, you can use the `gcloud` command and authentication to SSH to y
 - Login to the `bosh` cli using the username, and password found earlier.
 >`bosh -e pcf login`
 
+- An output similar to this indicates a successful login 
+>```shell
+>Using environment '10.0.0.5'
 
+Email (): director
+Password ():
+
+Successfully authenticated with UAA
+
+Succeeded
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1NjgxMjg3Ml19
+eyJoaXN0b3J5IjpbLTE4NDM0NTIwMjddfQ==
 -->
