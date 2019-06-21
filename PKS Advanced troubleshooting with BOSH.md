@@ -161,7 +161,7 @@ Succeeded
 ```
 Once successfully completed, login and validate that the .bash_history file exist in /tmp of the master VM. 
 
-### View tasks and logs
+### View tasks, events and logs
 
  - To view the last 10 (example) tasks that were executed for the deployment, execute the following - 
 
@@ -211,6 +211,8 @@ Task 311 done
 Succeeded
 ```
 
+- To fetch all events that were generated for the deployment, execute the following
+
 - To fetch logs from **all** the VMs associated with the deployment, execute the following - 
 > `bosh -e pcf -d service-instance_47267983-9989-41ce-bc33-905e249b1fbc logs`
 
@@ -253,8 +255,8 @@ Once done, clean up the reference in PKS database by execute
 > `pks delete-cluster [cluster_name]` 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4NjgxMDkwMCwtMTE5MTk0OTE5LDU4Nz
-k2Mjc4NCwtMjE0OTExMDksLTcwMzIxMzIyNCwtNjc2NTA4NTAy
-LDEwNTYyNTk2MDUsMTczMDgxMDEsLTE1ODE5ODc5NDQsLTE4ND
-M0NTIwMjddfQ==
+eyJoaXN0b3J5IjpbMjA5NjQyNDE0NiwxMjg2ODEwOTAwLC0xMT
+kxOTQ5MTksNTg3OTYyNzg0LC0yMTQ5MTEwOSwtNzAzMjEzMjI0
+LC02NzY1MDg1MDIsMTA1NjI1OTYwNSwxNzMwODEwMSwtMTU4MT
+k4Nzk0NCwtMTg0MzQ1MjAyN119
 -->
