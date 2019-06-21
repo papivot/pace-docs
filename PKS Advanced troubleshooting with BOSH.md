@@ -169,8 +169,12 @@ Succeeded
 
 The output lists successes/errors and cancellations. This is very helpful for troubleshooting. 
 
-To view what 
+To view what actions were preformed for a specific task, execute the following (in this example 311 is the task_ID that we need more information on)
+
+>`bosh -e pcf -d service-instance_47267983-9989-41ce-bc33-905e249b1fbc task -a 311`
+
+This should return something 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NjI1OTYwNSwxNzMwODEwMSwtMTU4MT
-k4Nzk0NCwtMTg0MzQ1MjAyN119
+eyJoaXN0b3J5IjpbMTU3MDcxMDUwOSwxMDU2MjU5NjA1LDE3Mz
+A4MTAxLC0xNTgxOTg3OTQ0LC0xODQzNDUyMDI3XX0=
 -->
