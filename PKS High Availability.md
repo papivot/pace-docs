@@ -26,7 +26,9 @@ fluent-bit-nxz94                        3/3     Running     0          2d22h   1
 fluent-bit-qcgj8                        3/3     Running     0          54m     10.200.3.2     vm-1391f084-4af3-47c6-613d-03e5f3b8abb3   <none>           <none>
 ...
 ```
+- From another session, delete one of the fluent-bit pods, simulating a pod outage. 
 
+> `kubectl delete 
 
 
 ## HA of K8s nodes
@@ -146,8 +148,8 @@ While this HA is difficult to demonstrate (by performing an AZ level failure), i
 - If the cluster has multiple masters, verify that they are placed across different AZs.
 - If the cluster has multiple worker nodes, verify that they are placed across different AZs. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjI1NzI0MzUwLC0xNDYwODY0ODY3LDQ4MD
-M5MDc5Myw3NTI5MjI2OTksOTU2Njc2OTc4LC0xMzQ2NjEzMDU2
-LC05OTgxMzk1NzAsLTUwMTM3NjE3LC0xNTU4MjcxMDk3LC0xNj
-I1ODgwMTk2LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMTc2NjI3MTI0NCwtMTQ2MDg2NDg2Nyw0OD
+AzOTA3OTMsNzUyOTIyNjk5LDk1NjY3Njk3OCwtMTM0NjYxMzA1
+NiwtOTk4MTM5NTcwLC01MDEzNzYxNywtMTU1ODI3MTA5NywtMT
+YyNTg4MDE5Niw3MzA5OTgxMTZdfQ==
 -->
