@@ -15,9 +15,11 @@ This is a function natively provided by Kubernetes. More details on pods lifecyc
 ## HA of K8s nodes
 
 Make sure that the `Enable VM Resurrector Plugin` setting is checked in the BOSH director tile. If not, enable it and apply changes. 
-Set up a
+
+Set up a session to watch the nodes and their status 
 > ` watch -d kubectl get nodes -o wide`
 
+GO to your IaaS provider console and delete/destroy one of the worker nodes.  Within a few minutes, the impa
 ```shell
 Every 2.0s: kubectl get nodes -o wide                                                                                              Navneets-MBP.navlab.io: Fri Jun 21 14:21:05 2019
 
@@ -92,7 +94,7 @@ vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   Ready    <none>   4d      v1.13.5   10
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ0MjMwMTY0LC0xMzQ2NjEzMDU2LC05OT
-gxMzk1NzAsLTUwMTM3NjE3LC0xNTU4MjcxMDk3LC0xNjI1ODgw
-MTk2LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTExNDEyOTYwNTIsLTEzNDY2MTMwNTYsLT
+k5ODEzOTU3MCwtNTAxMzc2MTcsLTE1NTgyNzEwOTcsLTE2MjU4
+ODAxOTYsNzMwOTk4MTE2XX0=
 -->
