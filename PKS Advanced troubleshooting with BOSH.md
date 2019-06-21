@@ -215,7 +215,19 @@ Succeeded
 
 > `bosh -e pcf -d service-instance_47267983-9989-41ce-bc33-905e249b1fbc events`
 
-This should return something 
+This should return something similar to this - 
+```shell
+Using environment '10.0.0.5' as user 'director'
+
+ID            Time                          User                                            Action       Object Type  Object Name                                                                                     Task ID  Deployment                                             Instance                                               Context                                                                                               Error
+4180          Fri Jun 21 17:14:50 UTC 2019  director                                        cleanup ssh  instance     master/38ed427f-2998-4de0-8906-50e0accb8ae1                                                     341      service-instance_47267983-9989-41ce-bc33-905e249b1fbc  master/38ed427f-2998-4de0-8906-50e0accb8ae1            user: ^bosh_196c48197974477                                                                           -
+4179          Fri Jun 21 17:11:39 UTC 2019  director                                        setup ssh    instance     master/38ed427f-2998-4de0-8906-50e0accb8ae1                                                     340      service-instance_47267983-9989-41ce-bc33-905e249b1fbc  master/38ed427f-2998-4de0-8906-50e0accb8ae1            user: bosh_196c48197974477                                                                            -
+4178          Fri Jun 21 15:52:01 UTC 2019  director                                        cleanup ssh  instance     master/38ed427f-2998-4de0-8906-50e0accb8ae1                                                     339      service-instance_47267983-9989-41ce-bc33-905e249b1fbc  master/38ed427f-2998-4de0-8906-50e0accb8ae1            user: ^bosh_851662ac898b4b0                                                                           -
+4177          Fri Jun 21 15:51:59 UTC 2019  director                                        setup ssh    instance     master/38ed427f-2998-4de0-8906-50e0accb8ae1                                                     338      service-instance_47267983-9989-41ce-bc33-905e249b1fbc  master/38ed427f-2998-4de0-8906-50e0accb8ae1            user: bosh_851662ac898b4b0                                                                            -
+...
+```
+
+To view details of an event, execuete the event command with the event_id as 
 
 - To fetch logs from **all** the VMs associated with the deployment, execute the following - 
 > `bosh -e pcf -d service-instance_47267983-9989-41ce-bc33-905e249b1fbc logs`
@@ -259,7 +271,7 @@ Once done, clean up the reference in PKS database by execute
 > `pks delete-cluster [cluster_name]` 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzI5OTgwMDEsMjA5NjQyNDE0NiwxMj
+eyJoaXN0b3J5IjpbLTEyODIyMjY5MTksMjA5NjQyNDE0NiwxMj
 g2ODEwOTAwLC0xMTkxOTQ5MTksNTg3OTYyNzg0LC0yMTQ5MTEw
 OSwtNzAzMjEzMjI0LC02NzY1MDg1MDIsMTA1NjI1OTYwNSwxNz
 MwODEwMSwtMTU4MTk4Nzk0NCwtMTg0MzQ1MjAyN119
