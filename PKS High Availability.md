@@ -28,9 +28,10 @@ fluent-bit-qcgj8                        3/3     Running     0          54m     1
 ```
 - From another session, delete one of the fluent-bit pods, simulating a pod outage. 
 
-> `kubectl delete 
+> `kubectl delete pods fluent-bit-2r4d8 -n pks-system`
 
-very 2.0s: kubectl get pods -o wide -n pks-system                                                                                 Navneets-MBP.navlab.io: Fri Jun 21 16:18:46 2019
+```shell
+Every 2.0s: kubectl get pods -o wide -n pks-system                                                                                 Navneets-MBP.navlab.io: Fri Jun 21 16:18:46 2019
 
 NAME                                    READY   STATUS        RESTARTS   AGE     IP             NODE                                      NOMINATED NODE   READINESS GATES
 cert-generator-v0.19-gnqvk              0/1     Completed     0          4d1h    10.200.95.5    vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   <none>           <none>
@@ -38,8 +39,11 @@ event-controller-5c764cbc6-fw74x        2/2     Running       489        4d1h   
 fluent-bit-2r4d8                        0/3     Terminating   0          2d22h   10.200.95.8    vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   <none>           <none>
 fluent-bit-nxz94                        3/3     Running       0          2d22h   10.200.67.10   vm-4376c6a8-fcfb-41a2-6ee9-4093de299e97   <none>           <none>
 fluent-bit-qcgj8                        3/3     Running       0          57m     10.200.3.2     vm-1391f084-4af3-47c6-613d-03e5f3b8abb3   <none>           <none>
-ku
+```
 
+Within a few seconds a new pod get spun up - 
+
+```shell
 Every 2.0s: kubectl get pods -o wide -n pks-system                                                                                 Navneets-MBP.navlab.io: Fri Jun 21 16:18:59 2019
 
 NAME                                    READY   STATUS      RESTARTS   AGE     IP             NODE                                      NOMINATED NODE   READINESS GATES
@@ -48,7 +52,8 @@ event-controller-5c764cbc6-fw74x        2/2     Running     489        4d1h    1
 fluent-bit-75498                        3/3     Running     0          13s     10.200.95.10   vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   <none>           <none>
 fluent-bit-nxz94                        3/3     Running     0          2d22h   10.200.67.10   vm-4376c6a8-fcfb-41a2-6ee9-4093de299e97   <none>           <none>
 fluent-bit-qcgj8                        3/3     Running     0          58m     10.200.3.2     vm-1391f084-4af3-47c6-613d-03e5f3b8abb3   <none>           <none>
-k
+```
+
 ## HA of K8s nodes
 
 - Make sure that the `Enable VM Resurrector Plugin` setting is checked in the BOSH director tile. If not, enable it and apply changes. 
@@ -166,7 +171,7 @@ While this HA is difficult to demonstrate (by performing an AZ level failure), i
 - If the cluster has multiple masters, verify that they are placed across different AZs.
 - If the cluster has multiple worker nodes, verify that they are placed across different AZs. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzQ3MzQ5MjAsLTE0NjA4NjQ4NjcsND
+eyJoaXN0b3J5IjpbLTE4MzU4OTIyMzUsLTE0NjA4NjQ4NjcsND
 gwMzkwNzkzLDc1MjkyMjY5OSw5NTY2NzY5NzgsLTEzNDY2MTMw
 NTYsLTk5ODEzOTU3MCwtNTAxMzc2MTcsLTE1NTgyNzEwOTcsLT
 E2MjU4ODAxOTYsNzMwOTk4MTE2XX0=
