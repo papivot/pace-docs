@@ -19,7 +19,8 @@ Make sure that the `Enable VM Resurrector Plugin` setting is checked in the BOSH
 Set up a session to watch the nodes and their status 
 > ` watch -d kubectl get nodes -o wide`
 
-GO to your IaaS provider console and delete/destroy one of the worker nodes.  Within a few minutes, the impa
+GO to your IaaS provider console and delete/destroy one of the worker nodes.  Within a few minutes, the impacted node goes from Ready to NonReady to missing from the kubectl output. 
+
 ```shell
 Every 2.0s: kubectl get nodes -o wide                                                                                              Navneets-MBP.navlab.io: Fri Jun 21 14:21:05 2019
 
@@ -48,7 +49,10 @@ vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   Ready    <none>   3d23h   v1.13.5   10
 
 ```
 
+Run this command to watch the pods placement. 
 > ` watch -d kubectl get pods -o wide --all-namespaces`
+
+You will notice that all PODs have been restarted on 
 
 ```shell
 Every 2.0s: kubectl get pods -o wide --all-namespaces                                                                              Navneets-MBP.navlab.io: Fri Jun 21 14:23:59 2019
@@ -94,7 +98,7 @@ vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   Ready    <none>   4d      v1.13.5   10
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDEyOTYwNTIsLTEzNDY2MTMwNTYsLT
-k5ODEzOTU3MCwtNTAxMzc2MTcsLTE1NTgyNzEwOTcsLTE2MjU4
-ODAxOTYsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTU1ODk2MjEyOSwtMTM0NjYxMzA1NiwtOT
+k4MTM5NTcwLC01MDEzNzYxNywtMTU1ODI3MTA5NywtMTYyNTg4
+MDE5Niw3MzA5OTgxMTZdfQ==
 -->
