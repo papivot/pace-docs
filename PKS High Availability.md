@@ -43,6 +43,8 @@ vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   Ready    <none>   3d23h   v1.13.5   10
 
 ```
 
+> ` watch -d kubectl get pods -o wide --all-namespaces`
+
 ```shell
 Every 2.0s: kubectl get pods -o wide --all-namespaces                                                                              Navneets-MBP.navlab.io: Fri Jun 21 14:23:59 2019
 
@@ -76,7 +78,7 @@ pks-system    wavefront-proxy-f79894746-mc8v9         1/1     Running     0     
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExODkyNjYwNSwtOTk4MTM5NTcwLC01MD
-EzNzYxNywtMTU1ODI3MTA5NywtMTYyNTg4MDE5Niw3MzA5OTgx
-MTZdfQ==
+eyJoaXN0b3J5IjpbLTEzNDY2MTMwNTYsLTk5ODEzOTU3MCwtNT
+AxMzc2MTcsLTE1NTgyNzEwOTcsLTE2MjU4ODAxOTYsNzMwOTk4
+MTE2XX0=
 -->
