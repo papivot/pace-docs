@@ -223,9 +223,9 @@ Note that a tgz file gets downloaded to the user home directory in Ops Manager V
 
 ### Deleting a cluster deployment 
 
-While all cluster deployments have to be managed using the PKS CLI, it may 
+While all cluster deployments have to be managed using the PKS CLI, it may happen at times that there is a failure during the creation of K8S clusters using the PKS CLI. This can happen for multiple reasons (outside the scope of this excerise) but may leave the deployment in a a funky state. PKS CLI may not be able to delete the cluster using 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1ODk0NTE4OSwtMjE0OTExMDksLTcwMz
-IxMzIyNCwtNjc2NTA4NTAyLDEwNTYyNTk2MDUsMTczMDgxMDEs
-LTE1ODE5ODc5NDQsLTE4NDM0NTIwMjddfQ==
+eyJoaXN0b3J5IjpbMTgxNTgzOTcwLC0yMTQ5MTEwOSwtNzAzMj
+EzMjI0LC02NzY1MDg1MDIsMTA1NjI1OTYwNSwxNzMwODEwMSwt
+MTU4MTk4Nzk0NCwtMTg0MzQ1MjAyN119
 -->
