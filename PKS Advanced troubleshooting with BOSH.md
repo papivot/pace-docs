@@ -76,7 +76,13 @@ Succeeded
 ```
 
 -   Notice the  `Pivotal-container-service`  deployment which was deployed from the PKS tile. Also notice the  `service-instance_*`  which is our deployed PKS cluster, note it down.
+
+Most of the commands, while troubleshooting, would need to reference the `service-instance-*` deployment. 
+
+### SSH into K8s node VMs
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDIyMTY4NjksLTE1ODE5ODc5NDQsLT
+eyJoaXN0b3J5IjpbLTE5MzM1MDIzMjcsLTE1ODE5ODc5NDQsLT
 E4NDM0NTIwMjddfQ==
 -->
