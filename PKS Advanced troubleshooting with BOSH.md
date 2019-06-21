@@ -142,6 +142,10 @@ master/38ed427f-2998-4de0-8906-50e0accb8ae1:~$
 
 Congratulations !!! You have logged into a BOSH deployed K8s node.
 
+### SCP files into K8s VMs
+
+At times you may need to transfer some files to the K8s nodes that are managed by BOSH. This can be achieved similar to the BOSH CLI ssh command. Execute the foll
+
 ### View tasks and logs
 
  - To view the last 10 (example) tasks that were executed for the deployment, execute the following - 
@@ -234,7 +238,7 @@ Once done, clean up the reference in PKS database by execute
 > `pks delete-cluster [cluster_name]` 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg3OTYyNzg0LC0yMTQ5MTEwOSwtNzAzMj
-EzMjI0LC02NzY1MDg1MDIsMTA1NjI1OTYwNSwxNzMwODEwMSwt
-MTU4MTk4Nzk0NCwtMTg0MzQ1MjAyN119
+eyJoaXN0b3J5IjpbNTE1OTA3MDIxLDU4Nzk2Mjc4NCwtMjE0OT
+ExMDksLTcwMzIxMzIyNCwtNjc2NTA4NTAyLDEwNTYyNTk2MDUs
+MTczMDgxMDEsLTE1ODE5ODc5NDQsLTE4NDM0NTIwMjddfQ==
 -->
