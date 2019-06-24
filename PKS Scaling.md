@@ -30,20 +30,34 @@ Worker Nodes:             3
 Kubernetes Master IP(s):  10.0.11.5
 Network Profile Name:
 ```
+Validate the number of nodes on the cluster using kubectl - 
 
-kubectl get nodes                                                                                            
+> `kubectl get nodes`
+
+should return 3 nodes - 
+```shell                                                                                           
 NAME                                      STATUS   ROLES    AGE     VERSION
 vm-1391f084-4af3-47c6-613d-03e5f3b8abb3   Ready    <none>   2d20h   v1.13.5
 vm-4376c6a8-fcfb-41a2-6ee9-4093de299e97   Ready    <none>   6d21h   v1.13.5
 vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   Ready    <none>   6d21h   v1.13.5
+```
 
 Use the PKS CLI to scale out the cluster from 3 worker nodes to 4 worker nodes - 
 
 > `pks update-cluster gcpcluster00 --num-nodes 4 `
 
+Confirm to validate - 
+```shell
+Update summary for cluster gcpcluster00:
+Worker Number: 4
+Are you sure you want to continue? (y/n): y
+Use 'pks cluster gcpcluster00' to monitor the state of your cluster
+
+```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDM5Nzg4MjYsOTMxMzIyMTU2LDE4Mz
-EwOTI1NywxOTY1Mjk2MTE0LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTEzMDk2NzI2MDIsLTE1MDM5Nzg4MjYsOT
+MxMzIyMTU2LDE4MzEwOTI1NywxOTY1Mjk2MTE0LDczMDk5ODEx
+Nl19
 -->
