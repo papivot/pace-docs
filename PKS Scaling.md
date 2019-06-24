@@ -210,12 +210,14 @@ php-apache-84cc7f889b-hfqk7       1/1     Running   0          52s
 php-apache-84cc7f889b-jzbxq       1/1     Running   0          68s
 php-apache-84cc7f889b-rwbsg       1/1     Running   0          67s
 ```
-kubectl get hpa                                                                                                                  
-NAME         REFERENCE               TARGETS   MINPODS   MAXPODS   REPLICAS   AGE
-php-apache   Deployment/php-apache   46%/50%   1         10        10         26m
+
+This quick demo demonstrates the horizontal scaling of pods within K8s. 
+
+**Cleanup** 
+
+1. Stop the long running load
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjE0NzU2ODgsMTY5MjM1MzgxMSwxNj
-Q5NjIzNjA5LC0xNjc3MjMzOTc3LC0xNTAzOTc4ODI2LDkzMTMy
-MjE1NiwxODMxMDkyNTcsMTk2NTI5NjExNCw3MzA5OTgxMTZdfQ
-==
+eyJoaXN0b3J5IjpbMTc4MjgzODg4MywxNjkyMzUzODExLDE2ND
+k2MjM2MDksLTE2NzcyMzM5NzcsLTE1MDM5Nzg4MjYsOTMxMzIy
+MTU2LDE4MzEwOTI1NywxOTY1Mjk2MTE0LDczMDk5ODExNl19
 -->
