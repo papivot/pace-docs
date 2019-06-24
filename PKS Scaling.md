@@ -1,7 +1,13 @@
 
+## Node Scaling in PKS
+
+> `pks login -k -a api.pks.gcpcloud.navneetv.com -u nverma                                                                        `
+
+Password: ********
+API Endpoint: api.pks.gcpcloud.navneetv.com
+User: nverma
 
 
-> Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTk1NzcyOTQxOCw3MzA5OTgxMTZdfQ==
 -->
