@@ -117,10 +117,13 @@ horizontalpodautoscaler.autoscaling/php-apache autoscaled
 
 > `kubectl get hpa` 
 
+```shell
 NAME         REFERENCE               TARGETS   MINPODS   MAXPODS   REPLICAS   AGE
 php-apache   Deployment/php-apache   0%/50%    1         10        1          69s
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzY3ODk0MSwxNjQ5NjIzNjA5LC0xNj
+eyJoaXN0b3J5IjpbMTY5MjM1MzgxMSwxNjQ5NjIzNjA5LC0xNj
 c3MjMzOTc3LC0xNTAzOTc4ODI2LDkzMTMyMjE1NiwxODMxMDky
 NTcsMTk2NTI5NjExNCw3MzA5OTgxMTZdfQ==
 -->
