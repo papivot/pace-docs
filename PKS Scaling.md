@@ -39,11 +39,11 @@ vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   Ready    <none>   6d21h   v1.13.5
 
 Use the PKS CLI to scale out the cluster from 3 worker nodes to 4 worker nodes - 
 
-> ` `
+> `pks update-cluster gcpcluster00 --num-nodes 4 `
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTMxMzIyMTU2LDE4MzEwOTI1NywxOTY1Mj
-k2MTE0LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTE1MDM5Nzg4MjYsOTMxMzIyMTU2LDE4Mz
+EwOTI1NywxOTY1Mjk2MTE0LDczMDk5ODExNl19
 -->
