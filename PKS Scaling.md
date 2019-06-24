@@ -179,12 +179,34 @@ This should start generating the load and you will see output similar to this -
 OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!O
 ...
 ```
-
 In the second window check the hpa -
 
 > `kubectl get hpa`
+
+Within a few mins, the load generated
+kubectl get hpa                                                                                                                  
+NAME         REFERENCE               TARGETS    MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   480%/50%   1         10        8          25m
+
+kubectl get pods                                                                                                                 
+NAME                              READY   STATUS    RESTARTS   AGE
+load-generator-557649ddcd-b6fhh   1/1     Running   0          12m
+php-apache-84cc7f889b-2srm8       1/1     Running   0          37s
+php-apache-84cc7f889b-6cnq8       1/1     Running   0          52s
+php-apache-84cc7f889b-7xzzc       1/1     Running   0          52s
+php-apache-84cc7f889b-8zhmb       1/1     Running   0          52s
+php-apache-84cc7f889b-9pmvc       1/1     Running   0          37s
+php-apache-84cc7f889b-cf62m       1/1     Running   0          29m
+php-apache-84cc7f889b-g9kk8       1/1     Running   0          67s
+php-apache-84cc7f889b-hfqk7       1/1     Running   0          52s
+php-apache-84cc7f889b-jzbxq       1/1     Running   0          68s
+php-apache-84cc7f889b-rwbsg       1/1     Running   0          67s
+
+kubectl get hpa                                                                                                                  
+NAME         REFERENCE               TARGETS   MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   46%/50%   1         10        10         26m
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxNzI1NzIyNiwxNjkyMzUzODExLDE2ND
-k2MjM2MDksLTE2NzcyMzM5NzcsLTE1MDM5Nzg4MjYsOTMxMzIy
-MTU2LDE4MzEwOTI1NywxOTY1Mjk2MTE0LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbODQxMTI1MDc1LDE2OTIzNTM4MTEsMTY0OT
+YyMzYwOSwtMTY3NzIzMzk3NywtMTUwMzk3ODgyNiw5MzEzMjIx
+NTYsMTgzMTA5MjU3LDE5NjUyOTYxMTQsNzMwOTk4MTE2XX0=
 -->
