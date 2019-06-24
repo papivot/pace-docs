@@ -169,9 +169,13 @@ load-generator-557649ddcd-b6fhh   1/1     Running   0          8m37s
 php-apache-84cc7f889b-cf62m       1/1     Running   0          25m
 ```
 
-In the 
+In the original window, execute the following command in the load-generator pod's command prompt - 
+
+> `while true; do wget -q -O- http://php-apache.default.svc.cluster.local; done`
+
+This sh
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjQ5MTk3NjUsMTY5MjM1MzgxMSwxNj
+eyJoaXN0b3J5IjpbLTE1OTA4ODQzNDcsMTY5MjM1MzgxMSwxNj
 Q5NjIzNjA5LC0xNjc3MjMzOTc3LC0xNTAzOTc4ODI2LDkzMTMy
 MjE1NiwxODMxMDkyNTcsMTk2NTI5NjExNCw3MzA5OTgxMTZdfQ
 ==
