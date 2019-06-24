@@ -158,8 +158,20 @@ Should give an output -
 If you don't see a command prompt, try pressing enter.
 / #
 ```
+
+In a second kubectl window check the pods running - 
+
+> `kubectl get pods`
+
+```shell 
+NAME                              READY   STATUS    RESTARTS   AGE
+load-generator-557649ddcd-b6fhh   1/1     Running   0          8m37s
+php-apache-84cc7f889b-cf62m       1/1     Running   0          25m
+```
+
+In the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzE4MDMyNDksMTY5MjM1MzgxMSwxNj
+eyJoaXN0b3J5IjpbLTIwNjQ5MTk3NjUsMTY5MjM1MzgxMSwxNj
 Q5NjIzNjA5LC0xNjc3MjMzOTc3LC0xNTAzOTc4ODI2LDkzMTMy
 MjE1NiwxODMxMDkyNTcsMTk2NTI5NjExNCw3MzA5OTgxMTZdfQ
 ==
