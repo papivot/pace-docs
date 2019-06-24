@@ -173,10 +173,18 @@ In the original window, execute the following command in the load-generator pod'
 
 > `while true; do wget -q -O- http://php-apache.default.svc.cluster.local; done`
 
-This sh
+This should start generating the load and you will see output similar to this -
+
+```
+OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!O
+...
+```
+
+In the second window check the hpa -
+
+> `kubectl get hpa`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTA4ODQzNDcsMTY5MjM1MzgxMSwxNj
-Q5NjIzNjA5LC0xNjc3MjMzOTc3LC0xNTAzOTc4ODI2LDkzMTMy
-MjE1NiwxODMxMDkyNTcsMTk2NTI5NjExNCw3MzA5OTgxMTZdfQ
-==
+eyJoaXN0b3J5IjpbMTYxNzI1NzIyNiwxNjkyMzUzODExLDE2ND
+k2MjM2MDksLTE2NzcyMzM5NzcsLTE1MDM5Nzg4MjYsOTMxMzIy
+MTU2LDE4MzEwOTI1NywxOTY1Mjk2MTE0LDczMDk5ODExNl19
 -->
