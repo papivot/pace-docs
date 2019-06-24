@@ -31,9 +31,13 @@ Kubernetes Master IP(s):  10.0.11.5
 Network Profile Name:
 ```
 
-use the pks 
+Use the PKS CLI to scale out the cluster
+
+> ` `
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzMTA5MjU3LDE5NjUyOTYxMTQsNzMwOT
-k4MTE2XX0=
+eyJoaXN0b3J5IjpbLTIwMjMxOTk2MSwxODMxMDkyNTcsMTk2NT
+I5NjExNCw3MzA5OTgxMTZdfQ==
 -->
