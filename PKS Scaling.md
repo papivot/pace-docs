@@ -150,9 +150,16 @@ php-apache   Deployment/php-apache   0%/50%    1         10        1          69
 
 Now, launch a busybox pod that will be used to connect to the php-apache pod (exposed thru the service) and generate load. 
 
-kubectl run -i --tty load-generator --image=busybox /bin/sh
+> `kubectl run -i --tty load-generator --image=busybox /bin/sh`
+
+Should give an output -
+
+```shell
+If you don't see a command prompt, try pressing enter.
+/ #
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDU2MTYyNjUsMTY5MjM1MzgxMSwxNj
+eyJoaXN0b3J5IjpbLTE2NzE4MDMyNDksMTY5MjM1MzgxMSwxNj
 Q5NjIzNjA5LC0xNjc3MjMzOTc3LC0xNTAzOTc4ODI2LDkzMTMy
 MjE1NiwxODMxMDkyNTcsMTk2NTI5NjExNCw3MzA5OTgxMTZdfQ
 ==
