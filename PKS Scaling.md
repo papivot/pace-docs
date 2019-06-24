@@ -52,12 +52,27 @@ Update summary for cluster gcpcluster00:
 Worker Number: 4
 Are you sure you want to continue? (y/n): y
 Use 'pks cluster gcpcluster00' to monitor the state of your cluster
-
 ```
+
+Check the stat
+
+pks cluster gcpcluster00                                                                                                         
+
+Name:                     gcpcluster00
+Plan Name:                small
+UUID:                     47267983-9989-41ce-bc33-905e249b1fbc
+Last Action:              UPDATE
+Last Action State:        in progress
+Last Action Description:  Instance update in progress
+Kubernetes Master Host:   cluster00.gcpcloud.navneetv.com
+Kubernetes Master Port:   8443
+Worker Nodes:             4
+Kubernetes Master IP(s):  10.0.11.5
+Network Profile Name:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDk2NzI2MDIsLTE1MDM5Nzg4MjYsOT
-MxMzIyMTU2LDE4MzEwOTI1NywxOTY1Mjk2MTE0LDczMDk5ODEx
-Nl19
+eyJoaXN0b3J5IjpbLTg5MjAwNjg2LC0xNTAzOTc4ODI2LDkzMT
+MyMjE1NiwxODMxMDkyNTcsMTk2NTI5NjExNCw3MzA5OTgxMTZd
+fQ==
 -->
