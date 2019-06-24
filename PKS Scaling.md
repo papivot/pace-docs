@@ -125,25 +125,31 @@ Should output one pod running.
 NAME                          READY   STATUS    RESTARTS   AGE
 php-apache-84cc7f889b-cf62m   1/1     Running   0          16m
 ```
-Create a 
+Create a Horizontal Pod Autoscaler (HPA) - 
 
 > ```
 >kubectl autoscale deployment php-apache --cpu-percent=50 --min=1 --max=10`
 >``` 
 
+Upon successful completion, it should output - 
+
 ```
 horizontalpodautoscaler.autoscaling/php-apache autoscaled
 ```
 
+Get the hpa status - 
+
 > `kubectl get hpa` 
 
+Should display the following ou
 ```shell
 NAME         REFERENCE               TARGETS   MINPODS   MAXPODS   REPLICAS   AGE
 php-apache   Deployment/php-apache   0%/50%    1         10        1          69s
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAyOTQ4ODM1LDE2OTIzNTM4MTEsMTY0OT
-YyMzYwOSwtMTY3NzIzMzk3NywtMTUwMzk3ODgyNiw5MzEzMjIx
-NTYsMTgzMTA5MjU3LDE5NjUyOTYxMTQsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE5ODQ1NTgzMzQsMTY5MjM1MzgxMSwxNj
+Q5NjIzNjA5LC0xNjc3MjMzOTc3LC0xNTAzOTc4ODI2LDkzMTMy
+MjE1NiwxODMxMDkyNTcsMTk2NTI5NjExNCw3MzA5OTgxMTZdfQ
+==
 -->
