@@ -67,9 +67,22 @@ Last Action State:        in progress
 Last Action Description:  Instance update in progress
 ...
 ```
-Within a few mins, ths status should change t
+Within a few mins, the status should change to succeeded - 
+
+```shell
+Name:                     gcpcluster00
+Plan Name:                small
+UUID:                     47267983-9989-41ce-bc33-905e249b1fbc
+Last Action:              UPDATE
+Last Action State:        succeeded
+...
+Worker Nodes:             4
+...
+```
+kubectl should also report 4 nodes - 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODg0Njc5MTIsLTE2NzcyMzM5NzcsLT
-E1MDM5Nzg4MjYsOTMxMzIyMTU2LDE4MzEwOTI1NywxOTY1Mjk2
-MTE0LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMTA1NTE5NDg1NywtMTY3NzIzMzk3NywtMT
+UwMzk3ODgyNiw5MzEzMjIxNTYsMTgzMTA5MjU3LDE5NjUyOTYx
+MTQsNzMwOTk4MTE2XX0=
 -->
