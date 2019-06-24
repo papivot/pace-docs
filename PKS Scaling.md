@@ -105,10 +105,11 @@ Make sure you have Kubectl admin access to the K8s cluster.
 ```shell
 service/php-apache created
 deployment.apps/php-apache created
+```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODA5MjgxMjMsMTY0OTYyMzYwOSwtMT
+eyJoaXN0b3J5IjpbLTIxMjkyNDg0MjMsMTY0OTYyMzYwOSwtMT
 Y3NzIzMzk3NywtMTUwMzk3ODgyNiw5MzEzMjIxNTYsMTgzMTA5
 MjU3LDE5NjUyOTYxMTQsNzMwOTk4MTE2XX0=
 -->
