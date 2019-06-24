@@ -217,8 +217,10 @@ This quick demo demonstrates the horizontal scaling of pods within K8s.
 
 1. Stop the long running load generator by pressing -Ctrl+c
 2. Type exit to exit out of the load-generator pod.
+3. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NzE1NDk1MCwxNjkyMzUzODExLDE2ND
-k2MjM2MDksLTE2NzcyMzM5NzcsLTE1MDM5Nzg4MjYsOTMxMzIy
-MTU2LDE4MzEwOTI1NywxOTY1Mjk2MTE0LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTIwNDcxNDU0MzMsMTY5MjM1MzgxMSwxNj
+Q5NjIzNjA5LC0xNjc3MjMzOTc3LC0xNTAzOTc4ODI2LDkzMTMy
+MjE1NiwxODMxMDkyNTcsMTk2NTI5NjExNCw3MzA5OTgxMTZdfQ
+==
 -->
