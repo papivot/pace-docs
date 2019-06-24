@@ -3,7 +3,7 @@
 
 Using the PKS CLI, login to the PKS API endpoint
 
-> `pks login -k -a api.pks.domain.com -u userid`                                                                       
+> `pks login -k -a api.pks.domain.com -u userid`                                                              
 
 Provide the password and login
 
@@ -227,8 +227,8 @@ This quick demo demonstrates the horizontal scaling of pods within K8s.
 > 
 > `kubectl delete hpa php-apache` 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTcwNTc3NzMsLTE5NTEzMzU2MDksMT
-Y5MjM1MzgxMSwxNjQ5NjIzNjA5LC0xNjc3MjMzOTc3LC0xNTAz
-OTc4ODI2LDkzMTMyMjE1NiwxODMxMDkyNTcsMTk2NTI5NjExNC
-w3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTg2MDUzNDQ3MywtMTIxNzA1Nzc3MywtMT
+k1MTMzNTYwOSwxNjkyMzUzODExLDE2NDk2MjM2MDksLTE2Nzcy
+MzM5NzcsLTE1MDM5Nzg4MjYsOTMxMzIyMTU2LDE4MzEwOTI1Ny
+wxOTY1Mjk2MTE0LDczMDk5ODExNl19
 -->
