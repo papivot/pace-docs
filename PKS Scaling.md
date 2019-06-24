@@ -92,6 +92,10 @@ vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   Ready    <none>   6d21h   v1.13.5
 ```
 **Note** Using the options provided in PKS CLI, you can build automation around the node scaling function. PKS CLI can be integrated with performance tools to scale up (and down) based on node usage.  
 
+**Cleanup** - Reduce the cluster node count back to 3.
+
+>`pks update-cluster gcpcluster00 --num-nodes 3`
+
 ## Pod Scaling in Kubernetes
 
 The demo provided here based on the autoscaling example provided [here](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/)
@@ -123,7 +127,8 @@ php-apache   Deployment/php-apache   0%/50%    1         10        1          69
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5MjM1MzgxMSwxNjQ5NjIzNjA5LC0xNj
-c3MjMzOTc3LC0xNTAzOTc4ODI2LDkzMTMyMjE1NiwxODMxMDky
-NTcsMTk2NTI5NjExNCw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTEwMzI2NDQ0OTgsMTY5MjM1MzgxMSwxNj
+Q5NjIzNjA5LC0xNjc3MjMzOTc3LC0xNTAzOTc4ODI2LDkzMTMy
+MjE1NiwxODMxMDkyNTcsMTk2NTI5NjExNCw3MzA5OTgxMTZdfQ
+==
 -->
