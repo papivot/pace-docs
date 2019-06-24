@@ -107,9 +107,20 @@ service/php-apache created
 deployment.apps/php-apache created
 ```
 
+> ```
+>kubectl autoscale deployment php-apache --cpu-percent=50 --min=1 --max=10`
+>``` 
 
+```
+horizontalpodautoscaler.autoscaling/php-apache autoscaled
+```
+
+> `kubectl get hpa` 
+
+NAME         REFERENCE               TARGETS   MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   0%/50%    1         10        1          69s
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjkyNDg0MjMsMTY0OTYyMzYwOSwtMT
-Y3NzIzMzk3NywtMTUwMzk3ODgyNiw5MzEzMjIxNTYsMTgzMTA5
-MjU3LDE5NjUyOTYxMTQsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTEwNzY3ODk0MSwxNjQ5NjIzNjA5LC0xNj
+c3MjMzOTc3LC0xNTAzOTc4ODI2LDkzMTMyMjE1NiwxODMxMDky
+NTcsMTk2NTI5NjExNCw3MzA5OTgxMTZdfQ==
 -->
