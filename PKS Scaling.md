@@ -98,9 +98,17 @@ The demo provided here based on the autoscaling example provided [here](https://
 
 Make sure you have Kubectl admin access to the K8s cluster. 
 
-> `kubectl run php-apache --image=k8s.gcr.io/hpa-example --requests=cpu=200m --expose --port=80
+> ```
+> kubectl run php-apache --image=k8s.gcr.io/hpa-example --requests=cpu=200m --expose --port=80
+> ```
+
+```shell
+service/php-apache created
+deployment.apps/php-apache created
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTAzNzQ0NzMsMTY0OTYyMzYwOSwtMT
+eyJoaXN0b3J5IjpbLTE5ODA5MjgxMjMsMTY0OTYyMzYwOSwtMT
 Y3NzIzMzk3NywtMTUwMzk3ODgyNiw5MzEzMjIxNTYsMTgzMTA5
 MjU3LDE5NjUyOTYxMTQsNzMwOTk4MTE2XX0=
 -->
