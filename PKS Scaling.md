@@ -31,8 +31,9 @@ Kubernetes Master IP(s):  10.0.11.5
 Network Profile Name:
 ```
 
+use the pks 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1OTc1MDgyNywxOTY1Mjk2MTE0LDczMD
-k5ODExNl19
+eyJoaXN0b3J5IjpbMTgzMTA5MjU3LDE5NjUyOTYxMTQsNzMwOT
+k4MTE2XX0=
 -->
