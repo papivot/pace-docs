@@ -102,23 +102,30 @@ The demo provided here based on the autoscaling example provided [here](https://
 
 Make sure you have Kubectl admin access to the K8s cluster. 
 
-Run the below command to start a modified php-apache deployment using 
+Run the below command to start a modified php-apache deployment using the hpa-example image.
 
 > ```
 > kubectl run php-apache --image=k8s.gcr.io/hpa-example --requests=cpu=200m --expose --port=80
 > ```
+
+Should give an output similar to this - 
 
 ```shell
 service/php-apache created
 deployment.apps/php-apache created
 ```
 
+Check the pod deployed as part of this deployment - 
+
 > `kubectl get pods`
+
+Should output one pod running. 
 
 ```shell
 NAME                          READY   STATUS    RESTARTS   AGE
 php-apache-84cc7f889b-cf62m   1/1     Running   0          16m
 ```
+Create a 
 
 > ```
 >kubectl autoscale deployment php-apache --cpu-percent=50 --min=1 --max=10`
@@ -136,7 +143,7 @@ php-apache   Deployment/php-apache   0%/50%    1         10        1          69
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1MTM4OTkzNSwxNjkyMzUzODExLDE2ND
-k2MjM2MDksLTE2NzcyMzM5NzcsLTE1MDM5Nzg4MjYsOTMxMzIy
-MTU2LDE4MzEwOTI1NywxOTY1Mjk2MTE0LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMzAyOTQ4ODM1LDE2OTIzNTM4MTEsMTY0OT
+YyMzYwOSwtMTY3NzIzMzk3NywtMTUwMzk3ODgyNiw5MzEzMjIx
+NTYsMTgzMTA5MjU3LDE5NjUyOTYxMTQsNzMwOTk4MTE2XX0=
 -->
