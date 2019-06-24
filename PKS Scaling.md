@@ -12,10 +12,25 @@ Password: ********
 API Endpoint: api.pks.gcpcloud.navneetv.com
 User: userid
 ```
+Get the details of the cluster that needs to be scaled out, for example - 
 
+> `pks cluster gcpcluster00 `                                                                                                        
 
+should return 
+```shell
+Name:                     gcpcluster00
+Plan Name:                small
+UUID:                     47267983-9989-41ce-bc33-905e249b1fbc
+Last Action:              CREATE
+Last Action State:        succeeded
+Last Action Description:  Instance provisioning completed
+Kubernetes Master Host:   cluster00.gcpcloud.navneetv.com
+Kubernetes Master Port:   8443
+Worker Nodes:             3
+Kubernetes Master IP(s):  10.0.11.5
+Network Profile Name:
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1NDU0NDQ4LDE5NjUyOTYxMTQsNzMwOT
-k4MTE2XX0=
+eyJoaXN0b3J5IjpbLTIwNzY3MTg5MjUsMTk2NTI5NjExNCw3Mz
+A5OTgxMTZdfQ==
 -->
