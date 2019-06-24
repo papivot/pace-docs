@@ -81,8 +81,20 @@ Worker Nodes:             4
 ```
 kubectl should also report 4 nodes - 
 
+>`kubectl get nodes`
+
+```shell
+NAME                                      STATUS   ROLES    AGE     VERSION
+vm-3c19c919-4a4f-4d59-7cfa-b6e3de2bfadd   Ready    <none>   15m     v1.13.5
+vm-4376c6a8-fcfb-41a2-6ee9-4093de299e97   Ready    <none>   6d21h   v1.13.5
+vm-d3a0741d-bc56-4767-4434-95f61922ef2e   Ready    <none>   9m24s   v1.13.5
+vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   Ready    <none>   6d21h   v1.13.5
+```
+**Note** Currently PKS does not allow 
+
+## Pod Scaling in Kubernetes
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NTE5NDg1NywtMTY3NzIzMzk3NywtMT
+eyJoaXN0b3J5IjpbLTk1NTcxODE1NywtMTY3NzIzMzk3NywtMT
 UwMzk3ODgyNiw5MzEzMjIxNTYsMTgzMTA5MjU3LDE5NjUyOTYx
 MTQsNzMwOTk4MTE2XX0=
 -->
