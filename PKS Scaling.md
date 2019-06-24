@@ -1,9 +1,10 @@
 
 ## Node Scaling in PKS
 
-Log
+Using the PKS CLI, login to the PKS API endpoint
 
 > `pks login -k -a api.pks.domain.com -u userid`                                                                       
+
 
 ```shell
 Password: ********
@@ -12,5 +13,5 @@ User: nverma
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Njk5MzYzOSw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTk2NTI5NjExNCw3MzA5OTgxMTZdfQ==
 -->
