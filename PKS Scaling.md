@@ -31,6 +31,12 @@ Kubernetes Master IP(s):  10.0.11.5
 Network Profile Name:
 ```
 
+kubectl get nodes                                                                                            
+NAME                                      STATUS   ROLES    AGE     VERSION
+vm-1391f084-4af3-47c6-613d-03e5f3b8abb3   Ready    <none>   2d20h   v1.13.5
+vm-4376c6a8-fcfb-41a2-6ee9-4093de299e97   Ready    <none>   6d21h   v1.13.5
+vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   Ready    <none>   6d21h   v1.13.5
+
 Use the PKS CLI to scale out the cluster from 3 worker nodes to 4 worker nodes - 
 
 > ` `
@@ -38,6 +44,6 @@ Use the PKS CLI to scale out the cluster from 3 worker nodes to 4 worker nodes -
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzEwNTgyMjYsMTgzMTA5MjU3LDE5Nj
-UyOTYxMTQsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbOTMxMzIyMTU2LDE4MzEwOTI1NywxOTY1Mj
+k2MTE0LDczMDk5ODExNl19
 -->
