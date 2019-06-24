@@ -183,12 +183,20 @@ In the second window check the hpa -
 
 > `kubectl get hpa`
 
-Within a few mins, the load generated
-kubectl get hpa                                                                                                                  
+Within a few mins, the load generated would have triggerd additional replica pods - 
+
+> `kubectl get hpa`
+
+```shell                                                                                                                  
 NAME         REFERENCE               TARGETS    MINPODS   MAXPODS   REPLICAS   AGE
 php-apache   Deployment/php-apache   480%/50%   1         10        8          25m
+```
 
-kubectl get pods                                                                                                                 
+Checking the number of pods -
+> `kubectl get pods `
+
+should give an output similar to this with upto 10 php-apache pods created.
+```shell                                                                                                                
 NAME                              READY   STATUS    RESTARTS   AGE
 load-generator-557649ddcd-b6fhh   1/1     Running   0          12m
 php-apache-84cc7f889b-2srm8       1/1     Running   0          37s
@@ -201,12 +209,13 @@ php-apache-84cc7f889b-g9kk8       1/1     Running   0          67s
 php-apache-84cc7f889b-hfqk7       1/1     Running   0          52s
 php-apache-84cc7f889b-jzbxq       1/1     Running   0          68s
 php-apache-84cc7f889b-rwbsg       1/1     Running   0          67s
-
+```
 kubectl get hpa                                                                                                                  
 NAME         REFERENCE               TARGETS   MINPODS   MAXPODS   REPLICAS   AGE
 php-apache   Deployment/php-apache   46%/50%   1         10        10         26m
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQxMTI1MDc1LDE2OTIzNTM4MTEsMTY0OT
-YyMzYwOSwtMTY3NzIzMzk3NywtMTUwMzk3ODgyNiw5MzEzMjIx
-NTYsMTgzMTA5MjU3LDE5NjUyOTYxMTQsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE2NjE0NzU2ODgsMTY5MjM1MzgxMSwxNj
+Q5NjIzNjA5LC0xNjc3MjMzOTc3LC0xNTAzOTc4ODI2LDkzMTMy
+MjE1NiwxODMxMDkyNTcsMTk2NTI5NjExNCw3MzA5OTgxMTZdfQ
+==
 -->
