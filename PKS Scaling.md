@@ -90,11 +90,11 @@ vm-4376c6a8-fcfb-41a2-6ee9-4093de299e97   Ready    <none>   6d21h   v1.13.5
 vm-d3a0741d-bc56-4767-4434-95f61922ef2e   Ready    <none>   9m24s   v1.13.5
 vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   Ready    <none>   6d21h   v1.13.5
 ```
-**Note** Currently PKS does not allow 
+**Note** Using the options provided in PKS CLI, you can build automation around the node scaling function. PKS CLI can be integrated with performance CICD tools 
 
 ## Pod Scaling in Kubernetes
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1NTcxODE1NywtMTY3NzIzMzk3NywtMT
-UwMzk3ODgyNiw5MzEzMjIxNTYsMTgzMTA5MjU3LDE5NjUyOTYx
-MTQsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE0ODc3MTc2NzQsLTE2NzcyMzM5NzcsLT
+E1MDM5Nzg4MjYsOTMxMzIyMTU2LDE4MzEwOTI1NywxOTY1Mjk2
+MTE0LDczMDk5ODExNl19
 -->
