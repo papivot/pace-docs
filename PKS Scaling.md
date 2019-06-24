@@ -141,14 +141,18 @@ Get the hpa status -
 
 > `kubectl get hpa` 
 
-Should display the following ou
+Should display the following output - 
+
 ```shell
 NAME         REFERENCE               TARGETS   MINPODS   MAXPODS   REPLICAS   AGE
 php-apache   Deployment/php-apache   0%/50%    1         10        1          69s
 ```
 
+Now, launch a busybox pod that will be used to connect to the php-apache pod (exposed thru the service) and generate load. 
+
+kubectl run -i --tty load-generator --image=busybox /bin/sh
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODQ1NTgzMzQsMTY5MjM1MzgxMSwxNj
+eyJoaXN0b3J5IjpbLTE2NDU2MTYyNjUsMTY5MjM1MzgxMSwxNj
 Q5NjIzNjA5LC0xNjc3MjMzOTc3LC0xNTAzOTc4ODI2LDkzMTMy
 MjE1NiwxODMxMDkyNTcsMTk2NTI5NjExNCw3MzA5OTgxMTZdfQ
 ==
