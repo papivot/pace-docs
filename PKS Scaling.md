@@ -67,9 +67,9 @@ Last Action State:        in progress
 Last Action Description:  Instance update in progress
 ...
 ```
-
+Within a few mins, ths status should change t
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzcyMzM5NzcsLTE1MDM5Nzg4MjYsOT
-MxMzIyMTU2LDE4MzEwOTI1NywxOTY1Mjk2MTE0LDczMDk5ODEx
-Nl19
+eyJoaXN0b3J5IjpbLTE2ODg0Njc5MTIsLTE2NzcyMzM5NzcsLT
+E1MDM5Nzg4MjYsOTMxMzIyMTU2LDE4MzEwOTI1NywxOTY1Mjk2
+MTE0LDczMDk5ODExNl19
 -->
