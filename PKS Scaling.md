@@ -220,12 +220,15 @@ This quick demo demonstrates the horizontal scaling of pods within K8s.
 - execute the following - 
 
 > `kubectl delete deployment load-generator`
+> 
 > `kubectl delete deployment php-apache `
+> 
 > `kubectl delete service php-apache`
+> 
 > `kubectl delete hpa php-apache` 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTEzMzU2MDksMTY5MjM1MzgxMSwxNj
-Q5NjIzNjA5LC0xNjc3MjMzOTc3LC0xNTAzOTc4ODI2LDkzMTMy
-MjE1NiwxODMxMDkyNTcsMTk2NTI5NjExNCw3MzA5OTgxMTZdfQ
-==
+eyJoaXN0b3J5IjpbLTEyMTcwNTc3NzMsLTE5NTEzMzU2MDksMT
+Y5MjM1MzgxMSwxNjQ5NjIzNjA5LC0xNjc3MjMzOTc3LC0xNTAz
+OTc4ODI2LDkzMTMyMjE1NiwxODMxMDkyNTcsMTk2NTI5NjExNC
+w3MzA5OTgxMTZdfQ==
 -->
