@@ -96,9 +96,9 @@ vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   Ready    <none>   6d21h   v1.13.5
 
 The demo provided here based on the autoscaling example provided [here](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/)
 
-Make sure you have Kubectl admin access to the 
+Make sure you have Kubectl admin access to the K8s cluster. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDM4NTY3MjcsLTE2NzcyMzM5NzcsLT
-E1MDM5Nzg4MjYsOTMxMzIyMTU2LDE4MzEwOTI1NywxOTY1Mjk2
-MTE0LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMTY0OTYyMzYwOSwtMTY3NzIzMzk3NywtMT
+UwMzk3ODgyNiw5MzEzMjIxNTYsMTgzMTA5MjU3LDE5NjUyOTYx
+MTQsNzMwOTk4MTE2XX0=
 -->
