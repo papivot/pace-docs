@@ -97,8 +97,10 @@ vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   Ready    <none>   6d21h   v1.13.5
 The demo provided here based on the autoscaling example provided [here](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/)
 
 Make sure you have Kubectl admin access to the K8s cluster. 
+
+> `kubectl run php-apache --image=k8s.gcr.io/hpa-example --requests=cpu=200m --expose --port=80
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0OTYyMzYwOSwtMTY3NzIzMzk3NywtMT
-UwMzk3ODgyNiw5MzEzMjIxNTYsMTgzMTA5MjU3LDE5NjUyOTYx
-MTQsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE5MTAzNzQ0NzMsMTY0OTYyMzYwOSwtMT
+Y3NzIzMzk3NywtMTUwMzk3ODgyNiw5MzEzMjIxNTYsMTgzMTA5
+MjU3LDE5NjUyOTYxMTQsNzMwOTk4MTE2XX0=
 -->
