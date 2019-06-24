@@ -31,13 +31,13 @@ Kubernetes Master IP(s):  10.0.11.5
 Network Profile Name:
 ```
 
-Use the PKS CLI to scale out the cluster
+Use the PKS CLI to scale out the cluster from 3 worker nodes to 4 worker nodes - 
 
 > ` `
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjMxOTk2MSwxODMxMDkyNTcsMTk2NT
-I5NjExNCw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTE4NzEwNTgyMjYsMTgzMTA5MjU3LDE5Nj
+UyOTYxMTQsNzMwOTk4MTE2XX0=
 -->
