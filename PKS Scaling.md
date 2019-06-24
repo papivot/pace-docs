@@ -218,11 +218,12 @@ This quick demo demonstrates the horizontal scaling of pods within K8s.
 - Stop the long running load generator by pressing -Ctrl+c
 - Type exit to exit out of the load-generator pod.
 - execute the following - 
-> ```
-> ubectl delete deployment load-generator                                                                    
-kubectl delete deployment php-apache                                                                        kubectl delete service php-apache 
+
+> `kubectl delete deployment load-generator`
+> `kubectl delete deployment php-apache `
+> `kubectl delete service php-apache` 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2OTkwOTYzLDE2OTIzNTM4MTEsMTY0OT
-YyMzYwOSwtMTY3NzIzMzk3NywtMTUwMzk3ODgyNiw5MzEzMjIx
-NTYsMTgzMTA5MjU3LDE5NjUyOTYxMTQsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTYxMDcxMjgyMCwxNjkyMzUzODExLDE2ND
+k2MjM2MDksLTE2NzcyMzM5NzcsLTE1MDM5Nzg4MjYsOTMxMzIy
+MTU2LDE4MzEwOTI1NywxOTY1Mjk2MTE0LDczMDk5ODExNl19
 -->
