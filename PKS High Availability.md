@@ -13,6 +13,7 @@ PKS provides high availability at 4 different layers -
 - A K8s cluster deployed in PKS
 - Access to the above K8s cluster
 - Kubectl binary
+- Access to the IaaS running the PKS environment 
 
 ## HA of K8s PODs
 
@@ -177,8 +178,8 @@ While this HA is difficult to demonstrate (by performing an AZ level failure), i
 - If the cluster has multiple masters, verify that they are placed across different AZs.
 - If the cluster has multiple worker nodes, verify that they are placed across different AZs. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDQ1ODQ0NTYsLTcwNDIyMTU4MCwtMT
-Q2MDg2NDg2Nyw0ODAzOTA3OTMsNzUyOTIyNjk5LDk1NjY3Njk3
-OCwtMTM0NjYxMzA1NiwtOTk4MTM5NTcwLC01MDEzNzYxNywtMT
-U1ODI3MTA5NywtMTYyNTg4MDE5Niw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTczNzYwMzY4NCwtNzA0MjIxNTgwLC0xND
+YwODY0ODY3LDQ4MDM5MDc5Myw3NTI5MjI2OTksOTU2Njc2OTc4
+LC0xMzQ2NjEzMDU2LC05OTgxMzk1NzAsLTUwMTM3NjE3LC0xNT
+U4MjcxMDk3LC0xNjI1ODgwMTk2LDczMDk5ODExNl19
 -->
