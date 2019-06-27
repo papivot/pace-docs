@@ -1,6 +1,11 @@
 # PKS Scaling
 
+### Requirements 
 
+- A K8s cluster deployed in PKS
+- Access to the above K8s cluster
+- Kubectl binary
+- PKS binary
 
 ## Node Scaling in PKS
 
@@ -230,8 +235,8 @@ This quick demo demonstrates the horizontal scaling of pods within K8s.
 > 
 > `kubectl delete hpa php-apache` 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4MzQ5MjMwMSwxODYwNTM0NDczLC0xMj
-E3MDU3NzczLC0xOTUxMzM1NjA5LDE2OTIzNTM4MTEsMTY0OTYy
-MzYwOSwtMTY3NzIzMzk3NywtMTUwMzk3ODgyNiw5MzEzMjIxNT
-YsMTgzMTA5MjU3LDE5NjUyOTYxMTQsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTEzODY5MjEwMTksMTg2MDUzNDQ3MywtMT
+IxNzA1Nzc3MywtMTk1MTMzNTYwOSwxNjkyMzUzODExLDE2NDk2
+MjM2MDksLTE2NzcyMzM5NzcsLTE1MDM5Nzg4MjYsOTMxMzIyMT
+U2LDE4MzEwOTI1NywxOTY1Mjk2MTE0LDczMDk5ODExNl19
 -->
