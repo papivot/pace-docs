@@ -1,3 +1,6 @@
+# PKS Scaling
+
+
 
 ## Node Scaling in PKS
 
@@ -227,8 +230,8 @@ This quick demo demonstrates the horizontal scaling of pods within K8s.
 > 
 > `kubectl delete hpa php-apache` 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2MDUzNDQ3MywtMTIxNzA1Nzc3MywtMT
-k1MTMzNTYwOSwxNjkyMzUzODExLDE2NDk2MjM2MDksLTE2Nzcy
-MzM5NzcsLTE1MDM5Nzg4MjYsOTMxMzIyMTU2LDE4MzEwOTI1Ny
-wxOTY1Mjk2MTE0LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMTA4MzQ5MjMwMSwxODYwNTM0NDczLC0xMj
+E3MDU3NzczLC0xOTUxMzM1NjA5LDE2OTIzNTM4MTEsMTY0OTYy
+MzYwOSwtMTY3NzIzMzk3NywtMTUwMzk3ODgyNiw5MzEzMjIxNT
+YsMTgzMTA5MjU3LDE5NjUyOTYxMTQsNzMwOTk4MTE2XX0=
 -->
