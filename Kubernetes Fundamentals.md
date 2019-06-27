@@ -1,5 +1,9 @@
 # Kubernetes fundamentals
 
+### Requirements
+- Access to a working Kubernetes cluster
+- Access to kubectl binary
+
 ## Kubectl fundamentals
 
 #### Validate connectivity to cluster
@@ -257,5 +261,5 @@ deployment.extensions "k8s-operations" deleted
 should no longer have a k8s-operations-* pod.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTg5MzU1ODhdfQ==
+eyJoaXN0b3J5IjpbMzMwNjA4MTAsLTIwNTg5MzU1ODhdfQ==
 -->
