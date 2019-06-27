@@ -9,6 +9,7 @@ PKS provides high availability at 4 different layers -
  4. HA across availability zones
 
 ### Requirements 
+- Access to Pivotal Ops Manager UI with PKS tile deployed
 - SSH Access to Pivotal Ops Manager
 - A K8s cluster deployed in PKS
 - Access to the above K8s cluster
@@ -178,8 +179,8 @@ While this HA is difficult to demonstrate (by performing an AZ level failure), i
 - If the cluster has multiple masters, verify that they are placed across different AZs.
 - If the cluster has multiple worker nodes, verify that they are placed across different AZs. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNzYwMzY4NCwtNzA0MjIxNTgwLC0xND
-YwODY0ODY3LDQ4MDM5MDc5Myw3NTI5MjI2OTksOTU2Njc2OTc4
-LC0xMzQ2NjEzMDU2LC05OTgxMzk1NzAsLTUwMTM3NjE3LC0xNT
-U4MjcxMDk3LC0xNjI1ODgwMTk2LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbNDgxMzUyNDk2LC03MDQyMjE1ODAsLTE0Nj
+A4NjQ4NjcsNDgwMzkwNzkzLDc1MjkyMjY5OSw5NTY2NzY5Nzgs
+LTEzNDY2MTMwNTYsLTk5ODEzOTU3MCwtNTAxMzc2MTcsLTE1NT
+gyNzEwOTcsLTE2MjU4ODAxOTYsNzMwOTk4MTE2XX0=
 -->
