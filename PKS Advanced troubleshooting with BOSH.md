@@ -1,11 +1,13 @@
 
 # PKS Advanced troubleshooting with BOSH
 
-### Requirements 
-- Access to Pivotal Ops Manager UI
-- SSH Access to Pivotal Ops Manager
-
 Besides the normal troubleshooting that can be performed using the Opsman UI and the kubectl commands, there are numerous troubleshooting processes that can be performed thru the BOSH CLI. 
+
+### Requirements 
+- Access to Pivotal Ops Manager UI with PKS tile deployed
+- SSH Access to Pivotal Ops Manager
+- A K8s cluster in PKS
+
 
 ### Login to BOSH Director
 
@@ -300,9 +302,9 @@ Once done, clean up the reference in PKS database by execute
 > `pks delete-cluster [cluster_name]` 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3MzE1MzcxMiw3Mzc1ODA4NDksNTczNj
-Y0NTM3LDIwOTY0MjQxNDYsMTI4NjgxMDkwMCwtMTE5MTk0OTE5
-LDU4Nzk2Mjc4NCwtMjE0OTExMDksLTcwMzIxMzIyNCwtNjc2NT
-A4NTAyLDEwNTYyNTk2MDUsMTczMDgxMDEsLTE1ODE5ODc5NDQs
-LTE4NDM0NTIwMjddfQ==
+eyJoaXN0b3J5IjpbLTIxNDM5MjY2MDMsNzM3NTgwODQ5LDU3Mz
+Y2NDUzNywyMDk2NDI0MTQ2LDEyODY4MTA5MDAsLTExOTE5NDkx
+OSw1ODc5NjI3ODQsLTIxNDkxMTA5LC03MDMyMTMyMjQsLTY3Nj
+UwODUwMiwxMDU2MjU5NjA1LDE3MzA4MTAxLC0xNTgxOTg3OTQ0
+LC0xODQzNDUyMDI3XX0=
 -->
