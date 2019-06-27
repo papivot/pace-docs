@@ -1,7 +1,11 @@
 
 # PKS K8S Cluster access
 
-
+### Requirements 
+- A working K8s cluster deployed in PKS
+- kubectl binary
+- pks binary
+- Access to 
 
 ## Kubeconfig file format
 
@@ -410,11 +414,11 @@ Once this is successful, an LDAP user entry [ldapuser] is created in the respect
  - Unless OIDC is enabled, all cluster authentication is thru service tokens. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTcyODQ5NTIzLDIwODUxNDcxNTksNzUzMj
-MxNjQ2LC01NjczNjAyMywtMzUxMjAyNjQwLC0yMTQxNzExMjQx
-LC0xNTM4ODM3Njc3LC0xNjg5NzU2NTAyLC0yMDE2NTMwNjE3LD
-EwNTQ0OTkyOTUsMTk0NzY0ODUxNSw4MjYwMTAwNSw4NzQ0MjM0
-NjQsMTA0NDUxMTkzMSwxMTUwMTI3MzMyLC0xMzgzOTk2MTMyLC
-04NDg1NDA2NjIsLTUwMTg1ODcwNSwxMzgyMDQ3MzUyLC05NjI3
-Mjg5NTNdfQ==
+eyJoaXN0b3J5IjpbLTE2MzI4MDA0OTgsNTcyODQ5NTIzLDIwOD
+UxNDcxNTksNzUzMjMxNjQ2LC01NjczNjAyMywtMzUxMjAyNjQw
+LC0yMTQxNzExMjQxLC0xNTM4ODM3Njc3LC0xNjg5NzU2NTAyLC
+0yMDE2NTMwNjE3LDEwNTQ0OTkyOTUsMTk0NzY0ODUxNSw4MjYw
+MTAwNSw4NzQ0MjM0NjQsMTA0NDUxMTkzMSwxMTUwMTI3MzMyLC
+0xMzgzOTk2MTMyLC04NDg1NDA2NjIsLTUwMTg1ODcwNSwxMzgy
+MDQ3MzUyXX0=
 -->
