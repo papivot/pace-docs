@@ -1,5 +1,10 @@
 # Docker fundamentals
 
+### Requirements
+
+- Access to a Linux workstation
+- Access to a public Docker registry e.g. Dockerhub/GCR etc
+
 ## Docker installation
 
 **Note**: Most of the demos in this section are based on Ubuntu 18.4 running as an t2.medium EC2 instance. Please modify your environment accordingly.
@@ -332,5 +337,5 @@ Deleted: sha256:f1b5933fe4b5f49bbe8258745cf396afe07e625bdab3168e364daf7c956b6b81
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjExNjQ1NjVdfQ==
+eyJoaXN0b3J5IjpbMzYyOTQ2MTE3XX0=
 -->
