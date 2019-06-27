@@ -6,7 +6,7 @@
 - SSH Access to Pivotal Ops Manager
 - K8s clusters deployed in PKS (without and with UAA as OIDC provider)
 - pks and kubectl binaries
-- 
+- a working LDAP environment 
 
 ## Kubeconfig file format
 
@@ -415,7 +415,7 @@ Once this is successful, an LDAP user entry [ldapuser] is created in the respect
  - Unless OIDC is enabled, all cluster authentication is thru service tokens. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzUwNzA2MzQsNTcyODQ5NTIzLDIwOD
+eyJoaXN0b3J5IjpbLTExMDgwNDEyOTQsNTcyODQ5NTIzLDIwOD
 UxNDcxNTksNzUzMjMxNjQ2LC01NjczNjAyMywtMzUxMjAyNjQw
 LC0yMTQxNzExMjQxLC0xNTM4ODM3Njc3LC0xNjg5NzU2NTAyLC
 0yMDE2NTMwNjE3LDEwNTQ0OTkyOTUsMTk0NzY0ODUxNSw4MjYw
