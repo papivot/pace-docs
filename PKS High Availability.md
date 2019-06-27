@@ -8,6 +8,12 @@ PKS provides high availability at 4 different layers -
  3. HA of K8s services
  4. HA across availability zones
 
+### Requirements 
+- SSH Access to Pivotal Ops Manager
+- A K8s cluster deployed in PKS
+- Access to the above K8s cluster
+- Kubectl binary
+
 ## HA of K8s PODs
 
 This is a function natively provided by Kubernetes. More details on pods lifecycle can be found [here](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/). If an involuntary disruption of the pods happen, K8s and its components try to restore the state of the application (thereby the pods) based on certain rules. The controller is responsible for the restore/recovery of the pods. 
@@ -171,8 +177,8 @@ While this HA is difficult to demonstrate (by performing an AZ level failure), i
 - If the cluster has multiple masters, verify that they are placed across different AZs.
 - If the cluster has multiple worker nodes, verify that they are placed across different AZs. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNDIyMTU4MCwtMTQ2MDg2NDg2Nyw0OD
-AzOTA3OTMsNzUyOTIyNjk5LDk1NjY3Njk3OCwtMTM0NjYxMzA1
-NiwtOTk4MTM5NTcwLC01MDEzNzYxNywtMTU1ODI3MTA5NywtMT
-YyNTg4MDE5Niw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTE5NDQ1ODQ0NTYsLTcwNDIyMTU4MCwtMT
+Q2MDg2NDg2Nyw0ODAzOTA3OTMsNzUyOTIyNjk5LDk1NjY3Njk3
+OCwtMTM0NjYxMzA1NiwtOTk4MTM5NTcwLC01MDEzNzYxNywtMT
+U1ODI3MTA5NywtMTYyNTg4MDE5Niw3MzA5OTgxMTZdfQ==
 -->
