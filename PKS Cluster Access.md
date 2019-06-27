@@ -1,6 +1,8 @@
 
 # PKS K8S Cluster access
 
+
+
 ## Kubeconfig file format
 
 For a user, a kubeconfig file is generally located in their #HOME/.kube folder. It is called `config` by default. The `kubectl` command-line tool uses kubeconfig files to find the information it needs to choose a cluster and communicate with the API server of a cluster. More details on kubeconfig can be found [here](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/)
@@ -408,11 +410,11 @@ Once this is successful, an LDAP user entry [ldapuser] is created in the respect
  - Unless OIDC is enabled, all cluster authentication is thru service tokens. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4NTE0NzE1OSw3NTMyMzE2NDYsLTU2Nz
-M2MDIzLC0zNTEyMDI2NDAsLTIxNDE3MTEyNDEsLTE1Mzg4Mzc2
-NzcsLTE2ODk3NTY1MDIsLTIwMTY1MzA2MTcsMTA1NDQ5OTI5NS
-wxOTQ3NjQ4NTE1LDgyNjAxMDA1LDg3NDQyMzQ2NCwxMDQ0NTEx
-OTMxLDExNTAxMjczMzIsLTEzODM5OTYxMzIsLTg0ODU0MDY2Mi
-wtNTAxODU4NzA1LDEzODIwNDczNTIsLTk2MjcyODk1MywtMzU2
-MDQ5MDA0XX0=
+eyJoaXN0b3J5IjpbNTcyODQ5NTIzLDIwODUxNDcxNTksNzUzMj
+MxNjQ2LC01NjczNjAyMywtMzUxMjAyNjQwLC0yMTQxNzExMjQx
+LC0xNTM4ODM3Njc3LC0xNjg5NzU2NTAyLC0yMDE2NTMwNjE3LD
+EwNTQ0OTkyOTUsMTk0NzY0ODUxNSw4MjYwMTAwNSw4NzQ0MjM0
+NjQsMTA0NDUxMTkzMSwxMTUwMTI3MzMyLC0xMzgzOTk2MTMyLC
+04NDg1NDA2NjIsLTUwMTg1ODcwNSwxMzgyMDQ3MzUyLC05NjI3
+Mjg5NTNdfQ==
 -->
