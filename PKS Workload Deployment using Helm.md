@@ -13,10 +13,11 @@ In this lab/demo, we will show you how to deploy a set of applications using Hel
 
 ## Deployment of Helm
 
-To deploy the CLI, use homebrew on Mac
+To deploy the CLI, use brew on Mac
 
 > `brew install kubernetes-helm`
-> 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjgwMDgxMzgsOTMwODA2MDE1XX0=
+eyJoaXN0b3J5IjpbLTQwNTY1MjEwMSw5MzA4MDYwMTVdfQ==
 -->
