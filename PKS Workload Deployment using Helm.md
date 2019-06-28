@@ -408,9 +408,17 @@ In the next screen, select `Prometheus` as the datasource and click `Import`
 
 You will now be able to view that metrics that the Node Exporter is collecting from each of the worker nodes and sending it up to Prometheus and then Grafana is visualizing the data!!!
 
+Now, we will use the service type LoadBalancer to access the Grafana UI. 
+
+Lets destroy the Grafana deployment - 
+
+> `helm delete grafana --purge`
+
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMzU3NjU2MSwxNTM2NjExMDA5LDE2OT
-AyNTkxMjMsLTExNTQ4NDY5NjQsLTEzMDI3Mzg4OSw3NjExMzY0
-MzIsLTE4ODM4MTQ2ODMsOTMwODA2MDE1XX0=
+eyJoaXN0b3J5IjpbMzQ2NjM0NjkxLDE2MjM1NzY1NjEsMTUzNj
+YxMTAwOSwxNjkwMjU5MTIzLC0xMTU0ODQ2OTY0LC0xMzAyNzM4
+ODksNzYxMTM2NDMyLC0xODgzODE0NjgzLDkzMDgwNjAxNV19
 -->
