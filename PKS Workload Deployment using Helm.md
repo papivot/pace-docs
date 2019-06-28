@@ -37,7 +37,30 @@ Server: &version.Version{SemVer:"v2.14.1", GitCommit:"5270352a09c7e8b6e8c9593002
 
 Before installing the Tiller server component, we need to create a service account and give it some elevated provilages. Use the following yaml - 
 
+```yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: tiller
+  namespace: kube-system
+---
+apiVersion: rbac.authorization.k8s.io/v1beta1
+kind: ClusterRoleBinding
+metadata:
+  name: tiller
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cluster-admin
+subjects:
+  - kind: ServiceAccount
+    name: tiller
+    namespace: kube-system
 ```
+
+> `kubectl apply -f rbac-config.yaml`
+
+where rbac-config.yaml is the file 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjgzNTc1ODIyLDkzMDgwNjAxNV19
+eyJoaXN0b3J5IjpbMzU1NTg1OTEyLDkzMDgwNjAxNV19
 -->
