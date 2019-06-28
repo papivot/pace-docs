@@ -138,10 +138,12 @@ $ helm install --name my-release stable/prometheus
 ...
 ```
 
-Use the following command to install prometheus and its requireed components - 
+Use the following command to install prometheus and its required components - 
 
 > `helm install stable/prometheus --namespace monitoring --name prometheus`
+
+This should create the necessary artifacts and start the pods. Output will detail what w
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc2NDgyNDM1LDc2MTEzNjQzMiwtMTg4Mz
-gxNDY4Myw5MzA4MDYwMTVdfQ==
+eyJoaXN0b3J5IjpbLTE3NTI1NzUwMjEsNzYxMTM2NDMyLC0xOD
+gzODE0NjgzLDkzMDgwNjAxNV19
 -->
