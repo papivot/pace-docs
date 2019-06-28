@@ -390,11 +390,15 @@ Get the Grafana admin credentials.
 
 should display a password. Capture it as you will need it to login to the UI interface. 
 
-Since the current Grafana deployment is running with just a internal Cluster IP, we need to 
+Since the current Grafana deployment is running with just a internal Cluster IP, we need to port forward using the kubectl command to get access to the UI. 
+
+Use the first command to get the exact name of the pod and then the second command to execute the port forwarding. 
+
+> `
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0MjU4OTcxOSwxNjkwMjU5MTIzLC0xMT
+eyJoaXN0b3J5IjpbMjExNjA4NDY4NywxNjkwMjU5MTIzLC0xMT
 U0ODQ2OTY0LC0xMzAyNzM4ODksNzYxMTM2NDMyLC0xODgzODE0
 NjgzLDkzMDgwNjAxNV19
 -->
