@@ -231,8 +231,18 @@ Notice that it may happen that some of the pods are in a pending state. To troub
 
 > `kubectl describe pod prometheus-server-5d5f6db7cc-mkpwg -n monitoring` 
 
-where `prometheus-server-5d5f6db7cc-mkpwg` is the name of the pod from the previosu output. 
+where `prometheus-server-5d5f6db7cc-mkpwg` is the name of the pod from the previous output.  This should provide a status and a possible reason for failure - 
+
+```shell
+...
+Events:
+  Type     Reason            Age                   From               Message
+  ----     ------            ----                  ----               -------
+  Warning  FailedScheduling  24s (x10 over 4m37s)  default-scheduler  pod has unbound immediate PersistentVolumeClaims (repeated 3 times)
+```
+
+The pod is looking for some storage in the form of persistantvolumeclaim and i
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMjA4Mzg3MSw3NjExMzY0MzIsLTE4OD
-M4MTQ2ODMsOTMwODA2MDE1XX0=
+eyJoaXN0b3J5IjpbLTE2NDE1MzQyODYsNzYxMTM2NDMyLC0xOD
+gzODE0NjgzLDkzMDgwNjAxNV19
 -->
