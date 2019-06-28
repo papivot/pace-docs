@@ -420,10 +420,12 @@ shows there is a parameter called service.type that we will modify in this execu
 
 > `helm install stable/grafana --namespace monitoring --name grafana --set sidecar.datasources.enabled=true,service.type=LoadBalancer`
 
+wait for a few minutes. 
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwNzQwODU2MSwxNjIzNTc2NTYxLDE1Mz
-Y2MTEwMDksMTY5MDI1OTEyMywtMTE1NDg0Njk2NCwtMTMwMjcz
-ODg5LDc2MTEzNjQzMiwtMTg4MzgxNDY4Myw5MzA4MDYwMTVdfQ
-==
+eyJoaXN0b3J5IjpbLTExNjgxMTA5MDcsMTcwNzQwODU2MSwxNj
+IzNTc2NTYxLDE1MzY2MTEwMDksMTY5MDI1OTEyMywtMTE1NDg0
+Njk2NCwtMTMwMjczODg5LDc2MTEzNjQzMiwtMTg4MzgxNDY4My
+w5MzA4MDYwMTVdfQ==
 -->
