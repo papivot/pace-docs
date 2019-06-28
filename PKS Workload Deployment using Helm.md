@@ -402,11 +402,11 @@ Using the browser navigate to `http://http://localhost:3000/` Use admin and the 
 
 Once logged in, import a prebuilt dashboard - 
 
-
+On the left panal, click on + -> 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY5MTA5MTAsMTY5MDI1OTEyMywtMTE1ND
-g0Njk2NCwtMTMwMjczODg5LDc2MTEzNjQzMiwtMTg4MzgxNDY4
-Myw5MzA4MDYwMTVdfQ==
+eyJoaXN0b3J5IjpbLTEyNzgwMzU4NjIsMTY5MDI1OTEyMywtMT
+E1NDg0Njk2NCwtMTMwMjczODg5LDc2MTEzNjQzMiwtMTg4Mzgx
+NDY4Myw5MzA4MDYwMTVdfQ==
 -->
