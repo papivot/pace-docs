@@ -388,11 +388,11 @@ Get the Grafana admin credentials.
 
 > `kubectl get secret grafana --namespace monitoring -o json|jq -r '.data."admin-password"'|base64 --decode; echo`
 
-should display a password. Capture it as you will need it to login to the UI interface. 
+should display a password string. Capture it as you will need it to login to the UI interface. 
 
 #### Using ClusterIP
 
-Since the current Grafana deployment is running with just an internal Cluster IP, we need to port forward using the kubectl command to get access to the UI. 
+Since the current Grafana deployment is running with just service of type Cluster IP, we need to port forward using the kubectl command to get access to the UI. 
 
 Use the first command to get the exact name of the pod and then the second command to execute the port forwarding. 
 
@@ -412,7 +412,7 @@ You will now be able to view that metrics that the Node Exporter is collecting f
 
 #### Using LoadBalancer
 
-Now, we will use the service type LoadBalancer to access the Grafana UI. 
+Now, we will use the Service type LoadBalancer to access the Grafana UI. 
 
 Lets destroy the Grafana deployment - 
 
@@ -442,8 +442,8 @@ Browse to the external IP - `a234d08d699e411e9867f024160e0f4d-298480210.us-east-
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2Mjc4Mjk0LC0xOTQ3MDQwNjM4LC0zNz
-cwODg2NTIsMTcwNzQwODU2MSwxNjIzNTc2NTYxLDE1MzY2MTEw
-MDksMTY5MDI1OTEyMywtMTE1NDg0Njk2NCwtMTMwMjczODg5LD
-c2MTEzNjQzMiwtMTg4MzgxNDY4Myw5MzA4MDYwMTVdfQ==
+eyJoaXN0b3J5IjpbLTg3MTExNjA4NywtMTk0NzA0MDYzOCwtMz
+c3MDg4NjUyLDE3MDc0MDg1NjEsMTYyMzU3NjU2MSwxNTM2NjEx
+MDA5LDE2OTAyNTkxMjMsLTExNTQ4NDY5NjQsLTEzMDI3Mzg4OS
+w3NjExMzY0MzIsLTE4ODM4MTQ2ODMsOTMwODA2MDE1XX0=
 -->
