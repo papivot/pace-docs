@@ -356,8 +356,14 @@ data:
       orgId: 1
       url: http://prometheus-server.monitoring.svc.cluster.local
 ```
+
+> `kubectl apply -f grafanaconfigmap.yaml`
+
+where `grafanaconfigmap.yaml` contains the above yaml data. 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0NTIxNzg1OSwtMTE1NDg0Njk2NCwtMT
+eyJoaXN0b3J5IjpbMTY3NjMwNDUwMywtMTE1NDg0Njk2NCwtMT
 MwMjczODg5LDc2MTEzNjQzMiwtMTg4MzgxNDY4Myw5MzA4MDYw
 MTVdfQ==
 -->
