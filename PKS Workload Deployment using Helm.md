@@ -5,7 +5,12 @@ In this lab/demo, we will show you how to deploy a set of applications using Hel
 
 1. How to interact with Helm to deploy applications
 2. Since the choice of application is Prometheus and Grafana, it will also show how to start with monitoring and reporting on a K8s cluster
-3. Show how to interact with an application running on K8s cl
+3. Show how to interact with an application running on K8s cluster. 
+
+### Requirements 
+
+- A working K8s cluster with admin access.
+- A 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU5NjgxODI1XX0=
+eyJoaXN0b3J5IjpbOTMwODA2MDE1XX0=
 -->
