@@ -332,9 +332,13 @@ prometheus-pushgateway-75dc77db76-w4g69          1/1     Running   0          41
 prometheus-server-5d5f6db7cc-mq2gp               1/2     Running   0          41s
 ```
 
-All the required components of Prometheus have now started and collecting/s
+All the required components of Prometheus have now started and collecting and storing data.
+
+## Deploy Grafana
+
+Before we 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5NTEzNzgwNywtMTE1NDg0Njk2NCwtMT
-MwMjczODg5LDc2MTEzNjQzMiwtMTg4MzgxNDY4Myw5MzA4MDYw
-MTVdfQ==
+eyJoaXN0b3J5IjpbMjEwNTE2Mjg2LC0xMTU0ODQ2OTY0LC0xMz
+AyNzM4ODksNzYxMTM2NDMyLC0xODgzODE0NjgzLDkzMDgwNjAx
+NV19
 -->
