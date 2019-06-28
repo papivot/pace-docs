@@ -104,9 +104,12 @@ stable/prometheus-blackbox-exporter  	0.4.0        	0.14.0     	Prometheus Black
 stable/prometheus-nats-exporter      	2.1.0        	0.4.0      	A Helm chart for prometheus-nats-exporter
 stable/prometheus-node-exporter      	1.5.1        	0.18.0     	A Helm chart for prometheus node-exporter
 ...
-
 ```
+
+We will use the `stable/prometheus` chart for this session. 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwMzAyMjgyNywtMTg4MzgxNDY4Myw5Mz
-A4MDYwMTVdfQ==
+eyJoaXN0b3J5IjpbNzYxMTM2NDMyLC0xODgzODE0NjgzLDkzMD
+gwNjAxNV19
 -->
