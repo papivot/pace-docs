@@ -108,8 +108,38 @@ stable/prometheus-node-exporter      	1.5.1        	0.18.0     	A Helm chart for
 
 We will use the `stable/prometheus` chart for this session. 
 
+Use the inspect command to get details on the chart - 
 
+> `helm inspect stable/prometheus`
+
+This should list a detailed output.
+
+```shell
+...
+## TL;DR;
+
+```console
+$ helm install stable/prometheus
+```
+
+## Introduction
+
+This chart bootstraps a [Prometheus](https://prometheus.io/) deployment on a [Kubernetes](http://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
+
+## Prerequisites
+
+- Kubernetes 1.3+ with Beta APIs enabled
+
+## Installing the Chart
+
+To install the chart with the release name `my-release`:
+
+```console
+$ helm install --name my-release stable/prometheus
+```
+...
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzYxMTM2NDMyLC0xODgzODE0NjgzLDkzMD
-gwNjAxNV19
+eyJoaXN0b3J5IjpbMTI3OTc2MzYzMiw3NjExMzY0MzIsLTE4OD
+M4MTQ2ODMsOTMwODA2MDE1XX0=
 -->
