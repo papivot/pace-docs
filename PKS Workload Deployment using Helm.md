@@ -420,12 +420,19 @@ shows there is a parameter called service.type that we will modify in this execu
 
 > `helm install stable/grafana --namespace monitoring --name grafana --set sidecar.datasources.enabled=true,service.type=LoadBalancer`
 
-wait for a few minutes. 
+Wait for a few minutes. A new LoadBalancer will be created in your IaaS and you can access the Grafana UI using the load balancer IP/DNS. 
 
+> `kubectl get service -n monitoring`
+
+should return - 
+
+```shell
+
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjgxMTA5MDcsMTcwNzQwODU2MSwxNj
-IzNTc2NTYxLDE1MzY2MTEwMDksMTY5MDI1OTEyMywtMTE1NDg0
-Njk2NCwtMTMwMjczODg5LDc2MTEzNjQzMiwtMTg4MzgxNDY4My
-w5MzA4MDYwMTVdfQ==
+eyJoaXN0b3J5IjpbMTA0NzM2NDkyNiwxNzA3NDA4NTYxLDE2Mj
+M1NzY1NjEsMTUzNjYxMTAwOSwxNjkwMjU5MTIzLC0xMTU0ODQ2
+OTY0LC0xMzAyNzM4ODksNzYxMTM2NDMyLC0xODgzODE0NjgzLD
+kzMDgwNjAxNV19
 -->
