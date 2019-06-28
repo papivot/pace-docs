@@ -427,11 +427,14 @@ Wait for a few minutes. A new LoadBalancer will be created in your IaaS and you 
 should return - 
 
 ```shell
-
+NAME                            TYPE           CLUSTER-IP       EXTERNAL-IP                                                              PORT(S)        AGE
+grafana                         LoadBalancer   10.100.200.98    a234d08d699e411e9867f024160e0f4d-298480210.us-east-2.elb.amazonaws.com   80:30759/TCP   7m55s
+...
 ```
 
+Browse to the external IP - `a234d08d699e411e9867f024160e0f4d-298480210.us-east-2.elb.amazonaws.com` in this example to access the UI
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0NzM2NDkyNiwxNzA3NDA4NTYxLDE2Mj
+eyJoaXN0b3J5IjpbLTM2OTk0ODY1NCwxNzA3NDA4NTYxLDE2Mj
 M1NzY1NjEsMTUzNjYxMTAwOSwxNjkwMjU5MTIzLC0xMTU0ODQ2
 OTY0LC0xMzAyNzM4ODksNzYxMTM2NDMyLC0xODgzODE0NjgzLD
 kzMDgwNjAxNV19
