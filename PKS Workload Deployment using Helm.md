@@ -394,11 +394,13 @@ Since the current Grafana deployment is running with just a internal Cluster IP,
 
 Use the first command to get the exact name of the pod and then the second command to execute the port forwarding. 
 
-> `
+> `kubectl get pods -n monitoring |grep grafana`
+
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNjA4NDY4NywxNjkwMjU5MTIzLC0xMT
-U0ODQ2OTY0LC0xMzAyNzM4ODksNzYxMTM2NDMyLC0xODgzODE0
-NjgzLDkzMDgwNjAxNV19
+eyJoaXN0b3J5IjpbLTEzNTE3MzcyNDgsMTY5MDI1OTEyMywtMT
+E1NDg0Njk2NCwtMTMwMjczODg5LDc2MTEzNjQzMiwtMTg4Mzgx
+NDY4Myw5MzA4MDYwMTVdfQ==
 -->
