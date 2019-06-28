@@ -96,9 +96,17 @@ To search for the Prometheus charts use the command -
 should return something similar to this - 
 
 ```shell
+NAME                                 	CHART VERSION	APP VERSION	DESCRIPTION
+stable/prometheus                    	8.14.0       	2.11.1     	Prometheus is a monitoring system and time series database.
+stable/prometheus-adapter            	1.2.0        	v0.5.0     	A Helm chart for k8s prometheus adapter
+stable/prometheus-blackbox-exporter  	0.4.0        	0.14.0     	Prometheus Blackbox Exporter
+...
+stable/prometheus-nats-exporter      	2.1.0        	0.4.0      	A Helm chart for prometheus-nats-exporter
+stable/prometheus-node-exporter      	1.5.1        	0.18.0     	A Helm chart for prometheus node-exporter
+...
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjcyOTQ4ODk1LC0xODgzODE0NjgzLDkzMD
-gwNjAxNV19
+eyJoaXN0b3J5IjpbMTkwMzAyMjgyNywtMTg4MzgxNDY4Myw5Mz
+A4MDYwMTVdfQ==
 -->
