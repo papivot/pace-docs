@@ -336,7 +336,7 @@ All the required components of Prometheus have now started and collecting and st
 
 ## Deploy Grafana
 
-Before we deploy the pod, we will create a configmap - 
+Before we deploy the pod, we will create a configmap that contains the definition from where Grafana needs to use the datasource - 
 
 ```yaml
 apiVersion: v1
@@ -355,10 +355,9 @@ data:
       access: proxy
       orgId: 1
       url: http://prometheus-server.monitoring.svc.cluster.local
-
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjkzNjY4NTMsLTExNTQ4NDY5NjQsLT
-EzMDI3Mzg4OSw3NjExMzY0MzIsLTE4ODM4MTQ2ODMsOTMwODA2
-MDE1XX0=
+eyJoaXN0b3J5IjpbMTE0NTIxNzg1OSwtMTE1NDg0Njk2NCwtMT
+MwMjczODg5LDc2MTEzNjQzMiwtMTg4MzgxNDY4Myw5MzA4MDYw
+MTVdfQ==
 -->
