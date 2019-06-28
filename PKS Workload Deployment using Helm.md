@@ -17,7 +17,17 @@ To deploy the CLI, use brew on Mac
 
 > `brew install kubernetes-helm`
 
-Helm has a client server model where the server component - **tiller** -  runs on the Kubernetes cluster where helm targets the deployment. Helm uses the kubeconfig file to connect to the server component running on the K8s cluster
+Helm has a client server model where the server component - **tiller** -  runs on the Kubernetes cluster where helm targets the deployment. Helm uses the kubeconfig file to connect to the server component running on the K8s cluster. 
+
+> `helm version`
+
+without a valid kubeconfig you get this - 
+
+```shell
+Client: &version.Version{SemVer:"v2.14.1", GitCommit:"5270352a09c7e8b6e8c9593002a73535276507c0", GitTreeState:"clean"}
+Error: Get http://localhost:8080/api/v1/namespaces/kube-system/pods?labelSelector=app%3Dhelm%2Cname%3Dtiller: dial tcp [::1]:8080: connect: connection refused
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzgyMDk1NTQsOTMwODA2MDE1XX0=
+eyJoaXN0b3J5IjpbLTEyOTUyNTk3NDYsOTMwODA2MDE1XX0=
 -->
