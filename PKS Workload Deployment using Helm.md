@@ -272,15 +272,30 @@ A similar one for GCP could be -
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
-  name: gce
+  name: gcepd
 provisioner: kubernetes.io/gce-pd
 parameters:
   type: pd-standard
   replication-type: none
 ```
 
+For vSphere it could be - 
+
+```yaml
+kind: StorageClass
+apiVersion: storage.k8s.io/v1
+metadata:
+  name: thin-disk
+  annotations:
+    storageclass.kubernetes.io/is-default-class: "true"
+provisioner: kubernetes.io/vsphere-volume
+parameters:
+    datastore: Datastore-NFS-VM
+    diskformat: thin
+    fstype: ext3
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1NTE1Mjc0NywtMTMwMjczODg5LDc2MT
+eyJoaXN0b3J5IjpbMTI3Njk3NjE1NSwtMTMwMjczODg5LDc2MT
 EzNjQzMiwtMTg4MzgxNDY4Myw5MzA4MDYwMTVdfQ==
 -->
