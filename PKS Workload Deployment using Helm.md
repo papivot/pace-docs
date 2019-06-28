@@ -390,7 +390,9 @@ Get the Grafana admin credentials.
 
 should display a password. Capture it as you will need it to login to the UI interface. 
 
-Since the current Grafana deployment is running with just a internal Cluster IP, we need to port forward using the kubectl command to get access to the UI. 
+#### Using ClusterIP
+
+Since the current Grafana deployment is running with just an internal Cluster IP, we need to port forward using the kubectl command to get access to the UI. 
 
 Use the first command to get the exact name of the pod and then the second command to execute the port forwarding. 
 
@@ -407,6 +409,8 @@ On the left panal, click on `+` -> `Import`. In the `Grafana.com dashboard` ente
 In the next screen, select `Prometheus` as the datasource and click `Import`  
 
 You will now be able to view that metrics that the Node Exporter is collecting from each of the worker nodes and sending it up to Prometheus and then Grafana is visualizing the data!!!
+
+#### Using LoadBalancer
 
 Now, we will use the service type LoadBalancer to access the Grafana UI. 
 
@@ -433,9 +437,13 @@ grafana                         LoadBalancer   10.100.200.98    a234d08d699e411e
 ```
 
 Browse to the external IP - `a234d08d699e411e9867f024160e0f4d-298480210.us-east-2.elb.amazonaws.com` in this example to access the UI
+
+#### Using Ingress
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3NzA4ODY1MiwxNzA3NDA4NTYxLDE2Mj
-M1NzY1NjEsMTUzNjYxMTAwOSwxNjkwMjU5MTIzLC0xMTU0ODQ2
-OTY0LC0xMzAyNzM4ODksNzYxMTM2NDMyLC0xODgzODE0NjgzLD
-kzMDgwNjAxNV19
+eyJoaXN0b3J5IjpbLTE5NDcwNDA2MzgsLTM3NzA4ODY1MiwxNz
+A3NDA4NTYxLDE2MjM1NzY1NjEsMTUzNjYxMTAwOSwxNjkwMjU5
+MTIzLC0xMTU0ODQ2OTY0LC0xMzAyNzM4ODksNzYxMTM2NDMyLC
+0xODgzODE0NjgzLDkzMDgwNjAxNV19
 -->
