@@ -361,11 +361,13 @@ data:
 
 where `grafanaconfigmap.yaml` contains the above yaml data. 
 
-Use `helm search` and `helm inspect` to get details on the Grafana charts. 
+Use `helm search` and `helm inspect` to get details on the Grafana charts. Use the following to deploy the chart - 
+
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5ODY4ODE0MSwtMTE1NDg0Njk2NCwtMT
-MwMjczODg5LDc2MTEzNjQzMiwtMTg4MzgxNDY4Myw5MzA4MDYw
-MTVdfQ==
+eyJoaXN0b3J5IjpbLTE0MzQ5ODk5MjYsLTExNTQ4NDY5NjQsLT
+EzMDI3Mzg4OSw3NjExMzY0MzIsLTE4ODM4MTQ2ODMsOTMwODA2
+MDE1XX0=
 -->
