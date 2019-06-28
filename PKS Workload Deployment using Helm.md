@@ -83,8 +83,10 @@ Server: &version.Version{SemVer:"v2.14.1", GitCommit:"5270352a09c7e8b6e8c9593002
 
 You are now ready to use helm to deploy applications in the cluster. 
 
+## Deploy Prometheus
 
+Before we start with the deployment we wil
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5NDAxODM4LC0xODgzODE0NjgzLDkzMD
-gwNjAxNV19
+eyJoaXN0b3J5IjpbMTA4OTcxMDg4MiwtMTg4MzgxNDY4Myw5Mz
+A4MDYwMTVdfQ==
 -->
