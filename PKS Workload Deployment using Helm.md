@@ -315,10 +315,26 @@ Deploy the chart with the correct values int he CLI -
 
 > `helm install stable/prometheus --namespace monitoring --name prometheus --set alertmanager.persistentVolume.storageClass=awsgp2,server.persistentVolume.storageClass=awsgp2`
 
-This should do the trick. Within a few miuntes validate all pods are up and running
+This should do the trick. Within a few minutes validate all pods are up and running. 
 
+> `kubectl get pods -n monitoring`
+
+should return something similar to - 
+
+```shell
+NAME                                             READY   STATUS    RESTARTS   AGE
+prometheus-alertmanager-668785dc56-f896b         1/2     Running   0          41s
+prometheus-kube-state-metrics-7bcf787fd4-nbk7p   1/1     Running   0          41s
+prometheus-node-exporter-l9shp                   1/1     Running   0          41s
+prometheus-node-exporter-n8fzf                   1/1     Running   0          41s
+prometheus-node-exporter-s46b2                   1/1     Running   0          41s
+prometheus-pushgateway-75dc77db76-w4g69          1/1     Running   0          41s
+prometheus-server-5d5f6db7cc-mq2gp               1/2     Running   0          41s
+```
+
+All the required components of Prometheus have now started and collecting/s
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTAyMTA4NzUsLTExNTQ4NDY5NjQsLT
-EzMDI3Mzg4OSw3NjExMzY0MzIsLTE4ODM4MTQ2ODMsOTMwODA2
-MDE1XX0=
+eyJoaXN0b3J5IjpbMTk5NTEzNzgwNywtMTE1NDg0Njk2NCwtMT
+MwMjczODg5LDc2MTEzNjQzMiwtMTg4MzgxNDY4Myw5MzA4MDYw
+MTVdfQ==
 -->
