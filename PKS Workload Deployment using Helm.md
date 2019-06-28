@@ -266,10 +266,21 @@ parameters:
   fsType: ext4
 ```
 
-A
+A similar one for GCP could be - 
+
+```yaml
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: gce
+provisioner: kubernetes.io/gce-pd
+parameters:
+  type: pd-standard
+  replication-type: none
+```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2NjgxNTE0NCwtMTMwMjczODg5LDc2MT
+eyJoaXN0b3J5IjpbLTg1NTE1Mjc0NywtMTMwMjczODg5LDc2MT
 EzNjQzMiwtMTg4MzgxNDY4Myw5MzA4MDYwMTVdfQ==
 -->
