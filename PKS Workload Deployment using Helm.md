@@ -414,11 +414,14 @@ Lets destroy the Grafana deployment -
 
 > `helm delete grafana --purge`
 
+> `helm inspect stable/grafana` 
 
+shows there is a pa
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ2NjM0NjkxLDE2MjM1NzY1NjEsMTUzNj
-YxMTAwOSwxNjkwMjU5MTIzLC0xMTU0ODQ2OTY0LC0xMzAyNzM4
-ODksNzYxMTM2NDMyLC0xODgzODE0NjgzLDkzMDgwNjAxNV19
+eyJoaXN0b3J5IjpbLTEzOTQwNDQxNzksMTYyMzU3NjU2MSwxNT
+M2NjExMDA5LDE2OTAyNTkxMjMsLTExNTQ4NDY5NjQsLTEzMDI3
+Mzg4OSw3NjExMzY0MzIsLTE4ODM4MTQ2ODMsOTMwODA2MDE1XX
+0=
 -->
