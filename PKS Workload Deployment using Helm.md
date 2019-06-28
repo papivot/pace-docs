@@ -60,9 +60,11 @@ subjects:
 
 > `kubectl apply -f rbac-config.yaml`
 
-where rbac-config.yaml is the name of the file with the above contents. Once completed, perform the helm init to deploy the Tiller server compnoent. 
+where rbac-config.yaml is the name of the file with the above contents. Once completed, perform the helm init to deploy the Tiller server component. 
 
-> `
+> `helm init --service-account tiller`
+
+This will install the server component. `kubectl get pods -n kube-system` sjp
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzUwMTUzNzIsOTMwODA2MDE1XX0=
+eyJoaXN0b3J5IjpbMjM3MjMzOTUwLDkzMDgwNjAxNV19
 -->
