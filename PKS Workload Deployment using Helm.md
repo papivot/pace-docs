@@ -243,12 +243,17 @@ Events:
 
 The pod is looking for some storage in the form of PersistantVolumeClaim and is unable to get it. We will have to provide it in the next few steps. 
 
-Delete the prometheus deployment 
+Delete the prometheus release 
 
 > `helm ls`
 
+> `helm delete prometheus --purge`
+
+#### Creating a storage class
+
+If not already available, we will 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5MzM1Nzc3MSw3NjExMzY0MzIsLTE4OD
+eyJoaXN0b3J5IjpbMTE5MjI1NDQ2OSw3NjExMzY0MzIsLTE4OD
 M4MTQ2ODMsOTMwODA2MDE1XX0=
 -->
