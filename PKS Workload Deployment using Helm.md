@@ -207,11 +207,28 @@ prometheus-alertmanager        0/1    1           0          1s
 prometheus-kube-state-metrics  0/1    1           0          1s
 prometheus-pushgateway         0/1    1           0          1s
 prometheus-server              0/1    1           0          1s
-
+...
 ```
 
+Run the following to get the pod status - 
 
+> `kubectl get pods -n monitoring`
+
+should display something like this - 
+
+```shell
+NAME                                             READY   STATUS    RESTARTS   AGE
+prometheus-alertmanager-668785dc56-d7bbm         0/2     Pending   0          2m36s
+prometheus-kube-state-metrics-7bcf787fd4-lt2rf   1/1     Running   0          2m36s
+prometheus-node-exporter-9gfwp                   1/1     Running   0          2m36s
+prometheus-node-exporter-svxng                   1/1     Running   0          2m36s
+prometheus-node-exporter-sw744                   1/1     Running   0          2m36s
+prometheus-pushgateway-75dc77db76-4pjzj          1/1     Running   0          2m36s
+prometheus-server-5d5f6db7cc-mkpwg               0/2     Pending   0          2m36s
+```
+
+Notice that it may happen that 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjEwMjU4OTAxLDc2MTEzNjQzMiwtMTg4Mz
-gxNDY4Myw5MzA4MDYwMTVdfQ==
+eyJoaXN0b3J5IjpbLTE5NTU3NDA1NjQsNzYxMTM2NDMyLC0xOD
+gzODE0NjgzLDkzMDgwNjAxNV19
 -->
