@@ -386,9 +386,13 @@ Congratulations. You have completed the deployment of Prometheus and Grafana.
 
 Get the Grafana admin credentials. 
 
+> `kubectl get secret grafana --namespace monitoring -o json|jq -r '.data."admin-password"'|base64 --decode; echo`
+
+should print a 
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5MDI1OTEyMywtMTE1NDg0Njk2NCwtMT
-MwMjczODg5LDc2MTEzNjQzMiwtMTg4MzgxNDY4Myw5MzA4MDYw
-MTVdfQ==
+eyJoaXN0b3J5IjpbLTE1MDI0Nzk0MDEsMTY5MDI1OTEyMywtMT
+E1NDg0Njk2NCwtMTMwMjczODg5LDc2MTEzNjQzMiwtMTg4Mzgx
+NDY4Myw5MzA4MDYwMTVdfQ==
 -->
