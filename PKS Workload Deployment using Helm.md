@@ -229,8 +229,10 @@ prometheus-server-5d5f6db7cc-mkpwg               0/2     Pending   0          2m
 
 Notice that it may happen that some of the pods are in a pending state. To troubleshoot run the following - 
 
-> `kubectl describe pod prometheus-server-..... -n monitoring` 
+> `kubectl describe pod prometheus-server-5d5f6db7cc-mkpwg -n monitoring` 
+
+where `prometheus-server-5d5f6db7cc-mkpwg` is the name of the pod from the previosu output. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODA4OTIzNzEsNzYxMTM2NDMyLC0xOD
-gzODE0NjgzLDkzMDgwNjAxNV19
+eyJoaXN0b3J5IjpbMTEzMjA4Mzg3MSw3NjExMzY0MzIsLTE4OD
+M4MTQ2ODMsOTMwODA2MDE1XX0=
 -->
