@@ -227,8 +227,8 @@ prometheus-pushgateway-75dc77db76-4pjzj          1/1     Running   0          2m
 prometheus-server-5d5f6db7cc-mkpwg               0/2     Pending   0          2m36s
 ```
 
-Notice that it may happen that 
+Notice that it may happen that some of the pods are in a pending state. To troubleshoot  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTU3NDA1NjQsNzYxMTM2NDMyLC0xOD
-gzODE0NjgzLDkzMDgwNjAxNV19
+eyJoaXN0b3J5IjpbMjEwNzMwNjk5Myw3NjExMzY0MzIsLTE4OD
+M4MTQ2ODMsOTMwODA2MDE1XX0=
 -->
