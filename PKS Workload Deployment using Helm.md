@@ -398,11 +398,15 @@ Use the first command to get the exact name of the pod and then the second comma
 
 > `kubectl port-forward grafana-666649ff75-zbmcf 3000 -n monitoring`
 
-Using the browser navigate to `http://http://localhost:3000/` Use admin and the password that you retrieved earlier to login to th
+Using the browser navigate to `http://http://localhost:3000/` Use admin and the password that you retrieved earlier to login to the Grafana console. 
+
+Once logged in, import a prebuilt dashboard - 
+
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDM3MzIwNzgsMTY5MDI1OTEyMywtMT
-E1NDg0Njk2NCwtMTMwMjczODg5LDc2MTEzNjQzMiwtMTg4Mzgx
-NDY4Myw5MzA4MDYwMTVdfQ==
+eyJoaXN0b3J5IjpbNzY5MTA5MTAsMTY5MDI1OTEyMywtMTE1ND
+g0Njk2NCwtMTMwMjczODg5LDc2MTEzNjQzMiwtMTg4MzgxNDY4
+Myw5MzA4MDYwMTVdfQ==
 -->
