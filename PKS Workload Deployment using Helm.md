@@ -402,11 +402,11 @@ Using the browser navigate to `http://http://localhost:3000/` Use admin and the 
 
 Once logged in, import a prebuilt dashboard - 
 
-On the left panal, click on `+` -> `Import`. In the `Grafana.com dashboard  
+On the left panal, click on `+` -> `Import`. In the `Grafana.com dashboard` enter 1860 and click `Load`  
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDQ1NzY3MDAsMTY5MDI1OTEyMywtMT
-E1NDg0Njk2NCwtMTMwMjczODg5LDc2MTEzNjQzMiwtMTg4Mzgx
-NDY4Myw5MzA4MDYwMTVdfQ==
+eyJoaXN0b3J5IjpbNTEzMTQ3NTEwLDE2OTAyNTkxMjMsLTExNT
+Q4NDY5NjQsLTEzMDI3Mzg4OSw3NjExMzY0MzIsLTE4ODM4MTQ2
+ODMsOTMwODA2MDE1XX0=
 -->
