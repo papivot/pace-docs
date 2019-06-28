@@ -363,11 +363,18 @@ where `grafanaconfigmap.yaml` contains the above yaml data.
 
 Use `helm search` and `helm inspect` to get details on the Grafana charts. Use the following to deploy the chart - 
 
+> `helm install stable/grafana --namespace monitoring --name grafana --set sidecar.datasources.enabled=true`
 
+This should create the required artifacts and start the pods. 
 
+>`kubectl get pods -n monitoring`
+
+```shell
+
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzQ5ODk5MjYsLTExNTQ4NDY5NjQsLT
+eyJoaXN0b3J5IjpbLTE1OTQxNjMzNjcsLTExNTQ4NDY5NjQsLT
 EzMDI3Mzg4OSw3NjExMzY0MzIsLTE4ODM4MTQ2ODMsOTMwODA2
 MDE1XX0=
 -->
