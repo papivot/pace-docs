@@ -388,11 +388,13 @@ Get the Grafana admin credentials.
 
 > `kubectl get secret grafana --namespace monitoring -o json|jq -r '.data."admin-password"'|base64 --decode; echo`
 
-should print a 
+should display a password. Capture it as you will need it to login to the UI interface. 
+
+Since the current Grafana deployment is running with just a internal Cluster IP, we need to 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDI0Nzk0MDEsMTY5MDI1OTEyMywtMT
-E1NDg0Njk2NCwtMTMwMjczODg5LDc2MTEzNjQzMiwtMTg4Mzgx
-NDY4Myw5MzA4MDYwMTVdfQ==
+eyJoaXN0b3J5IjpbMjA0MjU4OTcxOSwxNjkwMjU5MTIzLC0xMT
+U0ODQ2OTY0LC0xMzAyNzM4ODksNzYxMTM2NDMyLC0xODgzODE0
+NjgzLDkzMDgwNjAxNV19
 -->
