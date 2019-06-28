@@ -34,6 +34,8 @@ with a valid kubeconfig to the cluster and tiller installed you get something si
 Client: &version.Version{SemVer:"v2.14.1", GitCommit:"5270352a09c7e8b6e8c9593002a73535276507c0", GitTreeState:"clean"}
 Server: &version.Version{SemVer:"v2.14.1", GitCommit:"5270352a09c7e8b6e8c9593002a73535276507c0", GitTreeState:"clean"}
 ```
+
+Before installing the Tiller server component, 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwMTg5MDM5Myw5MzA4MDYwMTVdfQ==
+eyJoaXN0b3J5IjpbLTE0MzQ5NzA3NjQsOTMwODA2MDE1XX0=
 -->
