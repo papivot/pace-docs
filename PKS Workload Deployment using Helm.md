@@ -406,9 +406,11 @@ On the left panal, click on `+` -> `Import`. In the `Grafana.com dashboard` ente
 
 In the next screen, select `Prometheus` as the datasource and click `Import`  
 
+You will now be able to view that metrics that the Node Exporter is collecting from each of the worker nodes and sending it up to Prometheus and then Grafana is visualalizing the data. 
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzNjYxMTAwOSwxNjkwMjU5MTIzLC0xMT
-U0ODQ2OTY0LC0xMzAyNzM4ODksNzYxMTM2NDMyLC0xODgzODE0
-NjgzLDkzMDgwNjAxNV19
+eyJoaXN0b3J5IjpbMTgxODk3MTMyNSwxNTM2NjExMDA5LDE2OT
+AyNTkxMjMsLTExNTQ4NDY5NjQsLTEzMDI3Mzg4OSw3NjExMzY0
+MzIsLTE4ODM4MTQ2ODMsOTMwODA2MDE1XX0=
 -->
