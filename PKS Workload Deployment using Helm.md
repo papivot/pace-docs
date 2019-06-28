@@ -241,8 +241,14 @@ Events:
   Warning  FailedScheduling  24s (x10 over 4m37s)  default-scheduler  pod has unbound immediate PersistentVolumeClaims (repeated 3 times)
 ```
 
-The pod is looking for some storage in the form of persistantvolumeclaim and i
+The pod is looking for some storage in the form of PersistantVolumeClaim and is unable to get it. We will have to provide it in the next few steps. 
+
+Delete the prometheus deployment 
+
+> `helm ls`
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDE1MzQyODYsNzYxMTM2NDMyLC0xOD
-gzODE0NjgzLDkzMDgwNjAxNV19
+eyJoaXN0b3J5IjpbLTk5MzM1Nzc3MSw3NjExMzY0MzIsLTE4OD
+M4MTQ2ODMsOTMwODA2MDE1XX0=
 -->
