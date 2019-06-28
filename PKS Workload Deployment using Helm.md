@@ -85,8 +85,12 @@ You are now ready to use helm to deploy applications in the cluster.
 
 ## Deploy Prometheus
 
-Before we start with the deployment we wil
+Before we start with the deployment we will create a namespace called **monitoring** and limit all work to the monitoring namespace.
+
+> `kubectl create namespace monitoring`
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4OTcxMDg4MiwtMTg4MzgxNDY4Myw5Mz
+eyJoaXN0b3J5IjpbMTE4MTY3MTM2MywtMTg4MzgxNDY4Myw5Mz
 A4MDYwMTVdfQ==
 -->
