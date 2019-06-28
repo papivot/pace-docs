@@ -35,7 +35,7 @@ Client: &version.Version{SemVer:"v2.14.1", GitCommit:"5270352a09c7e8b6e8c9593002
 Server: &version.Version{SemVer:"v2.14.1", GitCommit:"5270352a09c7e8b6e8c9593002a73535276507c0", GitTreeState:"clean"}
 ```
 
-Before installing the Tiller server component, we need to create a service account and give it some elevated provilages. Use the following yaml - 
+Before installing the Tiller server component, we need to create a service account and give it some elevated privileges. Use the following yaml - 
 
 ```yaml
 apiVersion: v1
@@ -60,7 +60,9 @@ subjects:
 
 > `kubectl apply -f rbac-config.yaml`
 
-where rbac-config.yaml is the file 
+where rbac-config.yaml is the name of the file with the above contents. Once completed, perform the helm init to deploy the Tiller server compnoent. 
+
+> `
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU1NTg1OTEyLDkzMDgwNjAxNV19
+eyJoaXN0b3J5IjpbLTE1MzUwMTUzNzIsOTMwODA2MDE1XX0=
 -->
