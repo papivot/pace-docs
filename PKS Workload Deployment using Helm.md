@@ -17,7 +17,7 @@ To deploy the CLI, use brew on Mac
 
 > `brew install kubernetes-helm`
 
-
+Helm has a client server model where the server component - **tiller** -  runs on the Kubernetes cluster where
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNTY1MjEwMSw5MzA4MDYwMTVdfQ==
+eyJoaXN0b3J5IjpbLTEzOTMzMDI1ODQsOTMwODA2MDE1XX0=
 -->
