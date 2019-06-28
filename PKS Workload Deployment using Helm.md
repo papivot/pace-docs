@@ -299,21 +299,21 @@ Use kubectl to apply the yaml to create the StorageClass -
 
 #### Start prometheus with the correct values
 
-Inspect the chart to view the parameters. Both alertmanager and prometheus have PersistantVolume enabled yer the storageClass is set to null. 
+Inspect the chart to view the parameters using `helm inspect ...`. Both alertmanager and prometheus have PersistantVolume enabled yer the storageClass is set to null. 
 
 ```shell
 `alertmanager.persistentVolume.enabled` | If true, alertmanager will create a Persistent Volume Claim | `true`
-`alertmanager.persistentVolume.accessModes` | alertmanager data Persistent Volume access modes | `[ReadWriteOnce]`
-`alertmanager.persistentVolume.annotations` | Annotations for alertmanager Persistent Volume Claim | `{}`
-`alertmanager.persistentVolume.existingClaim` | alertmanager data Persistent Volume existing claim name | `""`
-`alertmanager.persistentVolume.mountPath` | alertmanager data Persistent Volume mount root path | `/data`
-`alertmanager.persistentVolume.size` | alertmanager data Persistent Volume size | `2Gi`
+...
 `alertmanager.persistentVolume.storageClass` | alertmanager data Persistent Volume Storage Class | `unset`
-
-
+...
+`server.persistentVolume.enabled` | If true, Prometheus server will create a Persistent Volume Claim | `true`
+...
+`server.persistentVolume.storageClass` | Prometheus server data Persistent Volume Storage Class |  `unset`
 ```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3OTc5NDcyNiwtMTE1NDg0Njk2NCwtMT
+eyJoaXN0b3J5IjpbMTk1NDA2Mzc1OSwtMTE1NDg0Njk2NCwtMT
 MwMjczODg5LDc2MTEzNjQzMiwtMTg4MzgxNDY4Myw5MzA4MDYw
 MTVdfQ==
 -->
