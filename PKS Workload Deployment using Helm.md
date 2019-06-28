@@ -251,9 +251,9 @@ Delete the prometheus release
 
 #### Creating a storage class
 
-If not already available, we will 
+If not already available, we will need to create a storage class. This is specific to the infrastructure. Some of the supported storage classes are provided [here](https://kubernetes.io/docs/concepts/storage/storage-classes/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5MjI1NDQ2OSw3NjExMzY0MzIsLTE4OD
+eyJoaXN0b3J5IjpbLTEzMDI3Mzg4OSw3NjExMzY0MzIsLTE4OD
 M4MTQ2ODMsOTMwODA2MDE1XX0=
 -->
