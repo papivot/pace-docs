@@ -142,8 +142,76 @@ Use the following command to install prometheus and its required components -
 
 > `helm install stable/prometheus --namespace monitoring --name prometheus`
 
-This should create the necessary artifacts and start the pods. Output will detail what w
+This should create the necessary artifacts and start the pods. Output will detail what was created as part of this install. 
+
+```shell
+NAME:   prometheus
+LAST DEPLOYED: Fri Jun 28 15:01:40 2019
+NAMESPACE: monitoring
+STATUS: DEPLOYED
+
+RESOURCES:
+==> v1/ConfigMap
+NAME                     DATA  AGE
+prometheus-alertmanager  1     1s
+prometheus-server        3     1s
+
+==> v1/PersistentVolumeClaim
+NAME                     STATUS   VOLUME  CAPACITY  ACCESS MODES  STORAGECLASS  AGE
+prometheus-alertmanager  Pending  1s
+prometheus-server        Pending  1s
+
+==> v1/Pod(related)
+NAME                                            READY  STATUS             RESTARTS  AGE
+prometheus-alertmanager-668785dc56-d7bbm        0/2    Pending            0         1s
+prometheus-kube-state-metrics-7bcf787fd4-lt2rf  0/1    ContainerCreating  0         1s
+prometheus-node-exporter-9gfwp                  0/1    ContainerCreating  0         1s
+prometheus-node-exporter-svxng                  0/1    ContainerCreating  0         1s
+prometheus-node-exporter-sw744                  0/1    ContainerCreating  0         1s
+prometheus-pushgateway-75dc77db76-4pjzj         0/1    ContainerCreating  0         1s
+prometheus-server-5d5f6db7cc-mkpwg              0/2    Pending            0         1s
+
+==> v1/Service
+NAME                           TYPE       CLUSTER-IP      EXTERNAL-IP  PORT(S)   AGE
+prometheus-alertmanager        ClusterIP  10.100.200.147  <none>       80/TCP    1s
+prometheus-kube-state-metrics  ClusterIP  None            <none>       80/TCP    1s
+prometheus-node-exporter       ClusterIP  None            <none>       9100/TCP  1s
+prometheus-pushgateway         ClusterIP  10.100.200.107  <none>       9091/TCP  1s
+prometheus-server              ClusterIP  10.100.200.171  <none>       80/TCP    1s
+
+==> v1/ServiceAccount
+NAME                           SECRETS  AGE
+prometheus-alertmanager        1        1s
+prometheus-kube-state-metrics  1        1s
+prometheus-node-exporter       1        1s
+prometheus-pushgateway         1        1s
+prometheus-server              1        1s
+
+==> v1beta1/ClusterRole
+NAME                           AGE
+prometheus-kube-state-metrics  1s
+prometheus-server              1s
+
+==> v1beta1/ClusterRoleBinding
+NAME                           AGE
+prometheus-kube-state-metrics  1s
+prometheus-server              1s
+
+==> v1beta1/DaemonSet
+NAME                      DESIRED  CURRENT  READY  UP-TO-DATE  AVAILABLE  NODE SELECTOR  AGE
+prometheus-node-exporter  3        3        0      3           0          <none>         1s
+
+==> v1beta1/Deployment
+NAME                           READY  UP-TO-DATE  AVAILABLE  AGE
+prometheus-alertmanager        0/1    1           0          1s
+prometheus-kube-state-metrics  0/1    1           0          1s
+prometheus-pushgateway         0/1    1           0          1s
+prometheus-server              0/1    1           0          1s
+
+```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTI1NzUwMjEsNzYxMTM2NDMyLC0xOD
-gzODE0NjgzLDkzMDgwNjAxNV19
+eyJoaXN0b3J5IjpbNjEwMjU4OTAxLDc2MTEzNjQzMiwtMTg4Mz
+gxNDY4Myw5MzA4MDYwMTVdfQ==
 -->
