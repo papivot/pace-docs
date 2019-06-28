@@ -253,9 +253,23 @@ Delete the prometheus release
 
 If not already available, we will need to create a storage class. This is specific to the infrastructure. Some of the supported storage classes are provided [here](https://kubernetes.io/docs/concepts/storage/storage-classes/)
 
-Here is a simple sample yaml that we will create for 
+Here is a simple sample yaml that we will create for AWS to use the EBS volume - 
+
+```yaml
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: awsgp2
+provisioner: kubernetes.io/aws-ebs
+parameters:
+  type: gp2
+  fsType: ext4
+```
+
+A
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjMxMDM4MTEsLTEzMDI3Mzg4OSw3NjExMz
-Y0MzIsLTE4ODM4MTQ2ODMsOTMwODA2MDE1XX0=
+eyJoaXN0b3J5IjpbMTk2NjgxNTE0NCwtMTMwMjczODg5LDc2MT
+EzNjQzMiwtMTg4MzgxNDY4Myw5MzA4MDYwMTVdfQ==
 -->
