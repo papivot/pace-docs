@@ -402,11 +402,13 @@ Using the browser navigate to `http://http://localhost:3000/` Use admin and the 
 
 Once logged in, import a prebuilt dashboard - 
 
-On the left panal, click on `+` -> `Import`. In the `Grafana.com dashboard` enter 1860 and click `Load`  
+On the left panal, click on `+` -> `Import`. In the `Grafana.com dashboard` enter 1860 and click `Load`.
+
+In the next screen, select `Prometheus` as the datasource and click `Import`  
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTEzMTQ3NTEwLDE2OTAyNTkxMjMsLTExNT
-Q4NDY5NjQsLTEzMDI3Mzg4OSw3NjExMzY0MzIsLTE4ODM4MTQ2
-ODMsOTMwODA2MDE1XX0=
+eyJoaXN0b3J5IjpbMTUzNjYxMTAwOSwxNjkwMjU5MTIzLC0xMT
+U0ODQ2OTY0LC0xMzAyNzM4ODksNzYxMTM2NDMyLC0xODgzODE0
+NjgzLDkzMDgwNjAxNV19
 -->
