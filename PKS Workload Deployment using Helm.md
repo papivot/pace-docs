@@ -27,7 +27,7 @@ without a valid kubeconfig you get this -
 Client: &version.Version{SemVer:"v2.14.1", GitCommit:"5270352a09c7e8b6e8c9593002a73535276507c0", GitTreeState:"clean"}
 Error: Get http://localhost:8080/api/v1/namespaces/kube-system/pods?labelSelector=app%3Dhelm%2Cname%3Dtiller: dial tcp [::1]:8080: connect: connection refused
 ```
-
+with a valid kubeconfig, where 
 
 
 
@@ -79,6 +79,6 @@ Client: &version.Version{SemVer:"v2.14.1", GitCommit:"5270352a09c7e8b6e8c9593002
 Server: &version.Version{SemVer:"v2.14.1", GitCommit:"5270352a09c7e8b6e8c9593002a73535276507c0", GitTreeState:"clean"}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjI5NjQxNzUsLTE4ODM4MTQ2ODMsOT
-MwODA2MDE1XX0=
+eyJoaXN0b3J5IjpbMTk3ODI5Nzg3MiwtMTg4MzgxNDY4Myw5Mz
+A4MDYwMTVdfQ==
 -->
