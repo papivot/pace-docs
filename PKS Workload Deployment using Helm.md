@@ -89,8 +89,16 @@ Before we start with the deployment we will create a namespace called **monitori
 
 > `kubectl create namespace monitoring`
 
+To search for the Prometheus charts use the command - 
 
+> `helm search prometheus`
+
+should return something similar to this - 
+
+```shell
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4MTY3MTM2MywtMTg4MzgxNDY4Myw5Mz
-A4MDYwMTVdfQ==
+eyJoaXN0b3J5IjpbMjcyOTQ4ODk1LC0xODgzODE0NjgzLDkzMD
+gwNjAxNV19
 -->
