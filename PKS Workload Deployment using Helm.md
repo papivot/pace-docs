@@ -73,7 +73,12 @@ tiller-deploy-6d65d78679-p5cm9          1/1     Running   0          128m
 ...
 ```
 
+> `helm version`
 
+```shell
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODM4MTQ2ODMsOTMwODA2MDE1XX0=
+eyJoaXN0b3J5IjpbLTEzNTA5MzY0NSwtMTg4MzgxNDY4Myw5Mz
+A4MDYwMTVdfQ==
 -->
