@@ -27,10 +27,12 @@ without a valid kubeconfig you get this -
 Client: &version.Version{SemVer:"v2.14.1", GitCommit:"5270352a09c7e8b6e8c9593002a73535276507c0", GitTreeState:"clean"}
 Error: Get http://localhost:8080/api/v1/namespaces/kube-system/pods?labelSelector=app%3Dhelm%2Cname%3Dtiller: dial tcp [::1]:8080: connect: connection refused
 ```
-with a valid kubeconfig, where 
+with a valid kubeconfig, where helm has not been initialized, you will get this -
 
-
-
+```shell
+Client: &version.Version{SemVer:"v2.14.1", GitCommit:"5270352a09c7e8b6e8c9593002a73535276507c0", GitTreeState:"clean"}
+Error: could not find a ready tiller pod
+```
 
 Before installing the Tiller server component, we need to create a service account and give it some elevated privileges. Use the following yaml - 
 
@@ -57,7 +59,7 @@ subjects:
 
 > `kubectl apply -f rbac-config.yaml`
 
-where rbac-config.yaml is the name of the file with the above contents. Once completed, perform the helm init to deploy the Tiller server component. 
+where rbac-config.yaml is the name of the file with the above contents. Once completed, perform helm init to deploy the Tiller server component. 
 
 > `helm init --service-account tiller`
 
@@ -78,7 +80,11 @@ with a valid kubeconfig to the cluster and tiller installed you get something si
 Client: &version.Version{SemVer:"v2.14.1", GitCommit:"5270352a09c7e8b6e8c9593002a73535276507c0", GitTreeState:"clean"}
 Server: &version.Version{SemVer:"v2.14.1", GitCommit:"5270352a09c7e8b6e8c9593002a73535276507c0", GitTreeState:"clean"}
 ```
+
+You are now ready to use helm to deploy applications in the cluster. 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3ODI5Nzg3MiwtMTg4MzgxNDY4Myw5Mz
-A4MDYwMTVdfQ==
+eyJoaXN0b3J5IjpbLTM5NDAxODM4LC0xODgzODE0NjgzLDkzMD
+gwNjAxNV19
 -->
