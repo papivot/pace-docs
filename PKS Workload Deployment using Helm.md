@@ -241,7 +241,7 @@ Events:
   Warning  FailedScheduling  24s (x10 over 4m37s)  default-scheduler  pod has unbound immediate PersistentVolumeClaims (repeated 3 times)
 ```
 
-The pod is looking for some storage in the form of PersistantVolumeClaim and is unable to get it. We will have to provide it in the next few steps. 
+The pod is looking for some storage in the form of PersistantVolumeClaim and is unable to get it. Similar issues were discovered for alertmanager. We will have to provide it in the next few steps. 
 
 Delete the prometheus release 
 
@@ -299,8 +299,9 @@ Use kubectl to apply the yaml to create the StorageClass -
 
 #### Start prometheus with the correct values
 
-
+Inspect the chart to view the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTQ4NDY5NjQsLTEzMDI3Mzg4OSw3Nj
-ExMzY0MzIsLTE4ODM4MTQ2ODMsOTMwODA2MDE1XX0=
+eyJoaXN0b3J5IjpbLTE0ODY5NzMzMDYsLTExNTQ4NDY5NjQsLT
+EzMDI3Mzg4OSw3NjExMzY0MzIsLTE4ODM4MTQ2ODMsOTMwODA2
+MDE1XX0=
 -->
