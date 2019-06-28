@@ -402,7 +402,7 @@ Using the browser navigate to `http://http://localhost:3000/` Use admin and the 
 
 Once logged in, import a prebuilt dashboard - 
 
-On the left panal, click on `+` -> `Import`. In the `Grafana.com dashboard` enter 1860 and click `Load`.
+On the left panal, click on `+` -> `Import`. In the `Grafana.com dashboard` enter `1860` and click `Load`.
 
 In the next screen, select `Prometheus` as the datasource and click `Import`  
 
@@ -434,7 +434,7 @@ grafana                         LoadBalancer   10.100.200.98    a234d08d699e411e
 
 Browse to the external IP - `a234d08d699e411e9867f024160e0f4d-298480210.us-east-2.elb.amazonaws.com` in this example to access the UI
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2OTk0ODY1NCwxNzA3NDA4NTYxLDE2Mj
+eyJoaXN0b3J5IjpbLTM3NzA4ODY1MiwxNzA3NDA4NTYxLDE2Mj
 M1NzY1NjEsMTUzNjYxMTAwOSwxNjkwMjU5MTIzLC0xMTU0ODQ2
 OTY0LC0xMzAyNzM4ODksNzYxMTM2NDMyLC0xODgzODE0NjgzLD
 kzMDgwNjAxNV19
