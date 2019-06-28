@@ -35,7 +35,9 @@ Client: &version.Version{SemVer:"v2.14.1", GitCommit:"5270352a09c7e8b6e8c9593002
 Server: &version.Version{SemVer:"v2.14.1", GitCommit:"5270352a09c7e8b6e8c9593002a73535276507c0", GitTreeState:"clean"}
 ```
 
-Before installing the Tiller server component, 
+Before installing the Tiller server component, we need to create a service account and give it some elevated provilages. Use the following yaml - 
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzQ5NzA3NjQsOTMwODA2MDE1XX0=
+eyJoaXN0b3J5IjpbNjgzNTc1ODIyLDkzMDgwNjAxNV19
 -->
