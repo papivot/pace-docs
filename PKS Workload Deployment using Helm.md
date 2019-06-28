@@ -11,13 +11,13 @@ In this lab/demo, we will show you how to deploy a set of applications using Hel
 
 - A working K8s cluster with admin access.
 
-## Deployment of Helm
+## Helm Deployment
 
 To deploy the CLI, use brew on Mac
 
 > `brew install kubernetes-helm`
 
-Helm has a client server model where the server component - **tiller** -  runs on the Kubernetes cluster where helm targets the deployment. Helm uses the kubeconfig file to connect to the server component running on the K8s cluster. 
+Helm has a client server model where the server component - **Tiller** -  runs on the Kubernetes cluster where helm targets the deployment. Helm uses the kubeconfig file to connect to the server component running on the K8s cluster. 
 
 > `helm version`
 
@@ -83,7 +83,7 @@ Server: &version.Version{SemVer:"v2.14.1", GitCommit:"5270352a09c7e8b6e8c9593002
 
 You are now ready to use helm to deploy applications in the cluster. 
 
-## Deploy Prometheus
+## Prometheus Deployment
 
 Before we start with the deployment we will create a namespace called **monitoring** and limit all work to the monitoring namespace.
 
@@ -334,7 +334,7 @@ prometheus-server-5d5f6db7cc-mq2gp               1/2     Running   0          41
 
 All the required components of Prometheus have now started and collecting and storing data.
 
-## Deploy Grafana
+## Grafana Deployment
 
 Before we deploy the pod, we will create a configmap that contains the definition from where Grafana needs to use the datasource - 
 
@@ -382,7 +382,7 @@ prometheus-server-5d5f6db7cc-mq2gp               2/2     Running   0          12
 
 Congratulations. You have completed the deployment of Prometheus and Grafana. 
 
-## Access the dashboard
+## Accessing the dashboard (application)
 
 Get the Grafana admin credentials. 
 
@@ -442,8 +442,8 @@ Browse to the external IP - `a234d08d699e411e9867f024160e0f4d-298480210.us-east-
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDcwNDA2MzgsLTM3NzA4ODY1MiwxNz
-A3NDA4NTYxLDE2MjM1NzY1NjEsMTUzNjYxMTAwOSwxNjkwMjU5
-MTIzLC0xMTU0ODQ2OTY0LC0xMzAyNzM4ODksNzYxMTM2NDMyLC
-0xODgzODE0NjgzLDkzMDgwNjAxNV19
+eyJoaXN0b3J5IjpbLTQ2Mjc4Mjk0LC0xOTQ3MDQwNjM4LC0zNz
+cwODg2NTIsMTcwNzQwODU2MSwxNjIzNTc2NTYxLDE1MzY2MTEw
+MDksMTY5MDI1OTEyMywtMTE1NDg0Njk2NCwtMTMwMjczODg5LD
+c2MTEzNjQzMiwtMTg4MzgxNDY4Myw5MzA4MDYwMTVdfQ==
 -->
