@@ -253,7 +253,9 @@ Delete the prometheus release
 
 If not already available, we will need to create a storage class. This is specific to the infrastructure. Some of the supported storage classes are provided [here](https://kubernetes.io/docs/concepts/storage/storage-classes/)
 
+Here is a simple sample yaml that we will create for 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDI3Mzg4OSw3NjExMzY0MzIsLTE4OD
-M4MTQ2ODMsOTMwODA2MDE1XX0=
+eyJoaXN0b3J5IjpbMjMxMDM4MTEsLTEzMDI3Mzg4OSw3NjExMz
+Y0MzIsLTE4ODM4MTQ2ODMsOTMwODA2MDE1XX0=
 -->
