@@ -311,9 +311,14 @@ Inspect the chart to view the parameters using `helm inspect ...`. Both alertman
 `server.persistentVolume.storageClass` | Prometheus server data Persistent Volume Storage Class |  `unset`
 ```
 
+Deploy the chart with the correct values int he CLI - 
+
+> `helm install stable/prometheus --namespace monitoring --name prometheus --set alertmanager.persistentVolume.storageClass=awsgp2,server.persistentVolume.storageClass=awsgp2`
+
+This should do the trick. Within a few miuntes validate all pods are up and running
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1NDA2Mzc1OSwtMTE1NDg0Njk2NCwtMT
-MwMjczODg5LDc2MTEzNjQzMiwtMTg4MzgxNDY4Myw5MzA4MDYw
-MTVdfQ==
+eyJoaXN0b3J5IjpbLTE1MTAyMTA4NzUsLTExNTQ4NDY5NjQsLT
+EzMDI3Mzg4OSw3NjExMzY0MzIsLTE4ODM4MTQ2ODMsOTMwODA2
+MDE1XX0=
 -->
