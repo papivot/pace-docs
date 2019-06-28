@@ -28,6 +28,12 @@ Client: &version.Version{SemVer:"v2.14.1", GitCommit:"5270352a09c7e8b6e8c9593002
 Error: Get http://localhost:8080/api/v1/namespaces/kube-system/pods?labelSelector=app%3Dhelm%2Cname%3Dtiller: dial tcp [::1]:8080: connect: connection refused
 ```
 
+with a valid kubeconfig to the cluster and tiller installed you get something similar to this -
+
+```shell
+Client: &version.Version{SemVer:"v2.14.1", GitCommit:"5270352a09c7e8b6e8c9593002a73535276507c0", GitTreeState:"clean"}
+Server: &version.Version{SemVer:"v2.14.1", GitCommit:"5270352a09c7e8b6e8c9593002a73535276507c0", GitTreeState:"clean"}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTUyNTk3NDYsOTMwODA2MDE1XX0=
+eyJoaXN0b3J5IjpbMTIwMTg5MDM5Myw5MzA4MDYwMTVdfQ==
 -->
