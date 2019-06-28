@@ -120,7 +120,6 @@ This should list a detailed output.
 
 ```console
 $ helm install stable/prometheus
-```
 
 ## Introduction
 
@@ -136,10 +135,11 @@ To install the chart with the release name `my-release`:
 
 ```console
 $ helm install --name my-release stable/prometheus
-```
 ...
 ```
+
+Use the following command to install 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3OTc2MzYzMiw3NjExMzY0MzIsLTE4OD
+eyJoaXN0b3J5IjpbMTAwMDEwMjMyNiw3NjExMzY0MzIsLTE4OD
 M4MTQ2ODMsOTMwODA2MDE1XX0=
 -->
