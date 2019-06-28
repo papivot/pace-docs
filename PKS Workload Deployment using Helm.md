@@ -64,7 +64,16 @@ where rbac-config.yaml is the name of the file with the above contents. Once com
 
 > `helm init --service-account tiller`
 
-This will install the server component. `kubectl get pods -n kube-system` sjp
+This will install the server component. `kubectl get pods -n kube-system` should give something similar to this - 
+
+```shell
+NAME                                    READY   STATUS    RESTARTS   AGE
+...
+tiller-deploy-6d65d78679-p5cm9          1/1     Running   0          128m
+...
+```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM3MjMzOTUwLDkzMDgwNjAxNV19
+eyJoaXN0b3J5IjpbLTE4ODM4MTQ2ODMsOTMwODA2MDE1XX0=
 -->
