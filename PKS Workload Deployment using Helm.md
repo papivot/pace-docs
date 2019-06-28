@@ -138,8 +138,10 @@ $ helm install --name my-release stable/prometheus
 ...
 ```
 
-Use the following command to install 
+Use the following command to install prometheus and its requireed components - 
+
+> `helm install stable/prometheus --namespace monitoring --name prometheus`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwMDEwMjMyNiw3NjExMzY0MzIsLTE4OD
-M4MTQ2ODMsOTMwODA2MDE1XX0=
+eyJoaXN0b3J5IjpbNjc2NDgyNDM1LDc2MTEzNjQzMiwtMTg4Mz
+gxNDY4Myw5MzA4MDYwMTVdfQ==
 -->
