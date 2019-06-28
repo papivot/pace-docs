@@ -282,20 +282,21 @@ parameters:
 For vSphere it could be - 
 
 ```yaml
-kind: StorageClass
 apiVersion: storage.k8s.io/v1
+kind: StorageClass
 metadata:
-  name: thin-disk
-  annotations:
-    storageclass.kubernetes.io/is-default-class: "true"
+  name: vmdisk
 provisioner: kubernetes.io/vsphere-volume
 parameters:
-    datastore: Datastore-NFS-VM
+    datastore: [DATASTORENAME]
     diskformat: thin
     fstype: ext3
 ```
 
+Use kubectl to apply the yaml - 
+
+> `kubectl 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3Njk3NjE1NSwtMTMwMjczODg5LDc2MT
-EzNjQzMiwtMTg4MzgxNDY4Myw5MzA4MDYwMTVdfQ==
+eyJoaXN0b3J5IjpbMTQyODY5MzExLC0xMzAyNzM4ODksNzYxMT
+M2NDMyLC0xODgzODE0NjgzLDkzMDgwNjAxNV19
 -->
