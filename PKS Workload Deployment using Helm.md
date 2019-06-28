@@ -380,9 +380,15 @@ prometheus-pushgateway-75dc77db76-w4g69          1/1     Running   0          12
 prometheus-server-5d5f6db7cc-mq2gp               2/2     Running   0          12m
 ```
 
-Congratulations. You have completed the deployment of 
+Congratulations. You have completed the deployment of Prometheus and Grafana. 
+
+## Access the dashboard
+
+Get the Grafana admin credentials. 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc0OTE1MTgxLC0xMTU0ODQ2OTY0LC0xMz
-AyNzM4ODksNzYxMTM2NDMyLC0xODgzODE0NjgzLDkzMDgwNjAx
-NV19
+eyJoaXN0b3J5IjpbMTY5MDI1OTEyMywtMTE1NDg0Njk2NCwtMT
+MwMjczODg5LDc2MTEzNjQzMiwtMTg4MzgxNDY4Myw5MzA4MDYw
+MTVdfQ==
 -->
