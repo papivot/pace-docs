@@ -416,12 +416,14 @@ Lets destroy the Grafana deployment -
 
 > `helm inspect stable/grafana` 
 
-shows there is a pa
+shows there is a parameter called service.type that we will modify in this execution. 
+
+> `helm install stable/grafana --namespace monitoring --name grafana --set sidecar.datasources.enabled=true,service.type=LoadBalancer`
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTQwNDQxNzksMTYyMzU3NjU2MSwxNT
-M2NjExMDA5LDE2OTAyNTkxMjMsLTExNTQ4NDY5NjQsLTEzMDI3
-Mzg4OSw3NjExMzY0MzIsLTE4ODM4MTQ2ODMsOTMwODA2MDE1XX
-0=
+eyJoaXN0b3J5IjpbMTcwNzQwODU2MSwxNjIzNTc2NTYxLDE1Mz
+Y2MTEwMDksMTY5MDI1OTEyMywtMTE1NDg0Njk2NCwtMTMwMjcz
+ODg5LDc2MTEzNjQzMiwtMTg4MzgxNDY4Myw5MzA4MDYwMTVdfQ
+==
 -->
