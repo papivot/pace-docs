@@ -293,10 +293,14 @@ parameters:
     fstype: ext3
 ```
 
-Use kubectl to apply the yaml - 
+Use kubectl to apply the yaml to create the StorageClass - 
 
-> `kubectl 
+> `kubectl apply -f storageclass.yaml`
+
+#### Start prometheus with the correct values
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyODY5MzExLC0xMzAyNzM4ODksNzYxMT
-M2NDMyLC0xODgzODE0NjgzLDkzMDgwNjAxNV19
+eyJoaXN0b3J5IjpbLTExNTQ4NDY5NjQsLTEzMDI3Mzg4OSw3Nj
+ExMzY0MzIsLTE4ODM4MTQ2ODMsOTMwODA2MDE1XX0=
 -->
