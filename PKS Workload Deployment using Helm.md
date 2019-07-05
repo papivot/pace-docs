@@ -444,14 +444,16 @@ Layer 7 (HTTP and HTTPS) ingress is provided by NSX-T PKS integration natively. 
 
 ##### Install Traefik
 
->```bash
-helm install --name traefik --namespace kube-system --set dashboard.enabled=true,dashboard.domain=awscluster00.awscloud.navneetv.com stable/traefik
-kubectl describe svc traefik --namespace kube-system | grep Ingress | awk '{print $3}'
+We will use the following yaml to deploy the required artifacts to enable the Traefik ingress controller within our Kubernetes cluster. 
+
+```yaml
+
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTU0OTg1MywyMDkwMTg0OTk4LC0xMj
-c3NDQyNTk4LC04NzExMTYwODcsLTE5NDcwNDA2MzgsLTM3NzA4
-ODY1MiwxNzA3NDA4NTYxLDE2MjM1NzY1NjEsMTUzNjYxMTAwOS
-wxNjkwMjU5MTIzLC0xMTU0ODQ2OTY0LC0xMzAyNzM4ODksNzYx
-MTM2NDMyLC0xODgzODE0NjgzLDkzMDgwNjAxNV19
+eyJoaXN0b3J5IjpbLTgwNjA5NDE2MywtMTQ5NTQ5ODUzLDIwOT
+AxODQ5OTgsLTEyNzc0NDI1OTgsLTg3MTExNjA4NywtMTk0NzA0
+MDYzOCwtMzc3MDg4NjUyLDE3MDc0MDg1NjEsMTYyMzU3NjU2MS
+wxNTM2NjExMDA5LDE2OTAyNTkxMjMsLTExNTQ4NDY5NjQsLTEz
+MDI3Mzg4OSw3NjExMzY0MzIsLTE4ODM4MTQ2ODMsOTMwODA2MD
+E1XX0=
 -->
