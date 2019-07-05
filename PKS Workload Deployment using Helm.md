@@ -440,12 +440,15 @@ Browse to the external IP - `a234d08d699e411e9867f024160e0f4d-298480210.us-east-
 
 #### Using Ingress
 
-Layer 7 (HTTP and HTTPS) ingress is provided by NSX-T PKS integration natively. For other IaaS and SDN, a separate Ingress controller needs to be installed on the cluster to enable Ingress routing. For the demo purpose, we will use Tr
+Layer 7 (HTTP and HTTPS) ingress is provided by NSX-T PKS integration natively. For other IaaS and SDN, a separate Ingress controller needs to be installed on the cluster to enable Ingress routing. For the demo purpose, we will use **Traefik**, one of the leading Ingress controller providers. 
+
+##### Install Traefik
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5MDkwODg5NywtODcxMTE2MDg3LC0xOT
-Q3MDQwNjM4LC0zNzcwODg2NTIsMTcwNzQwODU2MSwxNjIzNTc2
-NTYxLDE1MzY2MTEwMDksMTY5MDI1OTEyMywtMTE1NDg0Njk2NC
-wtMTMwMjczODg5LDc2MTEzNjQzMiwtMTg4MzgxNDY4Myw5MzA4
-MDYwMTVdfQ==
+eyJoaXN0b3J5IjpbLTEyNzc0NDI1OTgsLTg3MTExNjA4NywtMT
+k0NzA0MDYzOCwtMzc3MDg4NjUyLDE3MDc0MDg1NjEsMTYyMzU3
+NjU2MSwxNTM2NjExMDA5LDE2OTAyNTkxMjMsLTExNTQ4NDY5Nj
+QsLTEzMDI3Mzg4OSw3NjExMzY0MzIsLTE4ODM4MTQ2ODMsOTMw
+ODA2MDE1XX0=
 -->
