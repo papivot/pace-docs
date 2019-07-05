@@ -440,10 +440,10 @@ Browse to the external IP - `a234d08d699e411e9867f024160e0f4d-298480210.us-east-
 
 #### Using Ingress
 
-Layer 7 (HTTP and 
+Layer 7 (HTTP and HTTPS) ingress is provided by NSX-T PKS integration natively. For other IaaS and SDN, a separate Ingress controller needs to be installed on the cluster to enable Ingress routing. For the demo purpose, we will use Tr
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxMzk2NzgzNCwtODcxMTE2MDg3LC0xOT
+eyJoaXN0b3J5IjpbLTg5MDkwODg5NywtODcxMTE2MDg3LC0xOT
 Q3MDQwNjM4LC0zNzcwODg2NTIsMTcwNzQwODU2MSwxNjIzNTc2
 NTYxLDE1MzY2MTEwMDksMTY5MDI1OTEyMywtMTE1NDg0Njk2NC
 wtMTMwMjczODg5LDc2MTEzNjQzMiwtMTg4MzgxNDY4Myw5MzA4
