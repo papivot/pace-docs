@@ -321,7 +321,7 @@ This should do the trick. Within a few minutes validate all pods are up and runn
 
 should return something similar to - 
 
-```shell
+```bash
 NAME                                             READY   STATUS    RESTARTS   AGE
 prometheus-alertmanager-668785dc56-f896b         1/2     Running   0          41s
 prometheus-kube-state-metrics-7bcf787fd4-nbk7p   1/1     Running   0          41s
@@ -369,7 +369,7 @@ This should create the required artifacts and start the pods.
 
 >`kubectl get pods -n monitoring`
 
-```shell
+```bash
 grafana-666649ff75-zbmcf                         1/1     Running   0          44s
 prometheus-alertmanager-668785dc56-f896b         2/2     Running   0          12m
 prometheus-kube-state-metrics-7bcf787fd4-nbk7p   1/1     Running   0          12m
@@ -430,7 +430,7 @@ Wait for a few minutes. A new LoadBalancer will be created in your IaaS and you 
 
 should return - 
 
-```shell
+```bash
 NAME                            TYPE           CLUSTER-IP       EXTERNAL-IP                                                              PORT(S)        AGE
 grafana                         LoadBalancer   10.100.200.98    a234d08d699e411e9867f024160e0f4d-298480210.us-east-2.elb.amazonaws.com   80:30759/TCP   7m55s
 ...
@@ -444,11 +444,14 @@ Layer 7 (HTTP and HTTPS) ingress is provided by NSX-T PKS integration natively. 
 
 ##### Install Traefik
 
-
+```bash
+helm install --name my-release --namespace kube-system \
+  --set dashboard.enabled=true,dashboard.domain=traefik.example.com stable/traefik
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzc0NDI1OTgsLTg3MTExNjA4NywtMT
-k0NzA0MDYzOCwtMzc3MDg4NjUyLDE3MDc0MDg1NjEsMTYyMzU3
-NjU2MSwxNTM2NjExMDA5LDE2OTAyNTkxMjMsLTExNTQ4NDY5Nj
-QsLTEzMDI3Mzg4OSw3NjExMzY0MzIsLTE4ODM4MTQ2ODMsOTMw
-ODA2MDE1XX0=
+eyJoaXN0b3J5IjpbMjA5MDE4NDk5OCwtMTI3NzQ0MjU5OCwtOD
+cxMTE2MDg3LC0xOTQ3MDQwNjM4LC0zNzcwODg2NTIsMTcwNzQw
+ODU2MSwxNjIzNTc2NTYxLDE1MzY2MTEwMDksMTY5MDI1OTEyMy
+wtMTE1NDg0Njk2NCwtMTMwMjczODg5LDc2MTEzNjQzMiwtMTg4
+MzgxNDY4Myw5MzA4MDYwMTVdfQ==
 -->
