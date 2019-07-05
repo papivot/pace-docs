@@ -661,13 +661,26 @@ Copy and save the file as a yaml. Modify the [[ cluster fqdn ]] variable to meet
 
 Apply the yaml file
 
->`kubectl apply -f 
+>`kubectl apply -f traefik.yml`
+
+This should create all the required artifacts - 
+
+```bash
+clusterrole.rbac.authorization.k8s.io/traefik-ingress-controller created
+clusterrolebinding.rbac.authorization.k8s.io/traefik-ingress-controller created
+serviceaccount/traefik-ingress-controller created
+daemonset.extensions/traefik-ingress-controller created
+configmap/traefik-toml created
+service/traefik-ingress-lb created
+ingress.extensions/traefik-dashboard created
+```
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDEzNTM2NzMsLTE0OTU0OTg1MywyMDkwMT
-g0OTk4LC0xMjc3NDQyNTk4LC04NzExMTYwODcsLTE5NDcwNDA2
-MzgsLTM3NzA4ODY1MiwxNzA3NDA4NTYxLDE2MjM1NzY1NjEsMT
-UzNjYxMTAwOSwxNjkwMjU5MTIzLC0xMTU0ODQ2OTY0LC0xMzAy
-NzM4ODksNzYxMTM2NDMyLC0xODgzODE0NjgzLDkzMDgwNjAxNV
-19
+eyJoaXN0b3J5IjpbMTc0MDc2ODA5NiwtMTQ5NTQ5ODUzLDIwOT
+AxODQ5OTgsLTEyNzc0NDI1OTgsLTg3MTExNjA4NywtMTk0NzA0
+MDYzOCwtMzc3MDg4NjUyLDE3MDc0MDg1NjEsMTYyMzU3NjU2MS
+wxNTM2NjExMDA5LDE2OTAyNTkxMjMsLTExNTQ4NDY5NjQsLTEz
+MDI3Mzg4OSw3NjExMzY0MzIsLTE4ODM4MTQ2ODMsOTMwODA2MD
+E1XX0=
 -->
