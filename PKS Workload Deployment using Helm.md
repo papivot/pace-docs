@@ -447,13 +447,222 @@ Layer 7 (HTTP and HTTPS) ingress is provided by NSX-T PKS integration natively. 
 We will use the following yaml to deploy the required artifacts to enable the Traefik ingress controller within our Kubernetes cluster. 
 
 ```yaml
-
+---
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1beta1
+metadata:
+  name: traefik-ingress-controller
+  labels:
+    project.app: traefik-ingress
+    project.name: traefik
+rules:
+  - apiGroups:
+      - ""
+    resources:
+      - services
+      - endpoints
+      - secrets
+    verbs:
+      - get
+      - list
+      - watch
+  - apiGroups:
+      - extensions
+    resources:
+      - ingresses
+    verbs:
+      - get
+      - list
+      - watch
+---
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1beta1
+metadata:
+  name: traefik-ingress-controller
+  labels:
+    project.app: traefik-ingress
+    project.name: traefik
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: traefik-ingress-controller
+subjects:
+  - kind: ServiceAccount
+    name: traefik-ingress-controller
+    namespace: kube-system
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: traefik-ingress-controller
+  namespace: kube-system
+  labels:
+    project.app: traefik-ingress
+    project.name: traefik
+---
+kind: DaemonSet
+apiVersion: extensions/v1beta1
+metadata:
+  name: traefik-ingress-controller
+  namespace: kube-system
+  labels:
+    project.app: traefik-ingress
+    project.name: traefik
+spec:
+  selector:
+    matchLabels:
+      project.app: traefik-ingress
+  template:
+    metadata:
+      labels:
+        project.app: traefik-ingress
+        project.name: traefik
+    spec:
+      serviceAccountName: traefik-ingress-controller
+      terminationGracePeriodSeconds: 60
+      dnsPolicy: ClusterFirstWithHostNet
+      hostNetwork: true
+      containers:
+        - image: traefik
+          name: traefik-ingress
+          args:
+            - --configfile=/config/traefik.toml
+          resources:
+            requests:
+              cpu: 250m
+              memory: 250Mi
+            limits:
+              cpu: 1
+              memory: 2Gi
+          readinessProbe:
+            tcpSocket:
+              port: 8080
+            failureThreshold: 1
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 2
+          livenessProbe:
+            tcpSocket:
+              port: 80
+            failureThreshold: 3
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 2
+          securityContext:
+            allowPrivilegeEscalation: false
+          volumeMounts:
+            - mountPath: /config
+              name: config
+              readOnly: true
+          ports:
+            - name: http
+              containerPort: 80
+              hostPort: 80
+              protocol: TCP
+            - name: httpn
+              containerPort: 8880
+              hostPort: 8880
+              protocol: TCP
+            - name: dash
+              containerPort: 8080
+              hostPort: 8080
+              protocol: TCP
+      volumes:
+        - name: config
+          configMap:
+            name: traefik-toml
+  updateStrategy:
+    type: RollingUpdate
+---
+apiVersion: v1
+data:
+  traefik.toml: |
+    # traefik.toml
+    logLevel = "INFO"
+    InsecureSkipVerify = true
+    checkNewVersion = false
+    defaultEntryPoints = ["http","https"]
+    [entryPoints]
+      [entryPoints.http]
+        address = ":80"
+        compress = true
+      [entryPoints.httpn]
+        address = ":8880"
+        compress = true
+      [entryPoints.traefik]
+        address = ":8080"
+    [ping]
+      entryPoint = "http"
+    [kubernetes]
+      ingressClass = "traefik"
+    [api]
+      entryPoint = "traefik"
+      dashboard = true
+kind: ConfigMap
+metadata:
+  labels:
+    project.app: traefik-ingress
+    project.name: traefik
+  name: traefik-toml
+  namespace: kube-system
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: traefik-ingress-lb
+  namespace: kube-system
+  labels:
+    project.app: traefik-ingress
+    project.name: traefik
+spec:
+  selector:
+    project.app: traefik-ingress
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+      name: admin
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+      name: web
+    - protocol: TCP
+      port: 443
+      targetPort: 443
+      name: ssl
+  type: LoadBalancer
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: traefik-dashboard
+  namespace: kube-system
+  annotations:
+    kubernetes.io/ingress.class: traefik
+    traefik.frontend.rule.type: "PathPrefixStrip"
+    ingress.kubernetes.io/custom-response-headers: "Strict-Transport-Security: max-age=31536000; includeSubDomains"
+  labels:
+    project.app: traefik-ingress
+    project.name: traefik
+spec:
+  rules:
+    - host: [[ cluster fqdn ]]
+      http:
+        paths:
+          - path: /console
+            backend:
+              serviceName: traefik-ingress-lb
+              servicePort: 8080
 ```
+
+Copy and save the file as a yaml. Modify the [[ cluster fqdn ]] variable to meet your clu
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwNjA5NDE2MywtMTQ5NTQ5ODUzLDIwOT
-AxODQ5OTgsLTEyNzc0NDI1OTgsLTg3MTExNjA4NywtMTk0NzA0
-MDYzOCwtMzc3MDg4NjUyLDE3MDc0MDg1NjEsMTYyMzU3NjU2MS
-wxNTM2NjExMDA5LDE2OTAyNTkxMjMsLTExNTQ4NDY5NjQsLTEz
-MDI3Mzg4OSw3NjExMzY0MzIsLTE4ODM4MTQ2ODMsOTMwODA2MD
-E1XX0=
+eyJoaXN0b3J5IjpbLTEyNjMyNTgzMzYsLTE0OTU0OTg1MywyMD
+kwMTg0OTk4LC0xMjc3NDQyNTk4LC04NzExMTYwODcsLTE5NDcw
+NDA2MzgsLTM3NzA4ODY1MiwxNzA3NDA4NTYxLDE2MjM1NzY1Nj
+EsMTUzNjYxMTAwOSwxNjkwMjU5MTIzLC0xMTU0ODQ2OTY0LC0x
+MzAyNzM4ODksNzYxMTM2NDMyLC0xODgzODE0NjgzLDkzMDgwNj
+AxNV19
 -->
