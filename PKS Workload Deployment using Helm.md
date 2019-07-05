@@ -657,7 +657,7 @@ spec:
               servicePort: 8080
 ```
 
-Copy and save the file as a yaml. Modify the [[ cluster fqdn ]] variable to meet your a cluster FQDN that you will use to access workloads - eg awscluster00.awscloud.navneetv.com. This is specific to your DNS environment. 
+Copy and save the file as a yaml. Modify the `[[ cluster fqdn ]]` variable to meet your a cluster FQDN that you will use to access workloads - eg awscluster00.awscloud.navneetv.com. This is specific to your DNS environment. 
 
 Apply the yaml file
 
@@ -679,13 +679,15 @@ Once done execute the following and wait for `EXTERNAL-IP` changes from `<pendin
 
 > `kubectl get svc traefik-ingress-lb -n kube-system -w`
 
-Grab the `EXTERNAL-IP` and modify your DNS so
+Grab the `EXTERNAL-IP` and modify your DNS to reflect the `[[ cluster fqdn ]]`
+
+In my example, the an alias was added in Route 53 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MzYxODk5NiwtMTQ5NTQ5ODUzLDIwOT
-AxODQ5OTgsLTEyNzc0NDI1OTgsLTg3MTExNjA4NywtMTk0NzA0
-MDYzOCwtMzc3MDg4NjUyLDE3MDc0MDg1NjEsMTYyMzU3NjU2MS
-wxNTM2NjExMDA5LDE2OTAyNTkxMjMsLTExNTQ4NDY5NjQsLTEz
-MDI3Mzg4OSw3NjExMzY0MzIsLTE4ODM4MTQ2ODMsOTMwODA2MD
-E1XX0=
+eyJoaXN0b3J5IjpbLTE0Mzk3NDI1NDIsLTE0OTU0OTg1MywyMD
+kwMTg0OTk4LC0xMjc3NDQyNTk4LC04NzExMTYwODcsLTE5NDcw
+NDA2MzgsLTM3NzA4ODY1MiwxNzA3NDA4NTYxLDE2MjM1NzY1Nj
+EsMTUzNjYxMTAwOSwxNjkwMjU5MTIzLC0xMTU0ODQ2OTY0LC0x
+MzAyNzM4ODksNzYxMTM2NDMyLC0xODgzODE0NjgzLDkzMDgwNj
+AxNV19
 -->
