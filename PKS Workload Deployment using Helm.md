@@ -657,12 +657,17 @@ spec:
               servicePort: 8080
 ```
 
-Copy and save the file as a yaml. Modify the [[ cluster fqdn ]] variable to meet your clu
+Copy and save the file as a yaml. Modify the [[ cluster fqdn ]] variable to meet your a cluster FQDN that you will use to access workloads - eg awscluster00.awscloud.navneetv.com. This is specific to your DNS environment. 
+
+Apply the yaml file
+
+>`kubectl apply -f 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjMyNTgzMzYsLTE0OTU0OTg1MywyMD
-kwMTg0OTk4LC0xMjc3NDQyNTk4LC04NzExMTYwODcsLTE5NDcw
-NDA2MzgsLTM3NzA4ODY1MiwxNzA3NDA4NTYxLDE2MjM1NzY1Nj
-EsMTUzNjYxMTAwOSwxNjkwMjU5MTIzLC0xMTU0ODQ2OTY0LC0x
-MzAyNzM4ODksNzYxMTM2NDMyLC0xODgzODE0NjgzLDkzMDgwNj
-AxNV19
+eyJoaXN0b3J5IjpbNDEzNTM2NzMsLTE0OTU0OTg1MywyMDkwMT
+g0OTk4LC0xMjc3NDQyNTk4LC04NzExMTYwODcsLTE5NDcwNDA2
+MzgsLTM3NzA4ODY1MiwxNzA3NDA4NTYxLDE2MjM1NzY1NjEsMT
+UzNjYxMTAwOSwxNjkwMjU5MTIzLC0xMTU0ODQ2OTY0LC0xMzAy
+NzM4ODksNzYxMTM2NDMyLC0xODgzODE0NjgzLDkzMDgwNjAxNV
+19
 -->
