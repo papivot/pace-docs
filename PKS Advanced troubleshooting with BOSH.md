@@ -3,6 +3,8 @@
 
 Besides the normal troubleshooting that can be performed using the Opsman UI and the kubectl commands, there are numerous troubleshooting processes that can be performed thru the BOSH CLI. 
 
+Note: A number of these are advanced troublshooting operations and should only be performed by experienced customers with 
+
 ### Requirements 
 - Access to Pivotal Ops Manager UI with PKS tile deployed
 - SSH Access to Pivotal Ops Manager
@@ -302,9 +304,9 @@ Once done, clean up the reference in PKS database by execute
 > `pks delete-cluster [cluster_name]` 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzMzUxNDg4MSw3Mzc1ODA4NDksNTczNj
-Y0NTM3LDIwOTY0MjQxNDYsMTI4NjgxMDkwMCwtMTE5MTk0OTE5
-LDU4Nzk2Mjc4NCwtMjE0OTExMDksLTcwMzIxMzIyNCwtNjc2NT
-A4NTAyLDEwNTYyNTk2MDUsMTczMDgxMDEsLTE1ODE5ODc5NDQs
-LTE4NDM0NTIwMjddfQ==
+eyJoaXN0b3J5IjpbLTI3ODk3MzYzMSwxMjMzNTE0ODgxLDczNz
+U4MDg0OSw1NzM2NjQ1MzcsMjA5NjQyNDE0NiwxMjg2ODEwOTAw
+LC0xMTkxOTQ5MTksNTg3OTYyNzg0LC0yMTQ5MTEwOSwtNzAzMj
+EzMjI0LC02NzY1MDg1MDIsMTA1NjI1OTYwNSwxNzMwODEwMSwt
+MTU4MTk4Nzk0NCwtMTg0MzQ1MjAyN119
 -->
