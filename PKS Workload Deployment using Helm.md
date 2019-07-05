@@ -675,9 +675,10 @@ service/traefik-ingress-lb created
 ingress.extensions/traefik-dashboard created
 ```
 
+Once done execute the following and wait for EXTERNAL-I
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0MDc2ODA5NiwtMTQ5NTQ5ODUzLDIwOT
+eyJoaXN0b3J5IjpbLTU3MDY3MjYzMCwtMTQ5NTQ5ODUzLDIwOT
 AxODQ5OTgsLTEyNzc0NDI1OTgsLTg3MTExNjA4NywtMTk0NzA0
 MDYzOCwtMzc3MDg4NjUyLDE3MDc0MDg1NjEsMTYyMzU3NjU2MS
 wxNTM2NjExMDA5LDE2OTAyNTkxMjMsLTExNTQ4NDY5NjQsLTEz
