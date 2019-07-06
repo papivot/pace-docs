@@ -712,14 +712,16 @@ Copy and save the file as a yaml. Modify the `[[ cluster fqdn ]]` variable to me
 
 Check the ingress dashboard to verify the new config is in place. 
 
-Edit the grafana service and remove the existing load balancer
+Edit the grafana service and remove the existing load balancer configuration. >`kubectl edit service grafana -n monitoring`
+
+Ed that the `spec:` section to 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNjcyODQxMywxNzAyNDE2NTk5LDY2OD
-UxNTMxOSwtMTQ5NTQ5ODUzLDIwOTAxODQ5OTgsLTEyNzc0NDI1
-OTgsLTg3MTExNjA4NywtMTk0NzA0MDYzOCwtMzc3MDg4NjUyLD
-E3MDc0MDg1NjEsMTYyMzU3NjU2MSwxNTM2NjExMDA5LDE2OTAy
-NTkxMjMsLTExNTQ4NDY5NjQsLTEzMDI3Mzg4OSw3NjExMzY0Mz
-IsLTE4ODM4MTQ2ODMsOTMwODA2MDE1XX0=
+eyJoaXN0b3J5IjpbNzk4MzM0ODE5LDE3MDI0MTY1OTksNjY4NT
+E1MzE5LC0xNDk1NDk4NTMsMjA5MDE4NDk5OCwtMTI3NzQ0MjU5
+OCwtODcxMTE2MDg3LC0xOTQ3MDQwNjM4LC0zNzcwODg2NTIsMT
+cwNzQwODU2MSwxNjIzNTc2NTYxLDE1MzY2MTEwMDksMTY5MDI1
+OTEyMywtMTE1NDg0Njk2NCwtMTMwMjczODg5LDc2MTEzNjQzMi
+wtMTg4MzgxNDY4Myw5MzA4MDYwMTVdfQ==
 -->
