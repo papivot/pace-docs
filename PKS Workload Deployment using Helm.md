@@ -712,7 +712,7 @@ Copy and save the file as a yaml. Modify the `[[ cluster fqdn ]]` variable to me
 
 Check the ingress dashboard to verify the new config is in place. 
 
-Edit the grafana service and remove the existing load balancer configuration. >`kubectl edit service grafana -n monitoring`
+Edit the Grafana service and remove the existing load balancer configuration. >`kubectl edit service grafana -n monitoring`
 
 Edit the `spec:` section to make it similar to this -
 
@@ -732,13 +732,13 @@ spec:
  
 Save and exit the vi editor (`:wq!`)
 
-Browse to the external IP - http:.
-
+Browse to the external IP - `http://grafana.[[cluster fqdn]]/login`
+to access your Grafana interface.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0ODAyMDk5NywxNzAyNDE2NTk5LDY2OD
-UxNTMxOSwtMTQ5NTQ5ODUzLDIwOTAxODQ5OTgsLTEyNzc0NDI1
-OTgsLTg3MTExNjA4NywtMTk0NzA0MDYzOCwtMzc3MDg4NjUyLD
-E3MDc0MDg1NjEsMTYyMzU3NjU2MSwxNTM2NjExMDA5LDE2OTAy
-NTkxMjMsLTExNTQ4NDY5NjQsLTEzMDI3Mzg4OSw3NjExMzY0Mz
-IsLTE4ODM4MTQ2ODMsOTMwODA2MDE1XX0=
+eyJoaXN0b3J5IjpbLTExNzExNTk2MDMsMTcwMjQxNjU5OSw2Nj
+g1MTUzMTksLTE0OTU0OTg1MywyMDkwMTg0OTk4LC0xMjc3NDQy
+NTk4LC04NzExMTYwODcsLTE5NDcwNDA2MzgsLTM3NzA4ODY1Mi
+wxNzA3NDA4NTYxLDE2MjM1NzY1NjEsMTUzNjYxMTAwOSwxNjkw
+MjU5MTIzLC0xMTU0ODQ2OTY0LC0xMzAyNzM4ODksNzYxMTM2ND
+MyLC0xODgzODE0NjgzLDkzMDgwNjAxNV19
 -->
