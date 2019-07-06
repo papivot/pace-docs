@@ -19,8 +19,12 @@ The following information will be required -
 
 ## PKS Control plane
 
-To enable logging of the PKS control plane, within 
+To enable logging of the PKS control plane, within Opsman UI, navigate to the PKS tile -> Settings -> Logging.
+
+The following information needs to be input - 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMwMTc3MTExLDIxMDY5MTQ4NDcsMTIyNj
-k4MjM4OV19
+eyJoaXN0b3J5IjpbMjEzMjU1NjU5NiwyMTA2OTE0ODQ3LDEyMj
+Y5ODIzODldfQ==
 -->
