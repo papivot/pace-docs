@@ -15,8 +15,12 @@ The following information will be required -
 * Syslog endpoint - `logs3.papertrailapp.com`for this lab
 * Syslog port - `39458` for this lab
 * TLS enabled/disabled - `Enabled` for this lab. 
-* `Enable Log Sink Resource`
+* `Enable Log Sink Resource` should be enabled on the PKS tile.
+
+## PKS Control plane
+
+To enable logging of the PKS control plane, within 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4ODI4OTk0MiwyMTA2OTE0ODQ3LDEyMj
-Y5ODIzODldfQ==
+eyJoaXN0b3J5IjpbNzMwMTc3MTExLDIxMDY5MTQ4NDcsMTIyNj
+k4MjM4OV19
 -->
