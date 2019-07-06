@@ -23,8 +23,11 @@ To enable logging of the PKS control plane, within Opsman UI, navigate to the PK
 
 The following information needs to be input - 
 
-
+`Enable Syslog for PKS?` - `Yes`
+`Address` -` 
+`Port` - `39458`
+`Transport Protocol` - `TCP`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMjU1NjU5NiwyMTA2OTE0ODQ3LDEyMj
-Y5ODIzODldfQ==
+eyJoaXN0b3J5IjpbLTE0OTgzNTUwNDcsMjEwNjkxNDg0NywxMj
+I2OTgyMzg5XX0=
 -->
