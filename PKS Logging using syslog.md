@@ -12,10 +12,11 @@ For this lab, we will use Papertrail. Users can bring their own logging systems 
 
 The following information will be required - 
 
-* Syslog endpoint - logs3.papertrailapp.com for this lab
-* Syslog port - 39458 for this lab
-* TLS enabled/disabled - enabled for this lab. 
+* Syslog endpoint - `logs3.papertrailapp.com`for this lab
+* Syslog port - `39458` for this lab
+* TLS enabled/disabled - `Enabled` for this lab. 
+* Enable Log Sink Resource
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM2ODk0MDgyLDIxMDY5MTQ4NDcsMTIyNj
-k4MjM4OV19
+eyJoaXN0b3J5IjpbLTEyMTY1ODg3MTgsMjEwNjkxNDg0NywxMj
+I2OTgyMzg5XX0=
 -->
