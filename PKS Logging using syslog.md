@@ -17,10 +17,15 @@ The following information will be required -
 * TLS enabled/disabled - `Enabled` for this lab. 
 * `Enable Log Sink Resource` should be enabled on the PKS tile.
 
+## Individual K8s namespaces within a cluster
+
+Create a yaml file `sink.yaml` with the following contents -
+`
+
 
 ## Individual K8S clusters
 
-Create a yaml file `clustersink.yaml` with the following contents
+Create a yaml file `clustersink.yaml` with the following contents -
 
 ```yaml
 apiVersion: apps.pivotal.io/v1beta1
@@ -78,7 +83,7 @@ Navigate to the top level. `Review Pending Changes` and then `Apply Changes`.
 
 Navigate to your Syslog dashboard and look for relevant logs in your Syslog dashboard.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDI5NjI1NTksLTIxMzE3NDgzMDksMj
-AwOTQzOTU1NSw3ODU2OTYwNTcsMjEwNjkxNDg0NywxMjI2OTgy
-Mzg5XX0=
+eyJoaXN0b3J5IjpbMjc3MDYwNTA4LC0xNDAyOTYyNTU5LC0yMT
+MxNzQ4MzA5LDIwMDk0Mzk1NTUsNzg1Njk2MDU3LDIxMDY5MTQ4
+NDcsMTIyNjk4MjM4OV19
 -->
