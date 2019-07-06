@@ -17,6 +17,12 @@ The following information will be required -
 * TLS enabled/disabled - `Enabled` for this lab. 
 * `Enable Log Sink Resource` should be enabled on the PKS tile.
 
+
+## Individual K8S clusters
+
+Create a yaml file with the following cont
+
+
 ## PKS Control plane
 
 To enable logging of the PKS control plane, within Opsman UI, navigate to the PKS tile -> `Settings` -> `Logging`.
@@ -53,7 +59,7 @@ Navigate to the top level. `Review Pending Changes` and then `Apply Changes`.
 
 Look for relevant logs in your Syslog dashboard
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzODA0MDEwMywtMjEzMTc0ODMwOSwyMD
-A5NDM5NTU1LDc4NTY5NjA1NywyMTA2OTE0ODQ3LDEyMjY5ODIz
-ODldfQ==
+eyJoaXN0b3J5IjpbLTEzMTk1NzAwMzksLTIxMzE3NDgzMDksMj
+AwOTQzOTU1NSw3ODU2OTYwNTcsMjEwNjkxNDg0NywxMjI2OTgy
+Mzg5XX0=
 -->
