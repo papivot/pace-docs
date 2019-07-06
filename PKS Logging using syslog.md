@@ -31,7 +31,24 @@ The following information needs to be input -
 `Save` the changes. 
 
 Navigate to the top level. `Review Pending Changes` and then `Apply Changes`. 
+
+## BOSH Director and its components
+
+To enable logging of the PKS control plane, within Opsman UI, navigate to the PKS tile -> `Settings` -> `Logging`.
+
+The following information needs to be input - 
+
+`Enable Syslog for PKS?` - `Yes`
+`Address` -`logs3.papertrailapp.com` 
+`Port` - `39458`
+`Transport Protocol` - `TCP`
+`Enable TLS` - Checked if the logging app allows TLS.
+
+`Save` the changes. 
+
+Navigate to the top level. `Review Pending Changes` and then `Apply Changes`. 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwOTQzOTU1NSw3ODU2OTYwNTcsMjEwNj
-kxNDg0NywxMjI2OTgyMzg5XX0=
+eyJoaXN0b3J5IjpbMTQ1MjUyMDE5NiwyMDA5NDM5NTU1LDc4NT
+Y5NjA1NywyMTA2OTE0ODQ3LDEyMjY5ODIzODldfQ==
 -->
