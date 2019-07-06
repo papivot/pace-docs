@@ -683,13 +683,17 @@ Grab the `EXTERNAL-IP` and modify your DNS to reflect the `[[ cluster fqdn ]]`
 
 Once done, navigate to http://`[[ cluster fqdn ]]`/console and the Traefik dashboard should open.
 
+With the Traefik Ingress controller working, it is now time to modify the Grafana access parameters. 
+
+
+
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwMjQxNjU5OSw2Njg1MTUzMTksLTE0OT
-U0OTg1MywyMDkwMTg0OTk4LC0xMjc3NDQyNTk4LC04NzExMTYw
-ODcsLTE5NDcwNDA2MzgsLTM3NzA4ODY1MiwxNzA3NDA4NTYxLD
-E2MjM1NzY1NjEsMTUzNjYxMTAwOSwxNjkwMjU5MTIzLC0xMTU0
-ODQ2OTY0LC0xMzAyNzM4ODksNzYxMTM2NDMyLC0xODgzODE0Nj
-gzLDkzMDgwNjAxNV19
+eyJoaXN0b3J5IjpbMzMyMDAyMTY0LDE3MDI0MTY1OTksNjY4NT
+E1MzE5LC0xNDk1NDk4NTMsMjA5MDE4NDk5OCwtMTI3NzQ0MjU5
+OCwtODcxMTE2MDg3LC0xOTQ3MDQwNjM4LC0zNzcwODg2NTIsMT
+cwNzQwODU2MSwxNjIzNTc2NTYxLDE1MzY2MTEwMDksMTY5MDI1
+OTEyMywtMTE1NDg0Njk2NCwtMTMwMjczODg5LDc2MTEzNjQzMi
+wtMTg4MzgxNDY4Myw5MzA4MDYwMTVdfQ==
 -->
