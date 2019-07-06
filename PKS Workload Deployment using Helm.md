@@ -714,11 +714,26 @@ Check the ingress dashboard to verify the new config is in place.
 
 Edit the grafana service and remove the existing load balancer configuration. >`kubectl edit service grafana -n monitoring`
 
-Ed that the `spec:` section to 
+Edit the `spec:` section to make it similar to this -
+
+```yaml
+spec:
+  ports:
+  - name: service
+    port: 80
+    protocol: TCP
+    targetPort: 3000
+  selector:
+    app: grafana
+    release: grafana
+  sessionAffinity: None
+  type: ClusterIP
+```
  
+Save and exit the vi editior. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk4MzM0ODE5LDE3MDI0MTY1OTksNjY4NT
+eyJoaXN0b3J5IjpbOTk5NDA3NTU5LDE3MDI0MTY1OTksNjY4NT
 E1MzE5LC0xNDk1NDk4NTMsMjA5MDE4NDk5OCwtMTI3NzQ0MjU5
 OCwtODcxMTE2MDg3LC0xOTQ3MDQwNjM4LC0zNzcwODg2NTIsMT
 cwNzQwODU2MSwxNjIzNTc2NTYxLDE1MzY2MTEwMDksMTY5MDI1
