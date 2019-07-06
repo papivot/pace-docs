@@ -8,7 +8,7 @@ PKS logging can be enabled and configured at 3 different levels -
 3. PKS Control plane
 4. BOSH Director and its components
 
-For this lab, we will use Papertrail. Users can bring their own logging systems that follow the syslog protocol. 
+For this lab, we will use Papertrail syslog application . Users can bring their own logging systems that follow the syslog protocol. 
 
 The following information will be required - 
 
@@ -58,7 +58,7 @@ The following information needs to be input -
 
 Navigate to the top level. `Review Pending Changes` and then `Apply Changes`. 
 
-Look for relevant logs in your Syslog dashboard
+Navigate to your Syslog dashboard and look for relevant logs in your Syslog dashboard.
 
 ## BOSH Director and its components
 
@@ -76,9 +76,9 @@ The following information needs to be input -
 
 Navigate to the top level. `Review Pending Changes` and then `Apply Changes`. 
 
-Look for relevant logs in your Syslog dashboard
+Navigate to your Syslog dashboard and look for relevant logs in your Syslog dashboard.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwMzI1ODQ1MCwtMjEzMTc0ODMwOSwyMD
-A5NDM5NTU1LDc4NTY5NjA1NywyMTA2OTE0ODQ3LDEyMjY5ODIz
-ODldfQ==
+eyJoaXN0b3J5IjpbNzExNDMyMzE3LC0yMTMxNzQ4MzA5LDIwMD
+k0Mzk1NTUsNzg1Njk2MDU3LDIxMDY5MTQ4NDcsMTIyNjk4MjM4
+OV19
 -->
