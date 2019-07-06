@@ -683,17 +683,37 @@ Grab the `EXTERNAL-IP` and modify your DNS to reflect the `[[ cluster fqdn ]]`
 
 Once done, navigate to http://`[[ cluster fqdn ]]`/console and the Traefik dashboard should open.
 
-With the Traefik Ingress controller working, it is now time to modify the Grafana access parameters. 
+With the Traefik Ingress now controller working, it is now time to modify the Grafana access parameters. 
 
+Apply this yaml file - grafana-ingress.yaml
 
+```yaml
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: grafana
+  namespace: monitoring
+  annotations:
+    kubernetes.io/ingress.class: traefik
+    traefik.frontend.rule.type: "PathPrefixStrip"
+    ingress.kubernetes.io/custom-response-headers: "Strict-Transport-Security: max-age=31536000; includeSubDomains"
+spec:
+  rules:
+    - host: grafana.awscluster00.awscloud.navneetv.com
+      http:
+        paths:
+          - backend:
+              serviceName: grafana
+              servicePort: 80
+```
 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzMyMDAyMTY0LDE3MDI0MTY1OTksNjY4NT
-E1MzE5LC0xNDk1NDk4NTMsMjA5MDE4NDk5OCwtMTI3NzQ0MjU5
-OCwtODcxMTE2MDg3LC0xOTQ3MDQwNjM4LC0zNzcwODg2NTIsMT
-cwNzQwODU2MSwxNjIzNTc2NTYxLDE1MzY2MTEwMDksMTY5MDI1
-OTEyMywtMTE1NDg0Njk2NCwtMTMwMjczODg5LDc2MTEzNjQzMi
-wtMTg4MzgxNDY4Myw5MzA4MDYwMTVdfQ==
+eyJoaXN0b3J5IjpbLTM5MDQ5MzE1MiwxNzAyNDE2NTk5LDY2OD
+UxNTMxOSwtMTQ5NTQ5ODUzLDIwOTAxODQ5OTgsLTEyNzc0NDI1
+OTgsLTg3MTExNjA4NywtMTk0NzA0MDYzOCwtMzc3MDg4NjUyLD
+E3MDc0MDg1NjEsMTYyMzU3NjU2MSwxNTM2NjExMDA5LDE2OTAy
+NTkxMjMsLTExNTQ4NDY5NjQsLTEzMDI3Mzg4OSw3NjExMzY0Mz
+IsLTE4ODM4MTQ2ODMsOTMwODA2MDE1XX0=
 -->
