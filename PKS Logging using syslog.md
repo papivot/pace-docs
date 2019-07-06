@@ -20,8 +20,23 @@ The following information will be required -
 ## Individual K8s namespaces within a cluster
 
 Create a yaml file `sink.yaml` with the following contents -
-`
+```yaml
+apiVersion: apps.pivotal.io/v1beta1
+kind: Sink
+metadata:
+  name: papertrail-sink
+  namespace: kube-system
+spec:
+  type: syslog
+  host: logs3.papertrailapp.com
+  port: 39458
+  enable_tls: true
+```
+where the `name`  is the name  of your Sink resource, `host` is the syslog host, `port` is the syslog port and `enable_tls` enables TLS communication.
 
+> `kubectl apply -f sink.yaml`
+
+This should create the required ClusterSink resource. 
 
 ## Individual K8S clusters
 
@@ -83,7 +98,7 @@ Navigate to the top level. `Review Pending Changes` and then `Apply Changes`.
 
 Navigate to your Syslog dashboard and look for relevant logs in your Syslog dashboard.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc3MDYwNTA4LC0xNDAyOTYyNTU5LC0yMT
-MxNzQ4MzA5LDIwMDk0Mzk1NTUsNzg1Njk2MDU3LDIxMDY5MTQ4
-NDcsMTIyNjk4MjM4OV19
+eyJoaXN0b3J5IjpbMTk0MDMzNDA0MywtMTQwMjk2MjU1OSwtMj
+EzMTc0ODMwOSwyMDA5NDM5NTU1LDc4NTY5NjA1NywyMTA2OTE0
+ODQ3LDEyMjY5ODIzODldfQ==
 -->
