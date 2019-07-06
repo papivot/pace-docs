@@ -45,11 +45,11 @@ The following information needs to be input -
 `Transport Protocol` - `TCP`
 `Enable TLS` - Checked if the logging app allows TLS.
 
-`Save` the changes. 
+`Save Syslog Settings` the changes. 
 
 Navigate to the top level. `Review Pending Changes` and then `Apply Changes`. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2MTExNzgyNSwyMDA5NDM5NTU1LDc4NT
-Y5NjA1NywyMTA2OTE0ODQ3LDEyMjY5ODIzODldfQ==
+eyJoaXN0b3J5IjpbLTIxMzE3NDgzMDksMjAwOTQzOTU1NSw3OD
+U2OTYwNTcsMjEwNjkxNDg0NywxMjI2OTgyMzg5XX0=
 -->
