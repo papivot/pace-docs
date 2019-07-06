@@ -33,9 +33,11 @@ The following information needs to be input -
 
 Navigate to the top level. `Review Pending Changes` and then `Apply Changes`. 
 
+Look for relevant logs in your Syslog dashboard
+
 ## BOSH Director and its components
 
-To enable logging of the BOSH director and its componets, within Opsman UI, navigate to the Bosh Director tile -> `Settings` -> `Syslog`.
+To enable logging of the BOSH director and its components, within Opsman UI, navigate to the Bosh Director tile -> `Settings` -> `Syslog`.
 
 The following information needs to be input - 
 
@@ -49,7 +51,9 @@ The following information needs to be input -
 
 Navigate to the top level. `Review Pending Changes` and then `Apply Changes`. 
 
+Look for relevant logs in your Syslog dashboard
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzE3NDgzMDksMjAwOTQzOTU1NSw3OD
-U2OTYwNTcsMjEwNjkxNDg0NywxMjI2OTgyMzg5XX0=
+eyJoaXN0b3J5IjpbMTQzODA0MDEwMywtMjEzMTc0ODMwOSwyMD
+A5NDM5NTU1LDc4NTY5NjA1NywyMTA2OTE0ODQ3LDEyMjY5ODIz
+ODldfQ==
 -->
