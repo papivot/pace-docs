@@ -15,8 +15,8 @@ The following information will be required -
 * Syslog endpoint - `logs3.papertrailapp.com`for this lab
 * Syslog port - `39458` for this lab
 * TLS enabled/disabled - `Enabled` for this lab. 
-* Enable Log Sink Resource
+* `Enable Log Sink Resource`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTY1ODg3MTgsMjEwNjkxNDg0NywxMj
-I2OTgyMzg5XX0=
+eyJoaXN0b3J5IjpbMjA4ODI4OTk0MiwyMTA2OTE0ODQ3LDEyMj
+Y5ODIzODldfQ==
 -->
