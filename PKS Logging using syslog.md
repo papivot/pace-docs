@@ -12,7 +12,7 @@ For this lab, we will use Papertrail. Users can bring their own logging systems 
 
 The following information will be required - 
 
-* Syslog endpoint - `logs3.papertrailapp.com`for this lab
+* Syslog endpoint - `logs3.papertrailapp.com` for this lab
 * Syslog port - `39458` for this lab
 * TLS enabled/disabled - `Enabled` for this lab. 
 * `Enable Log Sink Resource` should be enabled on the PKS tile.
@@ -24,10 +24,14 @@ To enable logging of the PKS control plane, within Opsman UI, navigate to the PK
 The following information needs to be input - 
 
 `Enable Syslog for PKS?` - `Yes`
-`Address` -` 
+`Address` -`logs3.papertrailapp.com` 
 `Port` - `39458`
 `Transport Protocol` - `TCP`
+
+Save the changes. 
+
+Navigate to the top level. Review Pending changes and then Apply Chnages. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTgzNTUwNDcsMjEwNjkxNDg0NywxMj
-I2OTgyMzg5XX0=
+eyJoaXN0b3J5IjpbNzg1Njk2MDU3LDIxMDY5MTQ4NDcsMTIyNj
+k4MjM4OV19
 -->
