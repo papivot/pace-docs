@@ -36,7 +36,9 @@ where the `name`  is the name  of your Sink resource, `host` is the syslog host,
 
 > `kubectl apply -f sink.yaml`
 
-This should create the required ClusterSink resource. 
+This should create the required Sink resource for the namespace kube-system.
+
+Navigate to your Syslog dashboard and look for relevant logs in your Syslog dashboard.
 
 ## Individual K8S clusters
 
@@ -98,7 +100,7 @@ Navigate to the top level. `Review Pending Changes` and then `Apply Changes`.
 
 Navigate to your Syslog dashboard and look for relevant logs in your Syslog dashboard.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0MDMzNDA0MywtMTQwMjk2MjU1OSwtMj
-EzMTc0ODMwOSwyMDA5NDM5NTU1LDc4NTY5NjA1NywyMTA2OTE0
-ODQ3LDEyMjY5ODIzODldfQ==
+eyJoaXN0b3J5IjpbNzQ4OTkwNzYxLC0xNDAyOTYyNTU5LC0yMT
+MxNzQ4MzA5LDIwMDk0Mzk1NTUsNzg1Njk2MDU3LDIxMDY5MTQ4
+NDcsMTIyNjk4MjM4OV19
 -->
