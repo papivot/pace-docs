@@ -19,7 +19,7 @@ The following information will be required -
 
 ## PKS Control plane
 
-To enable logging of the PKS control plane, within Opsman UI, navigate to the PKS tile -> `Settings` -> Logging.
+To enable logging of the PKS control plane, within Opsman UI, navigate to the PKS tile -> `Settings` -> `Logging`.
 
 The following information needs to be input - 
 
@@ -28,10 +28,10 @@ The following information needs to be input -
 `Port` - `39458`
 `Transport Protocol` - `TCP`
 
-Save the changes. 
+`Save` the changes. 
 
-Navigate to the top level. Review Pending changes and then Apply Changes. 
+Navigate to the top level. `Review Pending Changes` and then `Apply Changes`. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0Mzc3MTMxNSw3ODU2OTYwNTcsMjEwNj
+eyJoaXN0b3J5IjpbMjAwOTQzOTU1NSw3ODU2OTYwNTcsMjEwNj
 kxNDg0NywxMjI2OTgyMzg5XX0=
 -->
