@@ -20,7 +20,7 @@ The following information will be required -
 
 ## Individual K8S clusters
 
-Create a yaml file with the following contents
+Create a yaml file `clustersink.yaml` with the following contents
 
 ```yaml
 apiVersion: apps.pivotal.io/v1beta1
@@ -34,7 +34,13 @@ spec:
    enable_tls: true
 ```
 
-where the `name`  is the name  of your ClusterSink, `host` is the syslog host, `port` is the syslog port and `enable_tls`
+where the `name`  is the name  of your ClusterSink, `host` is the syslog host, `port` is the syslog port and `enable_tls` enables TLS communication. 
+
+> `kubectl apply -f clustersink.yaml`
+
+This should create the required ClusterSink resource. 
+
+Navigate to your Syslog dashboard and look for relevant logs in your Syslog dashboard
 
 ## PKS Control plane
 
@@ -72,7 +78,7 @@ Navigate to the top level. `Review Pending Changes` and then `Apply Changes`.
 
 Look for relevant logs in your Syslog dashboard
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUyNjEzODMyLC0yMTMxNzQ4MzA5LDIwMD
-k0Mzk1NTUsNzg1Njk2MDU3LDIxMDY5MTQ4NDcsMTIyNjk4MjM4
-OV19
+eyJoaXN0b3J5IjpbLTQwMzI1ODQ1MCwtMjEzMTc0ODMwOSwyMD
+A5NDM5NTU1LDc4NTY5NjA1NywyMTA2OTE0ODQ3LDEyMjY5ODIz
+ODldfQ==
 -->
