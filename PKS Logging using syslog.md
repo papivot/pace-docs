@@ -9,6 +9,13 @@ PKS logging can be enabled and configured at 3 different levels -
 4. BOSH Director and its components
 
 For this lab, we will use Papertrail. Users can bring their own logging systems that follow the syslog protocol. 
+
+The following information will be required - 
+
+* Syslog endpoint - logs3.papertrailapp.com for this lab
+* Syslog port - 39458 for this lab
+* TLS enabled/disabled - enabled for this lab. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwNjkxNDg0NywxMjI2OTgyMzg5XX0=
+eyJoaXN0b3J5IjpbNjM2ODk0MDgyLDIxMDY5MTQ4NDcsMTIyNj
+k4MjM4OV19
 -->
