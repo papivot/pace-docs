@@ -681,15 +681,15 @@ Once done execute the following and wait for `EXTERNAL-IP` changes from `<pendin
 
 Grab the `EXTERNAL-IP` and modify your DNS to reflect the `[[ cluster fqdn ]]`
 
-In my example, the an alias was added in Route 53
+Once done, navigate to http://`[[ cluster fqdn ]]`/console and the Traefik dashboard should open.
 
-Once done, navigate to http://`[[ cluster fqdn ]]`/console and the Traefik dashboard should open  
+ 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY4NTE1MzE5LC0xNDk1NDk4NTMsMjA5MD
-E4NDk5OCwtMTI3NzQ0MjU5OCwtODcxMTE2MDg3LC0xOTQ3MDQw
-NjM4LC0zNzcwODg2NTIsMTcwNzQwODU2MSwxNjIzNTc2NTYxLD
-E1MzY2MTEwMDksMTY5MDI1OTEyMywtMTE1NDg0Njk2NCwtMTMw
-MjczODg5LDc2MTEzNjQzMiwtMTg4MzgxNDY4Myw5MzA4MDYwMT
-VdfQ==
+eyJoaXN0b3J5IjpbMTcwMjQxNjU5OSw2Njg1MTUzMTksLTE0OT
+U0OTg1MywyMDkwMTg0OTk4LC0xMjc3NDQyNTk4LC04NzExMTYw
+ODcsLTE5NDcwNDA2MzgsLTM3NzA4ODY1MiwxNzA3NDA4NTYxLD
+E2MjM1NzY1NjEsMTUzNjYxMTAwOSwxNjkwMjU5MTIzLC0xMTU0
+ODQ2OTY0LC0xMzAyNzM4ODksNzYxMTM2NDMyLC0xODgzODE0Nj
+gzLDkzMDgwNjAxNV19
 -->
