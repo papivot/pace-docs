@@ -20,8 +20,21 @@ The following information will be required -
 
 ## Individual K8S clusters
 
-Create a yaml file with the following cont
+Create a yaml file with the following contents
 
+```yaml
+apiVersion: apps.pivotal.io/v1beta1
+kind: ClusterSink
+metadata:
+   name: papertrail-clustersink
+spec:
+   type: syslog
+   host: logs3.papertrailapp.com
+   port: 39458
+   enable_tls: true
+```
+
+where the `name`  is the name  of your ClusterSink, `host` is the syslog host, `port` is the syslog port and `enable_tls`
 
 ## PKS Control plane
 
@@ -59,7 +72,7 @@ Navigate to the top level. `Review Pending Changes` and then `Apply Changes`.
 
 Look for relevant logs in your Syslog dashboard
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTk1NzAwMzksLTIxMzE3NDgzMDksMj
-AwOTQzOTU1NSw3ODU2OTYwNTcsMjEwNjkxNDg0NywxMjI2OTgy
-Mzg5XX0=
+eyJoaXN0b3J5IjpbODUyNjEzODMyLC0yMTMxNzQ4MzA5LDIwMD
+k0Mzk1NTUsNzg1Njk2MDU3LDIxMDY5MTQ4NDcsMTIyNjk4MjM4
+OV19
 -->
