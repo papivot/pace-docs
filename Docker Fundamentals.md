@@ -1,5 +1,7 @@
 # Docker fundamentals
 
+### Goal 
+
 ### Requirements
 
 - Access to a Linux workstation
@@ -15,7 +17,7 @@
 #### Step 2 - Install Docker packages
 >`sudo apt install docker.io`
 
-#### Step 3 - Enable and start Docker service
+#### Step 3 - Enable and Start Docker service
 >`sudo systemctl start docker`
 >`sudo systemctl enable docker`
 
@@ -337,5 +339,5 @@ Deleted: sha256:f1b5933fe4b5f49bbe8258745cf396afe07e625bdab3168e364daf7c956b6b81
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzYyOTQ2MTE3XX0=
+eyJoaXN0b3J5IjpbLTE3NjM3NTYwNjUsMzYyOTQ2MTE3XX0=
 -->
