@@ -1,7 +1,7 @@
 
-# PKS Advanced troubleshooting with BOSH
+# PKS Advanced Troubleshooting with BOSH
 
-Besides the normal troubleshooting that can be performed using the Opsman UI and the kubectl commands, there are numerous troubleshooting processes that can be performed thru the BOSH CLI. 
+Besides the normal troubleshooting that can be performed using the Opsman UI and the kubectl commands, there are numerous troubleshooting processes that can be performed through the BOSH CLI. 
 
 *Note: A number of these are advanced troubleshooting operations and should only be performed by experienced customers with the help of Pivotal Support.*  
 
@@ -304,9 +304,9 @@ Once done, clean up the reference in PKS database by execute
 > `pks delete-cluster [cluster_name]` 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzE4MTc5OTMsMTIzMzUxNDg4MSw3Mz
-c1ODA4NDksNTczNjY0NTM3LDIwOTY0MjQxNDYsMTI4NjgxMDkw
-MCwtMTE5MTk0OTE5LDU4Nzk2Mjc4NCwtMjE0OTExMDksLTcwMz
-IxMzIyNCwtNjc2NTA4NTAyLDEwNTYyNTk2MDUsMTczMDgxMDEs
-LTE1ODE5ODc5NDQsLTE4NDM0NTIwMjddfQ==
+eyJoaXN0b3J5IjpbLTI0MDc2MDQzMSwtMTk3MTgxNzk5MywxMj
+MzNTE0ODgxLDczNzU4MDg0OSw1NzM2NjQ1MzcsMjA5NjQyNDE0
+NiwxMjg2ODEwOTAwLC0xMTkxOTQ5MTksNTg3OTYyNzg0LC0yMT
+Q5MTEwOSwtNzAzMjEzMjI0LC02NzY1MDg1MDIsMTA1NjI1OTYw
+NSwxNzMwODEwMSwtMTU4MTk4Nzk0NCwtMTg0MzQ1MjAyN119
 -->
