@@ -35,10 +35,10 @@ user account successfully added
 $ uaac member add pks.clusters.admin nverma
 success
 
-$ pks login -a api.pks.caracas.cf-app.com -u nverma -k
+$ pks login -a [api.pks.fqdn] -u nverma -k
 
 Password: ********
-API Endpoint: api.pks.caracas.cf-app.com
+API Endpoint: api.pks.fqdn
 User: nverma
 
 $ pks plans
@@ -49,7 +49,7 @@ medium  58375a45-17f7-4291-acf1-455bfdc8e371  Example: This plan will configure 
 large   241118e5-69b2-4ef9-b47f-4d2ab071aff5  Example: This plan will configure a large kubernetes cluster for resource heavy workloads, or a high number of workloads.
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDAwOTkyMTAwLC05MDAzMjI2NDUsLTIwNz
+eyJoaXN0b3J5IjpbMzI5MzMzNDQwLC05MDAzMjI2NDUsLTIwNz
 c1NzMzODQsLTE5MDIxNDQwOTEsLTc4ODA2NzYyMiwyMjA1NTM2
 MjNdfQ==
 -->
