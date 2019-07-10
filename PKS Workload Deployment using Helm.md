@@ -13,7 +13,7 @@ In this lab/demo, we will show you how to deploy a set of applications using Hel
 
 ## Helm Deployment
 
-To deploy the CLI, use brew on Mac
+To deploy the CLI, use brew on Mac-
 
 > `brew install kubernetes-helm`
 
@@ -21,13 +21,13 @@ Helm has a client server model where the server component - **Tiller** -  runs o
 
 > `helm version`
 
-without a valid kubeconfig you get this - 
+Without a valid kubeconfig, you get this - 
 
 ```shell
 Client: &version.Version{SemVer:"v2.14.1", GitCommit:"5270352a09c7e8b6e8c9593002a73535276507c0", GitTreeState:"clean"}
 Error: Get http://localhost:8080/api/v1/namespaces/kube-system/pods?labelSelector=app%3Dhelm%2Cname%3Dtiller: dial tcp [::1]:8080: connect: connection refused
 ```
-with a valid kubeconfig, where helm has not been initialized, you will get this -
+With a valid kubeconfig, where helm has not been initialized, you will get this -
 
 ```shell
 Client: &version.Version{SemVer:"v2.14.1", GitCommit:"5270352a09c7e8b6e8c9593002a73535276507c0", GitTreeState:"clean"}
@@ -74,7 +74,7 @@ tiller-deploy-6d65d78679-p5cm9          1/1     Running   0          128m
 
 > `helm version`
 
-with a valid kubeconfig to the cluster and tiller installed you get something similar to this -
+With a valid kubeconfig to the cluster and tiller installed, you get something similar to this -
 
 ```shell
 Client: &version.Version{SemVer:"v2.14.1", GitCommit:"5270352a09c7e8b6e8c9593002a73535276507c0", GitTreeState:"clean"}
@@ -85,15 +85,15 @@ You are now ready to use helm to deploy applications in the cluster.
 
 ## Prometheus Deployment
 
-Before we start with the deployment we will create a namespace called **monitoring** and limit all work to the monitoring namespace.
+Before we start with the deployment, we will create a namespace called **monitoring** and limit all work to the monitoring namespace.
 
 > `kubectl create namespace monitoring`
 
-To search for the Prometheus charts use the command - 
+To search for the Prometheus charts, use the command - 
 
 > `helm search prometheus`
 
-should return something similar to this - 
+which should return something similar to this - 
 
 ```shell
 NAME                                 	CHART VERSION	APP VERSION	DESCRIPTION
@@ -142,7 +142,7 @@ Use the following command to install prometheus and its required components -
 
 > `helm install stable/prometheus --namespace monitoring --name prometheus`
 
-This should create the necessary artifacts and start the pods. Output will detail what was created as part of this install. 
+This should create the necessary artifacts and start the pods. The output will detail what was created as part of this install. 
 
 ```shell
 NAME:   prometheus
@@ -214,7 +214,7 @@ Run the following to get the pod status -
 
 > `kubectl get pods -n monitoring`
 
-should display something like this - 
+which should display something like this - 
 
 ```shell
 NAME                                             READY   STATUS    RESTARTS   AGE
@@ -227,7 +227,7 @@ prometheus-pushgateway-75dc77db76-4pjzj          1/1     Running   0          2m
 prometheus-server-5d5f6db7cc-mkpwg               0/2     Pending   0          2m36s
 ```
 
-Notice that it may happen that some of the pods are in a pending state. To troubleshoot run the following - 
+Notice that it may happen that some of the pods are in a pending state. To troubleshoot, run the following - 
 
 > `kubectl describe pod prometheus-server-5d5f6db7cc-mkpwg -n monitoring` 
 
@@ -243,7 +243,7 @@ Events:
 
 The pod is looking for some storage in the form of PersistantVolumeClaim and is unable to get it. Similar issues were discovered for alertmanager. We will have to provide it in the next few steps. 
 
-Delete the prometheus release 
+Delete the prometheus release -
 
 > `helm ls`
 
@@ -279,7 +279,7 @@ parameters:
   replication-type: none
 ```
 
-For vSphere it could be - 
+For vSphere, it could be - 
 
 ```yaml
 apiVersion: storage.k8s.io/v1
@@ -299,7 +299,7 @@ Use kubectl to apply the yaml to create the StorageClass -
 
 #### Start prometheus with the correct values
 
-Inspect the chart to view the parameters using `helm inspect ...`. Both alertmanager and prometheus have PersistantVolume enabled yer the storageClass is set to null. 
+Inspect the chart to view the parameters using `helm inspect ...`. Both alertmanager and prometheus have PersistantVolume enabled where the storageClass is set to null. 
 
 ```shell
 `alertmanager.persistentVolume.enabled` | If true, alertmanager will create a Persistent Volume Claim | `true`
@@ -311,11 +311,11 @@ Inspect the chart to view the parameters using `helm inspect ...`. Both alertman
 `server.persistentVolume.storageClass` | Prometheus server data Persistent Volume Storage Class |  `unset`
 ```
 
-Deploy the chart with the correct values int he CLI - 
+Deploy the chart with the correct values in the CLI - 
 
 > `helm install stable/prometheus --namespace monitoring --name prometheus --set alertmanager.persistentVolume.storageClass=awsgp2,server.persistentVolume.storageClass=awsgp2`
 
-This should do the trick. Within a few minutes validate all pods are up and running. 
+This should do the trick. Within a few minutes, validate all pods are up and running. 
 
 > `kubectl get pods -n monitoring`
 
@@ -380,7 +380,7 @@ prometheus-pushgateway-75dc77db76-w4g69          1/1     Running   0          12
 prometheus-server-5d5f6db7cc-mq2gp               2/2     Running   0          12m
 ```
 
-Congratulations. You have completed the deployment of Prometheus and Grafana. 
+Congratulations! You have completed the deployment of Prometheus and Grafana. 
 
 ## Accessing the dashboard (application)
 
@@ -424,7 +424,7 @@ shows there is a parameter called service.type that we will modify in this execu
 
 > `helm install stable/grafana --namespace monitoring --name grafana --set sidecar.datasources.enabled=true,service.type=LoadBalancer`
 
-Wait for a few minutes. A new LoadBalancer will be created in your IaaS and you can access the Grafana UI using the load balancer IP/DNS. 
+Wait for a few minutes. A new LoadBalancer will be created in your IaaS, and you can access the Grafana UI using the load balancer IP/DNS. 
 
 > `kubectl get service -n monitoring`
 
@@ -657,9 +657,9 @@ spec:
               servicePort: 8080
 ```
 
-Copy and save the file as a yaml. Modify the `[[ cluster fqdn ]]` variable to meet your a cluster FQDN that you will use to access workloads - eg awscluster00.awscloud.navneetv.com. This is specific to your DNS environment. 
+Copy and save the file as a yaml. Modify the `[[ cluster fqdn ]]` variable to meet your a cluster FQDN that you will use to access workloads - e.g. awscluster00.awscloud.navneetv.com. This is specific to your DNS environment. 
 
-Apply the yaml file
+Apply the yaml file-
 
 >`kubectl apply -f traefik.yml`
 
@@ -675,13 +675,13 @@ service/traefik-ingress-lb created
 ingress.extensions/traefik-dashboard created
 ```
 
-Once done execute the following and wait for `EXTERNAL-IP` changes from `<pending>` to a final value - 
+Once done, execute the following and wait for `EXTERNAL-IP` changes from `<pending>` to a final value - 
 
 > `kubectl get svc traefik-ingress-lb -n kube-system -w`
 
 Grab the `EXTERNAL-IP` and modify your DNS to reflect the `[[ cluster fqdn ]]`
 
-Once done, navigate to http://`[[ cluster fqdn ]]`/console and the Traefik dashboard should open.
+Once done, navigate to http://`[[ cluster fqdn ]]`/console. The Traefik dashboard should open.
 
 With the Traefik Ingress now controller working, it is now time to modify the Grafana access parameters. 
 
