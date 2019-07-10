@@ -47,16 +47,22 @@ Successfully fetched token via client credentials grant.
 Target: https://[api.pks.fqdn]:8443
 Context: admin, from client admin
 ```
-Use the UAA
+Use the UAAC cli to add a user -
 
->`$ uaac user add [nverma] --emails [nverma@email.com] -p [password]`
+>`$ uaac user add [username] --emails [nverma@email.com] -p [password]`
 
+```bash
 user account successfully added
+```
+Add the user to thepks.cluster.admin group -
+> `uaac member add pks.clusters.admin [nverma]`
 
-$ uaac member add pks.clusters.admin [nverma]
+```
 success
+```
+Use the PKS CLI to login to the PKS endpoint using the newly created user
 
-$ pks login -a [api.pks.fqdn] -u [nverma] -k
+> `pks login -a [api.pks.fqdn] -u [nverma] -k`
 
 Password: ********
 API Endpoint: api.pks.fqdn
@@ -70,7 +76,7 @@ medium  58375a45-17f7-4291-acf1-455bfdc8e371  Example: This plan will configure 
 large   241118e5-69b2-4ef9-b47f-4d2ab071aff5  Example: This plan will configure a large kubernetes cluster for resource heavy workloads, or a high number of workloads.
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNTE5NTc5LC05MDAzMjI2NDUsLTIwNz
+eyJoaXN0b3J5IjpbMjk4MTg2OTQyLC05MDAzMjI2NDUsLTIwNz
 c1NzMzODQsLTE5MDIxNDQwOTEsLTc4ODA2NzYyMiwyMjA1NTM2
 MjNdfQ==
 -->
