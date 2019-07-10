@@ -46,7 +46,7 @@ Hello from Docker!
 This message shows that your installation appears to be working correctly.
 ... 
 ```
-Congratulations!!! You ran your first container. 
+Congratulations! You ran your first container. 
 
 #### Step 2 - View running containers
 >`sudo docker ps -a`
@@ -107,7 +107,7 @@ remote: Total 29 (delta 15), reused 7 (delta 5), pack-reused 0
 Unpacking objects: 100% (29/29), done.
 ```
 
-Download the **kubectl** binary as its required by this specific container image. 
+Download the **kubectl** binary as it is required by this specific container image. 
 
 ```shell
 $> cd k8s-operations/
@@ -339,6 +339,6 @@ Deleted: sha256:f1b5933fe4b5f49bbe8258745cf396afe07e625bdab3168e364daf7c956b6b81
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3NDk1NTcxNiwtMTc2Mzc1NjA2NSwzNj
-I5NDYxMTddfQ==
+eyJoaXN0b3J5IjpbLTEwNDQ5MTY5MzMsLTE3NjM3NTYwNjUsMz
+YyOTQ2MTE3XX0=
 -->
