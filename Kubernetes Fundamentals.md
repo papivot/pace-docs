@@ -258,9 +258,9 @@ deployment.extensions "k8s-operations" deleted
 
 > `kubectl get pods -n default`
 
-should no longer have a k8s-operations-* pod.
+The above command should not return any k8s-operations-* pods.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5OTU5OTI5OSwzMzA2MDgxMCwtMjA1OD
-kzNTU4OF19
+eyJoaXN0b3J5IjpbMTExMDU3MDYzNSwtNjk5NTk5Mjk5LDMzMD
+YwODEwLC0yMDU4OTM1NTg4XX0=
 -->
