@@ -18,7 +18,36 @@ The following artifacts needs to be available before the start of the bootcamp -
  
  > `om -t [opsmanager_ip/fqdn] -u [username] -p [password] -k credentials --product-name pivotal-container-service --credential-reference .properties.pks_uaa_management_admin_client -t json|jq -r .secret`
 
+```
+$ UUA_PWD=`om -t pcf.caracas.cf-app.com -u pivotalcf -p ca271a1q1qapx1wc -k credentials --product-name pivotal-container-service --credential-reference .properties.pks_uaa_management_admin_client -t json|jq -r .secret`
+$ echo $UUA_PWD
+MgHXgeuYBaTddbAuY1bklOmf3PV-nCZ-
+$ uaac token client get admin -s $UUA_PWD
+Unknown key: Max-Age = 86400
+
+Successfully fetched token via client credentials grant.
+Target: https://api.pks.caracas.cf-app.com:8443
+Context: admin, from client admin
+
+$ uaac user add nverma --emails nverma@pivotal.io -p Passw0rd
+user account successfully added
+$ uaac member add pks.clusters.admin nverma
+success
+$ pks login -a api.pks.caracas.cf-app.com -u nverma -k
+
+Password: ********
+API Endpoint: api.pks.caracas.cf-app.com
+User: nverma
+
+$ pks plans
+
+Name    ID                                    Description
+small   8A0E21A8-8072-4D80-B365-D1F502085560  Example: This plan will configure a lightweight kubernetes cluster. Not recommended for production workloads.
+medium  58375a45-17f7-4291-acf1-455bfdc8e371  Example: This plan will configure a medium sized kubernetes cluster, suitable for more pods.
+large   241118e5-69b2-4ef9-b47f-4d2ab071aff5  Example: This plan will configure a large kubernetes cluster for resource heavy workloads, or a high number of workloads.
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwMDMyMjY0NSwtMjA3NzU3MzM4NCwtMT
-kwMjE0NDA5MSwtNzg4MDY3NjIyLDIyMDU1MzYyM119
+eyJoaXN0b3J5IjpbMTYyMjUyNjk1LC05MDAzMjI2NDUsLTIwNz
+c1NzMzODQsLTE5MDIxNDQwOTEsLTc4ODA2NzYyMiwyMjA1NTM2
+MjNdfQ==
 -->
