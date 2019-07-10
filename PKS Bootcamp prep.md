@@ -16,13 +16,13 @@ The following artifacts needs to be available before the start of the bootcamp -
  - PKS plans with atleast one plan that has the ability to deploy K8s clusters with `Allow privilaged` setting enabled.
  - To deploy a K8s cluster use the following steps - 
  
- > `om -t [opsmanager_ip/fqdn] -u [username] -p [password] -k credentials --product-name pivotal-container-service --credential-reference .properties.pks_uaa_management_admin_client -t json|jq -r .secret`
+```bash
+$ UAA_PWD=`om -t [opsman_fqdn] -u [opsman_userid] -p ca271a1q1qapx1wc -k credentials --product-name pivotal-container-service --credential-reference .properties.pks_uaa_management_admin_client -t json|jq -r .secret`
 
-```
-$ UUA_PWD=`om -t pcf.caracas.cf-app.com -u pivotalcf -p ca271a1q1qapx1wc -k credentials --product-name pivotal-container-service --credential-reference .properties.pks_uaa_management_admin_client -t json|jq -r .secret`
-$ echo $UUA_PWD
+$ echo $UAA_PWD
 MgHXgeuYBaTddbAuY1bklOmf3PV-nCZ-
-$ uaac token client get admin -s $UUA_PWD
+
+$ uaac token client get admin -s $UAA_PWD
 Unknown key: Max-Age = 86400
 
 Successfully fetched token via client credentials grant.
@@ -31,8 +31,10 @@ Context: admin, from client admin
 
 $ uaac user add nverma --emails nverma@pivotal.io -p Passw0rd
 user account successfully added
+
 $ uaac member add pks.clusters.admin nverma
 success
+
 $ pks login -a api.pks.caracas.cf-app.com -u nverma -k
 
 Password: ********
@@ -47,7 +49,7 @@ medium  58375a45-17f7-4291-acf1-455bfdc8e371  Example: This plan will configure 
 large   241118e5-69b2-4ef9-b47f-4d2ab071aff5  Example: This plan will configure a large kubernetes cluster for resource heavy workloads, or a high number of workloads.
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMjUyNjk1LC05MDAzMjI2NDUsLTIwNz
-c1NzMzODQsLTE5MDIxNDQwOTEsLTc4ODA2NzYyMiwyMjA1NTM2
-MjNdfQ==
+eyJoaXN0b3J5IjpbMTc2NjYxNzk5NCwtOTAwMzIyNjQ1LC0yMD
+c3NTczMzg0LC0xOTAyMTQ0MDkxLC03ODgwNjc2MjIsMjIwNTUz
+NjIzXX0=
 -->
