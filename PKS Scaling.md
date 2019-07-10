@@ -1,7 +1,7 @@
 # PKS Scaling
 
 ### Requirements 
-- A K8s cluster deployed in PKS
+- A K8s cluster deployed in PKS (*Pivotal employees connected thru the VPN can request a PKS environment in GCP thru [Toolsmith](https://environments.toolsmiths.cf-app.com/home). Upon a PKS environment has been created, you can login using the pks cli and create a cluster using an active plan.)*
 - Access to the above K8s cluster
 - Kubectl binary
 - PKS binary
@@ -234,7 +234,7 @@ This quick demo demonstrates the horizontal scaling of pods within K8s.
 > 
 > `kubectl delete hpa php-apache` 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4MDk5OTAwOSwtMTM4NjkyMTAxOSwxOD
+eyJoaXN0b3J5IjpbMTI1OTY3MDM2MCwtMTM4NjkyMTAxOSwxOD
 YwNTM0NDczLC0xMjE3MDU3NzczLC0xOTUxMzM1NjA5LDE2OTIz
 NTM4MTEsMTY0OTYyMzYwOSwtMTY3NzIzMzk3NywtMTUwMzk3OD
 gyNiw5MzEzMjIxNTYsMTgzMTA5MjU3LDE5NjUyOTYxMTQsNzMw
