@@ -84,14 +84,26 @@ large   241118e5-69b2-4ef9-b47f-4d2ab071aff5  Example: This plan will configure 
 
 Use the PKS CLI to create a cluster using one of the above plans - 
 
->`pks create-cluster gcpcluster00 --external-hostname cluster-1.caracas.cf-app.com  --plan small`
+>`pks create-cluster gcpcluster00 --external-hostname [clustername.fqdn]  --plan small`
 
 should return 
 ```shell
+Name:                     gcpcluster00
+Plan Name:                small
+UUID:                     69c4444c-8bf9-4907-956e-d94db7e145c2
+Last Action:              CREATE
+Last Action State:        in progress
+Last Action Description:  Creating cluster
+Kubernetes Master Host:   [clustername.fqdn]
+Kubernetes Master Port:   8443
+Worker Nodes:             3
+Kubernetes Master IP(s):  In Progress
+Network Profile Name:
 
+Use 'pks cluster gcpcluster00' to monitor the state of your cluster
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxOTU2Mzk3NSwtOTAwMzIyNjQ1LC0yMD
-c3NTczMzg0LC0xOTAyMTQ0MDkxLC03ODgwNjc2MjIsMjIwNTUz
-NjIzXX0=
+eyJoaXN0b3J5IjpbMTU0NTU2ODU4LC05MDAzMjI2NDUsLTIwNz
+c1NzMzODQsLTE5MDIxNDQwOTEsLTc4ODA2NzYyMiwyMjA1NTM2
+MjNdfQ==
 -->
