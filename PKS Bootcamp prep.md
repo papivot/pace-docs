@@ -22,6 +22,11 @@ $ UAA_PWD=`om -t [opsman_fqdn] -u [opsman_userid] -p [opsman_password] -k creden
 $ echo $UAA_PWD #should be a non empty string
 MgHXgeuYBaTddbAuY1bklOmf3PV-nCZ-
 
+$ uaac target https://[api.pks.fqdn]:8443 --skip-ssl-validation
+Unknown key: Max-Age = 86400
+
+Target: https://[api.pks.fqdn]:8443
+
 $ uaac token client get admin -s $UAA_PWD
 Unknown key: Max-Age = 86400
 
@@ -29,13 +34,13 @@ Successfully fetched token via client credentials grant.
 Target: https://[api.pks.fqdn]:8443
 Context: admin, from client admin
 
-$ uaac user add nverma --emails nverma@pivotal.io -p [password]
+$ uaac user add [nverma] --emails [nverma@email.com] -p [password]
 user account successfully added
 
-$ uaac member add pks.clusters.admin nverma
+$ uaac member add pks.clusters.admin [nverma]
 success
 
-$ pks login -a [api.pks.fqdn] -u nverma -k
+$ pks login -a [api.pks.fqdn] -u [nverma] -k
 
 Password: ********
 API Endpoint: api.pks.fqdn
@@ -49,7 +54,7 @@ medium  58375a45-17f7-4291-acf1-455bfdc8e371  Example: This plan will configure 
 large   241118e5-69b2-4ef9-b47f-4d2ab071aff5  Example: This plan will configure a large kubernetes cluster for resource heavy workloads, or a high number of workloads.
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI5MzMzNDQwLC05MDAzMjI2NDUsLTIwNz
+eyJoaXN0b3J5IjpbMzc5NjQ5NDE2LC05MDAzMjI2NDUsLTIwNz
 c1NzMzODQsLTE5MDIxNDQwOTEsLTc4ODA2NzYyMiwyMjA1NTM2
 MjNdfQ==
 -->
