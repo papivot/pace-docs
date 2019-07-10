@@ -202,7 +202,7 @@ The output also lists successes, errors and cancellations. This is very helpful 
 
 >`bosh -e pcf -d service-instance_47267983-9989-41ce-bc33-905e249b1fbc task -a 311`
 
-This should return details on that task id - 
+This should return details on that task ID - 
 ```shell
 Using environment '10.0.0.5' as user 'director'
 
