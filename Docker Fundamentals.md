@@ -123,7 +123,7 @@ While in the k8s-operations folder, run the following command to build the Docke
 
 >`sudo docker build -t k8soper:0.0.1 .`
 
-The output would be similar to this - 
+The output will be similar to this - 
 
 ```
  ---> Running in cb4d59a8e413
@@ -198,7 +198,7 @@ Removing intermediate container 6b058c3e884a
 Successfully built 414d93beb557
 Successfully tagged k8soper:0.0.1
 ```
-Look at the above output and try to understand how each operations (steps) relates to relevant instructions provided in the Dockerfile. In this example, the final output is an image with an ID of **414d93beb557** and a tag of **k8soper:0.0.1**. This can be verified by the following command - 
+Look at the above output and try to understand how each operation (step) relates to relevant instructions provided in the Dockerfile. In this example, the final output is an image with an ID of **414d93beb557** and a tag of **k8soper:0.0.1**. This can be verified by the following command - 
 
 >`sudo docker images`
 
@@ -339,6 +339,6 @@ Deleted: sha256:f1b5933fe4b5f49bbe8258745cf396afe07e625bdab3168e364daf7c956b6b81
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDQ5MTY5MzMsLTE3NjM3NTYwNjUsMz
+eyJoaXN0b3J5IjpbLTIxNDE3Nzg3OTYsLTE3NjM3NTYwNjUsMz
 YyOTQ2MTE3XX0=
 -->
