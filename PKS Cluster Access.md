@@ -2,7 +2,7 @@
 # PKS K8S Cluster access
 
 ### Requirements 
-- Access to Pivotal Ops Manager UI with PKS tile deployed
+- Access to Pivotal Ops Manager UI with PKS tile deployed (*Pivotal employees connected thru the VPN can request a PKS environment in GCP thru [Toolsmith](https://environments.toolsmiths.cf-app.com/home). Upon a PKS environment has been created, you can login using the pks cli and create a cluster using an active plan.)*
 - SSH Access to Pivotal Ops Manager
 - K8s clusters deployed in PKS (without and with UAA as OIDC provider)
 - pks and kubectl binaries
@@ -416,11 +416,11 @@ Once this is successful, an LDAP user entry [ldapuser] is created in the respect
  - Unless OIDC is enabled, all cluster authentication is thru service tokens. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0NTE1MDExMiwtMTEwODA0MTI5NCw1Nz
-I4NDk1MjMsMjA4NTE0NzE1OSw3NTMyMzE2NDYsLTU2NzM2MDIz
-LC0zNTEyMDI2NDAsLTIxNDE3MTEyNDEsLTE1Mzg4Mzc2NzcsLT
-E2ODk3NTY1MDIsLTIwMTY1MzA2MTcsMTA1NDQ5OTI5NSwxOTQ3
-NjQ4NTE1LDgyNjAxMDA1LDg3NDQyMzQ2NCwxMDQ0NTExOTMxLD
-ExNTAxMjczMzIsLTEzODM5OTYxMzIsLTg0ODU0MDY2MiwtNTAx
-ODU4NzA1XX0=
+eyJoaXN0b3J5IjpbLTE0MDI4MzUxNDEsLTI0NTE1MDExMiwtMT
+EwODA0MTI5NCw1NzI4NDk1MjMsMjA4NTE0NzE1OSw3NTMyMzE2
+NDYsLTU2NzM2MDIzLC0zNTEyMDI2NDAsLTIxNDE3MTEyNDEsLT
+E1Mzg4Mzc2NzcsLTE2ODk3NTY1MDIsLTIwMTY1MzA2MTcsMTA1
+NDQ5OTI5NSwxOTQ3NjQ4NTE1LDgyNjAxMDA1LDg3NDQyMzQ2NC
+wxMDQ0NTExOTMxLDExNTAxMjczMzIsLTEzODM5OTYxMzIsLTg0
+ODU0MDY2Ml19
 -->
