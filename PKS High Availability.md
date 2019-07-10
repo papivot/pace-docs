@@ -9,7 +9,7 @@ PKS provides high availability at 4 different layers -
  4. HA across availability zones
 
 ### Requirements 
-- Access to Pivotal Ops Manager UI with PKS tile deployed
+- Access to Pivotal Ops Manager UI with PKS tile deployed (*Pivotal employees connected thru the VPN can request a PKS environment in GCP thru [Toolsmith](https://environments.toolsmiths.cf-app.com/home). Upon a PKS environment has been created, you can login using the pks cli and create a cluster using an active plan.)*
 - SSH Access to Pivotal Ops Manager
 - A K8s cluster deployed in PKS
 - Access to the above K8s cluster
@@ -179,8 +179,9 @@ While this HA is difficult to demonstrate (by performing an AZ level failure), i
 - If the cluster has multiple masters, verify that they are placed across different AZs.
 - If the cluster has multiple worker nodes, verify that they are placed across different AZs. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDgxMzUyNDk2LC03MDQyMjE1ODAsLTE0Nj
-A4NjQ4NjcsNDgwMzkwNzkzLDc1MjkyMjY5OSw5NTY2NzY5Nzgs
-LTEzNDY2MTMwNTYsLTk5ODEzOTU3MCwtNTAxMzc2MTcsLTE1NT
-gyNzEwOTcsLTE2MjU4ODAxOTYsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTkxMjQzNDYxMyw0ODEzNTI0OTYsLTcwND
+IyMTU4MCwtMTQ2MDg2NDg2Nyw0ODAzOTA3OTMsNzUyOTIyNjk5
+LDk1NjY3Njk3OCwtMTM0NjYxMzA1NiwtOTk4MTM5NTcwLC01MD
+EzNzYxNywtMTU1ODI3MTA5NywtMTYyNTg4MDE5Niw3MzA5OTgx
+MTZdfQ==
 -->
