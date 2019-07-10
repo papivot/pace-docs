@@ -17,19 +17,19 @@ The following artifacts needs to be available before the start of the bootcamp -
  - To deploy a K8s cluster use the following steps - 
  
 ```bash
-$ UAA_PWD=`om -t [opsman_fqdn] -u [opsman_userid] -p ca271a1q1qapx1wc -k credentials --product-name pivotal-container-service --credential-reference .properties.pks_uaa_management_admin_client -t json|jq -r .secret`
+$ UAA_PWD=`om -t [opsman_fqdn] -u [opsman_userid] -p [opsman_password] -k credentials --product-name pivotal-container-service --credential-reference .properties.pks_uaa_management_admin_client -t json|jq -r .secret`
 
-$ echo $UAA_PWD
+$ echo $UAA_PWD #should be a non empty string
 MgHXgeuYBaTddbAuY1bklOmf3PV-nCZ-
 
 $ uaac token client get admin -s $UAA_PWD
 Unknown key: Max-Age = 86400
 
 Successfully fetched token via client credentials grant.
-Target: https://api.pks.caracas.cf-app.com:8443
+Target: https://[api.pks.fqdn]:8443
 Context: admin, from client admin
 
-$ uaac user add nverma --emails nverma@pivotal.io -p Passw0rd
+$ uaac user add nverma --emails nverma@pivotal.io -p [password]
 user account successfully added
 
 $ uaac member add pks.clusters.admin nverma
@@ -49,7 +49,7 @@ medium  58375a45-17f7-4291-acf1-455bfdc8e371  Example: This plan will configure 
 large   241118e5-69b2-4ef9-b47f-4d2ab071aff5  Example: This plan will configure a large kubernetes cluster for resource heavy workloads, or a high number of workloads.
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2NjYxNzk5NCwtOTAwMzIyNjQ1LC0yMD
-c3NTczMzg0LC0xOTAyMTQ0MDkxLC03ODgwNjc2MjIsMjIwNTUz
-NjIzXX0=
+eyJoaXN0b3J5IjpbNDAwOTkyMTAwLC05MDAzMjI2NDUsLTIwNz
+c1NzMzODQsLTE5MDIxNDQwOTEsLTc4ODA2NzYyMiwyMjA1NTM2
+MjNdfQ==
 -->
