@@ -15,9 +15,10 @@ The following artifacts needs to be available before the start of the bootcamp -
 
  - PKS plans with atleast one plan that has the ability to deploy K8s clusters with `Allow privilaged` setting enabled.
  - To deploy a K8s cluster use the following steps - 
- - [ ] Get the 
+ 
+ > `om -t [opsmanager_ip/fqdn] -u [username] -p [password] -k credentials --product-name pivotal-container-service --credential-reference .properties.pks_uaa_management_admin_client -t json|jq -r .secret`
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzc1NzMzODQsLTE5MDIxNDQwOTEsLT
-c4ODA2NzYyMiwyMjA1NTM2MjNdfQ==
+eyJoaXN0b3J5IjpbLTkwMDMyMjY0NSwtMjA3NzU3MzM4NCwtMT
+kwMjE0NDA5MSwtNzg4MDY3NjIyLDIyMDU1MzYyM119
 -->
