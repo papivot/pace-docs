@@ -7,14 +7,16 @@ The following artifacts needs to be available before the start of the bootcamp -
 		- Kubectl - After signing into the Pivotal network, the relevent binaries can be downloaded from [here](https://network.pivotal.io/products/pivotal-container-service/#/releases/386533/file_groups/1831)
 		- pks - After signing into the Pivotal network, the relevent binaries can be downloaded from [here](https://network.pivotal.io/products/pivotal-container-service/#/releases/386533/file_groups/1830).
 		- jq -
-		- uaac - this is generally installed as a gem 
-		> `
-		- curl
+		- uaac - this is generally installed as a Ruby gem 
+> `gem install cf-uaac`
+ - [ ] Curl
+
+curl
  - PKS plans with atleast one plan that has the ability to deploy K8s clusters with `Allow privilaged` setting enabled.
  - 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mzg0MTYyNzksLTc4ODA2NzYyMiwyMj
-A1NTM2MjNdfQ==
+eyJoaXN0b3J5IjpbMTA4NTM0NzIwMywtNzg4MDY3NjIyLDIyMD
+U1MzYyM119
 -->
