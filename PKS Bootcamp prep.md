@@ -13,10 +13,10 @@ The following artifacts needs to be available before the start of the bootcamp -
 
 
  - PKS plans with atleast one plan that has the ability to deploy K8s clusters with `Allow privilaged` setting enabled.
- - 
+ - To depoly a K8s cluster use the 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NzA3MTE5NCwtNzg4MDY3NjIyLDIyMD
-U1MzYyM119
+eyJoaXN0b3J5IjpbLTE3NDg1MzE5MTksLTc4ODA2NzYyMiwyMj
+A1NTM2MjNdfQ==
 -->
