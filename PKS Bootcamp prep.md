@@ -84,9 +84,14 @@ large   241118e5-69b2-4ef9-b47f-4d2ab071aff5  Example: This plan will configure 
 
 Use the PKS CLI to create a cluster using one of the above plans - 
 
+>`pks create-cluster gcpcluster00 --external-hostname cluster-1.caracas.cf-app.com  --plan small`
 
+should return 
+```shell
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4NzMzMzk0MCwtOTAwMzIyNjQ1LC0yMD
+eyJoaXN0b3J5IjpbLTYxOTU2Mzk3NSwtOTAwMzIyNjQ1LC0yMD
 c3NTczMzg0LC0xOTAyMTQ0MDkxLC03ODgwNjc2MjIsMjIwNTUz
 NjIzXX0=
 -->
