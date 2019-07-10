@@ -1,7 +1,7 @@
 # Kubernetes fundamentals
 
 ### Requirements
-- Access to a working Kubernetes cluster (Pivotal employees connected thru the VPN can re
+- Access to a working Kubernetes cluster (*Pivotal employees connected thru the VPN can request a PKS environment thru [Toolsmith](https://environments.toolsmiths.cf-app.com/home). Upon a s* 
 - Access to kubectl binary
 
 ## Kubectl fundamentals
@@ -261,6 +261,6 @@ deployment.extensions "k8s-operations" deleted
 The above command should not return any k8s-operations-* pods.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3MjU4NzU2OSwtNjk5NTk5Mjk5LDMzMD
+eyJoaXN0b3J5IjpbLTkxNDY5NDkwMSwtNjk5NTk5Mjk5LDMzMD
 YwODEwLC0yMDU4OTM1NTg4XX0=
 -->
