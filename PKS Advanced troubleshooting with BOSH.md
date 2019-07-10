@@ -118,7 +118,7 @@ Note the Instance ID and the VM CID. Use the Instance ID to ssh into the require
 >bosh -e pcf -d service-instance_47267983-9989-41ce-bc33-905e249b1fbc ssh master/38ed427f-2998-4de0-8906-50e0accb8ae1
 >```
 
-This should return something to this - 
+This should return something similar to this - 
 
 ```shell
 sing environment '10.0.0.5' as user 'director'
