@@ -8,7 +8,7 @@ In this lab/demo, we will show you how to deploy a set of applications using Hel
 3. Show how to interact with an application running on K8s cluster. 
 
 ### Requirements 
-- A working K8s cluster with admin access.
+- A working K8s cluster with admin access. (*Pivotal employees connected thru the VPN can request a PKS environment in GCP thru [Toolsmith](https://environments.toolsmiths.cf-app.com/home). Upon a PKS environment has been created, you can login using the pks cli and create a cluster using an active plan.)*
 
 ## Helm Deployment
 
@@ -734,11 +734,11 @@ Save and exit the vi editor (`:wq!`)
 Browse to the external IP - `http://grafana.[[cluster fqdn]]/login`
 to access your Grafana interface.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTAwNzc5NTgsLTExNzExNTk2MDMsMT
-cwMjQxNjU5OSw2Njg1MTUzMTksLTE0OTU0OTg1MywyMDkwMTg0
-OTk4LC0xMjc3NDQyNTk4LC04NzExMTYwODcsLTE5NDcwNDA2Mz
-gsLTM3NzA4ODY1MiwxNzA3NDA4NTYxLDE2MjM1NzY1NjEsMTUz
-NjYxMTAwOSwxNjkwMjU5MTIzLC0xMTU0ODQ2OTY0LC0xMzAyNz
-M4ODksNzYxMTM2NDMyLC0xODgzODE0NjgzLDkzMDgwNjAxNV19
+eyJoaXN0b3J5IjpbMTc1NzgzMTkxMywtMTE3MTE1OTYwMywxNz
+AyNDE2NTk5LDY2ODUxNTMxOSwtMTQ5NTQ5ODUzLDIwOTAxODQ5
+OTgsLTEyNzc0NDI1OTgsLTg3MTExNjA4NywtMTk0NzA0MDYzOC
+wtMzc3MDg4NjUyLDE3MDc0MDg1NjEsMTYyMzU3NjU2MSwxNTM2
+NjExMDA5LDE2OTAyNTkxMjMsLTExNTQ4NDY5NjQsLTEzMDI3Mz
+g4OSw3NjExMzY0MzIsLTE4ODM4MTQ2ODMsOTMwODA2MDE1XX0=
 
 -->
