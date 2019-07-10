@@ -202,7 +202,7 @@ Look at the above output and try to understand how each operation (step) relates
 
 >`sudo docker images`
 
-Output would be similar to 
+Output will be similar to -
 ```
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 k8soper             0.0.1               414d93beb557        19 minutes ago      144MB
@@ -211,7 +211,7 @@ alpine              latest              055936d39205        4 weeks ago         
 
 #### Step 3 - Push the image to external repository. 
 
-**Note** This process may differ for different external registries. While the process is similar, whereby the Docker daemon needs to authenticate to the external registry first and then push the image to the external registry. The authentication process may vary for each registry. We will be pushing the image to GCR (Google Container Registry) in this example. Pushing images to Harbor will be discussed later in the workshop. 
+**Note:** This process may differ for different external registries. While the process is similar, the Docker daemon needs to authenticate to the external registry first, and then push the image to the external registry. The authentication process may vary for each registry. We will be pushing the image to GCR (Google Container Registry) in this example. Pushing images to Harbor will be discussed later in the workshop. 
 
  - [ ] Authenticate to GCR
 
@@ -262,7 +262,7 @@ k8soper             0.0.1               414d93beb557        About an hour ago   
 alpine              latest              055936d39205        4 weeks ago         5.53MB
 ```
 
-Tag the image with the appropriate registry specific tags. For GCR we will use the format gcr.io / [username] - 
+Tag the image with the appropriate registry specific tags. For GCR, we will use the format gcr.io / [username] - 
 
 >`sudo docker tag 414d93beb557 gcr.io/[username]/k8soper:0.0.1`
 
@@ -339,6 +339,6 @@ Deleted: sha256:f1b5933fe4b5f49bbe8258745cf396afe07e625bdab3168e364daf7c956b6b81
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDE3Nzg3OTYsLTE3NjM3NTYwNjUsMz
-YyOTQ2MTE3XX0=
+eyJoaXN0b3J5IjpbLTE1MTg5ODY5NiwtMTc2Mzc1NjA2NSwzNj
+I5NDYxMTddfQ==
 -->
