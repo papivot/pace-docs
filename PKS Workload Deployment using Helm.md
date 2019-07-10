@@ -8,7 +8,6 @@ In this lab/demo, we will show you how to deploy a set of applications using Hel
 3. Show how to interact with an application running on K8s cluster. 
 
 ### Requirements 
-
 - A working K8s cluster with admin access.
 
 ## Helm Deployment
@@ -735,10 +734,11 @@ Save and exit the vi editor (`:wq!`)
 Browse to the external IP - `http://grafana.[[cluster fqdn]]/login`
 to access your Grafana interface.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzExNTk2MDMsMTcwMjQxNjU5OSw2Nj
-g1MTUzMTksLTE0OTU0OTg1MywyMDkwMTg0OTk4LC0xMjc3NDQy
-NTk4LC04NzExMTYwODcsLTE5NDcwNDA2MzgsLTM3NzA4ODY1Mi
-wxNzA3NDA4NTYxLDE2MjM1NzY1NjEsMTUzNjYxMTAwOSwxNjkw
-MjU5MTIzLC0xMTU0ODQ2OTY0LC0xMzAyNzM4ODksNzYxMTM2ND
-MyLC0xODgzODE0NjgzLDkzMDgwNjAxNV19
+eyJoaXN0b3J5IjpbLTE2OTAwNzc5NTgsLTExNzExNTk2MDMsMT
+cwMjQxNjU5OSw2Njg1MTUzMTksLTE0OTU0OTg1MywyMDkwMTg0
+OTk4LC0xMjc3NDQyNTk4LC04NzExMTYwODcsLTE5NDcwNDA2Mz
+gsLTM3NzA4ODY1MiwxNzA3NDA4NTYxLDE2MjM1NzY1NjEsMTUz
+NjYxMTAwOSwxNjkwMjU5MTIzLC0xMTU0ODQ2OTY0LC0xMzAyNz
+M4ODksNzYxMTM2NDMyLC0xODgzODE0NjgzLDkzMDgwNjAxNV19
+
 -->
