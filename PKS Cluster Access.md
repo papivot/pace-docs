@@ -13,7 +13,7 @@
 
 For a user, a kubeconfig file is generally located in their #HOME/.kube folder. It is called `config` by default. The `kubectl` command-line tool uses kubeconfig files to find the information it needs to choose a cluster and communicate with the API server of a cluster. More details on kubeconfig can be found [here](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/)
 
-A kubeconfig file is generally made up of four sections - clusters, context, users and current-context - 
+A kubeconfig file is generally made up of four sections: clusters, context, users and current-context - 
 
 ```shell
 apiVersion: v1
@@ -42,7 +42,7 @@ clusters:
 ### Users
 
 The users section contains an array with information specific to the K8s user with access to cluster artifacts and associated auth information. This can vary depending on the auth provider. More details can be found [here](https://kubernetes.io/docs/reference/access-authn-authz/controlling-access/) - 
-In a PKS environment, a sample user definition could be something similar to this. 
+In a PKS environment, a sample user definition could be something similar to this - 
 
 ```shell
 users:
@@ -74,7 +74,7 @@ contexts:
 ```
 ### Current-context
 
-The current-context specifies which context is currently enforced and hence which cluster should the kubectl commands connect to and also which user to use for the connection to the cluster. 
+The current-context specifies which context is currently enforced and, thus, which cluster should the kubectl commands connect to. It also specifies which user to use for the connection to the cluster. 
 
 ```shell
 current-context: gcpcluster00
@@ -119,7 +119,7 @@ The following commands are executed from the OpsMan
 > bosh -e gcp -d service-instance_[instanceid_of_the_cluster] vms
 > bosh -e gcp -d service-instance_[instanceid_of_the_cluster] ssh master/[master_vm_id]
 
-Once logged in to the master vm execute the following - 
+Once logged in to the master vm, execute the following - 
 > ```shell
 > cd /tmp
 > openssl genrsa -out admin.key 4096
@@ -228,7 +228,7 @@ metadata:
  secrets:
 - name: default-token-mcf5p
 ```
-Use the secrets name to get the token -
+Use the secrets' name to get the token -
 
 > `kubectl get secrets default-token-mcf5p -n default  -o json |jq -r '.data.token'|base64 -D`
 
@@ -237,11 +237,11 @@ Once the Token has been retrieved, you can generate the kubeconfig using the pro
  - User is default
  - Token is the base64 decoded value in the last step. 
 
-**Note**: For regular use on non-OIDC enabled PKS clusters, once you are logged into PKS api, simply execute - 
+**Note**: For regular use on non-OIDC enabled PKS clusters, simply execute - 
 
 > `pks get-credentials [pks_clustername]`
 
-This creates the necessary service accounts, ClusterRole (if needed), ClusterRoleBinding, secrets with tokens and the required kubeconfig file leveraging the token. 
+once you are logged into PKS api. This creates the necessary service accounts, ClusterRole (if needed), ClusterRoleBinding, secrets with tokens and the required kubeconfig file leveraging the token. 
  
 ### OpenID Connect Tokens
 
@@ -262,14 +262,14 @@ The following configuration gets added to the K8S apiserver when using **UAA** a
 
 *Example [ This is for demonstration purpose only. This is specific to PKS and may vary for other K8s distributions] -* 
 
-To provide OIDC token based authentication, the flag `Enable UAA as OIDC provider` has to be checked in the PKS tile in the UAA section. Doing so will configure created clusters as well as new clusters to use UAA as the OIDC provider. Once the setting has been enabled, the configuration has to be saved and changes applied. 
+To provide OIDC token based authentication, the flag `Enable UAA as OIDC provider` has to be checked in the PKS tile in the UAA section. Doing so will configure created clusters as well as new clusters to use UAA as the OIDC provider. Once the setting has been enabled, the configuration has to be saved and changes must be applied. 
 
 Once OIDC is enabled, a PKS admin can execute 
 >`pks get-credentials [clustername]`
 
 to get access to the cluster. During this process, besides generating the kubeconfig file, the CLI also creates a ClusterRoleBinding for the admin called `[username]-cluster-admin`
 
-Create a yaml file - admin.yaml - with the following content
+Create a yaml file - admin.yaml - with the following content-
 
 ```shell
 # admin.yaml
@@ -296,7 +296,7 @@ Once the necessary ClusterRoleBinding/RoleBinding has been created, you can gene
  - PKS_API is the PKS API endpoint [e.g. api.pks.domain.com]
  - MASTER_API is the value of `Kubernetes Master Host:Kubernetes Master port` from the `pks cluster [clustername]` output. 
 
-For a first time LDAP user, upon a successful login, relevent entries are made in the UAA database. 
+For a first time LDAP user, relevent entries are made in the UAA database upon a successful login. 
 
 ##### Cleanup 
 Revert back to the PKS admin user - 
@@ -349,16 +349,16 @@ Successfully mapped pks.clusters.admin to cn=cluster_admin,ou=Users,o=5d09126b7c
 > uaac group map --name pks.clusters.manage cn=cluster_manager,ou=Users,o=5d09126b7cb23249d327bffe,dc=domain,dc=com
 > ```
 
-should return 
+should return -
 
 ```shell
 Successfully mapped pks.clusters.manage to cn=cluster_manager,ou=Users,o=5d09126b7cb23249d327bffe,dc=domain,dc=com for origin ldap
 ```
-To validate the mapping has been successfully completed check the group mapping 
+To validate the mapping has been successfully completed, check the group mapping 
 
 > `uaac group mappings`
 
-should return similar to this - 
+should return something similar to this - 
 
 ```shell
   resources
@@ -375,7 +375,7 @@ should return similar to this -
   totalresults: 3
 ```
 
-To validate if user login is working use pks cli login to authenticate an LDAP user - 
+To validate if the user login is working, use pks cli login to authenticate an LDAP user - 
 
 > `pks login -k -a api.pks.domain.com -u [ldapuser] -p [password]`
 
