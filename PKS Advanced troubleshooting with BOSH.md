@@ -37,7 +37,7 @@ In this example, you can use the `gcloud` command and authentication to SSH to y
 - Login to the `bosh` cli using the username, and password found earlier.
 >`bosh -e pcf login`
 
-- An output similar to this indicates a successful login 
+- An output similar to this indicates a successful login - 
 ```shell
 Using environment '10.0.0.5'
  
@@ -148,11 +148,11 @@ See "man sudo_root" for details.
 master/38ed427f-2998-4de0-8906-50e0accb8ae1:~$
 ```
 
-Congratulations !!! You have logged into a BOSH deployed K8s node.
+Congratulations! You have logged into a BOSH deployed K8s node.
 
 ### SCP files into K8s VMs
 
-At times you may need to transfer some files to the K8s nodes that are managed by BOSH. This can be achieved similar to the BOSH CLI ssh command. Execute the following command to copy a file [.bash_history] to the /tmp folder in one of the master nodes. 
+At times, you may need to transfer some files to the K8s nodes that are managed by BOSH. This can be achieved by methods similar to the BOSH CLI ssh command. Execute the following command to copy a file [.bash_history] to the /tmp folder in one of the master nodes. 
 
 > `bosh -e pcf -d service-instance_47267983-9989-41ce-bc33-905e249b1fbc scp .bash_history master/38ed427f-2998-4de0-8906-50e0accb8ae1:/tmp`
 
@@ -222,7 +222,7 @@ Succeeded
 ```
 #### Events
 
-- To fetch all events that were generated for the deployment, execute the following
+- To fetch all events that were generated for the deployment, execute the following:
 
 > `bosh -e pcf -d service-instance_47267983-9989-41ce-bc33-905e249b1fbc events`
 
@@ -242,7 +242,7 @@ To view details of an event, execute the event command with the event_id as a pa
 
 > `bosh -e pcf -d service-instance_47267983-9989-41ce-bc33-905e249b1fbc event 4180`
 
-should retune something similar to this - 
+That should return something similar to this - 
 
 ```shell
 Using environment '10.0.0.5' as user 'director'
@@ -299,7 +299,7 @@ To delete such a deployment, you can leverage the BOSH CLI to clean up, similar 
 
 > `bosh -e pcf -d service-instance_47267983-9989-41ce-bc33-905e249b1fbc delete-deployment`
 
-Once done, clean up the reference in PKS database by execute 
+Once done, clean up the reference in PKS database by executing 
 
 > `pks delete-cluster [cluster_name]` 
 
