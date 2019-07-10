@@ -18,11 +18,11 @@ The best and the easiest way to login to the BOSH director is to login via the O
  -  Navigate to the Pivotal Ops Manager FQDN in your browser.
  - Log in.
  - Click on the Pivotal Director Tile (vSphere). 
- - Click the tab labeled  `status`. Here is the list of VMs deployed by the platform and the current status.
+ - Click the tab labeled  `status`. You will find the list of VMs deployed by the platform and their current status here.
  - Note the IP of the  `Ops Manager Director`  job down: this is the Director. The director has the knowledge of all kubernetes clusters deployed.
- - Click the tab labeled  `credentials`. Here is the Pivotal Director credentials that the platform auto generates when deploying tiles.
+ - Click the tab labeled  `credentials`. You will find the Pivotal Director credentials that the platform auto generates when deploying tiles here.
  - Click  `Link to Credential`  under Director Credentials.
- - Note the  `identity`, and  `password`  down. This is the username and password we will use to connect to the Director.
+ - Write the  `identity`, and  `password`  down. This is the username and password we will use to connect to the Director.
  - Use SSH and the password set when deploying Pivotal Ops Manager, SSH to the Ops Manager VM. You can SSH into the Ops Manager machine using your favorite IaaS supported method. 
  
  > `ssh ubuntu@<PIVOTAL-OPS-MANAGER-FQDN`
@@ -304,9 +304,9 @@ Once done, clean up the reference in PKS database by execute
 > `pks delete-cluster [cluster_name]` 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMTE0MzgzMiwtMTk3MTgxNzk5MywxMj
-MzNTE0ODgxLDczNzU4MDg0OSw1NzM2NjQ1MzcsMjA5NjQyNDE0
-NiwxMjg2ODEwOTAwLC0xMTkxOTQ5MTksNTg3OTYyNzg0LC0yMT
-Q5MTEwOSwtNzAzMjEzMjI0LC02NzY1MDg1MDIsMTA1NjI1OTYw
-NSwxNzMwODEwMSwtMTU4MTk4Nzk0NCwtMTg0MzQ1MjAyN119
+eyJoaXN0b3J5IjpbNjczODk2NDU0LC0xOTcxODE3OTkzLDEyMz
+M1MTQ4ODEsNzM3NTgwODQ5LDU3MzY2NDUzNywyMDk2NDI0MTQ2
+LDEyODY4MTA5MDAsLTExOTE5NDkxOSw1ODc5NjI3ODQsLTIxND
+kxMTA5LC03MDMyMTMyMjQsLTY3NjUwODUwMiwxMDU2MjU5NjA1
+LDE3MzA4MTAxLC0xNTgxOTg3OTQ0LC0xODQzNDUyMDI3XX0=
 -->
