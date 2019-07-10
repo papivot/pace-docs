@@ -174,7 +174,7 @@ Congratulations! You executed your first pod in a Kubernetes cluster.
 
 #### Step 3 - View the POD logs
 
-Using the name of the POD retrieved in Step2, run the following command - 
+Using the name of the POD retrieved in Step 2, run the following command - 
 
 > `kubectl logs k8s-operations-6f97c49687-rbcqv -n default`
 
@@ -237,7 +237,7 @@ to exit the shell prompt.
 
 #### Step 5 - Cleanup
 
-Using the name of the POD retrieved in step2, run the following command -
+Using the name of the POD retrieved in Step 2, run the following command -
 
 > `kubectl delete pods k8s-operations-6f97c49687-ghmwf -n default`
 
@@ -246,7 +246,7 @@ This should delete the running pod with an output similar to this -
 pod "k8s-operations-6f97c49687-ghmwf" deleted
 ```
 
-`Kubectl get pods` will show that another instance of the pod has been created. This is due to the fact that there is a higher level K8s parent object called deployment that is the controlling the child POD. To perform a complete cleanup, the top level object has to be destroyed to prevent the POD to be spawned once again. 
+`Kubectl get pods` will show that another instance of the pod has been created. This is due to the fact that there is a higher level K8s parent object called deployment that is the controlling the child POD. To perform a complete cleanup, the top level object has to be destroyed to prevent the POD from spawning once again. 
 
 To do so, execute the following command - 
 
@@ -261,6 +261,6 @@ deployment.extensions "k8s-operations" deleted
 should no longer have a k8s-operations-* pod.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzMDM5NTgzNCwzMzA2MDgxMCwtMjA1OD
+eyJoaXN0b3J5IjpbLTY5OTU5OTI5OSwzMzA2MDgxMCwtMjA1OD
 kzNTU4OF19
 -->
