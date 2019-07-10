@@ -19,7 +19,7 @@ The best and the easiest way to login to the BOSH director is to login via the O
  - Log in.
  - Click on the Pivotal Director Tile (vSphere). 
  - Click the tab labeled  `status`. Here is the list of VMs deployed by the platform and the current status.
- - Note the IP of the  `Ops Manager Director`  job down; this is the Director. The director has the knowledge of all kubernetes clusters deployed.
+ - Note the IP of the  `Ops Manager Director`  job down: this is the Director. The director has the knowledge of all kubernetes clusters deployed.
  - Click the tab labeled  `credentials`. Here is the Pivotal Director credentials that the platform auto generates when deploying tiles.
  - Click  `Link to Credential`  under Director Credentials.
  - Note the  `identity`, and  `password`  down. This is the username and password we will use to connect to the Director.
@@ -304,7 +304,7 @@ Once done, clean up the reference in PKS database by execute
 > `pks delete-cluster [cluster_name]` 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5NTM2MzcxOSwtMTk3MTgxNzk5MywxMj
+eyJoaXN0b3J5IjpbLTYyMTE0MzgzMiwtMTk3MTgxNzk5MywxMj
 MzNTE0ODgxLDczNzU4MDg0OSw1NzM2NjQ1MzcsMjA5NjQyNDE0
 NiwxMjg2ODEwOTAwLC0xMTkxOTQ5MTksNTg3OTYyNzg0LC0yMT
 Q5MTEwOSwtNzAzMjEzMjI0LC02NzY1MDg1MDIsMTA1NjI1OTYw
