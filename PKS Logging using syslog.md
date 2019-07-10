@@ -68,7 +68,7 @@ Navigate to your Syslog dashboard and look for relevant logs in your Syslog dash
 
 To enable logging of the PKS control plane, within Opsman UI, navigate to the PKS tile -> `Settings` -> `Logging`.
 
-The following information needs to be input - 
+The following information needs to be entered - 
 
 `Enable Syslog for PKS?` - `Yes`
 `Address` -`logs3.papertrailapp.com` 
@@ -86,7 +86,7 @@ Navigate to your Syslog dashboard and look for relevant logs in your Syslog dash
 
 To enable logging of the BOSH director and its components, within Opsman UI, navigate to the Bosh Director tile -> `Settings` -> `Syslog`.
 
-The following information needs to be input - 
+The following information needs to be entered - 
 
 `Do you want to configure Syslog for Bosh Director?` - `Yes`
 `Address` -`logs3.papertrailapp.com` 
