@@ -49,34 +49,40 @@ Context: admin, from client admin
 ```
 Use the UAAC cli to add a user -
 
->`$ uaac user add [username] --emails [nverma@email.com] -p [password]`
+>`$ uaac user add [username] --emails [username@email.com] -p [password]`
 
 ```bash
 user account successfully added
 ```
 Add the user to thepks.cluster.admin group -
-> `uaac member add pks.clusters.admin [nverma]`
+> `uaac member add pks.clusters.admin [username]`
 
 ```
 success
 ```
 Use the PKS CLI to login to the PKS endpoint using the newly created user
 
-> `pks login -a [api.pks.fqdn] -u [nverma] -k`
+> `pks login -a [api.pks.fqdn] -u [username] -k`
 
+```bash
 Password: ********
 API Endpoint: api.pks.fqdn
-User: nverma
+User: username
+```
 
-$ pks plans
+Use the PKS CLI to view the available plans - 
 
+>`$ pks plans`
+
+Should return something similar - 
+```bash
 Name    ID                                    Description
 small   8A0E21A8-8072-4D80-B365-D1F502085560  Example: This plan will configure a lightweight kubernetes cluster. Not recommended for production workloads.
 medium  58375a45-17f7-4291-acf1-455bfdc8e371  Example: This plan will configure a medium sized kubernetes cluster, suitable for more pods.
 large   241118e5-69b2-4ef9-b47f-4d2ab071aff5  Example: This plan will configure a large kubernetes cluster for resource heavy workloads, or a high number of workloads.
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk4MTg2OTQyLC05MDAzMjI2NDUsLTIwNz
-c1NzMzODQsLTE5MDIxNDQwOTEsLTc4ODA2NzYyMiwyMjA1NTM2
-MjNdfQ==
+eyJoaXN0b3J5IjpbLTM3NjcxNjc5MiwtOTAwMzIyNjQ1LC0yMD
+c3NTczMzg0LC0xOTAyMTQ0MDkxLC03ODgwNjc2MjIsMjIwNTUz
+NjIzXX0=
 -->
