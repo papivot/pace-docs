@@ -6,7 +6,7 @@ Besides the normal troubleshooting that can be performed using the Opsman UI and
 *Note: A number of these are advanced troubleshooting operations and should only be performed by experienced customers with the help of Pivotal Support.*  
 
 ### Requirements 
-- Access to Pivotal Ops Manager UI with PKS tile deployed
+- Access to Pivotal Ops Manager UI with PKS tile deployed (*Pivotal employees connected thru the VPN can request a PKS environment in GCP thru [Toolsmith](https://environments.toolsmiths.cf-app.com/home). Upon a PKS environment has been created, you can login using the pks cli and create a cluster using an active plan.)*
 - SSH Access to Pivotal Ops Manager
 - A K8s cluster deployed in PKS
 
@@ -304,10 +304,10 @@ Once done, clean up the reference in PKS database by executing
 > `pks delete-cluster [cluster_name]` 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDMyMjc0OTYsLTE5NzE4MTc5OTMsMT
-IzMzUxNDg4MSw3Mzc1ODA4NDksNTczNjY0NTM3LDIwOTY0MjQx
-NDYsMTI4NjgxMDkwMCwtMTE5MTk0OTE5LDU4Nzk2Mjc4NCwtMj
-E0OTExMDksLTcwMzIxMzIyNCwtNjc2NTA4NTAyLDEwNTYyNTk2
-MDUsMTczMDgxMDEsLTE1ODE5ODc5NDQsLTE4NDM0NTIwMjddfQ
-==
+eyJoaXN0b3J5IjpbLTMyNjYwNDc2NywtMTU0MzIyNzQ5NiwtMT
+k3MTgxNzk5MywxMjMzNTE0ODgxLDczNzU4MDg0OSw1NzM2NjQ1
+MzcsMjA5NjQyNDE0NiwxMjg2ODEwOTAwLC0xMTkxOTQ5MTksNT
+g3OTYyNzg0LC0yMTQ5MTEwOSwtNzAzMjEzMjI0LC02NzY1MDg1
+MDIsMTA1NjI1OTYwNSwxNzMwODEwMSwtMTU4MTk4Nzk0NCwtMT
+g0MzQ1MjAyN119
 -->
