@@ -16,7 +16,7 @@ Besides the normal troubleshooting that can be performed using the Opsman UI and
 The best and the easiest way to login to the BOSH director is to login via the Ops Manager.  To complete the process -
 
  -  Navigate to the Pivotal Ops Manager FQDN in your browser.
- - Login.
+ - Log in.
  - Click on the Pivotal Director Tile (vSphere). 
  - Click the tab labeled  `status`. Here is the list of VMs deployed by the platform and the current status.
  - Note the IP of the  `Ops Manager Director`  job down, this is the Director. The director has the knowledge of all kubernetes clusters deployed.
@@ -304,9 +304,9 @@ Once done, clean up the reference in PKS database by execute
 > `pks delete-cluster [cluster_name]` 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0MDc2MDQzMSwtMTk3MTgxNzk5MywxMj
-MzNTE0ODgxLDczNzU4MDg0OSw1NzM2NjQ1MzcsMjA5NjQyNDE0
-NiwxMjg2ODEwOTAwLC0xMTkxOTQ5MTksNTg3OTYyNzg0LC0yMT
-Q5MTEwOSwtNzAzMjEzMjI0LC02NzY1MDg1MDIsMTA1NjI1OTYw
-NSwxNzMwODEwMSwtMTU4MTk4Nzk0NCwtMTg0MzQ1MjAyN119
+eyJoaXN0b3J5IjpbOTExMzY3MTkzLC0xOTcxODE3OTkzLDEyMz
+M1MTQ4ODEsNzM3NTgwODQ5LDU3MzY2NDUzNywyMDk2NDI0MTQ2
+LDEyODY4MTA5MDAsLTExOTE5NDkxOSw1ODc5NjI3ODQsLTIxND
+kxMTA5LC03MDMyMTMyMjQsLTY3NjUwODUwMiwxMDU2MjU5NjA1
+LDE3MzA4MTAxLC0xNTgxOTg3OTQ0LC0xODQzNDUyMDI3XX0=
 -->
