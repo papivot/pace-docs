@@ -10,7 +10,7 @@ The following artifacts needs to be available before the start of the bootcamp -
 > `gem install cf-uaac`
  - [ ] Curl
  - [ ]  jq
- - [ ] om 
+ - [ ] om - The required binary can be deployed [here](https://github.com/pivotal-cf/om/releases)
 
 
  - PKS plans with atleast one plan that has the ability to deploy K8s clusters with `Allow privilaged` setting enabled.
@@ -18,6 +18,6 @@ The following artifacts needs to be available before the start of the bootcamp -
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTQ0NzQ5MjAsLTc4ODA2NzYyMiwyMj
+eyJoaXN0b3J5IjpbLTE5MDIxNDQwOTEsLTc4ODA2NzYyMiwyMj
 A1NTM2MjNdfQ==
 -->
