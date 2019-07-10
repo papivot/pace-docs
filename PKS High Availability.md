@@ -48,7 +48,7 @@ fluent-bit-2r4d8                        0/3     Terminating   0          2d22h  
 fluent-bit-nxz94                        3/3     Running       0          2d22h   10.200.67.10   vm-4376c6a8-fcfb-41a2-6ee9-4093de299e97   <none>           <none>
 fluent-bit-qcgj8                        3/3     Running       0          57m     10.200.3.2     vm-1391f084-4af3-47c6-613d-03e5f3b8abb3   <none>           <none>
 ```
-Within a few seconds a new pod get started - 
+Within a few seconds a new pod gets started - 
 
 ```shell
 Every 2.0s: kubectl get pods -o wide -n pks-system                                                                                 Navneets-MBP.navlab.io: Fri Jun 21 16:18:59 2019
@@ -115,7 +115,7 @@ kube-system   coredns-54586579f6-t9dwp                1/1     Running     0     
 ...
 ```
 
-- Within a few minutes the kubectl get nodes window will show a new node has joined the cluster and is taking workloads -
+- Within a few minutes, the kubectl get nodes window will show a new node has joined the cluster and is taking workloads -
 
 ```shell
 Every 2.0s: kubectl get nodes -o wide                                                                                              Navneets-MBP.navlab.io: Fri Jun 21 15:24:11 2019
@@ -128,7 +128,7 @@ vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   Ready    <none>   4d      v1.13.5   10
 
 ## HA of K8s services
 
-- Set up a session to watch the nodes and their status 
+- Set up a session to watch the nodes and their status -
 > ` watch -d kubectl get nodes -o wide`
 
 ```shell
