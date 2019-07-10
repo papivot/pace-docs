@@ -75,14 +75,18 @@ Use the PKS CLI to view the available plans -
 >`$ pks plans`
 
 Should return something similar - 
-```bash
+```shell
 Name    ID                                    Description
 small   8A0E21A8-8072-4D80-B365-D1F502085560  Example: This plan will configure a lightweight kubernetes cluster. Not recommended for production workloads.
 medium  58375a45-17f7-4291-acf1-455bfdc8e371  Example: This plan will configure a medium sized kubernetes cluster, suitable for more pods.
 large   241118e5-69b2-4ef9-b47f-4d2ab071aff5  Example: This plan will configure a large kubernetes cluster for resource heavy workloads, or a high number of workloads.
 ```
+
+Use the PKS CLI to create a cluster using one of the above plans - 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3NjcxNjc5MiwtOTAwMzIyNjQ1LC0yMD
+eyJoaXN0b3J5IjpbMTU4NzMzMzk0MCwtOTAwMzIyNjQ1LC0yMD
 c3NTczMzg0LC0xOTAyMTQ0MDkxLC03ODgwNjc2MjIsMjIwNTUz
 NjIzXX0=
 -->
