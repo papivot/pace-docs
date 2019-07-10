@@ -16,10 +16,13 @@ The following artifacts needs to be available before the start of the bootcamp -
  - PKS plans with atleast one plan that has the ability to deploy K8s clusters with `Allow privilaged` setting enabled.
  - To deploy a K8s cluster use the following steps - 
  
-```bash
+>``
 $ UAA_PWD=`om -t [opsman_fqdn] -u [opsman_userid] -p [opsman_password] -k credentials --product-name pivotal-container-service --credential-reference .properties.pks_uaa_management_admin_client -t json|jq -r .secret`
+``
 
-$ echo $UAA_PWD #should be a non empty string
+> `$ echo $UAA_PWD`
+
+hould be a non empty string
 MgHXgeuYBaTddbAuY1bklOmf3PV-nCZ-
 
 $ uaac target https://[api.pks.fqdn]:8443 --skip-ssl-validation
@@ -54,7 +57,7 @@ medium  58375a45-17f7-4291-acf1-455bfdc8e371  Example: This plan will configure 
 large   241118e5-69b2-4ef9-b47f-4d2ab071aff5  Example: This plan will configure a large kubernetes cluster for resource heavy workloads, or a high number of workloads.
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc5NjQ5NDE2LC05MDAzMjI2NDUsLTIwNz
-c1NzMzODQsLTE5MDIxNDQwOTEsLTc4ODA2NzYyMiwyMjA1NTM2
-MjNdfQ==
+eyJoaXN0b3J5IjpbMTQzODc3MDkxMCwtOTAwMzIyNjQ1LC0yMD
+c3NTczMzg0LC0xOTAyMTQ0MDkxLC03ODgwNjc2MjIsMjIwNTUz
+NjIzXX0=
 -->
