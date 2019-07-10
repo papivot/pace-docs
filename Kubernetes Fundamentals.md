@@ -19,8 +19,8 @@ Client Version: version.Info{Major:"1", Minor:"14", GitVersion:"v1.14.3", GitCom
 The connection to the server localhost:8080 was refused - did you specify the right host or port?
 ```
 
-else
-it would be similar to this -
+
+or it would be similar to this -
 ```shell
 Client Version: version.Info{Major:"1", Minor:"14", GitVersion:"v1.14.3", GitCommit:"5e53fd6bc17c0dec8434817e69b04a25d8ae0ff0", GitTreeState:"clean", BuildDate:"2019-06-06T01:44:30Z", GoVersion:"go1.12.5", Compiler:"gc", Platform:"darwin/amd64"}
 Server Version: version.Info{Major:"1", Minor:"13", GitVersion:"v1.13.5", GitCommit:"2166946f41b36dea2c4626f90a77706f426cdea2", GitTreeState:"clean", BuildDate:"2019-03-25T15:19:22Z", GoVersion:"go1.11.5", Compiler:"gc", Platform:"linux/amd64"}
@@ -170,11 +170,11 @@ metadata:
 ...
 ```
 
-Congratulations!!! You executed your first pod in a Kubernetes cluster. 
+Congratulations! You executed your first pod in a Kubernetes cluster. 
 
 #### Step 3 - View the POD logs
 
-Using the name of the POD retrieved in step2, run the following command - 
+Using the name of the POD retrieved in Step2, run the following command - 
 
 > `kubectl logs k8s-operations-6f97c49687-rbcqv -n default`
 
@@ -261,6 +261,6 @@ deployment.extensions "k8s-operations" deleted
 should no longer have a k8s-operations-* pod.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyNDI2NDI5NCwzMzA2MDgxMCwtMjA1OD
+eyJoaXN0b3J5IjpbMTgzMDM5NTgzNCwzMzA2MDgxMCwtMjA1OD
 kzNTU4OF19
 -->
