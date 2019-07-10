@@ -25,16 +25,21 @@ $ UAA_PWD=`om -t [opsman_fqdn] -u [opsman_userid] -p [opsman_password] -k creden
 Should output a non empty string for e.g.
 `MgHXgeuYBaTddbAuY1bklOmf3PV-nCZ-`
 
+Use the UAAC cli to connect to the PKS API UAA endpoint
+
 > `uaac target https://[api.pks.fqdn]:8443 --skip-ssl-validation`
 
+should return 
 ```bash
 Unknown key: Max-Age = 86400
 
 Target: https://[api.pks.fqdn]:8443
 ```
+Authenticate using the UAAC Cli
 
 > `uaac token client get admin -s $UAA_PWD`
 
+should return -
 ```bash
 Unknown key: Max-Age = 86400
 
@@ -42,8 +47,10 @@ Successfully fetched token via client credentials grant.
 Target: https://[api.pks.fqdn]:8443
 Context: admin, from client admin
 ```
+Use the UAA
 
-$ uaac user add [nverma] --emails [nverma@email.com] -p [password]
+>`$ uaac user add [nverma] --emails [nverma@email.com] -p [password]`
+
 user account successfully added
 
 $ uaac member add pks.clusters.admin [nverma]
@@ -63,7 +70,7 @@ medium  58375a45-17f7-4291-acf1-455bfdc8e371  Example: This plan will configure 
 large   241118e5-69b2-4ef9-b47f-4d2ab071aff5  Example: This plan will configure a large kubernetes cluster for resource heavy workloads, or a high number of workloads.
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjEwMTAwODQsLTkwMDMyMjY0NSwtMj
-A3NzU3MzM4NCwtMTkwMjE0NDA5MSwtNzg4MDY3NjIyLDIyMDU1
-MzYyM119
+eyJoaXN0b3J5IjpbMTczNTE5NTc5LC05MDAzMjI2NDUsLTIwNz
+c1NzMzODQsLTE5MDIxNDQwOTEsLTc4ODA2NzYyMiwyMjA1NTM2
+MjNdfQ==
 -->
