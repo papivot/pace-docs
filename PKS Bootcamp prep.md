@@ -8,9 +8,10 @@ The following artifacts needs to be available before the start of the bootcamp -
 		- jq
 		- uaac
 		- curl
- - PKS plansAbility to deploy K8s clusters using the PKS plans. 
+ - PKS plans with atleast one plan that has the ability to deploy K8s clusters with `Allow privilaged` setting enabled.
+ - 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDgwNTczMF19
+eyJoaXN0b3J5IjpbLTEwMjgwOTc3OTBdfQ==
 -->
