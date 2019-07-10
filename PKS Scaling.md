@@ -9,18 +9,18 @@
 
 ## Node Scaling in PKS
 
-Using the PKS CLI, login to the PKS API endpoint
+Using the PKS CLI, log in to the PKS API endpoint-
 
 > `pks login -k -a api.pks.domain.com -u userid`                                                              
 
-Provide the password and login
+Provide the password and login.
 
 ```shell
 Password: ********
 API Endpoint: api.pks.domain.com
 User: userid
 ```
-Get the details of the cluster that needs to be scaled out, for example - 
+Get the details of the cluster that needs to be scaled out. For example - 
 
 > `pks cluster gcpcluster00 `                                                                                                        
 
@@ -75,7 +75,7 @@ Last Action State:        in progress
 Last Action Description:  Instance update in progress
 ...
 ```
-Within a few mins, the status should change to succeeded - 
+Within a few mins, the status should change to 'succeeded' - 
 
 ```shell
 Name:                     gcpcluster00
@@ -98,15 +98,15 @@ vm-4376c6a8-fcfb-41a2-6ee9-4093de299e97   Ready    <none>   6d21h   v1.13.5
 vm-d3a0741d-bc56-4767-4434-95f61922ef2e   Ready    <none>   9m24s   v1.13.5
 vm-ff5ccd32-6fd8-43f3-6849-9d56ba679784   Ready    <none>   6d21h   v1.13.5
 ```
-**Note** Using the options provided in PKS CLI, you can build automation around the node scaling function. PKS CLI can be integrated with performance tools to scale up (and down) based on node usage.  
+**Note**: Using the options provided in PKS CLI, you can build automation around the node scaling function. PKS CLI can be integrated with performance tools to scale up (and down) based on node usage.  
 
-**Cleanup** - Reduce the cluster node count back to 3.
+**Cleanup**: - Reduce the cluster node count back to 3.
 
 >`pks update-cluster gcpcluster00 --num-nodes 3`
 
 ## Pod Scaling in Kubernetes
 
-The demo provided here based on the autoscaling example provided [here](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/)
+The demo provided here is based on the autoscaling example provided [here](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/)
 
 Make sure you have Kubectl admin access to the K8s cluster. 
 
@@ -116,7 +116,7 @@ Run the below command to start a modified php-apache deployment using the hpa-ex
 > kubectl run php-apache --image=k8s.gcr.io/hpa-example --requests=cpu=200m --expose --port=80
 > ```
 
-Should give an output similar to this - 
+should give an output similar to this - 
 
 ```shell
 service/php-apache created
@@ -127,7 +127,7 @@ Check the pod deployed as part of this deployment -
 
 > `kubectl get pods`
 
-Should output one pod running. 
+should output one pod running. 
 
 ```shell
 NAME                          READY   STATUS    RESTARTS   AGE
@@ -149,7 +149,7 @@ Get the hpa status -
 
 > `kubectl get hpa` 
 
-Should display the following output - 
+should display the following output - 
 
 ```shell
 NAME         REFERENCE               TARGETS   MINPODS   MAXPODS   REPLICAS   AGE
@@ -160,7 +160,7 @@ Now, launch a busybox pod that will be used to connect to the php-apache pod (ex
 
 > `kubectl run -i --tty load-generator --image=busybox /bin/sh`
 
-Should give an output -
+should give an output -
 
 ```shell
 If you don't see a command prompt, try pressing enter.
@@ -181,17 +181,17 @@ In the original window, execute the following command in the load-generator pod'
 
 > `while true; do wget -q -O- http://php-apache.default.svc.cluster.local; done`
 
-This should start generating the load and you will see output similar to this -
+This should start generating the load, and you will see output similar to this -
 
 ```
 OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!O
 ...
 ```
-In the second window check the hpa -
+In the second window, check the hpa -
 
 > `kubectl get hpa`
 
-Within a few mins, the load generated would have triggerd additional replica pods - 
+Within a few minutes, the load generated will trigger additional replica pods - 
 
 > `kubectl get hpa`
 
@@ -203,7 +203,7 @@ php-apache   Deployment/php-apache   480%/50%   1         10        8          2
 Checking the number of pods -
 > `kubectl get pods `
 
-should give an output similar to this with upto 10 php-apache pods created.
+should give an output similar to this with up to 10 php-apache pods created.
 ```shell                                                                                                                
 NAME                              READY   STATUS    RESTARTS   AGE
 load-generator-557649ddcd-b6fhh   1/1     Running   0          12m
@@ -224,8 +224,8 @@ This quick demo demonstrates the horizontal scaling of pods within K8s.
 **Cleanup** 
 
 - Stop the long running load generator by pressing -Ctrl+c
-- Type exit to exit out of the load-generator pod.
-- execute the following - 
+- Type 'exit' to exit out of the load-generator pod.
+- Execute the following - 
 
 > `kubectl delete deployment load-generator`
 > 
