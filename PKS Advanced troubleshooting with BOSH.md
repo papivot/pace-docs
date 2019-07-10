@@ -22,7 +22,7 @@ The best and the easiest way to login to the BOSH director is to login via the O
  - Note the IP of the  `Ops Manager Director`  job down: this is the Director. The director has the knowledge of all kubernetes clusters deployed.
  - Click the tab labeled  `credentials`. You will find the Pivotal Director credentials that the platform auto generates when deploying tiles here.
  - Click  `Link to Credential`  under Director Credentials.
- - Write the  `identity`, and  `password`  down. This is the username and password we will use to connect to the Director.
+ - Write the  `identity` and  `password`  down. This is the username and password we will use to connect to the Director.
  - Use SSH and the password set when deploying Pivotal Ops Manager, SSH to the Ops Manager VM. You can SSH into the Ops Manager machine using your favorite IaaS supported method. 
  
  > `ssh ubuntu@<PIVOTAL-OPS-MANAGER-FQDN`
@@ -304,9 +304,10 @@ Once done, clean up the reference in PKS database by execute
 > `pks delete-cluster [cluster_name]` 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjczODk2NDU0LC0xOTcxODE3OTkzLDEyMz
-M1MTQ4ODEsNzM3NTgwODQ5LDU3MzY2NDUzNywyMDk2NDI0MTQ2
-LDEyODY4MTA5MDAsLTExOTE5NDkxOSw1ODc5NjI3ODQsLTIxND
-kxMTA5LC03MDMyMTMyMjQsLTY3NjUwODUwMiwxMDU2MjU5NjA1
-LDE3MzA4MTAxLC0xNTgxOTg3OTQ0LC0xODQzNDUyMDI3XX0=
+eyJoaXN0b3J5IjpbLTE1NDMyMjc0OTYsLTE5NzE4MTc5OTMsMT
+IzMzUxNDg4MSw3Mzc1ODA4NDksNTczNjY0NTM3LDIwOTY0MjQx
+NDYsMTI4NjgxMDkwMCwtMTE5MTk0OTE5LDU4Nzk2Mjc4NCwtMj
+E0OTExMDksLTcwMzIxMzIyNCwtNjc2NTA4NTAyLDEwNTYyNTk2
+MDUsMTczMDgxMDEsLTE1ODE5ODc5NDQsLTE4NDM0NTIwMjddfQ
+==
 -->
