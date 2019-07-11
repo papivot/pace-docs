@@ -93,9 +93,13 @@ The push refers to repository [[Harbor_fqdn]/project-priv-b/alpine]
 denied: requested access to the resource is denied
 ```
 
-- Login as `devuser02` and push the image `alpine:v1` t 
+- Login as `devuser02` and push the image `alpine:v1`  to `project-priv-b`
+
+> `docker login harbor.pks.caracas.cf-app.com -u devuser`
+
+> `docker push harbor.pks.caracas.cf-app.com/project-priv-b/alpine:v1 `
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwMDg5MDY1NiwxMDYyMjQ3NTk5LDE2MD
-A4MTMxMDUsLTE1NTI0MjE5MDAsMTg4ODEyMzExMSwxMTk3MzM3
-MTk5LC00MDU3MzcwMywtNzQxMzgzMjMzXX0=
+eyJoaXN0b3J5IjpbLTIwMzUyMDM4ODAsMTA2MjI0NzU5OSwxNj
+AwODEzMTA1LC0xNTUyNDIxOTAwLDE4ODgxMjMxMTEsMTE5NzMz
+NzE5OSwtNDA1NzM3MDMsLTc0MTM4MzIzM119
 -->
