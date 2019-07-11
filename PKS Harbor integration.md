@@ -292,11 +292,11 @@ Events:
 - Within the Harbor UI, navigate to Projects -> project-public-a-> Configuration and set the following
 `Enable content trust`
 `Save`.
- Within the Harbor UI, navigate to Projects -> project-public-a->Repositories and download the Registry Certificate
+ Within the Harbor UI, navigate to Projects -> project-public-a->Repositories and download the `Registry Certificate`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU4NjIxNDcyLC05ODk5NzU4MTYsODE5OT
-cwODIxLDE4OTY0NTk1MDAsLTEzMjM3NTYxNiw0OTg1NDIzMzYs
-LTE5MDQ1MzkwOTYsMTA2MjI0NzU5OSwxNjAwODEzMTA1LC0xNT
-UyNDIxOTAwLDE4ODgxMjMxMTEsMTE5NzMzNzE5OSwtNDA1NzM3
-MDMsLTc0MTM4MzIzM119
+eyJoaXN0b3J5IjpbMTczNTQwNjcyOCwtOTg5OTc1ODE2LDgxOT
+k3MDgyMSwxODk2NDU5NTAwLC0xMzIzNzU2MTYsNDk4NTQyMzM2
+LC0xOTA0NTM5MDk2LDEwNjIyNDc1OTksMTYwMDgxMzEwNSwtMT
+U1MjQyMTkwMCwxODg4MTIzMTExLDExOTczMzcxOTksLTQwNTcz
+NzAzLC03NDEzODMyMzNdfQ==
 -->
