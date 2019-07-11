@@ -124,11 +124,22 @@ spec:
 
 > `kubectl apply -f no-auth.yaml`
 
-> `
+> `kubectl get pods`
+
+should return an error - 
+
+```shell
+NAME             READY   STATUS         RESTARTS   AGE
+alpine-no-auth   0/1     ErrImagePull   0          69s
+```
+
+> `kubectl describe pod alpine-no-auth`
+
+should show the error message - 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0OTg3NjM2Niw0OTg1NDIzMzYsLTE5MD
+eyJoaXN0b3J5IjpbLTMxNjExNjk1Miw0OTg1NDIzMzYsLTE5MD
 Q1MzkwOTYsMTA2MjI0NzU5OSwxNjAwODEzMTA1LC0xNTUyNDIx
 OTAwLDE4ODgxMjMxMTEsMTE5NzMzNzE5OSwtNDA1NzM3MDMsLT
 c0MTM4MzIzM119
