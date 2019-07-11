@@ -56,7 +56,7 @@ Use the UAAC cli to add a user -
 ```bash
 user account successfully added
 ```
-Add the user to thepks.cluster.admin group -
+Add the user to the **pks.cluster.admin** group -
 > `uaac member add pks.clusters.admin [username]`
 
 ```
@@ -134,10 +134,28 @@ To validate the cluster is in a working condition execute the followign command 
 should return 
 
 ```shell
+Fetching credentials for cluster gcpcluster00.
+Context set for cluster gcpcluster00.
 
+You can now switch between clusters by using:
+$kubectl config use-context <cluster-name>
 ```
+
+Get the nodes status of the cluster - 
+
+> `kubectl get nodes`
+
+should return something similar to this - 
+
+```shell
+NAME                                      STATUS   ROLES    AGE     VERSION
+vm-264981be-c5da-45cc-6fc1-f8e9f10108f3   Ready    <none>   4h55m   v1.13.5
+vm-739344f0-516a-4e34-4527-9b3cd9b553fc   Ready    <none>   4h52m   v1.13.5
+vm-f918f979-757b-4214-5921-9a0a91bbe5df   Ready    <none>   70m     v1.13.5
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3MDg3ODAzLDE1NDU1Njg1OCwtOTAwMz
-IyNjQ1LC0yMDc3NTczMzg0LC0xOTAyMTQ0MDkxLC03ODgwNjc2
-MjIsMjIwNTUzNjIzXX0=
+eyJoaXN0b3J5IjpbLTEyNDAxNjAyNTksMTU0NTU2ODU4LC05MD
+AzMjI2NDUsLTIwNzc1NzMzODQsLTE5MDIxNDQwOTEsLTc4ODA2
+NzYyMiwyMjA1NTM2MjNdfQ==
 -->
