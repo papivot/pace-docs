@@ -1,7 +1,8 @@
 
 The following artifacts needs to be available before the start of the bootcamp -
 
- - An account with [Papertrail](https://papertrailapp.com/) for 
+ - An account with [Papertrail](https://papertrailapp.com/) for logging
+ - An account with [Jumpcloud](https://jumpcloud.com/signup/) for LDAP integration
  - Ops Manager with PKS installed and configured. The recommended option is GCP as it is easy to deploy, manage and the least expensive of the public clouds. Pivotal employees connected thru the VPN can request a PKS environment in GCP thru [Toolsmith](https://environments.toolsmiths.cf-app.com/home). Toolsmith has a help video on how to request a PKS environment on GCP. 
  - BOSH Director should have the `Enable VM Resurrector Plugin` already enabled.
  - Jumpbox/bastion host with access to the PKS environment (preferably Ubuntu Linux) with the following binaries installed -
@@ -126,7 +127,7 @@ Network Profile Name:
 
 If this is a Toolsmith deployed GCP cluster, get the instance ID(s) of the master node(s) - they will have a label of `job: master`, and add these instance(s) to the backend configuration of the *-pks-cluster-1 loadbalancer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5NzAxMjMxLDE1NDU1Njg1OCwtOTAwMz
-IyNjQ1LC0yMDc3NTczMzg0LC0xOTAyMTQ0MDkxLC03ODgwNjc2
-MjIsMjIwNTUzNjIzXX0=
+eyJoaXN0b3J5IjpbMTE5MTIzODI4OCwxNTQ1NTY4NTgsLTkwMD
+MyMjY0NSwtMjA3NzU3MzM4NCwtMTkwMjE0NDA5MSwtNzg4MDY3
+NjIyLDIyMDU1MzYyM119
 -->
