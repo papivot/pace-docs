@@ -13,8 +13,10 @@
 - Create 3 projects 
  - [ ] `project-public-a` `Public`
  - [ ] `project-priv-a` `Private`
- - [ ] `project
+ - [ ] `project-priv-b` `Private`
+- Create 3 users 
+ - [ ] List item
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4NTkyMTAzOCwtNzQxMzgzMjMzXX0=
+eyJoaXN0b3J5IjpbNTgxODgyMDQ2LC03NDEzODMyMzNdfQ==
 -->
