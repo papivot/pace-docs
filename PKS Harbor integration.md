@@ -83,9 +83,17 @@ The push refers to repository [[Harbor_fqdn]/project-priv-a/alpine]
 v1: digest: sha256:97a042bf09f1bf78c8cf3dcebef94614f2b95fa2f988a5c07314031bc2570c7a size: 528
 ```
 
->
+>`docker push [Harbor_fqdn]/project-priv-b/alpine:v1`
+
+should fail.
+
+```shell
+The push refers to repository [[Harbor_fqdn]/project-priv-b/alpine]
+256a7af3acb1: Preparing
+denied: requested access to the resource is denied
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3ODE5NjUyMiwxMDYyMjQ3NTk5LDE2MD
+eyJoaXN0b3J5IjpbMTIwOTMwNDYyOSwxMDYyMjQ3NTk5LDE2MD
 A4MTMxMDUsLTE1NTI0MjE5MDAsMTg4ODEyMzExMSwxMTk3MzM3
 MTk5LC00MDU3MzcwMywtNzQxMzgzMjMzXX0=
 -->
