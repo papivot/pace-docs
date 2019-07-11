@@ -214,9 +214,11 @@ alpine-no-auth   0/1     ImagePullBackOff   0          54m
 
 ## Harbor Clair 
 
-We will look at Harbor
+We will look at Harbor's vulnerability scanning and management capabilities in this section. 
+
+Make sure that the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2NzkwMDkzMiw4MTk5NzA4MjEsMTg5Nj
+eyJoaXN0b3J5IjpbMTA4MDk2NzkzMiw4MTk5NzA4MjEsMTg5Nj
 Q1OTUwMCwtMTMyMzc1NjE2LDQ5ODU0MjMzNiwtMTkwNDUzOTA5
 NiwxMDYyMjQ3NTk5LDE2MDA4MTMxMDUsLTE1NTI0MjE5MDAsMT
 g4ODEyMzExMSwxMTk3MzM3MTk5LC00MDU3MzcwMywtNzQxMzgz
