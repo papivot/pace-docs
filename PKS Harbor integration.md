@@ -363,10 +363,25 @@ Administrative keys for harbor.pks.caracas.cf-app.com/project-public-a/alpine
 
 - We will now execute the alpine:v2 pod within a K8s cluster using the following yaml
 ```yaml
-
+apiVersion: v1
+kind: Pod
+metadata:
+  name: alpine-signed-pod
+spec:
+  containers:
+  - image: harbor.lab.local/trustme/alpine:v2
+    command:
+      - /bin/sh
+      - "-c"
+      - "sleep 60m"
+    imagePullPolicy: Always
+    name: alpine-signed-pod
+  restartPolicy: Always
 ```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1OTE3MjY3NiwyMDAyMDIwMjYwLDE4OT
+eyJoaXN0b3J5IjpbLTg1MjY4MjM1OCwyMDAyMDIwMjYwLDE4OT
 c1ODAyNTksLTE2MjMwNzIzMjYsMTczNTQwNjcyOCwtOTg5OTc1
 ODE2LDgxOTk3MDgyMSwxODk2NDU5NTAwLC0xMzIzNzU2MTYsND
 k4NTQyMzM2LC0xOTA0NTM5MDk2LDEwNjIyNDc1OTksMTYwMDgx
