@@ -329,7 +329,7 @@ where 3655d9703e56 is the container id of the docker ps command output for the A
 > `export DOCKER_CONTENT_TRUST_SERVER=https://[Harbor_fqdn]:4443`
 > `export DOCKER_CONTENT_TRUST=1`
 
-Now when we push the image to the Harbor registry, the image will be signed and uploaded.
+Now when we push the image to the Harbor registry, the image will be signed and uploaded. This can be validated in the Harbor UI. 
 
 > `docker push [Harbor_fqdn]/project-public-a/alpine:v2`
 
@@ -360,11 +360,16 @@ Administrative keys for harbor.pks.caracas.cf-app.com/project-public-a/alpine
   Repository Key:	e6331d505e0a00eeeab92d6974190aca47b99098fd7c6802fadd2098cf741414
   Root Key:	2180e7f440668868965edfe646359c22a2b3c58298ec43e0e8e530a90ac3e872
 ```
+
+- We will now execute the alpine:v2 pod within a K8s cluster using the following yaml
+```yaml
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwMjAyMDI2MCwxODk3NTgwMjU5LC0xNj
-IzMDcyMzI2LDE3MzU0MDY3MjgsLTk4OTk3NTgxNiw4MTk5NzA4
-MjEsMTg5NjQ1OTUwMCwtMTMyMzc1NjE2LDQ5ODU0MjMzNiwtMT
-kwNDUzOTA5NiwxMDYyMjQ3NTk5LDE2MDA4MTMxMDUsLTE1NTI0
-MjE5MDAsMTg4ODEyMzExMSwxMTk3MzM3MTk5LC00MDU3MzcwMy
-wtNzQxMzgzMjMzXX0=
+eyJoaXN0b3J5IjpbMTY1OTE3MjY3NiwyMDAyMDIwMjYwLDE4OT
+c1ODAyNTksLTE2MjMwNzIzMjYsMTczNTQwNjcyOCwtOTg5OTc1
+ODE2LDgxOTk3MDgyMSwxODk2NDU5NTAwLC0xMzIzNzU2MTYsND
+k4NTQyMzM2LC0xOTA0NTM5MDk2LDEwNjIyNDc1OTksMTYwMDgx
+MzEwNSwtMTU1MjQyMTkwMCwxODg4MTIzMTExLDExOTczMzcxOT
+ksLTQwNTczNzAzLC03NDEzODMyMzNdfQ==
 -->
