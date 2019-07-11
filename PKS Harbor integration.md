@@ -240,10 +240,14 @@ This should return the ID of a running container. Grab that ID use it in the nex
 
 where `cadf8ff0f00f` was the ID of the running centos7:v1 container. Within the container, update all the rpm binaries.
 
->
+> `yum udpate -y`
+
+Once done `exit` out of the container and grab the container ID.
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0ODQzMDgzOSw4MTk5NzA4MjEsMTg5Nj
+eyJoaXN0b3J5IjpbMTAyMzIxNjMxNSw4MTk5NzA4MjEsMTg5Nj
 Q1OTUwMCwtMTMyMzc1NjE2LDQ5ODU0MjMzNiwtMTkwNDUzOTA5
 NiwxMDYyMjQ3NTk5LDE2MDA4MTMxMDUsLTE1NTI0MjE5MDAsMT
 g4ODEyMzExMSwxMTk3MzM3MTk5LC00MDU3MzcwMywtNzQxMzgz
