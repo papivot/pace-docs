@@ -236,10 +236,14 @@ Now, we will update the docker container, create a new image and upload it to Ha
 
 This should return the ID of a running container. Grab that ID use it in the next command - 
 
-> `
+> `docker exec -it cadf8ff0f00f bash`
+
+where `cadf8ff0f00f` was the ID of the running centos7:v1 container. Within the container, update all the rpm binaries.
+
+>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0NTI1MTQ0MCw4MTk5NzA4MjEsMTg5Nj
+eyJoaXN0b3J5IjpbMTM0ODQzMDgzOSw4MTk5NzA4MjEsMTg5Nj
 Q1OTUwMCwtMTMyMzc1NjE2LDQ5ODU0MjMzNiwtMTkwNDUzOTA5
 NiwxMDYyMjQ3NTk5LDE2MDA4MTMxMDUsLTE1NTI0MjE5MDAsMT
 g4ODEyMzExMSwxMTk3MzM3MTk5LC00MDU3MzcwMywtNzQxMzgz
