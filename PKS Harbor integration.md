@@ -172,7 +172,7 @@ should display something like this -
 {"auths":{"[Harbor_fqdn]":{"username":"devuser01","password":"Passw0rd","email":"devuser01@domain.com","auth":"ZGV2dXNlcjAxOlBhc3N3MHJk"}}}
 ```
 
-Leveraging the secret, deploy a new yaml file 
+Leveraging the secret, deploy a new yaml file (modifying the [Harbor_fqdn] value)
 
 ```yaml
 apiVersion: v1
@@ -181,7 +181,7 @@ metadata:
   name: alpine-auth
 spec:
   containers:
-  - image: harbor.lab.local/project-priv-a/alpine:v1
+  - image: [Harbor_fqdn]/project-priv-a/alpine:v1
     command:
       - /bin/sh
       - "-c"
@@ -191,10 +191,11 @@ spec:
   restartPolicy: Always
   imagePullSecrets:
   - name: priv-a-creds
-
 ```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxMjYyMDU3NSwtMTMyMzc1NjE2LDQ5OD
+eyJoaXN0b3J5IjpbMTg5NjQ1OTUwMCwtMTMyMzc1NjE2LDQ5OD
 U0MjMzNiwtMTkwNDUzOTA5NiwxMDYyMjQ3NTk5LDE2MDA4MTMx
 MDUsLTE1NTI0MjE5MDAsMTg4ODEyMzExMSwxMTk3MzM3MTk5LC
 00MDU3MzcwMywtNzQxMzgzMjMzXX0=
