@@ -17,7 +17,9 @@
 - Create 3 users (Administration -> Users -> New User)
  - [ ] `devuser01`, `devuser01@domain.com`, `Dev User01`, `Passw0rd`
  - [ ] `devuser02`, `devuser02@domain.com`, `Dev User02`, `Passw0rd`
+ - [ ] `projadmin01`, `projadmin01@domain.com`, `Project Admin01`, `Password`
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNTczNzAzLC03NDEzODMyMzNdfQ==
+eyJoaXN0b3J5IjpbMTE5NzMzNzE5OSwtNDA1NzM3MDMsLTc0MT
+M4MzIzM119
 -->
