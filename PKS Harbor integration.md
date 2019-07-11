@@ -250,12 +250,20 @@ Once done `exit` out of the container and grab the container ID.
 
 > `docker commit cadf8ff0f00f [Harbor_fqdn]/project-priv-a/centos7:v2`
 
-where `cadf8ff0f00f` is the ContainerID of the 
+where `cadf8ff0f00f` is the ContainerID of the centos7 container. 
+
+Push the newly created image to Harbor as v2.
+
+> `docker push [Harbor_fqdn]/project-priv-a/centos7:v2`
+
+
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzODY2NjI1OSw4MTk5NzA4MjEsMTg5Nj
-Q1OTUwMCwtMTMyMzc1NjE2LDQ5ODU0MjMzNiwtMTkwNDUzOTA5
-NiwxMDYyMjQ3NTk5LDE2MDA4MTMxMDUsLTE1NTI0MjE5MDAsMT
-g4ODEyMzExMSwxMTk3MzM3MTk5LC00MDU3MzcwMywtNzQxMzgz
-MjMzXX0=
+eyJoaXN0b3J5IjpbLTE1NTEwMzIxNDUsODE5OTcwODIxLDE4OT
+Y0NTk1MDAsLTEzMjM3NTYxNiw0OTg1NDIzMzYsLTE5MDQ1Mzkw
+OTYsMTA2MjI0NzU5OSwxNjAwODEzMTA1LC0xNTUyNDIxOTAwLD
+E4ODgxMjMxMTEsMTE5NzMzNzE5OSwtNDA1NzM3MDMsLTc0MTM4
+MzIzM119
 -->
