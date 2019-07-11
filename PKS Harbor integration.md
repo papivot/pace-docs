@@ -155,11 +155,10 @@ This happened because the Docker daemon running on the worker nodes does not hav
 
 To do so, we first create a secret with the required credentials of `devuser01`
 
-> `kubectl create secret docker-registry priv-a-creds --docker-server=[Harbor_fqdn] --docker-username=devuser01 --docker-password=VMware1! --
-docker-email=devuser01@corp.local -n default
+> `kubectl create secret docker-registry priv-a-creds --docker-server=[Harbor_fqdn] --docker-username=devuser01 --docker-password=Passw0rd --docker-email=devuser01@domain.com -n default`
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3MzYyOTM5OCw0OTg1NDIzMzYsLTE5MD
+eyJoaXN0b3J5IjpbLTEzMjM3NTYxNiw0OTg1NDIzMzYsLTE5MD
 Q1MzkwOTYsMTA2MjI0NzU5OSwxNjAwODEzMTA1LC0xNTUyNDIx
 OTAwLDE4ODgxMjMxMTEsMTE5NzMzNzE5OSwtNDA1NzM3MDMsLT
 c0MTM4MzIzM119
