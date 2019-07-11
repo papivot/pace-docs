@@ -430,9 +430,11 @@ Events:
 #### Cleanup
 
 kubectl delete -f signed.yaml
-kubeclt delete -f 
+kubeclt delete -f auth.yaml
+kubectl delete -f no-auth.yaml
+kubectl delete pods riskypod -n default
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY4Mzk2NDE0LC0xOTQ2MjgzNjAxLC04NT
+eyJoaXN0b3J5IjpbMTc0OTc0MDc2LC0xOTQ2MjgzNjAxLC04NT
 I2ODIzNTgsMjAwMjAyMDI2MCwxODk3NTgwMjU5LC0xNjIzMDcy
 MzI2LDE3MzU0MDY3MjgsLTk4OTk3NTgxNiw4MTk5NzA4MjEsMT
 g5NjQ1OTUwMCwtMTMyMzc1NjE2LDQ5ODU0MjMzNiwtMTkwNDUz
