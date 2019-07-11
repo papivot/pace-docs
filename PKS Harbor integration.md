@@ -24,8 +24,24 @@
 
 ## Upload Docker images to harbor
 - Login to the workstation that has Docker installed.
-- 
+- Download the alpine container image from Dockerhub
+> `docker pull alpine`
+
+```shell
+Using default tag: latest
+latest: Pulling from library/alpine
+921b31ab772b: Pull complete
+Digest: sha256:ca1c944a4f8486a153024d9965aafbe24f5723c1d5c02f4964c045a16d19dc54
+Status: Downloaded newer image for alpine:latest
+```
+
+> `docker images`
+
+```shell
+REPOSITORY                                            TAG                 IMAGE ID            CREATED             SIZE
+alpine                                                latest              4d90542f0623        3 weeks ago         5.58MB
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4ODEyMzExMSwxMTk3MzM3MTk5LC00MD
-U3MzcwMywtNzQxMzgzMjMzXX0=
+eyJoaXN0b3J5IjpbLTcxODI3MTk0MSwxODg4MTIzMTExLDExOT
+czMzcxOTksLTQwNTczNzAzLC03NDEzODMyMzNdfQ==
 -->
