@@ -11,12 +11,10 @@
 ## Configure Harbor
 - Login to Harbor UI
 - Create 3 projects 
-|project-public-a| Public|
-|--|--|
-| project-priv-a | Private |
-
-
+ - [ ] `project-public-a` `Public`
+ - [ ] `project-priv-a` `Private`
+ - [ ] `project
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTIyMTQ3MzgsLTc0MTM4MzIzM119
+eyJoaXN0b3J5IjpbMTc4NTkyMTAzOCwtNzQxMzgzMjMzXX0=
 -->
