@@ -44,23 +44,26 @@ alpine                                                latest              4d9054
 
 - Tag the image appropriatly. 
 
-> `docker tag alpine harbor.pks.caracas.cf-app.com/project-priv-a/alpine:v1`
+> `docker tag alpine [Harbor_fqdn]/project-priv-a/alpine:v1`
 
-> `docker tag alpine harbor.pks.caracas.cf-app.com/project-priv-b/alpine:v1`
+> `docker tag alpine [Harbor_fqdn]/project-priv-b/alpine:v1`
 
 > `docker images`
 
 ```shell
 REPOSITORY                                            TAG                 IMAGE ID            CREATED             SIZE
 alpine                                                latest              4d90542f0623        3 weeks ago         5.58MB
-harbor.pks.caracas.cf-app.com/project-priv-a/alpine   v1                  4d90542f0623        3 weeks ago         5.58MB
-harbor.pks.caracas.cf-app.com/project-priv-b/alpine
+[Harbor_fqdn]/project-priv-a/alpine   v1                  4d90542f0623        3 weeks ago         5.58MB
+[Harbor_fqdn]/project-priv-b/alpine
 ```
 
 - Login to the Harbor repository as `devuser01` and push both the images - 
 
-> 
+> `docker login [Harbor_fqdn] -u devuser01`
+
+If it gives an error 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTI0MjE5MDAsMTg4ODEyMzExMSwxMT
-k3MzM3MTk5LC00MDU3MzcwMywtNzQxMzgzMjMzXX0=
+eyJoaXN0b3J5IjpbMzM2ODU4OSwtMTU1MjQyMTkwMCwxODg4MT
+IzMTExLDExOTczMzcxOTksLTQwNTczNzAzLC03NDEzODMyMzNd
+fQ==
 -->
