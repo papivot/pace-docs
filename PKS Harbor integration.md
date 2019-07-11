@@ -10,16 +10,17 @@
 
 ## Configure Harbor
 - Login to Harbor UI
-- Create 3 projects 
- - [ ] `project-public-a` `Public`
- - [ ] `project-priv-a` `Private`
- - [ ] `project-priv-b` `Private`
 - Create 3 users (Administration -> Users -> New User)
  - [ ] `devuser01`, `devuser01@domain.com`, `Dev User01`, `Passw0rd`
  - [ ] `devuser02`, `devuser02@domain.com`, `Dev User02`, `Passw0rd`
  - [ ] `projadmin01`, `projadmin01@domain.com`, `Project Admin01`, `Password`
 
+- Create 3 projects 
+ - [ ] `project-public-a` `Public`
+ - [ ] `project-priv-a` `Private`
+ - [ ] `project-priv-b` `Private`
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5NzMzNzE5OSwtNDA1NzM3MDMsLTc0MT
-M4MzIzM119
+eyJoaXN0b3J5IjpbLTE4Nzk4ODExNSwxMTk3MzM3MTk5LC00MD
+U3MzcwMywtNzQxMzgzMjMzXX0=
 -->
