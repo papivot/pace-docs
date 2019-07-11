@@ -224,13 +224,17 @@ Download an old Docker container, tag it and push it to Harbor -
 
 > ` docker tag centos:centos7.2.1511 [Harbor_fqdn]/project-priv-a/centos7:v1`
 
-> `
+> `docker push [Harbor_fqdn]/project-priv-a/centos7:v1`
+
+Check the repository in Harbor UI and confirm that the v1 image has been uploaded.
+
+Now, we will update the docker container, create a new image and upload it to Harbor. Do 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3Njk4MDk3NCw4MTk5NzA4MjEsMTg5Nj
-Q1OTUwMCwtMTMyMzc1NjE2LDQ5ODU0MjMzNiwtMTkwNDUzOTA5
-NiwxMDYyMjQ3NTk5LDE2MDA4MTMxMDUsLTE1NTI0MjE5MDAsMT
-g4ODEyMzExMSwxMTk3MzM3MTk5LC00MDU3MzcwMywtNzQxMzgz
-MjMzXX0=
+eyJoaXN0b3J5IjpbLTEzOTY2NjMzNzIsODE5OTcwODIxLDE4OT
+Y0NTk1MDAsLTEzMjM3NTYxNiw0OTg1NDIzMzYsLTE5MDQ1Mzkw
+OTYsMTA2MjI0NzU5OSwxNjAwODEzMTA1LC0xNTUyNDIxOTAwLD
+E4ODgxMjMxMTEsMTE5NzMzNzE5OSwtNDA1NzM3MDMsLTc0MTM4
+MzIzM119
 -->
