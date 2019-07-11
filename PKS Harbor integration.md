@@ -389,14 +389,16 @@ NAME                READY   STATUS             RESTARTS   AGE
 alpine-signed-pod   1/1     Running            0          6s
 ```
 
-
+- We will now revoke the trust of the image and then try to schedule it on the K8s cluster. 
 
 > `kubectl delete pod alpine-signed-pod -n default`
 
-[nverma@bastion0 tmp]$ docker trust revoke  harbor.pks.caracas.cf-app.com/project-public-a/alpine:v2
+> `docker trust revoke  harbor.pks.caracas.cf-app.com/project-public-a/alpine:v2`
+
+```shell
 Enter passphrase for repository key with ID e6331d5:
 Successfully deleted signature for harbor.pks.caracas.cf-app.com/project-public-a/alpine:v2
-
+```
 nverma@bastion0 tmp]$ docker trust inspect --pretty  harbor.pks.caracas.cf-app.com/project-public-a/alpine
 
 No signatures for harbor.pks.caracas.cf-app.com/project-public-a/alpine
@@ -409,11 +411,11 @@ Administrative keys for harbor.pks.caracas.cf-app.com/project-public-a/alpine
 
 UI no longer signed
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4MDk4MjkzOCwtMTk0NjI4MzYwMSwtOD
-UyNjgyMzU4LDIwMDIwMjAyNjAsMTg5NzU4MDI1OSwtMTYyMzA3
-MjMyNiwxNzM1NDA2NzI4LC05ODk5NzU4MTYsODE5OTcwODIxLD
-E4OTY0NTk1MDAsLTEzMjM3NTYxNiw0OTg1NDIzMzYsLTE5MDQ1
-MzkwOTYsMTA2MjI0NzU5OSwxNjAwODEzMTA1LC0xNTUyNDIxOT
-AwLDE4ODgxMjMxMTEsMTE5NzMzNzE5OSwtNDA1NzM3MDMsLTc0
-MTM4MzIzM119
+eyJoaXN0b3J5IjpbNDgyNjI5NDM3LC0xOTQ2MjgzNjAxLC04NT
+I2ODIzNTgsMjAwMjAyMDI2MCwxODk3NTgwMjU5LC0xNjIzMDcy
+MzI2LDE3MzU0MDY3MjgsLTk4OTk3NTgxNiw4MTk5NzA4MjEsMT
+g5NjQ1OTUwMCwtMTMyMzc1NjE2LDQ5ODU0MjMzNiwtMTkwNDUz
+OTA5NiwxMDYyMjQ3NTk5LDE2MDA4MTMxMDUsLTE1NTI0MjE5MD
+AsMTg4ODEyMzExMSwxMTk3MzM3MTk5LC00MDU3MzcwMywtNzQx
+MzgzMjMzXX0=
 -->
