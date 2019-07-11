@@ -256,13 +256,15 @@ Push the newly created image to Harbor as v2.
 
 > `docker push [Harbor_fqdn]/project-priv-a/centos7:v2`
 
-- Within the Harbor UI navigate to Projects -> project-priv-a -> centos7. There should be two images v1 and v2. Select both and scan them. Once the scan is completed, 
+- Within the Harbor UI navigate to Projects -> project-priv-a -> centos7. There should be two images v1 and v2. Select both and scan them. Once the scan is completed, observe the results. v1 should have a number of vulnerabilities while v2 should be clean. 
+
+Nav
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzQxOTEzMyw4MTk5NzA4MjEsMTg5Nj
-Q1OTUwMCwtMTMyMzc1NjE2LDQ5ODU0MjMzNiwtMTkwNDUzOTA5
-NiwxMDYyMjQ3NTk5LDE2MDA4MTMxMDUsLTE1NTI0MjE5MDAsMT
-g4ODEyMzExMSwxMTk3MzM3MTk5LC00MDU3MzcwMywtNzQxMzgz
-MjMzXX0=
+eyJoaXN0b3J5IjpbLTIwNTkzNDA3NTAsODE5OTcwODIxLDE4OT
+Y0NTk1MDAsLTEzMjM3NTYxNiw0OTg1NDIzMzYsLTE5MDQ1Mzkw
+OTYsMTA2MjI0NzU5OSwxNjAwODEzMTA1LC0xNTUyNDIxOTAwLD
+E4ODgxMjMxMTEsMTE5NzMzNzE5OSwtNDA1NzM3MDMsLTc0MTM4
+MzIzM119
 -->
