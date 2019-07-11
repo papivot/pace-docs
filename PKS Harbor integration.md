@@ -328,8 +328,22 @@ where 3655d9703e56 is the container id of the docker ps command output for the A
 
 > `export DOCKER_CONTENT_TRUST_SERVER=https://[Harbor_fqdn]:4443`
 > `export DOCKER_CONTENT_TRUST=1`
+
+Now when we push the image to the Harbor registry, the image will be signed and uploaded.
+
+> `docker push [Harbor_fqdn]/project-public-a/alpine:v2`
+The push refers to repository [harbor.pks.caracas.cf-app.com/project-public-a/alpine]
+d9f8178ae34c: Layer already exists
+256a7af3acb1: Layer already exists
+v2: digest: sha256:c685267c7f51fd5516a0d3be1f93a4fde782f4a17bcc6a4cfead2b1f6056b009 size: 738
+Signing and pushing trust metadata
+Enter passphrase for root key with ID e107c01:
+Enter passphrase for new repository key with ID e6331d5:
+Repeat passphrase for new repository key with ID e6331d5:
+Finished initializing "harbor.pks.caracas.cf-app.com/project-public-a/alpine"
+Successfully signed harbor.pks.caracas.cf-app.com/project-public-a/alpine:v2
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMjgxMTE3NiwxODk3NTgwMjU5LC0xNj
+eyJoaXN0b3J5IjpbLTU3NzIwMzI5MCwxODk3NTgwMjU5LC0xNj
 IzMDcyMzI2LDE3MzU0MDY3MjgsLTk4OTk3NTgxNiw4MTk5NzA4
 MjEsMTg5NjQ1OTUwMCwtMTMyMzc1NjE2LDQ5ODU0MjMzNiwtMT
 kwNDUzOTA5NiwxMDYyMjQ3NTk5LDE2MDA4MTMxMDUsLTE1NTI0
