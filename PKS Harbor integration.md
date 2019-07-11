@@ -216,11 +216,11 @@ alpine-no-auth   0/1     ImagePullBackOff   0          54m
 
 We will look at Harbor's vulnerability scanning and management capabilities in this section. 
 
-Make sure that the 
+- Make sure that the the Vulnerability updated on has a valid time
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4MDk2NzkzMiw4MTk5NzA4MjEsMTg5Nj
-Q1OTUwMCwtMTMyMzc1NjE2LDQ5ODU0MjMzNiwtMTkwNDUzOTA5
-NiwxMDYyMjQ3NTk5LDE2MDA4MTMxMDUsLTE1NTI0MjE5MDAsMT
-g4ODEyMzExMSwxMTk3MzM3MTk5LC00MDU3MzcwMywtNzQxMzgz
-MjMzXX0=
+eyJoaXN0b3J5IjpbNzk0NzY2MzEwLDgxOTk3MDgyMSwxODk2ND
+U5NTAwLC0xMzIzNzU2MTYsNDk4NTQyMzM2LC0xOTA0NTM5MDk2
+LDEwNjIyNDc1OTksMTYwMDgxMzEwNSwtMTU1MjQyMTkwMCwxOD
+g4MTIzMTExLDExOTczMzcxOTksLTQwNTczNzAzLC03NDEzODMy
+MzNdfQ==
 -->
