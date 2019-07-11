@@ -307,8 +307,11 @@ docker ps
 docker exec -it 3655d9703e56 sh
 
 apk update && apk upgrade && apk add curl && rm -rf /var/cache/apk/*
+
+docker ps
+docker commit 3655d9703e56 harbor.pks.caracas.cf-app.com/project-public-a/alpine:v2
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyODExMTU3NSwtMTYyMzA3MjMyNiwxNz
+eyJoaXN0b3J5IjpbMTg5NzU4MDI1OSwtMTYyMzA3MjMyNiwxNz
 M1NDA2NzI4LC05ODk5NzU4MTYsODE5OTcwODIxLDE4OTY0NTk1
 MDAsLTEzMjM3NTYxNiw0OTg1NDIzMzYsLTE5MDQ1MzkwOTYsMT
 A2MjI0NzU5OSwxNjAwODEzMTA1LC0xNTUyNDIxOTAwLDE4ODgx
