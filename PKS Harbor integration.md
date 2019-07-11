@@ -22,7 +22,7 @@
 
 - Logout and login with each user and validate the scope and visibility of each user. 
 
-## Upload Docker images to harbor
+## Upload Docker images to Harbor
 - Login to the workstation that has Docker installed.
 - Download the alpine container image from Dockerhub
 > `docker pull alpine`
@@ -98,8 +98,13 @@ denied: requested access to the resource is denied
 > `docker login [Harbor_fqdn] -u devuser`
 
 > `docker push [Harbor_fqdn]/project-priv-b/alpine:v1 `
+
+## Use Harbor as a registry for K8S deployment 
+
+We will now use the `alpine:v1` container image already uploaded to the Harbor registry to 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDQ1MzkwOTYsMTA2MjI0NzU5OSwxNj
-AwODEzMTA1LC0xNTUyNDIxOTAwLDE4ODgxMjMxMTEsMTE5NzMz
-NzE5OSwtNDA1NzM3MDMsLTc0MTM4MzIzM119
+eyJoaXN0b3J5IjpbNTY5OTM4OTk1LC0xOTA0NTM5MDk2LDEwNj
+IyNDc1OTksMTYwMDgxMzEwNSwtMTU1MjQyMTkwMCwxODg4MTIz
+MTExLDExOTczMzcxOTksLTQwNTczNzAzLC03NDEzODMyMzNdfQ
+==
 -->
