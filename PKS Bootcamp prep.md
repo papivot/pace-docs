@@ -156,19 +156,20 @@ vm-739344f0-516a-4e34-4527-9b3cd9b553fc   Ready    <none>   4h52m   v1.13.5
 vm-f918f979-757b-4214-5921-9a0a91bbe5df   Ready    <none>   70m     v1.13.5
 ```
 
- - [ ] Working Harbor registry. If you do not have one, use the following steps to deploy a Harbor tile along with the PKS tile. 
+ - [ ] Working Harbor registry. If you do not have one, use the following steps to deploy a Harbor tile along with the PKS tile. Details of the configuration and howto is provided [here](https://docs.pivotal.io/partners/vmware-harbor/installing.html).
 
 - Download the Harbor product tile from Pivnet
 - Login to OpsManager and upload the Harbor product tile using the `Import a Product` function. 
 - Validate that the valid stemcell is associated with the tile.
-- Configure the tile
+- Configure the tile. Use the defaults (wherever possible) .
+- Make sure Clarie and
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0MDA2MjgzOCwtOTMyMDQ5MDcxLC02Nz
-czOTQ5MTksLTMzOTMyODc1MSwxNTQ1NTY4NTgsLTkwMDMyMjY0
-NSwtMjA3NzU3MzM4NCwtMTkwMjE0NDA5MSwtNzg4MDY3NjIyLD
-IyMDU1MzYyM119
+eyJoaXN0b3J5IjpbLTEyNjIyODE5NjksLTkzMjA0OTA3MSwtNj
+c3Mzk0OTE5LC0zMzkzMjg3NTEsMTU0NTU2ODU4LC05MDAzMjI2
+NDUsLTIwNzc1NzMzODQsLTE5MDIxNDQwOTEsLTc4ODA2NzYyMi
+wyMjA1NTM2MjNdfQ==
 -->
