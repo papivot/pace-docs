@@ -289,9 +289,9 @@ Events:
 
 ## Notary
 
-
+- Within the Harbor UI, navigate to Projects -> project-public-a-> Configuration and set the following
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxNTk3OTk2NSwtOTg5OTc1ODE2LDgxOT
+eyJoaXN0b3J5IjpbLTE0MzIzMzExNCwtOTg5OTc1ODE2LDgxOT
 k3MDgyMSwxODk2NDU5NTAwLC0xMzIzNzU2MTYsNDk4NTQyMzM2
 LC0xOTA0NTM5MDk2LDEwNjIyNDc1OTksMTYwMDgxMzEwNSwtMT
 U1MjQyMTkwMCwxODg4MTIzMTExLDExOTczMzcxOTksLTQwNTcz
