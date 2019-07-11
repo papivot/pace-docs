@@ -290,10 +290,13 @@ Events:
 ## Notary
 
 - Within the Harbor UI, navigate to Projects -> project-public-a-> Configuration and set the following
+`Enable content trust`
+`Save`.
+ 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzIzMzExNCwtOTg5OTc1ODE2LDgxOT
-k3MDgyMSwxODk2NDU5NTAwLC0xMzIzNzU2MTYsNDk4NTQyMzM2
-LC0xOTA0NTM5MDk2LDEwNjIyNDc1OTksMTYwMDgxMzEwNSwtMT
-U1MjQyMTkwMCwxODg4MTIzMTExLDExOTczMzcxOTksLTQwNTcz
-NzAzLC03NDEzODMyMzNdfQ==
+eyJoaXN0b3J5IjpbLTE0MzM0OTY5MDksLTk4OTk3NTgxNiw4MT
+k5NzA4MjEsMTg5NjQ1OTUwMCwtMTMyMzc1NjE2LDQ5ODU0MjMz
+NiwtMTkwNDUzOTA5NiwxMDYyMjQ3NTk5LDE2MDA4MTMxMDUsLT
+E1NTI0MjE5MDAsMTg4ODEyMzExMSwxMTk3MzM3MTk5LC00MDU3
+MzcwMywtNzQxMzgzMjMzXX0=
 -->
