@@ -347,11 +347,24 @@ Successfully signed [Harbor_fqdn]/project-public-a/alpine:v2
 ```
 
 > `docker trust inspect --pretty [Harbor_fqdn]/project-public-a/alpine`
+
+```shell
+
+Signatures for [Harbor_fqdn]/project-public-a/alpine
+
+SIGNED TAG          DIGEST                                                             SIGNERS
+v2                  c685267c7f51fd5516a0d3be1f93a4fde782f4a17bcc6a4cfead2b1f6056b009   (Repo Admin)
+
+Administrative keys for harbor.pks.caracas.cf-app.com/project-public-a/alpine
+
+  Repository Key:	e6331d505e0a00eeeab92d6974190aca47b99098fd7c6802fadd2098cf741414
+  Root Key:	2180e7f440668868965edfe646359c22a2b3c58298ec43e0e8e530a90ac3e872
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyNTk3NzgsMTg5NzU4MDI1OSwtMTYyMz
-A3MjMyNiwxNzM1NDA2NzI4LC05ODk5NzU4MTYsODE5OTcwODIx
-LDE4OTY0NTk1MDAsLTEzMjM3NTYxNiw0OTg1NDIzMzYsLTE5MD
-Q1MzkwOTYsMTA2MjI0NzU5OSwxNjAwODEzMTA1LC0xNTUyNDIx
-OTAwLDE4ODgxMjMxMTEsMTE5NzMzNzE5OSwtNDA1NzM3MDMsLT
-c0MTM4MzIzM119
+eyJoaXN0b3J5IjpbMjAwMjAyMDI2MCwxODk3NTgwMjU5LC0xNj
+IzMDcyMzI2LDE3MzU0MDY3MjgsLTk4OTk3NTgxNiw4MTk5NzA4
+MjEsMTg5NjQ1OTUwMCwtMTMyMzc1NjE2LDQ5ODU0MjMzNiwtMT
+kwNDUzOTA5NiwxMDYyMjQ3NTk5LDE2MDA4MTMxMDUsLTE1NTI0
+MjE5MDAsMTg4ODEyMzExMSwxMTk3MzM3MTk5LC00MDU3MzcwMy
+wtNzQxMzgzMjMzXX0=
 -->
