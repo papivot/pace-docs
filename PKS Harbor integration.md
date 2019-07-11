@@ -266,13 +266,30 @@ Navigate to Projects -> project-priv-a-> Configuration and set the following -
 
 Save. 
 
-Now try to execute the v1 pod, that has a number of medium and high vulnaribilities. 
+Now try to execute the v1 pod, that has a number of medium and high vulnerabilities. 
 
 > `kubectl run --generator=run-pod/v1 riskypod --image=[Harbor_fqdn]/project-priv-a/centos7:v1 -n default`
 
+> `kubectl describe pod riskypod -n default`
+
+This should show that the pod was unable to be scheduled - 
+
+```shell
+...
+Events:
+  Type     Reason     Age                From                                              Message
+  ----     ------     ----               ----                                              -------
+  Normal   Scheduled  33s                default-scheduler                                 Successfully assigned default/riskypod to vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c
+  Normal   Pulling    21s (x2 over 32s)  kubelet, vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c  pulling image "harbor.pks.caracas.cf-app.com/project-priv-a/centos7:v1"
+  Warning  Failed     21s (x2 over 32s)  kubelet, vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c  Failed to pull image "harbor.pks.caracas.cf-app.com/project-priv-a/centos7:v1": rpc error: code = Unknown desc = Error response from daemon: unknown: The severity of vulnerability of the image: "high" is equal or higher than the threshold in project setting: "medium".
+  Warning  Failed     21s (x2 over 32s)  kubelet, vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c  Error: ErrImagePull
+  Normal   BackOff    7s (x2 over 32s)   kubelet, vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c  Back-off pulling image "harbor.pks.caracas.cf-app.com/project-priv-a/centos7:v1"
+  Warning  Failed     7s (x2 over 32s)   kubelet, vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c  Error: ImagePullBackOff
+```
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NjE2MzU4OSw4MTk5NzA4MjEsMTg5Nj
+eyJoaXN0b3J5IjpbLTk4OTk3NTgxNiw4MTk5NzA4MjEsMTg5Nj
 Q1OTUwMCwtMTMyMzc1NjE2LDQ5ODU0MjMzNiwtMTkwNDUzOTA5
 NiwxMDYyMjQ3NTk5LDE2MDA4MTMxMDUsLTE1NTI0MjE5MDAsMT
 g4ODEyMzExMSwxMTk3MzM3MTk5LC00MDU3MzcwMywtNzQxMzgz
