@@ -123,9 +123,9 @@ Kubernetes Master IP(s):  10.0.11.10
 Network Profile Name:
 ```
 
-If this is a 
+If this is a Toolsmith deployed GCP cluster, the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4NDA1MDUzMCwxNTQ1NTY4NTgsLTkwMD
-MyMjY0NSwtMjA3NzU3MzM4NCwtMTkwMjE0NDA5MSwtNzg4MDY3
-NjIyLDIyMDU1MzYyM119
+eyJoaXN0b3J5IjpbNzE4OTUzMDc0LDE1NDU1Njg1OCwtOTAwMz
+IyNjQ1LC0yMDc3NTczMzg0LC0xOTAyMTQ0MDkxLC03ODgwNjc2
+MjIsMjIwNTUzNjIzXX0=
 -->
