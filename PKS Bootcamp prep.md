@@ -164,14 +164,14 @@ vm-f918f979-757b-4214-5921-9a0a91bbe5df   Ready    <none>   70m     v1.13.5
 - Configure the tile. Use the defaults (wherever possible) .
 - Make sure Clair and Notary are enabled. 
 - Apply changes. 
-- Once configuration is completed, make sure that the DNS is updated to reflect the public IP/fqdn.
-- Validate the 
+- Once configuration is completed, make sure that the DNS is updated to reflect the public IP and FQDN.
+- Validate the FQDN is reachable. 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyMjkwNDcxNywtOTMyMDQ5MDcxLC02Nz
+eyJoaXN0b3J5IjpbMTQyMDMzMzk0OSwtOTMyMDQ5MDcxLC02Nz
 czOTQ5MTksLTMzOTMyODc1MSwxNTQ1NTY4NTgsLTkwMDMyMjY0
 NSwtMjA3NzU3MzM4NCwtMTkwMjE0NDA5MSwtNzg4MDY3NjIyLD
 IyMDU1MzYyM119
