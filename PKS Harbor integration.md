@@ -7,9 +7,10 @@
 - A jumpbox with docker installed. 
 - K8s clusters deployed in PKS (without and with UAA as OIDC provider)
 - pks and kubectl binaries
-- a working LDAP environment 
+
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4MzYyODM3NF19
+eyJoaXN0b3J5IjpbLTc0MTM4MzIzM119
 -->
