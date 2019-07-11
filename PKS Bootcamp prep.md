@@ -163,7 +163,7 @@ vm-f918f979-757b-4214-5921-9a0a91bbe5df   Ready    <none>   70m     v1.13.5
 - Validate that the valid stemcell is associated with the tile.
 - Configure the tile. Use the defaults (wherever possible) .
 - Make sure Clair and Notary are enabled. 
--  Clair Updater interval (Hours) is set to a number greater more than 0
+-  Clair Updater interval (Hours) is set to a number greater than 0
 - Apply changes. 
 - Once configuration is completed, make sure that the DNS is updated to reflect the public IP and FQDN. Adjust the firewall, if necessary. 
 - Validate the FQDN is reachable. 
@@ -172,7 +172,7 @@ vm-f918f979-757b-4214-5921-9a0a91bbe5df   Ready    <none>   70m     v1.13.5
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwMTUxMzMwNiwxNDIwMzMzOTQ5LC05Mz
+eyJoaXN0b3J5IjpbMTc3OTA3NTIwMywxNDIwMzMzOTQ5LC05Mz
 IwNDkwNzEsLTY3NzM5NDkxOSwtMzM5MzI4NzUxLDE1NDU1Njg1
 OCwtOTAwMzIyNjQ1LC0yMDc3NTczMzg0LC0xOTAyMTQ0MDkxLC
 03ODgwNjc2MjIsMjIwNTUzNjIzXX0=
