@@ -293,7 +293,10 @@ Events:
 `Enable content trust`
 `Save`.
  Within the Harbor UI, navigate to Projects -> project-public-a->Repositories and download the `Registry Certificate`
-- On the Linux jumpbox, that has the Docker daemn running copy the 
+- On the Linux jumpbox, that has the Docker daemn running copy the downloaded certificate. 
+> `mkdir ~/.docker/tls/[Harbor_fqdn]\:4443`
+
+> `cp ca.crt ~/.docker/tls/[Harbor_fqdn]\:4443`
 
 
 docker pull alpine
@@ -312,7 +315,7 @@ apk update && apk upgrade && apk add curl && rm -rf /var/cache/apk/*
 docker ps
 docker commit 3655d9703e56 harbor.pks.caracas.cf-app.com/project-public-a/alpine:v2
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTIyMjQzMzUsMTg5NzU4MDI1OSwtMT
+eyJoaXN0b3J5IjpbLTIwOTgxODk4MTAsMTg5NzU4MDI1OSwtMT
 YyMzA3MjMyNiwxNzM1NDA2NzI4LC05ODk5NzU4MTYsODE5OTcw
 ODIxLDE4OTY0NTk1MDAsLTEzMjM3NTYxNiw0OTg1NDIzMzYsLT
 E5MDQ1MzkwOTYsMTA2MjI0NzU5OSwxNjAwODEzMTA1LC0xNTUy
