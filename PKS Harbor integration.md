@@ -392,8 +392,22 @@ alpine-signed-pod   1/1     Running            0          6s
 
 
 > `kubectl delete pod alpine-signed-pod -n default`
+
+[nverma@bastion0 tmp]$ docker trust revoke  harbor.pks.caracas.cf-app.com/project-public-a/alpine:v2
+Enter passphrase for repository key with ID e6331d5:
+Successfully deleted signature for harbor.pks.caracas.cf-app.com/project-public-a/alpine:v2
+
+nverma@bastion0 tmp]$ docker trust inspect --pretty  harbor.pks.caracas.cf-app.com/project-public-a/alpine
+
+No signatures for harbor.pks.caracas.cf-app.com/project-public-a/alpine
+
+
+Administrative keys for harbor.pks.caracas.cf-app.com/project-public-a/alpine
+
+  Repository Key:	e6331d505e0a00eeeab92d6974190aca47b99098fd7c6802fadd2098cf741414
+  Root Key:	2180e7f440668868965edfe646359c22a2b3c58298ec43e0e8e530a90ac3e872
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTMyMzQ0NDM5LC0xOTQ2MjgzNjAxLC04NT
+eyJoaXN0b3J5IjpbNTY4OTg2NjEwLC0xOTQ2MjgzNjAxLC04NT
 I2ODIzNTgsMjAwMjAyMDI2MCwxODk3NTgwMjU5LC0xNjIzMDcy
 MzI2LDE3MzU0MDY3MjgsLTk4OTk3NTgxNiw4MTk5NzA4MjEsMT
 g5NjQ1OTUwMCwtMTMyMzc1NjE2LDQ5ODU0MjMzNiwtMTkwNDUz
