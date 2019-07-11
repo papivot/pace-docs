@@ -256,11 +256,11 @@ Push the newly created image to Harbor as v2.
 
 > `docker push [Harbor_fqdn]/project-priv-a/centos7:v2`
 
-- Within the Harbor UI navigate to Projects -> project-priv-a
+- Within the Harbor UI navigate to Projects -> project-priv-a -> centos7. There should be two images v1 and v2. Select both and scan them. Once the scan is completed, 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMzc3MzQ4NCw4MTk5NzA4MjEsMTg5Nj
+eyJoaXN0b3J5IjpbLTE2MzQxOTEzMyw4MTk5NzA4MjEsMTg5Nj
 Q1OTUwMCwtMTMyMzc1NjE2LDQ5ODU0MjMzNiwtMTkwNDUzOTA5
 NiwxMDYyMjQ3NTk5LDE2MDA4MTMxMDUsLTE1NTI0MjE5MDAsMT
 g4ODEyMzExMSwxMTk3MzM3MTk5LC00MDU3MzcwMywtNzQxMzgz
