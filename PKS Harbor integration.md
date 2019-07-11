@@ -92,8 +92,10 @@ The push refers to repository [[Harbor_fqdn]/project-priv-b/alpine]
 256a7af3acb1: Preparing
 denied: requested access to the resource is denied
 ```
+
+- Login as `devuser02` and push the image `alpine:v1` t 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwOTMwNDYyOSwxMDYyMjQ3NTk5LDE2MD
+eyJoaXN0b3J5IjpbMTUwMDg5MDY1NiwxMDYyMjQ3NTk5LDE2MD
 A4MTMxMDUsLTE1NTI0MjE5MDAsMTg4ODEyMzExMSwxMTk3MzM3
 MTk5LC00MDU3MzcwMywtNzQxMzgzMjMzXX0=
 -->
