@@ -293,10 +293,18 @@ Events:
 `Enable content trust`
 `Save`.
  Within the Harbor UI, navigate to Projects -> project-public-a->Repositories and download the `Registry Certificate`
+
+
+docker pull alpine
+docker login harbor.pks.caracas.cf-app.com -u admin
+```shell
+Login Succeeded
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNTQwNjcyOCwtOTg5OTc1ODE2LDgxOT
-k3MDgyMSwxODk2NDU5NTAwLC0xMzIzNzU2MTYsNDk4NTQyMzM2
-LC0xOTA0NTM5MDk2LDEwNjIyNDc1OTksMTYwMDgxMzEwNSwtMT
-U1MjQyMTkwMCwxODg4MTIzMTExLDExOTczMzcxOTksLTQwNTcz
-NzAzLC03NDEzODMyMzNdfQ==
+eyJoaXN0b3J5IjpbLTE2MjMwNzIzMjYsMTczNTQwNjcyOCwtOT
+g5OTc1ODE2LDgxOTk3MDgyMSwxODk2NDU5NTAwLC0xMzIzNzU2
+MTYsNDk4NTQyMzM2LC0xOTA0NTM5MDk2LDEwNjIyNDc1OTksMT
+YwMDgxMzEwNSwtMTU1MjQyMTkwMCwxODg4MTIzMTExLDExOTcz
+MzcxOTksLTQwNTczNzAzLC03NDEzODMyMzNdfQ==
 -->
