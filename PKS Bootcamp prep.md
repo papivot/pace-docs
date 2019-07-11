@@ -1,21 +1,21 @@
 
 The following artifacts needs to be available before the start of the bootcamp -
 
- - An account with [Papertrail](https://papertrailapp.com/) for logging
- - An account with [Jumpcloud](https://jumpcloud.com/signup/) for LDAP integration
- - Ops Manager with PKS installed and configured. The recommended option is GCP as it is easy to deploy, manage and the least expensive of the public clouds. Pivotal employees connected thru the VPN can request a PKS environment in GCP thru [Toolsmith](https://environments.toolsmiths.cf-app.com/home). Toolsmith has a help video on how to request a PKS environment on GCP. 
- - BOSH Director should have the `Enable VM Resurrector Plugin` already enabled.
- - Jumpbox/bastion host with access to the PKS environment (preferably Ubuntu Linux) with the following binaries installed -
- - [ ] Kubectl - After signing into the Pivotal network, the relevent binaries can be downloaded from [here](https://network.pivotal.io/products/pivotal-container-service/#/releases/386533/file_groups/1831)
- - [ ] pks - After signing into the Pivotal network, the relevent binaries can be downloaded from [here](https://network.pivotal.io/products/pivotal-container-service/#/releases/386533/file_groups/1830).
- - [ ] uaac - this is generally installed as a Ruby gem 
+ - [ ] An account with [Papertrail](https://papertrailapp.com/) for logging
+ - [ ] An account with [Jumpcloud](https://jumpcloud.com/signup/) for LDAP integration
+ - [ ] Ops Manager with PKS installed and configured. The recommended option is GCP as it is easy to deploy, manage and the least expensive of the public clouds. Pivotal employees connected thru the VPN can request a PKS environment in GCP thru [Toolsmith](https://environments.toolsmiths.cf-app.com/home). Toolsmith has a help video on how to request a PKS environment on GCP. 
+ - [ ] BOSH Director should have the `Enable VM Resurrector Plugin` already enabled.
+ - [ ] Jumpbox/bastion host with access to the PKS environment (preferably Ubuntu Linux) with the following binaries installed -
+ - Kubectl - After signing into the Pivotal network, the relevent binaries can be downloaded from [here](https://network.pivotal.io/products/pivotal-container-service/#/releases/386533/file_groups/1831)
+ - pks - After signing into the Pivotal network, the relevent binaries can be downloaded from [here](https://network.pivotal.io/products/pivotal-container-service/#/releases/386533/file_groups/1830).
+ - uaac - this is generally installed as a Ruby gem 
 > `gem install cf-uaac`
- - [ ] Curl
- - [ ]  jq
- - [ ] om - The required binary can be deployed [here](https://github.com/pivotal-cf/om/releases)
-
-
- - PKS plans with atleast one plan that has the ability to deploy K8s clusters with `Allow privilaged` setting enabled.
+ - Curl
+ - jq
+ - om - The required binary can be deployed [here](https://github.com/pivotal-cf/om/releases)
+ 
+ 
+ - [ ] List itemPKS plans with atleast one plan that has the ability to deploy K8s clusters with `Allow privilaged` setting enabled.
  - To deploy a K8s cluster use the following steps - 
  
 >``
@@ -127,7 +127,7 @@ Network Profile Name:
 
 If this is a Toolsmith deployed GCP cluster, get the instance ID(s) of the master node(s) - they will have a label of `job: master`, and add these instance(s) to the backend configuration of the *-pks-cluster-1 loadbalancer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5MTIzODI4OCwxNTQ1NTY4NTgsLTkwMD
-MyMjY0NSwtMjA3NzU3MzM4NCwtMTkwMjE0NDA5MSwtNzg4MDY3
-NjIyLDIyMDU1MzYyM119
+eyJoaXN0b3J5IjpbLTE2MTI4MDI4OTEsMTU0NTU2ODU4LC05MD
+AzMjI2NDUsLTIwNzc1NzMzODQsLTE5MDIxNDQwOTEsLTc4ODA2
+NzYyMiwyMjA1NTM2MjNdfQ==
 -->
