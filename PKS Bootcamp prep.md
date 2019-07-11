@@ -8,8 +8,8 @@ The following artifacts needs to be readily available before the start of the bo
  - [ ] Ops Manager with PKS installed and configured. The recommended option is GCP as it is easy to deploy, manage and the least expensive of the public clouds. Pivotal employees connected thru the VPN can request a PKS environment in GCP thru [Toolsmith](https://environments.toolsmiths.cf-app.com/home). Toolsmith has a help video on how to request a PKS environment on GCP. 
  - [ ] BOSH Director should have the `Enable VM Resurrector Plugin` already enabled.
  - [ ] Jumpbox/bastion host with access to the PKS environment (preferably Ubuntu Linux) with the following binaries installed -
- - Kubectl - After signing into the Pivotal network, the relevent binaries can be downloaded from [here](https://network.pivotal.io/products/pivotal-container-service/#/releases/386533/file_groups/1831)
- - pks - After signing into the Pivotal network, the relevent binaries can be downloaded from [here](https://network.pivotal.io/products/pivotal-container-service/#/releases/386533/file_groups/1830).
+ - Kubectl - After signing into the Pivotal network, the relevant binaries can be downloaded from [here](https://network.pivotal.io/products/pivotal-container-service/#/releases/386533/file_groups/1831)
+ - pks - After signing into the Pivotal network, the relevant binaries can be downloaded from [here](https://network.pivotal.io/products/pivotal-container-service/#/releases/386533/file_groups/1830).
  - uaac - this is generally installed as a Ruby gem 
 > `gem install cf-uaac`
  - Curl
@@ -157,7 +157,7 @@ vm-f918f979-757b-4214-5921-9a0a91bbe5df   Ready    <none>   70m     v1.13.5
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzOTMyODc1MSwxNTQ1NTY4NTgsLTkwMD
-MyMjY0NSwtMjA3NzU3MzM4NCwtMTkwMjE0NDA5MSwtNzg4MDY3
-NjIyLDIyMDU1MzYyM119
+eyJoaXN0b3J5IjpbLTY3NzM5NDkxOSwtMzM5MzI4NzUxLDE1ND
+U1Njg1OCwtOTAwMzIyNjQ1LC0yMDc3NTczMzg0LC0xOTAyMTQ0
+MDkxLC03ODgwNjc2MjIsMjIwNTUzNjIzXX0=
 -->
