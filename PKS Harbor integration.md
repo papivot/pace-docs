@@ -218,17 +218,19 @@ We will look at Harbor's vulnerability scanning and management capabilities in t
 
 - Within Harbor UI->Administration-> Configuration-> Vulnerability, make sure that  `Database updated on` has a valid time.
 
-Download an old Docker container and tag it -
+Download an old Docker container, tag it and push it to Harbor -
 
 > `docker image pull centos:centos7.2.1511`
 
-> ` docker tag centos7.2.1511 [Harbor_fqdn]/project-priv-a/centos7:v1`
+> ` docker tag centos:centos7.2.1511 [Harbor_fqdn]/project-priv-a/centos7:v1`
+
+> `
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxMjI1NTE0LDgxOTk3MDgyMSwxODk2ND
-U5NTAwLC0xMzIzNzU2MTYsNDk4NTQyMzM2LC0xOTA0NTM5MDk2
-LDEwNjIyNDc1OTksMTYwMDgxMzEwNSwtMTU1MjQyMTkwMCwxOD
-g4MTIzMTExLDExOTczMzcxOTksLTQwNTczNzAzLC03NDEzODMy
-MzNdfQ==
+eyJoaXN0b3J5IjpbMTc3Njk4MDk3NCw4MTk5NzA4MjEsMTg5Nj
+Q1OTUwMCwtMTMyMzc1NjE2LDQ5ODU0MjMzNiwtMTkwNDUzOTA5
+NiwxMDYyMjQ3NTk5LDE2MDA4MTMxMDUsLTE1NTI0MjE5MDAsMT
+g4ODEyMzExMSwxMTk3MzM3MTk5LC00MDU3MzcwMywtNzQxMzgz
+MjMzXX0=
 -->
