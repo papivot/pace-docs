@@ -41,7 +41,24 @@ Status: Downloaded newer image for alpine:latest
 REPOSITORY                                            TAG                 IMAGE ID            CREATED             SIZE
 alpine                                                latest              4d90542f0623        3 weeks ago         5.58MB
 ```
+
+- Tag the image appropriatly. 
+
+> `docker tag alpine harbor.pks.caracas.cf-app.com/project-priv-a/alpine:v1`
+
+> `docker tag alpine harbor.pks.caracas.cf-app.com/project-priv-b/alpine:v1`
+
+> `docker images`
+
+```shell
+REPOSITORY                                            TAG                 IMAGE ID            CREATED             SIZE
+alpine                                                latest              4d90542f0623        3 weeks ago         5.58MB
+harbor.pks.caracas.cf-app.com/project-priv-a/alpine   v1                  4d90542f0623        3 weeks ago         5.58MB
+harbor.pks.caracas.cf-app.com/project-priv-b/alpine
+```
+
+- Login to the repos
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxODI3MTk0MSwxODg4MTIzMTExLDExOT
-czMzcxOTksLTQwNTczNzAzLC03NDEzODMyMzNdfQ==
+eyJoaXN0b3J5IjpbNTcwODIwMjg0LDE4ODgxMjMxMTEsMTE5Nz
+MzNzE5OSwtNDA1NzM3MDMsLTc0MTM4MzIzM119
 -->
