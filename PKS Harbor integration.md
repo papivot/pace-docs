@@ -267,11 +267,11 @@ Navigate to Projects -> project-priv-a-> Configuration and set the following -
 Save. 
 
 
-> `kubectl run --generator=run-pod/v1 riskypod -–image=[Harbor_fqdn]/project-priv-a/centos7:v1 -n default`
+> `kubectl run --generator=run-pod/v1 riskypod --image=[Harbor_fqdn]/project-priv-a/centos7:v1 -n default`
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1NzIzMzA4Nyw4MTk5NzA4MjEsMTg5Nj
+eyJoaXN0b3J5IjpbLTc2Njc4MTM1MSw4MTk5NzA4MjEsMTg5Nj
 Q1OTUwMCwtMTMyMzc1NjE2LDQ5ODU0MjMzNiwtMTkwNDUzOTA5
 NiwxMDYyMjQ3NTk5LDE2MDA4MTMxMDUsLTE1NTI0MjE5MDAsMT
 g4ODEyMzExMSwxMTk3MzM3MTk5LC00MDU3MzcwMywtNzQxMzgz
