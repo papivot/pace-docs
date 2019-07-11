@@ -103,14 +103,27 @@ denied: requested access to the resource is denied
 
 We will now use the `alpine:v1` container image already uploaded to the Harbor registry to deploy it as a pod in a K8S cluster. 
 
-Modify the below yaml with your Harbor fqdn
+Modify the below yaml with your [Harbor_fqdn] and sav
 
 ```yaml
-
+apiVersion: v1
+kind: Pod
+metadata:
+  name: alpine-no-auth
+spec:
+  containers:
+  - image: [Harbor_fqdn]/project-priv-a/alpine:v1
+    command:
+      - /bin/sh
+      - "-c"
+      - "sleep 60m"
+    imagePullPolicy: Always
+    name: alpine-no-auth
+  restartPolicy: Always
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE0ODg0MjU3LC0xOTA0NTM5MDk2LDEwNj
-IyNDc1OTksMTYwMDgxMzEwNSwtMTU1MjQyMTkwMCwxODg4MTIz
-MTExLDExOTczMzcxOTksLTQwNTczNzAzLC03NDEzODMyMzNdfQ
-==
+eyJoaXN0b3J5IjpbLTE3MDI4MTgyODksLTE5MDQ1MzkwOTYsMT
+A2MjI0NzU5OSwxNjAwODEzMTA1LC0xNTUyNDIxOTAwLDE4ODgx
+MjMxMTEsMTE5NzMzNzE5OSwtNDA1NzM3MDMsLTc0MTM4MzIzM1
+19
 -->
