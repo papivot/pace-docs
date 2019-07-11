@@ -126,8 +126,18 @@ Network Profile Name:
 ```
 
 If this is a Toolsmith deployed GCP cluster, get the instance ID(s) of the master node(s) - they will have a label of `job: master`, and add these instance(s) to the backend configuration of the *-pks-cluster-1 loadbalancer.
+
+To validate the cluster is in a working condition execute the followign command -
+
+> `pks get-credentials gcpcluster00`
+
+should return 
+
+```shell
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk0OTM5MzYyLDE1NDU1Njg1OCwtOTAwMz
+eyJoaXN0b3J5IjpbLTk3MDg3ODAzLDE1NDU1Njg1OCwtOTAwMz
 IyNjQ1LC0yMDc3NTczMzg0LC0xOTAyMTQ0MDkxLC03ODgwNjc2
 MjIsMjIwNTUzNjIzXX0=
 -->
