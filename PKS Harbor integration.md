@@ -429,16 +429,18 @@ Events:
 
 #### Cleanup
 
-kubectl delete -f signed.yaml
-kubeclt delete -f auth.yaml
-kubectl delete -f no-auth.yaml
+> `kubectl delete -f signed.yaml`
+>`kubeclt delete -f auth.yaml`
+>`kubectl delete -f no-auth.yaml`
 kubectl delete pods riskypod -n default
+
+Delete all the images in the Harbor UI
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0OTc0MDc2LC0xOTQ2MjgzNjAxLC04NT
-I2ODIzNTgsMjAwMjAyMDI2MCwxODk3NTgwMjU5LC0xNjIzMDcy
-MzI2LDE3MzU0MDY3MjgsLTk4OTk3NTgxNiw4MTk5NzA4MjEsMT
-g5NjQ1OTUwMCwtMTMyMzc1NjE2LDQ5ODU0MjMzNiwtMTkwNDUz
-OTA5NiwxMDYyMjQ3NTk5LDE2MDA4MTMxMDUsLTE1NTI0MjE5MD
-AsMTg4ODEyMzExMSwxMTk3MzM3MTk5LC00MDU3MzcwMywtNzQx
-MzgzMjMzXX0=
+eyJoaXN0b3J5IjpbLTE1NDg2NTY4MTcsLTE5NDYyODM2MDEsLT
+g1MjY4MjM1OCwyMDAyMDIwMjYwLDE4OTc1ODAyNTksLTE2MjMw
+NzIzMjYsMTczNTQwNjcyOCwtOTg5OTc1ODE2LDgxOTk3MDgyMS
+wxODk2NDU5NTAwLC0xMzIzNzU2MTYsNDk4NTQyMzM2LC0xOTA0
+NTM5MDk2LDEwNjIyNDc1OTksMTYwMDgxMzEwNSwtMTU1MjQyMT
+kwMCwxODg4MTIzMTExLDExOTczMzcxOTksLTQwNTczNzAzLC03
+NDEzODMyMzNdfQ==
 -->
