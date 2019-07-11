@@ -153,10 +153,13 @@ vents:
 
 This happened because the Docker daemon running on the worker nodes does not have the required access to download the image and execute them. To do so, we need to provide the worker nodes with the required credentials to access the private registry. 
 
+To do so, we first create a secret with the required credentials of `devuser01`
 
+> `kubectl create secret docker-registry priv-a-creds --docker-server=[Harbor_fqdn] --docker-username=devuser01 --docker-password=VMware1! --
+docker-email=devuser01@corp.local -n default
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0MzI4ODYyMyw0OTg1NDIzMzYsLTE5MD
+eyJoaXN0b3J5IjpbMjA3MzYyOTM5OCw0OTg1NDIzMzYsLTE5MD
 Q1MzkwOTYsMTA2MjI0NzU5OSwxNjAwODEzMTA1LC0xNTUyNDIx
 OTAwLDE4ODgxMjMxMTEsMTE5NzMzNzE5OSwtNDA1NzM3MDMsLT
 c0MTM4MzIzM119
