@@ -195,10 +195,18 @@ spec:
 
 > `kubectl apply -f auth.yaml`
 
-> `kubectl get pods -n k
+> `kubectl get pods -n default`
+
+should show a successfully running pod -
+
+```shell
+NAME             READY   STATUS             RESTARTS   AGE
+alpine-auth      1/1     Running            0          8s
+alpine-no-auth   0/1     ImagePullBackOff   0          54m
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjUwODc2Njk4LDE4OTY0NTk1MDAsLTEzMj
+eyJoaXN0b3J5IjpbODE5OTcwODIxLDE4OTY0NTk1MDAsLTEzMj
 M3NTYxNiw0OTg1NDIzMzYsLTE5MDQ1MzkwOTYsMTA2MjI0NzU5
 OSwxNjAwODEzMTA1LC0xNTUyNDIxOTAwLDE4ODgxMjMxMTEsMT
 E5NzMzNzE5OSwtNDA1NzM3MDMsLTc0MTM4MzIzM119
