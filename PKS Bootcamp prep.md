@@ -102,8 +102,30 @@ Network Profile Name:
 
 Use 'pks cluster gcpcluster00' to monitor the state of your cluster
 ```
+
+After a few minutes, the depolyment would have successfully completed and 
+
+>` pks cluster gcpcluster00`
+
+should return something similar
+
+```bash
+Name:                     gcpcluster00
+Plan Name:                small
+UUID:                     69c4444c-8bf9-4907-956e-d94db7e145c2
+Last Action:              CREATE
+Last Action State:        succeeded
+Last Action Description:  Instance provisioning completed
+Kubernetes Master Host:   [clustername.fqdn]
+Kubernetes Master Port:   8443
+Worker Nodes:             3
+Kubernetes Master IP(s):  10.0.11.10
+Network Profile Name:
+```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0NTU2ODU4LC05MDAzMjI2NDUsLTIwNz
-c1NzMzODQsLTE5MDIxNDQwOTEsLTc4ODA2NzYyMiwyMjA1NTM2
-MjNdfQ==
+eyJoaXN0b3J5IjpbMTgyODAxMDI3MiwxNTQ1NTY4NTgsLTkwMD
+MyMjY0NSwtMjA3NzU3MzM4NCwtMTkwMjE0NDA5MSwtNzg4MDY3
+NjIyLDIyMDU1MzYyM119
 -->
