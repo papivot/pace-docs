@@ -1,5 +1,7 @@
 
-The following artifacts needs to be available before the start of the bootcamp -
+# PKS Bootcamp prep and pre-requisites 
+
+The following artifacts needs to be readily available before the start of the bootcamp -
 
  - [ ] An account with [Papertrail](https://papertrailapp.com/) for logging
  - [ ] An account with [Jumpcloud](https://jumpcloud.com/signup/) for LDAP integration
@@ -155,7 +157,7 @@ vm-f918f979-757b-4214-5921-9a0a91bbe5df   Ready    <none>   70m     v1.13.5
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDAxNjAyNTksMTU0NTU2ODU4LC05MD
-AzMjI2NDUsLTIwNzc1NzMzODQsLTE5MDIxNDQwOTEsLTc4ODA2
-NzYyMiwyMjA1NTM2MjNdfQ==
+eyJoaXN0b3J5IjpbLTMzOTMyODc1MSwxNTQ1NTY4NTgsLTkwMD
+MyMjY0NSwtMjA3NzU3MzM4NCwtMTkwMjE0NDA5MSwtNzg4MDY3
+NjIyLDIyMDU1MzYyM119
 -->
