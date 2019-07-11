@@ -162,14 +162,17 @@ vm-f918f979-757b-4214-5921-9a0a91bbe5df   Ready    <none>   70m     v1.13.5
 - Login to OpsManager and upload the Harbor product tile using the `Import a Product` function. 
 - Validate that the valid stemcell is associated with the tile.
 - Configure the tile. Use the defaults (wherever possible) .
-- Make sure Clarie and
+- Make sure Clair and Notary are enabled. 
+- Apply changes. 
+- Once configuration is completed, make sure that the DNS is updated to reflect the public IP/fqdn.
+- Validate the 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjIyODE5NjksLTkzMjA0OTA3MSwtNj
-c3Mzk0OTE5LC0zMzkzMjg3NTEsMTU0NTU2ODU4LC05MDAzMjI2
-NDUsLTIwNzc1NzMzODQsLTE5MDIxNDQwOTEsLTc4ODA2NzYyMi
-wyMjA1NTM2MjNdfQ==
+eyJoaXN0b3J5IjpbMjAyMjkwNDcxNywtOTMyMDQ5MDcxLC02Nz
+czOTQ5MTksLTMzOTMyODc1MSwxNTQ1NTY4NTgsLTkwMDMyMjY0
+NSwtMjA3NzU3MzM4NCwtMTkwMjE0NDA5MSwtNzg4MDY3NjIyLD
+IyMDU1MzYyM119
 -->
