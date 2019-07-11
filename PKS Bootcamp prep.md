@@ -107,7 +107,7 @@ Network Profile Name:
 Use 'pks cluster gcpcluster00' to monitor the state of your cluster
 ```
 
-After a few minutes, the depolyment would have successfully completed and 
+After a few minutes, the deployment would have successfully completed and 
 
 >` pks cluster gcpcluster00`
 
@@ -164,15 +164,15 @@ vm-f918f979-757b-4214-5921-9a0a91bbe5df   Ready    <none>   70m     v1.13.5
 - Configure the tile. Use the defaults (wherever possible) .
 - Make sure Clair and Notary are enabled. 
 - Apply changes. 
-- Once configuration is completed, make sure that the DNS is updated to reflect the public IP and FQDN.
+- Once configuration is completed, make sure that the DNS is updated to reflect the public IP and FQDN. Adjust the firewall, if necessary. 
 - Validate the FQDN is reachable. 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMDMzMzk0OSwtOTMyMDQ5MDcxLC02Nz
-czOTQ5MTksLTMzOTMyODc1MSwxNTQ1NTY4NTgsLTkwMDMyMjY0
-NSwtMjA3NzU3MzM4NCwtMTkwMjE0NDA5MSwtNzg4MDY3NjIyLD
-IyMDU1MzYyM119
+eyJoaXN0b3J5IjpbMTY3OTEwMDQ2NSwxNDIwMzMzOTQ5LC05Mz
+IwNDkwNzEsLTY3NzM5NDkxOSwtMzM5MzI4NzUxLDE1NDU1Njg1
+OCwtOTAwMzIyNjQ1LC0yMDc3NTczMzg0LC0xOTAyMTQ0MDkxLC
+03ODgwNjc2MjIsMjIwNTUzNjIzXX0=
 -->
