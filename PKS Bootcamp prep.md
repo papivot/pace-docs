@@ -156,11 +156,12 @@ vm-739344f0-516a-4e34-4527-9b3cd9b553fc   Ready    <none>   4h52m   v1.13.5
 vm-f918f979-757b-4214-5921-9a0a91bbe5df   Ready    <none>   70m     v1.13.5
 ```
 
- - [ ] Working Harbor registry 
+ - [ ] Working Harbor registry. If you do not have one, use the following steps to deploy an Harbor tile along with the PKS tile. 
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMjA0OTA3MSwtNjc3Mzk0OTE5LC0zMz
-kzMjg3NTEsMTU0NTU2ODU4LC05MDAzMjI2NDUsLTIwNzc1NzMz
-ODQsLTE5MDIxNDQwOTEsLTc4ODA2NzYyMiwyMjA1NTM2MjNdfQ
-==
+eyJoaXN0b3J5IjpbMTM3NTMzNDY4MiwtOTMyMDQ5MDcxLC02Nz
+czOTQ5MTksLTMzOTMyODc1MSwxNTQ1NTY4NTgsLTkwMDMyMjY0
+NSwtMjA3NzU3MzM4NCwtMTkwMjE0NDA5MSwtNzg4MDY3NjIyLD
+IyMDU1MzYyM119
 -->
