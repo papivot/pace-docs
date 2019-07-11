@@ -123,9 +123,9 @@ Kubernetes Master IP(s):  10.0.11.10
 Network Profile Name:
 ```
 
-If this is a Toolsmith deployed GCP cluster, get the instance ID(s) of the master node(s) - they will have a label of `master`, and add these instances to the backend of the loadbalancer. 
+If this is a Toolsmith deployed GCP cluster, get the instance ID(s) of the master node(s) - they will have a label of `job: master`, and add these instances to the backend of the loadbalancer. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTE0OTE0NzYsMTU0NTU2ODU4LC05MD
-AzMjI2NDUsLTIwNzc1NzMzODQsLTE5MDIxNDQwOTEsLTc4ODA2
-NzYyMiwyMjA1NTM2MjNdfQ==
+eyJoaXN0b3J5IjpbMTE2ODM0NDIzNywxNTQ1NTY4NTgsLTkwMD
+MyMjY0NSwtMjA3NzU3MzM4NCwtMTkwMjE0NDA5MSwtNzg4MDY3
+NjIyLDIyMDU1MzYyM119
 -->
