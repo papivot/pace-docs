@@ -68,14 +68,24 @@ If it gives an error - `x509: certificate signed by unknown authority` - this im
   "insecure-registries" : ["harbor_fqdn"]
 }
 ```
-A service restart of docker daemon is required. Once completee, retry the login command once again. This time a successfuly login message should be displayed.
+A service restart of docker daemon is required. Once completed, retry the login command once again. This time a successfully login message should be displayed.
 
 ```shell
 Login Succeeded
 ```
+>`docker push [Harbor_fqdn]/project-priv-a/alpine:v1`
 
+should successfully complete. 
+
+```shell
+The push refers to repository [[Harbor_fqdn]/project-priv-a/alpine]
+256a7af3acb1: Pushed
+v1: digest: sha256:97a042bf09f1bf78c8cf3dcebef94614f2b95fa2f988a5c07314031bc2570c7a size: 528
+```
+
+>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2MjI0NzU5OSwxNjAwODEzMTA1LC0xNT
-UyNDIxOTAwLDE4ODgxMjMxMTEsMTE5NzMzNzE5OSwtNDA1NzM3
-MDMsLTc0MTM4MzIzM119
+eyJoaXN0b3J5IjpbMTA3ODE5NjUyMiwxMDYyMjQ3NTk5LDE2MD
+A4MTMxMDUsLTE1NTI0MjE5MDAsMTg4ODEyMzExMSwxMTk3MzM3
+MTk5LC00MDU3MzcwMywtNzQxMzgzMjMzXX0=
 -->
