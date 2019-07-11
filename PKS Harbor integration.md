@@ -299,14 +299,19 @@ Events:
 > `cp ca.crt ~/.docker/tls/[Harbor_fqdn]\:4443`
 
 - Download an alpine container from Dockerhub and upload v1 without trust enabled. 
-docker pull alpine
-docker login harbor.pks.caracas.cf-app.com -u admin
+> `docker pull alpine`
+
+> `docker login harbor.pks.caracas.cf-app.com -u admin`
+
 ```shell
 Login Succeeded
 ```
-docker tag alpine harbor.pks.caracas.cf-app.com/project-public-a/alpine:v1
-docker push harbor.pks.caracas.cf-app.com/project-public-a/alpine:v1
-docker run -t -d harbor.pks.caracas.cf-app.com/project-public-a/alpine:v1
+> `docker tag alpine [Harbor_fqdn]/project-public-a/alpine:v1`
+
+> `docker push [Harbor_fqdn]/project-public-a/alpine:v1`
+
+- Modify the apline:v1 docker image 
+docker run -t -d [Harbor_fqdn]/project-public-a/alpine:v1
 docker ps
 docker exec -it 3655d9703e56 sh
 
@@ -315,7 +320,7 @@ apk update && apk upgrade && apk add curl && rm -rf /var/cache/apk/*
 docker ps
 docker commit 3655d9703e56 harbor.pks.caracas.cf-app.com/project-public-a/alpine:v2
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyMTYzNTE0NywxODk3NTgwMjU5LC0xNj
+eyJoaXN0b3J5IjpbLTgzMDE1MjIwMCwxODk3NTgwMjU5LC0xNj
 IzMDcyMzI2LDE3MzU0MDY3MjgsLTk4OTk3NTgxNiw4MTk5NzA4
 MjEsMTg5NjQ1OTUwMCwtMTMyMzc1NjE2LDQ5ODU0MjMzNiwtMT
 kwNDUzOTA5NiwxMDYyMjQ3NTk5LDE2MDA4MTMxMDUsLTE1NTI0
