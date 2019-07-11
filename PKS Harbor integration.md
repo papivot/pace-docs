@@ -420,18 +420,22 @@ Events:
   Type     Reason     Age               From                                              Message
   ----     ------     ----              ----                                              -------
   Normal   Scheduled  22s               default-scheduler                                 Successfully assigned default/alpine-signed-pod to vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c
-  Normal   BackOff    20s               kubelet, vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c  Back-off pulling image "harbor.pks.caracas.cf-app.com/project-public-a/alpine:v2"
+  Normal   BackOff    20s               kubelet, vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c  Back-off pulling image "[Harbor_fqdn]/project-public-a/alpine:v2"
   Warning  Failed     20s               kubelet, vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c  Error: ImagePullBackOff
-  Normal   Pulling    6s (x2 over 21s)  kubelet, vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c  pulling image "harbor.pks.caracas.cf-app.com/project-public-a/alpine:v2"
-  Warning  Failed     6s (x2 over 21s)  kubelet, vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c  Failed to pull image "harbor.pks.caracas.cf-app.com/project-public-a/alpine:v2": rpc error: code = Unknown desc = Error response from daemon: unknown: The image is not signed in Notary.
+  Normal   Pulling    6s (x2 over 21s)  kubelet, vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c  pulling image "[Harbor_fqdn]/project-public-a/alpine:v2"
+  Warning  Failed     6s (x2 over 21s)  kubelet, vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c  Failed to pull image "[Harbor_fqdn]/project-public-a/alpine:v2": rpc error: code = Unknown desc = Error response from daemon: unknown: The image is not signed in Notary.
   Warning  Failed     6s (x2 over 21s)  kubelet, vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c  Error: ErrImagePull
 ```
+
+#### Cleanup
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMTY1ODA4MSwtMTk0NjI4MzYwMSwtOD
-UyNjgyMzU4LDIwMDIwMjAyNjAsMTg5NzU4MDI1OSwtMTYyMzA3
-MjMyNiwxNzM1NDA2NzI4LC05ODk5NzU4MTYsODE5OTcwODIxLD
-E4OTY0NTk1MDAsLTEzMjM3NTYxNiw0OTg1NDIzMzYsLTE5MDQ1
-MzkwOTYsMTA2MjI0NzU5OSwxNjAwODEzMTA1LC0xNTUyNDIxOT
-AwLDE4ODgxMjMxMTEsMTE5NzMzNzE5OSwtNDA1NzM3MDMsLTc0
-MTM4MzIzM119
+eyJoaXN0b3J5IjpbMjU0OTY2NDkxLC0xOTQ2MjgzNjAxLC04NT
+I2ODIzNTgsMjAwMjAyMDI2MCwxODk3NTgwMjU5LC0xNjIzMDcy
+MzI2LDE3MzU0MDY3MjgsLTk4OTk3NTgxNiw4MTk5NzA4MjEsMT
+g5NjQ1OTUwMCwtMTMyMzc1NjE2LDQ5ODU0MjMzNiwtMTkwNDUz
+OTA5NiwxMDYyMjQ3NTk5LDE2MDA4MTMxMDUsLTE1NTI0MjE5MD
+AsMTg4ODEyMzExMSwxMTk3MzM3MTk5LC00MDU3MzcwMywtNzQx
+MzgzMjMzXX0=
 -->
