@@ -305,11 +305,13 @@ docker push harbor.pks.caracas.cf-app.com/project-public-a/alpine:v1
 docker run -t -d harbor.pks.caracas.cf-app.com/project-public-a/alpine:v1
 docker ps
 docker exec -it 3655d9703e56 sh
+
+apk update && apk upgrade && apk add curl && rm -rf /var/cache/apk/*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjEzNDU2MzMwLC0xNjIzMDcyMzI2LDE3Mz
-U0MDY3MjgsLTk4OTk3NTgxNiw4MTk5NzA4MjEsMTg5NjQ1OTUw
-MCwtMTMyMzc1NjE2LDQ5ODU0MjMzNiwtMTkwNDUzOTA5NiwxMD
-YyMjQ3NTk5LDE2MDA4MTMxMDUsLTE1NTI0MjE5MDAsMTg4ODEy
-MzExMSwxMTk3MzM3MTk5LC00MDU3MzcwMywtNzQxMzgzMjMzXX
-0=
+eyJoaXN0b3J5IjpbLTgyODExMTU3NSwtMTYyMzA3MjMyNiwxNz
+M1NDA2NzI4LC05ODk5NzU4MTYsODE5OTcwODIxLDE4OTY0NTk1
+MDAsLTEzMjM3NTYxNiw0OTg1NDIzMzYsLTE5MDQ1MzkwOTYsMT
+A2MjI0NzU5OSwxNjAwODEzMTA1LC0xNTUyNDIxOTAwLDE4ODgx
+MjMxMTEsMTE5NzMzNzE5OSwtNDA1NzM3MDMsLTc0MTM4MzIzM1
+19
 -->
