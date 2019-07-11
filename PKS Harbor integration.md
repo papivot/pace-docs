@@ -310,20 +310,23 @@ Login Succeeded
 
 > `docker push [Harbor_fqdn]/project-public-a/alpine:v1`
 
-- Modify the apline:v1 docker image 
-docker run -t -d [Harbor_fqdn]/project-public-a/alpine:v1
-docker ps
-docker exec -it 3655d9703e56 sh
+- Modify the apline:v1 docker image by running an package update on it. We will now enabled Trust and upload the image in Harbor as v2.
+
+> `docker run -t -d [Harbor_fqdn]/project-public-a/alpine:v1`
+> `docker ps`
+> `docker exec -it 3655d9703e56 sh`
+
+where 3655d9703e56 is the container id of the docker ps command output. 
 
 apk update && apk upgrade && apk add curl && rm -rf /var/cache/apk/*
 
 docker ps
 docker commit 3655d9703e56 harbor.pks.caracas.cf-app.com/project-public-a/alpine:v2
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzMDE1MjIwMCwxODk3NTgwMjU5LC0xNj
-IzMDcyMzI2LDE3MzU0MDY3MjgsLTk4OTk3NTgxNiw4MTk5NzA4
-MjEsMTg5NjQ1OTUwMCwtMTMyMzc1NjE2LDQ5ODU0MjMzNiwtMT
-kwNDUzOTA5NiwxMDYyMjQ3NTk5LDE2MDA4MTMxMDUsLTE1NTI0
-MjE5MDAsMTg4ODEyMzExMSwxMTk3MzM3MTk5LC00MDU3MzcwMy
-wtNzQxMzgzMjMzXX0=
+eyJoaXN0b3J5IjpbMzIwMTc3MTc3LDE4OTc1ODAyNTksLTE2Mj
+MwNzIzMjYsMTczNTQwNjcyOCwtOTg5OTc1ODE2LDgxOTk3MDgy
+MSwxODk2NDU5NTAwLC0xMzIzNzU2MTYsNDk4NTQyMzM2LC0xOT
+A0NTM5MDk2LDEwNjIyNDc1OTksMTYwMDgxMzEwNSwtMTU1MjQy
+MTkwMCwxODg4MTIzMTExLDExOTczMzcxOTksLTQwNTczNzAzLC
+03NDEzODMyMzNdfQ==
 -->
