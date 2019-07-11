@@ -156,8 +156,11 @@ vm-739344f0-516a-4e34-4527-9b3cd9b553fc   Ready    <none>   4h52m   v1.13.5
 vm-f918f979-757b-4214-5921-9a0a91bbe5df   Ready    <none>   70m     v1.13.5
 ```
 
+ - [ ] Working Harbor registry 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3NzM5NDkxOSwtMzM5MzI4NzUxLDE1ND
-U1Njg1OCwtOTAwMzIyNjQ1LC0yMDc3NTczMzg0LC0xOTAyMTQ0
-MDkxLC03ODgwNjc2MjIsMjIwNTUzNjIzXX0=
+eyJoaXN0b3J5IjpbLTkzMjA0OTA3MSwtNjc3Mzk0OTE5LC0zMz
+kzMjg3NTEsMTU0NTU2ODU4LC05MDAzMjI2NDUsLTIwNzc1NzMz
+ODQsLTE5MDIxNDQwOTEsLTc4ODA2NzYyMiwyMjA1NTM2MjNdfQ
+==
 -->
