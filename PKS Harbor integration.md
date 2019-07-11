@@ -95,11 +95,11 @@ denied: requested access to the resource is denied
 
 - Login as `devuser02` and push the image `alpine:v1`  to `project-priv-b`
 
-> `docker login harbor.pks.caracas.cf-app.com -u devuser`
+> `docker login [Harbor_fqdn] -u devuser`
 
-> `docker push harbor.pks.caracas.cf-app.com/project-priv-b/alpine:v1 `
+> `docker push [Harbor_fqdn]/project-priv-b/alpine:v1 `
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzUyMDM4ODAsMTA2MjI0NzU5OSwxNj
+eyJoaXN0b3J5IjpbLTE5MDQ1MzkwOTYsMTA2MjI0NzU5OSwxNj
 AwODEzMTA1LC0xNTUyNDIxOTAwLDE4ODgxMjMxMTEsMTE5NzMz
 NzE5OSwtNDA1NzM3MDMsLTc0MTM4MzIzM119
 -->
