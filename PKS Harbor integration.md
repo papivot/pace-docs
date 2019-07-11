@@ -165,9 +165,11 @@ secret/priv-a-creds created
 
 To view the secret, execute the following command- 
 
-> `
+> `kubectl get secret/priv-a-creds -o json |jq -r .data.\".dockerconfigjson\"|base64 --decode;echo`
+
+should display 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODQ1NDY4MjQsLTEzMjM3NTYxNiw0OT
+eyJoaXN0b3J5IjpbLTEyMjMyNTEzMzYsLTEzMjM3NTYxNiw0OT
 g1NDIzMzYsLTE5MDQ1MzkwOTYsMTA2MjI0NzU5OSwxNjAwODEz
 MTA1LC0xNTUyNDIxOTAwLDE4ODgxMjMxMTEsMTE5NzMzNzE5OS
 wtNDA1NzM3MDMsLTc0MTM4MzIzM119
