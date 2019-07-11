@@ -205,9 +205,20 @@ alpine-auth      1/1     Running            0          8s
 alpine-no-auth   0/1     ImagePullBackOff   0          54m
 ```
 
+#### Cleanup
+
+> `kubeclt delete -f no-auth.yaml`
+
+> `kubectl delete -f auth.yaml`
+
+
+## Harbor Clair 
+
+We will look at Harbor
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE5OTcwODIxLDE4OTY0NTk1MDAsLTEzMj
-M3NTYxNiw0OTg1NDIzMzYsLTE5MDQ1MzkwOTYsMTA2MjI0NzU5
-OSwxNjAwODEzMTA1LC0xNTUyNDIxOTAwLDE4ODgxMjMxMTEsMT
-E5NzMzNzE5OSwtNDA1NzM3MDMsLTc0MTM4MzIzM119
+eyJoaXN0b3J5IjpbMTU2NzkwMDkzMiw4MTk5NzA4MjEsMTg5Nj
+Q1OTUwMCwtMTMyMzc1NjE2LDQ5ODU0MjMzNiwtMTkwNDUzOTA5
+NiwxMDYyMjQ3NTk5LDE2MDA4MTMxMDUsLTE1NTI0MjE5MDAsMT
+g4ODEyMzExMSwxMTk3MzM3MTk5LC00MDU3MzcwMywtNzQxMzgz
+MjMzXX0=
 -->
