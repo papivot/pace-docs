@@ -15,8 +15,9 @@
  - [ ] `project-priv-a` `Private`
  - [ ] `project-priv-b` `Private`
 - Create 3 users (Administration -> Users -> New User)
- - [ ] `devuser01`, 
+ - [ ] `devuser01`, `devuser01@domain.com`, `Dev User01`, `Passw0rd`
+ - [ ] `devuser02`, `devuser02@domain.com`, `Dev User02`, `Passw0rd`
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5MzYwMTUzNiwtNzQxMzgzMjMzXX0=
+eyJoaXN0b3J5IjpbLTQwNTczNzAzLC03NDEzODMyMzNdfQ==
 -->
