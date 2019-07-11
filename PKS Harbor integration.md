@@ -101,9 +101,15 @@ denied: requested access to the resource is denied
 
 ## Use Harbor as a registry for K8S deployment 
 
-We will now use the `alpine:v1` container image already uploaded to the Harbor registry to 
+We will now use the `alpine:v1` container image already uploaded to the Harbor registry to deploy it as a pod in a K8S cluster. 
+
+Modify the below yaml with your Harbor fqdn
+
+```yaml
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY5OTM4OTk1LC0xOTA0NTM5MDk2LDEwNj
+eyJoaXN0b3J5IjpbNTE0ODg0MjU3LC0xOTA0NTM5MDk2LDEwNj
 IyNDc1OTksMTYwMDgxMzEwNSwtMTU1MjQyMTkwMCwxODg4MTIz
 MTExLDExOTczMzcxOTksLTQwNTczNzAzLC03NDEzODMyMzNdfQ
 ==
