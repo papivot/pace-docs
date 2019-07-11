@@ -124,7 +124,7 @@ spec:
 
 > `kubectl apply -f no-auth.yaml`
 
-> `kubectl get pods`
+> `kubectl get pods -n default`
 
 should return an error - 
 
@@ -133,7 +133,7 @@ NAME             READY   STATUS         RESTARTS   AGE
 alpine-no-auth   0/1     ErrImagePull   0          69s
 ```
 
-> `kubectl describe pod alpine-no-auth`
+> `kubectl describe pod alpine-no-auth -n default`
 
 should show the error message - 
 
@@ -151,11 +151,13 @@ vents:
 
 ```
 
-This happened because the Docker daemon running on the worker nodes does not have the required access to download the image and execute them. To do so, we need to provide the worker nodes with the requir
+This happened because the Docker daemon running on the worker nodes does not have the required access to download the image and execute them. To do so, we need to provide the worker nodes with the required credentials to access the private registry. 
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTM5Njk2MzYsNDk4NTQyMzM2LC0xOT
-A0NTM5MDk2LDEwNjIyNDc1OTksMTYwMDgxMzEwNSwtMTU1MjQy
-MTkwMCwxODg4MTIzMTExLDExOTczMzcxOTksLTQwNTczNzAzLC
-03NDEzODMyMzNdfQ==
+eyJoaXN0b3J5IjpbMTk0MzI4ODYyMyw0OTg1NDIzMzYsLTE5MD
+Q1MzkwOTYsMTA2MjI0NzU5OSwxNjAwODEzMTA1LC0xNTUyNDIx
+OTAwLDE4ODgxMjMxMTEsMTE5NzMzNzE5OSwtNDA1NzM3MDMsLT
+c0MTM4MzIzM119
 -->
