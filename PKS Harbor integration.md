@@ -369,7 +369,7 @@ metadata:
   name: alpine-signed-pod
 spec:
   containers:
-  - image: harbor.lab.local/trustme/alpine:v2
+  - image: [Harbor_fqdn]/project-public-a/alpine:v2
     command:
       - /bin/sh
       - "-c"
@@ -379,9 +379,14 @@ spec:
   restartPolicy: Always
 ```
 
+> `kubectl apply -f signed.yaml`
+
+> `kubectl get pods -n default`
+
+should show a 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzNzg1NTQzOCwtODUyNjgyMzU4LDIwMD
+eyJoaXN0b3J5IjpbLTY0MDg2NDk4NCwtODUyNjgyMzU4LDIwMD
 IwMjAyNjAsMTg5NzU4MDI1OSwtMTYyMzA3MjMyNiwxNzM1NDA2
 NzI4LC05ODk5NzU4MTYsODE5OTcwODIxLDE4OTY0NTk1MDAsLT
 EzMjM3NTYxNiw0OTg1NDIzMzYsLTE5MDQ1MzkwOTYsMTA2MjI0
