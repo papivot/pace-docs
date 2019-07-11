@@ -137,10 +137,25 @@ alpine-no-auth   0/1     ErrImagePull   0          69s
 
 should show the error message - 
 
+```shell
+...
+vents:
+  Type     Reason     Age                From                                              Message
+  ----     ------     ----               ----                                              -------
+  Normal   Scheduled  87s                default-scheduler                                 Successfully assigned default/alpine-no-auth to vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c
+  Normal   Pulling    46s (x3 over 87s)  kubelet, vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c  pulling image "harbor.pks.caracas.cf-app.com/project-priv-a/alpine:v1"
+  Warning  Failed     46s (x3 over 86s)  kubelet, vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c  Failed to pull image "harbor.pks.caracas.cf-app.com/project-priv-a/alpine:v1": rpc error: code = Unknown desc = Error response from daemon: pull access denied for harbor.pks.caracas.cf-app.com/project-priv-a/alpine, repository does not exist or may require 'docker login'
+  Warning  Failed     46s (x3 over 86s)  kubelet, vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c  Error: ErrImagePull
+  Normal   BackOff    6s (x6 over 86s)   kubelet, vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c  Back-off pulling image "harbor.pks.caracas.cf-app.com/project-priv-a/alpine:v1"
+  Warning  Failed     6s (x6 over 86s)   kubelet, vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c  Error: ImagePullBackOff
+
+```
+
+This happened because the Docker daemon running on the worker nodes does not have the 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNjExNjk1Miw0OTg1NDIzMzYsLTE5MD
-Q1MzkwOTYsMTA2MjI0NzU5OSwxNjAwODEzMTA1LC0xNTUyNDIx
-OTAwLDE4ODgxMjMxMTEsMTE5NzMzNzE5OSwtNDA1NzM3MDMsLT
-c0MTM4MzIzM119
+eyJoaXN0b3J5IjpbLTIwNzU4MTc1NjMsNDk4NTQyMzM2LC0xOT
+A0NTM5MDk2LDEwNjIyNDc1OTksMTYwMDgxMzEwNSwtMTU1MjQy
+MTkwMCwxODg4MTIzMTExLDExOTczMzcxOTksLTQwNTczNzAzLC
+03NDEzODMyMzNdfQ==
 -->
