@@ -17,10 +17,15 @@
 
 - Create 3 projects 
  - [ ] `project-public-a` `Public`
- - [ ] `project-priv-a` `Private`, Assign `devuser01` role of `Developer` and `projadmin01` role of `Project A
+ - [ ] `project-priv-a` `Private`, Assign `devuser01` role of `Developer` and `projadmin01` role of `Project Admin`
  - [ ] `project-priv-b` `Private`, Assign `devuser02` role of `Developer`
 
+- Logout and login with each user and validate the scope and visibility of each user. 
+
+## Upload Docker images to harbor
+- Login to the workstation that has Docker installed.
+- 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA5MDgzOTc5LDExOTczMzcxOTksLTQwNT
-czNzAzLC03NDEzODMyMzNdfQ==
+eyJoaXN0b3J5IjpbMTg4ODEyMzExMSwxMTk3MzM3MTk5LC00MD
+U3MzcwMywtNzQxMzgzMjMzXX0=
 -->
