@@ -316,7 +316,7 @@ Login Succeeded
 > `docker ps`
 > `docker exec -it 3655d9703e56 sh`
 
-where 3655d9703e56 is the container id of the docker ps command output for the alpine container.. 
+where 3655d9703e56 is the container id of the docker ps command output for the Alpine container. 
 
 > `apk update && apk upgrade && apk add curl && rm -rf /var/cache/apk/*`
 > `exit`
@@ -324,12 +324,15 @@ where 3655d9703e56 is the container id of the docker ps command output for the a
 > `docker ps`
 > `docker commit 3655d9703e56 [Harbor_fqdn]/project-public-a/alpine:v2`
 
+where 3655d9703e56 is the container id of the docker ps command output for the Alpine container.
 
+> `export DOCKER_CONTENT_TRUST_SERVER=https://[Harbor_fqdn]:4443`
+> `export DOCKER_CONTENT_TRUST=1`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY2NjY4NjkyLDE4OTc1ODAyNTksLTE2Mj
-MwNzIzMjYsMTczNTQwNjcyOCwtOTg5OTc1ODE2LDgxOTk3MDgy
-MSwxODk2NDU5NTAwLC0xMzIzNzU2MTYsNDk4NTQyMzM2LC0xOT
-A0NTM5MDk2LDEwNjIyNDc1OTksMTYwMDgxMzEwNSwtMTU1MjQy
-MTkwMCwxODg4MTIzMTExLDExOTczMzcxOTksLTQwNTczNzAzLC
-03NDEzODMyMzNdfQ==
+eyJoaXN0b3J5IjpbLTQxMjgxMTE3NiwxODk3NTgwMjU5LC0xNj
+IzMDcyMzI2LDE3MzU0MDY3MjgsLTk4OTk3NTgxNiw4MTk5NzA4
+MjEsMTg5NjQ1OTUwMCwtMTMyMzc1NjE2LDQ5ODU0MjMzNiwtMT
+kwNDUzOTA5NiwxMDYyMjQ3NTk5LDE2MDA4MTMxMDUsLTE1NTI0
+MjE5MDAsMTg4ODEyMzExMSwxMTk3MzM3MTk5LC00MDU3MzcwMy
+wtNzQxMzgzMjMzXX0=
 -->
