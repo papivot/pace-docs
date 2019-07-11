@@ -355,7 +355,7 @@ Signatures for [Harbor_fqdn]/project-public-a/alpine
 SIGNED TAG          DIGEST                                                             SIGNERS
 v2                  c685267c7f51fd5516a0d3be1f93a4fde782f4a17bcc6a4cfead2b1f6056b009   (Repo Admin)
 
-Administrative keys for harbor.pks.caracas.cf-app.com/project-public-a/alpine
+Administrative keys for [Harbor_fqdn]/project-public-a/alpine
 
   Repository Key:	e6331d505e0a00eeeab92d6974190aca47b99098fd7c6802fadd2098cf741414
   Root Key:	2180e7f440668868965edfe646359c22a2b3c58298ec43e0e8e530a90ac3e872
@@ -381,10 +381,10 @@ spec:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MjY4MjM1OCwyMDAyMDIwMjYwLDE4OT
-c1ODAyNTksLTE2MjMwNzIzMjYsMTczNTQwNjcyOCwtOTg5OTc1
-ODE2LDgxOTk3MDgyMSwxODk2NDU5NTAwLC0xMzIzNzU2MTYsND
-k4NTQyMzM2LC0xOTA0NTM5MDk2LDEwNjIyNDc1OTksMTYwMDgx
-MzEwNSwtMTU1MjQyMTkwMCwxODg4MTIzMTExLDExOTczMzcxOT
-ksLTQwNTczNzAzLC03NDEzODMyMzNdfQ==
+eyJoaXN0b3J5IjpbLTUzNzg1NTQzOCwtODUyNjgyMzU4LDIwMD
+IwMjAyNjAsMTg5NzU4MDI1OSwtMTYyMzA3MjMyNiwxNzM1NDA2
+NzI4LC05ODk5NzU4MTYsODE5OTcwODIxLDE4OTY0NTk1MDAsLT
+EzMjM3NTYxNiw0OTg1NDIzMzYsLTE5MDQ1MzkwOTYsMTA2MjI0
+NzU5OSwxNjAwODEzMTA1LC0xNTUyNDIxOTAwLDE4ODgxMjMxMT
+EsMTE5NzMzNzE5OSwtNDA1NzM3MDMsLTc0MTM4MzIzM119
 -->
