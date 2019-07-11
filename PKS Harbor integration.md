@@ -383,13 +383,18 @@ spec:
 
 > `kubectl get pods -n default`
 
-should show a 
+should show an `alpine-signed-pod` running
+```shell
+NAME                READY   STATUS             RESTARTS   AGE
+alpine-signed-pod   1/1     Running            0          6s
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0MDg2NDk4NCwtODUyNjgyMzU4LDIwMD
-IwMjAyNjAsMTg5NzU4MDI1OSwtMTYyMzA3MjMyNiwxNzM1NDA2
-NzI4LC05ODk5NzU4MTYsODE5OTcwODIxLDE4OTY0NTk1MDAsLT
-EzMjM3NTYxNiw0OTg1NDIzMzYsLTE5MDQ1MzkwOTYsMTA2MjI0
-NzU5OSwxNjAwODEzMTA1LC0xNTUyNDIxOTAwLDE4ODgxMjMxMT
-EsMTE5NzMzNzE5OSwtNDA1NzM3MDMsLTc0MTM4MzIzM119
+eyJoaXN0b3J5IjpbLTE5NDYyODM2MDEsLTg1MjY4MjM1OCwyMD
+AyMDIwMjYwLDE4OTc1ODAyNTksLTE2MjMwNzIzMjYsMTczNTQw
+NjcyOCwtOTg5OTc1ODE2LDgxOTk3MDgyMSwxODk2NDU5NTAwLC
+0xMzIzNzU2MTYsNDk4NTQyMzM2LC0xOTA0NTM5MDk2LDEwNjIy
+NDc1OTksMTYwMDgxMzEwNSwtMTU1MjQyMTkwMCwxODg4MTIzMT
+ExLDExOTczMzcxOTksLTQwNTczNzAzLC03NDEzODMyMzNdfQ==
+
 -->
