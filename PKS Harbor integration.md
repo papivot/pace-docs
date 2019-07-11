@@ -151,10 +151,10 @@ vents:
 
 ```
 
-This happened because the Docker daemon running on the worker nodes does not have the 
+This happened because the Docker daemon running on the worker nodes does not have the required access to download the image and execute them. To do so, we need to provide the worker nodes with the requir
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzU4MTc1NjMsNDk4NTQyMzM2LC0xOT
+eyJoaXN0b3J5IjpbLTIwMTM5Njk2MzYsNDk4NTQyMzM2LC0xOT
 A0NTM5MDk2LDEwNjIyNDc1OTksMTYwMDgxMzEwNSwtMTU1MjQy
 MTkwMCwxODg4MTIzMTExLDExOTczMzcxOTksLTQwNTczNzAzLC
 03NDEzODMyMzNdfQ==
