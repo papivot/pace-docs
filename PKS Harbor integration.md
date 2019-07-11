@@ -157,10 +157,18 @@ To do so, we first create a secret with the required credentials of `devuser01`
 
 > `kubectl create secret docker-registry priv-a-creds --docker-server=[Harbor_fqdn] --docker-username=devuser01 --docker-password=Passw0rd --docker-email=devuser01@domain.com -n default`
 
+This creates the required secret-
 
+```
+secret/priv-a-creds created
+```
+
+To view the secret, execute the following command- 
+
+> `
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyNTMyOTY4MiwtMTMyMzc1NjE2LDQ5OD
-U0MjMzNiwtMTkwNDUzOTA5NiwxMDYyMjQ3NTk5LDE2MDA4MTMx
-MDUsLTE1NTI0MjE5MDAsMTg4ODEyMzExMSwxMTk3MzM3MTk5LC
-00MDU3MzcwMywtNzQxMzgzMjMzXX0=
+eyJoaXN0b3J5IjpbLTE5ODQ1NDY4MjQsLTEzMjM3NTYxNiw0OT
+g1NDIzMzYsLTE5MDQ1MzkwOTYsMTA2MjI0NzU5OSwxNjAwODEz
+MTA1LC0xNTUyNDIxOTAwLDE4ODgxMjMxMTEsMTE5NzMzNzE5OS
+wtNDA1NzM3MDMsLTc0MTM4MzIzM119
 -->
