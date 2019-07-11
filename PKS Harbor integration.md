@@ -61,9 +61,16 @@ alpine                                                latest              4d9054
 
 > `docker login [Harbor_fqdn] -u devuser01`
 
-If it gives an error - `x509: certificate signed by unknown authority` - this implies that docker does not trusts a self signed cert repository and an exception needs to be made for the Harbor registry. To do so, as root, create /modify the file `/etc/docker/daemon.json`  ad
+If it gives an error - `x509: certificate signed by unknown authority` - this implies that docker does not trusts a self signed cert repository and an exception needs to be made for the Harbor registry. To do so, as root, create /modify the file `/etc/docker/daemon.json`  and add the following content -
+
+```shell
+{
+  "insecure-registries" : ["harbor_fqdn"]
+}
+```
+A service restart of docker daemon is required. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3MzU1ODYyNCwxNjAwODEzMTA1LC0xNT
-UyNDIxOTAwLDE4ODgxMjMxMTEsMTE5NzMzNzE5OSwtNDA1NzM3
-MDMsLTc0MTM4MzIzM119
+eyJoaXN0b3J5IjpbNTA4MTkzODQwLDE2MDA4MTMxMDUsLTE1NT
+I0MjE5MDAsMTg4ODEyMzExMSwxMTk3MzM3MTk5LC00MDU3Mzcw
+MywtNzQxMzgzMjMzXX0=
 -->
