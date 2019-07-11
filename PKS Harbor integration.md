@@ -68,9 +68,14 @@ If it gives an error - `x509: certificate signed by unknown authority` - this im
   "insecure-registries" : ["harbor_fqdn"]
 }
 ```
-A service restart of docker daemon is required. 
+A service restart of docker daemon is required. Once completee, retry the login command once again. This time a successfuly login message should be displayed.
+
+```shell
+Login Succeeded
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA4MTkzODQwLDE2MDA4MTMxMDUsLTE1NT
-I0MjE5MDAsMTg4ODEyMzExMSwxMTk3MzM3MTk5LC00MDU3Mzcw
-MywtNzQxMzgzMjMzXX0=
+eyJoaXN0b3J5IjpbMTA2MjI0NzU5OSwxNjAwODEzMTA1LC0xNT
+UyNDIxOTAwLDE4ODgxMjMxMTEsMTE5NzMzNzE5OSwtNDA1NzM3
+MDMsLTc0MTM4MzIzM119
 -->
