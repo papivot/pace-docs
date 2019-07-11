@@ -300,11 +300,14 @@ docker login harbor.pks.caracas.cf-app.com -u admin
 ```shell
 Login Succeeded
 ```
+docker tag alpine harbor.pks.caracas.cf-app.com/project-public-a/alpine:v1
+docker push harbor.pks.caracas.cf-app.com/project-public-a/alpine:v1
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjMwNzIzMjYsMTczNTQwNjcyOCwtOT
-g5OTc1ODE2LDgxOTk3MDgyMSwxODk2NDU5NTAwLC0xMzIzNzU2
-MTYsNDk4NTQyMzM2LC0xOTA0NTM5MDk2LDEwNjIyNDc1OTksMT
-YwMDgxMzEwNSwtMTU1MjQyMTkwMCwxODg4MTIzMTExLDExOTcz
-MzcxOTksLTQwNTczNzAzLC03NDEzODMyMzNdfQ==
+eyJoaXN0b3J5IjpbLTI0Mjg3MDkwMSwtMTYyMzA3MjMyNiwxNz
+M1NDA2NzI4LC05ODk5NzU4MTYsODE5OTcwODIxLDE4OTY0NTk1
+MDAsLTEzMjM3NTYxNiw0OTg1NDIzMzYsLTE5MDQ1MzkwOTYsMT
+A2MjI0NzU5OSwxNjAwODEzMTA1LC0xNTUyNDIxOTAwLDE4ODgx
+MjMxMTEsMTE5NzMzNzE5OSwtNDA1NzM3MDMsLTc0MTM4MzIzM1
+19
 -->
