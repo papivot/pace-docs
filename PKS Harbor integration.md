@@ -17,10 +17,10 @@
 
 - Create 3 projects 
  - [ ] `project-public-a` `Public`
- - [ ] `project-priv-a` `Private`
- - [ ] `project-priv-b` `Private`
+ - [ ] `project-priv-a` `Private`, Assign `devuser01` role of `Developer` and `projadmin01` role of `Project A
+ - [ ] `project-priv-b` `Private`, Assign `devuser02` role of `Developer`
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Nzk4ODExNSwxMTk3MzM3MTk5LC00MD
-U3MzcwMywtNzQxMzgzMjMzXX0=
+eyJoaXN0b3J5IjpbNDA5MDgzOTc5LDExOTczMzcxOTksLTQwNT
+czNzAzLC03NDEzODMyMzNdfQ==
 -->
