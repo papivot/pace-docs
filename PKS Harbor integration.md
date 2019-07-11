@@ -167,10 +167,35 @@ To view the secret, execute the following command-
 
 > `kubectl get secret/priv-a-creds -o json |jq -r .data.\".dockerconfigjson\"|base64 --decode;echo`
 
-should display 
+should display something like this -
+```shell
+{"auths":{"[Harbor_fqdn]":{"username":"devuser01","password":"Passw0rd","email":"devuser01@domain.com","auth":"ZGV2dXNlcjAxOlBhc3N3MHJk"}}}
+```
+
+Leveraging the secret, deploy a new yaml file 
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: alpine-auth
+spec:
+  containers:
+  - image: harbor.lab.local/project-priv-a/alpine:v1
+    command:
+      - /bin/sh
+      - "-c"
+      - "sleep 60m"
+    imagePullPolicy: Always
+    name: alpine-auth
+  restartPolicy: Always
+  imagePullSecrets:
+  - name: priv-a-creds
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjMyNTEzMzYsLTEzMjM3NTYxNiw0OT
-g1NDIzMzYsLTE5MDQ1MzkwOTYsMTA2MjI0NzU5OSwxNjAwODEz
-MTA1LC0xNTUyNDIxOTAwLDE4ODgxMjMxMTEsMTE5NzMzNzE5OS
-wtNDA1NzM3MDMsLTc0MTM4MzIzM119
+eyJoaXN0b3J5IjpbLTUxMjYyMDU3NSwtMTMyMzc1NjE2LDQ5OD
+U0MjMzNiwtMTkwNDUzOTA5NiwxMDYyMjQ3NTk5LDE2MDA4MTMx
+MDUsLTE1NTI0MjE5MDAsMTg4ODEyMzExMSwxMTk3MzM3MTk5LC
+00MDU3MzcwMywtNzQxMzgzMjMzXX0=
 -->
