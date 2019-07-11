@@ -8,9 +8,15 @@
 - K8s clusters deployed in PKS (without and with UAA as OIDC provider)
 - pks and kubectl binaries
 
+## Configure Harbor
+- Login to Harbor UI
+- Create 3 projects 
+|project-public-a| Public|
+|--|--|
+| project-priv-a | Private |
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MTM4MzIzM119
+eyJoaXN0b3J5IjpbLTExOTIyMTQ3MzgsLTc0MTM4MzIzM119
 -->
