@@ -57,8 +57,10 @@ harbor.pks.caracas.cf-app.com/project-priv-a/alpine   v1                  4d9054
 harbor.pks.caracas.cf-app.com/project-priv-b/alpine
 ```
 
-- Login to the repos
+- Login to the Harbor repository as `devuser01` and push both the images - 
+
+> 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTcwODIwMjg0LDE4ODgxMjMxMTEsMTE5Nz
-MzNzE5OSwtNDA1NzM3MDMsLTc0MTM4MzIzM119
+eyJoaXN0b3J5IjpbLTE1NTI0MjE5MDAsMTg4ODEyMzExMSwxMT
+k3MzM3MTk5LC00MDU3MzcwMywtNzQxMzgzMjMzXX0=
 -->
