@@ -161,10 +161,14 @@ vm-f918f979-757b-4214-5921-9a0a91bbe5df   Ready    <none>   70m     v1.13.5
 - Download the Harbor product tile from Pivnet
 - Login to OpsManager and upload the Harbor product tile using the `Import a Product` function. 
 - Validate that the valid stemcell is associated with the tile.
-- Config
+- Configure the tile
+
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTM4MzI3NDksLTkzMjA0OTA3MSwtNj
-c3Mzk0OTE5LC0zMzkzMjg3NTEsMTU0NTU2ODU4LC05MDAzMjI2
-NDUsLTIwNzc1NzMzODQsLTE5MDIxNDQwOTEsLTc4ODA2NzYyMi
-wyMjA1NTM2MjNdfQ==
+eyJoaXN0b3J5IjpbMjA0MDA2MjgzOCwtOTMyMDQ5MDcxLC02Nz
+czOTQ5MTksLTMzOTMyODc1MSwxNTQ1NTY4NTgsLTkwMDMyMjY0
+NSwtMjA3NzU3MzM4NCwtMTkwMjE0NDA5MSwtNzg4MDY3NjIyLD
+IyMDU1MzYyM119
 -->
