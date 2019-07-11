@@ -15,8 +15,8 @@ The following artifacts needs to be available before the start of the bootcamp -
  - om - The required binary can be deployed [here](https://github.com/pivotal-cf/om/releases)
  
  
- - [ ] List itemPKS plans with atleast one plan that has the ability to deploy K8s clusters with `Allow privilaged` setting enabled.
- - To deploy a K8s cluster use the following steps - 
+ - [ ] PKS plans with atleast one plan that has the ability to deploy K8s clusters with `Allow privilaged` setting enabled.
+ - [ ] A K8s cluster deployed in the PKS environment. To deploy a K8s cluster use the following steps - 
  
 >``
 $ UAA_PWD=`om -t [opsman_fqdn] -u [opsman_userid] -p [opsman_password] -k credentials --product-name pivotal-container-service --credential-reference .properties.pks_uaa_management_admin_client -t json|jq -r .secret`
@@ -127,7 +127,7 @@ Network Profile Name:
 
 If this is a Toolsmith deployed GCP cluster, get the instance ID(s) of the master node(s) - they will have a label of `job: master`, and add these instance(s) to the backend configuration of the *-pks-cluster-1 loadbalancer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTI4MDI4OTEsMTU0NTU2ODU4LC05MD
-AzMjI2NDUsLTIwNzc1NzMzODQsLTE5MDIxNDQwOTEsLTc4ODA2
-NzYyMiwyMjA1NTM2MjNdfQ==
+eyJoaXN0b3J5IjpbNzk0OTM5MzYyLDE1NDU1Njg1OCwtOTAwMz
+IyNjQ1LC0yMDc3NTczMzg0LC0xOTAyMTQ0MDkxLC03ODgwNjc2
+MjIsMjIwNTUzNjIzXX0=
 -->
