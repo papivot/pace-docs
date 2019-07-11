@@ -262,13 +262,15 @@ Navigate to Projects -> project-priv-a-> Configuration and set the following -
 
 `Automatically scan images on push`
 `Prevent vulnerable images from running.`
-`Prevent images with vulnerability severity of Mediu
+`Prevent images with vulnerability severity of Medium and above from being deployed.`
+
+Save. 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjIzNDg2MTgsODE5OTcwODIxLDE4OT
-Y0NTk1MDAsLTEzMjM3NTYxNiw0OTg1NDIzMzYsLTE5MDQ1Mzkw
-OTYsMTA2MjI0NzU5OSwxNjAwODEzMTA1LC0xNTUyNDIxOTAwLD
-E4ODgxMjMxMTEsMTE5NzMzNzE5OSwtNDA1NzM3MDMsLTc0MTM4
-MzIzM119
+eyJoaXN0b3J5IjpbMTYzOTI3MTQ0Myw4MTk5NzA4MjEsMTg5Nj
+Q1OTUwMCwtMTMyMzc1NjE2LDQ5ODU0MjMzNiwtMTkwNDUzOTA5
+NiwxMDYyMjQ3NTk5LDE2MDA4MTMxMDUsLTE1NTI0MjE5MDAsMT
+g4ODEyMzExMSwxMTk3MzM3MTk5LC00MDU3MzcwMywtNzQxMzgz
+MjMzXX0=
 -->
