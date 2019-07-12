@@ -2,7 +2,7 @@
 # PKS K8S Cluster access
 
 ### Requirements 
-- Access to Pivotal Ops Manager UI with PKS tile deployed (*Pivotal employees connected thru the VPN can request a PKS environment in GCP thru [Toolsmith](https://environments.toolsmiths.cf-app.com/home). Upon a PKS environment has been created, you can login using the pks cli and create a cluster using an active plan.)*
+- Access to Pivotal Ops Manager UI with PKS tile deployed (*Pivotal employees connected through the VPN can request a PKS environment in GCP through [Toolsmith](https://environments.toolsmiths.cf-app.com/home). Upon a PKS environment has been created, you can login using the pks cli and create a cluster using an active plan.)*
 - SSH Access to Pivotal Ops Manager
 - K8s clusters deployed in PKS (without and with UAA as OIDC provider)
 - pks and kubectl binaries
