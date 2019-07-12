@@ -2,7 +2,7 @@
 # PKS Harbor integration
 
 ### Requirements 
-- Access to Pivotal Ops Manager UI with PKS tile deployed (*Pivotal employees connected thru the VPN can request a PKS environment in GCP thru [Toolsmith](https://environments.toolsmiths.cf-app.com/home). Upon a PKS environment has been created, you can login using the pks cli and create a cluster using an active plan.)*
+- Access to Pivotal Ops Manager UI with PKS tile deployed (*Pivotal employees connected through the VPN can request a PKS environment in GCP through [Toolsmith](https://environments.toolsmiths.cf-app.com/home). When a PKS environment has been created, you can log in using the pks cli and create a cluster using an active plan.)*
 - A working Harbor registry 
 - A jumpbox with docker installed. 
 - K8s clusters deployed in PKS (without and with UAA as OIDC provider)
@@ -24,7 +24,7 @@
 
 ## Upload Docker images to Harbor
 - Login to the workstation that has Docker installed.
-- Download the alpine container image from Dockerhub
+- Download the alpine container image from Dockerhub -
 > `docker pull alpine`
 
 ```shell
@@ -61,14 +61,14 @@ alpine                                                latest              4d9054
 
 > `docker login [Harbor_fqdn] -u devuser01`
 
-If it gives an error - `x509: certificate signed by unknown authority` - this implies that docker does not trusts a self signed cert repository and an exception needs to be made for the Harbor registry. To do so, as root, create /modify the file `/etc/docker/daemon.json`  and add the following content -
+If it gives an error - `x509: certificate signed by unknown authority` - this implies that docker does not trust a self signed cert repository and an exception needs to be made for the Harbor registry. To do so, as root, create /modify the file `/etc/docker/daemon.json`  and add the following content -
 
 ```shell
 {
   "insecure-registries" : ["harbor_fqdn"]
 }
 ```
-A service restart of docker daemon is required. Once completed, retry the login command once again. This time a successfully login message should be displayed.
+A service restart of docker daemon is required. Once completed, retry the login command once again. This time, a successfully login message should be displayed.
 
 ```shell
 Login Succeeded
@@ -214,7 +214,7 @@ alpine-no-auth   0/1     ImagePullBackOff   0          54m
 
 ## Harbor Clair 
 
-We will look at Harbor's vulnerability scanning and management capabilities in this section. 
+We will look at Harbor's vulnerability for scanning and management capabilities in this section. 
 
 - Within Harbor UI->Administration-> Configuration-> Vulnerability, make sure that  `Database updated on` has a valid time.
 
@@ -228,7 +228,7 @@ We will look at Harbor's vulnerability scanning and management capabilities in t
 
 Check the repository in Harbor UI and confirm that the v1 image has been uploaded.
 
-- Now, we will update the docker container, create a new image and upload it to Harbor. 
+- Now, we will update the docker container, create a new image, and upload it to Harbor. 
 
 > `docker run -t -d [Harbor_fqdn]/project-priv-a/centos7:v1`
 
@@ -242,7 +242,7 @@ where `cadf8ff0f00f` was the ID of the running centos7:v1 container. Within the 
 
 > `yum udpate -y`
 
-Once done `exit` out of the container and grab the container ID.
+Once done, `exit` out of the container and grab the container ID.
 
 > `exit`
 
@@ -256,7 +256,7 @@ Push the newly created image to Harbor as v2.
 
 > `docker push [Harbor_fqdn]/project-priv-a/centos7:v2`
 
-- Within the Harbor UI navigate to Projects -> project-priv-a -> centos7. There should be two images v1 and v2. Select both and scan them. Once the scan is completed, observe the results. v1 should have a number of vulnerabilities while v2 should be clean. 
+- Within the Harbor UI, navigate to Projects -> project-priv-a -> centos7. There should be two images, v1 and v2. Select both and scan them. Once the scan is completed, observe the results. v1 should have a number of vulnerabilities while v2 should be clean. 
 
 Navigate to Projects -> project-priv-a-> Configuration and set the following - 
 
