@@ -1,4 +1,4 @@
-# PKS Backup and Restore <!-- omit in toc -->
+# PKS Backup <!-- omit in toc -->
 
 ## Table of Contents <!-- omit in toc -->
 
@@ -7,16 +7,17 @@
 - [Configure Jumpbox](#configure-jumpbox)
 - [Backup Installation Settings](#backup-installation-settings)
 - [Backup PKS BOSH Director](#backup-pks-bosh-director)
-- [Restore PKS BOSH Director](#restore-pks-bosh-director)
 - [Backup PKS Control Plane](#backup-pks-control-plane)
   - [Find the Deployment Name](#find-the-deployment-name)
   - [Run the Pre-Backup Checks](#run-the-pre-backup-checks)
-- [Restore PKS Control Plane](#restore-pks-control-plane)
+  - [Backup the Control Plane](#backup-the-control-plane)
 - [Backup PKS Cluster Deployments](#backup-pks-cluster-deployments)
+  - [Obtain PKS UAA Client Credentials](#obtain-pks-uaa-client-credentials)
+  - [Run the Pre-Backup Checks](#run-the-pre-backup-checks-1)
+  - [Back Up the Cluster Deployments](#backup-the-cluster-deployments)
 
 ## References
   * https://docs.pivotal.io/runtimes/pks/1-4/bbr-backup.html
-  * https://docs.pivotal.io/runtimes/pks/1-4/bbr-restore.html
 
 ## Requirements 
 - Access to Pivotal Ops Manager UI with PKS tile deployed
@@ -93,16 +94,12 @@ drwx------ 2 user user 4096 Jul  8 17:58 10.0.0.10_20190708T175821Z
   * Compress and encrypt the backup artifacts when storing them
   * Make redundant copies of your backup and store them in multiple locations
 
-## Restore PKS BOSH Director
-
-TODO
-
 ## Backup PKS Control Plane
 
 ### Find the Deployment Name
 
 ```
-$ export DEPLOYMENT_NAME=$(bosh -e gcp deployments | grep ^pivotal-container-service | awk '{print $1}')
+$ export DEPLOYMENT_NAME=$(bosh -e $BOSH_ENVIRONMENT deployments | grep ^pivotal-container-service | awk '{print $1}')
 $ echo $DEPLOYMENT_NAME
 pivotal-container-service-178f901c363756e15a06
 ```
@@ -120,7 +117,7 @@ $ bbr deployment -t $BOSH_ENVIRONMENT -u $BOSH_CLIENT -p $BOSH_CLIENT_SECRET -d 
 [17:35:09] Deployment 'pivotal-container-service-178f901c363756e15a06' can be backed up.
  ```
 
-### Back Up the Control Plane
+### Backup the Control Plane
 
 ```
 $ bbr deployment -t $BOSH_ENVIRONMENT -u $BOSH_CLIENT -d $DEPLOYMENT_NAME --ca-cert root.pem backup --with-manifest
@@ -156,10 +153,59 @@ $ ls -l | grep pivotal-container-service
 drwx------ 2 user user   4096 Jul  9 17:53 pivotal-container-service-178f901c363756e15a06_20190709T174949Z
 ```
 
-## Restore PKS Control Plane
-
-TODO
-
 ## Backup PKS Cluster Deployments
 
-TODO
+### Obtain PKS UAA Client Credentials
+
+First we need to obtain the PKS UAA Client Credentials. **Note:** avoid using the BOSH Commandline Credentials from the Director tile since the scope is too broad.
+
+To obtain the PKS BOSH credentials for your BBR operations, perform the following steps:
+  * From the Ops Manager Installation Dashboard, click the Enterprise PKS tile.
+  * Select the Credentials tab.
+  * Navigate to Credentials > UAA Client Credentials.
+  * Record the value for `uaa_client_secret`.
+  * Record the value for `uaa_client_name`.
+
+```json
+{
+  "uaa_client_name": "pivotal-container-service-178f901c363756e15a06",
+  "uaa_client_secret": "292ee40c2e617860fd3f"
+}
+```
+
+### Run the Pre-Backup Checks
+
+Using the `uaa_client_secret` and `uaa_client_name` from the previous step, run the pre-backup checks:
+
+```
+BOSH_CLIENT_SECRET=292ee40c2e617860fd3f bbr deployment --all-deployments --target $BOSH_ENVIRONMENT --username pivotal-container-service-178f901c363756e15a06 --ca-cert root.pem pre-backup-check
+
+[17:58:34] Pending: service-instance_ee1b29d2-7b37-4563-9077-d29bfc8c7dd4
+[17:58:34] -------------------------
+[17:58:39] Deployment 'service-instance_ee1b29d2-7b37-4563-9077-d29bfc8c7dd4' can be backed up.
+[17:58:39] -------------------------
+[17:58:39] Successfully can be backed up: service-instance_ee1b29d2-7b37-4563-9077-d29bfc8c7dd4
+```
+
+### Backup the Cluster Deployments
+
+In order to backup a specific cluster deployment, note the service instance name from the previous step, then run:
+```
+BOSH_CLIENT_SECRET=292ee40c2e617860fd3f bbr deployment -d service-instance_ee1b29d2-7b37-4563-9077-d29bfc8c7dd4  --target $BOSH_ENVIRONMENT --username pivotal-container-service-178f901c363756e15a06 --ca-cert root.pem backup
+
+[bbr] 2019/07/15 18:20:33 INFO - Looking for scripts
+...
+[bbr] 2019/07/15 18:20:40 INFO - Backup created of service-instance_ee1b29d2-7b37-4563-9077-d29bfc8c7dd4 on 2019-07-15 18:20:39.655760126 +0000 UTC m=+6.204917943
+```
+
+Check that the backup directory was successfully created:
+```
+$ ls -l | grep service-instance
+drwx------ 2 user user   4096 Jul 15 18:20 service-instance_ee1b29d2-7b37-4563-9077-d29bfc8c7dd4_20190715T182033Z
+```
+
+Alternatively, all clusters can be backed up with a single command:
+
+```
+BOSH_CLIENT_SECRET=292ee49c2e617860fd3f bbr deployment --all-deployments --target $BOSH_ENVIRONMENT --username pivotal-container-service-178f901c363756e15a06 --ca-cert root.pem backup
+```
