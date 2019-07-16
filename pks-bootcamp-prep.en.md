@@ -14,7 +14,7 @@ The following artifacts needs to be readily available before the start of the bo
 > `gem install cf-uaac`
  * Curl
  * jq
- * om - The required binary can be deployed [here](https://github.com/pivotal-cf/om/releases)
+ * om - The required binary can be downloaded [here](https://github.com/pivotal-cf/om/releases)
  
  
  - [ ] PKS tile deployed with at least one plan that has the ability to deploy K8s clusters with `Allow privilaged` setting enabled.
@@ -166,9 +166,10 @@ vm-f918f979-757b-4214-5921-9a0a91bbe5df   Ready    <none>   70m     v1.13.5
 * Make sure Clair and Notary are enabled. 
 * Clair Updater interval (Hours) is set to a number greater than 0 (e.g. 1)
 * Apply changes. 
-* Once configuration is completed, make sure that the DNS is updated to reflect the public IP and FQDN. Adjust the firewall, if necessary. Harbor requires ports 443 and 4443 (notary) 
+* Once configuration is completed, make sure that the DNS is updated to reflect the public IP and FQDN. 
+* Adjust the firewall, if necessary. Harbor requires ports 443 and 4443 (Notary) 
 * Validate the FQDN is reachable. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDc2NTg3MTksLTEwNjE3NTU4NDNdfQ
-==
+eyJoaXN0b3J5IjpbMTg5NzE5OTk3OCwtMjA0NzY1ODcxOSwtMT
+A2MTc1NTg0M119
 -->
