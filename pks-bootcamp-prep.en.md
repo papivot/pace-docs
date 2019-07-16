@@ -159,19 +159,16 @@ vm-f918f979-757b-4214-5921-9a0a91bbe5df   Ready    <none>   70m     v1.13.5
 
  - [ ] Working Harbor registry. If you do not have one, use the following steps to deploy a Harbor tile along with the PKS tile. Details of the configuration and howto is provided [here](https://docs.pivotal.io/partners/vmware-harbor/installing.html).
 
-- Download the Harbor product tile from Pivnet
-- Login to OpsManager and upload the Harbor product tile using the `Import a Product` function. 
-- Validate that the valid stemcell is associated with the tile.
-- Configure the tile. Use the defaults (wherever possible) .
-- Make sure Clair and Notary are enabled. 
--  Clair Updater interval (Hours) is set to a number greater than 0 (e.g. 1)
-- Apply changes. 
-- Once configuration is completed, make sure that the DNS is updated to reflect the public IP and FQDN. Adjust the firewall, if necessary. Harbor requires ports 443 and 4443 (notary) 
-- Validate the FQDN is reachable. 
-
-
-
-
+* Download the Harbor product tile from Pivnet
+* Login to OpsManager and upload the Harbor product tile using the `Import a Product` function. 
+* Validate that the valid stemcell is associated with the tile.
+* Configure the tile. Use the defaults (wherever possible) .
+* Make sure Clair and Notary are enabled. 
+* Clair Updater interval (Hours) is set to a number greater than 0 (e.g. 1)
+* Apply changes. 
+* Once configuration is completed, make sure that the DNS is updated to reflect the public IP and FQDN. Adjust the firewall, if necessary. Harbor requires ports 443 and 4443 (notary) 
+* Validate the FQDN is reachable. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjQyODA3MCwtMTA2MTc1NTg0M119
+eyJoaXN0b3J5IjpbLTIwNDc2NTg3MTksLTEwNjE3NTU4NDNdfQ
+==
 -->
