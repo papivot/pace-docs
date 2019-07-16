@@ -9,7 +9,7 @@
 
 ## Docker installation
 
-**Note**: Most of the demos in this section are based on Ubuntu 18.04 running as an t2.medium EC2 instance. Please modify your environment accordingly.
+**Note**: Most of the demos in this section are based on Ubuntu 18.04 running as an t2.medium EC2 instance or similar. Please modify your environment accordingly.
 
 #### Step1 - Update apt
 >`sudo apt-get update`
@@ -339,5 +339,5 @@ Deleted: sha256:f1b5933fe4b5f49bbe8258745cf396afe07e625bdab3168e364daf7c956b6b81
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI4NDY0NDBdfQ==
+eyJoaXN0b3J5IjpbLTc1ODQyNzk3OCw0Mjg0NjQ0MF19
 -->
