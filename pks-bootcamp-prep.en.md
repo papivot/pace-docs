@@ -53,7 +53,7 @@ Successfully fetched token via client credentials grant.
 Target: https://[api.pks.fqdn]:8443
 Context: admin, from client admin
 ```
-Use the UAAC cli to add a user -
+Use the UAAC cli to add an admin user -
 
 >`$ uaac user add [username] --emails [username@email.com] -p [password]`
 
@@ -88,7 +88,7 @@ medium  58375a45-17f7-4291-acf1-455bfdc8e371  Example: This plan will configure 
 large   241118e5-69b2-4ef9-b47f-4d2ab071aff5  Example: This plan will configure a large kubernetes cluster for resource heavy workloads, or a high number of workloads.
 ```
 
-Use the PKS CLI to create a cluster using one of the above plans - 
+Use the PKS CLI to create a cluster using one of the above plans (that met the previously mentioned pod security criteria)- 
 
 >`pks create-cluster gcpcluster00 --external-hostname [clustername.fqdn]  --plan small`
 
@@ -171,6 +171,6 @@ vm-f918f979-757b-4214-5921-9a0a91bbe5df   Ready    <none>   70m     v1.13.5
 * Adjust the firewall, if necessary. Harbor requires ports 443 and 4443 (Notary) 
 * Validate the FQDN is reachable. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzYxNzg3NDEsMTg5NzE5OTk3OCwtMj
-A0NzY1ODcxOSwtMTA2MTc1NTg0M119
+eyJoaXN0b3J5IjpbNjM3NDU3OTg2LDE4OTcxOTk5NzgsLTIwND
+c2NTg3MTksLTEwNjE3NTU4NDNdfQ==
 -->
