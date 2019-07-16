@@ -14,12 +14,12 @@ The following artifacts needs to be readily available before the start of the bo
 > `gem install cf-uaac`
  * Curl.
  * jq.
- * om - The required binary can be downloaded [here].(https://github.com/pivotal-cf/om/releases)
+ * om - The required binary can be downloaded [here](https://github.com/pivotal-cf/om/releases).
  * Please make sure that all bastion/jumpbox is up-to date on all patches. 
  
  
- - [ ] PKS tile deployed with at least one plan that has the ability to deploy K8s clusters with `Allow privilaged` setting **enabled**. For that plan, make sure that the following are **unchecked** - `PodSecurityPolicy,` `DenyEscalatingExec`, `SecurityContextDeny`
- - [ ] PKS tile `UAA Configuration` with `UAA as OIDC provider` **unchecked**
+ - [ ] PKS tile deployed with at least one plan that has the ability to deploy K8s clusters with `Allow privilaged` setting **enabled**. For that plan, make sure that the following are **unchecked** - `PodSecurityPolicy,` `DenyEscalatingExec`, `SecurityContextDeny`.
+ - [ ] PKS tile `UAA Configuration` with `UAA as OIDC provider` **unchecked**.
  - [ ] A K8s cluster deployed in the PKS environment. To deploy a K8s cluster, use the following steps - 
  
 >``
@@ -160,17 +160,17 @@ vm-f918f979-757b-4214-5921-9a0a91bbe5df   Ready    <none>   70m     v1.13.5
 
  - [ ] Working Harbor registry. If you do not have one, use the following steps to deploy a Harbor tile along with the PKS tile. Details of the configuration and howto is provided [here](https://docs.pivotal.io/partners/vmware-harbor/installing.html).
 
-* Download the Harbor product tile from Pivnet
+* Download the Harbor product tile from Pivnet.
 * Login to OpsManager and upload the Harbor product tile using the `Import a Product` function. 
 * Validate that the valid stemcell is associated with the tile.
-* Configure the tile. Use the defaults (wherever possible) .
+* Configure the tile. Use the defaults (wherever possible).
 * Make sure Clair and Notary are enabled. 
 * Clair Updater interval (Hours) is set to a number greater than 0 (e.g. 1)
 * Apply changes. 
 * Once configuration is completed, make sure that the DNS is updated to reflect the public IP and FQDN. 
-* Adjust the firewall, if necessary. Harbor requires ports 443 and 4443 (Notary) 
+* Adjust the firewall, if necessary. Harbor requires ports 443 and 4443 (Notary).
 * Validate the FQDN is reachable. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTgxNDMyODAsMTg5NzE5OTk3OCwtMj
-A0NzY1ODcxOSwtMTA2MTc1NTg0M119
+eyJoaXN0b3J5IjpbMjMzOTM2MzE0LDE4OTcxOTk5NzgsLTIwND
+c2NTg3MTksLTEwNjE3NTU4NDNdfQ==
 -->
