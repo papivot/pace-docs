@@ -5,6 +5,7 @@
 - [References](#references)
 - [Requirements](#requirements)
 - [Configure Jumpbox](#configure-jumpbox)
+- [Export Environment Variables](#export-environment-variables)
 - [Backup Installation Settings](#backup-installation-settings)
 - [Backup PKS BOSH Director](#backup-pks-bosh-director)
 - [Backup PKS Control Plane](#backup-pks-control-plane)
@@ -28,18 +29,66 @@
 - Kubectl binary
 - BBR binary
 - OM binary
+- jq binary
 
 ## Configure Jumpbox
 
-TODO
+### Install BBR
+
+```
+sudo wget https://github.com/cloudfoundry-incubator/bosh-backup-and-restore/releases/download/v1.5.1/bbr-1.5.1-linux-amd64 -P /usr/local/bin
+sudo ln -s /usr/local/bin/bbr-1.5.1-linux-amd64 /usr/local/bin/bbr
+sudo chmod 755 /usr/local/bin/bbr
+```
+
+### Install OM
+
+```
+wget https://github.com/pivotal-cf/om/releases/download/2.0.1/om-linux-2.0.1.tar.gz
+tar -xzvf om-linux-2.0.1.tar.gz om
+sudo mv om /usr/local/bin
+sudo chmod 755 /usr/local/bin/om
+```
+
+### Install jq
+
+Assuming you're using Ubuntu:
+```
+sudo apt-get install -y jq
+```
+
+If not, follow instructions at https://stedolan.github.io/jq/download/
+
+### Create BBR Directory
+
+```
+mkdir ~/bbr && cd ~/bbr
+```
+
+### Download BBR SSH Credentials
+
+```
+om -k --target https://pcf.yourdomain.com -u $OPSMAN_USER -p $OPSMAN_PASS credentials -p p-bosh -c .director.bbr_ssh_credentials -t json | jq -r .private_key_pem > ~/bbr/bbr.pem
+```
+
+### Download Ops Manager Root CA Certificate
+
+```
+om -k --target https://pcf.yourdomain.com -u $OPSMAN_USER -p $OPSMAN_PASS curl -p /api/v0/security/root_ca_certificate | jq -r .root_ca_certificate_pem > ~/bbr/root.pem
+```
+
+## Export Environment Variables
+
 ```
 export $(om -k --target https://pcf.yourdomain.com -u $OPSMAN_USER -p $OPSMAN_PASS curl --path /api/v0/deployed/director/credentials/bosh_commandline_credentials | jq -r .credential)
-get bosh creds
-install bbr binary
-install om binary
-get bosh and bbr certs
-bosh alias-env
-bosh login
+```
+
+The above command will export the following variables to be used in subsequent commands:
+
+```
+BOSH_CLIENT=ops_manager
+BOSH_CLIENT_SECRET=N8gW1FfabcBCzkfb7vhRnr13f36-9SbF
+BOSH_ENVIRONMENT=10.0.0.10
 ```
 
 ## Backup Installation Settings
