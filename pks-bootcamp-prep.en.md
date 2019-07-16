@@ -18,8 +18,8 @@ The following artifacts needs to be readily available before the start of the bo
  * Please make sure that all bastion/jumpbox is up-to date on all patches. 
  
  
- - [ ] PKS tile deployed with at least one plan that has the ability to deploy K8s clusters with `Allow privilaged` setting enabled. For that plan, make 
- - [ ] PKS tile with `UAA as OIDC provider` **unchecked**
+ - [ ] PKS tile deployed with at least one plan that has the ability to deploy K8s clusters with `Allow privilaged` setting enabled. For that plan, make sure that the following are unchecked - `PodSecurityPolicy,` `DenyEscalatingExec`, `SecurityContextDeny`
+ - [ ] PKS tile `UAA Configuration` with `UAA as OIDC provider` **unchecked**
  - [ ] A K8s cluster deployed in the PKS environment. To deploy a K8s cluster, use the following steps - 
  
 >``
@@ -171,6 +171,6 @@ vm-f918f979-757b-4214-5921-9a0a91bbe5df   Ready    <none>   70m     v1.13.5
 * Adjust the firewall, if necessary. Harbor requires ports 443 and 4443 (Notary) 
 * Validate the FQDN is reachable. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjUzNTA5MTQ3LDE4OTcxOTk5NzgsLTIwND
-c2NTg3MTksLTEwNjE3NTU4NDNdfQ==
+eyJoaXN0b3J5IjpbMTgwNzU0NTQ4MywxODk3MTk5OTc4LC0yMD
+Q3NjU4NzE5LC0xMDYxNzU1ODQzXX0=
 -->
