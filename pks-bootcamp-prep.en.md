@@ -7,7 +7,7 @@ The following artifacts needs to be readily available before the start of the bo
  - [ ] An account with [Jumpcloud](https://jumpcloud.com/signup/) for LDAP integration
  - [ ] Ops Manager with PKS installed and configured. The recommended option is GCP, as it is easy to deploy, manage, and the least expensive of the public clouds. Pivotal employees connected through the VPN can request a PKS environment in GCP through [Toolsmith](https://environments.toolsmiths.cf-app.com/home). Toolsmith has a help video on how to request a PKS environment on GCP. 
  - [ ] BOSH Director should have the `Enable VM Resurrector Plugin` already enabled.
- - [ ] Jumpbox/bastion host with access to the PKS environment (preferably Ubuntu Linux) with the following binaries installed -
+ - [ ] Jumpbox/bastion host with access to the PKS environment (preferably Ubuntu 18.04 n1-standard-1 in GCP or a t2.medium EC2) with the following binaries installed -
  * Kubectl - After signing into the Pivotal network, the relevant binaries can be downloaded from [here](https://network.pivotal.io/products/pivotal-container-service/#/releases/386533/file_groups/1831)
  * pks - After signing into the Pivotal network, the relevant binaries can be downloaded from [here](https://network.pivotal.io/products/pivotal-container-service/#/releases/386533/file_groups/1830).
  * uaac - this is generally installed as a Ruby gem 
@@ -170,6 +170,6 @@ vm-f918f979-757b-4214-5921-9a0a91bbe5df   Ready    <none>   70m     v1.13.5
 * Adjust the firewall, if necessary. Harbor requires ports 443 and 4443 (Notary) 
 * Validate the FQDN is reachable. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NzE5OTk3OCwtMjA0NzY1ODcxOSwtMT
-A2MTc1NTg0M119
+eyJoaXN0b3J5IjpbMTY5MzQ0OTEyLDE4OTcxOTk5NzgsLTIwND
+c2NTg3MTksLTEwNjE3NTU4NDNdfQ==
 -->
