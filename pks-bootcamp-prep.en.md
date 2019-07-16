@@ -3,8 +3,8 @@
 
 The following artifacts needs to be readily available before the start of the bootcamp -
 
- - [ ] An account with [Papertrail](https://papertrailapp.com/) for logging
- - [ ] An account with [Jumpcloud](https://jumpcloud.com/signup/) for LDAP integration
+ - [ ] An account with [Papertrail](https://papertrailapp.com/) for logging demo.
+ - [ ] An account with [Jumpcloud](https://jumpcloud.com/signup/) for LDAP integration demo.
  - [ ] Ops Manager with PKS installed and configured. The recommended option is GCP, as it is easy to deploy, manage, and the least expensive of the public clouds. Pivotal employees connected through the VPN can request a PKS environment in GCP through [Toolsmith](https://environments.toolsmiths.cf-app.com/home). Toolsmith has a help video on how to request a PKS environment on GCP. 
  - [ ] BOSH Director should have the `Enable VM Resurrector Plugin` already enabled.
  - [ ] Jumpbox/bastion host with access to the PKS environment (preferably Ubuntu 18.04 n1-standard-1 in GCP or a t2.medium EC2) with the following binaries installed -
@@ -12,9 +12,9 @@ The following artifacts needs to be readily available before the start of the bo
  * pks - After signing into the Pivotal network, the relevant binaries can be downloaded from [here](https://network.pivotal.io/products/pivotal-container-service/#/releases/386533/file_groups/1830).
  * uaac - this is generally installed as a Ruby gem 
 > `gem install cf-uaac`
- * Curl
- * jq
- * om - The required binary can be downloaded [here](https://github.com/pivotal-cf/om/releases)
+ * Curl.
+ * jq.
+ * om - The required binary can be downloaded [here].(https://github.com/pivotal-cf/om/releases)
  * Please make sure that all bastion/jumpbox is up-to date on all patches. 
  
  
@@ -171,6 +171,6 @@ vm-f918f979-757b-4214-5921-9a0a91bbe5df   Ready    <none>   70m     v1.13.5
 * Adjust the firewall, if necessary. Harbor requires ports 443 and 4443 (Notary) 
 * Validate the FQDN is reachable. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM3NDU3OTg2LDE4OTcxOTk5NzgsLTIwND
-c2NTg3MTksLTEwNjE3NTU4NDNdfQ==
+eyJoaXN0b3J5IjpbLTExNTgxNDMyODAsMTg5NzE5OTk3OCwtMj
+A0NzY1ODcxOSwtMTA2MTc1NTg0M119
 -->
