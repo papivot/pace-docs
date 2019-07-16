@@ -17,8 +17,10 @@ The following artifacts needs to be readily available before the start of the bo
  * om - The required binary can be deployed [here](https://github.com/pivotal-cf/om/releases)
  
  
- - [ ] PKS plans with at least one plan that has the ability to deploy K8s clusters with `Allow privilaged` setting enabled.
- - [ ] A K8s cluster deployed in the PKS environment. To deploy a K8s cluster, use the following steps - 
+ - [ ] PKS tile deployed with at least one plan that has the ability to deploy K8s clusters with `Allow privilaged` setting enabled.
+ - [ ] PKS tile with `UAA as OIDC provider` **unchecked**
+ - [ ] A K8s cluster deployed in the PKS environment. 
+	 - [ To deploy a K8s cluster, use the following steps - 
  
 >``
 $ UAA_PWD=`om -t [opsman_fqdn] -u [opsman_userid] -p [opsman_password] -k credentials --product-name pivotal-container-service --credential-reference .properties.pks_uaa_management_admin_client -t json|jq -r .secret`
@@ -172,5 +174,5 @@ vm-f918f979-757b-4214-5921-9a0a91bbe5df   Ready    <none>   70m     v1.13.5
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjE3NTU4NDNdfQ==
+eyJoaXN0b3J5IjpbMTMzMDA0NzAwNSwtMTA2MTc1NTg0M119
 -->
