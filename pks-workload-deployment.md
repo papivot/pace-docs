@@ -262,13 +262,13 @@ Now, let us increase the number of PODs servicing the application from 1 to 2.
 
 > `kubectl edit deployment k8s-operations -n kube-op`
 
-should open an editable interface (vi commands are accepted here).  Locate the replica variable and change it from 1 to 2. 
+should open an editable interface (vi commands are accepted here).  Locate the `replicas` variable and change it from 1 to 2. 
 
 ```yaml
 ...
 spec:
   progressDeadlineSeconds: 600
-  replicas: 1
+  replicas: 2
   revisionHistoryLimit: 10
   selector:
     matchLabels:
@@ -276,9 +276,10 @@ spec:
 ...
 ```
 
+`esc` `:` `w` `q` `!` to save and exit.  This up
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NzYwOTYwNiw0NzQ4Nzg0NzksLTEyNj
+eyJoaXN0b3J5IjpbMTg5MjMyOTczMCw0NzQ4Nzg0NzksLTEyNj
 AyOTY2MDksLTkzNTA1NDg5OSw5NzUyMTU3NzEsMTI0OTUxNDQw
 MywtMTExODI0OTUzNF19
 -->
