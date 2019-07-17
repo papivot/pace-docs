@@ -46,7 +46,145 @@ $kubectl config use-context <cluster-name>
 
 ### Deploying the application
 
-Copy the below yaml content and save it as a file call k8sops-deployment.ymal
+Copy the below yaml content and save it as a file call `k8sops-deployment.yaml`
+
+```yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: kube-ops
+  labels:
+    project.name: k8s-operations
+    project.app: k8s-operations
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: k8s-operations
+  namespace: kube-ops
+  labels:
+    project.name: k8s-operations
+    project.app: k8s-operations
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: k8s-operations
+  labels:
+    project.app: k8s-operations
+    project.name: k8s-operations
+rules:
+  - apiGroups:
+    - '*'
+    resources:
+    - '*'
+    verbs: ["get", "list", "watch"]
+  - nonResourceURLs:
+    - '*'
+    verbs: ["get", "list", "watch"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: k8s-operations
+  labels:
+    project.app: k8s-operations
+    project.name: k8s-operations
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: k8s-operations
+subjects:
+- kind: ServiceAccount
+  name: k8s-operations
+  namespace: kube-ops
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: 'true'
+  labels:
+    project.app: k8s-operations
+    project.name: k8s-operations
+  name: k8s-operations
+  namespace: kube-ops
+spec:
+  ports:
+    - name: http
+      port: 80
+      protocol: TCP
+      targetPort: 8080
+  selector:
+    project.app: k8s-operations
+  type: LoadBalancer
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    project.name: k8s-operations
+    project.app: k8s-operations
+  name: k8s-operations
+  namespace: kube-ops
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      project.app: k8s-operations
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+    type: RollingUpdate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        project.app: k8s-operations
+    spec:
+      containers:
+      - env:
+        - name: CLUSTER_NAME
+          value: navneet.cfcr.demo
+        image: whoami6443/k8soper:0.0.6
+        imagePullPolicy: Always
+        name: k8s-operations
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+        resources:
+          limits:
+            cpu: 100m
+            memory: 128Mi
+          requests:
+            cpu: 50m
+            memory: 64Mi
+        securityContext:
+          readOnlyRootFilesystem: true
+          allowPrivilegeEscalation: false
+          privileged: false
+          runAsNonRoot: false
+        volumeMounts:
+        - mountPath: /user/k8soper
+          name: cache-volume
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        stdin: true
+        tty: true
+      volumes:
+      - name: cache-volume
+        emptyDir: {}
+      dnsPolicy: ClusterFirst
+      schedulerName: default-scheduler
+      securityContext: {}
+      serviceAccount: k8s-operations
+      serviceAccountName: k8s-operations
+      terminationGracePeriodSeconds: 30
+```
+Once saved, use kubectl to deploy the relevent K*
 
 > `kubectl apply -f k8sops-deployment.yaml`                                                                                                            
 
@@ -59,6 +197,6 @@ service/k8s-operations created
 deployment.extensions/k8s-operations created
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MjQ5Mzc2MSwxMjQ5NTE0NDAzLC0xMT
-E4MjQ5NTM0XX0=
+eyJoaXN0b3J5IjpbMzY4MzExNzcwLDEyNDk1MTQ0MDMsLTExMT
+gyNDk1MzRdfQ==
 -->
