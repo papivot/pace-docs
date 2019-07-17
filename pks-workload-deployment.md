@@ -324,10 +324,11 @@ Notice how the yaml specified `containerPort: 8080` is currently in a LISTENING 
 ---
 > `cd /;touch temp`
 
-Notice how the root filesystem has been made 
-readOnlyRootFilesystem: true
+Notice how the root filesystem has been made read only due to the `readOnlyRootFilesystem: true` directive in the yaml file. 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0MDE2MDkwNSwxNTMwNTU1MzgyLDQ3ND
+eyJoaXN0b3J5IjpbLTkzMzQ2ODQwOSwxNTMwNTU1MzgyLDQ3ND
 g3ODQ3OSwtMTI2MDI5NjYwOSwtOTM1MDU0ODk5LDk3NTIxNTc3
 MSwxMjQ5NTE0NDAzLC0xMTE4MjQ5NTM0XX0=
 -->
