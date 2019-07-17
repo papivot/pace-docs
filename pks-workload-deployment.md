@@ -337,9 +337,10 @@ Notice how `/user/k8soper` has been mounted as a writeable directory for the app
           name: cache-volume
 ```
 
+> `exit`
 ### Cleanup
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQxNjU2OTgyLDE1MzA1NTUzODIsNDc0OD
-c4NDc5LC0xMjYwMjk2NjA5LC05MzUwNTQ4OTksOTc1MjE1Nzcx
-LDEyNDk1MTQ0MDMsLTExMTgyNDk1MzRdfQ==
+eyJoaXN0b3J5IjpbMTQzMTg1MDAyOCwxNTMwNTU1MzgyLDQ3ND
+g3ODQ3OSwtMTI2MDI5NjYwOSwtOTM1MDU0ODk5LDk3NTIxNTc3
+MSwxMjQ5NTE0NDAzLC0xMTE4MjQ5NTM0XX0=
 -->
