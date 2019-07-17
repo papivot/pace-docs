@@ -184,6 +184,9 @@ spec:
       serviceAccountName: k8s-operations
       terminationGracePeriodSeconds: 30
 ```
+
+Modify the CLUSTER_NAME variable's value to something as per your requirements.  Modify the `image: whoami6443/k8soper:0.0.6
+       
 Once saved, use kubectl to deploy the relevant K8s objects. 
 
 > `kubectl apply -f k8sops-deployment.yaml`                                                                                                            
@@ -201,6 +204,6 @@ deployment.extensions/k8s-operations created
 
 Check of te
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc1MjE1NzcxLDEyNDk1MTQ0MDMsLTExMT
-gyNDk1MzRdfQ==
+eyJoaXN0b3J5IjpbMTEwMDgxMzg1OSw5NzUyMTU3NzEsMTI0OT
+UxNDQwMywtMTExODI0OTUzNF19
 -->
