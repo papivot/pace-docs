@@ -222,14 +222,17 @@ Since the deployment yaml had created a service of type loadbalancr, a new loadb
 
 > `kubectl get service -n kube-ops -o wide`      
 
+should display the details of the service. Note the `EXTERNAL-IP`.
 ```shell
 NAME             TYPE           CLUSTER-IP       EXTERNAL-IP     PORT(S)        AGE   SELECTOR
 k8s-operations   LoadBalancer   10.100.200.157   35.194.50.106   80:30480/TCP   77m   project.app=k8s-operations
 ```
 
+The application is 
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDQwODk1MCwtMTI2MDI5NjYwOSwtOT
-M1MDU0ODk5LDk3NTIxNTc3MSwxMjQ5NTE0NDAzLC0xMTE4MjQ5
-NTM0XX0=
+eyJoaXN0b3J5IjpbLTExMzIzMjIxOTIsLTEyNjAyOTY2MDksLT
+kzNTA1NDg5OSw5NzUyMTU3NzEsMTI0OTUxNDQwMywtMTExODI0
+OTUzNF19
 -->
