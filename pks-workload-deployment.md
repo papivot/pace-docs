@@ -185,7 +185,8 @@ spec:
       terminationGracePeriodSeconds: 30
 ```
 
-Modify the CLUSTER_NAME variable's value to something as per your requirements.  Keep the `image: whoami6443/k8soper:0.0.6` to either the current value or modify it to reflect the value that was used in the Kubernetes-fundamentals lab
+Modify the CLUSTER_NAME variable's value to something as per your requirements.  
+Keep the `image: whoami6443/k8soper:0.0.6` to either the current value or modify it to reflect the value that was used in the Kubernetes-fundamentals lab `--image=gcr.io/pa-nverma/k8soper:0.0.1`
        
 Once saved, use kubectl to deploy the relevant K8s objects. 
 
@@ -204,6 +205,6 @@ deployment.extensions/k8s-operations created
 
 Check of te
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM2ODcwMzE4LDk3NTIxNTc3MSwxMjQ5NT
+eyJoaXN0b3J5IjpbOTI0NDMzNDAyLDk3NTIxNTc3MSwxMjQ5NT
 E0NDAzLC0xMTE4MjQ5NTM0XX0=
 -->
