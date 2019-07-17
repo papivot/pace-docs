@@ -258,12 +258,15 @@ should return something similar -
         },
 ...
 ```
+Now, let us increase the number of PODs servicing the application from 1 to 2. 
 
-Now, lets increase the replica
+> `kubectl edit deployment k8s-operations -n kube-op`
+
+should open an editable interface (vi commands can be 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc2ODMxMTM4LDQ3NDg3ODQ3OSwtMTI2MD
-I5NjYwOSwtOTM1MDU0ODk5LDk3NTIxNTc3MSwxMjQ5NTE0NDAz
-LC0xMTE4MjQ5NTM0XX0=
+eyJoaXN0b3J5IjpbLTEzNzc2NDk4MDMsNDc0ODc4NDc5LC0xMj
+YwMjk2NjA5LC05MzUwNTQ4OTksOTc1MjE1NzcxLDEyNDk1MTQ0
+MDMsLTExMTgyNDk1MzRdfQ==
 -->
