@@ -228,11 +228,13 @@ NAME             TYPE           CLUSTER-IP       EXTERNAL-IP     PORT(S)        
 k8s-operations   LoadBalancer   10.100.200.157   35.194.50.106   80:30480/TCP   77m   project.app=k8s-operations
 ```
 
-The application is 
+The application creates a JSON output with details of all the PODs that are running in the cluster. 
+
+You can access the output by navigating to http://EXTERNAL-IP in the br
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzIzMjIxOTIsLTEyNjAyOTY2MDksLT
-kzNTA1NDg5OSw5NzUyMTU3NzEsMTI0OTUxNDQwMywtMTExODI0
-OTUzNF19
+eyJoaXN0b3J5IjpbMTk5Njk5MzEyNiwtMTI2MDI5NjYwOSwtOT
+M1MDU0ODk5LDk3NTIxNTc3MSwxMjQ5NTE0NDAzLC0xMTE4MjQ5
+NTM0XX0=
 -->
