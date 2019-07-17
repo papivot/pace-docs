@@ -21,7 +21,21 @@ API Endpoint: api.pks.domain.com
 User: username
 ```
 
+Get the list of clusters deployed - 
+
+> `pks clusters`
+
+should output the clusters deployed 
+
+```shell
+Name          Plan Name  UUID                                  Status     Action
+gcpcluster00  small      69c4444c-8bf9-4907-956e-d94db7e145c2  succeeded  CREATE
+```
+
+>` pks get-credentials cluster_name`
+
+will generate the kubeconfig fi
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MzEzMTY1MCwtMTExODI0OTUzNF19
+eyJoaXN0b3J5IjpbODYwOTIzNzEzLC0xMTE4MjQ5NTM0XX0=
 -->
