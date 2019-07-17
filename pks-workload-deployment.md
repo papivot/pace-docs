@@ -219,7 +219,9 @@ k8s-operations-55d7dc9848-96xnj   1/1     Running   0          8m34s   10.200.27
 Now that the application is successfully deployed and running, we need to access the application. 
 
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjAyOTY2MDksLTkzNTA1NDg5OSw5Nz
-UyMTU3NzEsMTI0OTUxNDQwMywtMTExODI0OTUzNF19
+eyJoaXN0b3J5IjpbMjA2OTMyMTkzMywtMTI2MDI5NjYwOSwtOT
+M1MDU0ODk5LDk3NTIxNTc3MSwxMjQ5NTE0NDAzLC0xMTE4MjQ5
+NTM0XX0=
 -->
