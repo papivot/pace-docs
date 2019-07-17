@@ -174,7 +174,7 @@ Congratulations! You executed your first pod in a Kubernetes cluster.
 
 #### Step 3 - View the POD logs
 
-Using the name of the POD retrieved in Step 2, run the following command - 
+Wait for about 5 minutes after completing Step 2. Using the name of the POD retrieved in Step 2, run the following command - 
 
 > `kubectl logs k8s-operations-6f97c49687-rbcqv -n default`
 
@@ -261,5 +261,5 @@ deployment.extensions "k8s-operations" deleted
 The above command should not return any k8s-operations-* pods.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTg4NzExNTBdfQ==
+eyJoaXN0b3J5IjpbLTk3MDc2NjkwNSwtMTE5ODg3MTE1MF19
 -->
