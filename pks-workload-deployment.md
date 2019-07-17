@@ -312,9 +312,13 @@ This is the where the secret (ca.crt and token) of the `k8s-operations` service 
 
 Notice how the `CLUSTER_NAME` variable is now available as an environment variable within the container. 
 
-Also note how the service discovery is made available to the processes within the container as e
+Also note how the service discovery is made available to the processes within the container as environment variables. 
+
+> `netstat -an`
+
+Notice how the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwNjAxMjg5NywxNTMwNTU1MzgyLDQ3ND
-g3ODQ3OSwtMTI2MDI5NjYwOSwtOTM1MDU0ODk5LDk3NTIxNTc3
-MSwxMjQ5NTE0NDAzLC0xMTE4MjQ5NTM0XX0=
+eyJoaXN0b3J5IjpbLTE4ODI3OTUwODIsMTUzMDU1NTM4Miw0Nz
+Q4Nzg0NzksLTEyNjAyOTY2MDksLTkzNTA1NDg5OSw5NzUyMTU3
+NzEsMTI0OTUxNDQwMywtMTExODI0OTUzNF19
 -->
