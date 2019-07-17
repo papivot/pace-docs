@@ -306,9 +306,9 @@ where k8s-operations-xxx is one of the two POD that are running in the kube-ops 
 
 > `ls -la /run/secrets/kubernetes.io/serviceaccount`
 
-This is the secrets of the `k8s-operations` service account 
+This is the where the secret of the `k8s-operations` service account is mounted and made available to the container. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDIwMjU0MzIsMTUzMDU1NTM4Miw0Nz
-Q4Nzg0NzksLTEyNjAyOTY2MDksLTkzNTA1NDg5OSw5NzUyMTU3
-NzEsMTI0OTUxNDQwMywtMTExODI0OTUzNF19
+eyJoaXN0b3J5IjpbLTU1NjM4MjM0MSwxNTMwNTU1MzgyLDQ3ND
+g3ODQ3OSwtMTI2MDI5NjYwOSwtOTM1MDU0ODk5LDk3NTIxNTc3
+MSwxMjQ5NTE0NDAzLC0xMTE4MjQ5NTM0XX0=
 -->
