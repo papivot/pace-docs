@@ -184,9 +184,11 @@ spec:
       serviceAccountName: k8s-operations
       terminationGracePeriodSeconds: 30
 ```
-Once saved, use kubectl to deploy the relevent K*
+Once saved, use kubectl to deploy the relevant K8s objects. 
 
 > `kubectl apply -f k8sops-deployment.yaml`                                                                                                            
+
+should return something similar to this - 
 
 ```shell
 namespace/kube-ops created
@@ -196,7 +198,9 @@ clusterrolebinding.rbac.authorization.k8s.io/k8s-operations created
 service/k8s-operations created
 deployment.extensions/k8s-operations created
 ```
+
+Check of te
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY4MzExNzcwLDEyNDk1MTQ0MDMsLTExMT
+eyJoaXN0b3J5IjpbOTc1MjE1NzcxLDEyNDk1MTQ0MDMsLTExMT
 gyNDk1MzRdfQ==
 -->
