@@ -44,6 +44,21 @@ You can now switch between clusters by using:
 $kubectl config use-context <cluster-name>
 ```
 
+### Deploying the application
+
+Copy the below yaml content and save it as a file call k8sops-deployment.ymal
+
+> `kubectl apply -f k8sops-deployment.yaml`                                                                                                            
+
+```shell
+namespace/kube-ops created
+serviceaccount/k8s-operations created
+clusterrole.rbac.authorization.k8s.io/k8s-operations created
+clusterrolebinding.rbac.authorization.k8s.io/k8s-operations created
+service/k8s-operations created
+deployment.extensions/k8s-operations created
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0OTUxNDQwMywtMTExODI0OTUzNF19
+eyJoaXN0b3J5IjpbLTc0MjQ5Mzc2MSwxMjQ5NTE0NDAzLC0xMT
+E4MjQ5NTM0XX0=
 -->
