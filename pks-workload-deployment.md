@@ -303,8 +303,12 @@ Execute the following to get access to the shell within the container of one of 
 > `kubectl exec -it k8s-operations-xxx -n kube-ops  -- /bin/sh`
 
 where k8s-operations-xxx is one of the two POD that are running in the kube-ops namespace. 
+
+> `ls -la /run/secrets/kubernetes.io/serviceaccount`
+
+This is the secrets of the `k8s-operations` service account 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzg3NTk1NzQsMTUzMDU1NTM4Miw0Nz
+eyJoaXN0b3J5IjpbLTEyNDIwMjU0MzIsMTUzMDU1NTM4Miw0Nz
 Q4Nzg0NzksLTEyNjAyOTY2MDksLTkzNTA1NDg5OSw5NzUyMTU3
 NzEsMTI0OTUxNDQwMywtMTExODI0OTUzNF19
 -->
