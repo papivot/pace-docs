@@ -310,9 +310,11 @@ This is the where the secret (ca.crt and token) of the `k8s-operations` service 
 
 >`env |sort`
 
+Notice how the `CLUSTER_NAME` variable is now available as an environment variable within the container. 
 
+Also note how the service discovery is made available to the processes within the container as e
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNzU3NjEyLDE1MzA1NTUzODIsNDc0OD
-c4NDc5LC0xMjYwMjk2NjA5LC05MzUwNTQ4OTksOTc1MjE1Nzcx
-LDEyNDk1MTQ0MDMsLTExMTgyNDk1MzRdfQ==
+eyJoaXN0b3J5IjpbMTQwNjAxMjg5NywxNTMwNTU1MzgyLDQ3ND
+g3ODQ3OSwtMTI2MDI5NjYwOSwtOTM1MDU0ODk5LDk3NTIxNTc3
+MSwxMjQ5NTE0NDAzLC0xMTE4MjQ5NTM0XX0=
 -->
