@@ -296,8 +296,11 @@ Wait for 5 mins for the new POD to start collecting data.  Now execute the follo
 
 and you will notice that the value of `execpodname` in the output changes corresponding to the k8s-operations POD that the loadbalancer is routing the traffic to. 
 
+### Study the POD.
+
+Execute the following to get access to the shell within the container of one of the P
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzMDU1NTM4Miw0NzQ4Nzg0NzksLTEyNj
-AyOTY2MDksLTkzNTA1NDg5OSw5NzUyMTU3NzEsMTI0OTUxNDQw
-MywtMTExODI0OTUzNF19
+eyJoaXN0b3J5IjpbLTgyNDc2NjgyMiwxNTMwNTU1MzgyLDQ3ND
+g3ODQ3OSwtMTI2MDI5NjYwOSwtOTM1MDU0ODk5LDk3NTIxNTc3
+MSwxMjQ5NTE0NDAzLC0xMTE4MjQ5NTM0XX0=
 -->
