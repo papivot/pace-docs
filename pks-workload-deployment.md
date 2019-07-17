@@ -207,8 +207,8 @@ Check of the results
 
 > `kubectl get pods -n kube-ops`
 
-should display a
+should display a pod in running state. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5ODM5MzU2Myw5NzUyMTU3NzEsMTI0OT
+eyJoaXN0b3J5IjpbLTkzNTA1NDg5OSw5NzUyMTU3NzEsMTI0OT
 UxNDQwMywtMTExODI0OTUzNF19
 -->
