@@ -259,9 +259,11 @@ should return something similar -
 ...
 ```
 
+Now, lets increase the replica
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc0ODc4NDc5LC0xMjYwMjk2NjA5LC05Mz
-UwNTQ4OTksOTc1MjE1NzcxLDEyNDk1MTQ0MDMsLTExMTgyNDk1
-MzRdfQ==
+eyJoaXN0b3J5IjpbNjc2ODMxMTM4LDQ3NDg3ODQ3OSwtMTI2MD
+I5NjYwOSwtOTM1MDU0ODk5LDk3NTIxNTc3MSwxMjQ5NTE0NDAz
+LC0xMTE4MjQ5NTM0XX0=
 -->
