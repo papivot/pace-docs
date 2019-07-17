@@ -294,10 +294,10 @@ Wait for 5 mins for the new POD to start collecting data.  Now execute the follo
 
 > `curl EXTERNAL-IP`
 
-and you will notice that the value of "execpodname:
+and you will notice that the value of `execpodname` in the output changes corresponding to the k8s-operations POD namthat the loadbalancer is routing the traffic to. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzkyMTczNTIsNDc0ODc4NDc5LC0xMj
-YwMjk2NjA5LC05MzUwNTQ4OTksOTc1MjE1NzcxLDEyNDk1MTQ0
-MDMsLTExMTgyNDk1MzRdfQ==
+eyJoaXN0b3J5IjpbMTM4OTQ2ODE3NCw0NzQ4Nzg0NzksLTEyNj
+AyOTY2MDksLTkzNTA1NDg5OSw5NzUyMTU3NzEsMTI0OTUxNDQw
+MywtMTExODI0OTUzNF19
 -->
