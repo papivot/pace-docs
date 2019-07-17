@@ -237,13 +237,31 @@ You can access the output by navigating to http://EXTERNAL-IP in the browser or 
 should return something similar - 
 
 ```json
+    "items": [
+        {
+            "clustername": "navneet.cfcr.demo",
+            "execpodname": "k8s-operations-55d7dc9848-96xnj",
+            "namespace": "kube-ops",
+            "pod": "k8s-operations-55d7dc9848-96xnj",
+            "containername": "k8s-operations",
+            "image": "whoami6443/k8soper:0.0.6",
+            "SHA256": "sha256:8b43475a5c51042eb0557f4e862ac644dd72662fb83eef5e6bd6172cfc936347"
+        },
+        {
+            "clustername": "navneet.cfcr.demo",
+            "execpodname": "k8s-operations-55d7dc9848-96xnj",
+            "namespace": "kube-system",
+            "pod": "coredns-54586579f6-brjsh",
+            "containername": "coredns",
+            "image": "coredns/coredns:1.3.1",
+            "SHA256": "NULL"
+        },
 ...
-
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODgzNzY3NTYxLC0xMjYwMjk2NjA5LC05Mz
+eyJoaXN0b3J5IjpbNDc0ODc4NDc5LC0xMjYwMjk2NjA5LC05Mz
 UwNTQ4OTksOTc1MjE1NzcxLDEyNDk1MTQ0MDMsLTExMTgyNDk1
 MzRdfQ==
 -->
