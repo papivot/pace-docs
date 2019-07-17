@@ -298,9 +298,13 @@ and you will notice that the value of `execpodname` in the output changes corres
 
 ### Study the POD.
 
-Execute the following to get access to the shell within the container of one of the P
+Execute the following to get access to the shell within the container of one of the k8s-operations POD - 
+
+> `kubectl exec -it k8s-operations-xxx -n kube-ops  -- /bin/sh`
+
+where k8s-operations-xxx is one of the two POD that are running in the kube-ops namespace. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyNDc2NjgyMiwxNTMwNTU1MzgyLDQ3ND
-g3ODQ3OSwtMTI2MDI5NjYwOSwtOTM1MDU0ODk5LDk3NTIxNTc3
-MSwxMjQ5NTE0NDAzLC0xMTE4MjQ5NTM0XX0=
+eyJoaXN0b3J5IjpbLTIwNzg3NTk1NzQsMTUzMDU1NTM4Miw0Nz
+Q4Nzg0NzksLTEyNjAyOTY2MDksLTkzNTA1NDg5OSw5NzUyMTU3
+NzEsMTI0OTUxNDQwMywtMTExODI0OTUzNF19
 -->
