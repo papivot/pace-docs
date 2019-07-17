@@ -317,8 +317,10 @@ Also note how the service discovery is made available to the processes within th
 > `netstat -an`
 
 Notice how the yaml specified `containerPort: 8080` is currently in a LISTENING state. 
+
+readOnlyRootFilesystem: true
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3OTQ0Mzg3LDE1MzA1NTUzODIsNDc0OD
-c4NDc5LC0xMjYwMjk2NjA5LC05MzUwNTQ4OTksOTc1MjE1Nzcx
-LDEyNDk1MTQ0MDMsLTExMTgyNDk1MzRdfQ==
+eyJoaXN0b3J5IjpbLTgyNjI4NDgzNiwxNTMwNTU1MzgyLDQ3ND
+g3ODQ3OSwtMTI2MDI5NjYwOSwtOTM1MDU0ODk5LDk3NTIxNTc3
+MSwxMjQ5NTE0NDAzLC0xMTE4MjQ5NTM0XX0=
 -->
