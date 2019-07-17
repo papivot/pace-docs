@@ -205,10 +205,19 @@ deployment.extensions/k8s-operations created
 
 Check of the results 
 
-> `kubectl get pods -n kube-ops`
+> `kubectl get pods -n kube-ops -o wide`
 
 should display a pod in running state. 
+
+```shell
+NAME                              READY   STATUS    RESTARTS   AGE     IP            NODE                                      NOMINATED NODE   READINESS GATES
+k8s-operations-55d7dc9848-96xnj   1/1     Running   0          8m34s   10.200.27.9   vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c   <none>           <none>
+```
+
+### Access the application
+
+Now that the application is successfully deployed and running, we need to access the application. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzNTA1NDg5OSw5NzUyMTU3NzEsMTI0OT
-UxNDQwMywtMTExODI0OTUzNF19
+eyJoaXN0b3J5IjpbNTcyMDg2MDE5LC05MzUwNTQ4OTksOTc1Mj
+E1NzcxLDEyNDk1MTQ0MDMsLTExMTgyNDk1MzRdfQ==
 -->
