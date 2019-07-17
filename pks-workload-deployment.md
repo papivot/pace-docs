@@ -9,8 +9,19 @@ In this lab/demo, we will show you how to deploy a set of applications using yam
 ### Requirements 
 - A working K8s cluster with admin access. (*Pivotal employees connected thru the VPN can request a PKS environment in GCP thru [Toolsmith](https://environments.toolsmiths.cf-app.com/home). Upon a PKS environment has been created, you can login using the pks cli and create a cluster using an active plan.)*
 
+### Preparation
+
+Login to the PKS API endpoint
+
+>`pks login -k -a api.pks.domain.com -u username`                                                                                                 
+
+```shell
+Password: ********
+API Endpoint: api.pks.domain.com
+User: username
+```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTgyNDk1MzRdfQ==
+eyJoaXN0b3J5IjpbMTk1MzEzMTY1MCwtMTExODI0OTUzNF19
 -->
