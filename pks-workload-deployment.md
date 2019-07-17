@@ -276,10 +276,21 @@ spec:
 ...
 ```
 
-`esc` `:` `w` `q` `!` to save and exit.  This up
+`esc` `:` `w` `q` `!` to save and exit.  This applies the changes to the deployment artifact.
+
+```shell
+deployment.extensions/k8s-operations edited
+```
+> `kubectl get pods -n kube-ops -o wide`      
+
+should now show two PODs running. 
+```shell                                                                                                           
+NAME                              READY   STATUS    RESTARTS   AGE   IP             NODE                                      NOMINATED NODE   READINESS GATES
+k8s-operations-55d7dc9848-96xnj   1/1     Running   0          95m   10.200.27.9    vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c   <none>           <none>
+k8s-operations-55d7dc9848-xtjmv   1/1     Running   0          57s   10.200.27.10   vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c   <none>           <none>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MjMyOTczMCw0NzQ4Nzg0NzksLTEyNj
-AyOTY2MDksLTkzNTA1NDg5OSw5NzUyMTU3NzEsMTI0OTUxNDQw
-MywtMTExODI0OTUzNF19
+eyJoaXN0b3J5IjpbNTgxMDg3ODA0LDQ3NDg3ODQ3OSwtMTI2MD
+I5NjYwOSwtOTM1MDU0ODk5LDk3NTIxNTc3MSwxMjQ5NTE0NDAz
+LC0xMTE4MjQ5NTM0XX0=
 -->
