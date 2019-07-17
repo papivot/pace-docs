@@ -230,11 +230,20 @@ k8s-operations   LoadBalancer   10.100.200.157   35.194.50.106   80:30480/TCP   
 
 The application creates a JSON output with details of all the PODs that are running in the cluster. 
 
-You can access the output by navigating to http://EXTERNAL-IP in the br
+You can access the output by navigating to http://EXTERNAL-IP in the browser or performing a curl on the EXTERNAL-IP in CLI
+
+> `curl EXTERNAL-IP`
+
+should return something similar - 
+
+```json
+...
+
+```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5Njk5MzEyNiwtMTI2MDI5NjYwOSwtOT
-M1MDU0ODk5LDk3NTIxNTc3MSwxMjQ5NTE0NDAzLC0xMTE4MjQ5
-NTM0XX0=
+eyJoaXN0b3J5IjpbODgzNzY3NTYxLC0xMjYwMjk2NjA5LC05Mz
+UwNTQ4OTksOTc1MjE1NzcxLDEyNDk1MTQ0MDMsLTExMTgyNDk1
+MzRdfQ==
 -->
