@@ -34,8 +34,16 @@ gcpcluster00  small      69c4444c-8bf9-4907-956e-d94db7e145c2  succeeded  CREATE
 
 >` pks get-credentials cluster_name`
 
-will generate the kubeconfig fi
+will generate the kubeconfig file for the admin user `username` and allow kubectl commands to be executed against this cluster.
+
+```shell
+Fetching credentials for cluster gcpcluster00.
+Context set for cluster gcpcluster00.
+
+You can now switch between clusters by using:
+$kubectl config use-context <cluster-name>
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYwOTIzNzEzLC0xMTE4MjQ5NTM0XX0=
+eyJoaXN0b3J5IjpbMTI0OTUxNDQwMywtMTExODI0OTUzNF19
 -->
