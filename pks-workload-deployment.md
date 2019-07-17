@@ -296,7 +296,7 @@ Wait for 5 mins for the new POD to start collecting data.  Now execute the follo
 
 and you will notice that the value of `execpodname` in the output changes corresponding to the k8s-operations POD that the loadbalancer is routing the traffic to. 
 
-### Study the POD.
+### Study the POD deployment and corresponding YAML.
 
 Execute the following to get access to the shell within the container of one of the k8s-operations POD - 
 
@@ -329,9 +329,17 @@ Notice how the root filesystem has been made read only due to the `readOnlyRootF
 ---
 >`df`
 
-Notice how `/user/k8soper` has been mounted as a writeable directory for the application to consume. The corrosponding entry in the yaml file was 
+Notice how `/user/k8soper` has been mounted as a writeable directory for the application to consume. The corresponding entry in the yaml file was -
+
+```yaml
+        volumeMounts:
+        - mountPath: /user/k8soper
+          name: cache-volume
+```
+
+### Cleanup
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyMjM2MTEyMSwxNTMwNTU1MzgyLDQ3ND
-g3ODQ3OSwtMTI2MDI5NjYwOSwtOTM1MDU0ODk5LDk3NTIxNTc3
-MSwxMjQ5NTE0NDAzLC0xMTE4MjQ5NTM0XX0=
+eyJoaXN0b3J5IjpbNjQxNjU2OTgyLDE1MzA1NTUzODIsNDc0OD
+c4NDc5LC0xMjYwMjk2NjA5LC05MzUwNTQ4OTksOTc1MjE1Nzcx
+LDEyNDk1MTQ0MDMsLTExMTgyNDk1MzRdfQ==
 -->
