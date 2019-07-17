@@ -1,17 +1,18 @@
 
 # PKS Workload Deployment
 
-In this lab/demo, we will show you how to deploy a set of applications using yaml configuration files on a K8s cluster. This exercise serves two purposes - 
+In this lab/demo, we will show you how to deploy a set of applications using yaml configuration files on a K8s cluster. This exercise serves these three purposes - 
 
-1. How to interact with yaml files to deploy applications
-2. Show how to interact with an application running on K8s cluster. 
+1. Shows how to interact with yaml files to deploy applications
+2. Shows how to interact with an application running on K8s cluster. 
+3. Shows how the relevant commands and variables in the yaml files affect the application deployment.
 
 ### Requirements 
-- A working K8s cluster with admin access. (*Pivotal employees connected thru the VPN can request a PKS environment in GCP thru [Toolsmith](https://environments.toolsmiths.cf-app.com/home). Upon a PKS environment has been created, you can login using the pks cli and create a cluster using an active plan.)*
+- A working K8s cluster with admin access. (*Pivotal employees connected through the VPN can request a PKS environment in GCP through [Toolsmith](https://environments.toolsmiths.cf-app.com/home). Upon a PKS environment has been created, you can login using the pks cli and create a cluster using an active plan.)*
 
 ### Preparation
 
-Login to the PKS API endpoint
+Login to the PKS API endpoint -
 
 >`pks login -k -a api.pks.domain.com -u username`                                                                                                 
 
@@ -356,5 +357,5 @@ service "k8s-operations" deleted
 deployment.extensions "k8s-operations" deleted
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2MzQ5NDUzNl19
+eyJoaXN0b3J5IjpbLTk2MzUyMTMzOV19
 -->
