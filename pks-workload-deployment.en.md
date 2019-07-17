@@ -291,11 +291,11 @@ k8s-operations-55d7dc9848-96xnj   1/1     Running   0          95m   10.200.27.9
 k8s-operations-55d7dc9848-xtjmv   1/1     Running   0          57s   10.200.27.10   vm-598b94c9-cf6b-4adc-45be-29d02a22ac9c   <none>           <none>
 ```
 
-Wait for 5 mins for the new POD to start collecting data.  Now execute the following multiple times - 
+Wait for 5 minutes for the new POD to start collecting data.  Now, execute the following multiple times - 
 
 > `curl EXTERNAL-IP`
 
-and you will notice that the value of `execpodname` in the output changes corresponding to the k8s-operations POD that the loadbalancer is routing the traffic to. 
+You will notice that the value of `execpodname` in the output changes corresponding to the k8s-operations POD that the loadbalancer is routing the traffic to. 
 
 ### Study the POD deployment and corresponding YAML.
 
@@ -357,5 +357,5 @@ service "k8s-operations" deleted
 deployment.extensions "k8s-operations" deleted
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgxNDkzOTNdfQ==
+eyJoaXN0b3J5IjpbMTMwMDg1NDc1Nl19
 -->
