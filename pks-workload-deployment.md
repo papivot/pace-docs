@@ -326,9 +326,12 @@ Notice how the yaml specified `containerPort: 8080` is currently in a LISTENING 
 
 Notice how the root filesystem has been made read only due to the `readOnlyRootFilesystem: true` directive in the yaml file. 
 
+---
+>`df`
 
+Notice how `/user/k8soper` has been mounted as a writeable directory for the application to consume. The corrosponding entry in the yaml file was 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMzQ2ODQwOSwxNTMwNTU1MzgyLDQ3ND
+eyJoaXN0b3J5IjpbMTUyMjM2MTEyMSwxNTMwNTU1MzgyLDQ3ND
 g3ODQ3OSwtMTI2MDI5NjYwOSwtOTM1MDU0ODk5LDk3NTIxNTc3
 MSwxMjQ5NTE0NDAzLC0xMTE4MjQ5NTM0XX0=
 -->
