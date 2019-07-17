@@ -295,7 +295,7 @@ Wait for 5 minutes for the new POD to start collecting data.  Now, execute the f
 
 > `curl EXTERNAL-IP`
 
-You will notice that the value of `execpodname` in the output changes corresponding to the k8s-operations POD that the loadbalancer is routing the traffic to. 
+You will notice that the value of `execpodname` in the output changes, corresponding to the k8s-operations POD that the load balancer is routing the traffic to. 
 
 ### Study the POD deployment and corresponding YAML.
 
@@ -303,7 +303,7 @@ Execute the following to get access to the shell within the container of one of 
 
 > `kubectl exec -it k8s-operations-xxx -n kube-ops  -- /bin/sh`
 
-where k8s-operations-xxx is one of the two POD that are running in the kube-ops namespace. 
+where k8s-operations-xxx is one of the two PODs that are running in the kube-ops namespace. 
 
 ---
 > `ls -la /run/secrets/kubernetes.io/serviceaccount`
@@ -315,7 +315,7 @@ This is the where the secret (ca.crt and token) of the `k8s-operations` service 
 
 Notice how the `CLUSTER_NAME` variable is now available as an environment variable within the container. 
 
-Also note how the service discovery is made available to the processes within the container as environment variables. 
+Also, note how the service discovery is made available to the processes within the container as environment variables. 
 
 ---
 > `netstat -an`
@@ -325,7 +325,7 @@ Notice how the yaml specified `containerPort: 8080` is currently in a LISTENING 
 ---
 > `cd /;touch temp`
 
-Notice how the root filesystem has been made read only due to the `readOnlyRootFilesystem: true` directive in the yaml file. 
+Notice how the root filesystem has been made 'read only' due to the `readOnlyRootFilesystem: true` directive in the yaml file. 
 
 ---
 >`df`
@@ -357,5 +357,5 @@ service "k8s-operations" deleted
 deployment.extensions "k8s-operations" deleted
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMDg1NDc1Nl19
+eyJoaXN0b3J5IjpbLTE1MjcyNjc0NTldfQ==
 -->
