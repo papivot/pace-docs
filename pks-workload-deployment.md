@@ -186,7 +186,7 @@ spec:
 ```
 
 Modify the CLUSTER_NAME variable's value to something as per your requirements.  
-Keep the `image: whoami6443/k8soper:0.0.6` to either the current value or modify it to reflect the value that was used in the Kubernetes-fundamentals lab `--image=gcr.io/pa-nverma/k8soper:0.0.1`
+Keep the `image: whoami6443/k8soper:0.0.6` to either the current value or modify it to reflect the value that was used in the ***Kubernetes-fundamentals lab*** -> ***Deploying your first pod*** -> ***Step 1 - Run the Docker image from the registry*** section . For e.g. `--image=gcr.io/pa-nverma/k8soper:0.0.1`
        
 Once saved, use kubectl to deploy the relevant K8s objects. 
 
@@ -203,8 +203,12 @@ service/k8s-operations created
 deployment.extensions/k8s-operations created
 ```
 
-Check of te
+Check of the results 
+
+> `kubectl get pods -n kube-ops`
+
+should display a
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI0NDMzNDAyLDk3NTIxNTc3MSwxMjQ5NT
-E0NDAzLC0xMTE4MjQ5NTM0XX0=
+eyJoaXN0b3J5IjpbLTc5ODM5MzU2Myw5NzUyMTU3NzEsMTI0OT
+UxNDQwMywtMTExODI0OTUzNF19
 -->
