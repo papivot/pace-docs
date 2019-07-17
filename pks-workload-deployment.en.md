@@ -342,7 +342,7 @@ Notice how `/user/k8soper` has been mounted as a writeable directory for the app
 
 ### Cleanup
 
-To cleanup all the deployments of the k8s-operations app, execute the following - 
+To clean up all the deployments of the k8s-operations app, execute the following - 
 
 > `kubectl delete -f k8sops-deployment.yaml`
 
@@ -357,5 +357,5 @@ service "k8s-operations" deleted
 deployment.extensions "k8s-operations" deleted
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjcyNjc0NTldfQ==
+eyJoaXN0b3J5IjpbLTY1ODM1MDgyOV19
 -->
