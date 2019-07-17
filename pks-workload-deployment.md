@@ -343,9 +343,20 @@ Notice how `/user/k8soper` has been mounted as a writeable directory for the app
 
 To cleanup all the deployments of the k8s-operations app, execute the following - 
 
-> `kubectl delete -f k8s-deployment.yaml`
+> `kubectl delete -f k8sops-deployment.yaml`
+
+This should delete all the objects that were previously created/deployed. 
+
+```shell
+namespace "kube-ops" deleted
+serviceaccount "k8s-operations" deleted
+clusterrole.rbac.authorization.k8s.io "k8s-operations" deleted
+clusterrolebinding.rbac.authorization.k8s.io "k8s-operations" deleted
+service "k8s-operations" deleted
+deployment.extensions "k8s-operations" deleted
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTA4NzUzMjgsMTUzMDU1NTM4Miw0Nz
-Q4Nzg0NzksLTEyNjAyOTY2MDksLTkzNTA1NDg5OSw5NzUyMTU3
-NzEsMTI0OTUxNDQwMywtMTExODI0OTUzNF19
+eyJoaXN0b3J5IjpbLTQzMTgwNjc1NiwxNTMwNTU1MzgyLDQ3ND
+g3ODQ3OSwtMTI2MDI5NjYwOSwtOTM1MDU0ODk5LDk3NTIxNTc3
+MSwxMjQ5NTE0NDAzLC0xMTE4MjQ5NTM0XX0=
 -->
