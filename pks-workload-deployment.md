@@ -304,23 +304,30 @@ Execute the following to get access to the shell within the container of one of 
 
 where k8s-operations-xxx is one of the two POD that are running in the kube-ops namespace. 
 
+---
 > `ls -la /run/secrets/kubernetes.io/serviceaccount`
 
 This is the where the secret (ca.crt and token) of the `k8s-operations` service account is mounted and made available to the container. 
 
+---
 >`env |sort`
 
 Notice how the `CLUSTER_NAME` variable is now available as an environment variable within the container. 
 
 Also note how the service discovery is made available to the processes within the container as environment variables. 
 
+---
 > `netstat -an`
 
 Notice how the yaml specified `containerPort: 8080` is currently in a LISTENING state. 
 
+---
+> `cd /;touch temp`
+
+Notice how the root filesystem has been made 
 readOnlyRootFilesystem: true
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyNjI4NDgzNiwxNTMwNTU1MzgyLDQ3ND
+eyJoaXN0b3J5IjpbMTM0MDE2MDkwNSwxNTMwNTU1MzgyLDQ3ND
 g3ODQ3OSwtMTI2MDI5NjYwOSwtOTM1MDU0ODk5LDk3NTIxNTc3
 MSwxMjQ5NTE0NDAzLC0xMTE4MjQ5NTM0XX0=
 -->
