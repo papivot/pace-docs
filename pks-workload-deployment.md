@@ -218,11 +218,18 @@ k8s-operations-55d7dc9848-96xnj   1/1     Running   0          8m34s   10.200.27
 
 Now that the application is successfully deployed and running, we need to access the application. 
 
-Since the deployment yaml had created a service of type loadbalancr, a new loadbalancer would have been deployed at the IaaS layer (GCP/AWS/NSX)
+Since the deployment yaml had created a service of type loadbalancr, a new loadbalancer would have been automatically been deployed at the IaaS layer (GCP/AWS/NSX). To get the external IP of the load balancer,  run the following - 
+
+> `kubectl get service -n kube-ops -o wide`      
+
+```shell
+NAME             TYPE           CLUSTER-IP       EXTERNAL-IP     PORT(S)        AGE   SELECTOR
+k8s-operations   LoadBalancer   10.100.200.157   35.194.50.106   80:30480/TCP   77m   project.app=k8s-operations
+```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxODc1NjM0MywtMTI2MDI5NjYwOSwtOT
+eyJoaXN0b3J5IjpbLTEzNDQwODk1MCwtMTI2MDI5NjYwOSwtOT
 M1MDU0ODk5LDk3NTIxNTc3MSwxMjQ5NTE0NDAzLC0xMTE4MjQ5
 NTM0XX0=
 -->
