@@ -1,27 +1,38 @@
-
-# PKS Bootcamp prep and pre-requisites 
+# PKS Bootcamp prep and pre-requisites
 
 The following artifacts needs to be readily available before the start of the bootcamp -
 
  - [ ] An account with [Papertrail](https://papertrailapp.com/) for logging demo.
  - [ ] An account with [Jumpcloud](https://jumpcloud.com/signup/) for LDAP integration demo.
- - [ ] Ops Manager with PKS installed and configured. The recommended option is GCP, as it is easy to deploy, manage, and the least expensive of the public clouds. Pivotal employees connected through the VPN can request a PKS environment in GCP through [Toolsmith](https://environments.toolsmiths.cf-app.com/home). Toolsmith has a help video on how to request a PKS environment on GCP. 
+ - [ ] Ops Manager with PKS installed and configured. The recommended option is GCP, as it is easy to deploy, manage, and the least expensive of the public clouds. Pivotal employees connected through the VPN can request a PKS environment in GCP through [Toolsmith](https://environments.toolsmiths.cf-app.com/home). Toolsmith has a help video on how to request a PKS environment on GCP.
  - [ ] BOSH Director should have the `Enable VM Resurrector Plugin` already enabled.
  - [ ] Jumpbox/bastion host with access to the PKS environment (preferably Ubuntu 18.04 n1-standard-1 in GCP or a t2.medium EC2) with the following binaries installed -
- * Kubectl - After signing into the Pivotal network, the relevant binaries can be downloaded from [here](https://network.pivotal.io/products/pivotal-container-service/#/releases/386533/file_groups/1831)
- * pks - After signing into the Pivotal network, the relevant binaries can be downloaded from [here](https://network.pivotal.io/products/pivotal-container-service/#/releases/386533/file_groups/1830).
- * uaac - this is generally installed as a Ruby gem 
-> `gem install cf-uaac`
- * Curl.
- * jq.
- * om - The required binary can be downloaded [here](https://github.com/pivotal-cf/om/releases).
- * Please make sure that all bastion/jumpbox is up-to date on all patches. 
- 
- 
- - [ ] PKS tile deployed with at least one plan that has the ability to deploy K8s clusters with `Allow privilaged` setting **enabled**. For that plan, make sure that the following are **unchecked** - `PodSecurityPolicy,` `DenyEscalatingExec`, `SecurityContextDeny`.
- - [ ] PKS tile `UAA Configuration` with `UAA as OIDC provider` **unchecked**.
- - [ ] A K8s cluster deployed in the PKS environment. To deploy a K8s cluster, use the following steps - 
- 
+   * Kubectl - After signing into the Pivotal network, the relevant binaries can be downloaded from [here](https://network.pivotal.io/products/pivotal-container-service/#/releases/386533/file_groups/1831)
+   * pks - After signing into the Pivotal network, the relevant binaries can be downloaded from [here](https://network.pivotal.io/products/pivotal-container-service/#/releases/386533/file_groups/1830).
+   * uaac - this is generally installed as a Ruby gem
+    > `sudo apt update`
+
+    > `sudo apt install -y build-essential ruby ruby-dev`
+
+    > `gem install cf-uaac`
+   * curl
+   > `sudo apt install -y curl`
+   * jq
+   > `sudo apt install -y jq`
+   * om - The required linux binary can be downloaded from [here](https://github.com/pivotal-cf/om/releases)
+   * pivnet - The required linux binary can be downloaded from [here](https://github.com/pivotal-cf/pivnet-cli/releases). Get you PivNet Legacy API Token from your [PivNet profile](https://network.pivotal.io/users/dashboard/edit-profile) and then use it to log in:
+   > `pivnet login --api-token='[pivnet-api-token]'`
+   * pks - Use `pivnet` CLI to download it, adjusting the version and `product-file-id` to the one aligned to your PKS tile:
+   > `pivnet download-product-files -p pivotal-container-service --release-version 1.4.1 -i 400601`
+   * kubectl - Use `pivnet` CLI to download it, adjusting the version and `product-file-id` to the one aligned to your PKS tile:
+   > `pivnet download-product-files -p pivotal-container-service --release-version 1.4.1 -i 345486`
+   * Please make sure that all bastion/jumpbox is up-to date on all patches.
+
+
+ - [ ] PKS tile deployed with at least one plan that has the ability to deploy K8s clusters with `Allow privilaged` setting **enabled**. For that plan, make sure that the following are **unchecked** - `PodSecurityPolicy,` `DenyEscalatingExec`, `SecurityContextDeny`
+ - [ ] PKS tile `UAA Configuration` with `UAA as OIDC provider` **unchecked** and `Internal UAA` **selected**
+ - [ ] A K8s cluster deployed in the PKS environment. To deploy a K8s cluster, use the following steps -
+
 >``
 $ UAA_PWD=`om -t [opsman_fqdn] -u [opsman_userid] -p [opsman_password] -k credentials --product-name pivotal-container-service --credential-reference .properties.pks_uaa_management_admin_client -t json|jq -r .secret`
 ``
@@ -35,7 +46,7 @@ Use the UAAC cli to connect to the PKS API UAA endpoint
 
 > `uaac target https://[api.pks.fqdn]:8443 --skip-ssl-validation`
 
-should return 
+should return
 ```bash
 Unknown key: Max-Age = 86400
 
@@ -76,11 +87,11 @@ API Endpoint: api.pks.fqdn
 User: username
 ```
 
-Use the PKS CLI to view the available plans - 
+Use the PKS CLI to view the available plans -
 
 >`$ pks plans`
 
-should return something similar to this - 
+should return something similar to this -
 ```shell
 Name    ID                                    Description
 small   8A0E21A8-8072-4D80-B365-D1F502085560  Example: This plan will configure a lightweight kubernetes cluster. Not recommended for production workloads.
@@ -88,11 +99,11 @@ medium  58375a45-17f7-4291-acf1-455bfdc8e371  Example: This plan will configure 
 large   241118e5-69b2-4ef9-b47f-4d2ab071aff5  Example: This plan will configure a large kubernetes cluster for resource heavy workloads, or a high number of workloads.
 ```
 
-Use the PKS CLI to create a cluster using one of the above plans (that met the previously mentioned pod security criteria)- 
+Use the PKS CLI to create a cluster using one of the above plans (that met the previously mentioned pod security criteria)-
 
 >`pks create-cluster gcpcluster00 --external-hostname [clustername.fqdn]  --plan small`
 
-should return 
+should return
 ```shell
 Name:                     gcpcluster00
 Plan Name:                small
@@ -109,7 +120,7 @@ Network Profile Name:
 Use 'pks cluster gcpcluster00' to monitor the state of your cluster
 ```
 
-After a few minutes, the deployment would have successfully completed and 
+After a few minutes, the deployment would have successfully completed and
 
 >` pks cluster gcpcluster00`
 
@@ -135,7 +146,7 @@ To validate the cluster is in a working condition, execute the following command
 
 > `pks get-credentials gcpcluster00`
 
-should return 
+should return
 
 ```shell
 Fetching credentials for cluster gcpcluster00.
@@ -145,11 +156,11 @@ You can now switch between clusters by using:
 $kubectl config use-context <cluster-name>
 ```
 
-Get the nodes status of the cluster - 
+Get the nodes status of the cluster -
 
 > `kubectl get nodes`
 
-should return something similar to this - 
+should return something similar to this -
 
 ```shell
 NAME                                      STATUS   ROLES    AGE     VERSION
@@ -158,18 +169,19 @@ vm-739344f0-516a-4e34-4527-9b3cd9b553fc   Ready    <none>   4h52m   v1.13.5
 vm-f918f979-757b-4214-5921-9a0a91bbe5df   Ready    <none>   70m     v1.13.5
 ```
 
- - [ ] Working Harbor registry. If you do not have one, use the following steps to deploy a Harbor tile along with the PKS tile. Details of the configuration and howto is provided [here](https://docs.pivotal.io/partners/vmware-harbor/installing.html).
+- [ ] Working Harbor registry. If you do not have one, use the following steps to deploy a Harbor tile along with the PKS tile. Details of the configuration and howto is provided [here](https://docs.pivotal.io/partners/vmware-harbor/installing.html).
 
-* Download the Harbor product tile from Pivnet.
-* Login to OpsManager and upload the Harbor product tile using the `Import a Product` function. 
-* Validate that the valid stemcell is associated with the tile.
-* Configure the tile. Use the defaults (wherever possible).
-* Make sure Clair and Notary are enabled. 
-* Clair Updater interval (Hours) is set to a number greater than 0 (e.g. 1)
-* Apply changes. 
-* Once configuration is completed, make sure that the DNS is updated to reflect the public IP and FQDN. 
-* Adjust the firewall, if necessary. Harbor requires ports 443 and 4443 (Notary).
-* Validate the FQDN is reachable. 
+  * Download the Harbor product tile from Pivnet
+  * Login to OpsManager and upload the Harbor product tile using the `Import a Product` function.
+  * Validate that the valid stemcell is associated with the tile.
+  * Configure the tile. Use the defaults (wherever possible) .
+  * Make sure Clair and Notary are **enabled**.
+  * Clair Updater interval (Hours) is set to a number greater than 0 (e.g. 1)
+  * In the Resource Config tab: make sure that `INTERNET CONNECTED` is **checked**, unless you plan to put a Load Balancer in front, in which case follow [this documentation](https://docs.pivotal.io/partners/vmware-harbor/installing.html#-configure-harbor-vm-resources)
+  * Apply changes.
+  * Once configuration is completed, make sure that the DNS is updated to reflect the Harbor VM public IP and FQDN. If you chose to use a Load Balancer then you need to associate the Harbor FQDN with the Load Balancer public IP.
+  * Adjust the firewall, if necessary. Harbor requires ports 443 and 4443 (Notary)
+  * Validate the FQDN is reachable.
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMjMzOTM2MzE0LDE4OTcxOTk5NzgsLTIwND
 c2NTg3MTksLTEwNjE3NTU4NDNdfQ==
